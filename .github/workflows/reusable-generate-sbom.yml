@@ -70,9 +70,9 @@ jobs:
           SANITIZED_PROJECT=$(echo "$PROJECT_NAME" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr -cd '[:alnum:]-')
           
           if [ -n "$SBOM_PATH_PREFIX" ]; then
-            SBOM_BASE_DIR="supply-chain/sbom/${SBOM_PATH_PREFIX}/${OWNER}/${REPO}"
+            SBOM_BASE_DIR="sbom/${SBOM_PATH_PREFIX}/${OWNER}/${REPO}"
           else
-            SBOM_BASE_DIR="supply-chain/sbom/${SANITIZED_PROJECT}/${REPO}"
+            SBOM_BASE_DIR="sbom/${SANITIZED_PROJECT}/${REPO}"
           fi
           
           PROCESSED=0
@@ -223,7 +223,7 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
-          git add supply-chain/sbom/
+          git add sbom/
           
           if git diff --cached --quiet; then
             echo "No new SBOMs generated"

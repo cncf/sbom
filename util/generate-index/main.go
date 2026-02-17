@@ -36,7 +36,7 @@ func main() {
 		baseDir = os.Args[1]
 	}
 
-	sbomDir := filepath.Join(baseDir, "supply-chain", "sbom")
+	sbomDir := filepath.Join(baseDir, "sbom")
 	indexFile := filepath.Join(sbomDir, "index.json")
 
 	var sboms []SBOMEntry

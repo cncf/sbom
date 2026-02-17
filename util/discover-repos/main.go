@@ -196,8 +196,8 @@ func main() {
 		fmt.Println()
 	}
 
-	projectsFile := filepath.Join(baseDir, "supply-chain/util/data/cncf-projects.yaml")
-	outputFile := filepath.Join(baseDir, "supply-chain/util/data/discovered-repos.yaml")
+	projectsFile := filepath.Join(baseDir, "util/data/cncf-projects.yaml")
+	outputFile := filepath.Join(baseDir, "util/data/discovered-repos.yaml")
 
 	// Read existing CNCF projects
 	data, err := os.ReadFile(projectsFile)
@@ -369,7 +369,7 @@ func main() {
 # - Have at least one release
 # - Contain a go.mod file (Go-based project)
 #
-# Generator: supply-chain/util/discover-repos
+# Generator: util/discover-repos
 # Workflow: .github/workflows/discover-cncf-repos.yml
 #
 # ============================================================================

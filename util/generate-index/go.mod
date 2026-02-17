@@ -1,3 +1,3 @@
-module github.com/cncf/cncf-automation/supply-chain/util/generate-index
+module github.com/cncf/sbom/util/generate-index
 
 go 1.21

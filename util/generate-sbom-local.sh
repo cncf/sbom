@@ -24,8 +24,8 @@ set -e
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
-DATA_FILE="$ROOT_DIR/supply-chain/util/data/repositories.yaml"
-SBOM_BASE_DIR="$ROOT_DIR/supply-chain/sbom"
+DATA_FILE="$ROOT_DIR/util/data/repositories.yaml"
+SBOM_BASE_DIR="$ROOT_DIR/sbom"
 
 # Parse arguments
 FORCE_REGENERATE="false"

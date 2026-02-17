@@ -130,7 +130,7 @@ func downloadLandscape() ([]byte, error) {
 
 func main() {
 	// Get output path from args or use default
-	outputPath := "supply-chain/util/data/cncf-projects.yaml"
+	outputPath := "util/data/cncf-projects.yaml"
 	if len(os.Args) > 1 {
 		outputPath = os.Args[1]
 	}
@@ -245,7 +245,7 @@ func main() {
 # Any manual changes will be overwritten on the next sync.
 #
 # Source: https://github.com/cncf/landscape/blob/master/landscape.yml
-# Generator: supply-chain/util/extract-projects
+# Generator: util/extract-projects
 # Workflow: .github/workflows/sync-cncf-projects.yml
 #
 # To update this file, either:

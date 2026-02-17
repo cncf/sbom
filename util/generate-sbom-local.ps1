@@ -50,8 +50,8 @@ $ErrorActionPreference = "Stop"
 
 $ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $RootDir = Split-Path -Parent (Split-Path -Parent $ScriptDir)
-$DataFile = Join-Path $RootDir "supply-chain\util\data\repositories.yaml"
-$SbomBaseDir = Join-Path $RootDir "supply-chain\sbom"
+$DataFile = Join-Path $RootDir "util\data\repositories.yaml"
+$SbomBaseDir = Join-Path $RootDir "sbom"
 
 function Write-Header($text) {
     Write-Host ""

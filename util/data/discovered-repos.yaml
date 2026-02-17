@@ -10,7 +10,7 @@
 # - Have at least one release
 # - Contain a go.mod file (Go-based project)
 #
-# Generator: supply-chain/util/discover-repos
+# Generator: util/discover-repos
 # Workflow: .github/workflows/discover-cncf-repos.yml
 #
 # ============================================================================

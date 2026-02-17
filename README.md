@@ -34,7 +34,7 @@ The SBOM generator:
 ## Directory Structure
 
 ```
-supply-chain/
+./
 ├── README.md                           # This file
 ├── sbom/                               # Generated SBOM files
 │   ├── index.json                      # Index of all generated SBOMs
@@ -112,7 +112,7 @@ Generates SBOMs for CNCF projects.
 Go tool that downloads the CNCF landscape and extracts all projects with status `graduated`, `incubating`, or `sandbox`.
 
 ```bash
-cd supply-chain/util/extract-projects
+cd util/extract-projects
 go run . ../data/cncf-projects.yaml
 ```
 
@@ -121,7 +121,7 @@ go run . ../data/cncf-projects.yaml
 Go tool that scans GitHub organizations of CNCF projects to find additional subproject repositories with releases.
 
 ```bash
-cd supply-chain/util/discover-repos
+cd util/discover-repos
 go run . /path/to/cncf-automation
 ```
 
@@ -136,7 +136,7 @@ The tool will:
 Go tool that removes SBOM folders for projects no longer in the CNCF list.
 
 ```bash
-cd supply-chain/util/cleanup-sbom
+cd util/cleanup-sbom
 go run . /path/to/cncf-automation --dry-run  # Preview changes
 go run . /path/to/cncf-automation            # Execute cleanup
 ```
@@ -146,7 +146,7 @@ go run . /path/to/cncf-automation            # Execute cleanup
 Go tool that generates the `index.json` file for all SBOMs.
 
 ```bash
-cd supply-chain/util/generate-index
+cd util/generate-index
 go run . /path/to/cncf-automation
 ```
 
@@ -164,32 +164,32 @@ go run . /path/to/cncf-automation
 
 ```bash
 # Process all projects
-./supply-chain/util/generate-sbom-local.sh
+./util/generate-sbom-local.sh
 
 # Process specific repo
-./supply-chain/util/generate-sbom-local.sh coredns/coredns
+./util/generate-sbom-local.sh coredns/coredns
 
 # Force regenerate
-./supply-chain/util/generate-sbom-local.sh --force coredns/coredns
+./util/generate-sbom-local.sh --force coredns/coredns
 
 # Set max releases per repo (default: 3)
-MAX_RELEASES=5 ./supply-chain/util/generate-sbom-local.sh
+MAX_RELEASES=5 ./util/generate-sbom-local.sh
 ```
 
 ### PowerShell Script (Windows)
 
 ```powershell
 # Process all projects
-.\supply-chain\util\generate-sbom-local.ps1
+.\util\generate-sbom-local.ps1
 
 # Process specific repo
-.\supply-chain\util\generate-sbom-local.ps1 -ProjectFilter "coredns/coredns"
+.\util\generate-sbom-local.ps1 -ProjectFilter "coredns/coredns"
 
 # Force regenerate
-.\supply-chain\util\generate-sbom-local.ps1 -Force -ProjectFilter "coredns/coredns"
+.\util\generate-sbom-local.ps1 -Force -ProjectFilter "coredns/coredns"
 
 # Set max releases per repo
-.\supply-chain\util\generate-sbom-local.ps1 -MaxReleases 5
+.\util\generate-sbom-local.ps1 -MaxReleases 5
 ```
 
 ### Environment Variables

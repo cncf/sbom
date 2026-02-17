@@ -70,7 +70,7 @@ jobs:
         id: set-matrix
         run: |
           FILTER="${{ github.event.inputs.project_filter }}"
-          PROJECTS_FILE="supply-chain/util/data/cncf-projects.yaml"
+          PROJECTS_FILE="util/data/cncf-projects.yaml"
           
           if [ ! -f "$PROJECTS_FILE" ]; then
             echo "Error: $PROJECTS_FILE not found. Run the sync-cncf-projects workflow first."
@@ -126,7 +126,7 @@ jobs:
         id: set-matrix
         run: |
           FILTER="${{ github.event.inputs.project_filter }}"
-          DISCOVERED_FILE="supply-chain/util/data/discovered-repos.yaml"
+          DISCOVERED_FILE="util/data/discovered-repos.yaml"
           BATCH_SIZE=250
           MAX_BATCHES=8
           
@@ -232,7 +232,7 @@ jobs:
           REPO="${{ matrix.repo }}"
           PROJECT_NAME="${{ matrix.name }}"
           SANITIZED_PROJECT=$(echo "$PROJECT_NAME" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr -cd '[:alnum:]-')
-          SBOM_BASE_DIR="supply-chain/sbom/${SANITIZED_PROJECT}/${REPO}"
+          SBOM_BASE_DIR="sbom/${SANITIZED_PROJECT}/${REPO}"
           GENERATED_FILES=""
           PROCESSED=0
           
@@ -404,7 +404,7 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
-          git add supply-chain/sbom/
+          git add sbom/
           
           if git diff --cached --quiet; then
             echo "No new SBOMs generated"
@@ -574,7 +574,7 @@ jobs:
 
       - name: Generate SBOM index
         run: |
-          cd supply-chain/util/generate-index
+          cd util/generate-index
           go run . "${{ github.workspace }}"
 
       - name: Commit index
@@ -582,8 +582,8 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
-          if ! git diff --quiet supply-chain/sbom/index.json 2>/dev/null; then
-            git add supply-chain/sbom/index.json
+          if ! git diff --quiet sbom/index.json 2>/dev/null; then
+            git add sbom/index.json
             git commit -m "chore(sbom): update SBOM index" || true
             git push origin ${{ github.ref_name }} || true
           fi

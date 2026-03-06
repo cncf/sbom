@@ -1,0 +1,610 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "kcl-lang/kcl-plugin v0.4.4",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "created": "2026-03-06T18:20:25Z",
+    "creators": [
+      "Tool: bom-v0.7.1",
+      "Tool: cncf-automation-sbom-generator"
+    ],
+    "licenseListVersion": "3.27",
+    "comment": "SBOM for CNCF project: kcl-lang/kcl-plugin@v0.4.4"
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://github.com/kcl-lang/kcl-plugin/releases/tag/v0.4.4",
+  "documentDescribes": [
+    "SPDXRef-Package-tmp.mQi9io6Djz"
+  ],
+  "files": [
+    {
+      "SPDXID": "SPDXRef-File-tmp.mQi9io6Djz-hello.go",
+      "fileName": "hello.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "3b5e502036574efd237f2262bb3d1641a75b9d84"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2d805fafbb27c978c29aa9aac85a76ad2ae6a300de47febe4095ca0fa7799a0d"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "c0e3b630dcf9124f7e211f4a2cee12a46f7120900873d34b616498deaa447109f1b36402da4f94823f249d3e5844de4faad07719bde4348b63b67aeb30c6e145"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.mQi9io6Djz-.gitignore",
+      "fileName": ".gitignore",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9d4e8d06f340b030b459d49fa90df68a2f8dea6c46159308cec6deb0312372dc"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "33e751ecc9a9932b4ecb96bfa0b1b91f141f7493c74b368da8932a013cfd94e11ccea5e9456640daa88361307489bda498bd7126c2d35a3df521cadb439d5fcd"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a0ee4d9179e03a9fed2765e04756cb45dec7007f"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.mQi9io6Djz-hello-api.md",
+      "fileName": "hello/api.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "73020f995f9e07625cc4cc413d1133aaadfcd8af"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ddf6d8a9e4bd8db71989e89c1697899920aed88a5462333c366aa8b7d13d4480"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "35f65264579cc86f7dcab88390e60c9c064f4268d432d41f4499c5639651ed0e660cab839ed55482f3b3aecaf9ca9c53837682a038c62fa40ca96fda644f5a52"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.mQi9io6Djz-projectC95context-pluginC95test.py",
+      "fileName": "project_context/plugin_test.py",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "59b3203288293497ac253f0d4fc7bb8216dc007e"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "904ec207c79b9e1be8f289b67db149fb459201ce83e2ff233a168913dbb00179"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "38a88203c50a42fa470c261d27df532d0b87c756532592e48fdb18ad49af1cea7ec902a41e1d48244b2188228e025b9ae1dc16de9092ebe8b3e9bb23942491eb"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.mQi9io6Djz-hello-plugin.py",
+      "fileName": "hello/plugin.py",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1346f1c3ebe484fd6b0452c61e014bf7dd696dfb2e0cc7432233e522d4a3317e"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "e668458630b53af19086eb4702e2f06386f391c5c412fde4e9d0d77ddfabcbbec485862be39169d344fd0b471aef935ee5489590b9148b2e6f4c44a1062809c6"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "58467f154ec7b2311e30b5d029febd0132a7f01b"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.mQi9io6Djz-hello-pluginC95test.py",
+      "fileName": "hello/plugin_test.py",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6408bf0778023e78bccf5c2994214cbedb216dd3"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d15cd8fb6e593b1bbd5de0c40b745222b2a736a44ee34ff868f8aaae8bdf0c5c"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b83d7f8e6ff28d5b86ca9e0df16e1acc2e82874b4a80031f3b4a96deff53a3799b1f7e204473c8717ba773ffe928592b6baeb60a8461fd4e6264dc408919cbc2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.mQi9io6Djz-go.mod",
+      "fileName": "go.mod",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b5a1efdaf3239520c63a0f7571f628a83ce60cd75f4cbf47f06434329c86adf4"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "25bee267f46fdf69a4987af694d6960f8015da83198340ec79818829feb5055c10ac1d2e11e6e8835588423a341f99f3f97b35ca329f5297a4cc4cd01ea9daf7"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6debf7278b4f9fd473ec5fc2de949c478576ae60"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.mQi9io6Djz-Makefile",
+      "fileName": "Makefile",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "BINARY",
+        "APPLICATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6ae4b3d6b7dfdc0c316a1639ccbbca1db80f29ba"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "962a27f172f01a0623e3c65b2db2b6527324bba6e447fdab892ab6f7afd72494"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "511f5ba1b82ada1fd863dbfbba5e3b53c9c9f39430f69edae19f03f6d248bc65780408c16aea5bf9ca2c61f2d64bb1365c22aca60fd7823ef26fbcb89d3490c5"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.mQi9io6Djz-projectC95context-plugin.py",
+      "fileName": "project_context/plugin.py",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ffd15d1950afb252960b050fe3a484f70ebd71bc"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8f39defcf726483dd98741df3074e2a6bf3787704f3412d416087668852f75b8"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "6aaf8f86cdb63628b395ce090a56622e3d3c7a1fdf9e96c434f3e5d8c4f3e67086cb6d6c5360bd59c37f24abf7d1b6e2367c9a450faaa8fbfcfe467cc42f04f5"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.mQi9io6Djz-.github-workflows-cla.yml",
+      "fileName": ".github/workflows/cla.yml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "9e32d0fe7a1e768d1acb5f6cc6a43d09a0f5ab28d3b51c66046045c352ca80e469ba1bea375d470ce84731ae1ed9d9faf30cbecb8aa0331a7d9f721b9f48fc91"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c8dbb36870439a504fe3aa345237a1c6beb092e1"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0c1d72cb3750d9b78721d6e7514153bb0bb5cde10b3d7711395b1360ab671d7d"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.mQi9io6Djz-aC95embed.go",
+      "fileName": "a_embed.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "bbbcaabf2bee8a153717816f8b9b13b073fe2a06"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0dbb0525203b28879e5ee480b45a0a2acf11b8a3b99daa851ef4edd5a0901061"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "130b85c49806b7ca3e7167f67acd393c3490055c33070ead2cffb900e1e1b194e08c73f6ff5abe6b72b83ea274ca8f0d2f3911ee8a842561ee3b18e814955d20"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.mQi9io6Djz-hello-helloC95test.k",
+      "fileName": "hello/hello_test.k",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "5c4a62ade6a00bc69c40c2e160e2aff9ee88c921"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f675450363c165dd8020ea86a046bfa71b76faa3b273f5dbba6fe7a79b9e4f16"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "820d35f3de6672a39bdcebdce3bc625d16c758b699291615a24a74ee2b1aec9ab47cce37fd89694a6982e9f5e6c9e376174dd0b662239d8d2a8e962b4fb9bed4"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.mQi9io6Djz-plugins.txt",
+      "fileName": "plugins.txt",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "89cb24a03684ad5182bce3bf5a51a90de0ccad72776c1d9fdadcab8c2dfa1eee"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "8e992e3c41dda864a0a44ae9730f36168cf6e27449a22d94ee6f241ff182d45859675563a9c200f2abf3e7c1ecf90f72f0e5ca2409199a4f095c051a36733bfb"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "de46478937930f9a5dd9112eba29dc2f333346b1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.mQi9io6Djz-README.md",
+      "fileName": "README.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "0bd5d4663aca2edfa08f0b18d749a6742e98ab51bc414bdf5698505a1fcdb794965bceb47c96d74566567f46bf8bc7536685c3b373c7d5736c7f87d0723a7c22"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "84c84ae28bb80a2c34732c354fa0ef5115f75971"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5cd6760d48cb8e026434fbc5f9e57da7177c12982dcb1906fe79a147cf834237"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.mQi9io6Djz-VERSION",
+      "fileName": "VERSION",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "BINARY",
+        "APPLICATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "11ee23b8fc2fc619d6eab6277adb5a527261067ac01ccfc3e11857f55bf18bcd"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "638f27b47273459cf1d5b69e94237dab332e8f7036966043f1658e29bf45e7beefbb6f0d6925b8fe7e48d05ee37e4c6cb0874f8d72a3a1d2dc5beb64d2cba6c5"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a73777f588f6e474db8b32b1c13fd9f5f318c807"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.mQi9io6Djz-projectC95context-api.md",
+      "fileName": "project_context/api.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "02dd233d4a41ea52286ba0f9666b450614c70ba3"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b97cb2c49e2da31ec30af2840aca0cff5cbfcf8e08e1462f740e7d4043bad961"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "4a8efd6c0d77555e7f78f8265102be07c725a276a3eebb59078b4b6b1574c4075e070911352b7a8dca841e96c78c353f1f3ff360e04e0379ed714af874898588"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.mQi9io6Djz-LICENSE",
+      "fileName": "LICENSE",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "26add7f7fb98fea4f180937290743d1b7ca03ea5"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "283ea6cc2997a1a70da0049e09adf9317bb60ca1b51279b65196b83a69e1996b"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "fdae7ed259455ca9fa45939e7f25cbb4de29831cda16d9151de25a5f6e9d9be43b053f4fd3b896026239fca77abce04f543d591c501ecf4ce18c854bc0a51660"
+        }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-tmp.mQi9io6Djz",
+      "name": "tmp.mQi9io6Djz",
+      "versionInfo": "",
+      "filesAnalyzed": true,
+      "licenseConcluded": "Apache-2.0",
+      "downloadLocation": "NONE",
+      "copyrightText": "NOASSERTION",
+      "hasFiles": [
+        "SPDXRef-File-tmp.mQi9io6Djz-README.md",
+        "SPDXRef-File-tmp.mQi9io6Djz-.gitignore",
+        "SPDXRef-File-tmp.mQi9io6Djz-.github-workflows-cla.yml",
+        "SPDXRef-File-tmp.mQi9io6Djz-VERSION",
+        "SPDXRef-File-tmp.mQi9io6Djz-go.mod",
+        "SPDXRef-File-tmp.mQi9io6Djz-aC95embed.go",
+        "SPDXRef-File-tmp.mQi9io6Djz-LICENSE",
+        "SPDXRef-File-tmp.mQi9io6Djz-hello-api.md",
+        "SPDXRef-File-tmp.mQi9io6Djz-hello-plugin.py",
+        "SPDXRef-File-tmp.mQi9io6Djz-hello-helloC95test.k",
+        "SPDXRef-File-tmp.mQi9io6Djz-hello.go",
+        "SPDXRef-File-tmp.mQi9io6Djz-hello-pluginC95test.py",
+        "SPDXRef-File-tmp.mQi9io6Djz-projectC95context-api.md",
+        "SPDXRef-File-tmp.mQi9io6Djz-Makefile",
+        "SPDXRef-File-tmp.mQi9io6Djz-projectC95context-pluginC95test.py",
+        "SPDXRef-File-tmp.mQi9io6Djz-plugins.txt",
+        "SPDXRef-File-tmp.mQi9io6Djz-projectC95context-plugin.py"
+      ],
+      "licenseInfoFromFiles": [
+        "Apache-2.0"
+      ],
+      "checksums": [],
+      "packageVerificationCode": {
+        "packageVerificationCodeValue": "ec37478bd672e2387e327e7976c9ccb8b015b688"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.mQi9io6Djz",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.mQi9io6Djz-README.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.mQi9io6Djz",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.mQi9io6Djz-.gitignore"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.mQi9io6Djz",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.mQi9io6Djz-.github-workflows-cla.yml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.mQi9io6Djz",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.mQi9io6Djz-VERSION"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.mQi9io6Djz",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.mQi9io6Djz-go.mod"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.mQi9io6Djz",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.mQi9io6Djz-aC95embed.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.mQi9io6Djz",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.mQi9io6Djz-LICENSE"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.mQi9io6Djz",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.mQi9io6Djz-hello-api.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.mQi9io6Djz",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.mQi9io6Djz-hello-plugin.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.mQi9io6Djz",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.mQi9io6Djz-hello-helloC95test.k"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.mQi9io6Djz",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.mQi9io6Djz-hello.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.mQi9io6Djz",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.mQi9io6Djz-hello-pluginC95test.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.mQi9io6Djz",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.mQi9io6Djz-projectC95context-api.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.mQi9io6Djz",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.mQi9io6Djz-Makefile"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.mQi9io6Djz",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.mQi9io6Djz-projectC95context-pluginC95test.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.mQi9io6Djz",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.mQi9io6Djz-plugins.txt"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.mQi9io6Djz",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.mQi9io6Djz-projectC95context-plugin.py"
+    }
+  ],
+  "annotations": [
+    {
+      "annotationDate": "2026-03-06T18:20:26Z",
+      "annotationType": "OTHER",
+      "annotator": "Tool: cncf-automation",
+      "comment": "Repository: kcl-lang/kcl-plugin\nVersion: v0.4.4"
+    }
+  ],
+  "hasExtractedLicensingInfo": [
+    {
+      "licenseId": "LicenseRef-kusionstack-io-kcl-plugin",
+      "extractedText": "License: Apache-2.0",
+      "name": "Apache-2.0",
+      "comment": "Package: kusionstack.io/kcl-plugin"
+    }
+  ]
+}

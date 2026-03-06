@@ -1,0 +1,437 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "containerd/typeurl v2.2.0",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "created": "2026-03-06T20:33:24Z",
+    "creators": [
+      "Tool: bom-v0.7.1",
+      "Tool: cncf-automation-sbom-generator"
+    ],
+    "licenseListVersion": "3.27",
+    "comment": "SBOM for CNCF project: containerd/typeurl@v2.2.0"
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://github.com/containerd/typeurl/releases/tag/v2.2.0",
+  "documentDescribes": [
+    "SPDXRef-Package-tmp.Qw1XpANeWV"
+  ],
+  "files": [
+    {
+      "SPDXID": "SPDXRef-File-tmp.Qw1XpANeWV-go.mod",
+      "fileName": "go.mod",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c8020cf2f868e0da084bffeb15fec86386b5a491"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "41f11444e3051772fefed628d815ad4bf9ebf02ca487dd03db2a65c1c229c51d"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "4ddf49e439d3dc37b67447d44d01e8f57106a8b335777e9f447d52ca491598feed8db4404d5189b46d87fad2e86f5105ceeb099b25cd70872659a33f7ddf2f29"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.Qw1XpANeWV-typesC95test.go",
+      "fileName": "types_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "59b5cc6e77e0b76b0e37f3b73d26299e22447a66"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "cf5e407ae5e869a83ab554a3b701fe5d319cff1af4a2e808107d14f80d666b07"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "ffb1a235a62349a35ce97a1cd8e7d59a036490edc1536b5a86e5e5643e830e83ba1be9725ade43dbb20c357ea3780c4296be860d49fc6dba5d0453927dd1a3c4"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.Qw1XpANeWV-.gitignore",
+      "fileName": ".gitignore",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "5b802b08b92af7bed633337e80adafe267138941434cdb2e79136f12977bb55c055c52041aa775d57c7e926e6ba5fcc392e9c137862b7496573a7ee87d132ca8"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "98910e7818c690862f5a823c47097b09e7e14430"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "bf6105c15a11400006f58ceff4ec05b3099a0dffa6ed7b7e66b9a701dc70aa24"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.Qw1XpANeWV-LICENSE",
+      "fileName": "LICENSE",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "Pixar"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "698823e75afcb392f7f7a4a44765add284dfd9be4917e23d29bf95a2c11b0273730b7cdf29ee9f73d67afd136af05df8e3f92227a0feabf16801d149bbe71249"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "d3b7a70b03b43d4e7205d178100581923a0baad2"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4bbe3b885e8cd1907ab4cf9a41e862e74e24b5422297a4f2fe524e6a30ada2b4"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.Qw1XpANeWV-types.go",
+      "fileName": "types.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "4cb017a32126d18235e55cccbd2ba0ae500eb33c9dcae1c602d5a4618f0e40fadefd64c0f4096f7413f4ea2b3d944cec90516cf6309897ab342425b1506d879a"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "2964a01865e81ae4a3d3cf380bb938fc26a82aea"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "213733a43da65bdd426405f4e557882414a97727962b9c893cf030051cc35bfb"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.Qw1XpANeWV-marshalC95test.go",
+      "fileName": "marshal_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a450d01199bb330c6ca0e05eb0e9a98b0d7eee61"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d373cba3da7802f455703a7a477cc96633f1911fc955f2a2a98c5982adb5ea6e"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "7f13a52721a209f8105c79800741d50f1f9d8c84a192ed11e795ccbea52873fb025111a9d10f0dcbc475bcbd387c2f9d2c4a852f8aab2c07ed2787dd035ec656"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.Qw1XpANeWV-README.md",
+      "fileName": "README.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "45bede4b41af046c0dc4de68b8d9aa55629eb087839daa874c9d0394724712cf2f601b362129c6354ab3b76ff33a91fecc865e5ac3156ee93e114392cb0fd52c"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "eb1517f9bbd3196efc59d8c7749842c6b438b89d"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8d5095517a11a4b39b5ef4b52531f45c1ed31c0b4629432bfc9d076b3a58cd50"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.Qw1XpANeWV-go.sum",
+      "fileName": "go.sum",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "94a64aa7aa39852464266c1cac00cec1386f0272"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a9a5e4f3d871e1589c0a407e5027a79c2d91a4e290132cc42cb6e96af051e436"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "49673f406c5f26e0298d85d343eb415f5d35196f4f001ccd95178d01e988c2c4cf6a0f2c4db97f0736927970c6305380737ceacf391185ccdcfa94c3958c27ab"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.Qw1XpANeWV-doc.go",
+      "fileName": "doc.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "dd00f08b27a04b3fab5723f2932e2ac1b4e68329"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6ac8da3c727bd5efdf28d1f479e62af1a46de5d885441fcf68766a8aaf1550d1"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f722b1c9ede94351843012f4a6c0739cc1414080c44d0dd6b4a6fc8a6a12751a0e7432d5627ca630b34708ec4013c444c033bacc7f9e8b7eeb97e29c89cfbe0f"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.Qw1XpANeWV-.github-workflows-ci.yml",
+      "fileName": ".github/workflows/ci.yml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "2340a098b345e436c9a414b3980a605ff9b08af4"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9f392a9d88dfbbe0dcf35b17ba6c62de56bae98d5aa448d510134d9bb8c4deac"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "18bce992242b90b0f0a15901a4f6fcc5817ef8a8831dfe7b3d12ee79eb4c0db02a480e07e4ebe604cc27c1dcc97f1031dacade43d04ea7374e22536b8d63ff6c"
+        }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-tmp.Qw1XpANeWV",
+      "name": "tmp.Qw1XpANeWV",
+      "versionInfo": "",
+      "filesAnalyzed": true,
+      "licenseConcluded": "Pixar",
+      "downloadLocation": "NONE",
+      "copyrightText": "NOASSERTION",
+      "hasFiles": [
+        "SPDXRef-File-tmp.Qw1XpANeWV-.gitignore",
+        "SPDXRef-File-tmp.Qw1XpANeWV-.github-workflows-ci.yml",
+        "SPDXRef-File-tmp.Qw1XpANeWV-doc.go",
+        "SPDXRef-File-tmp.Qw1XpANeWV-go.mod",
+        "SPDXRef-File-tmp.Qw1XpANeWV-go.sum",
+        "SPDXRef-File-tmp.Qw1XpANeWV-LICENSE",
+        "SPDXRef-File-tmp.Qw1XpANeWV-marshalC95test.go",
+        "SPDXRef-File-tmp.Qw1XpANeWV-types.go",
+        "SPDXRef-File-tmp.Qw1XpANeWV-README.md",
+        "SPDXRef-File-tmp.Qw1XpANeWV-typesC95test.go"
+      ],
+      "licenseInfoFromFiles": [
+        "Pixar"
+      ],
+      "checksums": [],
+      "packageVerificationCode": {
+        "packageVerificationCodeValue": "0dd5a7e5967d3f16b6719f1535f3c965509916d3"
+      }
+    },
+    {
+      "SPDXID": "SPDXRef-Package-gomod-github.com-gogo-protobuf-v1.3.2",
+      "name": "github.com/gogo/protobuf",
+      "versionInfo": "v1.3.2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "BSD-3-Clause",
+      "downloadLocation": "https://proxy.golang.org/github.com/gogo/protobuf/@v/v1.3.2.zip",
+      "copyrightText": "Copyright (c) 2013, The GoGo Authors. All rights reserved.\n\nProtocol Buffers for Go with Gadgets\n\nGo support for Protocol Buffers - Google's data interchange format\n\nCopyright 2010 The Go Authors.  All rights reserved.\nhttps://github.com/golang/protobuf\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are\nmet:\n\n    * Redistributions of source code must retain the above copyright\nnotice, this list of conditions and the following disclaimer.\n    * Redistributions in binary form must reproduce the above\ncopyright notice, this list of conditions and the following disclaimer\nin the documentation and/or other materials provided with the\ndistribution.\n    * Neither the name of Google Inc. nor the names of its\ncontributors may be used to endorse or promote products derived from\nthis software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\n\"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT\nLIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\nA PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT\nOWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,\nDATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY\nTHEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/github.com/gogo/protobuf@v1.3.2",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-gomod-google.golang.org-protobuf-v1.27.1",
+      "name": "google.golang.org/protobuf",
+      "versionInfo": "v1.27.1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "BSD-3-Clause",
+      "downloadLocation": "https://proxy.golang.org/google.golang.org/protobuf/@v/v1.27.1.zip",
+      "copyrightText": "Copyright (c) 2018 The Go Authors. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are\nmet:\n\n   * Redistributions of source code must retain the above copyright\nnotice, this list of conditions and the following disclaimer.\n   * Redistributions in binary form must reproduce the above\ncopyright notice, this list of conditions and the following disclaimer\nin the documentation and/or other materials provided with the\ndistribution.\n   * Neither the name of Google Inc. nor the names of its\ncontributors may be used to endorse or promote products derived from\nthis software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\n\"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT\nLIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\nA PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT\nOWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,\nDATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY\nTHEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/google.golang.org/protobuf@v1.27.1",
+          "referenceType": "purl"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.Qw1XpANeWV",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.Qw1XpANeWV-.gitignore"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.Qw1XpANeWV",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.Qw1XpANeWV-.github-workflows-ci.yml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.Qw1XpANeWV",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.Qw1XpANeWV-doc.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.Qw1XpANeWV",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.Qw1XpANeWV-go.mod"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.Qw1XpANeWV",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.Qw1XpANeWV-go.sum"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.Qw1XpANeWV",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.Qw1XpANeWV-LICENSE"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.Qw1XpANeWV",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.Qw1XpANeWV-marshalC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.Qw1XpANeWV",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.Qw1XpANeWV-types.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.Qw1XpANeWV",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.Qw1XpANeWV-README.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.Qw1XpANeWV",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.Qw1XpANeWV-typesC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.Qw1XpANeWV",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-gomod-github.com-gogo-protobuf-v1.3.2"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.Qw1XpANeWV",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-gomod-google.golang.org-protobuf-v1.27.1"
+    }
+  ],
+  "annotations": [
+    {
+      "annotationDate": "2026-03-06T20:33:25Z",
+      "annotationType": "OTHER",
+      "annotator": "Tool: cncf-automation",
+      "comment": "Repository: containerd/typeurl\nVersion: v2.2.0"
+    }
+  ],
+  "hasExtractedLicensingInfo": [
+    {
+      "licenseId": "LicenseRef-github-com-containerd-typeurl-v2",
+      "extractedText": "License: Apache-2.0",
+      "name": "Apache-2.0",
+      "comment": "Package: github.com/containerd/typeurl/v2"
+    },
+    {
+      "licenseId": "LicenseRef-github-com-gogo-protobuf-proto",
+      "extractedText": "License: BSD-3-Clause",
+      "name": "BSD-3-Clause",
+      "comment": "Package: github.com/gogo/protobuf/proto"
+    },
+    {
+      "licenseId": "LicenseRef-google-golang-org-protobuf",
+      "extractedText": "License: BSD-3-Clause",
+      "name": "BSD-3-Clause",
+      "comment": "Package: google.golang.org/protobuf"
+    }
+  ]
+}

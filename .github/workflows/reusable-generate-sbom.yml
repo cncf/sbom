@@ -28,7 +28,7 @@ on:
 
 jobs:
   generate:
-    runs-on: ubuntu-latest
+    runs-on: oracle-vm-2cpu-8gb-x86-64
     strategy:
       fail-fast: false
       max-parallel: 5

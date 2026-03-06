@@ -2,8 +2,8 @@
 # WARNING: THIS FILE IS AUTO-GENERATED - DO NOT EDIT MANUALLY!
 # ============================================================================
 #
-# This file contains additional repositories discovered in CNCF project
-# organizations that are not listed in the main cncf-projects.yaml.
+# This file contains additional subproject repositories discovered in CNCF
+# project organizations that are not listed in the main cncf-projects.yaml.
 #
 # These repositories:
 # - Belong to the same GitHub org/user as a CNCF project
@@ -16,9 +16,9 @@
 # ============================================================================
 
 metadata:
-  description: Additional repositories discovered in CNCF project organizations. These repos have releases and contain go.mod.
+  description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain go.mod.
   auto_generated: true
-  last_updated: "2026-02-13T21:35:53Z"
+  last_updated: "2026-03-06T15:58:12Z"
 repositories:
   - owner: antrea-io
     repo: antrea-ui
@@ -3657,6 +3657,12 @@ repositories:
     project_status: incubating
     discovered_by: org-scan from kubevirt/kubevirt
   - owner: kubevirt
+    repo: kubevirt-aie-webhook
+    name: kubevirt-aie-webhook
+    category: build
+    project_status: incubating
+    discovered_by: org-scan from kubevirt/kubevirt
+  - owner: kubevirt
     repo: kubevirt-migration-controller
     name: kubevirt-migration-controller
     category: build
@@ -5144,6 +5150,12 @@ repositories:
     category: observability
     project_status: sandbox
     discovered_by: org-scan from perses/perses
+  - owner: perses
+    repo: spec
+    name: spec
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from perses/perses
   - owner: pipe-cd
     repo: piped-plugin-sdk-go
     name: piped-plugin-sdk-go
@@ -5186,6 +5198,18 @@ repositories:
     category: storage
     project_status: sandbox
     discovered_by: org-scan from piraeusdatastore/piraeus-operator
+  - owner: pixie-io
+    repo: grafana-plugin
+    name: grafana-plugin
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from pixie-io/pixie
+  - owner: pixie-io
+    repo: pxapi.go
+    name: pxapi.go
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from pixie-io/pixie
   - owner: project-hami
     repo: HAMi-DRA
     name: HAMi-DRA
@@ -5219,6 +5243,12 @@ repositories:
   - owner: projectcontour
     repo: contour-authserver
     name: contour-authserver
+    category: other
+    project_status: incubating
+    discovered_by: org-scan from projectcontour/contour
+  - owner: projectcontour
+    repo: helm-charts
+    name: helm-charts
     category: other
     project_status: incubating
     discovered_by: org-scan from projectcontour/contour
@@ -5372,6 +5402,48 @@ repositories:
     category: storage
     project_status: graduated
     discovered_by: org-scan from rook/rook
+  - owner: score-spec
+    repo: docs
+    name: docs
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from score-spec/spec
+  - owner: score-spec
+    repo: score-aca
+    name: score-aca
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from score-spec/spec
+  - owner: score-spec
+    repo: score-compose
+    name: score-compose
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from score-spec/spec
+  - owner: score-spec
+    repo: score-go
+    name: score-go
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from score-spec/spec
+  - owner: score-spec
+    repo: score-implementation-sample
+    name: score-implementation-sample
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from score-spec/spec
+  - owner: score-spec
+    repo: score-k8s
+    name: score-k8s
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from score-spec/spec
+  - owner: score-spec
+    repo: score-radius
+    name: score-radius
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from score-spec/spec
   - owner: serverlessworkflow
     repo: sdk-go
     name: sdk-go
@@ -5523,6 +5595,12 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from spiffe/spire
   - owner: spinframework
+    repo: otel-plugin
+    name: otel-plugin
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from spinframework/spin-operator
+  - owner: spinframework
     repo: runtime-class-manager
     name: runtime-class-manager
     category: orchestration
@@ -5624,6 +5702,12 @@ repositories:
     category: automation
     project_status: sandbox
     discovered_by: org-scan from tinkerbell/tinkerbell
+  - owner: trickstercache
+    repo: mockster
+    name: mockster
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from trickstercache/trickster
   - owner: truefoundry
     repo: CruiseKube
     name: CruiseKube

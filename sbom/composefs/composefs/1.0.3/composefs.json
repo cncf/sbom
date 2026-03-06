@@ -1,0 +1,2470 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "composefs - composefs v1.0.3",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "created": "2026-03-06T20:07:52Z",
+    "creators": [
+      "Tool: bom-v0.7.1",
+      "Tool: cncf-automation-sbom-generator",
+      "Tool: go-licenses"
+    ],
+    "licenseListVersion": "3.27",
+    "comment": "SBOM generated for CNCF project: composefs (containers/composefs@v1.0.3)"
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://github.com/containers/composefs/releases/tag/v1.0.3",
+  "documentDescribes": [
+    "SPDXRef-Package-tmp.NyCw7RmMz5"
+  ],
+  "files": [
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-tools-mkcomposefs.c",
+      "fileName": "tools/mkcomposefs.c",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "ab1458aa162c7c288cbe818d19a3fffe028d10f5169e0f6b0347736a106b562b67ba5a145e69f7fa90f65cf75fe754ee2e4fab8bd3acc4d0b5dd108c9f456927"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "23bbb78eba69c5c5f1311dfaea51e374c4abddef"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a935d3564cd616b9062604b461a74c79912ffc098740d930222f150a41d9b3f3"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-COPYING.LESSERv3",
+      "fileName": "COPYING.LESSERv3",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e7d563f52bf5295e6dba1d67ac23e9f6a160fab9"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a853c2ffec17057872340eee242ae4d96cbf2b520ae27d903e1b2fef1a5f9d1c"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "12291afdbc1daf063a0829e93fbd95fb8eac599cfb962408dd900ce261dc1117d3ae2b7fd27b90c3ed69e57c4398a0b678b0ffd1df8ba7c1ed02d0280825d3af"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-COPYING",
+      "fileName": "COPYING",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-or-later",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "GPL-2.0-or-later"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4cc77b90af91e615a64ae04893fdffa7939db84c"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "aee80b1f9f7f4a8a00dcf6e6ce6c41988dcaedc4de19d9d04460cbfb05d99829ffe8f9d038468eabbfba4d65b38e8dbef5ecf5eb8a1b891d9839cda6c48ee957"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-hash.c",
+      "fileName": "libcomposefs/hash.c",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6f4dbd3c24923490cde260dac7f4aa1b48346b5415dbbf5ebe635ed8b331f9db"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "e08c112dbfeb9c86110958420e2fa6f5e82165568183ddbee79385d49fc8612c056e4f0feaa46f5bfcd7ebbc74da50a7a21c14b97080165f381814753127adaa"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "5ec1a8a35a91183c5e42ad6bfaf6b807b684d7f5"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-lcfs-writer-erofs.c",
+      "fileName": "libcomposefs/lcfs-writer-erofs.c",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "BSD-2-Clause",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "BSD-2-Clause"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "71b7a9793af213d6da397e24932d3bd1551d28a1"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "31d2455a10bd56d392978ca0ddf1875fa8ad8c182b584adc6f47300bb6f10ab8"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "4fc5274e72881d0026f312c33f12420876d470073264c51800ccbdec1b8eee15f156378383fe1c5eee0d711ca0c042add22ef8578d6d1122b479b3e289b0e5fb"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-man-mkcomposefs.md",
+      "fileName": "man/mkcomposefs.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "445cd5d4888fb5b23a0685ccecdd39197a46106a"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d35cabc9b8779f64ce3cc88844a1c4eefdc88886b883ae016f5aec03c5f2e983"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "cc9adee01b5d76b02213e236fd47c3bfe4996846ac53a9224f14842563107d091f5fdf9a6e414ff05ee1f78f5fe69c0af25dbef80fc9e928a93a115fccb0c18d"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-config-with-hard-link.dump.gz",
+      "fileName": "tests/assets/config-with-hard-link.dump.gz",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "ARCHIVE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "3e650335c9181be1f4da4188fcffb96b7d4b8084"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "97eac51d1b6c54760c39d13456aca0b91addf814e4f2156505e908c1ae515f05"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "07c68f580be7d23b7b39a677f5084bcbb2e551a44208ee75d691d8bffc7e7ac7a6e585c239285b241d8de7c99d178bc05dd896240d783538492e9c4e4eab24cd"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-config-with-hard-link.dump.gz.sha256",
+      "fileName": "tests/assets/config-with-hard-link.dump.gz.sha256",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "de64de13084bb42517ef4562d7d58ed927d30fc7"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6311e541897918888c07d2f79e9fcc55121ec8d399159535a03fdc7eae6ddabf"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b3fc464b2a1ddef6ce112b8d9a235b64f289002adfec6d944eb7cdfee097f4018fee1b2a3837b9bfe86d6636b4730bd2bd46f68aca0e1bf768da4640e20f66c1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-tools-Makefile.am",
+      "fileName": "tools/Makefile.am",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "92d01be76d9ca8847ca636cfd575accfead9f12f"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c9e289193345aade5506b44d41ce45e5fed23185651f868d4960c5cfcd432843"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "e1d5718973628283ecce2b0511d54967825d43fb3d528562400509395b74b158e730e868a2b5e6dbff27280ee26859793e0afa22c27502b860b7364dca139239"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-lcfs-mount.c",
+      "fileName": "libcomposefs/lcfs-mount.c",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "869341b35603a13db2c6578e22a013d79638407d"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d9bdbdbd412e4d0efb6ec79c8293fd2e95fb4915c43079940396df904d557c42"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "50e8c6dd697a0922fe000658d200571266bb8ee4a054bbd1048e45a35a7f47cf4f5051d6d9593d4d61af238565eae85cc55ba513986a78c96e03e99d2d27d37b"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-special.dump.sha256",
+      "fileName": "tests/assets/special.dump.sha256",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f8b6c311d24bab04310ce34fc6541948ccccf7a0"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7e9ceb24af3e0513c91ab43dfc384dba96d5da158e3cf97832ee3d146e5e6c3c"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "a78870a7a5d2513bd8c0d5e9d555624fd37a8ffac75f206daf7e16c42f884cbfe99e303e60ef86ea8ed3adba020c1354a41087a22783828d5c7b00bc97cede48"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-lcfs-mount.h",
+      "fileName": "libcomposefs/lcfs-mount.h",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e88e08b37cd88f7baccd773f4d4946a1c7d96d2b"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ecf5d0c126648310cbf00c4e1cbf99c407a3ee8cda96194e50b8b1d760b947b4"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "203e78f9060a271fcce81f67ea2a66490a570fb5069d474f32cf6b42990e347422e861bab79d22b3eed97cc40507a9f0cb3a56c1181e16e413d251415dd7d42e"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-cs9-x86C9564-developer.dump.gz.sha256",
+      "fileName": "tests/assets/cs9-x86_64-developer.dump.gz.sha256",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "cf760235aae37316791aa492ab3ef4e70136f0aa"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "528fb079bdd1ed3e276204beeae992c455b365e0d8da2ed0aa885a33b0bad868"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "5d3b552350237f64fecb3f6183c4091486322b2d9732f9ea131589528289c5e1195f8323e7c7e41c43b6e7f50a8d767d228c99086ccdab8dea2a8ceff3fcd1fa"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-f36-x86C9564-silverblue.dump.gz",
+      "fileName": "tests/assets/f36-x86_64-silverblue.dump.gz",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "ARCHIVE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e51c537cbc471971049a03811b5f3ab737f817313917a71b225e8460669fdd4f"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "26fc3d8a62c58f630ce278ddb9190ec75f684f8dafbeff5675da2d10f3ff50fd21fee89933125ef736d94325cda5d569e938c2a3a6a4ff333cc7665f8e608744"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "2b76f89d7a95d0f8db7e609c6fee175b81d75ba7"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-tests-Makefile.am",
+      "fileName": "tests/Makefile.am",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f82f8db4ab04a4801314ca2eb442d60f3151812e"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "cadfd81177cbd97f60a2d8b24723b307e24aa608572d98b56fef10a19064f9c3"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "48f814cab77cbbc6381977b5dc19d8eab4afca0d5c926bf8f817e38ed67c1d223e06e56cf92a03fadb1ea638f1260d9bbf35861a3ea94a0fe63dd38af3305c5f"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-hacking-installdeps.sh",
+      "fileName": "hacking/installdeps.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "1395c72cd0748ac831ba26fdf267f9055d496a22"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c635ad9e5c93286903edd412dfc4e4d9e38f74ef746f83f2be71107e20a6b7be"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "a0c54a9a6dfb35f5b4761f4b43ea73d754715150cfadbef90647d4c5f8b74900d5b608dd65ecfedfe3945b4019809ec9907141e8db86a6d47382107abbb93942"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-lcfs-internal.h",
+      "fileName": "libcomposefs/lcfs-internal.h",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "83c2664091db516797905824e0ddb37e1f5ac457"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f0229625f27249f448b3546c986116bc5b36c7559901a67792825a2ebe2353d4"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "ebf4d015bd0580a27d2a6017c1f8923ff84533ee14deea720a4cedd467ebe6770b298072176774e890cc877d43fe6dc43904c1aa0acb9eba304fc6dbe613cb33"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-erofsC95fsC95wrapper.h",
+      "fileName": "libcomposefs/erofs_fs_wrapper.h",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6231c7fca6e8ced31c5fa908ea7f4f414181f4eefb7e445a8f6cdd8ea5931774"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "92aba2841d80245989fc1f864d9f45fc2b4c5a1aa61863d877ecf53c05a1fb8e784dcc92a31fa6b555a4ca1d1418fe598aaba16e0a82fbdfce3bc125ed47c503"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f2083e6f87c50fb3c10d65836ad84c8099fef876"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-tools-COPYING",
+      "fileName": "tools/COPYING",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-3.0-only",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "GPL-3.0-only"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "7633623b66b5e686bb94dd96a7cdb5a7e5ee00e87004fab416a5610d59c62badaf512a2e26e34e2455b7ed6b76690d2cd47464836d7d85d78b51d50f7e933d5c"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "8624bcdae55baeef00cd11d5dfcfa60f68710a02"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-f36-x86C9564-silverblue.dump.gz.sha256",
+      "fileName": "tests/assets/f36-x86_64-silverblue.dump.gz.sha256",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "84a2975d04a2dd09b99281e029f91060385549956c8c5b95fdb16d474d494a76"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "242353b570c3f0255ca8e952c7b5313fbb6b7b1d4fa2711be8612eeaaaf395537d7b0425d363a63dfa9a2cbd32ae8a0aaafbeb4087282cc1461085ab6de380b2"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "597a8a07cf58fc800ff0d99dbd24ff5463b70a15"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-config.dump.gz.sha256",
+      "fileName": "tests/assets/config.dump.gz.sha256",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1853ed77b6aed67c33b77f0e806b5da3f308b51152e96975e5868c3b0870b0d9"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "88770ff8c537cd02436e1d8b25554b7974596d290364ed8b309f6da054188b92d75b909c89beeba42e980735505521e1d9db014ae3ce16f51bb80a06156a8870"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "24415c2d7ad3251b6a590a043d2c97a655672c1a"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-lcfs-writer.h",
+      "fileName": "libcomposefs/lcfs-writer.h",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "d3613cb76f334a1bd3b30b23ac0b444749ecbeac"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "20714eced70899ce65f3329328f78d5c10e672d64f6faece6ce5c189acabef4d"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "7b27fb5ba02726aa2938fc174612cc692b5f60752ba03a8571bf67aa7da4993f4e840bcdb36ea2e4bffd3ad6b92164b45ac254d3c7c0aa6c94a0401ab7d12a80"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-Makefile.am",
+      "fileName": "libcomposefs/Makefile.am",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e0fb395c9c05de10ad7a9ef3513ea572328d8086952e124f37cb04e033cceef2"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "acf042356c3fbc23c1a3353559bff69a68e3fc6aa39aabf19b3e494bb4485fe7a95564c21f66a4c55162a54b24aa11286e22700a8eef36fe73223ac378132c06"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c3095e064d03104ef3fca892e680c979d628c0e3"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-tests-test-lib.sh",
+      "fileName": "tests/test-lib.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "bc1e5d981f186104c13e2bfe0695adfd826fafbf48d78f4b68fea433a290be84"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b8754c6c0cecbae5d122fa25ffba4e399c439cc6bb51af820ab789a8a8b489dfc94dc010c009ec512f338156bc012652d3bfe659638f69f8c2e00cef929754a0"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "65434de84c54eeb735cc4f820a9aab73c5084448"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-hacking-clang-format-Dockerfile",
+      "fileName": "hacking/clang-format/Dockerfile",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "BINARY",
+        "APPLICATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "67b074ae6347af74956d77c26f80e62f74f389c1515f6b8c84ccb5bf47a07600b769ae64d98ac7a5885ac1bde6230b8d5f64b219a62a695aedf9fa2fdde0d29f"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e77bc908c11fa945cee5902c8216c6c3d60873de"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9fa8af16357fedffa33a95d7a0583eecbba67f82c3a697e12eb721dec863d652"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-man-.gitignore",
+      "fileName": "man/.gitignore",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ed5cd0c855b36ce17b16b1f953c3daafcb37a2c8afcf1b1798742f3ed5019132"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "37d11b3ce0e032cdf01e0e226e968572a097189862099278e567f9961ecd3077f8ad1614129f9b822b7d16ebfce7a683d3bfd8e2e66d3f63031bef9d9ebb0b36"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "7f06adcc3fcbc1a369b7a604a2832c4b864f0942"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-cs9-x86C9564-minimal.dump.gz.sha256",
+      "fileName": "tests/assets/cs9-x86_64-minimal.dump.gz.sha256",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "286c5fa7f0c8479b4af9e73ba66041a1fbba5e46"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "add79ef2ec8df10c044410fb84cfdb60edbf36e498eca1c5607aaf37a7eaa55d"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "aa291ab046e86fb57733ba6032b3fdcbb93665f78e596af87a0381cf0ccabe9c76fc365566c22b4ce19417ede32143e7fe7dcc04bdf06b811a797bc57f83085a"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-tests-gendir",
+      "fileName": "tests/gendir",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c34b82643dc91fe0cf51cfaf18a203b8bd14962e"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f5a17948dbd716ddeb548fe0b44005897e5860394d264ca04ceb0ba8a6891bb2"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "576c1aee3574db932e19a4fcd36ee9ba73bb44a13dd9ce6b8510532e807ce36ca6a843307f56328b7784663914349ab1af2d5e9b66cc062630902fc0adf3f457"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-lcfs-utils.h",
+      "fileName": "libcomposefs/lcfs-utils.h",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f2b5305a18d5e68e4b39a7d84825e7b044a61670e7c8fcc2d02dff9fdf0d0762"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "9e17d6575fc40f62fcd132c5447ba6fb939e70fd90bb0fcf0b14a71aa523fe1736bb0fb73ca8b9885e65f792bc645ceaefee101cc83187e8d715086af875dd9b"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "d5861cfc422d6b0e9beab759ff451ebcb77eb952"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-erofsC95fs.h",
+      "fileName": "libcomposefs/erofs_fs.h",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a1eeeadf9b380726fdb4606c5cfc2021f1f970eb"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3cea004fe2fbe4366dd4c05605fc552821e59a92c05e9ef771722c8efe086400"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "dd3ffe4d2fb92ac042af919e233a00aa799802ac98b9609da3171df72d9d17adcd7e203303516d35701aaac2fd1894c6640845c4a864e714be8c0a8af9f9c4b3"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-Makefile.am",
+      "fileName": "Makefile.am",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "83d15f53f6a67bbf922aa0c12ce71ef6748452aa"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c68ab94b8692b8917051adf1e15dba39e68465df1f98e36964aa8fe5ffa0816b"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "dfce5f3286a31fcaef32fff0dfcccb4e574b2e6e33ead9394c43eea34888187ff0a04b4c85b979f006c879439920bfc4979a89c367c7023d55a7122d6cd361c2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-hacking-clang-format-.clang-format",
+      "fileName": "hacking/clang-format/.clang-format",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "50343723c6e721d4b73a0cb331b66be788588514"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ac4d511bb35cccebb676a6d1bf51fd0673f12b53ba60b72fa47ef75b4976cc7e"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "002a2ae54e0a43c87e8894a0dbd807c00b59a53bf664327376d1c4befdf1ed482aeb54ecfaeab6362d9d79b92a81f7902ce6f25b460143141060043977278a42"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-tools-cfs-fuse.c",
+      "fileName": "tools/cfs-fuse.c",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "c1c74c9fdab7ba7c4a92ce8fe60aa7b234346ec15da8832241414f0c51299fea950e4a5159602f035c6bc217a55ba6c5cf9bc1f9d6c4a5a37d5ab0a222d55904"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "7f9bbcaa418d46c2bdb65f7ff2f9ec4fd7eb72b4"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b0c9eb3f4ffd7e3c935efa3f6b513c56a741abb0632736d5e389c9db762ad19d"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-cs9-x86C9564-minimal.dump.gz",
+      "fileName": "tests/assets/cs9-x86_64-minimal.dump.gz",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "ARCHIVE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "80de43f0f8f4b875ec4520a76d652aaa21130f7dbea9c85f2bbd41f99199ef9ec3c4ba49956225faa98a15598d6b5cd318961c89a627c245bee89d770b4eea0a"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a5ed8937e59c9b82ae8cb57c2f13df44229cef67"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "12bb18ee2743102482ba84b06f187c94f186b3aa94a42ff169dc21b19c82c55d"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-lcfs-fsverity.c",
+      "fileName": "libcomposefs/lcfs-fsverity.c",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9f65fa4a5eb94462ec22f795d42b3373d74d659faabd987ae00e59a42687f840"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "2b7c21b04359645d5f1aaf5a2125d13e294dd426ee44aa15f6ba915aab0ca89692466a6839c1a1c1611ca80bc7b5e3e6b5120bdec5782eca504d185240ab772c"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f9fbd0a70035e9f1160a26afe711a485779760c0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-specialC95v1.dump.sha256",
+      "fileName": "tests/assets/special_v1.dump.sha256",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "be05304dabe66ce6b566ba531505c55df7de112f"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a80613a86adab0bc057cc073fd47e531d274a895ef05eb8054af4f1340b31079"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "7530978a52a8f20573c0643e79a9cfc7c6a29512a4471de5912649b902da90797d883ac107976ad998340c000ab7f8e2598373bc0752d334a7fdb1a22bd326ae"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-.gitignore",
+      "fileName": ".gitignore",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "d794a7cc982efab5755d07ebfc4b6c3dc8c5200a60e3d9bc4706571fcfb5a8669267bcbaf30ac68ac89493b0e7fce00b4862cac99b3e2016dcd3676e288ec7d4"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "5ab2ae4ab3aad241fb4b1deeb816b604a9a9decc"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9d4d257706be3bb85cb7fdeef1e0c1cce3ff27ffce9851519e7deea56136f50d"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-hacking-clang-format-Makefile",
+      "fileName": "hacking/clang-format/Makefile",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "BINARY",
+        "APPLICATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f37832996e6d6c1246f5ccca1f5f613178ef1206e7fb9aaaae1302b99a55c064ef24462bd9902689ea3b268daab7356a4f18333dbd6e35c011c3e065ceab99e0"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ee8659574fbfd41137675b085977590710ed9c41"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b966d94986bb18fcdc540010148e1cd7062f98e6608b5f37e9c17b803aa702c6"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-cs9-x86C9564-developer.dump.gz",
+      "fileName": "tests/assets/cs9-x86_64-developer.dump.gz",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "ARCHIVE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c1c466272e7cff1739ffbf2e13c102af4af0d345"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "dc8b301a15adbd5b6b464e78871e150bfc054c57e9acfdd874abf07fcd0e4301"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "aea9a962a198d28990b6bcaafc7e90cd4fe89e3c19932024fb4fb1c0abe5d0268aa70432625474fa56265cfb9097e3d1d347a9ce3db9030255b2f795a80532a6"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-specialC95v1.dump.version",
+      "fileName": "tests/assets/special_v1.dump.version",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "3abb6677af34ac57c0ca5828fd94f9d886c26ce59a8ce60ecf6778079423dccff1d6f19cb655805d56098e6d38a1a710dee59523eed7511e5a9e4b8ccb3a4686"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e5fa44f2b31c1fb553b6021e7360d07d5d91ff5e"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-tools-.gitignore",
+      "fileName": "tools/.gitignore",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "3bac642c2ee61d23c371644b6c4ce38db2bed043"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0e397467281fb211d54596fa2fa3dedd1035bce8eb5793e9ef25ad6583ba9176"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "4481419c53890d1c5c6bf3dae1dc895fdd24d4a11050d567485f13e9bd47098aa7fed428f9b31fd43c51ace0848440a8fc95e7683ea23c49b3289e67d3e43f93"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-COPYING.LIB",
+      "fileName": "COPYING.LIB",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "LGPL-2.1-only",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "LGPL-2.1-only"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "1bca76c9f2f559a7851c278650125cd4f44a7ae4a96ceee6a6ba81d34d28fe7d6125c5ee459fef729b6a2a0eba3075c0841c8a156b3a26f66194f77f7d49151c"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "01a6b4bf79aca9b556822601186afab86e8c4fbf"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-tools-mountcomposefs.c",
+      "fileName": "tools/mountcomposefs.c",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "d544369261a1cb02a32c0dc0a3df1f1e98c272f7d21c07ee0759cbbfd8651b936fb4f4a69782ed259a9ee8500f2bfcf2d94aefbd16480b6a83cbc592f99dff7d"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "73c931f493a348d5c9997ce864f71f59439d721e"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "94ef51389bba903974f2d28747d8315a1737e4cc012f4b3bc78d1616cec7057d"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-config.dump.gz",
+      "fileName": "tests/assets/config.dump.gz",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "ARCHIVE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "e820e0f5318246269b93986495786abfdc30516e65074ccc336540d0046fda3898f5b52bcd1ce9d28afef5aa9cafbaea8d3d3b0618c63c9f398f424f6a9e57a8"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "3033365fb8dc97917e891fa6bb6f2bec484fe944"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "bbd0966d10140791c0ff0811be8610cc3d79cbc1825fc13eed6dbc4aafd7bb18"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-autogen.sh",
+      "fileName": "autogen.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "202d88127635ced7e94318c6dc528a06a41d6cf181a0f7720bc7f6334c535a2bc2b85eb055c8a12355094f6d5f5ce3c73cb45dcaed5cdafb5497834e2420d722"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "b989aca42f965e75bb2ad3d6df2822c13c0375a1"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "69779c1b374eabe17043cb93e8f7589cd6c1e9dc0d4ffba5a05f60107d96a5ab"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-tools-composefs-dump.c",
+      "fileName": "tools/composefs-dump.c",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6d6a4cd7bbb6342c4d11e6cd1b330acb193cad3f"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "cebb2e16a50f7a97ff67dec1226c1fb359f857b72f388a52228e13087c6bb984"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "305cf0f9a18ee91e9e4cbc5d054dc11fbf712c9db7f268401c25e214d19443c1c9b72415fe436543512cb14cc16eb47d740276d08d448a55785b8095d88a5f11"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-tools-composefs-info.c",
+      "fileName": "tools/composefs-info.c",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7091d16d81eeb8522390734eaf6945a337ab6ce4d89cc25c20a80cee104c9f5e"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "ddf646544caecc2603a92e5979a0ee23dddce638418619d831d3626b8ed58b804c3f2fe7fb2c324e3d8ce6fe45a4c1e973ed6889a78f7ee0cdae04558a2cd212"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "737d1ade62a1381e91407cb14eb1616e710fb9c8"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-tests-test-units.sh",
+      "fileName": "tests/test-units.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6c89eb191f19be0461e564b8d6d1743be2ac3160"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8cd1e61a0d4b982b3c3d7ced93f16b995e934e048a23e8b5ecb75eb4c192a524"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b8a8a5afe9f61442b901a0da66b3dd96dcef565f08b946e2a47526ae1867f0e81425b54769fa9f241b5aff1e665855d5515d7da65b9e8f4ad5a5034ffda9b4d1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-composefs.spec.in",
+      "fileName": "composefs.spec.in",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "da9311cb56db07e30a6c0ae70e9ea64ee6aa60be"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "08e710b218bee326203b9193637058b534740d7397377a57ba4322e88e09ea72"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "ce7bf6a69e477236327f8719f3f36ad689d59b8403cf914d90b59f9b5b962644f5c6fa7728617aa2924f2a86e2207171af522408151ec7a0e5bc356972d9e4c9"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-bitrotate.h",
+      "fileName": "libcomposefs/bitrotate.h",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "91b2dd623c033092acb1e7851fb9b199636b603891f51c7ec99eb47db5cd5402614f99add0bc52d2da215a312b3bf80dda1966e94284f918fb863c2adba3412b"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ddee115fb50fcd37d62ff4579882ec063427c27c"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "08204f0574376c2ac15adfdd790de35ddc7f5c40f6c20d18db5192e0c2903e91"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-.github-workflows-test.yaml",
+      "fileName": ".github/workflows/test.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "9514dec47fcea4f2736caa5e84694ae3a8cf07e3"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "bfed8dfdd4de24d2744872385c197f75e8dfea88235a2821398a3e962b785c94"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f08ca0d4888d329cd9bed50f1fdf7d8530c18275dc12cd28517f35e7ba336f1efe11700782ea76b1322fad45db05e2bb42002847121f2e1ab239ef9ac9db2102"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-special.dump.version",
+      "fileName": "tests/assets/special.dump.version",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "a546d1300f49037a465ecec8bc1ebd07d57015a5ff1abfa1c94da9b30576933fb68e3898ff764d4de6e6741da822a7c93adc6e845806a266a63aa14c8bb09ebb"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "09d2af8dd22201dd8d48e5dcfcaed281ff9422c7"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-tests-test-checksums.sh",
+      "fileName": "tests/test-checksums.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "80bd7569e0a4051ff7f80660ed005040278ed265"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ed60cbdfb6d95c8215ec11e43f288d378355a73296cb379f8386ac9db99cf921"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "37e5ab43c6eee51c74c1c2eb821160276e292e46f28dab5a1101b8f8a36181764d173dc8f7a6d94e0d4c435fe7337452ec6285eaf21cfb93742dab2db450d78a"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-xalloc-oversized.h",
+      "fileName": "libcomposefs/xalloc-oversized.h",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b5581968578e9245719086920d5fa9e97659eb36026e61e0ff752f17621132be21bad7ca8280e44e52730feb3c12cd126654a0253fb74c6c4c1c77716d468f2f"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "01e9354237c9d0f4db24cc34719ce6f4916db6f7"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "456960d99ce4a4d95780abd107741bcde09240149fd1f007eaf5764600750ecc"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-man-mount.composefs.md",
+      "fileName": "man/mount.composefs.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "9f5487b88ab6a2c18266d4cb88002be815006a94"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3b77f8beb7977c805a25b08d9a554dc5dd35ae0596bddc3082829b0ac965dcba"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "e4011a8ab962ec6e70768d6910d264315e3a57a4eb45625e18b0eaeaceecbc867f0fe6d6ec9d4203961bf57b750113e8d19b8ebad664b6ae8c141cefcf0bd5f5"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-tests-integration.sh",
+      "fileName": "tests/integration.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "75e8c0280c66e5645ee8ea82f9cfae29e59e17cd"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "464bb7aa06b32f11b762ee052377f1b01f3f6cf1c3921bf9d2606e7656558088"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "6a3c0dc9619f5e43876a59b56940350893e4a867ec1d25698c201a1242e9fb9bee6a9f02798710740179551aa878628b7097d6b2c1c62f5d261ebeb519f0511e"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-LICENSE.Apache-2.0",
+      "fileName": "LICENSE.Apache-2.0",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "98f6b79b778f7b0a15415bd750c3a8a097d650511cb4ec8115188e115c47053fe700f578895c097051c9bc3dfb6197c2b13a15de203273e1a3218884f86e90e8"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "2b8b815229aa8a61e483fb4ba0588b8b6c491890"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-.gitignore",
+      "fileName": "libcomposefs/.gitignore",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "b41767ef31b5bd57615dce90175e00df170469e8"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9f7be879fc90e215ffec3da2d26502050d429c8af2a5e65dbc5ec555523c81a0"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "25da4219c395abe54f190c639db156ef066ff979c5e4ea46b0549f7829e3d3a4b1a4b22dc71e5e5abaa2673f8d968aac737747871147159f0143841257caa8c7"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-lcfs-fsverity.h",
+      "fileName": "libcomposefs/lcfs-fsverity.h",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "416d0db2e937dc2de2d61b5f8146a44b64e35566a66c74830bceb7199faa6e56"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f0f14d854307b4daf1dfaf3c037de9c2145b1dba614115cb074461a71c8b9e5e89b1a29136bb8aa28be7fdadc23a5923f681c57f5cc17798331ab987416365a8"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "85029a72e9cab1da740c2cf5db63e2569c62648a"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-lcfs-erofs-internal.h",
+      "fileName": "libcomposefs/lcfs-erofs-internal.h",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "9d331b275169950b06b0f529139a564d16785b5e"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6f3a2983386f60250e57d7310d33a534d612f2a261912c2f65200bb748a650b2"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f6a4d8ea6e5def2fa7c28a0ff6cd6ced32cf6729ecf719bfb63c04c99364161e0fd952b3e3f9a544f7dc9d46f0d51586a2a3b718535e4ad557db3f131ad0d53b"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-man-composefs-info.md",
+      "fileName": "man/composefs-info.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "379971a369c8218b2d6c15c4c71f339f6c355569dc4193d089c99a895e97aa65"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "04144ba94d8e65b08dea5be21c5dabc1dc741b806a3b304b1213f8a627db21cd84224f165979c8990f824464b9de7ffd0151cd2a4830e9507f27c163d56d8c3c"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "2cae0c66505560527675b44ee1dbc7b6f10c7ee7"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-composefs.pc.in",
+      "fileName": "composefs.pc.in",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "0e9c99120d380daf2c5dbae7e788ac02054b7961"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "600c36b270fc384d297e172de7faed58b7c2fc880844a99f683bdd910aaa0dd7"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "cf1522597da0ec2179a89df263ad6daa1ea53974b7840a5224c3195830a6d46be5b0898238388e2bcb9ec0f50c2fdfba7db4d185faa11ffb9b42b0139a2c80b5"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-special.dump",
+      "fileName": "tests/assets/special.dump",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e87f24ccfe9ce3ff1959c9c685f7c0e6061e1e70"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5df349ca80e5a610d77a8bb857d2e3b68d3c7666b7c413d1bc1b52c9d8627241"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "822b4bf7396950af02e56da0bba005021d90e28e34fc76fbe7c20721799fd391d2459275d484d888f4736ccabde9ea60ac1fe931bf48056282602bf596612841"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-BSD-2-Clause.txt",
+      "fileName": "BSD-2-Clause.txt",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "BSD-2-Clause",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "BSD-2-Clause"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b5f2cc29e80547b39c12427a81f5b1ca0a5530aa1b912aef6ac6e8c9180d59d2eba85a71c28a491e346b68282810f1471b46e099278dad068f6b23915f08d808"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "964a86ea34677b9cf55c3c92f65bf279efbb12c6"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f11e51ed1eec39ad21d458ba44d805807a301c17ee9fe39538ccc9e2b280936c"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-lcfs-writer.c",
+      "fileName": "libcomposefs/lcfs-writer.c",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "82715fc212fb15e7249610624234cecca1a74105add60e96ab806944885dbcba13635f64fef447e6665ece88b862ba7cac3f450923cca88b56c86525aed2efcf"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "b6d1dbbdb1184a72aa95a4143c4e9d5e49aef2dd"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "18785a8603c1425fa735e0ba21070f23966d8984f513b743f59a095ba487321e"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-tests-dumpdir",
+      "fileName": "tests/dumpdir",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b29ff9ed16848803632e0142a1ceb2e389437009ba7b50122d030056bf31ce323fe01c89198ac6d3cf1ee20b6da2881df3d3e2fc9291800c27a48dd1b0843838"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e17dbbca38c17e37a024890fe0dd071da679dc55"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "60af7038cf17aa22da1e805dc2ea184c4bd3bc6d0f6b88343942fa7c29e4ffae"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-COPYINGv3",
+      "fileName": "COPYINGv3",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-3.0-only",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "GPL-3.0-only"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "7633623b66b5e686bb94dd96a7cdb5a7e5ee00e87004fab416a5610d59c62badaf512a2e26e34e2455b7ed6b76690d2cd47464836d7d85d78b51d50f7e933d5c"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "8624bcdae55baeef00cd11d5dfcfa60f68710a02"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-hacking-clang-format-run-tests.sh",
+      "fileName": "hacking/clang-format/run-tests.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "5f5ec76c9a4ac5f65e24b99773619973515f4a974486a1b26317bdf31859ee185e5dac6b0ede234c1091c9aa3920e71414919f585316f13396b35ccf3151fc6a"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "40cf281627753889962562c591acaf68340ce6d7"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4742b8e6bcf3cb0967bf9851391bac659e1cab8266d0098b9d9a889dff1f0f40"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-tests-test-random-fuse.sh",
+      "fileName": "tests/test-random-fuse.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "bf12965e44289b9a499f8bc2f5be4dc77e3ae2e9e82b03a39c4aaf3e9a925af5c3d4ba6b0a37edad15f0406483fb6e9694e5c98dcc2da6d1d21b803408393392"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "61d4b473d3d82ad27d39c2bb71f966e83dd30b0c"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "388e27a9b8e0b7d4c0b0f3cdba35d2ca9732fc3898ad518904356d2a7ba5e871"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-lcfs-erofs.h",
+      "fileName": "libcomposefs/lcfs-erofs.h",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "9f6850f1c2fd1d7611163e183af3dfd5e5286c9ce8e5413ca1ed01405d498083271bcb88ad9b754ebb306832848aa64a757998272e8ddb8b6cad933ec4a95a05"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c484b217fc4e86ee5db9baebf219808bb0da0ca2"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6b0aa21599838abcbe40691349f7fadab8bc764b442f2a8960881b27632ff5e2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-Makefile-lib.am",
+      "fileName": "libcomposefs/Makefile-lib.am",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "db72c4c9a89bde5e280efb54acda5e568321b4d0dbd439fe57625c5bab4bbc74"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f7e8cb7120fbe16fc96b259198e192465982e37dea1fb355ee88e01b8751faedb80b2bc18442e2b8742b0378afe31f0bfbb9e059e727cf62db692b4d5ef55714"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e812751e904c4c8532059b1ea078d83346a9d2e0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-man-composefs-dump.md",
+      "fileName": "man/composefs-dump.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ab7d1d795b290776f78cf788cb4dd9f5b0661d7b"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7d97684f5897e8ad3e3344eae3f7dfd796dd1b017373eeedf9bc4474e273e120"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "8848ce17aa4febca5332471f10fe9af38abd22ceb4c7ab0c70c437a6b9aa801adf5d0a1f02ab70d8858c81959078e09d1bb97dcab4b15d9a8c772cb69a447260"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-hash.h",
+      "fileName": "libcomposefs/hash.h",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f55bc4049e2aa537e5178f2b60398c397b0756558b243a47d11f02607251a38f"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "8b83b7a7165b37bea001bab1666aa0f4fcf159fcb3ef7f6e21a6fa9684bc3ab574278c48a219302eecdab3842e1d06baa96dff46168b8f0aef8ea3e7160bc4c9"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f0d5d54860bba0179ecdf5587929c2e9aa15429a"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-configure.ac",
+      "fileName": "configure.ac",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "6be78fd61378bd9e520bd0b45757cea671b72475ac9773e28f6feffdf0b91924be28f4125622f427146aebeef2cec4d2193a71e77f50e5a1edc401713bd398ac"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4f71830190a64dde95d43a5cf145e0aa23b909f7"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4be69929e16b7f5ed4e081b6e72ec2597f4b364d921fecbbf83bb40b5bb28746"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.NyCw7RmMz5-README.md",
+      "fileName": "README.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "GPL-2.0-only",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "94179ed5852568a9972dce518848d039497f08cb"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2f916297007a6bd118414d0316ca105e6c8991774437ad56d754dd5449f2385f"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "5379fc20b12ed9e26c6871dcb316e443303bd872f9bca3aff17094e766f51d474a5e2a3ba2d9b96023417172c3a90609e699f3d2dba4fe71e08665323c938ae4"
+        }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "name": "tmp.NyCw7RmMz5",
+      "versionInfo": "",
+      "filesAnalyzed": true,
+      "licenseConcluded": "GPL-2.0-only",
+      "downloadLocation": "NONE",
+      "copyrightText": "NOASSERTION",
+      "hasFiles": [
+        "SPDXRef-File-tmp.NyCw7RmMz5-.gitignore",
+        "SPDXRef-File-tmp.NyCw7RmMz5-.github-workflows-test.yaml",
+        "SPDXRef-File-tmp.NyCw7RmMz5-COPYING.LESSERv3",
+        "SPDXRef-File-tmp.NyCw7RmMz5-BSD-2-Clause.txt",
+        "SPDXRef-File-tmp.NyCw7RmMz5-Makefile.am",
+        "SPDXRef-File-tmp.NyCw7RmMz5-README.md",
+        "SPDXRef-File-tmp.NyCw7RmMz5-LICENSE.Apache-2.0",
+        "SPDXRef-File-tmp.NyCw7RmMz5-autogen.sh",
+        "SPDXRef-File-tmp.NyCw7RmMz5-COPYING.LIB",
+        "SPDXRef-File-tmp.NyCw7RmMz5-composefs.pc.in",
+        "SPDXRef-File-tmp.NyCw7RmMz5-composefs.spec.in",
+        "SPDXRef-File-tmp.NyCw7RmMz5-configure.ac",
+        "SPDXRef-File-tmp.NyCw7RmMz5-hacking-clang-format-.clang-format",
+        "SPDXRef-File-tmp.NyCw7RmMz5-hacking-clang-format-Dockerfile",
+        "SPDXRef-File-tmp.NyCw7RmMz5-hacking-clang-format-Makefile",
+        "SPDXRef-File-tmp.NyCw7RmMz5-hacking-installdeps.sh",
+        "SPDXRef-File-tmp.NyCw7RmMz5-COPYING",
+        "SPDXRef-File-tmp.NyCw7RmMz5-hacking-clang-format-run-tests.sh",
+        "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-.gitignore",
+        "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-Makefile-lib.am",
+        "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-Makefile.am",
+        "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-erofsC95fsC95wrapper.h",
+        "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-bitrotate.h",
+        "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-erofsC95fs.h",
+        "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-lcfs-erofs-internal.h",
+        "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-hash.h",
+        "SPDXRef-File-tmp.NyCw7RmMz5-COPYINGv3",
+        "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-hash.c",
+        "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-lcfs-fsverity.h",
+        "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-lcfs-internal.h",
+        "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-lcfs-fsverity.c",
+        "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-lcfs-mount.c",
+        "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-lcfs-mount.h",
+        "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-lcfs-utils.h",
+        "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-lcfs-writer.h",
+        "SPDXRef-File-tmp.NyCw7RmMz5-man-.gitignore",
+        "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-xalloc-oversized.h",
+        "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-lcfs-writer.c",
+        "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-lcfs-writer-erofs.c",
+        "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-lcfs-erofs.h",
+        "SPDXRef-File-tmp.NyCw7RmMz5-man-composefs-info.md",
+        "SPDXRef-File-tmp.NyCw7RmMz5-man-mkcomposefs.md",
+        "SPDXRef-File-tmp.NyCw7RmMz5-tests-Makefile.am",
+        "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-config-with-hard-link.dump.gz.sha256",
+        "SPDXRef-File-tmp.NyCw7RmMz5-man-mount.composefs.md",
+        "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-config.dump.gz.sha256",
+        "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-cs9-x86C9564-developer.dump.gz.sha256",
+        "SPDXRef-File-tmp.NyCw7RmMz5-man-composefs-dump.md",
+        "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-cs9-x86C9564-minimal.dump.gz.sha256",
+        "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-config-with-hard-link.dump.gz",
+        "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-config.dump.gz",
+        "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-f36-x86C9564-silverblue.dump.gz.sha256",
+        "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-special.dump.sha256",
+        "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-special.dump",
+        "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-special.dump.version",
+        "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-specialC95v1.dump.sha256",
+        "SPDXRef-File-tmp.NyCw7RmMz5-tests-dumpdir",
+        "SPDXRef-File-tmp.NyCw7RmMz5-tests-gendir",
+        "SPDXRef-File-tmp.NyCw7RmMz5-tests-integration.sh",
+        "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-specialC95v1.dump.version",
+        "SPDXRef-File-tmp.NyCw7RmMz5-tests-test-checksums.sh",
+        "SPDXRef-File-tmp.NyCw7RmMz5-tests-test-lib.sh",
+        "SPDXRef-File-tmp.NyCw7RmMz5-tests-test-random-fuse.sh",
+        "SPDXRef-File-tmp.NyCw7RmMz5-tools-.gitignore",
+        "SPDXRef-File-tmp.NyCw7RmMz5-tests-test-units.sh",
+        "SPDXRef-File-tmp.NyCw7RmMz5-tools-Makefile.am",
+        "SPDXRef-File-tmp.NyCw7RmMz5-tools-COPYING",
+        "SPDXRef-File-tmp.NyCw7RmMz5-tools-cfs-fuse.c",
+        "SPDXRef-File-tmp.NyCw7RmMz5-tools-composefs-info.c",
+        "SPDXRef-File-tmp.NyCw7RmMz5-tools-composefs-dump.c",
+        "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-cs9-x86C9564-minimal.dump.gz",
+        "SPDXRef-File-tmp.NyCw7RmMz5-tools-mkcomposefs.c",
+        "SPDXRef-File-tmp.NyCw7RmMz5-tools-mountcomposefs.c",
+        "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-cs9-x86C9564-developer.dump.gz",
+        "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-f36-x86C9564-silverblue.dump.gz"
+      ],
+      "licenseInfoFromFiles": [
+        "BSD-2-Clause",
+        "Apache-2.0",
+        "LGPL-2.1-only",
+        "GPL-2.0-or-later",
+        "GPL-3.0-only"
+      ],
+      "checksums": [],
+      "packageVerificationCode": {
+        "packageVerificationCodeValue": "4490014b4ceca2e738590e1eeed9584d55b66636"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-.gitignore"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-.github-workflows-test.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-COPYING.LESSERv3"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-BSD-2-Clause.txt"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-Makefile.am"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-README.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-LICENSE.Apache-2.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-autogen.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-COPYING.LIB"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-composefs.pc.in"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-composefs.spec.in"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-configure.ac"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-hacking-clang-format-.clang-format"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-hacking-clang-format-Dockerfile"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-hacking-clang-format-Makefile"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-hacking-installdeps.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-COPYING"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-hacking-clang-format-run-tests.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-.gitignore"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-Makefile-lib.am"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-Makefile.am"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-erofsC95fsC95wrapper.h"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-bitrotate.h"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-erofsC95fs.h"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-lcfs-erofs-internal.h"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-hash.h"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-COPYINGv3"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-hash.c"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-lcfs-fsverity.h"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-lcfs-internal.h"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-lcfs-fsverity.c"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-lcfs-mount.c"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-lcfs-mount.h"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-lcfs-utils.h"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-lcfs-writer.h"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-man-.gitignore"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-xalloc-oversized.h"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-lcfs-writer.c"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-lcfs-writer-erofs.c"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-libcomposefs-lcfs-erofs.h"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-man-composefs-info.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-man-mkcomposefs.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-tests-Makefile.am"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-config-with-hard-link.dump.gz.sha256"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-man-mount.composefs.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-config.dump.gz.sha256"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-cs9-x86C9564-developer.dump.gz.sha256"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-man-composefs-dump.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-cs9-x86C9564-minimal.dump.gz.sha256"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-config-with-hard-link.dump.gz"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-config.dump.gz"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-f36-x86C9564-silverblue.dump.gz.sha256"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-special.dump.sha256"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-special.dump"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-special.dump.version"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-specialC95v1.dump.sha256"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-tests-dumpdir"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-tests-gendir"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-tests-integration.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-specialC95v1.dump.version"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-tests-test-checksums.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-tests-test-lib.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-tests-test-random-fuse.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-tools-.gitignore"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-tests-test-units.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-tools-Makefile.am"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-tools-COPYING"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-tools-cfs-fuse.c"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-tools-composefs-info.c"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-tools-composefs-dump.c"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-cs9-x86C9564-minimal.dump.gz"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-tools-mkcomposefs.c"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-tools-mountcomposefs.c"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-cs9-x86C9564-developer.dump.gz"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.NyCw7RmMz5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.NyCw7RmMz5-tests-assets-f36-x86C9564-silverblue.dump.gz"
+    }
+  ],
+  "annotations": [
+    {
+      "annotationDate": "2026-03-06T20:07:52Z",
+      "annotationType": "OTHER",
+      "annotator": "Tool: cncf-automation",
+      "comment": "CNCF Project: composefs\nRepository: containers/composefs\nVersion: v1.0.3"
+    }
+  ],
+  "hasExtractedLicensingInfo": []
+}

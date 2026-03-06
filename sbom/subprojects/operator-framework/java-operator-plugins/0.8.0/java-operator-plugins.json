@@ -1,0 +1,2557 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "operator-framework/java-operator-plugins v0.8.0",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "created": "2026-03-06T18:19:49Z",
+    "creators": [
+      "Tool: bom-v0.7.1",
+      "Tool: cncf-automation-sbom-generator"
+    ],
+    "licenseListVersion": "3.27",
+    "comment": "SBOM for CNCF project: operator-framework/java-operator-plugins@v0.8.0"
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://github.com/operator-framework/java-operator-plugins/releases/tag/v0.8.0",
+  "documentDescribes": [
+    "SPDXRef-Package-tmp.SruiLWESDM"
+  ],
+  "files": [
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-src-main-java-com-example-MemcachedStatus.java",
+      "fileName": "testdata/quarkus/memcached-quarkus-operator/src/main/java/com/example/MemcachedStatus.java",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ffb54957c499ea3d43a8ea82fa6a3a4301186786"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "35f87fa163936c3fa6f3d78ef0b6b14134586934a84be4f2cad69fe719c4378b"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "8c8823c21c913026f3d748c30f65ef1b91dbd6324653b43b78c75a030eadfccf7f98faff2d96ddf35477ef9e45291e3b2727830c9031b6ee4cd8e745326c9412"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-go.sum",
+      "fileName": "go.sum",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "0295a92d003411a87582e686adb3d8ba4085c001"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3b0f3e7d35e0080328726a99cacdd5e73187354e1aff53a4f47283a06cbeed3e"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "2cc464b2be969d56252763e54fd5907980c0c1e4bd07ff2734cdf57c1c79a4528bddae574e325686a06bd292ac6a60bafeab4db8282277b58ed0ca1ef68d9e63"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-Makefile",
+      "fileName": "testdata/quarkus/memcached-quarkus-operator/Makefile",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "0add425b16b95cdea475ea8f5539da2f1cc40dd2"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "fb7f58d64df2a9dd734e3e37244895491375d457b45391a06207aa0ca807d185"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "fe50fc02f4239761848e90a04e6cbf1990933c7490c954e9fd5b2eccdbc985a67d5bd808772e85258e93d955e2977e05e1fd82b7259fc6d6b7890d8202daf898"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-.github-ISSUEC95TEMPLATE-bug-report.md",
+      "fileName": ".github/ISSUE_TEMPLATE/bug-report.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "78489bb4dbed691d5f8d8adc066facc006be3ff9"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0baa39c506a8a095ea9f86d08da7cc6e8aabf446af3163f6e669abb319697fdb"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "842670237efcafb75d1562958618f06c39f41f3a13864894be279b33f5d3e9a2d7afee5e43834547edeb7dc5a94868aba5222b3e66ff0c0669abfa4bd4e500cb"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-operatorfileC95test.go",
+      "fileName": "pkg/quarkus/v1alpha/scaffolds/internal/templates/operatorfile_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "97ee3cc352e36a7afc3922bffc34c90176361ed1"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7c56a8e32644f269ba0288891af5d95e389818cf0832bab1dcadc0f98313778b"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "d9bbc6d7f0eb04c5dfd7c210decae33186ac16d54c5d046c0809952ecda87ac811de6c3abfebd655f8b9af4df9b38b83f832ee57c8aa27eed36c5a983fa56415"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-LICENSE",
+      "fileName": "LICENSE",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "dc6b68d13b8cf959644b935f1192b02c71aa7a5cf653bd43b4480fa89eec8d4d3f16a2278ec8c3b40ab1fdb233b3173a78fd83590d6f739e0c9e8ff56c282557"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "7df059597099bb7dcf25d2a9aedfaf4465f72d8d"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-CONTRIBUTING.md",
+      "fileName": "CONTRIBUTING.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "7cd4650381d38f920fd5500a8d704772868b2111"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "be0deb0fdd43c973a505275e102f98378e8bee39f4c85557af5832a43874ea5f"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "1fec4910f9498c5a8eebe7e9f15f8237886d61eb8df9889f9cb6686bbefa6adea208ff924d8fb87a0c6d28472d713b6761914e77ee934241e74004085f3fe6e9"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-util-file.go",
+      "fileName": "pkg/quarkus/v1alpha/scaffolds/internal/templates/util/file.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "53f9d364db0b0820793ccd191d793f4c28e5d1a7"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9e5772ad42c24659896d77375f82a3ec2fdfcff454a87886a6ba7ba3b83d4286"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "386bf8b9c6cacc5a44db88f876c072ee31936d6c267f10e2a808745c38ad2e2b778520167680d389b236aaa30a5a44e02bcc75677fb34a41302944ea0014b50b"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-operatorfile.go",
+      "fileName": "pkg/quarkus/v1alpha/scaffolds/internal/templates/operatorfile.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "761c3a0c9483cfa5643e0bc112cf7f7b022838f034fa7a5b340341dbdf354c53"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "3f3c539891e1f73b257687fb3a81a2756fcc84a1c902b40183f8d170163f17d50c44e9e230aca59beab5598e9811693dfa0da37331c017ab1d89de9f1229d733"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "2f60e1db3752c955af6cec5c5c66f2ba5c43e930"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-doc.go",
+      "fileName": "pkg/quarkus/v1alpha/scaffolds/doc.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e8e0a61beed6226852d30f8921ae5a648c0a4929"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b67db00da34e6206425e2b354d2bb9ceaf7e7759dbc7d654883d689001ed6010"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "ed31e7a52e525d44f8bd55ce13388cd7d6e2041c4ee7b9f90834ca757af70c1f3f13b055151a7e0ccb8cf54f1ff65083b1d3a88917d6d73454c9ed5193a06b47"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-plugin.go",
+      "fileName": "pkg/quarkus/v1alpha/plugin.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f077fe54da486c7b3d47632b1b4963a05a26a491"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3de2480e5d7f19d1464e02f376fa4f43ccf12bff48d05009ba36000c838f069f"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "903f4750137f617430897e9f7c7dd43f20a4e505a2cab689c4685cca42827e7d84d8fff5e656c5ccfe7c35e6577d6d9a4f1b1ab5ef5d2d3c71d43098d1bdeabd"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-docs-tutorial.md",
+      "fileName": "docs/tutorial.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9e56ecf654a56dce1b69049a79e3263f33fc35ab65975f4a83fe975870801af5"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "036a42e2521be1c160bc9f4b7698c247b25c71249548d044a12580800932c8b843e399fe4bbb1fd9da560869d30a636138f4fb571f9d51783b106ba9ea250d24"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "691ced1f7841f41c986c93143685086c6ba9657f"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-code-of-conduct.md",
+      "fileName": "code-of-conduct.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ea394467c439865f6fd502eb56da42e5499aa5e0"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3a8d166e85de90883c24edc76f746dd55057ce59e606b1b207f73474e74159c1"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "eb36dfcd35db04948449d1c7217630a45204cf87473b41629fff23ea94c54e971dccbbd20313721d7c094cf9d3c3aaaf1b42fac4163f6d3449db0eb97e5f32fb"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-v1C95suiteC95test.go",
+      "fileName": "pkg/quarkus/v1alpha/v1_suite_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "56f5b08092abe10e04ecace7401f85173773b23f"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1b9d175e890c6b2c5f00e4839273edb5bbd52433f20b4f10f857e6231e1bee81"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "1f959a960df7d21e135f9fc71d386812726af9cd62b57e0a8f64052de2b58d1a3540ba492e43a9100ff2bd9ba6077ba21ec6358a86123ee940c88b4678360ce5"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-bundle-manifests-memcached-quarkus-operator-operator-viewC95rbac.authorization.k8s.ioC95v1C95rolebinding.yaml",
+      "fileName": "testdata/quarkus/memcached-quarkus-operator/bundle/manifests/memcached-quarkus-operator-operator-view_rbac.authorization.k8s.io_v1_rolebinding.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "68029e8c5124476bf85ae2c5996f461bf4e27ae1320146b5810715631af4b35a"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "c732ddaa802077ad69ddb1e56f12203e8d1039dbe4c381358abf74faf8f5d8a9446b700d0ed4cb53ba6837cc0a0e6972d1ef50695afd92fdf75d8996560506f3"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "9e9150253946a9080812b11031d50157999224b7"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-doc.go",
+      "fileName": "pkg/quarkus/v1alpha/scaffolds/internal/templates/doc.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "ce858027ffdc799683574e9814869b7a6a372aeebaa8e4583b0a661c1095d34901472efe810207d2f54fc078400ef5c81f96024125e342e8e64a484e3a127d12"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a7c26a663539d10aef8627b844965f747578319f"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e7c74fb998976a3512ade5721bf8654319fa03b7fe771f1a9a78629749abd97a"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-bundle-metadata-annotations.yaml",
+      "fileName": "testdata/quarkus/memcached-quarkus-operator/bundle/metadata/annotations.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4d6eae9d6096e553f73953e82c83828fe09d74c1"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "73d3e688bbd483095b3724d806ed86bc82e30d63d0e36b052414ff2fda3dff9d"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "47f71b0ca0a4fbac4ac4f7ae67bf3f6f50ae24d67c78f83037abccf2fdf3d164c7fd50e4afc5443f5ae8932d55375639715bbde4854a34a1388ef22f9d605ad0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-makefile.go",
+      "fileName": "pkg/quarkus/v1alpha/scaffolds/internal/templates/makefile.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c48febd94a039787801dec8f993e822059543bd450878f43ff8df7b05bff2a00"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "c0d124db5eaeecd728c08ad8ff46bcb486478f34c31ae45dc945f093d7831f83bbd63c394e744c448fdb159f5c7c37b73ed94b8ccde73c8c0d7a2d4f3812031e"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "005f4fe2746ae840721798f41172f567810d45ec"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-OWNERS",
+      "fileName": "OWNERS",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "BINARY",
+        "APPLICATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6a34efa921166032bcb4d970b89e2b392ab454ba1632d1edf573a2d0370945e6"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "d759fcaed38144eff98384e225b8e9e770064753bd006d9deb1bc44ffdea69ceb3a681ab8cd10d54832a769b39a0d1868ad432b939999a681cb4b72805ee1d29"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c8f8a85137b7ebdbaecb732ec15c09a6f9721c19"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-.gitignore",
+      "fileName": ".gitignore",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "aabcdcb85ba504d0e530740faac63d63af18f03b"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7709d5824361e1f49712c8f1d9247efd5d1dde5271428478b7ea582175531891"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "1483077077a0a2971fed135e1354cef5a44cf70a5369dd92ebdcf4ff8ea6f76a3db75e6020a315ca29e70f3641c77dacdd39c9aec52132c62d8d3ec57b3050af"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-hack-check-license.sh",
+      "fileName": "hack/check-license.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ec2078d0a5f3cedc26dc4b296a84dd13e5ba5c1f"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a8adb71459c94cc5da40024fc23e90c53f57d7c1637a5cceb102d0989a0ecac6"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "0951a0c98a70c6af825cbd15887997ac16ce3b38616e63c469fe7a1f0a58ed5c05844db4360246cbfd69a68221cb76b32974c1c0dfd24e4eff85d1fd9fe40b91"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-src-main-java-com-example-MemcachedReconciler.java",
+      "fileName": "testdata/quarkus/memcached-quarkus-operator/src/main/java/com/example/MemcachedReconciler.java",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a79c20c9a1c2941cf002af36f579ae82ddd6a071"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c9f2df9759a07a949dd150da77dfbb1d5828a6e73c01f43312b96475954c31bb"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "3b28d81134de190f17b43d36baa3dfc470fd9b88ac371e6afcd8b0cb8604d7087af5f6224b6e21186e6679a661b3ebaadff4b038ba6a3617c8bbdacf0efcc299"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-src-main-java-com-example-Memcached.java",
+      "fileName": "testdata/quarkus/memcached-quarkus-operator/src/main/java/com/example/Memcached.java",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "56821ef0ce29e803c4fa903df2fd490aa05b9120"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2d1b30d547abd430a3932eaee66a56bc185a8441271175aabc0b87ead5d176e9"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "8632645930c81d07756b4911ae09a4dc7b629dd835859f2fde980807005e10add192b325b9969de66250f6e20836b03bebeb31a1c183684f7b54c866f317eab1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-src-main-resources-memcached-sample.yaml",
+      "fileName": "testdata/quarkus/memcached-quarkus-operator/src/main/resources/memcached-sample.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "8df08c99a60db0960366e8373593a10ec2551999e71efe11e1cd7c349dd841a63f0f0c7eda230caefb335c8da61d225e3686a849207dfe78d48c62abb222e954"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "996681dd3d0558b8fffd1eb020d79c9e19714e07"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "98fb90dba6401fc56075cf6c0c34f158bd129a65ad9c53f2708b968288e1b287"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-util-util.go",
+      "fileName": "pkg/quarkus/v1alpha/util/util.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "590209e0740bd93e3575c1f61e7d8d4875cf292b"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8f9ec9e761ea753b1d3cbf96edba213f3c3836c9d40d9f1f0468c6e98acb8137"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "3e57bb944e4707ad1ef3d525887dcb978aa15fa625e5a02b1f0e6243a3a05f227f6e516df279b63e2403cce341ee1178e18c6c112cc515d950e2298e25d3d900"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-PROJECT",
+      "fileName": "testdata/quarkus/memcached-quarkus-operator/PROJECT",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "BINARY",
+        "APPLICATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "180901927d2cd9a5690de066e47fe9cbfc2b7c0a99a49d8ca64026a257ab469c"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "6a89a9b94dc11c25d0fadb264b8dc62fd6f9d88e0a8337161eec50f8dca45791c7e82dedc491190041afcef994de5824f818a12614987213d77f85d707d450c4"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "56b388ede16e90c050da1184fe999466e4cbd432"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-bundle.Dockerfile",
+      "fileName": "testdata/quarkus/memcached-quarkus-operator/bundle.Dockerfile",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "ac39266c05d1ada3b47dae69b5520a739e94d73f54f0c1a0a0ad1f78e5166115f0e576a38df772620764b6c45df3605f02914f0db432873a535da36382967efa"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "016ae0e8d0f38469f38284bd63abd7ea6c95b197"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e3e6faf313bdec5c9c50b4ad79813c668258dea5f15d1e78c4f60fa4a2fe91f7"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-controller-controller.go",
+      "fileName": "pkg/quarkus/v1alpha/scaffolds/internal/templates/controller/controller.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "fc9b05ca00d18f04a87f2bdb2c69aea368b53393cc794b3267fcf8f4c2db3897"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "8d52c71dbf3c661c78ff94fa58cac86d3d59a274d6ff90c8c93a2ffff60ef3f4ecd0f72e12b5b24a2053f56a7659574bf33f9e07b1696e2f06498b73bd5c0f69"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f69df33a388885d86930dc93439c023aed51bef7"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-api.go",
+      "fileName": "pkg/quarkus/v1alpha/scaffolds/api.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f2b8e07257ec613da17085a8ca2e7ef5df00bbca21033e52a3c9239260ef9cc7"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "7caf37538a3fa82fcef6d07d43333e586570f1704c6b7525e88602fed9f79e6a79a08c1eb3b7e770cc165bb20a73264ae3804e4064f57ef9ccde5628552612da"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f8c5b10aca6b78a43015f758e598357bbe94fecc"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-Makefile",
+      "fileName": "Makefile",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "BINARY",
+        "APPLICATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "65606b989a5146c525553642578720a699bd052f"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8f958d580b6b4873a92cbdce42047a177da0c830fce03875f4e552b8d3970576"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "38426c8a79f255a989c522f001e408f6ec5995dc81439912836bb8e61074c3abe59d40797eac56e65ab5e77e767da7664a75b7393cbbdcc7ad68a7b64d2ec296"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-bundle-manifests-memcached-quarkus-operator.clusterserviceversion.yaml",
+      "fileName": "testdata/quarkus/memcached-quarkus-operator/bundle/manifests/memcached-quarkus-operator.clusterserviceversion.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6bab20b3abe6ab3bc2afe537391effe3e9919bab"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0664869a192609a85acc79714134678fd39b6484cb2c41e485d97819937e0d3c"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "61f3a1e1c5cd086424aec0168b8df078915df4b222fc72574a582046a545ffc4766120390bb2c7a45b3f41a26c7026ce87914923e483f32af456820ad825231b"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-pom.xml",
+      "fileName": "testdata/quarkus/memcached-quarkus-operator/pom.xml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a8e717c6649581c4fa9af7222cba48e57a35208cdc431f841578f2f95e5ef9cb"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "55ad5efeb83316b5690185855de19ae50206afd3705d7d1f4a80244170ec4b4a190d614e5d1745a475a2f8a9e9f7c4ab9f9442a586eca9f5b3e4b7d5f8d874fc"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "d08ad2af71a9050cc35d523bd1a3424114957644"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-pomxml.go",
+      "fileName": "pkg/quarkus/v1alpha/scaffolds/internal/templates/pomxml.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e5bd52ee2ce84e98ea46fd2ac3ec9cc0455f25f88d74958bf274bcab6caabceb"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "5605dbb360b7816e5b41fe61bec748246bfa0fd8b64be63de0dc912449698027b8442831ad0f63e5628b6bd47a0a7c942dff840610ade73d3725b2a7cd1136c1"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ef14e171fab506585d16d56806e2689e71ad748b"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-api.go",
+      "fileName": "pkg/quarkus/v1alpha/api.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "52d4d3fbf07003c2c8ffc0f6a583745da4fb33a00839be259efa4181c304aa452b9a1fb31cc2451992613cd7e7fc0ec535c06b5c566a17265e6f4d0868aa8624"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "92f0d749de5dc175bf5c3d244b70c6e0d06c654c"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "71e6a389061a652e1cd05209a61c983b4345fa9390934c978d67b84478a52d22"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-model-modelstatus.go",
+      "fileName": "pkg/quarkus/v1alpha/scaffolds/internal/templates/model/modelstatus.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "afd33dc9a9a9807bea254c232427624fe2a0679e"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4f674353535570f9a3fb14997c2e3fad95928b233f237e15c711b631ae17b647"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "155986e11fbedb6c2b9220b1fa3f8db34cc5e9cfeef7dd4c88cd3c5bd62ee0e1db1274225a3e8a2bebdb2d60fbdc61f6c4a4ab84041ecdd18e1ae709a483c6ac"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-docs-WELCOME.md",
+      "fileName": "docs/WELCOME.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "0b839786f871c8e8b6bb2638172e0e4944f5d1dc"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "701fd6f27a9ca2b47f6dd91f133ab915db48e2049468a309809953bc636910e0"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "7c771ad663cef98886f886de9868190c79cfdda6fbf8301f7509ae343f73ec78b14437d870ccbca18c953e5b622c0f0f20c3b19429e72b0c8c68b4268eb9e9a0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-go.mod",
+      "fileName": "go.mod",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "00d4dd4cd369d415279d270aa1646ea25f289394f42fe33180e127594c096a09"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "4c78e489b150083b6ad2bab6a1f74ecbafae0613480bf97ff7677423ecde028489020f8737b6efb9175e070e6c9f05976555fd2bdd38e1cae4809c3ac68ac9a2"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "576f96f48a26483bd123dc2fe2789c4f7b9066e9"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-.github-ISSUEC95TEMPLATE-support-question.md",
+      "fileName": ".github/ISSUE_TEMPLATE/support-question.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "5346d126d243d4b6a17daaf08d452df6539c1d8c"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "44ca8074a434cf0bdcca09a521f9990af50467c93f0ec8d6538b489fa0a34267"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "e3a9e94e00f2ffcecfaf67dd47403676eca9e0f9cfded15258fd31c47af8e6ba31077052b0ce09921694b8b669925cd08146733cada82410a789c5f57268f98a"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-util-fileC95test.go",
+      "fileName": "pkg/quarkus/v1alpha/scaffolds/internal/templates/util/file_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "19b8392f4538d6dc8556c69b731139e2e2b86154c76b73c952c1fd13fd928ba943a2e0f744fcc308b896a7998c1cafd2c01019b270f2ff3485655147e422ba19"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f52f27d625a02d96fcd00a4cd0f83aaa7c4ca206"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e266fee132c8ff1cbd1a41634366408a92d41846117e0225de0804c8b23e7bed"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-pluginC95test.go",
+      "fileName": "pkg/quarkus/v1alpha/plugin_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "44c490273d19e9e8f5a86a2ae8673560af92a308df68573af4ef31861dfedaad5ff7b87f06068409998dea52e46881d5743dd013b9d9a651b504507ca6e91f17"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "11929671209c16f155c596174be9eed8d215f605"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8f261db4ba33815f7ba8dd3ab29df31bb219c41b6c101eb0c38eb46b274c9031"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-templatesC95suiteC95test.go",
+      "fileName": "pkg/quarkus/v1alpha/scaffolds/internal/templates/templates_suite_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "d3e65a3522cf944008844fbe44139d591c9bbb44d88d10f026f2b4446059332eecaf2d07aa4b308a96a758080b6a6e40b92991fdfb5e314f7ad250a82e883d69"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "fb1e9d5094e6a508094ddb3bfafb1a5c8af6134d"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "fd0b946b4c3123417a398625d977a36650e597cf5331e6cb56c007ac44feb85d"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-model-model.go",
+      "fileName": "pkg/quarkus/v1alpha/scaffolds/internal/templates/model/model.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "dad4490681b0bbb8c0eedeb83bc633bb5c2ef0a5154fcc768fdf08f0d5c55febfa6d041fefcf187a5ec030f4417d1c1cccf1441ffbfc70d282e135378f3a9be6"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "24e5715ba2fed39ab779c5c57a878fe3eca88e8e"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3f7cbfa935bf0d0784965b19b2c21d9582d7b31c9d6137f7c8236cba0f46b95f"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-.github-workflows-test-unit.yml",
+      "fileName": ".github/workflows/test-unit.yml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d1dc55af35a5ac467091769beaa3c5cea96f7965080e3a620d5a6dec334ce950"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "54af2f8d8e54622b9ae1f83ef41ff79a1dddba98cd493f4cabdea8b9e88431cf754686464697379687f6f861d6283f8af4732faafe7ac058b8d480f65f3bcb29"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "1c27cf6034bb1e75a45748090956df60ae7d9dfb"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-init.go",
+      "fileName": "pkg/quarkus/v1alpha/scaffolds/init.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c45374ac1479ca613a73e3c0af7751ed1b4b12a3"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b5f5890e06882f183ac6b70241991d54417a562a05fd5d058ffea6d0885fbbe9"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f7c2930997df2beb224c6d4687d5b54af454895d5cce2557bb61b6fb2e02dd2a655b1671b21f4251bf925116f6ac2f14dc9667a6929b18543ceeda335dae1304"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-gitignore.go",
+      "fileName": "pkg/quarkus/v1alpha/scaffolds/internal/templates/gitignore.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "338f468794fbf449d3a9d823fe8a8c54a3b36b1b6c4f8cc8c8bccb408ff76804"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "e67b5d434bd1ac1d9323e74a6d67b270fbc0dc1266a7d1f490478c0e3a00bb2e29b48babbe5c9d4ca46ab7884165c50f001bceb8d0d3757e0a33c36c119d8d24"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "7dd4097b80fec580dc152ffb71a875e9a26f70eb"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-README.md",
+      "fileName": "README.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "cc0395a5615f0872b9cd93828f9d0ce7483c58b6"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1fd8c533619c173059a6d611da777b7d870502604ca9274782043b44dea0599f"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "3780084359f1160c3a1406ca50c67ddff2d4840b97a7de4f5fe24474ddd2a0ac587a90c78a95617d34248b4cab68e8aca7596e6fae29a8e154babb96ef6b3d4b"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-SECURITY.md",
+      "fileName": "SECURITY.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "eb17f5503dd7a99721c0f320e7f7046bf9ab1d1995f8f1aba213e543650f23d1"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "6988173ff0ded6c574a7894e47ee4166b64acf8b950627cfa603baf3841a8efc3575e41a04dd15ee0f111957d3689fcd50fb0a893efcab495da8bbf94b34d6d5"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "cbd5cb164019ae5331c4d969c0a0739b2d98c396"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-src-main-java-com-example-MemcachedSpec.java",
+      "fileName": "testdata/quarkus/memcached-quarkus-operator/src/main/java/com/example/MemcachedSpec.java",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "acf10f73816b6e33f82abc970d81a1408eb97a2d1d3879a6fcbbae3180389e90177553f53b3deb2956e6fdf00138361b4ac03506d8eea68611a5d122ee60c870"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "074abbbaa9ea727082f0adc0fa5cbe17226d2939"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8f5245f69f00837ee94b96a432bd11fdf9a54ecfe5a65c4f752a2f471861dfef"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-.github-workflows-lint.yml",
+      "fileName": ".github/workflows/lint.yml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "c5f20599061b7449f886404b02bbff9d7195ef34510b5bcee529c3f51e655db3d33a6dedb67110f5bd600dcd99e02e743164660fd23d174b0d9bcf46fbf3c562"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "bc17b5d1bb7135963f063245bd348368cd37e35c"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7ed3f1cbad322211a49608ff5d02b7e4ce1afa84f45caa46b522ef90f2acee20"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-bundle-manifests-cache.example.comC95memcacheds.yaml",
+      "fileName": "testdata/quarkus/memcached-quarkus-operator/bundle/manifests/cache.example.com_memcacheds.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "1778c0e17399dc01a27cf1892448272d093626ee768b4bf0579ce88ed7e782a74f628a31f52d057342dd641410a880263bcb43fc1c774d89378221dcb65d6ab6"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "abefb1042fa27aa0dc0fce34253a06d9fc80299c"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "73a179834b3c21ea3979f1ffecd3dfcee45e76ea4d84a5e80a65e2949b433cf3"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-.github-ISSUEC95TEMPLATE-feature-request.md",
+      "fileName": ".github/ISSUE_TEMPLATE/feature-request.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "35a0862cf445fbfbb0c6527e6ee336d1d94204b1"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e13042fb656b1dfc7e9070a81c9e7c7df4c14967df1865a9fdcffddc17a43c35"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "045f06556f8dc53c33e7b06a87fef45e3c616434657abc0a35fa677e0cf1200d8e332ffd6466ff05bb79b65db7f6d886cfd2c82eccdca943b446644dbeb7d12d"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-release.sh",
+      "fileName": "release.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "b495f15f17ba34b7eed5fca34d957a65bde0ccc3"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e4d97de12c23bc1a71bd5ab35dc1d7432924e80e5fdb8c9b87c6407bf484d282"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "099ef7387423721842e3faf45b3e3ddcadd43444e2fe37c453d536871410eaaafce31803e8ee02af0169a189487918abad1ef57c4fd977a5f69195cee7f95343"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-apiC95test.go",
+      "fileName": "pkg/quarkus/v1alpha/api_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "67ce9be76113638666683fb69e209ca45edaa384"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d878f5e488af2f7adcc08177a4548f80993c432218d7dc8bc2e8fee86d0c4e4e"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "e02ea5ce9452bc81cf5ed8534f5b0dc135bb5cbdd59ad8422c00bdc967b6234502b26b0464d356bb7ac382bfc63b36462077132e6b80cf0d081f10f64e9e8dac"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-applicationproperties.go",
+      "fileName": "pkg/quarkus/v1alpha/scaffolds/internal/templates/applicationproperties.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "dc923591dc9c63f7a0a24a05a8db963cf3895f7b"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ade77a80db293518fb58d4d921a6f3a1df555a589785d13c5c5ed6f117973284"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "d56c1e1c007621b21e38124a996ab25a81572a0752303165e4be66bc15ab0fee306b131fb64dd987fb7e69ef5a0af906aace5ef819868de770003af5a8582ef9"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-model-modelspec.go",
+      "fileName": "pkg/quarkus/v1alpha/scaffolds/internal/templates/model/modelspec.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "72e1b7ee92c2999975d0ae01ebff9d7dda047e6c"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "16f556ffd3cc1bb375a3bd674f00c5a5f6ed188aa9d68616104df50416815fed"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "a0655ea1df8fbaaaab85dd0d2f1199caf3aa4636bc8e3f86580830f0e05a36ce1066176c7a0301a4df5531ed50e394f01f21c3bd8c894317462d166ce3b051bc"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-OWNERSC95ALIASES",
+      "fileName": "OWNERS_ALIASES",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "4d048bf8bc16459d81682c9fe33669602b0c681ea70d5450585723085bebcbfe685d5a9ae39323b28fe8dc096c9b83f104ff539c432ce40259d91e1f60a3da54"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "dc1764b555a5b4db13350dfa5f26394841da5311"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e3f0630faad1ba25f00861b275eddaa3fa8bfc569989117696696dfbb34de3f6"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-util-utilC95suiteC95test.go",
+      "fileName": "pkg/quarkus/v1alpha/util/util_suite_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "5d23d5f331b7f8dd517bae18ed39f70ccf8d6a52f1c11b990fa9fd8e4ded8c4f4d3250a85882904017400f6370724319fb35ae1e474b9443f00019952e6f5e9f"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "549c72606658ab283440133b551f42f45882d6ae"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "58ee9d9a8d10d843c8abec2a87019b0de4b77ca77792e7ecd3eea5a093c78d91"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-util-utilC95test.go",
+      "fileName": "pkg/quarkus/v1alpha/util/util_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5f498988a0461d30a7f2287c3ad6f858edf66168e59f4c6f58ebb860a56eb198"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "57af3f8eb412e9a24288f4fa7a4cfd8007f2ead2eacd07fd3041a9bc210d2b02ae2c97c878a2af954ccf801240914ed910e5bce9be89d66662201996882f558b"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "5bfb54649b9ca767ad2beb6086c5757681932a1b"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-initC95test.go",
+      "fileName": "pkg/quarkus/v1alpha/init_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3c7eb447416bfcd958e2f76ab290d92b7f5b9fee709bac2b4a0d19a5670fd9a4"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "20184d011a7a1c31c79420b5a5d20016c831bffaa050bcd049877d7f99224204f8d593f0fc88af0bd873ff4abe97ab9661edb2c58fa13a2607ee50d8cc3d1344"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "53ceec4d6e99050bf72e12e8702f9ab883fb1d08"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-README.md",
+      "fileName": "testdata/quarkus/memcached-quarkus-operator/README.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "eea2f53aba74ad3fc1344cb46604891ec6f3281d"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8d4755c3f602e8637eaf9441a7c940b72e4d9b216a4db69f5a86a8f0187a3c1a"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "7e8877a9f25895a595efebfbc78226d8b20a2f7916df8825e03112b30bc3835903601edfe05b2696b9d3e8bd2318fe7f6a855fce947511eb9673e623018e1084"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-.github-dependabot.yml",
+      "fileName": ".github/dependabot.yml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "1415a18cac9bf9fddd61d35a7e4620694490e425"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "fe721581a0c4ab76404bd34053e9a058ec733719288f9bb18a1747e9aabeffe0"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "123e301ea38c77b245cae67a84eae27ef0c8dd473009d57870cadbd7ad4266a6ec608fd1a6d0a720d99dd1c585058bdb0ad4d5301e33307e3cfc5f342c77a6b3"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-init.go",
+      "fileName": "pkg/quarkus/v1alpha/init.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ccf78ac1b9786cd364bd66600f506293285303a5"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "847e6e4d007c384e0b545ff074dc66b003e0c1e3b86a6b4fe7883501eaa0921f"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "4b2ecc1c89abe75cebc85afde9edf606571afeee05270cd7519b07a4bc442cdfb0350a3b70c96e6f78db7fd1d6bd5afc54ebe29285d45fcaddd58e8123d59ae5"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-bundle-manifests-memcached-quarkus-operator-operatorC95v1C95service.yaml",
+      "fileName": "testdata/quarkus/memcached-quarkus-operator/bundle/manifests/memcached-quarkus-operator-operator_v1_service.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "683166f2c8db36a7346e6a3a76bd12d59eef6da1"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a77da8552c0f70ed51d1740e33435b673b4e3d651015106b5c80846479a44ac9"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "8c3661de61fd62edbebe36735267189d0464009735f8101b96eefbae283d1854f64ef63bd957d2ed7a20626f4cca06262e01b0a241672563062a23b2649a97a2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-.gitignore",
+      "fileName": "testdata/quarkus/memcached-quarkus-operator/.gitignore",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9d42e4d83547658efd7f94bfda5d69645c4f8a114d4e5c48e3b84c15f57315d5"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "49706f09ae6f447b0f23334a69e000696474f770a4efbd405f61b51e65fd9d0980719b2babd7cf8ebb918a8397484ecddf92e47a07bbaef5a9e035caeae213d6"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e816ab6270e2276bf5d047070f53a06e034e25cd"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-util-utilC95suiteC95test.go",
+      "fileName": "pkg/quarkus/v1alpha/scaffolds/internal/templates/util/util_suite_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c307508826f6c9daf39944135093c2f9fd0d44d1"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0c56eec3ab2076212fcd4012e34131596f6972168563d009274640af05b3fc99"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "ad7c95e415aa50574248c1481f28bba7efa00786b79228b56753da6dcd0df0f5263fd02bfcc9034de843928071dbd3d72f1fd288b897011d1761b6f1ac7df6f1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-src-main-resources-application.properties",
+      "fileName": "testdata/quarkus/memcached-quarkus-operator/src/main/resources/application.properties",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1afcfbe9d0630b8d496faba2cc1039b2e070624e529a61482de82b8f3bde7f13"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "9013851635371641224b8efeba091efccb8b9bd792a132e320fe2dcef12f1787ce051e16f19b85bc91b504aff4e2bb3d1b7ae8656a1e6fcd729bb0fb52a9cf66"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "3dda177617c3213456941e1d7430d5b88ed0c501"
+        }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-gomod-github.com-spf13-pflag-v1.0.5",
+      "name": "github.com/spf13/pflag",
+      "versionInfo": "v1.0.5",
+      "filesAnalyzed": false,
+      "licenseConcluded": "BSD-3-Clause",
+      "downloadLocation": "https://proxy.golang.org/github.com/spf13/pflag/@v/v1.0.5.zip",
+      "copyrightText": "Copyright (c) 2012 Alex Ogier. All rights reserved.\nCopyright (c) 2012 The Go Authors. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are\nmet:\n\n   * Redistributions of source code must retain the above copyright\nnotice, this list of conditions and the following disclaimer.\n   * Redistributions in binary form must reproduce the above\ncopyright notice, this list of conditions and the following disclaimer\nin the documentation and/or other materials provided with the\ndistribution.\n   * Neither the name of Google Inc. nor the names of its\ncontributors may be used to endorse or promote products derived from\nthis software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\n\"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT\nLIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\nA PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT\nOWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,\nDATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY\nTHEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/github.com/spf13/pflag@v1.0.5",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-gomod-golang.org-x-tools-v0.10.0",
+      "name": "golang.org/x/tools",
+      "versionInfo": "v0.10.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "BSD-3-Clause",
+      "downloadLocation": "https://proxy.golang.org/golang.org/x/tools/@v/v0.10.0.zip",
+      "copyrightText": "Copyright (c) 2009 The Go Authors. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are\nmet:\n\n   * Redistributions of source code must retain the above copyright\nnotice, this list of conditions and the following disclaimer.\n   * Redistributions in binary form must reproduce the above\ncopyright notice, this list of conditions and the following disclaimer\nin the documentation and/or other materials provided with the\ndistribution.\n   * Neither the name of Google Inc. nor the names of its\ncontributors may be used to endorse or promote products derived from\nthis software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\n\"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT\nLIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\nA PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT\nOWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,\nDATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY\nTHEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/golang.org/x/tools@v0.10.0",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-gomod-sigs.k8s.io-yaml-v1.3.0",
+      "name": "sigs.k8s.io/yaml",
+      "versionInfo": "v1.3.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "BSD-3-Clause",
+      "downloadLocation": "https://proxy.golang.org/sigs.k8s.io/yaml/@v/v1.3.0.zip",
+      "copyrightText": "The MIT License (MIT)\n\nCopyright (c) 2014 Sam Ghods\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n\n\nCopyright (c) 2012 The Go Authors. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are\nmet:\n\n   * Redistributions of source code must retain the above copyright\nnotice, this list of conditions and the following disclaimer.\n   * Redistributions in binary form must reproduce the above\ncopyright notice, this list of conditions and the following disclaimer\nin the documentation and/or other materials provided with the\ndistribution.\n   * Neither the name of Google Inc. nor the names of its\ncontributors may be used to endorse or promote products derived from\nthis software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\n\"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT\nLIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\nA PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT\nOWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,\nDATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY\nTHEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/sigs.k8s.io/yaml@v1.3.0",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-gomod-gopkg.in-yaml.v2-v2.4.0",
+      "name": "gopkg.in/yaml.v2",
+      "versionInfo": "v2.4.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0",
+      "downloadLocation": "https://proxy.golang.org/gopkg.in/yaml.v2/@v/v2.4.0.zip",
+      "copyrightText": "                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or entity authorized by\n      the copyright owner that is granting the License.\n\n      \"Legal Entity\" shall mean the union of the acting entity and all\n      other entities that control, are controlled by, or are under common\n      control with that entity. For the purposes of this definition,\n      \"control\" means (i) the power, direct or indirect, to cause the\n      direction or management of such entity, whether by contract or\n      otherwise, or (ii) ownership of fifty percent (50%) or more of the\n      outstanding shares, or (iii) beneficial ownership of such entity.\n\n      \"You\" (or \"Your\") shall mean an individual or Legal Entity\n      exercising permissions granted by this License.\n\n      \"Source\" form shall mean the preferred form for making modifications,\n      including but not limited to software source code, documentation\n      source, and configuration files.\n\n      \"Object\" form shall mean any form resulting from mechanical\n      transformation or translation of a Source form, including but\n      not limited to compiled object code, generated documentation,\n      and conversions to other media types.\n\n      \"Work\" shall mean the work of authorship, whether in Source or\n      Object form, made available under the License, as indicated by a\n      copyright notice that is included in or attached to the work\n      (an example is provided in the Appendix below).\n\n      \"Derivative Works\" shall mean any work, whether in Source or Object\n      form, that is based on (or derived from) the Work and for which the\n      editorial revisions, annotations, elaborations, or other modifications\n      represent, as a whole, an original work of authorship. For the purposes\n      of this License, Derivative Works shall not include works that remain\n      separable from, or merely link (or bind by name) to the interfaces of,\n      the Work and Derivative Works thereof.\n\n      \"Contribution\" shall mean any work of authorship, including\n      the original version of the Work and any modifications or additions\n      to that Work or Derivative Works thereof, that is intentionally\n      submitted to Licensor for inclusion in the Work by the copyright owner\n      or by an individual or Legal Entity authorized to submit on behalf of\n      the copyright owner. For the purposes of this definition, \"submitted\"\n      means any form of electronic, verbal, or written communication sent\n      to the Licensor or its representatives, including but not limited to\n      communication on electronic mailing lists, source code control systems,\n      and issue tracking systems that are managed by, or on behalf of, the\n      Licensor for the purpose of discussing and improving the Work, but\n      excluding communication that is conspicuously marked or otherwise\n      designated in writing by the copyright owner as \"Not a Contribution.\"\n\n      \"Contributor\" shall mean Licensor and any individual or Legal Entity\n      on behalf of whom a Contribution has been received by Licensor and\n      subsequently incorporated within the Work.\n\n   2. Grant of Copyright License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      copyright license to reproduce, prepare Derivative Works of,\n      publicly display, publicly perform, sublicense, and distribute the\n      Work and such Derivative Works in Source or Object form.\n\n   3. Grant of Patent License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      (except as stated in this section) patent license to make, have made,\n      use, offer to sell, sell, import, and otherwise transfer the Work,\n      where such license applies only to those patent claims licensable\n      by such Contributor that are necessarily infringed by their\n      Contribution(s) alone or by combination of their Contribution(s)\n      with the Work to which such Contribution(s) was submitted. If You\n      institute patent litigation against any entity (including a\n      cross-claim or counterclaim in a lawsuit) alleging that the Work\n      or a Contribution incorporated within the Work constitutes direct\n      or contributory patent infringement, then any patent licenses\n      granted to You under this License for that Work shall terminate\n      as of the date such litigation is filed.\n\n   4. Redistribution. You may reproduce and distribute copies of the\n      Work or Derivative Works thereof in any medium, with or without\n      modifications, and in Source or Object form, provided that You\n      meet the following conditions:\n\n      (a) You must give any other recipients of the Work or\n          Derivative Works a copy of this License; and\n\n      (b) You must cause any modified files to carry prominent notices\n          stating that You changed the files; and\n\n      (c) You must retain, in the Source form of any Derivative Works\n          that You distribute, all copyright, patent, trademark, and\n          attribution notices from the Source form of the Work,\n          excluding those notices that do not pertain to any part of\n          the Derivative Works; and\n\n      (d) If the Work includes a \"NOTICE\" text file as part of its\n          distribution, then any Derivative Works that You distribute must\n          include a readable copy of the attribution notices contained\n          within such NOTICE file, excluding those notices that do not\n          pertain to any part of the Derivative Works, in at least one\n          of the following places: within a NOTICE text file distributed\n          as part of the Derivative Works; within the Source form or\n          documentation, if provided along with the Derivative Works; or,\n          within a display generated by the Derivative Works, if and\n          wherever such third-party notices normally appear. The contents\n          of the NOTICE file are for informational purposes only and\n          do not modify the License. You may add Your own attribution\n          notices within Derivative Works that You distribute, alongside\n          or as an addendum to the NOTICE text from the Work, provided\n          that such additional attribution notices cannot be construed\n          as modifying the License.\n\n      You may add Your own copyright statement to Your modifications and\n      may provide additional or different license terms and conditions\n      for use, reproduction, or distribution of Your modifications, or\n      for any such Derivative Works as a whole, provided Your use,\n      reproduction, and distribution of the Work otherwise complies with\n      the conditions stated in this License.\n\n   5. Submission of Contributions. Unless You explicitly state otherwise,\n      any Contribution intentionally submitted for inclusion in the Work\n      by You to the Licensor shall be under the terms and conditions of\n      this License, without any additional terms or conditions.\n      Notwithstanding the above, nothing herein shall supersede or modify\n      the terms of any separate license agreement you may have executed\n      with Licensor regarding such Contributions.\n\n   6. Trademarks. This License does not grant permission to use the trade\n      names, trademarks, service marks, or product names of the Licensor,\n      except as required for reasonable and customary use in describing the\n      origin of the Work and reproducing the content of the NOTICE file.\n\n   7. Disclaimer of Warranty. Unless required by applicable law or\n      agreed to in writing, Licensor provides the Work (and each\n      Contributor provides its Contributions) on an \"AS IS\" BASIS,\n      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\n      implied, including, without limitation, any warranties or conditions\n      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A\n      PARTICULAR PURPOSE. You are solely responsible for determining the\n      appropriateness of using or redistributing the Work and assume any\n      risks associated with Your exercise of permissions under this License.\n\n   8. Limitation of Liability. In no event and under no legal theory,\n      whether in tort (including negligence), contract, or otherwise,\n      unless required by applicable law (such as deliberate and grossly\n      negligent acts) or agreed to in writing, shall any Contributor be\n      liable to You for damages, including any direct, indirect, special,\n      incidental, or consequential damages of any character arising as a\n      result of this License or out of the use or inability to use the\n      Work (including but not limited to damages for loss of goodwill,\n      work stoppage, computer failure or malfunction, or any and all\n      other commercial damages or losses), even if such Contributor\n      has been advised of the possibility of such damages.\n\n   9. Accepting Warranty or Additional Liability. While redistributing\n      the Work or Derivative Works thereof, You may choose to offer,\n      and charge a fee for, acceptance of support, warranty, indemnity,\n      or other liability obligations and/or rights consistent with this\n      License. However, in accepting such obligations, You may act only\n      on Your own behalf and on Your sole responsibility, not on behalf\n      of any other Contributor, and only if You agree to indemnify,\n      defend, and hold each Contributor harmless for any liability\n      incurred by, or claims asserted against, such Contributor by reason\n      of your accepting any such warranty or additional liability.\n\n   END OF TERMS AND CONDITIONS\n\n   APPENDIX: How to apply the Apache License to your work.\n\n      To apply the Apache License to your work, attach the following\n      boilerplate notice, with the fields enclosed by brackets \"{}\"\n      replaced with your own identifying information. (Don't include\n      the brackets!)  The text should be enclosed in the appropriate\n      comment syntax for the file format. We also recommend that a\n      file or class name and description of purpose be included on the\n      same \"printed page\" as the copyright notice for easier\n      identification within third-party archives.\n\n   Copyright {yyyy} {name of copyright owner}\n\n   Licensed under the Apache License, Version 2.0 (the \"License\");\n   you may not use this file except in compliance with the License.\n   You may obtain a copy of the License at\n\n       http://www.apache.org/licenses/LICENSE-2.0\n\n   Unless required by applicable law or agreed to in writing, software\n   distributed under the License is distributed on an \"AS IS\" BASIS,\n   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n   See the License for the specific language governing permissions and\n   limitations under the License.\n",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-gomod-github.com-spf13-afero-v1.9.5",
+      "name": "github.com/spf13/afero",
+      "versionInfo": "v1.9.5",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Pixar",
+      "downloadLocation": "https://proxy.golang.org/github.com/spf13/afero/@v/v1.9.5.zip",
+      "copyrightText": "                                Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or entity authorized by\n      the copyright owner that is granting the License.\n\n      \"Legal Entity\" shall mean the union of the acting entity and all\n      other entities that control, are controlled by, or are under common\n      control with that entity. For the purposes of this definition,\n      \"control\" means (i) the power, direct or indirect, to cause the\n      direction or management of such entity, whether by contract or\n      otherwise, or (ii) ownership of fifty percent (50%) or more of the\n      outstanding shares, or (iii) beneficial ownership of such entity.\n\n      \"You\" (or \"Your\") shall mean an individual or Legal Entity\n      exercising permissions granted by this License.\n\n      \"Source\" form shall mean the preferred form for making modifications,\n      including but not limited to software source code, documentation\n      source, and configuration files.\n\n      \"Object\" form shall mean any form resulting from mechanical\n      transformation or translation of a Source form, including but\n      not limited to compiled object code, generated documentation,\n      and conversions to other media types.\n\n      \"Work\" shall mean the work of authorship, whether in Source or\n      Object form, made available under the License, as indicated by a\n      copyright notice that is included in or attached to the work\n      (an example is provided in the Appendix below).\n\n      \"Derivative Works\" shall mean any work, whether in Source or Object\n      form, that is based on (or derived from) the Work and for which the\n      editorial revisions, annotations, elaborations, or other modifications\n      represent, as a whole, an original work of authorship. For the purposes\n      of this License, Derivative Works shall not include works that remain\n      separable from, or merely link (or bind by name) to the interfaces of,\n      the Work and Derivative Works thereof.\n\n      \"Contribution\" shall mean any work of authorship, including\n      the original version of the Work and any modifications or additions\n      to that Work or Derivative Works thereof, that is intentionally\n      submitted to Licensor for inclusion in the Work by the copyright owner\n      or by an individual or Legal Entity authorized to submit on behalf of\n      the copyright owner. For the purposes of this definition, \"submitted\"\n      means any form of electronic, verbal, or written communication sent\n      to the Licensor or its representatives, including but not limited to\n      communication on electronic mailing lists, source code control systems,\n      and issue tracking systems that are managed by, or on behalf of, the\n      Licensor for the purpose of discussing and improving the Work, but\n      excluding communication that is conspicuously marked or otherwise\n      designated in writing by the copyright owner as \"Not a Contribution.\"\n\n      \"Contributor\" shall mean Licensor and any individual or Legal Entity\n      on behalf of whom a Contribution has been received by Licensor and\n      subsequently incorporated within the Work.\n\n   2. Grant of Copyright License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      copyright license to reproduce, prepare Derivative Works of,\n      publicly display, publicly perform, sublicense, and distribute the\n      Work and such Derivative Works in Source or Object form.\n\n   3. Grant of Patent License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      (except as stated in this section) patent license to make, have made,\n      use, offer to sell, sell, import, and otherwise transfer the Work,\n      where such license applies only to those patent claims licensable\n      by such Contributor that are necessarily infringed by their\n      Contribution(s) alone or by combination of their Contribution(s)\n      with the Work to which such Contribution(s) was submitted. If You\n      institute patent litigation against any entity (including a\n      cross-claim or counterclaim in a lawsuit) alleging that the Work\n      or a Contribution incorporated within the Work constitutes direct\n      or contributory patent infringement, then any patent licenses\n      granted to You under this License for that Work shall terminate\n      as of the date such litigation is filed.\n\n   4. Redistribution. You may reproduce and distribute copies of the\n      Work or Derivative Works thereof in any medium, with or without\n      modifications, and in Source or Object form, provided that You\n      meet the following conditions:\n\n      (a) You must give any other recipients of the Work or\n          Derivative Works a copy of this License; and\n\n      (b) You must cause any modified files to carry prominent notices\n          stating that You changed the files; and\n\n      (c) You must retain, in the Source form of any Derivative Works\n          that You distribute, all copyright, patent, trademark, and\n          attribution notices from the Source form of the Work,\n          excluding those notices that do not pertain to any part of\n          the Derivative Works; and\n\n      (d) If the Work includes a \"NOTICE\" text file as part of its\n          distribution, then any Derivative Works that You distribute must\n          include a readable copy of the attribution notices contained\n          within such NOTICE file, excluding those notices that do not\n          pertain to any part of the Derivative Works, in at least one\n          of the following places: within a NOTICE text file distributed\n          as part of the Derivative Works; within the Source form or\n          documentation, if provided along with the Derivative Works; or,\n          within a display generated by the Derivative Works, if and\n          wherever such third-party notices normally appear. The contents\n          of the NOTICE file are for informational purposes only and\n          do not modify the License. You may add Your own attribution\n          notices within Derivative Works that You distribute, alongside\n          or as an addendum to the NOTICE text from the Work, provided\n          that such additional attribution notices cannot be construed\n          as modifying the License.\n\n      You may add Your own copyright statement to Your modifications and\n      may provide additional or different license terms and conditions\n      for use, reproduction, or distribution of Your modifications, or\n      for any such Derivative Works as a whole, provided Your use,\n      reproduction, and distribution of the Work otherwise complies with\n      the conditions stated in this License.\n\n   5. Submission of Contributions. Unless You explicitly state otherwise,\n      any Contribution intentionally submitted for inclusion in the Work\n      by You to the Licensor shall be under the terms and conditions of\n      this License, without any additional terms or conditions.\n      Notwithstanding the above, nothing herein shall supersede or modify\n      the terms of any separate license agreement you may have executed\n      with Licensor regarding such Contributions.\n\n   6. Trademarks. This License does not grant permission to use the trade\n      names, trademarks, service marks, or product names of the Licensor,\n      except as required for reasonable and customary use in describing the\n      origin of the Work and reproducing the content of the NOTICE file.\n\n   7. Disclaimer of Warranty. Unless required by applicable law or\n      agreed to in writing, Licensor provides the Work (and each\n      Contributor provides its Contributions) on an \"AS IS\" BASIS,\n      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\n      implied, including, without limitation, any warranties or conditions\n      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A\n      PARTICULAR PURPOSE. You are solely responsible for determining the\n      appropriateness of using or redistributing the Work and assume any\n      risks associated with Your exercise of permissions under this License.\n\n   8. Limitation of Liability. In no event and under no legal theory,\n      whether in tort (including negligence), contract, or otherwise,\n      unless required by applicable law (such as deliberate and grossly\n      negligent acts) or agreed to in writing, shall any Contributor be\n      liable to You for damages, including any direct, indirect, special,\n      incidental, or consequential damages of any character arising as a\n      result of this License or out of the use or inability to use the\n      Work (including but not limited to damages for loss of goodwill,\n      work stoppage, computer failure or malfunction, or any and all\n      other commercial damages or losses), even if such Contributor\n      has been advised of the possibility of such damages.\n\n   9. Accepting Warranty or Additional Liability. While redistributing\n      the Work or Derivative Works thereof, You may choose to offer,\n      and charge a fee for, acceptance of support, warranty, indemnity,\n      or other liability obligations and/or rights consistent with this\n      License. However, in accepting such obligations, You may act only\n      on Your own behalf and on Your sole responsibility, not on behalf\n      of any other Contributor, and only if You agree to indemnify,\n      defend, and hold each Contributor harmless for any liability\n      incurred by, or claims asserted against, such Contributor by reason\n      of your accepting any such warranty or additional liability.\n",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/github.com/spf13/afero@v1.9.5",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-gomod-k8s.io-apimachinery-v0.27.2",
+      "name": "k8s.io/apimachinery",
+      "versionInfo": "v0.27.2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0",
+      "downloadLocation": "https://proxy.golang.org/k8s.io/apimachinery/@v/v0.27.2.zip",
+      "copyrightText": "\n                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or entity authorized by\n      the copyright owner that is granting the License.\n\n      \"Legal Entity\" shall mean the union of the acting entity and all\n      other entities that control, are controlled by, or are under common\n      control with that entity. For the purposes of this definition,\n      \"control\" means (i) the power, direct or indirect, to cause the\n      direction or management of such entity, whether by contract or\n      otherwise, or (ii) ownership of fifty percent (50%) or more of the\n      outstanding shares, or (iii) beneficial ownership of such entity.\n\n      \"You\" (or \"Your\") shall mean an individual or Legal Entity\n      exercising permissions granted by this License.\n\n      \"Source\" form shall mean the preferred form for making modifications,\n      including but not limited to software source code, documentation\n      source, and configuration files.\n\n      \"Object\" form shall mean any form resulting from mechanical\n      transformation or translation of a Source form, including but\n      not limited to compiled object code, generated documentation,\n      and conversions to other media types.\n\n      \"Work\" shall mean the work of authorship, whether in Source or\n      Object form, made available under the License, as indicated by a\n      copyright notice that is included in or attached to the work\n      (an example is provided in the Appendix below).\n\n      \"Derivative Works\" shall mean any work, whether in Source or Object\n      form, that is based on (or derived from) the Work and for which the\n      editorial revisions, annotations, elaborations, or other modifications\n      represent, as a whole, an original work of authorship. For the purposes\n      of this License, Derivative Works shall not include works that remain\n      separable from, or merely link (or bind by name) to the interfaces of,\n      the Work and Derivative Works thereof.\n\n      \"Contribution\" shall mean any work of authorship, including\n      the original version of the Work and any modifications or additions\n      to that Work or Derivative Works thereof, that is intentionally\n      submitted to Licensor for inclusion in the Work by the copyright owner\n      or by an individual or Legal Entity authorized to submit on behalf of\n      the copyright owner. For the purposes of this definition, \"submitted\"\n      means any form of electronic, verbal, or written communication sent\n      to the Licensor or its representatives, including but not limited to\n      communication on electronic mailing lists, source code control systems,\n      and issue tracking systems that are managed by, or on behalf of, the\n      Licensor for the purpose of discussing and improving the Work, but\n      excluding communication that is conspicuously marked or otherwise\n      designated in writing by the copyright owner as \"Not a Contribution.\"\n\n      \"Contributor\" shall mean Licensor and any individual or Legal Entity\n      on behalf of whom a Contribution has been received by Licensor and\n      subsequently incorporated within the Work.\n\n   2. Grant of Copyright License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      copyright license to reproduce, prepare Derivative Works of,\n      publicly display, publicly perform, sublicense, and distribute the\n      Work and such Derivative Works in Source or Object form.\n\n   3. Grant of Patent License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      (except as stated in this section) patent license to make, have made,\n      use, offer to sell, sell, import, and otherwise transfer the Work,\n      where such license applies only to those patent claims licensable\n      by such Contributor that are necessarily infringed by their\n      Contribution(s) alone or by combination of their Contribution(s)\n      with the Work to which such Contribution(s) was submitted. If You\n      institute patent litigation against any entity (including a\n      cross-claim or counterclaim in a lawsuit) alleging that the Work\n      or a Contribution incorporated within the Work constitutes direct\n      or contributory patent infringement, then any patent licenses\n      granted to You under this License for that Work shall terminate\n      as of the date such litigation is filed.\n\n   4. Redistribution. You may reproduce and distribute copies of the\n      Work or Derivative Works thereof in any medium, with or without\n      modifications, and in Source or Object form, provided that You\n      meet the following conditions:\n\n      (a) You must give any other recipients of the Work or\n          Derivative Works a copy of this License; and\n\n      (b) You must cause any modified files to carry prominent notices\n          stating that You changed the files; and\n\n      (c) You must retain, in the Source form of any Derivative Works\n          that You distribute, all copyright, patent, trademark, and\n          attribution notices from the Source form of the Work,\n          excluding those notices that do not pertain to any part of\n          the Derivative Works; and\n\n      (d) If the Work includes a \"NOTICE\" text file as part of its\n          distribution, then any Derivative Works that You distribute must\n          include a readable copy of the attribution notices contained\n          within such NOTICE file, excluding those notices that do not\n          pertain to any part of the Derivative Works, in at least one\n          of the following places: within a NOTICE text file distributed\n          as part of the Derivative Works; within the Source form or\n          documentation, if provided along with the Derivative Works; or,\n          within a display generated by the Derivative Works, if and\n          wherever such third-party notices normally appear. The contents\n          of the NOTICE file are for informational purposes only and\n          do not modify the License. You may add Your own attribution\n          notices within Derivative Works that You distribute, alongside\n          or as an addendum to the NOTICE text from the Work, provided\n          that such additional attribution notices cannot be construed\n          as modifying the License.\n\n      You may add Your own copyright statement to Your modifications and\n      may provide additional or different license terms and conditions\n      for use, reproduction, or distribution of Your modifications, or\n      for any such Derivative Works as a whole, provided Your use,\n      reproduction, and distribution of the Work otherwise complies with\n      the conditions stated in this License.\n\n   5. Submission of Contributions. Unless You explicitly state otherwise,\n      any Contribution intentionally submitted for inclusion in the Work\n      by You to the Licensor shall be under the terms and conditions of\n      this License, without any additional terms or conditions.\n      Notwithstanding the above, nothing herein shall supersede or modify\n      the terms of any separate license agreement you may have executed\n      with Licensor regarding such Contributions.\n\n   6. Trademarks. This License does not grant permission to use the trade\n      names, trademarks, service marks, or product names of the Licensor,\n      except as required for reasonable and customary use in describing the\n      origin of the Work and reproducing the content of the NOTICE file.\n\n   7. Disclaimer of Warranty. Unless required by applicable law or\n      agreed to in writing, Licensor provides the Work (and each\n      Contributor provides its Contributions) on an \"AS IS\" BASIS,\n      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\n      implied, including, without limitation, any warranties or conditions\n      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A\n      PARTICULAR PURPOSE. You are solely responsible for determining the\n      appropriateness of using or redistributing the Work and assume any\n      risks associated with Your exercise of permissions under this License.\n\n   8. Limitation of Liability. In no event and under no legal theory,\n      whether in tort (including negligence), contract, or otherwise,\n      unless required by applicable law (such as deliberate and grossly\n      negligent acts) or agreed to in writing, shall any Contributor be\n      liable to You for damages, including any direct, indirect, special,\n      incidental, or consequential damages of any character arising as a\n      result of this License or out of the use or inability to use the\n      Work (including but not limited to damages for loss of goodwill,\n      work stoppage, computer failure or malfunction, or any and all\n      other commercial damages or losses), even if such Contributor\n      has been advised of the possibility of such damages.\n\n   9. Accepting Warranty or Additional Liability. While redistributing\n      the Work or Derivative Works thereof, You may choose to offer,\n      and charge a fee for, acceptance of support, warranty, indemnity,\n      or other liability obligations and/or rights consistent with this\n      License. However, in accepting such obligations, You may act only\n      on Your own behalf and on Your sole responsibility, not on behalf\n      of any other Contributor, and only if You agree to indemnify,\n      defend, and hold each Contributor harmless for any liability\n      incurred by, or claims asserted against, such Contributor by reason\n      of your accepting any such warranty or additional liability.\n\n   END OF TERMS AND CONDITIONS\n\n   APPENDIX: How to apply the Apache License to your work.\n\n      To apply the Apache License to your work, attach the following\n      boilerplate notice, with the fields enclosed by brackets \"[]\"\n      replaced with your own identifying information. (Don't include\n      the brackets!)  The text should be enclosed in the appropriate\n      comment syntax for the file format. We also recommend that a\n      file or class name and description of purpose be included on the\n      same \"printed page\" as the copyright notice for easier\n      identification within third-party archives.\n\n   Copyright [yyyy] [name of copyright owner]\n\n   Licensed under the Apache License, Version 2.0 (the \"License\");\n   you may not use this file except in compliance with the License.\n   You may obtain a copy of the License at\n\n       http://www.apache.org/licenses/LICENSE-2.0\n\n   Unless required by applicable law or agreed to in writing, software\n   distributed under the License is distributed on an \"AS IS\" BASIS,\n   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n   See the License for the specific language governing permissions and\n   limitations under the License.\n",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/k8s.io/apimachinery@v0.27.2",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-gomod-k8s.io-utils-v0.0.0-20230209194617-a36077c30491",
+      "name": "k8s.io/utils",
+      "versionInfo": "v0.0.0-20230209194617-a36077c30491",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0",
+      "downloadLocation": "https://proxy.golang.org/k8s.io/utils/@v/v0.0.0-20230209194617-a36077c30491.zip",
+      "copyrightText": "\n                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or entity authorized by\n      the copyright owner that is granting the License.\n\n      \"Legal Entity\" shall mean the union of the acting entity and all\n      other entities that control, are controlled by, or are under common\n      control with that entity. For the purposes of this definition,\n      \"control\" means (i) the power, direct or indirect, to cause the\n      direction or management of such entity, whether by contract or\n      otherwise, or (ii) ownership of fifty percent (50%) or more of the\n      outstanding shares, or (iii) beneficial ownership of such entity.\n\n      \"You\" (or \"Your\") shall mean an individual or Legal Entity\n      exercising permissions granted by this License.\n\n      \"Source\" form shall mean the preferred form for making modifications,\n      including but not limited to software source code, documentation\n      source, and configuration files.\n\n      \"Object\" form shall mean any form resulting from mechanical\n      transformation or translation of a Source form, including but\n      not limited to compiled object code, generated documentation,\n      and conversions to other media types.\n\n      \"Work\" shall mean the work of authorship, whether in Source or\n      Object form, made available under the License, as indicated by a\n      copyright notice that is included in or attached to the work\n      (an example is provided in the Appendix below).\n\n      \"Derivative Works\" shall mean any work, whether in Source or Object\n      form, that is based on (or derived from) the Work and for which the\n      editorial revisions, annotations, elaborations, or other modifications\n      represent, as a whole, an original work of authorship. For the purposes\n      of this License, Derivative Works shall not include works that remain\n      separable from, or merely link (or bind by name) to the interfaces of,\n      the Work and Derivative Works thereof.\n\n      \"Contribution\" shall mean any work of authorship, including\n      the original version of the Work and any modifications or additions\n      to that Work or Derivative Works thereof, that is intentionally\n      submitted to Licensor for inclusion in the Work by the copyright owner\n      or by an individual or Legal Entity authorized to submit on behalf of\n      the copyright owner. For the purposes of this definition, \"submitted\"\n      means any form of electronic, verbal, or written communication sent\n      to the Licensor or its representatives, including but not limited to\n      communication on electronic mailing lists, source code control systems,\n      and issue tracking systems that are managed by, or on behalf of, the\n      Licensor for the purpose of discussing and improving the Work, but\n      excluding communication that is conspicuously marked or otherwise\n      designated in writing by the copyright owner as \"Not a Contribution.\"\n\n      \"Contributor\" shall mean Licensor and any individual or Legal Entity\n      on behalf of whom a Contribution has been received by Licensor and\n      subsequently incorporated within the Work.\n\n   2. Grant of Copyright License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      copyright license to reproduce, prepare Derivative Works of,\n      publicly display, publicly perform, sublicense, and distribute the\n      Work and such Derivative Works in Source or Object form.\n\n   3. Grant of Patent License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      (except as stated in this section) patent license to make, have made,\n      use, offer to sell, sell, import, and otherwise transfer the Work,\n      where such license applies only to those patent claims licensable\n      by such Contributor that are necessarily infringed by their\n      Contribution(s) alone or by combination of their Contribution(s)\n      with the Work to which such Contribution(s) was submitted. If You\n      institute patent litigation against any entity (including a\n      cross-claim or counterclaim in a lawsuit) alleging that the Work\n      or a Contribution incorporated within the Work constitutes direct\n      or contributory patent infringement, then any patent licenses\n      granted to You under this License for that Work shall terminate\n      as of the date such litigation is filed.\n\n   4. Redistribution. You may reproduce and distribute copies of the\n      Work or Derivative Works thereof in any medium, with or without\n      modifications, and in Source or Object form, provided that You\n      meet the following conditions:\n\n      (a) You must give any other recipients of the Work or\n          Derivative Works a copy of this License; and\n\n      (b) You must cause any modified files to carry prominent notices\n          stating that You changed the files; and\n\n      (c) You must retain, in the Source form of any Derivative Works\n          that You distribute, all copyright, patent, trademark, and\n          attribution notices from the Source form of the Work,\n          excluding those notices that do not pertain to any part of\n          the Derivative Works; and\n\n      (d) If the Work includes a \"NOTICE\" text file as part of its\n          distribution, then any Derivative Works that You distribute must\n          include a readable copy of the attribution notices contained\n          within such NOTICE file, excluding those notices that do not\n          pertain to any part of the Derivative Works, in at least one\n          of the following places: within a NOTICE text file distributed\n          as part of the Derivative Works; within the Source form or\n          documentation, if provided along with the Derivative Works; or,\n          within a display generated by the Derivative Works, if and\n          wherever such third-party notices normally appear. The contents\n          of the NOTICE file are for informational purposes only and\n          do not modify the License. You may add Your own attribution\n          notices within Derivative Works that You distribute, alongside\n          or as an addendum to the NOTICE text from the Work, provided\n          that such additional attribution notices cannot be construed\n          as modifying the License.\n\n      You may add Your own copyright statement to Your modifications and\n      may provide additional or different license terms and conditions\n      for use, reproduction, or distribution of Your modifications, or\n      for any such Derivative Works as a whole, provided Your use,\n      reproduction, and distribution of the Work otherwise complies with\n      the conditions stated in this License.\n\n   5. Submission of Contributions. Unless You explicitly state otherwise,\n      any Contribution intentionally submitted for inclusion in the Work\n      by You to the Licensor shall be under the terms and conditions of\n      this License, without any additional terms or conditions.\n      Notwithstanding the above, nothing herein shall supersede or modify\n      the terms of any separate license agreement you may have executed\n      with Licensor regarding such Contributions.\n\n   6. Trademarks. This License does not grant permission to use the trade\n      names, trademarks, service marks, or product names of the Licensor,\n      except as required for reasonable and customary use in describing the\n      origin of the Work and reproducing the content of the NOTICE file.\n\n   7. Disclaimer of Warranty. Unless required by applicable law or\n      agreed to in writing, Licensor provides the Work (and each\n      Contributor provides its Contributions) on an \"AS IS\" BASIS,\n      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\n      implied, including, without limitation, any warranties or conditions\n      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A\n      PARTICULAR PURPOSE. You are solely responsible for determining the\n      appropriateness of using or redistributing the Work and assume any\n      risks associated with Your exercise of permissions under this License.\n\n   8. Limitation of Liability. In no event and under no legal theory,\n      whether in tort (including negligence), contract, or otherwise,\n      unless required by applicable law (such as deliberate and grossly\n      negligent acts) or agreed to in writing, shall any Contributor be\n      liable to You for damages, including any direct, indirect, special,\n      incidental, or consequential damages of any character arising as a\n      result of this License or out of the use or inability to use the\n      Work (including but not limited to damages for loss of goodwill,\n      work stoppage, computer failure or malfunction, or any and all\n      other commercial damages or losses), even if such Contributor\n      has been advised of the possibility of such damages.\n\n   9. Accepting Warranty or Additional Liability. While redistributing\n      the Work or Derivative Works thereof, You may choose to offer,\n      and charge a fee for, acceptance of support, warranty, indemnity,\n      or other liability obligations and/or rights consistent with this\n      License. However, in accepting such obligations, You may act only\n      on Your own behalf and on Your sole responsibility, not on behalf\n      of any other Contributor, and only if You agree to indemnify,\n      defend, and hold each Contributor harmless for any liability\n      incurred by, or claims asserted against, such Contributor by reason\n      of your accepting any such warranty or additional liability.\n\n   END OF TERMS AND CONDITIONS\n\n   APPENDIX: How to apply the Apache License to your work.\n\n      To apply the Apache License to your work, attach the following\n      boilerplate notice, with the fields enclosed by brackets \"[]\"\n      replaced with your own identifying information. (Don't include\n      the brackets!)  The text should be enclosed in the appropriate\n      comment syntax for the file format. We also recommend that a\n      file or class name and description of purpose be included on the\n      same \"printed page\" as the copyright notice for easier\n      identification within third-party archives.\n\n   Copyright [yyyy] [name of copyright owner]\n\n   Licensed under the Apache License, Version 2.0 (the \"License\");\n   you may not use this file except in compliance with the License.\n   You may obtain a copy of the License at\n\n       http://www.apache.org/licenses/LICENSE-2.0\n\n   Unless required by applicable law or agreed to in writing, software\n   distributed under the License is distributed on an \"AS IS\" BASIS,\n   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n   See the License for the specific language governing permissions and\n   limitations under the License.\n",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/k8s.io/utils@v0.0.0-20230209194617-a36077c30491",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-gomod-github.com-gobuffalo-flect-v1.0.2",
+      "name": "github.com/gobuffalo/flect",
+      "versionInfo": "v1.0.2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "downloadLocation": "https://proxy.golang.org/github.com/gobuffalo/flect/@v/v1.0.2.zip",
+      "copyrightText": "The MIT License (MIT)\n\nCopyright (c) 2019 Mark Bates\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/github.com/gobuffalo/flect@v1.0.2",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-gomod-sigs.k8s.io-kubebuilder-v3-v3.11.0",
+      "name": "sigs.k8s.io/kubebuilder/v3",
+      "versionInfo": "v3.11.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0",
+      "downloadLocation": "https://proxy.golang.org/sigs.k8s.io/kubebuilder/v3/@v/v3.11.0.zip",
+      "copyrightText": "                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or entity authorized by\n      the copyright owner that is granting the License.\n\n      \"Legal Entity\" shall mean the union of the acting entity and all\n      other entities that control, are controlled by, or are under common\n      control with that entity. For the purposes of this definition,\n      \"control\" means (i) the power, direct or indirect, to cause the\n      direction or management of such entity, whether by contract or\n      otherwise, or (ii) ownership of fifty percent (50%) or more of the\n      outstanding shares, or (iii) beneficial ownership of such entity.\n\n      \"You\" (or \"Your\") shall mean an individual or Legal Entity\n      exercising permissions granted by this License.\n\n      \"Source\" form shall mean the preferred form for making modifications,\n      including but not limited to software source code, documentation\n      source, and configuration files.\n\n      \"Object\" form shall mean any form resulting from mechanical\n      transformation or translation of a Source form, including but\n      not limited to compiled object code, generated documentation,\n      and conversions to other media types.\n\n      \"Work\" shall mean the work of authorship, whether in Source or\n      Object form, made available under the License, as indicated by a\n      copyright notice that is included in or attached to the work\n      (an example is provided in the Appendix below).\n\n      \"Derivative Works\" shall mean any work, whether in Source or Object\n      form, that is based on (or derived from) the Work and for which the\n      editorial revisions, annotations, elaborations, or other modifications\n      represent, as a whole, an original work of authorship. For the purposes\n      of this License, Derivative Works shall not include works that remain\n      separable from, or merely link (or bind by name) to the interfaces of,\n      the Work and Derivative Works thereof.\n\n      \"Contribution\" shall mean any work of authorship, including\n      the original version of the Work and any modifications or additions\n      to that Work or Derivative Works thereof, that is intentionally\n      submitted to Licensor for inclusion in the Work by the copyright owner\n      or by an individual or Legal Entity authorized to submit on behalf of\n      the copyright owner. For the purposes of this definition, \"submitted\"\n      means any form of electronic, verbal, or written communication sent\n      to the Licensor or its representatives, including but not limited to\n      communication on electronic mailing lists, source code control systems,\n      and issue tracking systems that are managed by, or on behalf of, the\n      Licensor for the purpose of discussing and improving the Work, but\n      excluding communication that is conspicuously marked or otherwise\n      designated in writing by the copyright owner as \"Not a Contribution.\"\n\n      \"Contributor\" shall mean Licensor and any individual or Legal Entity\n      on behalf of whom a Contribution has been received by Licensor and\n      subsequently incorporated within the Work.\n\n   2. Grant of Copyright License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      copyright license to reproduce, prepare Derivative Works of,\n      publicly display, publicly perform, sublicense, and distribute the\n      Work and such Derivative Works in Source or Object form.\n\n   3. Grant of Patent License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      (except as stated in this section) patent license to make, have made,\n      use, offer to sell, sell, import, and otherwise transfer the Work,\n      where such license applies only to those patent claims licensable\n      by such Contributor that are necessarily infringed by their\n      Contribution(s) alone or by combination of their Contribution(s)\n      with the Work to which such Contribution(s) was submitted. If You\n      institute patent litigation against any entity (including a\n      cross-claim or counterclaim in a lawsuit) alleging that the Work\n      or a Contribution incorporated within the Work constitutes direct\n      or contributory patent infringement, then any patent licenses\n      granted to You under this License for that Work shall terminate\n      as of the date such litigation is filed.\n\n   4. Redistribution. You may reproduce and distribute copies of the\n      Work or Derivative Works thereof in any medium, with or without\n      modifications, and in Source or Object form, provided that You\n      meet the following conditions:\n\n      (a) You must give any other recipients of the Work or\n          Derivative Works a copy of this License; and\n\n      (b) You must cause any modified files to carry prominent notices\n          stating that You changed the files; and\n\n      (c) You must retain, in the Source form of any Derivative Works\n          that You distribute, all copyright, patent, trademark, and\n          attribution notices from the Source form of the Work,\n          excluding those notices that do not pertain to any part of\n          the Derivative Works; and\n\n      (d) If the Work includes a \"NOTICE\" text file as part of its\n          distribution, then any Derivative Works that You distribute must\n          include a readable copy of the attribution notices contained\n          within such NOTICE file, excluding those notices that do not\n          pertain to any part of the Derivative Works, in at least one\n          of the following places: within a NOTICE text file distributed\n          as part of the Derivative Works; within the Source form or\n          documentation, if provided along with the Derivative Works; or,\n          within a display generated by the Derivative Works, if and\n          wherever such third-party notices normally appear. The contents\n          of the NOTICE file are for informational purposes only and\n          do not modify the License. You may add Your own attribution\n          notices within Derivative Works that You distribute, alongside\n          or as an addendum to the NOTICE text from the Work, provided\n          that such additional attribution notices cannot be construed\n          as modifying the License.\n\n      You may add Your own copyright statement to Your modifications and\n      may provide additional or different license terms and conditions\n      for use, reproduction, or distribution of Your modifications, or\n      for any such Derivative Works as a whole, provided Your use,\n      reproduction, and distribution of the Work otherwise complies with\n      the conditions stated in this License.\n\n   5. Submission of Contributions. Unless You explicitly state otherwise,\n      any Contribution intentionally submitted for inclusion in the Work\n      by You to the Licensor shall be under the terms and conditions of\n      this License, without any additional terms or conditions.\n      Notwithstanding the above, nothing herein shall supersede or modify\n      the terms of any separate license agreement you may have executed\n      with Licensor regarding such Contributions.\n\n   6. Trademarks. This License does not grant permission to use the trade\n      names, trademarks, service marks, or product names of the Licensor,\n      except as required for reasonable and customary use in describing the\n      origin of the Work and reproducing the content of the NOTICE file.\n\n   7. Disclaimer of Warranty. Unless required by applicable law or\n      agreed to in writing, Licensor provides the Work (and each\n      Contributor provides its Contributions) on an \"AS IS\" BASIS,\n      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\n      implied, including, without limitation, any warranties or conditions\n      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A\n      PARTICULAR PURPOSE. You are solely responsible for determining the\n      appropriateness of using or redistributing the Work and assume any\n      risks associated with Your exercise of permissions under this License.\n\n   8. Limitation of Liability. In no event and under no legal theory,\n      whether in tort (including negligence), contract, or otherwise,\n      unless required by applicable law (such as deliberate and grossly\n      negligent acts) or agreed to in writing, shall any Contributor be\n      liable to You for damages, including any direct, indirect, special,\n      incidental, or consequential damages of any character arising as a\n      result of this License or out of the use or inability to use the\n      Work (including but not limited to damages for loss of goodwill,\n      work stoppage, computer failure or malfunction, or any and all\n      other commercial damages or losses), even if such Contributor\n      has been advised of the possibility of such damages.\n\n   9. Accepting Warranty or Additional Liability. While redistributing\n      the Work or Derivative Works thereof, You may choose to offer,\n      and charge a fee for, acceptance of support, warranty, indemnity,\n      or other liability obligations and/or rights consistent with this\n      License. However, in accepting such obligations, You may act only\n      on Your own behalf and on Your sole responsibility, not on behalf\n      of any other Contributor, and only if You agree to indemnify,\n      defend, and hold each Contributor harmless for any liability\n      incurred by, or claims asserted against, such Contributor by reason\n      of your accepting any such warranty or additional liability.\n\n   END OF TERMS AND CONDITIONS\n\n   APPENDIX: How to apply the Apache License to your work.\n\n      To apply the Apache License to your work, attach the following\n      boilerplate notice, with the fields enclosed by brackets \"{}\"\n      replaced with your own identifying information. (Don't include\n      the brackets!)  The text should be enclosed in the appropriate\n      comment syntax for the file format. We also recommend that a\n      file or class name and description of purpose be included on the\n      same \"printed page\" as the copyright notice for easier\n      identification within third-party archives.\n\n   Copyright {yyyy} {name of copyright owner}\n\n   Licensed under the Apache License, Version 2.0 (the \"License\");\n   you may not use this file except in compliance with the License.\n   You may obtain a copy of the License at\n\n       http://www.apache.org/licenses/LICENSE-2.0\n\n   Unless required by applicable law or agreed to in writing, software\n   distributed under the License is distributed on an \"AS IS\" BASIS,\n   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n   See the License for the specific language governing permissions and\n   limitations under the License.",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/sigs.k8s.io/kubebuilder/v3@v3.11.0",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-gomod-golang.org-x-text-v0.10.0",
+      "name": "golang.org/x/text",
+      "versionInfo": "v0.10.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "BSD-3-Clause",
+      "downloadLocation": "https://proxy.golang.org/golang.org/x/text/@v/v0.10.0.zip",
+      "copyrightText": "Copyright (c) 2009 The Go Authors. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are\nmet:\n\n   * Redistributions of source code must retain the above copyright\nnotice, this list of conditions and the following disclaimer.\n   * Redistributions in binary form must reproduce the above\ncopyright notice, this list of conditions and the following disclaimer\nin the documentation and/or other materials provided with the\ndistribution.\n   * Neither the name of Google Inc. nor the names of its\ncontributors may be used to endorse or promote products derived from\nthis software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\n\"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT\nLIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\nA PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT\nOWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,\nDATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY\nTHEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/golang.org/x/text@v0.10.0",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-gomod-github.com-sirupsen-logrus-v1.9.3",
+      "name": "github.com/sirupsen/logrus",
+      "versionInfo": "v1.9.3",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "downloadLocation": "https://proxy.golang.org/github.com/sirupsen/logrus/@v/v1.9.3.zip",
+      "copyrightText": "The MIT License (MIT)\n\nCopyright (c) 2014 Simon Eskildsen\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.\n",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/github.com/sirupsen/logrus@v1.9.3",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-tmp.SruiLWESDM",
+      "name": "tmp.SruiLWESDM",
+      "versionInfo": "",
+      "filesAnalyzed": true,
+      "licenseConcluded": "Apache-2.0",
+      "downloadLocation": "NONE",
+      "copyrightText": "NOASSERTION",
+      "hasFiles": [
+        "SPDXRef-File-tmp.SruiLWESDM-.github-workflows-lint.yml",
+        "SPDXRef-File-tmp.SruiLWESDM-.github-dependabot.yml",
+        "SPDXRef-File-tmp.SruiLWESDM-.github-ISSUEC95TEMPLATE-feature-request.md",
+        "SPDXRef-File-tmp.SruiLWESDM-.github-ISSUEC95TEMPLATE-support-question.md",
+        "SPDXRef-File-tmp.SruiLWESDM-.github-workflows-test-unit.yml",
+        "SPDXRef-File-tmp.SruiLWESDM-.gitignore",
+        "SPDXRef-File-tmp.SruiLWESDM-Makefile",
+        "SPDXRef-File-tmp.SruiLWESDM-OWNERS",
+        "SPDXRef-File-tmp.SruiLWESDM-CONTRIBUTING.md",
+        "SPDXRef-File-tmp.SruiLWESDM-OWNERSC95ALIASES",
+        "SPDXRef-File-tmp.SruiLWESDM-LICENSE",
+        "SPDXRef-File-tmp.SruiLWESDM-SECURITY.md",
+        "SPDXRef-File-tmp.SruiLWESDM-.github-ISSUEC95TEMPLATE-bug-report.md",
+        "SPDXRef-File-tmp.SruiLWESDM-docs-WELCOME.md",
+        "SPDXRef-File-tmp.SruiLWESDM-code-of-conduct.md",
+        "SPDXRef-File-tmp.SruiLWESDM-go.mod",
+        "SPDXRef-File-tmp.SruiLWESDM-hack-check-license.sh",
+        "SPDXRef-File-tmp.SruiLWESDM-docs-tutorial.md",
+        "SPDXRef-File-tmp.SruiLWESDM-go.sum",
+        "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-api.go",
+        "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-apiC95test.go",
+        "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-initC95test.go",
+        "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-init.go",
+        "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-pluginC95test.go",
+        "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-plugin.go",
+        "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-api.go",
+        "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-doc.go",
+        "SPDXRef-File-tmp.SruiLWESDM-README.md",
+        "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-init.go",
+        "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-applicationproperties.go",
+        "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-doc.go",
+        "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-gitignore.go",
+        "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-makefile.go",
+        "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-model-model.go",
+        "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-model-modelspec.go",
+        "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-model-modelstatus.go",
+        "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-operatorfileC95test.go",
+        "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-operatorfile.go",
+        "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-pomxml.go",
+        "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-templatesC95suiteC95test.go",
+        "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-util-file.go",
+        "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-util-fileC95test.go",
+        "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-util-utilC95suiteC95test.go",
+        "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-util-util.go",
+        "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-v1C95suiteC95test.go",
+        "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-util-utilC95test.go",
+        "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-controller-controller.go",
+        "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-.gitignore",
+        "SPDXRef-File-tmp.SruiLWESDM-release.sh",
+        "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-Makefile",
+        "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-PROJECT",
+        "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-README.md",
+        "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-bundle-manifests-memcached-quarkus-operator-operator-viewC95rbac.authorization.k8s.ioC95v1C95rolebinding.yaml",
+        "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-bundle-manifests-cache.example.comC95memcacheds.yaml",
+        "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-bundle-manifests-memcached-quarkus-operator-operatorC95v1C95service.yaml",
+        "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-bundle-metadata-annotations.yaml",
+        "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-bundle-manifests-memcached-quarkus-operator.clusterserviceversion.yaml",
+        "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-bundle.Dockerfile",
+        "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-pom.xml",
+        "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-src-main-java-com-example-Memcached.java",
+        "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-src-main-java-com-example-MemcachedReconciler.java",
+        "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-src-main-java-com-example-MemcachedSpec.java",
+        "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-util-utilC95suiteC95test.go",
+        "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-src-main-java-com-example-MemcachedStatus.java",
+        "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-src-main-resources-memcached-sample.yaml",
+        "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-src-main-resources-application.properties"
+      ],
+      "licenseInfoFromFiles": [
+        "Apache-2.0"
+      ],
+      "checksums": [],
+      "packageVerificationCode": {
+        "packageVerificationCodeValue": "6e82e6ac2a37ff178a0e6995c4b63e4136d40013"
+      }
+    },
+    {
+      "SPDXID": "SPDXRef-Package-gomod-golang.org-x-sys-v0.9.0",
+      "name": "golang.org/x/sys",
+      "versionInfo": "v0.9.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "BSD-3-Clause",
+      "downloadLocation": "https://proxy.golang.org/golang.org/x/sys/@v/v0.9.0.zip",
+      "copyrightText": "Copyright (c) 2009 The Go Authors. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are\nmet:\n\n   * Redistributions of source code must retain the above copyright\nnotice, this list of conditions and the following disclaimer.\n   * Redistributions in binary form must reproduce the above\ncopyright notice, this list of conditions and the following disclaimer\nin the documentation and/or other materials provided with the\ndistribution.\n   * Neither the name of Google Inc. nor the names of its\ncontributors may be used to endorse or promote products derived from\nthis software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\n\"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT\nLIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\nA PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT\nOWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,\nDATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY\nTHEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/golang.org/x/sys@v0.9.0",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-gomod-golang.org-x-mod-v0.11.0",
+      "name": "golang.org/x/mod",
+      "versionInfo": "v0.11.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "BSD-3-Clause",
+      "downloadLocation": "https://proxy.golang.org/golang.org/x/mod/@v/v0.11.0.zip",
+      "copyrightText": "Copyright (c) 2009 The Go Authors. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are\nmet:\n\n   * Redistributions of source code must retain the above copyright\nnotice, this list of conditions and the following disclaimer.\n   * Redistributions in binary form must reproduce the above\ncopyright notice, this list of conditions and the following disclaimer\nin the documentation and/or other materials provided with the\ndistribution.\n   * Neither the name of Google Inc. nor the names of its\ncontributors may be used to endorse or promote products derived from\nthis software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\n\"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT\nLIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\nA PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT\nOWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,\nDATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY\nTHEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/golang.org/x/mod@v0.11.0",
+          "referenceType": "purl"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-.github-workflows-lint.yml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-.github-dependabot.yml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-.github-ISSUEC95TEMPLATE-feature-request.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-.github-ISSUEC95TEMPLATE-support-question.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-.github-workflows-test-unit.yml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-.gitignore"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-Makefile"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-OWNERS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-CONTRIBUTING.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-OWNERSC95ALIASES"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-LICENSE"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-SECURITY.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-.github-ISSUEC95TEMPLATE-bug-report.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-docs-WELCOME.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-code-of-conduct.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-go.mod"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-hack-check-license.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-docs-tutorial.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-go.sum"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-api.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-apiC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-initC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-init.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-pluginC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-plugin.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-api.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-doc.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-README.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-init.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-applicationproperties.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-doc.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-gitignore.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-makefile.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-model-model.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-model-modelspec.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-model-modelstatus.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-operatorfileC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-operatorfile.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-pomxml.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-templatesC95suiteC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-util-file.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-util-fileC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-util-utilC95suiteC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-util-util.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-v1C95suiteC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-util-utilC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-scaffolds-internal-templates-controller-controller.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-.gitignore"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-release.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-Makefile"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-PROJECT"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-README.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-bundle-manifests-memcached-quarkus-operator-operator-viewC95rbac.authorization.k8s.ioC95v1C95rolebinding.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-bundle-manifests-cache.example.comC95memcacheds.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-bundle-manifests-memcached-quarkus-operator-operatorC95v1C95service.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-bundle-metadata-annotations.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-bundle-manifests-memcached-quarkus-operator.clusterserviceversion.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-bundle.Dockerfile"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-pom.xml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-src-main-java-com-example-Memcached.java"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-src-main-java-com-example-MemcachedReconciler.java"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-src-main-java-com-example-MemcachedSpec.java"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-pkg-quarkus-v1alpha-util-utilC95suiteC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-src-main-java-com-example-MemcachedStatus.java"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-src-main-resources-memcached-sample.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.SruiLWESDM-testdata-quarkus-memcached-quarkus-operator-src-main-resources-application.properties"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-gomod-sigs.k8s.io-kubebuilder-v3-v3.11.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-gomod-github.com-sirupsen-logrus-v1.9.3"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-gomod-github.com-spf13-pflag-v1.0.5"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-gomod-k8s.io-apimachinery-v0.27.2"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-gomod-github.com-spf13-afero-v1.9.5"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-gomod-golang.org-x-text-v0.10.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-gomod-golang.org-x-tools-v0.10.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-gomod-github.com-gobuffalo-flect-v1.0.2"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-gomod-k8s.io-utils-v0.0.0-20230209194617-a36077c30491"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-gomod-gopkg.in-yaml.v2-v2.4.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-gomod-sigs.k8s.io-yaml-v1.3.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-gomod-golang.org-x-mod-v0.11.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.SruiLWESDM",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-gomod-golang.org-x-sys-v0.9.0"
+    }
+  ],
+  "annotations": [
+    {
+      "annotationDate": "2026-03-06T18:19:51Z",
+      "annotationType": "OTHER",
+      "annotator": "Tool: cncf-automation",
+      "comment": "Repository: operator-framework/java-operator-plugins\nVersion: v0.8.0"
+    }
+  ],
+  "hasExtractedLicensingInfo": [
+    {
+      "licenseId": "LicenseRef-github-com-gobuffalo-flect",
+      "extractedText": "License: MIT",
+      "name": "MIT",
+      "comment": "Package: github.com/gobuffalo/flect"
+    },
+    {
+      "licenseId": "LicenseRef-github-com-operator-framework-java-operator-plugin",
+      "extractedText": "License: Apache-2.0",
+      "name": "Apache-2.0",
+      "comment": "Package: github.com/operator-framework/java-operator-plugins/pkg/quarkus/v1alpha"
+    },
+    {
+      "licenseId": "LicenseRef-github-com-sirupsen-logrus",
+      "extractedText": "License: MIT",
+      "name": "MIT",
+      "comment": "Package: github.com/sirupsen/logrus"
+    },
+    {
+      "licenseId": "LicenseRef-github-com-spf13-afero",
+      "extractedText": "License: Apache-2.0",
+      "name": "Apache-2.0",
+      "comment": "Package: github.com/spf13/afero"
+    },
+    {
+      "licenseId": "LicenseRef-github-com-spf13-pflag",
+      "extractedText": "License: BSD-3-Clause",
+      "name": "BSD-3-Clause",
+      "comment": "Package: github.com/spf13/pflag"
+    },
+    {
+      "licenseId": "LicenseRef-golang-org-x-mod",
+      "extractedText": "License: BSD-3-Clause",
+      "name": "BSD-3-Clause",
+      "comment": "Package: golang.org/x/mod"
+    },
+    {
+      "licenseId": "LicenseRef-golang-org-x-sys",
+      "extractedText": "License: BSD-3-Clause",
+      "name": "BSD-3-Clause",
+      "comment": "Package: golang.org/x/sys"
+    },
+    {
+      "licenseId": "LicenseRef-golang-org-x-text",
+      "extractedText": "License: BSD-3-Clause",
+      "name": "BSD-3-Clause",
+      "comment": "Package: golang.org/x/text"
+    },
+    {
+      "licenseId": "LicenseRef-golang-org-x-tools",
+      "extractedText": "License: BSD-3-Clause",
+      "name": "BSD-3-Clause",
+      "comment": "Package: golang.org/x/tools"
+    },
+    {
+      "licenseId": "LicenseRef-gopkg-in-yaml-v2",
+      "extractedText": "License: Apache-2.0",
+      "name": "Apache-2.0",
+      "comment": "Package: gopkg.in/yaml.v2"
+    },
+    {
+      "licenseId": "LicenseRef-k8s-io-apimachinery-pkg-util",
+      "extractedText": "License: Apache-2.0",
+      "name": "Apache-2.0",
+      "comment": "Package: k8s.io/apimachinery/pkg/util"
+    },
+    {
+      "licenseId": "LicenseRef-k8s-io-utils-internal-third-party-forked-golang-ne",
+      "extractedText": "License: BSD-3-Clause",
+      "name": "BSD-3-Clause",
+      "comment": "Package: k8s.io/utils/internal/third_party/forked/golang/net"
+    },
+    {
+      "licenseId": "LicenseRef-k8s-io-utils-net",
+      "extractedText": "License: Apache-2.0",
+      "name": "Apache-2.0",
+      "comment": "Package: k8s.io/utils/net"
+    },
+    {
+      "licenseId": "LicenseRef-sigs-k8s-io-kubebuilder-v3-pkg",
+      "extractedText": "License: Apache-2.0",
+      "name": "Apache-2.0",
+      "comment": "Package: sigs.k8s.io/kubebuilder/v3/pkg"
+    },
+    {
+      "licenseId": "LicenseRef-sigs-k8s-io-yaml",
+      "extractedText": "License: MIT",
+      "name": "MIT",
+      "comment": "Package: sigs.k8s.io/yaml"
+    }
+  ]
+}

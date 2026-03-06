@@ -27,6 +27,7 @@ jobs:
       - name: Build and run extract-projects tool
         run: |
           cd util/extract-projects
+          go mod download
           go run . ../data/cncf-projects.yaml
 
       - name: Commit and push changes

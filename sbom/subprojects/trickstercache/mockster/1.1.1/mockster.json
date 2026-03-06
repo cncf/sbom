@@ -1,0 +1,901 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "trickstercache/mockster v1.1.1",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "created": "2026-03-06T21:34:31Z",
+    "creators": [
+      "Tool: bom-v0.7.1",
+      "Tool: cncf-automation-sbom-generator"
+    ],
+    "licenseListVersion": "3.27",
+    "comment": "SBOM for CNCF project: trickstercache/mockster@v1.1.1"
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://github.com/trickstercache/mockster/releases/tag/v1.1.1",
+  "documentDescribes": [
+    "SPDXRef-Package-tmp.1EDmLglPst"
+  ],
+  "files": [
+    {
+      "SPDXID": "SPDXRef-File-tmp.1EDmLglPst-cmd-mockster-main.go",
+      "fileName": "cmd/mockster/main.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8b9412c9e4790959a6cfdb91830d979ca2bf5f6d60d651f544c30f79ca1d5693"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "66828096510bc1b3662e21a0b1ae97846188fbc7ca3941297197b51d4faf499a4f2714cb424079cdc8f3e5a5b56f996d70414fa7c6ed0a2ef3c04193b5660c3e"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "7fae5d0e324cae4df83965304b24b87692da085f"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.1EDmLglPst-.gitignore",
+      "fileName": ".gitignore",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "61d8ec0a57c9fe3db131291cc7bee3a2221e5300b09015a00d61dc340199437b19f042a61ae845cedca37ff422e52dfd520b5c1dd6684b68c13f5b621c7dfa5e"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "64ae9a0cf9bd91e56058e5c7d0fc44184431b7ea"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "92444aea48ca4b8f034a299f32f97b0dc848b0bd4e31dd1a165185a8dd82d552"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.1EDmLglPst-pkg-mocks-byterange-handler.go",
+      "fileName": "pkg/mocks/byterange/handler.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "804acbced4ddffc9787e2ca2db24704ccf4a6c9bfdc657055eca36a820531699"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f06abf8b2adb6e2803a61f8337414055416f457c90e2c747add5b41f8736b19ade216c6e3d4ffd0ba1c1719e9e30c88e4e506ebe6b188df45d223526875aaf6d"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "75505f4acf18247e04c576f666cbf4682847e686"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.1EDmLglPst-pkg-mocks-byterange-handlerC95test.go",
+      "fileName": "pkg/mocks/byterange/handler_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "11afeafe4af1cbf9194659ceb791c0cf0e6ec584460efc8bf8f61170788cf344"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "2e83929fb66a46d72fe2716517bb338794cf3cdeb7841a8de9372699a3d2b255decba34ba56102079f0368b101d5fc5074c2154d7705c9238926b3065fd88962"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "5e003adae2422f46e1ec2a45843f31febb687689"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.1EDmLglPst-CODEC95OFC95CONDUCT.md",
+      "fileName": "CODE_OF_CONDUCT.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e48b76f52cb5a08e9cc8063f5673251eeb2a8dc4526e0874f8a0bd36c2ff0db2"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "6ead77c39317ee36253eb65046ab46aa7d94cd55776b3455b95e55384fedc096c21f47f3ac6d35e49e649a53678ef83233e8fbc67a1a29baa14cfd635a6bb798"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4a2b8d90575bad5e32f55d3dcb6af079b98cdf01"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.1EDmLglPst-prometheus.md",
+      "fileName": "prometheus.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "41b823fe8c2f38ea090998a2ab6061166d9bf789"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6d2e3dafdd0fc94a39e27efb92e31c0f4d8ba385890449a78c03c427f9fd5171"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "6edd4b9ef11e20f37e2f199c393bddd2aef7d035db5b09e51b4ee26e3384bc6a7fda3427980ad020b664bb7ef3a0aaa907ab92a9e7539a5d699bf2e604948a96"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.1EDmLglPst-.github-workflows-go-build.yml",
+      "fileName": ".github/workflows/go-build.yml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "85ca54529e1c5fd23a56667091ef85be20cfc51f869e1cd36fbd2ca9c3cb7a0ade9b32c61f9b6facc6e9d930972e0ba450e9cff887626d911d2f3f060c797c4a"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "81dfa3923d223876ff723fa460d980ce78ed2235"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "25fee0f15d1d3b709db8bb6a99f88208bdcf34ce42e2388366f712eb93db9729"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.1EDmLglPst-Dockerfile",
+      "fileName": "Dockerfile",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "a53eed0d0d3f3c3e66c4b750a419f9d1e4a9b09e70099ae9f35c31775c71256fbc4f92b2bb5f0bd76b068103251de873f632ced090ad49d9f1c9f794e5defd40"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ddee9fba239e2a5519c47fbd4c72b857ccc29d4e"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3cd0ee595586ce8e7dd19ce30a0c36d8145d164fb411ceceec21d2a9dcfc127c"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.1EDmLglPst-byterange.md",
+      "fileName": "byterange.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ba7565d545526e217b06d465a8ff0090efb0f6a0fb3d95d4362fa5f45c3ebbd8"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "c375781b6c310cad855d260e91c220be5b49a90296fea54a3ee79b7d8c4029d75adacff184a68b282f33009739687fdebc5745efa6ee96708ff007b89651f856"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "2eb9aaa626b6a42f2f489a3875a0634606bf55e6"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.1EDmLglPst-pkg-mocks-byterange-byterangeC95test.go",
+      "fileName": "pkg/mocks/byterange/byterange_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "3dbb592a348acd91c820a957cede3791e18868c40f3b81cc2ec3070fb1acdd11c9aa97196503b7bb2dd6dc3ea48c50c17c6524ee87722625a16028c5dc3d7010"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c7146675158897f2741954e0a1e355717002d4f2"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "fb0c013058dbac00d2eedce612cfb0f2ddb49004fb7634f25cbfafa9742ed56f"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.1EDmLglPst-.github-workflows-create-upload-prerelease.yml",
+      "fileName": ".github/workflows/create-upload-prerelease.yml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "5ceb79c99181d5d6ba5647e086e3486ec6332731"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "61093342b0f2f0014e94fee089f9fc380c9c1361a9cf49067691a055777146e0"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "2b09c08fbfce21c5545d9f14b0698b1060fed4b66212460068662f47e666897e917be82319965f0757e7740fda3ed7ac39099a023bb548d2841e6c74bb624fae"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.1EDmLglPst-pkg-mocks-byterange-byterange.go",
+      "fileName": "pkg/mocks/byterange/byterange.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ce6d0d14ab538684b8619e7fbe599f0aafd573ec34210798736ac5d208aa574d"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "786ea3f99c9766845395a29e9b909834ebad5ba39e5e49a41e736f076862396c6dd0e2a300fa058cb9bf62a62b52ad3d77d894410e8a8e24f7a0d29b06caf4ed"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "03070aa56aaf82e9d2e7628f3a10e85925bae130"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.1EDmLglPst-NOTICE",
+      "fileName": "NOTICE",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "b7bc5b5b63f11841bccc6831ed583678a443940e"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3d90cb3fd278bbcc0cc6577a33902234b28e418f2bf2e21feeb5586ca61e82c7"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "a6dd0a73237c3eeecc8d90584dce197d93fb4958e711e40be7fc8220fb2ac879c9352d04411883b7a5e3b4e99e9f4b795c652b05eba87a1f704ab5aa0f2c9a86"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.1EDmLglPst-pkg-mocks-prometheus-prometheusC95test.go",
+      "fileName": "pkg/mocks/prometheus/prometheus_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "bd9eeb13eb4d1ab40ad712c929b2f28e07df36de"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a73b0504003b1046ce7fe0709781dfe65982ad67fbce2a1e1cbf8fcc71711522"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b0dec81651bacc22e5e8446f713f89ba73a923027479c2e64ad86de38c1e679d72c581627e79ee3bf9c2f21cfae2b5e993e02c2f7822e5c100c77807d2b1aafc"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.1EDmLglPst-pkg-testutil-testutil.go",
+      "fileName": "pkg/testutil/testutil.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "7da8a1ebd7218ddc15b9714dc173e28afca959c7e70fcb7023a98fed55bdbc92bb2ed9fcaa4791fd2ac2846969a594a26246dc0abf0f6d6fda6a5940a822a93e"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "21b93727bbc5d8dcb062aeb913d5c4d45a02ffad"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "93fb189b46c5c2fddf2b075c70c52902eda7c1582d1d580036636688bc255b24"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.1EDmLglPst-LICENSE",
+      "fileName": "LICENSE",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "58853eb8199b5afe72a73a25fd8cf8c94285174b"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "42edf58252a01b5858e6cc3c5a1a29bbcdf1295351b6a4383883a189499ec3c1a64cd5f2f6498a9385e85af21732c65afa866a8371afb4bf843f4e8bd38a7a73"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.1EDmLglPst-go.mod",
+      "fileName": "go.mod",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "00d1b29eb2ecb272783f737fffff5c9b48cf22e7"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "31c70ce2b47e7cde8e74a8d43ccf25f6103a1473f7944957b62c2c8a7e949ab6"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "1ba357feab4676735664ff56a4524bb5e526b1030b6f35d7768de82a0fdc1e23310ef31e9c19e3676ab5eccdd4f17b4d2e9dd9f0edc3949168250718ed4c60d2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.1EDmLglPst-MAINTAINERS.md",
+      "fileName": "MAINTAINERS.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "198f8074f751255ba510f742a249bee445d893b4"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f9a1ade747b4df078977ee0a55234b6f2ef628fa5b22fb435c1c171c7dfaa534"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f749be6f9e15b830288c6046ca2a61059885decf6e9d7d7e4375fd85eedd10b01a1696a57c235322e9b82f368dbde5f6ee83404c7df3f65c7e7e470d4f295b37"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.1EDmLglPst-pkg-mocks-prometheus-handlersC95test.go",
+      "fileName": "pkg/mocks/prometheus/handlers_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "8a0522a0b5125017044abec40ac4f0c9702737b7b5b83d6d1963db74e941ec2e217aea1c9b8f594cbb9d54278c47fc9e84c0ff5d1d8dbf5d29aa801aea112430"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "7a321183a82c1e4660b7fb9df55da6a0eba755da"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "93e36f4d1cf36899c1903c2745c47cb80608a399ff4f4b935ae5d0c3e016f9d7"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.1EDmLglPst-pkg-routes-routes.go",
+      "fileName": "pkg/routes/routes.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "502101d4bf81199e4adf481d3093d562af4ef938"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4752a8229118fb53dcfad84ec8b5c1b1eea2b450e772de3cdc2e8a7c98930033"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "3e04d3a2ffebf1adbb42f3bbeb3880b7c78d4e9b81fb6efaa561868eddfe6528ceeb435719a79c7e97bab9afb556fe6b6f4c46924aa9915e35e370648ccd189c"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.1EDmLglPst-CONTRIBUTING.md",
+      "fileName": "CONTRIBUTING.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "990d7f4a0dec0a93e73dcea253e7d289cf4e19ea1a8b6a186cfb747d3c01d756c9a4cad91595f2dc75d3b0ca005122b9332f7fd5c97ba5693534345b2fc48837"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "b56066befab2d5070197f2b1e9ad4c78d25d7e59"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "65840f0b83c12f5c38d05c2b5f135e2953eb3414a329573db231f6d02676bae1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.1EDmLglPst-pkg-mocks-prometheus-prometheus.go",
+      "fileName": "pkg/mocks/prometheus/prometheus.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "d3322caaa0bafaf5553afc037bff9a77044429f3ccb86babf50f72172b25c38f8f72b60787ff52172d9a322643a9af196720d0f27a9d5f11597cd878889a6b61"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ffcd507bdee4c91ac4caf7b4154c13d641c5ff3e"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4a17db7c124753f2d37a13ae0bcf5eaad50115efec0ef15ac714eab98c99e79e"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.1EDmLglPst-Makefile",
+      "fileName": "Makefile",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "b8414975a2684b9353916004fa8fa61d929ccb92"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "44e390c3a553720a22cd032f090ed57da63fb1fee47d75d86dd1abf91c95b902"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "cd27e9ab37cd10433da1483d781dffb67dc9efd50e2ef4a3b13b3dcd361e7ce2b0c5c9ecad5c2478131f3383398dc03c259193105503388ea9d3122142f5f182"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.1EDmLglPst-README.md",
+      "fileName": "README.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "865d158bdcfd76696df3392a56d440805170af37"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d8cdd1e22c4ddd6c571bd4cf4f2aceb1e07d3afcaa74f8d49200dce8916acf40"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "30cc05abecffe95440012f56a8b53e0a3dec62cf7896f9ad9165ea83399cc23919fac53b5b199fa548262193aaaa93278a814df6ca25db2d30196593160cb598"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.1EDmLglPst-pkg-mocks-prometheus-handlers.go",
+      "fileName": "pkg/mocks/prometheus/handlers.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "16e910a852cef09b5e4ef442a07baaf07e3d06fa"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d137199289a3da79a947639d0c53aeb735473f35827aa3e680d6558acb15d3e5"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "5ac078af6bdac37eaaa67d70d71f9e8243321c7174620d7fe614e67c6f42e3ada90ea37049a128d0f06f73e9cf2d4f074a6e3ee02fcdfc96b1521c639e681584"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.1EDmLglPst-.github-workflows-create-upload-release.yml",
+      "fileName": ".github/workflows/create-upload-release.yml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8b7d583cf49f47da25586a0964e34b8233dfddea475f70077fadd76522380769"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "c3a2625a6eb2448af8893a94b94236b7a4255200a6855137bd6c00dacf7fb1f0a3fa26cfee5efd6b6cdb009c1ba8e9b5fe7ee3617f9d33999ca0153b09020f22"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6e6d603fbc4c2c91be1783b651c206c3b4abed64"
+        }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-tmp.1EDmLglPst",
+      "name": "tmp.1EDmLglPst",
+      "versionInfo": "",
+      "filesAnalyzed": true,
+      "licenseConcluded": "Apache-2.0",
+      "downloadLocation": "NONE",
+      "copyrightText": "NOASSERTION",
+      "hasFiles": [
+        "SPDXRef-File-tmp.1EDmLglPst-.github-workflows-go-build.yml",
+        "SPDXRef-File-tmp.1EDmLglPst-.gitignore",
+        "SPDXRef-File-tmp.1EDmLglPst-CODEC95OFC95CONDUCT.md",
+        "SPDXRef-File-tmp.1EDmLglPst-.github-workflows-create-upload-release.yml",
+        "SPDXRef-File-tmp.1EDmLglPst-Dockerfile",
+        "SPDXRef-File-tmp.1EDmLglPst-CONTRIBUTING.md",
+        "SPDXRef-File-tmp.1EDmLglPst-MAINTAINERS.md",
+        "SPDXRef-File-tmp.1EDmLglPst-NOTICE",
+        "SPDXRef-File-tmp.1EDmLglPst-Makefile",
+        "SPDXRef-File-tmp.1EDmLglPst-README.md",
+        "SPDXRef-File-tmp.1EDmLglPst-LICENSE",
+        "SPDXRef-File-tmp.1EDmLglPst-byterange.md",
+        "SPDXRef-File-tmp.1EDmLglPst-.github-workflows-create-upload-prerelease.yml",
+        "SPDXRef-File-tmp.1EDmLglPst-pkg-mocks-byterange-byterange.go",
+        "SPDXRef-File-tmp.1EDmLglPst-cmd-mockster-main.go",
+        "SPDXRef-File-tmp.1EDmLglPst-pkg-mocks-byterange-byterangeC95test.go",
+        "SPDXRef-File-tmp.1EDmLglPst-pkg-mocks-byterange-handler.go",
+        "SPDXRef-File-tmp.1EDmLglPst-pkg-mocks-byterange-handlerC95test.go",
+        "SPDXRef-File-tmp.1EDmLglPst-pkg-mocks-prometheus-handlers.go",
+        "SPDXRef-File-tmp.1EDmLglPst-go.mod",
+        "SPDXRef-File-tmp.1EDmLglPst-pkg-mocks-prometheus-handlersC95test.go",
+        "SPDXRef-File-tmp.1EDmLglPst-pkg-mocks-prometheus-prometheusC95test.go",
+        "SPDXRef-File-tmp.1EDmLglPst-pkg-routes-routes.go",
+        "SPDXRef-File-tmp.1EDmLglPst-pkg-mocks-prometheus-prometheus.go",
+        "SPDXRef-File-tmp.1EDmLglPst-pkg-testutil-testutil.go",
+        "SPDXRef-File-tmp.1EDmLglPst-prometheus.md"
+      ],
+      "licenseInfoFromFiles": [
+        "Apache-2.0"
+      ],
+      "checksums": [],
+      "packageVerificationCode": {
+        "packageVerificationCodeValue": "e30c9bbd40910afc7a157c8b40d5f1c94f17a8d8"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.1EDmLglPst",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.1EDmLglPst-.github-workflows-go-build.yml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.1EDmLglPst",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.1EDmLglPst-.gitignore"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.1EDmLglPst",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.1EDmLglPst-CODEC95OFC95CONDUCT.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.1EDmLglPst",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.1EDmLglPst-.github-workflows-create-upload-release.yml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.1EDmLglPst",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.1EDmLglPst-Dockerfile"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.1EDmLglPst",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.1EDmLglPst-CONTRIBUTING.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.1EDmLglPst",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.1EDmLglPst-MAINTAINERS.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.1EDmLglPst",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.1EDmLglPst-NOTICE"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.1EDmLglPst",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.1EDmLglPst-Makefile"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.1EDmLglPst",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.1EDmLglPst-README.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.1EDmLglPst",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.1EDmLglPst-LICENSE"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.1EDmLglPst",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.1EDmLglPst-byterange.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.1EDmLglPst",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.1EDmLglPst-.github-workflows-create-upload-prerelease.yml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.1EDmLglPst",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.1EDmLglPst-pkg-mocks-byterange-byterange.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.1EDmLglPst",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.1EDmLglPst-cmd-mockster-main.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.1EDmLglPst",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.1EDmLglPst-pkg-mocks-byterange-byterangeC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.1EDmLglPst",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.1EDmLglPst-pkg-mocks-byterange-handler.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.1EDmLglPst",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.1EDmLglPst-pkg-mocks-byterange-handlerC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.1EDmLglPst",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.1EDmLglPst-pkg-mocks-prometheus-handlers.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.1EDmLglPst",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.1EDmLglPst-go.mod"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.1EDmLglPst",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.1EDmLglPst-pkg-mocks-prometheus-handlersC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.1EDmLglPst",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.1EDmLglPst-pkg-mocks-prometheus-prometheusC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.1EDmLglPst",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.1EDmLglPst-pkg-routes-routes.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.1EDmLglPst",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.1EDmLglPst-pkg-mocks-prometheus-prometheus.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.1EDmLglPst",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.1EDmLglPst-pkg-testutil-testutil.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.1EDmLglPst",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.1EDmLglPst-prometheus.md"
+    }
+  ],
+  "annotations": [
+    {
+      "annotationDate": "2026-03-06T21:34:32Z",
+      "annotationType": "OTHER",
+      "annotator": "Tool: cncf-automation",
+      "comment": "Repository: trickstercache/mockster\nVersion: v1.1.1"
+    }
+  ],
+  "hasExtractedLicensingInfo": [
+    {
+      "licenseId": "LicenseRef-github-com-tricksterproxy-mockster",
+      "extractedText": "License: Apache-2.0",
+      "name": "Apache-2.0",
+      "comment": "Package: github.com/tricksterproxy/mockster"
+    }
+  ]
+}

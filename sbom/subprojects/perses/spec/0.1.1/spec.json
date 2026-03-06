@@ -1,0 +1,3725 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "perses/spec v0.1.1",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "created": "2026-03-06T19:05:35Z",
+    "creators": [
+      "Tool: bom-v0.7.1",
+      "Tool: cncf-automation-sbom-generator"
+    ],
+    "licenseListVersion": "3.27",
+    "comment": "SBOM for CNCF project: perses/spec@v0.1.1"
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://github.com/perses/spec/releases/tag/v0.1.1",
+  "documentDescribes": [
+    "SPDXRef-Package-tmp.vkoAGB6vw0"
+  ],
+  "files": [
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-cue-dashboard-layoutC95patch.cue",
+      "fileName": "cue/dashboard/layout_patch.cue",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "0d408f6f75c865239f0fdea16506e4ba0ba23b0b245311db4af1adec568f448e75a5f6311b2752828bc7463cf5f8a825139e44ece0a6942d8ef0e2ca7cb08ddd"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "b82bd76cbe1583966d6356b6b13bbeef8e63d6b5"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f29a0b5834ab493a7a654519812055c6221aeb319b22906653fdf0d9f411fa83"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-common-duration.ts",
+      "fileName": "ts/src/common/duration.ts",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "81fd61c0449d5d11084c9466f60c2df22ddf0d7a"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b7cd6a1dee24e1062eeb15393a28551c2c947034b1cb6187cf7cfa045361c074"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "3b51e4dcd401b133c6fc6bd26e5ae3e73053b88b99e1845489c57aa4550033055d61418e4dc1a804fc9a476958824a970f5aa9d8bb0ff7ca3bfff0f05fc06253"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-go-dashboard-variable-list.go",
+      "fileName": "go/dashboard/variable/list.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "15a0a242c5f540c9a67122654369971dde2d21b3"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a1890bb8b8bf50f1495710da0cc532961867fe4a4d862d85544ed1522f5876e3"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b3b1a3ae710756be05e15071e64fa2695173df5104245b8f60d149f10edd2754697e3a0c0397398fe2ea531b746f3b272f5298f8c656c88deaa39614a27c19f2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-go-dashboard-layout.go",
+      "fileName": "go/dashboard/layout.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f9baa8d7360c090072b8314ad61d7c264ad7ee85"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "058fc9471175382789118b17bb4ac5048405c1ccd633728886332e53f4fa0377"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "d7621bfdaaf28d97f28f72af263ca4e0cbf90bf378aaac80a91b37d1580bfba378c8ade3d0475a9d36487962ea4d57e80874e884318f2b667ac540a9cc140c9a"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-.prettierignore",
+      "fileName": "ts/.prettierignore",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "efb3e604a1976cd30cbc2726345607a9161937b2"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ebf5c6e761f9480f8ddcee76ee2ff924149414596797acdc665d99f9e5644d02"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "318912d18409f5301383459ffadc16fa332f73dbba6dfddc7a23e168fafef929c4a04ee7a15a88fd076eca5788f1f8beddbd1298dc4ffd6590c6dfb68739395f"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-cue-dashboard-variable-listC95goC95gen.cue",
+      "fileName": "cue/dashboard/variable/list_go_gen.cue",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4d094dfbdfcac0b457b5b9b24886d42d19cfd291"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5256a749ae81e37c37d976291e05111d89e5bb0775e8172d61367b5d85bfe040"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "118a7307ac00c7a340f1ea2b0ec5c52ac650118030f2cd371b182344c8623501f419c9537bdd8a6a6d42f66c2257b695db7b52e7ab0a4921c4f897d2fa5eb6ba"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-go-common-plugin.go",
+      "fileName": "go/common/plugin.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c5503c8b90db0060247f59698fd4ab1eb7f30c075f23598dc8e4611fcb4fee38"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "12a18a39bc93a5c1ffb269eb07eb003b2aa0f32306fa608702f0278f483f3bfd9c0b947eab1639a8f43c3b05d2a00203fcca093cf8e614c34b53f77c1b6e428b"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "9a48162098087e469b29e08d7227b2ced10ed932"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-go-dashboard-variable-listC95test.go",
+      "fileName": "go/dashboard/variable/list_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "2d7305e0b81d28e1dd3ca1ab80401de9777a9386"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "54e020cd2e6075e7a05fe46a7237071aea6430f43f8f1bb5ddcc1e3f537d691f"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "a32212b31b2553e9fbce79f427d1338e687984365f07bfcf7760ee5c26f84187e23026fe2211c5a6a2792d339a9a72bb3f6335d0140dcc862b68467546a19744"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-dashboard-Spec.java",
+      "fileName": "java/src/main/java/dev/perses/dashboard/Spec.java",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5af52546132ac414be8cd935cf7ad45b705525d86b75f42381315e12d57465a3"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "2ee452d9dc3ea90f05450bc0694583d01e9eaf57309cb8e4d6eb6f9e88b0cc0b6a15ad10e54e902f2318ca8485a458cc28c3ee694fa0a3f4de07e0d6d058ec16"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c09fc3650cc8775121950aa2d683f4937dbc0ee1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-.github-workflows-java.yml",
+      "fileName": ".github/workflows/java.yml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "cc3d0df022457b164fea637eee868f8634981baa"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0218460892c6ad400c2e92a8e381056bbd736191c2ee3f8b04b0fc23822bbe97"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "d18cdc53051ff22975ef7abe7b2def08e96f4029f06b3c2de4c91211d4c73b9755f5f168cf00ec247530e1d90b0f20d265e286ecb2373581c76db83752d4ef07"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-query-type-time-series-queries.ts",
+      "fileName": "ts/src/dashboard/query-type/time-series-queries.ts",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "7c1481394ee1f0795a090f73b202a1f4c579654c"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "32b2a0b96ee5508622d04eef508e4fe4c819a4077643f567233a6ca801a138af"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "1fcd5230fc78753a413e734b1ef17c4234264f5e7d925b554725c73ea9e2c0b21b9f3adffeb34ad6295d808d828db02d98fd3e0a7381e68ef10a596e3ba0dd6f"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-java-pom.xml",
+      "fileName": "java/pom.xml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "29bd2ba1c29c66d317583fb748708edfc0c9fe3359d62ece9d4601b776a56862b4197e9e33084957442d5472ca477491709cc2a7ab836ba2708f6d54299f4574"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "b701af5cdf85c9c5622ff6a2c22ace0757a8affb"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c5397e4506175f60e3283053e0298b625567bf1b862507845bd22d22d5984794"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-go-common-display.go",
+      "fileName": "go/common/display.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "b2a2a3b05160160508964327817f74eff5d14b12"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3835fbf619ad9021aebf92a1eb1ba0275192295c557211c5194a9f5a4913b018"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "d138795dc44d0ebfff09ad30a708b9ac280fd50c414c50c167cd36e079f26d28d8952de0bfa46b5c95fbb5a988d8e8d80d2d7eaf35225a83c8d8035797bef9c2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-cue-dashboard-variable-variableC95goC95gen.cue",
+      "fileName": "cue/dashboard/variable/variable_go_gen.cue",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "c15f4920c37a1b2c21f5463d1b000e3bd33e525eeb5f14da522b5def1f6e67aafa4f23b625995430fe929f8505d8e75a64a198011a0f4e63e4f434966120acf7"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "fdff423c4636692b401b4003686aea7a08a169e6"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5f7a8e3a18de211163a52022b9cfebbb1accf1a431557a75273445405f7f3d94"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-README.md",
+      "fileName": "README.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "945469cf8ae8666dbe24f6b0c350776c8015917e"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ef759dfde42e01cf2bdc574c860afba69df9824b3c6096d2bc0ca5dfa4a113d7"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "ff5bbe6e8e2a3ccfb4c4c678a30f41977f90172367bc14e31b66c285b09668a731afc6f7eab0ee24c382d503d5739b49a2c196467081bc427e63e666dd8599d5"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-LICENSE",
+      "fileName": "LICENSE",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "da7345e36f6a2f93b179c68cf3f4889b6f6d3ba3"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "03355503c88722937960291ddbfee698f5195ca5cf9ef0c8b325518eebce7724"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "a380601d6fb30a202eb5bf3f4857374c4f17cf9620afdb59d1985370def4b45c9631cf32296ba1e16cb615178648ecab18bd88af7b0407a6bbf5ef0ad38f25da"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-go-dashboard-dashboard.go",
+      "fileName": "go/dashboard/dashboard.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "bdf8bfb9fa9506c654638c9e4888a47b4ded8c2e805b51ad1b50288ebf78f796"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "41573e26453aefbe987a98ae5b94a5fa0e5e09e09e701eacbe75d2d1d3e4d7565da08b290dcd026594203daee47600bf905073c097668fe9f96d93790dcb92a6"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6ef5bb36a671f8e21467fa942e1385cb7d093b64"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-panel-refs.ts",
+      "fileName": "ts/src/dashboard/panel-refs.ts",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "fcb3b9c4ff0979d03a0992210792e77ee802e92f"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "738d4744e8f616232534c79b5d1da5c4901bdaf58a28cc30b128f7dab7d6fee0"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "8f2afa41365fc7e5749f4c30698d7ac55103c69be55d9aab0ece87660cca2a739cdc22ce99e88253ed1edbc6d6d1c2474d5838b2d3aa1d6596557babd86162fe"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-cue-common-jsonrefC95patch.cue",
+      "fileName": "cue/common/jsonref_patch.cue",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "20cbdd5e4dabd86525591e7d4912eaf015e5f223"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f766bd9276ecb3ef2320c81c55deffa9499c7b95a0943b9ffcd6935ef5c912c4"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "cd9aab8a9538e7d1724c0763382a73b779a64cedd00196ecbeedc53d524762f0782397bff483a0ba80b3c49d59b14494a0b7413f1c12f966470fa8dfd7d92eb4"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-common-duration-Duration.java",
+      "fileName": "java/src/main/java/dev/perses/common/duration/Duration.java",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "41019e288ab633bec5cc8a556a2b5582a02fb162"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0d10dad0a81eae654ee2cf787b9dfe19c69c6f4202fdd658869808a4565a637d"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "e8e9f030df5222dd0febd69d8cc315fc45a4b8f220003761c4cfa2de3cdc855a71cf81022678fdfeb2eac7555e3615196ed6001d2942d84d862339c8121fd739"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-cue-dashboard-variableC95patch.cue",
+      "fileName": "cue/dashboard/variable_patch.cue",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "079f07f685e121b3d5ea9df216b75ee9e7755b869fd1b0cf775cf209d82c3a7d10376156c1f4d558cf2f7f1f3a35fc1debf2193869846a4ef2831774a6957702"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "7f7233b11886396d370916e24d5dd9d027ca9963"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "27c973b22836f860cb1ca9a8e99dd884ce662dff04ba3743f6da6a14d92e9e09"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-cue-common-durationC95goC95gen.cue",
+      "fileName": "cue/common/duration_go_gen.cue",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d02fe6edba672ceba79e1a70a639d454360262f462868bdd4ea06c77bc4c49a9"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "2c3afccd351b085e929cd9716e6054d8875fb112ba38f890350fbac32152900c1a7fad4a005c67b66edc9a0002b80730c06ffaff32025e57a37e08eca2f50675"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "3d8ee3d47f8bc9cd7ca57072616ad5924a69cc66"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-go-common-jsonref.go",
+      "fileName": "go/common/jsonref.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "0270f82ccdc6ff4841304f89529d3fffdf75e7ad"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0019b9ab7f19e8c815821dcc4b6500aab8ca36f0f29804faf5019420a3247fd9"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "95e87bfb62ab5d23b333ae51ef026c04ed08b4ceee8243b0422372a38a0418044bd64c431db13db9d750cdc7c80371c644d7e9c458d8039052db642364df5d5a"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-common-Display.java",
+      "fileName": "java/src/main/java/dev/perses/common/Display.java",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "06d59d6b8d907f8813d91e2a81321900ccf8318ef5a75bef322b92b98704a7fd"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "dd134028bb5d1845e818c5e010d25716d042ae4e328116181a005c2abcdf8be655b00f08218b3bf3b4f981a4ce40717010463b8a24367e4dfc36f058968eaf84"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "8bb38bb5b266e083aa4cf744c6cbfb9b9b1cd052"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-query-type-log-data.ts",
+      "fileName": "ts/src/dashboard/query-type/log-data.ts",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "d9693f2e2a3cb196d5da926ee9a65abea0cba8ff"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "50b3c7985774bc9f6250374a7972de853c0c6032beb6ff2c092c62b987743262"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "8cbdcf535fa45994a0146a7ee0e60851146d62c1da48813e776c88170791978d45f4c4a7bf99810e72d40aaf0fd42a19e1dd126240e09c07081625ee00947a50"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-go-datasource-datasource.go",
+      "fileName": "go/datasource/datasource.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d57ed14986d649cc2829f9cbf8c1669c6177efad97f4ec00c4a66f7587bb9d09"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "c8167b82f69741501e5de10ab352f73dc90478984259459bd813031f03e4086121afb6cbbf8eb919033b68862a32d9ac6358645855de01ff11be7fc3c33978be"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c492ae5496db6035d8240e173ce28131e4e77a87"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-common-index.ts",
+      "fileName": "ts/src/common/index.ts",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "11df59401326571d13d929817ab5b228b6562f85"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b2f286b979074345bd553f6b80cdc4e60e2335aab54ee8ee076d3e9d0b213cd2"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "7fcbc6c40f71fb657c8ea8cc0b649ebc2edd132f96d8638efb5602f8164e83b96f4842fed94a4b2c775cb72cb82749649fd5d2e3439ce6e3dd68de245d6f4b72"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-query-type-base-metadata.ts",
+      "fileName": "ts/src/dashboard/query-type/base-metadata.ts",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "aa48e8247c532a19eac2e92a64156990da9282ef5a5066575fd77d0e095a9b44"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "136cfa6ee85a86f5b7942d17f84aa04a84a195d0b278980b9a30faf300a53ec9735436e218032e904aac5111a78917cecd4c27bb45ca81b2685c965bef2a422d"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "cfb7e99c5a463d392d6230e13491d8c289881ced"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-dashboard-panel-PanelDisplay.java",
+      "fileName": "java/src/main/java/dev/perses/dashboard/panel/PanelDisplay.java",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "80dd54970e4cc6528cc0dd56bb1e440ae1aa9fe5"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e66febae1a360f0e1a6410b5a2789379ef40d01b7eb750c14313add36db1e1d1"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "408fcc004b899a5bdd9d5a0362e1e709ed571586a20334cd66f9a3a59bc57fe71e244b125c59b3965cc33a4ce96fb166eb72f762bafa823538f43764e41ab3bd"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-cue-common-displayC95goC95gen.cue",
+      "fileName": "cue/common/display_go_gen.cue",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "59d81f1c2a5e800505141ac5c3e48248550260c3"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0502a857e0d29d6c46a9cbfb96264d5916438f56129fe75667582905d1630457"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "12fdc48165b03391e612fe3f04733e3da63f530cc565dbb8128327b8aa969e4cceab2d17d38b0b067577c135d362af9059702e3507402f842ae9bf6417a965e0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-datasource-index.ts",
+      "fileName": "ts/src/datasource/index.ts",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "13ba8dc435ddcc47ff8dc6d7bbacd2ceea28d488397d3f33177a46011489915a"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "2b6e06c7cd23e77e3a74045b4a0b5dc4840744694ed24c8ed97f75996db730ff0d6c4c3a083825ea1778399d66d494242c3df63eee66669011c467d5f80fbbce"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "914dbf9f26e6e78311ae1aacb1cf6c61968911b7"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-go-common-validate.go",
+      "fileName": "go/common/validate.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b136db5770c1883a4482a62f5b9411540682c65ea86d0ad4cda31994e4d17fa9"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "9f25d03d36a8ddfcc569eb8a7ecac3be9a2a6cbd51388d790478feb1ab983389975217b85f4141b90ebc923cdef6e5f9d06e09a243a03f24261a1541b4288cbe"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "022e2d712a4e8647e5566e16723693638ff57851"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-cue-dashboard-dashboardC95patch.cue",
+      "fileName": "cue/dashboard/dashboard_patch.cue",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "def16393df8c7ab3eaa8826b689ebaf225011e2430873e201948e92298922b78"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "96e88b9901e2350ac6ce78588811ca72fa01f02a843c05f5f10014a3a69006937292bd933deb56621f2056851d64e64bd60a315bb0c43cbad7050f8587016543"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "44838fa9f7a61c09928f8641b24f9cd875cfcdfb"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-cue-common-durationstringC95patch.cue",
+      "fileName": "cue/common/durationstring_patch.cue",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "1133d15f74f5a88f02ff750e2d28d464c2f9065118052e581adf5042ea86825ce757a86ef95629e68aa28f43f0c7eaa547d10495aba6fc2817525c54a8004d8a"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f3d64ef26e5248081c0ac0068f71b4f71d2c3791"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e6810944569a87d820bd65086fe71cce559053be9a89f26ae41a06e292ac46ce"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-common-Plugin.java",
+      "fileName": "java/src/main/java/dev/perses/common/Plugin.java",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "45b0c96e0173afb5a65e69f95b339f20669b99cc"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ff57b84f141ed894c81cbb6900c1e936de839bc54e70f3871f6045d70516edd5"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "133ff4326fc8debf4aaf1b2b09c44905680f62b6b403fea22cd11c9f06cd4e8bdfb922b3b4b30b19bea61d90ccf47ceb8b093615d24b00ebea175656411cec6f"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-dashboard-panel-PanelSpec.java",
+      "fileName": "java/src/main/java/dev/perses/dashboard/panel/PanelSpec.java",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "45a20ac7cdf85de47d786071886ad66da0daadbf23c30eb04d29de957d9bbaa1788d350d4f1b3d97bd6baddd84293fd096d42ecea20a1c2c2fda8b5a694a44cb"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "d497ecec7c6f63ef98e38616ae3a634cf9efc23d"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3c4f7684c02455698064d77915cb534c3accafa0ca40dde623198101590e8094"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-.github-workflows-cue.yml",
+      "fileName": ".github/workflows/cue.yml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "7789e6ab8f8bfef0a4c351f72670e139aab293d8"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3436999d3d9a46c8710c3e22902a4c99b81da4479f75bd3d270a4de043b686e5"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "0ccc508fccc9fc3ccbba209e9ad7f97a434c78d470d02a0d6d745891dcc6fed76f4d373778a280e0b5b007669a2e10b86a89b2d3fc112f7663c7939f8a2d2bbe"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-query-type-profile-data.ts",
+      "fileName": "ts/src/dashboard/query-type/profile-data.ts",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "7eea2803d86f95e62ab474fc23c6df2f7d903ce8"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8447a8e9eeb063182a076b6f1b596f142fd331a5d20fcc5a70fdce64301306f2"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "d7bf0ebc8bd548c62767321a0017ca7913d8107553b4e274074a40c40e1abc13ff2495765e8d5345cb0ae5aad4703a814c16bd20cc6aabece6a9c7a286a9e131"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-cue-dashboard-layoutC95goC95gen.cue",
+      "fileName": "cue/dashboard/layout_go_gen.cue",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "82d0c84ac2708645a0bf8f2dc6a944a910394e4d"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1b2d5cf68ec76892dec2b35d86b1dfabb137862b08ed4b6cd0232e7cfb951b45"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f51dc1a105c079a27a218fd3152252e1e7408d58efabfc3beb9dc8a8bdff9c87b50b2957936b8e855c5161afa9051008ded25a9092b1d7390d14eb0b0ddf6db6"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-dashboard-panel-QuerySpec.java",
+      "fileName": "java/src/main/java/dev/perses/dashboard/panel/QuerySpec.java",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c9ca6a859a8c0657a8bf86f7dabd1850d576a66da6930e57f9973a05420b2c89"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "682163ef1b0a3283ecb998978f51a2fb4a36f15665241f1166b555ab43c2d63469a69c59dc2071a6d236fb26c07e90b2cfae4ac689eb412c30245a58c830aa90"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e91cbd102492ef0cdd69cfc3a896c3fd3401f80a"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-.swcrc",
+      "fileName": "ts/.swcrc",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "1964c07b62952bf7047be5904f38e91d71e41ac0"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2cbb3f5996ddccaaf777ed2d2710915eed2fb255110ff8e947755ceb569f640a"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "c9611a5b4e8a4df7832d61de9f82aa00a8fcf73122ccb0890475058ab4512726f7bb29025b11d0ba526004744566468ef7690ba5ee08cd4b91f40c9ab924a1a7"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-dashboard.ts",
+      "fileName": "ts/src/dashboard/dashboard.ts",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "0fa6c7ca4bd1c155d11d97f9b0f9e6f7db511aef"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ff235fc4e421948cc6148c41353a8022f53ef1cfd6633799540399a966b83232"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "4338ef09d9059014766cc2e01ebde2cfc5ab23a2495403e6101d9603732f2ba7a0717ae052ca0dd3c7f22107b0559f13ef38dd57358fd3c50f42e8a139d57269"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-go-dashboard-variable.go",
+      "fileName": "go/dashboard/variable.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ca261d1f91e964c97f88bb6b381f57d8ff6612d5"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "518b097ecc5624abb20cc8d92e3297c67efe6e810aea811d6e2b4b1902937878"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "06dfe525f90f280d3bbbc7bffa98579b288dd6ee915fcb2dba56d1371d8b524b60de1e9d1893865aa48e09eb185c892cfd654bb3caa851a50a08d3d25b85fae8"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-dashboard-panel-Query.java",
+      "fileName": "java/src/main/java/dev/perses/dashboard/panel/Query.java",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8a93f2d8930aaf32bd00b4d005c9e4318d409f23ca01ebb73c8d2cce1998a6c4"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b7b6bf83721937759a4725b9a9f15b968fb082b1195d7c206b64737c88409e3a0271514d564839ae83052049d8acdccb945d0a526494d5a22951dfd026b66a7e"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "0350f37a898343f79fbd5cee9945badad2b0d00d"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-schema-display.ts",
+      "fileName": "ts/src/schema/display.ts",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "09f728845db551f4ccd2e7d424e7890402d1df96258f84b38ce398dabd49b300"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "254e8f63886aa08b34d8cb0b0e42c778debc9068e0ecaf4d471ae4d06b3d84f43abce08bed82df9d3af483979d05324983fb8904dffd24112de9e423df2bb0c1"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "9c19f96d2dd13a590c739e9d6fd48250b0fd3c6a"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-common-definitions.ts",
+      "fileName": "ts/src/common/definitions.ts",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "202cbe1a66dac7b142643c9d70eb78e09134be5c2d57a4ea53ed734154d7d4b39515b467d8c42f1c31614122884b3e928fc319265fb059a0bbfc0eeedb58e9e2"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "2fed9aa1325259e91fa872f9ca2b8787ff4054c8"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a183e1fef8ca5c7f062fc968536b8ee70de0a5e251804d0771efde10e070fda3"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-query-type-otlp-trace-v1-trace.ts",
+      "fileName": "ts/src/dashboard/query-type/otlp/trace/v1/trace.ts",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "4c02cd505520b9a3e471564001af609edbbdf1fe27d654ac40a8b611e28b5c44169b9eec63870c7a16593076e35c70a65c911c54521ce890491bf8a4d08006c7"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a11ee3f94137f8c7e2d5685fc5a8fc5f9e6c32e7"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d112ef3d92050d1bf31f68500f8f8fb9aa127699a3d504db730c65b6c97335a5"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-query-type-otlp-common-v1-common.ts",
+      "fileName": "ts/src/dashboard/query-type/otlp/common/v1/common.ts",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f36385075693551ddd48031446a4c5f6fad74eb6"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "973d2bec99c98b01a54d595d9daedbbbec43dfbd448a47e3a77eb183cee46a59"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "d20c0a1daabc4cf1c0c2687a58a9532db5ed2390b52ab9e062c1dabd458f736ab42bd7d5431a7c971e8ec7a9941d49205cd8a475a2d0c7665797244280a00210"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-package.json",
+      "fileName": "ts/package.json",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "937e2d2094c41a72bfbc1fa4dab8141c939972bf"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1b1b20779ebfbd92a929b9e2e54dcf062cc2206dd638a6aeea3e7e68af1d0e3f"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "67e2c3899ab2bf53c407fbcb5d8cc034428db8ec227c9434d4644b662ad58b224513ba29c73552fa1eccd0ddd58fe19f31b1b9fea88a196c7fa30570468a2fbb"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-cue-dashboard-variable-textC95goC95gen.cue",
+      "fileName": "cue/dashboard/variable/text_go_gen.cue",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "390024bdbccef410f383f2d211c10365e1a75d78"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e01672aa89392bccc9eef6c013be13e0d63517d6ea09b40d350aba828866b6b2"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f7601ba41cda1221c3ae27309ed9086f5854db8b34f61a275494dac5eaaf0bb731be229a9fde8a467b105acd93b2150f96e79c8733a75661b3bf305c6d442b4d"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-cue-common-durationC95patch.cue",
+      "fileName": "cue/common/duration_patch.cue",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "d0cf0500e7534b1d8715c75b71a707b949fa9d92"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5227108a6c9ecdd9c31cb3d40c65d0acbb81d66eba83cee93aa78ba3a3b3c118"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "9d5ea105e8eed29648c6f704e83d0e8c28e97ec7fd6ff7842bf18eae5f565c51b2eb1df6e4da0776ed9bd223d3d5d600b54581191038689212be9175fb43882b"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-tsconfig.json",
+      "fileName": "ts/tsconfig.json",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "35208fec8331ef687ec29951bf42d9dd64fe9702"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "158b28df41090085b8014480d28b970efece134dbc4a68f79df8f4e7e6285abc"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f5c4895879e2d576fe53f89969af6d207b3a2c9524d0e10a318aa3403d56d1d699b5936bf08516fd4e8a42a7ede48a8b8c8eead57ed42f6a147d996cf55fedee"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-query-type-index.ts",
+      "fileName": "ts/src/dashboard/query-type/index.ts",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "0aad754e3c1bb12dc325071cadb55929d58326da"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0fa04b8f6a9b20f033c71225c5fc1d37be57fd78cef8818f71ae8a96561fc20d"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "7314b61815e245d84fe1f9cf0a6b32851d4937c6a69ddc48a757996b8d25a10b124482185dbb2a0808921833a4747b103dc52d24b06423b34fe3ba5fef473d48"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-link.ts",
+      "fileName": "ts/src/dashboard/link.ts",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "dfb34a06da603a3f13ab7e3af5053ecd4f14222946fe6d8a0f9879ee344f4bafaf19109b2750a8fa484154ce67116b3d1079aaa769aadd9c80117ccd0f6b0ce0"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "731bdadbf3f39eaa842b5d71c912c6c5f3e59c47"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e21a788a861c9f350eae6f3d0c4a8df148cce1fb566828a14562323e3797fb51"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-.prettierrc.json",
+      "fileName": "ts/.prettierrc.json",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "9dc2175cc038f5643ba42dc9b3b5c6f146cb83f2"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "34c5a95f1b8217e29a26b0c720d5c66cf6db7b20ec7d09f5678b31bdf6c44966"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "983a7bb1c8e38e62cfe6b2a8a394f71d40580d76eaf70c66a512bc563ad9449c4f9b0893e6f6253abf3d495b672ef9694aca39dcd7a29e62d93625f871b53a5f"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-common-time.ts",
+      "fileName": "ts/src/common/time.ts",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "539a54d5e6cef700cbc40d7f38200acb9e6320d4fe326896c795380db37a0f839515db8236a02e00b3072955597dcea8315b3addad669eb9c2da0a3a30e686bd"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "0ad67840abe9e092ddc8de8377a7dcface21c918"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "582aae44c1d5cd31a448a9b49b5a52f360aae3d0b7753c0dcae36934e3e9fd34"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-common-display.ts",
+      "fileName": "ts/src/common/display.ts",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "8195acdf4e1470c3582e8a067fb5b95645d252a1"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c3799949d569c7de053ffb6ead02a82f3d4b1fd8f47f1dacdddb34b97c564ec3"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "a5a66481b2498bff29b995899191036b5374454e0014a8f82ca338ceb8d271d0016cce15d81c3f1d9fe2525db3d1f356508719a9637c7ebfe0b83c8733acdd15"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-go-dashboard-layoutC95test.go",
+      "fileName": "go/dashboard/layout_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e329a7ec830a99796eb4af1b1ebed6ec41d44253"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "41b94a13af9c7c185e8615860e3d7ffa21b48893e6865200442b0f3133a4aea1"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "4c212ad42c42d323b4cbf771275c3bcd46554b3aea94748bcd55eee79213dd73d25c5640c506055e7f33ac8b0a542efc5b94185798b410507fadc95b001bc872"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-package-lock.json",
+      "fileName": "ts/package-lock.json",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4676503317528fb8d0833c7ca951c8f20d3a1f13"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "12d7b25ebdc0747f78865ed0a4bec85df44eeaa038bf1bc5111653340cf4af24"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "d21053460f0ac1c3673a6f5719eb1b76c3ba7df1abd4f4ecc2496dc30a8e6e6b3e729c3cd0d5dfec7444c0c3048f9733413841754951254b87cd527b96552475"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-schema-duration.ts",
+      "fileName": "ts/src/schema/duration.ts",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c9aace33b6c0d8a36fd098b74cc1edd1f0178b59"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "62313ad5bada94cf9b167567bc9da087f357cab1f71e825e17e2aa0fd654b5e9"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f2b323f88616990ca4309654e29ce7e461828d3d494e0c8092870f548991720ab11d5345de38b915ccb0eb6ca5582da6e34d86fb2d850567e3411f5a3aeb313e"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-query-type-otlp-resource-v1-resource.ts",
+      "fileName": "ts/src/dashboard/query-type/otlp/resource/v1/resource.ts",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f1e9e222b578b4b162ddf73f050511555471a10e"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c8c4244ea3f6d9b03c5c8fb8772794b98f4a4922aa5b01dafbe64c91abb8e04d"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "563cf2a1e4fb9542dadaf4e583760b7284f22338c425b9efe8a55208e7a9c263f917b5399b9bcade1e7eea0fbe668ad359b57b2ff82fe83d4d0ff92cac314b3d"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-.cjs.swcrc",
+      "fileName": "ts/.cjs.swcrc",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "d7f19170f9b5d07ca61c0def5b5da999b6c4b77c"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f034a7a732b31ba8029ea1251276bb21a9d2efe2186da5395799c501f2572cc3"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "d97106098e16c5920fdb7ef0dce91aa589cdac7cf275bea294475c250a2e28eae3136d35ea32b7870833b491cb02b5d2b2cc0a630174342324417e873cf19cf7"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-cue-common-jsonrefC95goC95gen.cue",
+      "fileName": "cue/common/jsonref_go_gen.cue",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "552cda9af884114fd9f364d170065aac000e7004ffd0e092d8c01bb82903b9a8"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "9cf83804a5f9a155775fcc7abf620fea29aa704bd3194f94bd9d94a299bf1cb029e0bc360cb9422211843685ae21a253247b59eb1ced7b2cd7795f7744ba16e0"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "8fe6d0f48dbb5bdee5407c5b6cb315475bd1b084"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-cue-common-pluginC95patch.cue",
+      "fileName": "cue/common/plugin_patch.cue",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "67b9c5a3054b874f39396fe4659008cdccf6e34c"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a0dfe6ea6945745fd01a8af2ff9dde3d8fe68a0fb2194342c8f6678122127530"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "7d1eb682b4747dc18380a6025cac3dba3344f06fa4f83df04a3261d682f5f4e4b5775c6ac989e4a03d9ba3b2e8eb7a555b4ec4094bd3f9403b2612a84873d443"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-.github-workflows-go.yml",
+      "fileName": ".github/workflows/go.yml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "1d4c71c881ae21ae4dba6577b6748c293df8e27e"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4faacd37695c096bf9d353d217a55de149a749af9e667ca9d06d37ba9237ae88"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f93c814c1d5e0b9005878cefba443c55d7dcf5175da5c84e39550badff4cb286ca72e1e8fed25819dad6700fabddb9f686d86102910a43333c1a2d17fbbcdd1c"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-dashboard-Variable.java",
+      "fileName": "java/src/main/java/dev/perses/dashboard/Variable.java",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "62e6c78ffade51b02f8f1ce441237f04a1cb6abc"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7be72b3be0187622cdd4fa3e6a745bc9fb036bff403979d44c534c420b7a80f4"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "47ff752c0804b26e0726925c41adb988df22f8798cf5fc5d849ea0bba43cf313ca2badf6a01562d3f5ab20e11581302bc87b4b88707e1308907182cccda3df10"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-schema-plugin.ts",
+      "fileName": "ts/src/schema/plugin.ts",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f80e85dffdaea04b59d6a0c1330798601a901e14"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "778edcea3470880ab51080ee2c0a3c11fb6c203f882b4d2525fe32c46a572090"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "a20d9aa3ea8d7b871248f8aaca23a43be615de3301fd2cd63ed70fb7a875ab44755b7620a66d4ce938d998a50d657f47d7e60765a49e5094c3c88b1dc17202e1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-cue-dashboard-variable-listC95patch.cue",
+      "fileName": "cue/dashboard/variable/list_patch.cue",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0fd62fed0b744648f991868a0d385329b38a931b37740b83378b61a11935064a"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "9545b8294917e5b34a7afab3a8f29f68faa8538641c53ec2dcb5feb8102738a1de19155b7ee72e9a21e4e5e25a7f2787d3df425ac51e4916dba704678f09b20a"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "38b640b82aa9a779c9627347a29b4f175428973c"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-dashboard-panel-Link.java",
+      "fileName": "java/src/main/java/dev/perses/dashboard/panel/Link.java",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "ae1f62c719627cfd688dc201e530d634211141928c243c638e8aeda36ff4554fbf889f385624194ed1a00d8bd2150b7a97d65744fd894ad181efd14e7a1b9336"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "fa251edc6858f5eaec5ec3e19685d05c46a08afd"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "32eb96afa1d6880ef682f57d3f9b6ba83099f6a0cf3db2c641d72022d42f11a3"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-cue-common-pluginC95goC95gen.cue",
+      "fileName": "cue/common/plugin_go_gen.cue",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "d930f9988e5c22ad0c007eea95d06def765231db"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "05f45a4c4896835aa8f1d6df5b342ee5d6afec5355fc33173e71f29c4eebdf12"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "30e06dbf9fb489cf720dd1614ed2c7d2b820c2d277727706ca555c52af3d1eaac770fe8e619e529f540edea6d9183320ccf88c955ad49ae7b6d71dcb2836f6bb"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-go.sum",
+      "fileName": "go.sum",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "87528725fd4c240ebb614ec3c802dabd4ed0b492372388ac584481dc5741de28cd3f1f074e82c9fda1b6835e631e31accf01405ee2d3e0511374cae81bf85986"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f7ed2eabd54bc23d794396cd6e157dc7a4cbc92d"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1bcac02cf9df42674bcea5e3b337b5ee165a9eb122d74be337466881bb1945c0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-schema-panel.ts",
+      "fileName": "ts/src/schema/panel.ts",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "3b1c21b83fb5351bf28fc048155dc979f3ac5d38"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ad19f097e6b081f254907e82b34d9731c2002aa131f68c496644d50a9c0a0236"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "4abf1a3826f83e654d8b00541f96c2769dbd8b7bff88311b97109893360e08f8a1f6cb70731757202260c8c39fff9bbb0184ed660642437611fa525a553cca52"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-go-common-jsonrefC95test.go",
+      "fileName": "go/common/jsonref_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "e4776bd640da1b4d2944737caed5399fc44ae3fc56f36433180348f9a05e3fae0d3cd717f011cf427831e0aeac48b8922514e4817cf222e71f76a856a25eba2c"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "162939836fc432ed5b9b3da7e69661ec65a2a1a2"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "11a874b9e61481f96e84fac4158f5dcf22f7acfef06f257a3acca4c04740194e"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-go-common-durationstring.go",
+      "fileName": "go/common/durationstring.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "7b5828881a83b184bc04154e2c23019405e6dc320b660a80a7bd51587dd674f8344b3ac9527f66796fa9547fef56c070c8b4d9312f082e9c4305b6aa6c6286dd"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4dd421f089e2ad45efa03b001bd9840c197ad69f"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4d156e0fa74748dd90786cb84e6ac517842c96d63f25aeff300089ec1c40c230"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-common-JSONRef.java",
+      "fileName": "java/src/main/java/dev/perses/common/JSONRef.java",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "7e39e4d9059f7f5cd47556971ae7dba18d683824"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a356f9da5a708704fb34f1bc0c27d71480a4c77b6dbf51eed9314f943a6a54ab"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "af31bf4dd17a48540f1fdbffe59aea2dec4ce849c66930d76a4e8199ee226176f098ceedd0247478f5ae73e2b79960cd8c977e85f45efe2fa4c938a65b64e8f6"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-go.mod",
+      "fileName": "go.mod",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b8ffcaa451d700a3cdea014f9f55efe5e07f3700e42cbf04721eafbbf737bc46"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "933ed9da7395aacb32440d7a92417430be4af5d4142f1dfc531980e85a8e1348e22dda450cca8bae612441196c1c9e878fca3cbe8c8e7212f303d1701c646a7c"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "92e740a9ab3557e8d766ee9a8312a74e8a272f69"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-schema-index.ts",
+      "fileName": "ts/src/schema/index.ts",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "866e48196a7fb236075a62f2f06c2eb473381dc4"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "704aef7ef033d32c17d3b00b535c96c811bda83cab3ea14c5b3d2524ec4ab2be"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "ae22a8a741e6e6a8e7e8510023a9f7bfa7dc13d2c7b1a62e4a61bdfa20a4b75fe44c8f94801f326fe214bf7581bf00173c79a29d076bf8aba4085f1f84447c54"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-java-perses.iml",
+      "fileName": "java/perses.iml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "983294cd8788d565204ae0655d3c8c6f79e2fc65"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "95a6ee866dbc3e33414ee5f4143b8f4e905f1dbe08e677daf383dd5619a0b849"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "6e5190ec2a5649bae7af1b6b177f5dfe458eb42a2e6e2822ac627c00185c0818931c2e35624c5e4dcb79663c95c6e57276a51b0147819c26a16c234646ad752a"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-eslint.config.js",
+      "fileName": "ts/eslint.config.js",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "0c98a560ffa20e0f96755a73efd3fd698d3d2d8e"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4e55b98613f768313fb57fdbc0cbccd8103dffd1075df36969cd9f1eba8d4194"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "465c92bd7a78b331b93584c0eeb32506bf9933ea47f268f10286df03beecd151268a359a63762a48e924bad8911a03e83aca41e773577757019c04b66a04b109"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-cue-dashboard-variableC95goC95gen.cue",
+      "fileName": "cue/dashboard/variable_go_gen.cue",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "7a0e6b85b9ac5ab78333fe6c20b198cf68798507"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1599728904a93f1a9f0e4a82f1e2f8769eeb9290b0603dd5404acf71e83d8562"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "3aa1ce2491460a51830735f8aedd886ef6f92da639b9730a16b8cef25c3e23660e73c8d47436c4478f1575d67942fd6b93b2daf046895046510d81c833affa29"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-Makefile",
+      "fileName": "Makefile",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "725b76d9cf29d6def41a4578b82f510dd438cd1ba6afd25624fd9a5833f05cfc302c6b1d2eaae27d191a3e0d92382fa1281b656053288f089c3db9de92825abc"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f2f3d00c4b5b737beaee9460be03544ed404311f"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a3adec6f90ebb13b459c19fd48555ee58f78f34f53062b4c1f17879d0388cacf"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-index.ts",
+      "fileName": "ts/src/dashboard/index.ts",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "1c61b595286301f76d5f25ccedc5732dab2ac5f3"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "493a7a15e6961ddf7e39d3039ee90ac59a30481900f16d1572822bfc268b6485"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "55fd4f00ef09f932d1c6af7b2f76013e954ae6bf45d8bcf81acc09cb85b9a64d25c0256fed75828b5b628e00863506d8cfc2b349429aa3855e79da27ebd83e1d"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-test-java-dev-perses-common-duration-DurationTest.java",
+      "fileName": "java/src/test/java/dev/perses/common/duration/DurationTest.java",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c956ee0bc764c4ef4f11bad5a451e67d8649a27d"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0896b0981df62d9969174717854122d385cc79e5b62750fc60c1d069ecb08e85"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "33c1f452a0631445bcb80a42701a801cf0a455f3653edf5af951ef7e82b89e225413f75d8fe3b6e6aa80ce4b4524ea34707c7e1a0099338c1712eede8307dc54"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-datasource-datasource.ts",
+      "fileName": "ts/src/datasource/datasource.ts",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f3df52f0bba9ca9421dfcbea4181bf9907b5a3044df1c67b5510e5713a907411"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "8e5689881b9d87935f238fbe949472ba19f6f997fc08140c32d2cb3be116391e6cf4f2799009f7d563d793734a95a6f7f319b10b84e2ebcd8aa9e5ac3034adc6"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "26903e6174e684ff587802f32feaf04316bc89ad"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-.github-dependabot.yml",
+      "fileName": ".github/dependabot.yml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b0b79bbe638ab222846f0ba250339d56a8bb03f73d6431727916bbbf99f31ed1"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "8b3de604944f347a66b20be3754e37ca6e152c345e8208e23875a343238ffae81e481097d51ece3aa3693eb083896c453370ce5087385168b114eb7a1abfba05"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "3fc5657174228f5ffa91c3d0e047d8dc13042f4b"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-index.ts",
+      "fileName": "ts/src/index.ts",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "00bb23c0a857766c9b75d0d1f154f3f329cbb11d"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b128d04b447baa26227ba6199c9ac55fa5689ef96bf8715ab36ef65aeecb6d53"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f62222926ca25bec8fd117b400ba89ae9d5547539273f7a509024d1003c8c1033336e9013b3e9ece81cea2d364710b5e7c1f715264b82b69326fc4b2b8fa4fb5"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-datasource-Spec.java",
+      "fileName": "java/src/main/java/dev/perses/datasource/Spec.java",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "812eabaffce412addedf6a876aca2e57c6a2e1c2b1b66aaace4a273587e4d9fd"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "8c54f606489d61a8d8b217184749bb636446f3f59980065806c7f0fb5fc856f760797fa8b2b027e6132062bf3c66b870e45261ba59f32e22d72029fa80c2f1c5"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "38e183e323593ca9e049b280ad8489c14e44b57b"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-layout.ts",
+      "fileName": "ts/src/dashboard/layout.ts",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "78484827af889fc882f003cd7914ea6c10e6dbe6179bb376047b4ba6e75266d4fc0da9ec0468f64e7c5fdd3b5742646300bae04fa133b040acfa6addc7662bca"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "bbe10d8ec49af87ab1a8768a97aa76d097d96c6d"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d828a3490fca72b1e54757e45609dae59943c15e73b320728e406e7731045181"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-query-type-trace-data.ts",
+      "fileName": "ts/src/dashboard/query-type/trace-data.ts",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "de6d4961bfa08acb408e45fac6a60be8d209eaa7f9a1fa0f15da7d76a688a43ae1b0569214e672abfe972f9b3487e7b477daf6edf24463b0f83bf7339e5f343f"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "1f1f9f08938e5dddbfdbd2f608d18d06c5f2ae00"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b2a9a784595f74bd48a118937e460d0a489362500dd99f84708a31581e3b8cee"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-common-duration-Serializer.java",
+      "fileName": "java/src/main/java/dev/perses/common/duration/Serializer.java",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4edd9024086e3a218011da3aaac92b36be1d08ba"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "feff9ec2ca17131de15d7e9c90f99b420f5b776df9e5e432d76ce9ea13123140"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "fd66ff74ab6346fd359cb0f6037acc2d44adb8d2b314876e7aedc31ae4ee1bc0ca56a6003643a96b9f0d96e47a0946566f7edbcf98b46e3be3b7f4d95b53b1d5"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-.nvmrc",
+      "fileName": "ts/.nvmrc",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ffb2e94bbe27e018df619f26aeea300ebfbf64a3"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7703fd79909af9b17df6395137bee2b07c3f3b27b6e96e18c909f433cce84f19"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "fcd379458406f185c1ce2d8652ce762a5b284313fe5d4086d8cce44b07797139ebe3107e9ab503f90c6920c390d38b5fde72544f65d242185f7b3ed9832c00d7"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-common-duration-Deserializer.java",
+      "fileName": "java/src/main/java/dev/perses/common/duration/Deserializer.java",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "0303279779bd03739f517aa96c8bb1e961c8e56f"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e288e3e662651f82f5bf4fceeabd008e8b5c9f601beb3b62376dee3174509a9b"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "93cdb114f85a08e63acda1e392d2a3a850b6d00fa733ff7cdf0afa1b406fc8d872fa50d90d89bb03d3163f3844deebef9729f13ff75151b0efc05b010491ef44"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-query-type-query.ts",
+      "fileName": "ts/src/dashboard/query-type/query.ts",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "8d064f8f84a04c0a56ec6d737696a98776d0b74b"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b538dde73f5887ba282d52ac2f6865fc5266069aff75af931b43acaabf78f19d"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "ae6b597db3e13b373e3d09a105cebd36d4353220ed7c65683cdb2029430c663ca1b8db6bb7c4943267795c50d4eb44e1c4772167f17e80601127c846afdb82f3"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-cue-common-durationstringC95goC95gen.cue",
+      "fileName": "cue/common/durationstring_go_gen.cue",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "e2ece40d574bf6fa5954008dfd192845799df31faed0becd76b6b52baf70c65e4c6eabfb754ec36e07a300e1069f5a16ef334b380f5c8562b3c09fa7ff51f6aa"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "39accf894df53234a3ac9bbd4a81a681b06e6d4e"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "82f0bd39386dd55fca8752787651a5256869a10cf7f629533e0ee92036af882b"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-cue-dashboard-variable-variableC95patch.cue",
+      "fileName": "cue/dashboard/variable/variable_patch.cue",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "e7d14894ee0dd2dddad96796aac37e221229a98278d4313f21ccd2edcd7dc994497305ed5865198fd6882a1928ac82da173af85ee839b0194858245a9784193c"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "70ebb6d74c1708c0cc018e81b281644dac6b6627"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "793545e1365542ab0f17e6f83b8debdb0b70eaf4341059f8e44195bccfb575f3"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-variable.ts",
+      "fileName": "ts/src/dashboard/variable.ts",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "bba7eadf73c1cbdcce49d1c9ff32df06725763a5911dbe9671cd1e94a0796dad"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "39702f39685d99eaa15f1f6bbca3607172e7a5dac4ee48b847506fe1fac2e48a6d1fe1182cf3b75a442663a3c44fda7d3af770d10241453a853fd4067facbce3"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "aba5f6b9eda4743071fa77ad726c07e3b81d0961"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-.github-workflows-ts.yml",
+      "fileName": ".github/workflows/ts.yml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "8bbe80dc8add54354329b713a7c46985f2d17697"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "affc80b3cad3f14fa37056d84fb4bbfccc549a30cc70d87c0ebf28d5533bc9fd"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "c18cf20d1effb5b2203bed92f1888c0fdcbf8b1fc2a32c9476426eb307d2d176a76855829139af868246cf975b20fb03e77f357e82dff499a343f0887646f0aa"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-schema-variable.ts",
+      "fileName": "ts/src/schema/variable.ts",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8549b362361e0178cf7333957830168c29ecbdd466699186cfd3967f50e53d97"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "d6243ee02a877893d359f62e09572c220a36ed6e264e533f100045bce309afe7cb8b11aa6430463e936f868a10517e21777022f571c8f28b26a30fd4e16fd1af"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "08e0464235f5fb009f24825735a17ccd1d616592"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-go-dashboard-variableC95test.go",
+      "fileName": "go/dashboard/variable_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a50b5c3e3cb6dbd79341a84eb6745bee911f9ce3"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "43a8dc431b4c99070f88990cf30d90d74aa51b1ef02ea59ad7e7d32fc30b9e98"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "c5867315df35b94aa0bd9461431c57d42a39bbbd676a68c21413f1a9bb6d1a11d045422fd1476be776f301e010780b6ae4f655730c0c262f833696b4e687a057"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-query-type-time-series-data.ts",
+      "fileName": "ts/src/dashboard/query-type/time-series-data.ts",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "3d4f6aaf94aca8aeffc0a884c104641f5f674708"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "cd55d5e6c2575bfb2ed4038dcecd12acbc550a0b7570c5367010fb267a46f334"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "0ac41daa46794ef5670472cf1594ad2319ff808f6ba6d13c3651346a1ea70e3c290a760f8c574e87b4fab05d1ca322b5329c216fba2168d6f0bb9b91dc674a18"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-test-resources-dev-perses-dashboard-simpleC95specC95dashboard.json",
+      "fileName": "java/src/test/resources/dev/perses/dashboard/simple_spec_dashboard.json",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "dbbdd1b151f67e1ca73a9218d4d74246f5fa895e"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2fbd4c7c3f4c6c5327cc9cc2e9c4de6496adb33444ba06c7b6c3255854817087"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "a9cc7267c23c8bef1b72941075a0fad59b72d33c30b442e21ecbf5078c602813d92339a2a6fd0d26581d34903919251aa3625a6a29cb6a5b4a8702dad6a45bd7"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-schema-datasource.ts",
+      "fileName": "ts/src/schema/datasource.ts",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "9f793dd95d93ecc5485246dc4ae895dd90e5dbef"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "95a61dbaba19b820bfc4660a38363ac0cd639c7d12390086af66d736d3241292"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f66b958da59c650d70933f8d9117df4c8121b865b4cbeac21a3cd7ef1976a4a64538aec7d10b3324c3ab5ca5cd0e0d16786d026de17920a535b45b0462c7b9b6"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-test-java-dev-perses-dashboard-SpecUnmarshalTest.java",
+      "fileName": "java/src/test/java/dev/perses/dashboard/SpecUnmarshalTest.java",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "063d2d04496c268678f150141796492850fe2ffb23cee7bc109d32ef1e2ddc6a"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "fe3626ad7b23fabff6d79c7e912375c83ac90c42efad95d442fff90fb91843869a9b1f9aab62dcb01e02c952e6eab4f1e472823f64b6db5574d7ad188efbcc64"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c19d8ae6f4eb4aad6248f4b85d0bf81d5aa909af"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-panel.ts",
+      "fileName": "ts/src/dashboard/panel.ts",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "3694c8f0436f2166f7413a6c02e9f6f4448b1021"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b7d432627c3e37549195d8fcf741a791e432d7dcc852d8f5478fb21f0a98a8f6"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "3424aec531b881bb92eb4be53c0767800d2f86614285432309e5d5a6d3f052070979b67b53483c4c1de0eab19c7a76e8155290648a896094d9b553187848356f"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-go-dashboard-variable-text.go",
+      "fileName": "go/dashboard/variable/text.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "208f4f9fbd45563ebcdf9da9a12b586435b95877dc20527d2292d4389e759678830d3c6db97c1a2cf5a0a008f90cfc2c3dc6f71509419a264ac96497279d9d29"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a98a209b18e0128b159e558a1e445358e6e710eb"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "054be5002c7f588db1e8f6ec67c3090a599c1c233dae7e4f67cac9d8e7824065"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-go-common-duration.go",
+      "fileName": "go/common/duration.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7d4177547b6abb1a0f65c08394e43183bca8836b97a1ce7f6f9edfc97c676111"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "05634814a01b423ed8356f4f8de2190e3dbed01a6a758a1ae80fe1b9f15e222db38bcd512a2fe59c2f9e246fd08f5e7e7588c2e4305cb37020b28433c9c8a57f"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "0b884d796e8b7960cf9fe604f8f50496302f402c"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-cue-dashboard-dashboardC95goC95gen.cue",
+      "fileName": "cue/dashboard/dashboard_go_gen.cue",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "1cd22a55925521cb683b86eafa31be0e965aded4"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1f186c843f0c04ec1d10672589678b9c8c79ae4e53a5f2508d8e8038325da67b"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "05b80c624e59974239d90a40e29cdd5a451821b14448149521d67cde8e974fd3d48cf72e064a65671754a9e76c10da942fb1238cc4381f168419b48e03993831"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-tsconfig.build.json",
+      "fileName": "ts/tsconfig.build.json",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "6d75a7051099310fe088ea2b768f1ae9c6bbf8ac68cf3a95b1919d01b7dcd38000d1e6a7f8018b68831b9b3160357a6ce77b29a5086e844a4c877858b6c08bef"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a205f38076a785532e035343deed35b73f3fd38f"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a4a3ab6e7449845a8ca73c79d31a6255374ae54169bde7b9337df23c1536a9cd"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-dashboard-Layout.java",
+      "fileName": "java/src/main/java/dev/perses/dashboard/Layout.java",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "698753ef4e55abc9633bcea907e1da3b0378b9dfc6fa26c105d217f5de1f553c"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "bf6311be226e673c50c7871cdf5a6d6c5dc18abd74317ddfb42e8ceb40c04a882f0ad88935db8de822925dc4cdc819a2eb9310425f7c6cfc946250706fc1a21a"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "b4c7066b1d96bedead59d4566bbae0aa4ba42aef"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-dashboard-panel-Panel.java",
+      "fileName": "java/src/main/java/dev/perses/dashboard/panel/Panel.java",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "db2230a0f5c2e835666941a3d703010bdc257377c394a4ffd4b45951d93a008a"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "2f798f29a6afc501dc57affd5a250ea438b93a39e9008adc534628c1043299835b1251bd6d342abf318e850a0860d47b284caee09485c290957e92cd888699e8"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f14b49209fc2dcbba5ed8e384050cf8a65309b63"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-cue-datasource-datasourceC95goC95gen.cue",
+      "fileName": "cue/datasource/datasource_go_gen.cue",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f70dd595a76a865449928fe3cb5fa034290394d4"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f606a95d37dc6dd9367af7e8430b495d6d15cad5a2728b7b517bd530756eab8c"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "4ffe98b66704ea6d47bd76f6a92a3933d74c438120b2d6c6d7975451f10de170837241e0140647df42e3278197962ffd5c67aea162921620f2a04c80b94f826a"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-query-type-otlp-index.ts",
+      "fileName": "ts/src/dashboard/query-type/otlp/index.ts",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "406fa25280e7f6611bd018a8a9038899a9e85c4c"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "739434e8c78efebcae459aa571b1e9ee71d2e2b359bd297bb51aa85c1710ad37"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "575c1bde97c23abe63a9f47f4511d8d9bdffff4961cacabdb8159939b4f5d18cd431b5666ea1c21ff74f0afd608646ad39ea67e7afb9e40e46e7de2cd1b36bac"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-go-dashboard-variable-variable.go",
+      "fileName": "go/dashboard/variable/variable.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "7f9633d4ab71ce5aa35e559ce3d21a077cdc8beb"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d919e25bb4b6fe39570bb408b63e68872cfceed551bb2bac5144c08809e3b722"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "cd06f2ad5c797939d34c315014ca88123823860415cf9080e2ddb9b76b3481d31ab7503a29ada0b603848094a002aa955cdd7e6eb13abbe7317e6fb4ebba5b95"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.vkoAGB6vw0-.gitignore",
+      "fileName": ".gitignore",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f367cfea35183e283d6267b268f7fe4ed6890d07"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0487c5fb1638d05f7edf0f2c77b97f72fdb7ac51c557ce7c75f61e5e2f4b1480"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "92d7d1ec65ecffd1fdc62f9c5edf0b6bce4f7d3182c3bf8bab7de0150fd49552a89c94e0d564fee88539260eaaa00b978617e3b7726b2479b9f833106deaef4e"
+        }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "name": "tmp.vkoAGB6vw0",
+      "versionInfo": "",
+      "filesAnalyzed": true,
+      "licenseConcluded": "Apache-2.0",
+      "downloadLocation": "NONE",
+      "copyrightText": "NOASSERTION",
+      "hasFiles": [
+        "SPDXRef-File-tmp.vkoAGB6vw0-.github-dependabot.yml",
+        "SPDXRef-File-tmp.vkoAGB6vw0-.github-workflows-ts.yml",
+        "SPDXRef-File-tmp.vkoAGB6vw0-.github-workflows-cue.yml",
+        "SPDXRef-File-tmp.vkoAGB6vw0-.github-workflows-go.yml",
+        "SPDXRef-File-tmp.vkoAGB6vw0-.gitignore",
+        "SPDXRef-File-tmp.vkoAGB6vw0-Makefile",
+        "SPDXRef-File-tmp.vkoAGB6vw0-README.md",
+        "SPDXRef-File-tmp.vkoAGB6vw0-cue-common-displayC95goC95gen.cue",
+        "SPDXRef-File-tmp.vkoAGB6vw0-.github-workflows-java.yml",
+        "SPDXRef-File-tmp.vkoAGB6vw0-cue-common-durationC95goC95gen.cue",
+        "SPDXRef-File-tmp.vkoAGB6vw0-cue-common-durationstringC95goC95gen.cue",
+        "SPDXRef-File-tmp.vkoAGB6vw0-cue-common-durationC95patch.cue",
+        "SPDXRef-File-tmp.vkoAGB6vw0-cue-common-jsonrefC95goC95gen.cue",
+        "SPDXRef-File-tmp.vkoAGB6vw0-cue-common-durationstringC95patch.cue",
+        "SPDXRef-File-tmp.vkoAGB6vw0-cue-common-pluginC95goC95gen.cue",
+        "SPDXRef-File-tmp.vkoAGB6vw0-LICENSE",
+        "SPDXRef-File-tmp.vkoAGB6vw0-cue-dashboard-dashboardC95goC95gen.cue",
+        "SPDXRef-File-tmp.vkoAGB6vw0-cue-common-pluginC95patch.cue",
+        "SPDXRef-File-tmp.vkoAGB6vw0-cue-dashboard-dashboardC95patch.cue",
+        "SPDXRef-File-tmp.vkoAGB6vw0-cue-dashboard-layoutC95goC95gen.cue",
+        "SPDXRef-File-tmp.vkoAGB6vw0-cue-common-jsonrefC95patch.cue",
+        "SPDXRef-File-tmp.vkoAGB6vw0-cue-dashboard-variable-listC95goC95gen.cue",
+        "SPDXRef-File-tmp.vkoAGB6vw0-cue-dashboard-variable-textC95goC95gen.cue",
+        "SPDXRef-File-tmp.vkoAGB6vw0-cue-dashboard-variable-listC95patch.cue",
+        "SPDXRef-File-tmp.vkoAGB6vw0-cue-dashboard-variable-variableC95goC95gen.cue",
+        "SPDXRef-File-tmp.vkoAGB6vw0-cue-dashboard-variableC95goC95gen.cue",
+        "SPDXRef-File-tmp.vkoAGB6vw0-cue-dashboard-variable-variableC95patch.cue",
+        "SPDXRef-File-tmp.vkoAGB6vw0-cue-dashboard-variableC95patch.cue",
+        "SPDXRef-File-tmp.vkoAGB6vw0-cue-dashboard-layoutC95patch.cue",
+        "SPDXRef-File-tmp.vkoAGB6vw0-go-common-display.go",
+        "SPDXRef-File-tmp.vkoAGB6vw0-cue-datasource-datasourceC95goC95gen.cue",
+        "SPDXRef-File-tmp.vkoAGB6vw0-go-common-durationstring.go",
+        "SPDXRef-File-tmp.vkoAGB6vw0-go-common-jsonrefC95test.go",
+        "SPDXRef-File-tmp.vkoAGB6vw0-go-common-plugin.go",
+        "SPDXRef-File-tmp.vkoAGB6vw0-go-common-validate.go",
+        "SPDXRef-File-tmp.vkoAGB6vw0-go-common-jsonref.go",
+        "SPDXRef-File-tmp.vkoAGB6vw0-go-dashboard-dashboard.go",
+        "SPDXRef-File-tmp.vkoAGB6vw0-go-common-duration.go",
+        "SPDXRef-File-tmp.vkoAGB6vw0-go-dashboard-layoutC95test.go",
+        "SPDXRef-File-tmp.vkoAGB6vw0-go-dashboard-variable-list.go",
+        "SPDXRef-File-tmp.vkoAGB6vw0-go-dashboard-variable-listC95test.go",
+        "SPDXRef-File-tmp.vkoAGB6vw0-go-dashboard-variable-text.go",
+        "SPDXRef-File-tmp.vkoAGB6vw0-go-dashboard-variable-variable.go",
+        "SPDXRef-File-tmp.vkoAGB6vw0-go-dashboard-variable.go",
+        "SPDXRef-File-tmp.vkoAGB6vw0-go-datasource-datasource.go",
+        "SPDXRef-File-tmp.vkoAGB6vw0-go-dashboard-layout.go",
+        "SPDXRef-File-tmp.vkoAGB6vw0-go.sum",
+        "SPDXRef-File-tmp.vkoAGB6vw0-go-dashboard-variableC95test.go",
+        "SPDXRef-File-tmp.vkoAGB6vw0-java-perses.iml",
+        "SPDXRef-File-tmp.vkoAGB6vw0-java-pom.xml",
+        "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-common-Display.java",
+        "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-common-JSONRef.java",
+        "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-common-Plugin.java",
+        "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-common-duration-Duration.java",
+        "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-common-duration-Deserializer.java",
+        "SPDXRef-File-tmp.vkoAGB6vw0-go.mod",
+        "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-common-duration-Serializer.java",
+        "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-dashboard-Variable.java",
+        "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-dashboard-Spec.java",
+        "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-dashboard-panel-Link.java",
+        "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-dashboard-panel-Panel.java",
+        "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-dashboard-panel-PanelDisplay.java",
+        "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-dashboard-panel-Query.java",
+        "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-dashboard-panel-PanelSpec.java",
+        "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-dashboard-panel-QuerySpec.java",
+        "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-datasource-Spec.java",
+        "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-dashboard-Layout.java",
+        "SPDXRef-File-tmp.vkoAGB6vw0-java-src-test-java-dev-perses-dashboard-SpecUnmarshalTest.java",
+        "SPDXRef-File-tmp.vkoAGB6vw0-java-src-test-java-dev-perses-common-duration-DurationTest.java",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-.nvmrc",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-.prettierignore",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-.cjs.swcrc",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-.prettierrc.json",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-.swcrc",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-eslint.config.js",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-common-definitions.ts",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-common-display.ts",
+        "SPDXRef-File-tmp.vkoAGB6vw0-java-src-test-resources-dev-perses-dashboard-simpleC95specC95dashboard.json",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-package-lock.json",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-common-duration.ts",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-common-index.ts",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-package.json",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-dashboard.ts",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-common-time.ts",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-index.ts",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-link.ts",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-panel-refs.ts",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-panel.ts",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-query-type-base-metadata.ts",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-query-type-index.ts",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-query-type-log-data.ts",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-layout.ts",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-query-type-otlp-resource-v1-resource.ts",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-query-type-otlp-index.ts",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-query-type-otlp-trace-v1-trace.ts",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-query-type-profile-data.ts",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-query-type-time-series-data.ts",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-query-type-query.ts",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-query-type-otlp-common-v1-common.ts",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-query-type-trace-data.ts",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-variable.ts",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-datasource-datasource.ts",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-datasource-index.ts",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-index.ts",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-schema-datasource.ts",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-schema-display.ts",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-schema-duration.ts",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-query-type-time-series-queries.ts",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-schema-panel.ts",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-schema-plugin.ts",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-schema-index.ts",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-tsconfig.build.json",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-schema-variable.ts",
+        "SPDXRef-File-tmp.vkoAGB6vw0-ts-tsconfig.json"
+      ],
+      "licenseInfoFromFiles": [
+        "Apache-2.0"
+      ],
+      "checksums": [],
+      "packageVerificationCode": {
+        "packageVerificationCodeValue": "38d3f82a6107882ee5dc7310dff2ae0808f7e894"
+      }
+    },
+    {
+      "SPDXID": "SPDXRef-Package-gomod-gopkg.in-yaml.v3-v3.0.1",
+      "name": "gopkg.in/yaml.v3",
+      "versionInfo": "v3.0.1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "downloadLocation": "https://proxy.golang.org/gopkg.in/yaml.v3/@v/v3.0.1.zip",
+      "copyrightText": "\nThis project is covered by two different licenses: MIT and Apache.\n\n#### MIT License ####\n\nThe following files were ported to Go from C files of libyaml, and thus\nare still covered by their original MIT license, with the additional\ncopyright staring in 2011 when the project was ported over:\n\n    apic.go emitterc.go parserc.go readerc.go scannerc.go\n    writerc.go yamlh.go yamlprivateh.go\n\nCopyright (c) 2006-2010 Kirill Simonov\nCopyright (c) 2006-2011 Kirill Simonov\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of\nthis software and associated documentation files (the \"Software\"), to deal in\nthe Software without restriction, including without limitation the rights to\nuse, copy, modify, merge, publish, distribute, sublicense, and/or sell copies\nof the Software, and to permit persons to whom the Software is furnished to do\nso, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n\n### Apache License ###\n\nAll the remaining project files are covered by the Apache license:\n\nCopyright (c) 2011-2019 Canonical Ltd\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.\n",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
+          "referenceType": "purl"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-.github-dependabot.yml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-.github-workflows-ts.yml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-.github-workflows-cue.yml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-.github-workflows-go.yml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-.gitignore"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-Makefile"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-README.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-cue-common-displayC95goC95gen.cue"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-.github-workflows-java.yml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-cue-common-durationC95goC95gen.cue"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-cue-common-durationstringC95goC95gen.cue"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-cue-common-durationC95patch.cue"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-cue-common-jsonrefC95goC95gen.cue"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-cue-common-durationstringC95patch.cue"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-cue-common-pluginC95goC95gen.cue"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-LICENSE"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-cue-dashboard-dashboardC95goC95gen.cue"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-cue-common-pluginC95patch.cue"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-cue-dashboard-dashboardC95patch.cue"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-cue-dashboard-layoutC95goC95gen.cue"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-cue-common-jsonrefC95patch.cue"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-cue-dashboard-variable-listC95goC95gen.cue"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-cue-dashboard-variable-textC95goC95gen.cue"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-cue-dashboard-variable-listC95patch.cue"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-cue-dashboard-variable-variableC95goC95gen.cue"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-cue-dashboard-variableC95goC95gen.cue"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-cue-dashboard-variable-variableC95patch.cue"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-cue-dashboard-variableC95patch.cue"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-cue-dashboard-layoutC95patch.cue"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-go-common-display.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-cue-datasource-datasourceC95goC95gen.cue"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-go-common-durationstring.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-go-common-jsonrefC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-go-common-plugin.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-go-common-validate.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-go-common-jsonref.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-go-dashboard-dashboard.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-go-common-duration.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-go-dashboard-layoutC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-go-dashboard-variable-list.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-go-dashboard-variable-listC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-go-dashboard-variable-text.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-go-dashboard-variable-variable.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-go-dashboard-variable.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-go-datasource-datasource.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-go-dashboard-layout.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-go.sum"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-go-dashboard-variableC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-java-perses.iml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-java-pom.xml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-common-Display.java"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-common-JSONRef.java"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-common-Plugin.java"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-common-duration-Duration.java"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-common-duration-Deserializer.java"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-go.mod"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-common-duration-Serializer.java"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-dashboard-Variable.java"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-dashboard-Spec.java"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-dashboard-panel-Link.java"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-dashboard-panel-Panel.java"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-dashboard-panel-PanelDisplay.java"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-dashboard-panel-Query.java"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-dashboard-panel-PanelSpec.java"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-dashboard-panel-QuerySpec.java"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-datasource-Spec.java"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-main-java-dev-perses-dashboard-Layout.java"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-test-java-dev-perses-dashboard-SpecUnmarshalTest.java"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-test-java-dev-perses-common-duration-DurationTest.java"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-.nvmrc"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-.prettierignore"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-.cjs.swcrc"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-.prettierrc.json"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-.swcrc"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-eslint.config.js"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-common-definitions.ts"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-common-display.ts"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-java-src-test-resources-dev-perses-dashboard-simpleC95specC95dashboard.json"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-package-lock.json"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-common-duration.ts"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-common-index.ts"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-package.json"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-dashboard.ts"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-common-time.ts"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-index.ts"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-link.ts"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-panel-refs.ts"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-panel.ts"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-query-type-base-metadata.ts"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-query-type-index.ts"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-query-type-log-data.ts"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-layout.ts"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-query-type-otlp-resource-v1-resource.ts"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-query-type-otlp-index.ts"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-query-type-otlp-trace-v1-trace.ts"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-query-type-profile-data.ts"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-query-type-time-series-data.ts"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-query-type-query.ts"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-query-type-otlp-common-v1-common.ts"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-query-type-trace-data.ts"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-variable.ts"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-datasource-datasource.ts"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-datasource-index.ts"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-index.ts"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-schema-datasource.ts"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-schema-display.ts"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-schema-duration.ts"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-dashboard-query-type-time-series-queries.ts"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-schema-panel.ts"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-schema-plugin.ts"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-schema-index.ts"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-tsconfig.build.json"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-src-schema-variable.ts"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.vkoAGB6vw0-ts-tsconfig.json"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.vkoAGB6vw0",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-gomod-gopkg.in-yaml.v3-v3.0.1"
+    }
+  ],
+  "annotations": [
+    {
+      "annotationDate": "2026-03-06T19:05:36Z",
+      "annotationType": "OTHER",
+      "annotator": "Tool: cncf-automation",
+      "comment": "Repository: perses/spec\nVersion: v0.1.1"
+    }
+  ],
+  "hasExtractedLicensingInfo": []
+}

@@ -1,0 +1,4534 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "open-telemetry/opentelemetry-collector-releases v0.140.0",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "created": "2026-03-06T16:56:46Z",
+    "creators": [
+      "Tool: bom-v0.7.1",
+      "Tool: cncf-automation-sbom-generator"
+    ],
+    "licenseListVersion": "3.27",
+    "comment": "SBOM for CNCF project: open-telemetry/opentelemetry-collector-releases@v0.140.0"
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.140.0",
+  "documentDescribes": [
+    "SPDXRef-Package-tmp.I2RYTsbJsG"
+  ],
+  "files": [
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-ci-goreleaser-k8s.yaml",
+      "fileName": ".github/workflows/ci-goreleaser-k8s.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a0fe1032a33aaa0b6e19fc7bffa57b9b48417fd136d3f8824f07e7700b736086"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "6014c4da2021e4332e3083e1186326cfe40ecc8d946f3690b08c489a37e688eac63a7704f859dcc1c6be6b604ada29f80a4df3f32f84ec7310d2c00df2a55626"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "64bbb7ba012246a80ff83b9f7337eb08f2532efb"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otlp-preinstall.sh",
+      "fileName": "distributions/otelcol-otlp/preinstall.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "9f07170620ab477fbec283ebad1435aa70819930"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7239da9781df4c7b7e374bf0ec59c1afef519ff7b962c7a150fa7990e45f945c"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "9d4f9286b713dacb807e7607b46ac37c504b93f820f75c483a49ee0365464c4bf7d3245e92e7d63a27467723d885d5f27c74a80023cc37193b62ae573b7d8a61"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-k8s-manifest.yaml",
+      "fileName": "distributions/otelcol-k8s/manifest.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a15d65d2526ca573328ed75a1ac1ac20edc5e5df"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7094d3a3a0e4ea25bacc94c182700d0dffec34a247eb6913d66df32335baeffb"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "addf335afe719fe2c61026d9e3793cf9227e9466ed50eff07b09740274b6a36292702fb7ed3c67fb28c38f3c9da6e1b7b9d2be296184285e54fab53b6a01f76c"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-scripts-generate-goreleaser.sh",
+      "fileName": "scripts/generate-goreleaser.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4c7b8263ce64928eda43cc5e7c86b996efb2dc69"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "83bd1fc6cc30596248375e061b38fe2b9f07fe311d2649a7d3974c0642012f24"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "03ce487003de0819c86d8c97e6407b245691d46e34f4ab99468c98709179ce0611fdf1dbe976149853c0379854149f4dd0ab413ff754ae5f6899354625ccdeb6"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-internal-distroC95otlp.go",
+      "fileName": "cmd/goreleaser/internal/distro_otlp.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "aa94530b92e494fb429171b3aa7bdd738602cecfe8ec073d3602ea451aab183abc8742f46f29742c58eee8fc9570018ebab4f5c7509842ea001ac9e380bd5ea2"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4cd91f61428ac807a40c6ccafe7c0a0f2f2f89c6"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ce6594d6d2c5d6606765c51352dcf69b1667681cd5eb7726bcffc02ec76d4743"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-base-package-tests.yaml",
+      "fileName": ".github/workflows/base-package-tests.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "5b091eebaef9dc08e63729b20f1673e26e4f7343"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9275e5c2ea11a0e0121694780b018ebb53980988132e457b09fd3ab2e709ea52"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "7a9ee26020c770da6bf456b759712640b0228d42829fdce39c24a4295d65760f5fc07bcbcbd0f76920a7718c84c6ebf2f1d164a2238f36690e21ef426e6f3bf1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-tests-golden-config.yaml",
+      "fileName": "tests/golden/config.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ba4dd54a1ed685abec29656f7097aadba84819ce"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "666ec45d18b614dfbf54bdab898fd299123e7e8b8b2301ff7299c81e1d4ea03e"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "625e92c7982c42a272f0bdf8d0c4a75df7b568057e6ab9473ddc661d3c732360382c5c76a52830ddf6e059a54cf9f4aba04d6e85352ae9856faa45303dbba4ff"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-otelcol-contrib.service",
+      "fileName": "distributions/otelcol-contrib/otelcol-contrib.service",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "bca321e2ca2f3a6c412fb8b684b1b77e34b822cf1ee2f912e45d20cf1bdb9a525d04c9151f471d311bda2486a2360dd02cbdbd9c6af5127ea4ce7a1616d2e017"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "58be276ab1a9dde3cdf613a35657470f9b89f8ff"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c2c5161fac77f35b3b58114eecf34ab19270518f3e836c124dd1a174e0d6a8f6"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-internal-distroC95k8s.go",
+      "fileName": "cmd/goreleaser/internal/distro_k8s.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1ebf7c6917212fd1ea962ae77708ea1f393f7ab86567822a82ebf92d354644cd"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "fa65f9c9705374d30ca95d139b7ff094dd876fc5f664832c2a0f8dff4951fd036492eeb3f37cfbbb4a7c47243277089c3732b7ef75d42d38d26e33df6bc58f19"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ecc10962b7da767c0b03e566728e034cf02978b9"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-.goreleaser.yaml",
+      "fileName": "distributions/otelcol/.goreleaser.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "52f2799f7580003132bf723f7d4311e5484a9644"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "88a32ec551f6c58201752e89afc5cfe2d39d90d520d6a900bd9b28989531f4ac"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "6e915d5b45bdbf37e70d721ede8dad2f960d64a4a3e4b8e1f8c5bc7e9f9930da80298c551781060cde696bd978d91ce7dea7dfb9781e91673263348d9030f3bc"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-Windows.dockerfile",
+      "fileName": "distributions/otelcol/Windows.dockerfile",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e6a2074cb1f7509bfeb200c3c1f201f37be34aae"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5b426db8a2e654e3d8545148265b91841a836e7648e63c2cba97c0cc32a8f2ec"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "7d2d20dc8a92a43d2576f821201955b74d2a6823037c59055ad8dcec8baf6fb803f119e8fafa9d6f6ab9d3041236215365db015177e3f9166ed2e83feff01417"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-changelog.yml",
+      "fileName": ".github/workflows/changelog.yml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "6fd31e5315e50314391bb31f6692e237a46c29a9e9c86b9d4d6f4ceba5382c4c41f53225379dc7f2cbf787174ed3ca06959fb932fceef0ce1f97770634b4f21a"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "5c24bcc8cf937930c5b01f1b85840720fca502ba"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "afa384516549d597df620618579954790bc415bc58b544c9c7c657f7b87769b3"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-ossf-scorecard.yml",
+      "fileName": ".github/workflows/ossf-scorecard.yml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b4ab5343ef6ce5a6086a3874fa86db84e65d1fb1c9675f84c4ae2f4cc92d39f690f250758e84bf947b1318e717e953f3ed09a80ac1095a29e982b66cde5dcc26"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "fd435fd76baf0565d59f74de83ab5df3a28675ee"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "eb3e274bf9bc73d7a45b5c0f201bee5665579c7bb54a2de514cefc87bb2ff8c1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-main.go",
+      "fileName": "cmd/goreleaser/main.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2dcaa8376b45c1a57a9bfc20e99ee57f6393b7fd501ef02e991978f9b09987cf"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "d07429f4cb2599b61d6b4bcbca3da8fbce8216a73ac0b3c19f7f5ba0ab0c9f62f4d4d327cb61cfbc0fb2d44366468d5f00a11c1c5373e37937d2a278e2bb168a"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "173ed81017999642ca97148ec886c23c07bad248"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-tests-msi-go.sum",
+      "fileName": "tests/msi/go.sum",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "bc145ebc398312053f65d9ee0caf63d968f90f70"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "122662e705f4ef6c39197f79a4680c7348acf8c1a09a4ecd8fa4bb5feec07169"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "8f395cf00c2b6fbb8e657030e8a060cbf0e8c5bfc1a4ebef0a4f7753e6caca2c1b2509913866a80c1f21e702294313038d2c8cae2ad7196aa3f9d73c6b8fc67f"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-opampsupervisor-config.example.yaml",
+      "fileName": "cmd/opampsupervisor/config.example.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "34b715d6b51db4662f1b5cd6d52f288ccdeae5767e0c02de79a33fc65b818f7265315856054ad872a54f32c7d43b3a9883e588140360ea7ffddc7045700451fd"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "df4e2a6fa70a281ffaeb776fb77a1509a5bccddf"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f1cf3537f7b130dfe069f4662623d8967636acad5d4e7f867a63597951c7eb04"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-ebpf-profiler-README.md",
+      "fileName": "distributions/otelcol-ebpf-profiler/README.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a6ade23353d68a412a70f051aa8672a673b116d92d7f5dd4559fec135d7e2b03"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "ffe81d5f092d2785c618fe375d13a24f9e4e3c7170e7240f5838084bfd9aae7d708999bde9d6fa6475cd81831351184cea6b4cd8b1b1f54a296025e8516b6723"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "bbecbfe33828719ee4cafceca3461aed889b4ad0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-config.yaml",
+      "fileName": "distributions/otelcol-contrib/config.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "deaa1c6114ddc736be14d2739ce5eccdbf6865a2"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "15cfb9f7566843cb4c03a059dac00602d51f65fe49a640a8bc3037c1b24a489e"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "3812adc3e6f673c807622b1849a7e028602eac955a5cdce53fae2cf7d1c107d21a9cfef11ff7011819a07e6aef5e94aac9d9490fa16b5c31f6f529492c24d159"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-ci-opampsupervisor.yaml",
+      "fileName": ".github/workflows/ci-opampsupervisor.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ff5a4defb761a8ef9137ffab30fc15675974285207311f0ec8c898bc191d3504"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "dab0fdf0bd9ad33680d0fa9a1a1930ec20bcb53462f09f3e10a490fff6063da3e8ff08987560fa0854a1b0a0994e0d0b3904b4f358f06805b2fd544e2a86116a"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4295e3c30339249523bfa1a4a86c751109c91a20"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-postinstall.sh",
+      "fileName": "distributions/otelcol/postinstall.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f7585b03d2746c3d29125d2a503e04b100169011f18297a44f2441855fdc1e091af8faa9ad5a041bf1029d2607834eff0d2cb3483539d7734f5e12cfdffbd90f"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "af4acd83643a047b48a9d2f79b7d3654cfd1953e"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "786e5688c7d2d6c28e9eed88c5a6213fdc8a8b594cdaf2a2e96997d2825ebeaf"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-internal-distroC95contrib.go",
+      "fileName": "cmd/goreleaser/internal/distro_contrib.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4ca8ce4116e67161d9dec1a9813556f2668c8419"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "75df604efe1f18a7d4fca040d8c309a0b36dbc1dcad5f83a286d52e104d88215"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "8e6f6e1800a8d87887ffa7b3ca6191f9a10b13fd012f6e3ad637eb9570ff013d45787f475e157f2262a18e35a1ca785bf5a8dd3fd87d7fe4331d50c6b94c2608"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-builder-Dockerfile",
+      "fileName": "cmd/builder/Dockerfile",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "BINARY",
+        "APPLICATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c8f7211b7419f420edf9d2a225ed5dddce1965cf"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "10178339db88b98af4619c72822fca9e9d7938aa37f7fd7106dc2bfbab90b9cc"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "5d1a7af0b8ca8e7214ee5722f7e0b0117c191086819a078fcb03211a51a518d880904a40119ef8c7db916f68b055193ad502371ce399a3ec57861d4b675a4975"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-ci-goreleaser-ebpf-profiler.yaml",
+      "fileName": ".github/workflows/ci-goreleaser-ebpf-profiler.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "fb53430298817ef85f388f6155af301087c524527b7d6e1810f7b44c98722e60"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "73d19bc951a5a8c42575e888b06fb3c4f66ece90d92784275d1cb9fec73a84a139373344f15aa5d64451fda08b9f027e582ec2288c143f9e427e3ec10a054f78"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c97c47db5f952ed9ff8818cae2b04591fffd40fd"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-preinstall.sh",
+      "fileName": "distributions/otelcol/preinstall.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f3899f2deacd4a32a6b902814b34b836f0a7e84bf0ecb923f265da7dab7c4329"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "d71ad26ccf293beb72d30be121783d35a8d822ef59d2c898498b9cd334e098bf11fce15f7a1a71842db55c2bd887bce89b63ca78478ca27e26ec0c29f67fba1e"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f1ed801c185532f28cd4dffeb9cc13a0ecbc9bbb"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-ci-goreleaser-contrib.yaml",
+      "fileName": ".github/workflows/ci-goreleaser-contrib.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "adfc029acb02e7f60e7ee7c6acfae8588ab44e9f"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c022c77e72d160e9ba5377adc7f2b7a15d497a8ad91c8ba3f92028d8115e3781"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "4d4f3206a2c4ed3f6f1086c480f9f5d807e3ddfc0a5c3e59f005ca96a05304fce0df5ed97555f1e26a528930c1559e109ca4d3b49d4719d589563c28cf239eb3"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-scripts-package-tests-common.sh",
+      "fileName": "scripts/package-tests/common.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "b1586a3f6e209a862b9bd6ad2054d7a902dd254c"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "330267834e84bdd017d70e6d5c3186a267004c48555ca688f284dee4d93dc87b"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "faaa3fdaa516f09a12948591ab732d86e91568daa33cbf1dc52666c52648ef0749864d0f53410481b43be8de5a4e2505115707d6c2286c03ac50950a21591658"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-otelcol-contrib.conf",
+      "fileName": "distributions/otelcol-contrib/otelcol-contrib.conf",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c5e52a9a85d1f9576073475c430c8f54ab60c61c72aa60bc97dec93a3187385d"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "cc316fc0df97be7872813281564de1041f82febd45b827b8d03e0588dcbeaf6760beca22c9b2c80a449125be463b10125a6038233d1976056757f05f03ac117a"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "30351fbd3cc41071b94499a8b1e2052319466057"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-README.md",
+      "fileName": "distributions/otelcol/README.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "e80b817bd6e08b4de234c8d32bbb64e67a3c01964c80b4cacb8f31dd0cd3f8aea0bb30c1f63fc7bc9b7d1ac546dc64dd7b7da48d1729708b1938a9953ed4f10c"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e78023dcfe383c110baa055166bea3981ad4a8cc"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b38ed0afb0c73ff4e6371e4444c267b55cf543f939bca481d938e6bbe871825a"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-internal-distroC95ocb.go",
+      "fileName": "cmd/goreleaser/internal/distro_ocb.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "1a55d05901993d463164969b295d6c59a2adc976"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3a4fc8cf77befb4b814c9899e7a7775e8ca4abaf74fdfb85adbebbccaff1d0ed"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "aa69281f336ff4caf5d780637d31ad172dbe3e65ef7afb91f8c2bd4b039915cf2e92d387c67ddb26887afdaa88f6f007a57a15a73b715770edfbe5e3ac51cd85"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-ebpf-profiler-Dockerfile",
+      "fileName": "distributions/otelcol-ebpf-profiler/Dockerfile",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "BINARY",
+        "APPLICATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d09f03841e2682022881e5c6bef7db21e8f012de15e3cf529d36db7849942e8d"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b0808a92ac01372b6e5461af2d3bc126e1d32634211bcb9adb41db9a60e45800c1885f4a7ce413e0732c9f598c0e8773fe065c142069a22d0965c152af2490d2"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "04601859bd7da95c891a364dfcb3e182ed416bad"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-manifest.yaml",
+      "fileName": "distributions/otelcol-contrib/manifest.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "0ef180479eec9013567f9c8a5ba31ec4e2e74f34"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9bf9aa3fef093c20ae8df3e204ffbb66516d1451a5e36cd3bc3b85aed36d7e01"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "7990634c102b51cf661a6cf9b97b3fbd67702f3c941bc439568f3e0ff81389eae1b11fc3856317d8b340003d13b6c5e27d1f5a1f4d13210f1efba64986cf1cd4"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-release-k8s.yaml",
+      "fileName": ".github/workflows/release-k8s.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "fa5fd9376b4efd7a04d6b702e74e6cdcf713e6222b6fc6412f8a53984919c66e57df5cfd06c8b488200dae2fd16cf5fabe00bb58b89a86c3115c16d41d615a18"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "40b7c3a868d8d2c4bda4b0fdc3ab02b142ed6f47"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ba7821f007816f6b0b4ebfd1e283e4e4598a45123bf988a75d40b64fee478054"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-Dockerfile",
+      "fileName": "distributions/otelcol/Dockerfile",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "BINARY",
+        "APPLICATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "0a0737faeecf4d265c583f618a87498a0d7ee0d4ef807cfae385867211ad1ed70fe8298b05d082455de4c68d2ade1dd8a8f6034e8380c9124013328b8d946401"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "50292a422a2650ad975540599a896174293270c4"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8146f0333925d370e1d5e2353094516b0f0a248b86bc3d178550d49eebdffd83"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-internal-container.go",
+      "fileName": "cmd/goreleaser/internal/container.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "0fb5af8700319bb2467d1a535085aee1db73816d"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1ee77b9fdcecfcb1f3a2f46995ec7edc7061f76f68babef366c7bccc007178a6"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "4ef2723744433f934f7c73c702b398716ffaf9ad4c91d74819c098d85343d12bafa8dbaab9bf260cda5c3cce52fe92dbf812912b3b7e6ef2cf36c2537ef18361"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-ebpf-profiler-manifest.yaml",
+      "fileName": "distributions/otelcol-ebpf-profiler/manifest.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "0d91042e14ba71e095b74fe4af14fa6c1cf8d49b"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ec4fceb2ebeea6abdb4c0eb39233676340d79cc7a48bd5874398690003ed0487"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "297c7c4d00f26ec560450692125a72e8ed04d57b725052ca9c88491d64f3d445a944c800b4e4dc3878b43a3c08b21771d744ee6f2c4fbdca1a7e4d10ba141cbe"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-opampsupervisor-postinstall.sh",
+      "fileName": "cmd/opampsupervisor/postinstall.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "33098fa378b6c2034f15bbd47334da2e0fc6344e4f6e5d58a343ae668ac70c15"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "a5e4038623746e5981f3b219da319d341218b16fb53529ab30d69cd399e723ec4aeec51c0c0d0dbe40c23b11286aca2af0e42584ac490761f97ea33ae2d3fd07"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "869ca4610b03bbb14c110d41aa3d8bff81904595"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-msi-tests.yaml",
+      "fileName": ".github/workflows/msi-tests.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "2e28ea91d9d72af570387e9f11004db8c1d67910"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "912fe89054fa9d2ebd695a32bb0f1fcfa10661414eaa2613081e467797079a07"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "5d94c15c1083271063eab3a7ccbc77c7b5ee0735b2c76063d11c4c676897decb85051320033c816275c17d801498314202896b1135b244704f267761fbd9acbd"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otelcol.conf",
+      "fileName": "distributions/otelcol/otelcol.conf",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c283de2991056f0f61c245996a9d34b2c9bc68c5"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1100aad3917d8b13f4dfe535e908ec181ccd39d1278f0be7ee0d09e69ba8e134"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f51d0e59bcdcf0c1f871de1667ed15f3f500cde6aabe78d8a596c238b8a1a1daa59831a203756ac372e5c753c0db75786612c93b65b99542c2a0ffcb5023e1e4"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-ci-goreleaser-otlp.yaml",
+      "fileName": ".github/workflows/ci-goreleaser-otlp.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0f71515e7a878f9628b149f5cead9c63d10c749af92b9e77253cc894413c046a"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f932bcca6fe928102c722dfc156feda901d876bfa1011628eea6bfd39bfb807bddcaa5aa45fa6a1e3b31d0cbe57de021fca19c83f4b1a2579ff8190baad15d64"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f0710b12519bf3b57edf841657d293d97ac23a23"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-tests-golden-data-expected.yaml",
+      "fileName": "tests/golden/data/expected.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "b5770456f4cfe57acad9a5d0b493b70cf9bdb536"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5bc8cdb0c1ae2528a8bab4a30cf605dae19c18a30e9d15a8b3a1be25113a9456"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "697c0e6dbb749bb23c4d06c48c174b686a0d705a372c44ab394aa261fa9476067a0761d5feaf4199a2fd64815b7010f7bca6b48f3d682eefd02c376df86bda70"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-package-test.yaml",
+      "fileName": ".github/workflows/package-test.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "895b285dbac9f61d31ca3b2856c7e14e8284e2b7"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1089be9c8d53c9c0fcc49a6abed13e1cba447c375028ce9ce0265b9441afca02"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "78e6cb3e017d03502f5bbe1da76586f98f14281cab980d6429f70d57e455d0135823ebde3e5b655d4d658bf9b1c2ff005ae9c296243c977af144bbf63ec7fe25"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-k8s-Dockerfile",
+      "fileName": "distributions/otelcol-k8s/Dockerfile",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "bee7c43b6262a0ba194d2bcc36aaaadaa3adf935"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8486ab7993a1dcb24457c5a0badec7e878d85657b26714af5766529ccfaca4f8"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "1362c7f20780fbee1a6617463c932cdc6e2f8cda4116e3cf170705474e028c4fa5de6a115d154e8515050535317853e10005fc097c94ef4c41db6597fdf3d635"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-internal-distroC95otelcol.go",
+      "fileName": "cmd/goreleaser/internal/distro_otelcol.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ea90c6667901534a0c84f7ec090c5643bd5da209"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3cf723c02b1f4f570cd233874900ded425c0a4c33def7b4e3a17c91958c61944"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "37781d75d1602a3e80852f73203ab599f490c1a3cd6cef037e56b475d8c9d1d7a6ffde02559d047bd0419dd776d6702bce679f03feec5d919dcf71403152c2f1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otlp-otelcol-otlp.conf",
+      "fileName": "distributions/otelcol-otlp/otelcol-otlp.conf",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "dbe8d2438a5118781df959c7232c05830f087dea88cad069cc7429c9c67568af"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f7f25959c9a36bf2c662e3d1227a87d6c8868af7b5173ac7d7a3814981cfba238ea5d7ebc45f92846a3f132b350f0130b74ba6646da728f3777af55da690347f"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4be5c16334a67a6bd916b248ac92cd579a596d1b"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-k8s-README.md",
+      "fileName": "distributions/otelcol-k8s/README.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ca00101964af9c1cd85bf9bee9bd8cd655a2c03f"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "975fd2c0fc90cde1c8c576243f0cfdddef95bb6c78669cbd7a4d8c8179e9a64b"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b6cc167db3df523513ccbc195b74b546b3dbdb3003aa329b1ac758e30a0823cecc0f743f0f5d3c891d0f75252b97ebdb59f50c92ed8a0d16f2a9cfb23faacf2c"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-scripts-package-tests-README.md",
+      "fileName": "scripts/package-tests/README.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "9f64643a382b32e88663e2ef7382a5c873f67d9a"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "922bd8a087d23cd7e70eab0a18efbbf394e10afb68332d346259252097c772bd"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "447bd9287fd0871c86b7e96e8750d5ff254325213747a0419b53dfcdae10d727e9d97f66f2005edbc28dce6dea9c2a322b9632402a70367e328e0aad12ae9eb6"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-internal-constants.go",
+      "fileName": "cmd/goreleaser/internal/constants.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "3684ba7ad2120cf8ee316538a72c8dac671093df71fa631cf0109b4504efcd5afccdcf6cdea450821e90a1d55d69984c0fc3559eb62646d4f28f563069a6965c"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "96d9e701590cd0032e05f7884ca3c3efa23db026"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "596e4c334c0f8f7b688a7ad0d7d219055f47cffa01adb390140f53ce2e716573"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otlp-Windows.dockerfile",
+      "fileName": "distributions/otelcol-otlp/Windows.dockerfile",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "60d457e4deb5c50b3eae3ab068f021f7f5b5575b"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f80740f2b757105d99695afe53e9398b95061b5c9d8a6dea7b36cc1897a63dad"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "5469782cffa6e2a83d8b6fce4d95bd24c92f4e8a818771ca5954d989e3514a06ee95eb9c54f85bcb3e09a5f79eeef27b7bf7ee96223641a69b50cb095632f5bc"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-opentelemetry.ico",
+      "fileName": "distributions/otelcol/opentelemetry.ico",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "IMAGE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "525bcc8e1beadba918407c92cb08333c81479dad433587b584df31ecdf7f5d307ad70362835e7972d3c45f74220f6bd4767d3208a6f1c9945a0ea0a5c97ec8a4"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "9746a08096d24205bf9f9ab30692c38860b1080f"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1a4237a8426cb4e24d01539f3d123ceacafc79f9909cb943d10c99e4a267a593"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-release-core.yaml",
+      "fileName": ".github/workflows/release-core.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "bb2082ff8e5bf78658100cd82934bc9c1e566292e5faf85d7a11beebfe2ca8ad34f72e11975a6ad52af79bb9c8c730301695e7d1a388922cf5b1287d3abce641"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "998a40e526971b154f7971d48c50340fc8bc6c6d"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "92bad57655219ab76a2ccabb7200981944a9235308ad7b7f00a59f122e1e2b58"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-CONTRIBUTING.md",
+      "fileName": "CONTRIBUTING.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c64ff26c8dc8bc079f388051463632889904c368"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "185f90a7769200a936762b65883eaff5972dce9005908e38cc73c9e5b72e3c66"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "657338a60acbf0c02507c1e430a1fdcbdc9e4365d36a45f84f9dd268f14c8df6712b9a601e4749fefe3ad7082cc63ccac1c28455daa79587257304330d5b8204"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-Windows.dockerfile",
+      "fileName": "distributions/otelcol-contrib/Windows.dockerfile",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a234712fecfbd61b37707649a06e497db9cbdf15"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "482d84ae28b618c342a05c1e1eac1adbb9a2b465227ded5bc10bdaffc8f2118d"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "3c8749946023ac5eb97566e8d1c59c82f9439d87383d98413bd9f22cbc614fb016f2c6e33c91500d1abf92b402d42331be5b43ee9197f39afb7bed51fda2f5ee"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-scripts-validate-components.sh",
+      "fileName": "scripts/validate-components.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4856ef2647108783f2b595a3ed35aecd60a49dfd63f439c9ad097fe2f561c8ef"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "6e5db5e8495023adee80a8283ecce7894c995f2fd27ec0efeece44b223848749495e20f04b841fb84d89624ed29f0ca3ebec13a8b6554382985e7443bc6c988d"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "7abbc3398b1de1289a42cb24627e51fbace536ac"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-preremove.sh",
+      "fileName": "distributions/otelcol-contrib/preremove.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b24b66d6bf68502615b7fa25ea5fa826b818b614e2a963dea26466d21b2cec11"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b6fc337bd595cf02752d06fb2d6e56dd2a32cd7a192e19d1a39290a95f1c0cb530877e3acb8bbdc1831feefdb3f22431c6c3c51edb69f8f7dd6e7b3957324e86"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f56d89522d84eddad11e47a45dfa7149129342f3"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.gitignore",
+      "fileName": ".gitignore",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "7357c43c3cca597d50178a8dd6383281878f1665"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6b6022388f927c85b5b9e9328d98ee6263a0206c177f42285be69e7b507736cb"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "a092ca6278f608f2da7e3751415b7745b7caec64dec57ab733c9d5af1f5719e9f28abd9e9ff0cb541f25ceddfd0b1acca687efadbd8d9da55e2864cbfed588b0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-scripts-build.sh",
+      "fileName": "scripts/build.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "09492b8c92ab7b07901ddc917a632647b7d7a208"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a0ce67dadeef80f5d999db29ffd69f2c2b2e5cf88179c903b1685f0969a94c90"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "3701b56c55e49adb379555096788107cc2482ea4fac66b80273171c408b50aa4e5b160157a012972e1f524256f5ac184dff9b8e9759ae51fb32ab7f0abd8660a"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-stale.yml",
+      "fileName": ".github/workflows/stale.yml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "da527366c1e132e8f334cebe22bcb54dd8a97ec7"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "25506b3ffe938a9b624be24ab899c8261e559168207c9627669ad65c7832324b"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "bee0a24550682be1484cd111f73aadbdcc8c15c9145ebc338c1b91d858920f8fec1c3252e489d1119c7ae40639f541c4ba9f745e7a9d77ac76f98a2ea2d5bbd6"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-ci-builder.yaml",
+      "fileName": ".github/workflows/ci-builder.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "62252e665984b89006dc1778cf9fcac5781a7421"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1a38b422ee2167652820a284e4e49d156982dc2c8f4d3fecf092b93695500fec"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "3114daeb0da352a08fc9fd5bf1fee692ac0143c96a2ebc4ae67d2b2c68340e92eeba59b977ddbf4660d2f4332c59e45f8258956b0d7f44c8ec722ee381d74255"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.github-lychee.toml",
+      "fileName": ".github/lychee.toml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e046c1e981b03f611075054adde2f161aa90cbb8"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5caf675231fbb3c6e6916b219337cae8f70ade8944bbdfdca793287065c2a563"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "8ef1990892d14f02d49533952a4af1d96ab794242ed2c8f54813ad19c84f084c33d4e859ad50adde0ac1f72f3a7a5aad0eb6e937dcb3ecbb33a90d30f7e420af"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-base-ci-goreleaser.yaml",
+      "fileName": ".github/workflows/base-ci-goreleaser.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "5144405af5a5f3e3226bf417d62c01320ee391d3"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d8595762e5fb9e243dd5b652efa5142043dc36b51cd7b661f8af337ca4ceb3a0"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "00af13ed6e9f242512bfcb5336de56ab62a4f74b3aa2827e0f321e0a02232e689575ccdd1c10657aa41c8b0c9b4b162e6cfa0e954acaeccd862dafc2be547486"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-base-ci-binary.yaml",
+      "fileName": ".github/workflows/base-ci-binary.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "1c480706b2ccf7409a31a15ea0aeb7e2a4f03df8"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "31d7575b090b35212c6a0f2e192d661ad6501de7d4352e4b6a5ef1eb412a9d75"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "482b536fa6b535e60b60e6cf062e612a7300d183947fdc1ce2823c620cf1b04b47e52169227210d7d8b2266cfc6ac2ab1fad6c58431311dd4db70b5560d9c271"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-nightly-release.yaml",
+      "fileName": ".github/workflows/nightly-release.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1c6ce83286534eb2a8ff1ee28e9b36fa0862b1d18bfadc374fd0254f92bae013"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "4c1a8fe1ec85e8a7e8a05d5f8544c5fa7ae03c307471cb8aff67a619f1c6ce5b7d1b068062fd79616373939574c7c93bb50e7568b2e7388d4dcd6b796c2c1705"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ae27f657b585585b3231192317974d83ba165db6"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.github-release-template.md",
+      "fileName": ".github/release-template.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e24d96cbf6e0ec03da5e5a7bd47e472b09cdbec91ca7e3acc02d5ea9ca151f86"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b6316b3a6a8af165644fade82d2285050c457ec189bb8f696b4dcb9ababbd16865aafdbd0ceb4739c4eae7d667d4e99badea78a85a36df38f8d25e8ad5571ab5"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "25e8619eba52ab6136da8b31643b179a9e3deb22"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-go.mod",
+      "fileName": "go.mod",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "693eda06cfadb29e187e7e7ea73548432d018efd"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e94ff1319db75db2144b9e7e8c94552aeca350d660072bf53cfbcb3b48b3ce80"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b22fcff2762ad1c0952d5c2bd9fddeda72c372db6301defee8c3f61a6eef9bb1a508e7a82beb9b9792f502b9ed5138257c5bdb6df91d7460ed357509f3c8fb3c"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-release-contrib.yaml",
+      "fileName": ".github/workflows/release-contrib.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "cd242d41af81336f450ccf0ec1ef0c3e94b524c4"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "dffdffbcc99985abbb16f8c89726dd769fed6b6e4ce3f9ea3a842aaafac8dd8b"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "90282f0bfaac20536ea4ae3c10fc63a3302a3b186e17d31732b6ab281edbf09d5a2785e0af34e3c2ff095c70915918ed98bc0421616983d87b8441393e2ee973"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-msi-generator-main.go",
+      "fileName": "cmd/msi-generator/main.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c0dafc21697d7af26608d39172bac5a01b8141f869d38b29ff4df0d520e0d4a0"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "bfa1ae62358743c17091de22745a1eaf827314a7e9cc20feeab6f9c6ccc6f0c1a4b0bc292788acf6161ec9a9c9b8df606decf65744b87dd14872d65bce6b4574"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6d6ddb46b2b37dc2a80b66f9fb37b15d5cfcf47b"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-k8s-.goreleaser.yaml",
+      "fileName": "distributions/otelcol-k8s/.goreleaser.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4130769b5521025402c2d37d6c4a03fd36e731f19e68b705964d8bccbe4ce575"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "2fdd524ba6b5d53297c349be744ec3fc719778ccb1b676e18515fb1e7d3059eff8d1c31c315636651f50aa6154f1458bf09124684ca58c632e1009bd11651079"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "7204bd02caabf18306fe98b9a1632c9f6cf60bff"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-internal-builder.go",
+      "fileName": "cmd/goreleaser/internal/builder.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "cb199b8138ec5d1fb81f0854bd0892cd0c0d0e22b95d33022842def7e9b17f0ae52a2085c175ed7da91100754a50b437ff6b969dceeedcf274dee931353e4cfa"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6203b4d20dc15c6cda1a03a5c17af11b1f017d62"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "09afd980611e33874298c94db788a1a2d9b2b598405a2786d4b0e6ee0fb9085f"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-tests-msi-go.mod",
+      "fileName": "tests/msi/go.mod",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "6e08956cd9ad859ad0e1aeb6df8c5aad941711b6d793ed4a0c117d605c39af9651e713b3627471cc28f4acf0730bca68e2859b7542fae32655248a6ae8721d7e"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "54001cb29c25c9d1649de632f820b8c8001287a8"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2372e8a2b76a44d55b1bca2a075da1add123fd9cfcb63044bfe4ea4e73eb417d"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-tests-docker-tests-default-config.yaml",
+      "fileName": "tests/docker-tests/default-config.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f2cecd56892a601967ca789982e69cd91882588a"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "105449b35bf1bad79d7b992a55150111951c00fc700dd36ff77265cc6c6f1a87"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "6b4c1332379cc80a5393cb212b420e3b3264e1cddcad3af0c44c429bb1d1f35ad35b734fb18b712aeac82355678c03850d59d87b2405a473ba743f49d83b5e0a"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-README.md",
+      "fileName": "README.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "db6c63a75260bbefdfa1444ee4b428ba91525030851b669844e790ea7e4edc4a3be01143b7ab31d1ac97dcba8d7a7c0edf60f7495a75a2ec1dcc6e05b7ffa17d"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "7ca1619ae95ebe134dfd94c131ca16a683b73002"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7a31099ccf9cc21f306901a4a184f2ce84950df6442bf700f9d7d9d1b007f8d4"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.chloggen-config.yaml",
+      "fileName": ".chloggen/config.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "79c5fd2f4400d7d8ca15c8f415764e23b72c185dfbca9fb22cc7abb8b0d43d2e4e113eb6a54474d14e8d039dadd551cf41a833f490d07ef1f650acc543b18946"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6559732e381477cefc78763476533c9c56d6b45e"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e640bd7e388d71c32dac2eeabb90151e2b88895ad6a11adff2c7462513f8da36"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-Dockerfile",
+      "fileName": "distributions/otelcol-contrib/Dockerfile",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "9c0ec960a66d9daaad5955a0a2e51005953e9c0b7eb111f6a01d2839bd7b52d33f48b1f158eebd8b7a7d5018030476238b87efe047878301180e61999bb62a47"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6d292ab5fdae7219bcecde66c96777b87c0b7d9f"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "013f276653ba03766ede2f9f15b828bd9d54dda9814a74d4bc0003c5fa818ad6"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-base-binary-release.yaml",
+      "fileName": ".github/workflows/base-binary-release.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9dc395c59b2b27ae27eeceffb39f81a9f9119720843f701884c9ec7491e37f61"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "e762b802e790c803a43af4e32541fbe377ff2877df249f84349779e1e2a006bd53829d1d4589f00c0e0f0796b0a0f1b51b71f81a23caf68834a04bfaa5d5cace"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6ca0b19215b4663463fd82671c126e9a6ec42443"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-LICENSE",
+      "fileName": "LICENSE",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "7df059597099bb7dcf25d2a9aedfaf4465f72d8d"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "dc6b68d13b8cf959644b935f1192b02c71aa7a5cf653bd43b4480fa89eec8d4d3f16a2278ec8c3b40ab1fdb233b3173a78fd83590d6f739e0c9e8ff56c282557"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-fossa.yml",
+      "fileName": ".github/workflows/fossa.yml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f23bff7668fc04f7359ddde76cf4e5e45ad5a060687fe3f304587432926707ba9ee7567291676033eb3493d8f6d71ca191e35c17f9c1eea7433ee5df325b4af9"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "37c305d75c9e99ce202a7ad1f5906b63aa8d80b0"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "39ee7d6676f058d6fa394f89a92e1ef667ac0c464971ffcb66798d7680c663a5"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-opampsupervisor-Dockerfile",
+      "fileName": "cmd/opampsupervisor/Dockerfile",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "BINARY",
+        "APPLICATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "98ad8027d92d6ac587b6b172cf70758449182a4d"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3cfe9db6fa809a3c88c825518a6002b0f3fbaecc96667de172af9e6e9348256b"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f4d7bbe012ec9b1f55dc210e231ec83a9df83a5555667fd9f8525f05b137dd190bfd1b0e33d3e1111187b641048c67aa79a9f1d028a5fb98e87f5ffa3945d67e"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-Makefile",
+      "fileName": "Makefile",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "c022323f9eca91a3613287b5e78777c889f44680ab67554066c5598071747ea6a162781cb1410fba742c563569a7e55af9edd5a7b61301700019ae55e2bf7eb5"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "98f8090a5c90506ec0150d091fbb5af9b4e4ff9f"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8af900f746e2ee4808b9b069692fd4ab11579b1edfa58ef0a58123086db5596a"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-opampsupervisor-opampsupervisor.service",
+      "fileName": "cmd/opampsupervisor/opampsupervisor.service",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c015a7c2917161ec38e25128c31c7b33eb23e471"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "185c98592ad59199a1cb9f37b7acfd150ad12b50e499bf53886acb08b5317203"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "088c96200431fa39795597ab34d72d87a3a68058a0632ee388e47d7a1050045ef173c0e8dfcb52a1ec5ce8bd3b416d2cb3f7fe56789beec49cc204dd8dd06932"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-postinstall.sh",
+      "fileName": "distributions/otelcol-contrib/postinstall.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "452e878e80b029c5473d166543ef509a34212081"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6be76de104a827c4f29548ce7e0bdecf887a5102362f9cc2df5fec6e66398057"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "cbd7e7a615e890b3921c22605ffe9f34e92670eed6de48b7edf0ec57d17ad05c4b436b36b2db3057b180b5e1a60f6a0c639363c1418d7307710ecfc444c69591"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-go.sum",
+      "fileName": "go.sum",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "569787f7ce536f259f5a719816466a9e23a4ec5f"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "853138365e55d1e2749314895794dc682b0af4ec08c8d0df684baa77351d2d56"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "ac5ce5053a0f0aaf65d6aa6b712a28935677daed04383503a2b3ddab7d648f61461a72b883536c16a823a00910e4885c338bc75e4758c8c6e7a912661821eef6"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-release-ebpf-profiler.yaml",
+      "fileName": ".github/workflows/release-ebpf-profiler.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "abb431335d2f58489bf69e7b6d4a344301085058178c8168bcaece4120b3b3ef"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "4a3923fa066cc80e39678a5314c4aa556395941f56690fd1b37bcbe17d09e34f78ffae0e372a7de84f17da32acaed4e3dfa02c8d5ac65656b0745a48d60b328a"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "7a13642388bd9df47e6ff603510e0b4294d1f175"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otlp-README.md",
+      "fileName": "distributions/otelcol-otlp/README.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ae1c3204194d6287ac96ef45fd41fb35efa79cf960ccd2b32818fe831db6169a"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "fb7c58fadbb1150c0ab5b8ad8d77d5e73831f0a1c756e32b4e75ab4c75cce429b948ff1845538bef33375a559976a8b6959aac4038efe0f22afd1adfc426ebc7"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c015eec4f6f8dd285bc8f1ee5a4f474784e885f8"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-docs-release.md",
+      "fileName": "docs/release.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c9b17eb5beeace4e85bbe56de12b76dc83c611aa"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1f88b01cd319bbe1c3ffc22ba66fb0518425341e3b99a4fac7f2bf12a1f961e0"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "e6b0772fe7d4dd0b10180fb8603f0ea53664ac8254b08ceee3c9ade284d6e69896b2078777d42ac3b2a7d469d9bb99d8729496255336dcaa432fe29324e90075"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-tests-msi-msiC95test.go",
+      "fileName": "tests/msi/msi_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c921036051dee7d5f9244ee963ac9484a8c8c34b"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "834e19c84dfa2fe5bf4c2586e7a4714746e5a13779f1c3e2526f18229641ddb8"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "d8bbf47f65f972c822cf7fbdb1507c85eca7f02342133e303223ccdb18ea18ca207ea47988a524f58ddc1ca2947f4d6e886e27dac851522c4c94f0925abb23c1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-shellcheck.yml",
+      "fileName": ".github/workflows/shellcheck.yml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "8e936f07d8d996e1ab0ae7f139c79ad047065d07"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "97afca51b25cb546c83644b23baefe5049a089436c75a29841b299ae621c2ba4"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "436cdff2e8d071fd7bab3f717475d571aa54d9fe6cc27e31026daa382646072edef91b81894432e5a66794dcb8bcb60b77eeb0e7a80f166a2701fb6f4d40f46a"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-opampsupervisor-opampsupervisor.conf",
+      "fileName": "cmd/opampsupervisor/opampsupervisor.conf",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "7a9998fd47928a0667d8ff83f049f41e3ebab886e56e0f361d55a7990fdf0079c2b0430962183be64243e5502c9508027a91b7f608d1564ca4839cf72c173eda"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "53e1e973b3e615cc19eba7d7f5255b660a2845f7"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b266acceee4e013e4e801518581f22433a3b7cff495f9e0d396e4b25b47fa1be"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-k8s-Windows.dockerfile",
+      "fileName": "distributions/otelcol-k8s/Windows.dockerfile",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3f477b6cac59ddf1c14c84e664ecd64a75b0423008266e64428f9a2c6efbdc06"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "a178831692b537ae19d54241883cb484e2bb735b2090573e8f76aff55c2511b9a1325a53993a563a893800d23a50e424acbdf530059cb6ce1a89d60eb904b4d5"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "408d825d9c0a41e2b939b85a2e9eab09b80e3d8d"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-msi-generator-windows-installer.wxs.tmpl",
+      "fileName": "cmd/msi-generator/windows-installer.wxs.tmpl",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "cec1ce7c08443317a58702cc411f63e9a82be53a8bde02332206393898af2fec"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "2111ba8566ceda4665be7b1e894af7a1dd694d34edd4a3c06124401a6a3b67e9fe1eb3f64ac69523f645c350c7b7573d7ca6d00833e62f02e4e63089e7238893"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ed3474167b84fde0da6d60632429fbef1c0499e1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-README.md",
+      "fileName": "distributions/README.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e24402624b8d49093e589765fd5b3a7d19e1975e"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "28f13661aedaceb05e3eeae9d1f7cad7986ae1cb877862fe626216887b06ad59"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "5fb94139c6e9d7023c2d35a7b6671a0733b90d712f1752f248aa9bc43ef111eee9c8690f9de6e3b77950d1a429d54580daf35514b2ee2db54c0b7d1c3a2060ce"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-scripts-bump-versions.sh",
+      "fileName": ".github/workflows/scripts/bump-versions.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e58026c2ea726af769a719f76a18fb3a8e292ad5"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f3c76a3d3c93b24ca40fda3bd98f5e8e81fd90aacffc459db732718c33d42938"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b4f8cf973c010659401aed7d64c24fca3a9dccc3b7093eebe37eca7e0802619c0d72df051f2def5fecedaf5ad8b803de067f4d59cb9c8d5e75213aa6e0c74817"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otlp-preremove.sh",
+      "fileName": "distributions/otelcol-otlp/preremove.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "cfd578dee6cf9999065e3b685655efb01e5e41cd485471a1ef1b2bb170ce24b1120bc92bc228c7d86b1c2b378608be2ded70fbd31ddc308b88bd40c1ece3f152"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c2fa8136e6ce7a6c6f92e89afb07dcffddf18a82"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2a257ae1ae1bc9b5bf6441966348dee542340d88899bc5abdd6d59c6a3bf79b1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-config.yaml",
+      "fileName": "distributions/otelcol/config.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "15cfb9f7566843cb4c03a059dac00602d51f65fe49a640a8bc3037c1b24a489e"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "3812adc3e6f673c807622b1849a7e028602eac955a5cdce53fae2cf7d1c107d21a9cfef11ff7011819a07e6aef5e94aac9d9490fa16b5c31f6f529492c24d159"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "deaa1c6114ddc736be14d2739ce5eccdbf6865a2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otlp-otelcol-otlp.service",
+      "fileName": "distributions/otelcol-otlp/otelcol-otlp.service",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "03fa6dff953c18dde45c087fec1d84148d8bbcca"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "cc712898ad4c978aece6c49f0dadfa900ea30c956d89cdc174ab17b7a7b57b1d"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "a731c1d3440ea4b406b5fdf49278371799f3269cb91873316d1bf9c3c401de5fde2a3c10bc6e07f441ab9b41141f08a8eca941a9b712e791e2fe050a6328ffbc"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-opampsupervisor-preinstall.sh",
+      "fileName": "cmd/opampsupervisor/preinstall.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b1232d7aa8578dbb5a955dbd760350c569ae1e9f5f7f861c055ad6e211a38cec"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "0e3fafdf4f9d35c34a935192c38ab380d306aad5090550bfcff5f5806ce09bfe5284c66e29348e3e99ee9f2015bf740f652711269bcb21f4538b49de2727d0ed"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "bd64ae7622393fa29cb1dc586706cb91cf2d5fb0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-preremove.sh",
+      "fileName": "distributions/otelcol/preremove.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "8f78222b8a946dbf1c1edfca37dcc29c4bb17cbd"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3a3e4246630c94d80f41175c50ff5618f56eaa77f96b4f70334734f39f61b4fc"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "315b562a5a24104a57938b7b8401cec8bff5ca98e532073736b1d5c4ae2fcbfbded99bb0fa1a65241b349cb0b673a43f6e6b3edd54d3bdb39a9496e4c67a6e1a"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-.goreleaser.yaml",
+      "fileName": "distributions/otelcol-contrib/.goreleaser.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "3a74c23becb83122a20781f696bfc25afe92fd6cc8e467c0f9ba799e79b90819b35fec071fea565d2b68d6c343982424c17903f3b4680aba3dbd1b7edb7e7182"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "fdb1d8957c4ea7bbbc67f237d0d9c437b24debac"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5dca7ca2a666dc42108af4394c295af617c13ffa87ba59b8dbea09133e729475"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-base-release.yaml",
+      "fileName": ".github/workflows/base-release.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7beb719608badb07a93bce2a6c3f94a4ada85a08b8795f9cb72135e0bc2c11f7"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "3c6cfa8de78ff0bc0203d0748c25c6a7ae3bcf835c70553e415cd5c5017a14dedc5b85f36c00ea01c07f41827671443b74b4db6c75cbef65984b3c0f53a429ba"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "788eb2b5a50b6e227f0f063b5580811a70eff3da"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-release-builder.yaml",
+      "fileName": ".github/workflows/release-builder.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6e99bdfcbb912e687c7a9173ce4c3ef911b2d14a80a1ad289cdca6c016865762"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f1d88efe028f604744ec6244fb6878c42d17be68865524f41c7e0cb9fb8aca6ae1a49d2873d4bc1c581a23364af76496258bb42f385cd324a47d74f13e4ee16c"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "50049a09b5e7791d6b55c0022ed13783567092ef"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-tests-docker-tests-ebpf-profiler-config.yaml",
+      "fileName": "tests/docker-tests/ebpf-profiler-config.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "01c953eea67e0476079bb8e44d017f4f65abfd332fdcbc06eb65c44bb1d17d71"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "466f4fa731e694db0ed61c1c600b32405686ea4630fffd00c350d10c950ba52a3d0ca8f5ee816ec701510012bce0e91a3ffd67e936bc737de09881fb2df05628"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "71d0ebdc2d2b0402ea1f900589d5623a54d34846"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-builder-.goreleaser.yaml",
+      "fileName": "cmd/builder/.goreleaser.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "695dc58ffb4f0cee16278a79a0451e212e41fc46"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "15ce60d2a81bcd87a495f6ceb62685b51241b68a8eb64597e34335382291f14a"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "63deb0b696bdc74f8e8f501ebe611742e862e3cd190374707c17baf50cad8a35f225f951caad04d4d73ddb1b77ca529e46e691a34a049c979441932db6fc5adb"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-ci-goreleaser-core.yaml",
+      "fileName": ".github/workflows/ci-goreleaser-core.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4ba055d60caf5e1f87650b91c5d092923eed9398"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "212133100c048aa732e3f924779c484edafa2ecd31caae473b79849b5334b3d4"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "89a39055ddd6caba480c410fa66faa3ab92567679cc5489a0c518d3d852fefed0b51bdd47ee5c6c122ac3126d70cc25696bbe1d016d813bcc8dc44fe3519e7de"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.github-CODEOWNERS",
+      "fileName": ".github/CODEOWNERS",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "5538396173aeb06bbf0910d72625d9c63b50e408"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a994d29f98dcbcf21f9ae53db3ede3c2fcfdf70a70e6516160d85093849fadb9"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "847b000dc4162f2fd4095781b81c115268d0cffc69e77ca9880481949753568496d434d5a2feb2cbdf4cc618041dcdb41b8a238361208141ad79f535a613dc80"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-CHANGELOG.md",
+      "fileName": "CHANGELOG.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4987d077a500754c6c45a2617ded98aae8565275"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c8f6e6cc3602b576aee5aca4d27aa06fe540e1a3f17627f2c3e2b147604d7d9b"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "6d539f315bf4a9b0f98a6573867bfcb1b80c9cdc60f2a82c8010f2ed513c36ec4b0db85dea29306cfb7b9dd71f9e3bc6767a45b01d572dcb3f2c1843262d6bb6"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-opampsupervisor-preremove.sh",
+      "fileName": "cmd/opampsupervisor/preremove.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "9dc72f8e7ddd991a48352902820a7143f0c186e8"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "14c3e86a0d0ce181abee75926edc3d0ed15870bf25d425fc6621e4f7db9d23bf"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "73fc9b79268783f709c804d75a6e2144a9e2b065fc329db6e2efa60a95ff48d2c0cca5ec5a451dfacb638d236e82005da88518a46f2d403d79b7eedee1e4027a"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otlp-.goreleaser.yaml",
+      "fileName": "distributions/otelcol-otlp/.goreleaser.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "30962b8325a59814f39b258747949e2a6a5a0384ea854fdfc07f15535b1d5580"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "00ab1c0887bf0381917d99f4f11ad8d97e5cf620ecc47bea4ce685b74db979a42fd1becd511be9551415325593b4ca5cc7164e3e7d9eca91344c5fecb3264e63"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6efdea0c5c82d2e68c3fba6aba60fa7ac3ea59f2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-release-otlp.yaml",
+      "fileName": ".github/workflows/release-otlp.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "de00bed866b6fb388c012d418073278a140a2367"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5f385c61983ee813a0b07dbff168825f7ce3149d9544c322604942e668273ea7"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "60bdf3303acd88ca4e950d30ae3dd3cfdd484e6212f76e53dda370ad2e86e53a0b82d97160114d81f6d0f3675a3e8c2f9e421482317f94bf9feddf871dfc450c"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otlp-postinstall.sh",
+      "fileName": "distributions/otelcol-otlp/postinstall.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c7d3408e65d5d8d86ce468b9e8677a1ab9922e57af5eec6d032d473e6f798b25"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "57f7fce62a3ebd068f4eca804cfc45c5a89afc19a4c451b50f11a3f5d5daba81791ebf6ad336c96eb60279b30f2c6ec5a7b441b8de0a3c64d4fb2a43fd41c33e"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "2b93b8e1ba6a25dbe5e95274b503fa95545ffceb"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-ebpf-profiler-.goreleaser.yaml",
+      "fileName": "distributions/otelcol-ebpf-profiler/.goreleaser.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "29ac55a8d6fa43ab93da3059032de6ffd1486d0f"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "da3734f3126ecb9c148810034cd87bedeee1ad9a144f55dc541f5129954e320f"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "01afa1a654c2d78d37e7be533fbde599b39094b203cf3b96904d57f2a7d82fe59ef5c2ac56728e89e9e600115d3379a08789ba9692709282eb155f21b9e7b58b"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-internal-tools-tools.go",
+      "fileName": "internal/tools/tools.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "d729581d43b7303497cc011c6cd8973cc0882416"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "95f83611d588d2d1e904f7b5981db4500c58d55aac367f719edd1b8018aec0e2"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "4464acc9139bce4c2990e6dca70d6ab635062e6b448217d4753418163c304ca60e6db0e8497129f630c5bf1808571691b1c92d283f9d1f885fdd425038f58dac"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-ci.yaml",
+      "fileName": ".github/workflows/ci.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f9a5f649dd77752d3617078eac920e7fb0a4b860"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "058402923c2cda09b9946e94ec2550440cc786171e83b4be121adfbb4ca9d40b"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "e008bb47e796930651f39fa89b80b89fd952563f3a0121a4b63ce94e00f804476621cae0a25031d1ceb3c323a2c80e597d656167640b2897fe48ce0892abaf14"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-README.md",
+      "fileName": "distributions/otelcol-contrib/README.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "279cdb9d458f3b34b796cd9b42991c79df722fa4"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "140ac75c069e98d089880c42d9400dace07df6a98587788a6da6a08b5d1c1af7"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "e4abfe2e1c5a6759d3650ea40e1afb446fb8117029508aa36c2f7008c083bc71e8bcb94db2e7e8710d78d08d2b1c968c4b6728b122dcb3aa604fcb4f6b7a6db8"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-opentelemetry.ico",
+      "fileName": "distributions/otelcol-contrib/opentelemetry.ico",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "IMAGE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "9746a08096d24205bf9f9ab30692c38860b1080f"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1a4237a8426cb4e24d01539f3d123ceacafc79f9909cb943d10c99e4a267a593"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "525bcc8e1beadba918407c92cb08333c81479dad433587b584df31ecdf7f5d307ad70362835e7972d3c45f74220f6bd4767d3208a6f1c9945a0ea0a5c97ec8a4"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.goreleaser.yaml",
+      "fileName": ".goreleaser.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f6faab455de67dad3f4ace658a78c0fadc66ab34"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "51a483eb05e01495cfcebdd43caf49426ba2bf1e821f3c5b8afee584625708cb"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "39df2a812d179500e6c5c214534a765cc28aaae8319535b4b441be4b55f5aeb585fc6ee1ed88f1dbc82c0fc11bd017188c2e1157dc27388a30529ced10c45d18"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-regression-tests.yaml",
+      "fileName": ".github/workflows/regression-tests.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "c2c1d75011ab42c5ce89b1a90e2df27a23e140e4575ea8eaf896d7c7cb0bbdc945c0eeb0c6fd0006cee796f88ebb376abfedadd20499c4225aff2c6faaf4da91"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a0e05ea735b49c5ffde281003f3fbd4df75b0e0b"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "de9fcc1c03a6945de7b5403700fe37a67fa72fd87817ae24acfcba121219a0e2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otelcol.service",
+      "fileName": "distributions/otelcol/otelcol.service",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e9163b5bb04f210ec9b188762ab8cbeb5cd5fdd7"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0d2f6363737bbaa2caa6432d005bb94f68a98e307b4bce04d71d6ca15893836d"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "cf923c1215519a9db428e3fb2f55220b26d778be7f152927c8bb49589294193c2de392f181a6fe1a3e3adccce6b7ffcac02a3f8215974e771fc6fddad6bec20a"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-internal-distroC95opamp.go",
+      "fileName": "cmd/goreleaser/internal/distro_opamp.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "6a691d0fffd58dbf11fb3d78465438ed65dcdbb2dff6230a045a0ae39cd35c50f8f28618cedafd05e6e8f3c8a2c4c174cd72c65fdf3bb920ef50ed56c0dbdce7"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "9b9706d8ad5e7fa3685d7d032b992a6235a65fd6"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "531927284512c93cf333af66c14a82786731931573ac56bef15b2fff72bfab74"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-internal-distroC95ebpfC95profiler.go",
+      "fileName": "cmd/goreleaser/internal/distro_ebpf_profiler.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "9217e125433623f1b0001cee957c45c1f0461419"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f3b83a091fb48142ff35f833e789d789a9d48ee94c8c93ec266a5ccdf25040d6"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "385547c8164b1a32a87d8112b899bcbdf1af54fb57fbf3633dab964bf8d3bc79ab3c94b01724c72602af7bc57c4ccb9b6445f1a5d79c31e7539d0f8ce57a217c"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otlp-Dockerfile",
+      "fileName": "distributions/otelcol-otlp/Dockerfile",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "BINARY",
+        "APPLICATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "7911a1ac766f2a5fae0195366a2fd5b656aa9e57"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "160a1c451c4c5eb5d6776d855c3f6a350df90b151c268d72afffa91db3daf78e"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "271aeb0c0680d4005f291d445e8fa0a37536142eb17e6d117d0a77d114815d4fd56f5340a3d4419a150686f1e01f986b36f318b481d6010e05a182026237938f"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-opampsupervisor-.goreleaser.yaml",
+      "fileName": "cmd/opampsupervisor/.goreleaser.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4b83c6fba4b509aa29117c5296d97d6d31309fc5"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7483fc75cde37049f5c1075931c30c63f6332a539896e789169508fc4ac40635"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "114045934b9330535a71edf801f5971f3fb3419051f6cf1c9d19ab10cff9e0691c20cb750c3d9cb11f0abc53d0d1664bf87c8a4363a90dedce807ab598490b9a"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otlp-manifest.yaml",
+      "fileName": "distributions/otelcol-otlp/manifest.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "13f529d6efc1484afc8acd7d03c47ea6885d50fd448a6c72a8c68ca159374d143fd85263b128c2af684b869aae56320288ece51c3f6bc530dd93347b5055d998"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "bf77edd4fbca30e8c9987afab31e02cc3169cd10"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "10bf2de74ac223da909aa7e2146e9d65595b79cae19bd70c27245553812b2c72"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-release-opampsupervisor.yaml",
+      "fileName": ".github/workflows/release-opampsupervisor.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f1a5c251c6c0867dc9eefdde3c6108e6c7e741d6"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3444061b75b98d6629e70345b07af81c1e35bd8d506722987514a94fc915026d"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "cf97ffd1a6a2b1423035f914b842353674dd73ac1f292690dd033a50d10d603ade0cd4a28e2b7a1692816c7c45897b2842998f7516bfe0852e077619ad4706a9"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otlp-opentelemetry.ico",
+      "fileName": "distributions/otelcol-otlp/opentelemetry.ico",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "IMAGE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "9746a08096d24205bf9f9ab30692c38860b1080f"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1a4237a8426cb4e24d01539f3d123ceacafc79f9909cb943d10c99e4a267a593"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "525bcc8e1beadba918407c92cb08333c81479dad433587b584df31ecdf7f5d307ad70362835e7972d3c45f74220f6bd4767d3208a6f1c9945a0ea0a5c97ec8a4"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-internal-tools-go.mod",
+      "fileName": "internal/tools/go.mod",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e894484a7aa90610cf4cb2b792f299c612f132afae38635cba027cade3dfee26"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "d0c0e010fe03c3c7beda6d96225a49de17898b8f3b1259cb05edec4934742aa10fe0ff4f5b22a2da8f3c824cb54be9d31016b63d81da17be1c526d828406a315"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "52e3161c4227fdf90cb5687add9572274c00288f"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-scripts-package-tests-Dockerfile.test.rpm",
+      "fileName": "scripts/package-tests/Dockerfile.test.rpm",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "ARCHIVE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "80afea873280cb98ae2995c2600fe6b983414444"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5afde7bd5f1a4e25eb6d86bbcada63812dd5baeb2bf068ef8f499fd8f6884a98"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "7d1732284db85947de780fc254ad5b936339c810d678218a97edd565e8a5258cf4dcd7d8318041eb94a88892090faee62bba07a4139a2f1ff42bc6ecb4329e4d"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-internal-helpers.go",
+      "fileName": "cmd/goreleaser/internal/helpers.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "1925658bd792f914275f600aa61bd77faea1fe683333b7d590b8983ffa6ca8c1cfa85b8c3e16d5fc41c5a512ed9ed7bf88447b7f185b7fe5ffc655d9ce1aeb6c"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4a45ce1f56bdf3ff25af9edb012c8c42104b6958"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7b43b13ee375de19090b2379fce409040c9410aee06dc017d510413609b06760"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-internal-platforms.go",
+      "fileName": "cmd/goreleaser/internal/platforms.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "4238d63056d0e2b4fc8d9cab365ff48082298fcbe2ea609f7bf9c988c1a7fa0ab2343c6c95c8ac7ccceb8602da7cee5c5b9a907e80ce4b603275b6cbd0b8e7cd"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6f3bdcf6f2c727b09d0479eabcdcac9a84876db0"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ae025be08fba191e31776e8c176ff36e1eb5d43c28e3262e822d1276f5c704ae"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-scripts-package-tests-package-tests.sh",
+      "fileName": "scripts/package-tests/package-tests.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "be484f631bdf0ecce3509797f19cee7470319686"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4512f07aa7b0d216f91fabdefacc6c705372488a8c4af7f3174f9b9c2b23723d"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b6beba10ffbab47effdddcaf25bc83438730a43703bac439dba7bc4363162194ab75d22832bad113e23e887c9f801801ad6c2409cee79bf9ca0ab4203ac1a30f"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-renovate.json",
+      "fileName": "renovate.json",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e8c61c6a4e52ed38b9122feb6ee2a16e7dd7779c"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "70792757419b6ab41999972ec9fe568897ec65304652f2670e765b3557cdef9c"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f48a1e73252411e603523072e83815c585aff7cde07cd472baedadb05519047934a0335d38dd97a8ac913402f56d66ad309bd8dd42918059c84616eba9ea5260"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-tests-golden-docker-compose.yaml",
+      "fileName": "tests/golden/docker-compose.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "6dcc3b03210c4b6db02e874662804cabc26fcce8362d7e06dbd378aac3d34af0b5e7e7d0aa70b2094a3569c4a6f2d23e3bb5f0cf3a5cb4cbfd2844fd05051697"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "880c2a1aa32c53ac56e6dd518ed6f80b4197a651"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "861161397e54dddc26bd4ca28cbc3fb6199c1b4ba0836bc6d1b4e88f0a78e4ca"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-scripts-package-tests-Dockerfile.test.deb",
+      "fileName": "scripts/package-tests/Dockerfile.test.deb",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "ARCHIVE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "37609fc44cde4305b03a304ea12da562e31791053d7e2a4fb813e9fa88945783"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "ef569f90113744576613947cb23512ab699648c68c872a999062813320b9436c650878d4a9228c721cfcb7f051bfd72ccc5235623805da1bb4585ed61f7d659a"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6ac7405f9dce4b40525814f8c379e14bb16f25a8"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-internal-tools-go.sum",
+      "fileName": "internal/tools/go.sum",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4d7194ae1370033a0b8c9b2e38b4fdfacbe0c713"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3ac23dc2ded6a59416937f1d35c07e8f56362feea9da220dfbbcfe09e6dcf7b3"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f623e624e9cc37fdc4bbae89ac9864a870f04a5c140b0aeb3744188fa13a1a0b34730122a340fd78de81756966577b56b0cb1411eeb8617bec818f1de13d8a36"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-manifest.yaml",
+      "fileName": "distributions/otelcol/manifest.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "93aa88bdefc5a9573a1a817fc3acd1340bfa46705f2688f0411edd603f935525079327730ebd7340df089ecba1deec04ab16fe7c16bd3db7f3e84c05da847322"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "60fcdd78daee9f56dc4b7a1e3b5fe1551e9966c2"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8eaa56f489697ac041384b69e30766d3350e30c2556673b476a4b8125ff1cfb9"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-.goreleaser-build.yaml",
+      "fileName": "distributions/otelcol-contrib/.goreleaser-build.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6e689b78e9054a21139b1b1615de1ff3f2d740a898a13a554b9f8df2a274a189"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "885130575109d9fbb9fd7a1f986ee5e808d8bdbe6b5977f95ac38595f0b24f83bdf43b51ca89b352b5dbc9945e43c7dfae78ff0e5fd90ef2fb89e90aa2b24f4c"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "5607a9698697c23d2c276f3fa4002574ab681f72"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-tests-golden-README.md",
+      "fileName": "tests/golden/README.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "59ec36a712b65f952bb86efe1ee0e78802b51f2f66d293418e48775a9e37a93da2eac46cfb12d9e5927e79415021bb6f4327faddf7bb19c1588489a529ae2ef9"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "8157cf27c4811d919c70adc8c1cc974b5b1d578d"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3254bf7b157915a984888795e2eab8e8d4224ec223d399f40c2e579fcd9afafe"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-preinstall.sh",
+      "fileName": "distributions/otelcol-contrib/preinstall.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "7fe40dd66ad1dcf5f7ba351fcb18893900f4b6dc"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f2434822ffa65d16e716c1ec71ad6b7824168e847a0cd8870e4c43d26b7a9732"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "d99140783c127b2971ed0d925f104ba2518606bdd9a230129c8e6842cb2db99cc8e2073efc8df4d477a1ff860a65257f0a0b8320c156a954798fcf689c263ecc"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.chloggen-TEMPLATE.yaml",
+      "fileName": ".chloggen/TEMPLATE.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "86969e25d0c4c83233e4a2ea33fb939cd5d61285aa132bfa26d27ac8470a49d7dfc67270ccb3c894fbc9e9d54fa373605cb234f4dd1241a51ab81c9b3f8c7074"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "678f1114169ad9cfaa11fbb62a1d8214da60ccc8"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "37bc87b15da0a7e993411eff801b87204b4bc52fe51a86c0a9eb3c2023c4b40d"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-update-version.yaml",
+      "fileName": ".github/workflows/update-version.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6a407762c7dfeb2976617c9300a3d1a284aafe71"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6b5d7ef85418156248c84d45f82c990e4983003f5d33d449f103fd07dde329f6"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b4d21db04453a8d85cf16c4e43cbcc4aa6d94c6eac80d1aedf1ec808599ccbef6d5b928558edc6ffd939c0b91d68a6009f99a1db2d224e208b525f5736d29542"
+        }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-gomod-github.com-goreleaser-goreleaser-pro-v2-v2.12.7",
+      "name": "github.com/goreleaser/goreleaser-pro/v2",
+      "versionInfo": "v2.12.7",
+      "filesAnalyzed": false,
+      "downloadLocation": "https://proxy.golang.org/github.com/goreleaser/goreleaser-pro/v2/@v/v2.12.7.zip",
+      "copyrightText": "NOASSERTION",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/github.com/goreleaser/goreleaser-pro/v2@v2.12.7",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "name": "tmp.I2RYTsbJsG",
+      "versionInfo": "",
+      "filesAnalyzed": true,
+      "licenseConcluded": "Apache-2.0",
+      "downloadLocation": "NONE",
+      "copyrightText": "NOASSERTION",
+      "hasFiles": [
+        "SPDXRef-File-tmp.I2RYTsbJsG-.github-CODEOWNERS",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.github-lychee.toml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.github-release-template.md",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.chloggen-config.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-base-ci-binary.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-base-binary-release.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-base-package-tests.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-base-ci-goreleaser.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-base-release.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-ci-builder.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-changelog.yml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-ci-goreleaser-contrib.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-ci-goreleaser-ebpf-profiler.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-ci-goreleaser-core.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-ci-goreleaser-otlp.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.chloggen-TEMPLATE.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-ci-opampsupervisor.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-ci.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-fossa.yml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-msi-tests.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-nightly-release.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-ossf-scorecard.yml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-regression-tests.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-ci-goreleaser-k8s.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-release-builder.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-release-contrib.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-release-core.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-release-ebpf-profiler.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-release-k8s.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-release-opampsupervisor.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-release-otlp.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-scripts-bump-versions.sh",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-package-test.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-update-version.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-stale.yml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.gitignore",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.goreleaser.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-CHANGELOG.md",
+        "SPDXRef-File-tmp.I2RYTsbJsG-CONTRIBUTING.md",
+        "SPDXRef-File-tmp.I2RYTsbJsG-Makefile",
+        "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-shellcheck.yml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-cmd-builder-Dockerfile",
+        "SPDXRef-File-tmp.I2RYTsbJsG-README.md",
+        "SPDXRef-File-tmp.I2RYTsbJsG-cmd-builder-.goreleaser.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-internal-constants.go",
+        "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-internal-distroC95contrib.go",
+        "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-internal-builder.go",
+        "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-internal-container.go",
+        "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-internal-distroC95k8s.go",
+        "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-internal-distroC95ebpfC95profiler.go",
+        "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-internal-distroC95ocb.go",
+        "SPDXRef-File-tmp.I2RYTsbJsG-LICENSE",
+        "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-internal-distroC95otelcol.go",
+        "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-internal-distroC95otlp.go",
+        "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-internal-platforms.go",
+        "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-internal-helpers.go",
+        "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-main.go",
+        "SPDXRef-File-tmp.I2RYTsbJsG-cmd-msi-generator-main.go",
+        "SPDXRef-File-tmp.I2RYTsbJsG-cmd-opampsupervisor-Dockerfile",
+        "SPDXRef-File-tmp.I2RYTsbJsG-cmd-msi-generator-windows-installer.wxs.tmpl",
+        "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-internal-distroC95opamp.go",
+        "SPDXRef-File-tmp.I2RYTsbJsG-cmd-opampsupervisor-config.example.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-cmd-opampsupervisor-opampsupervisor.service",
+        "SPDXRef-File-tmp.I2RYTsbJsG-cmd-opampsupervisor-opampsupervisor.conf",
+        "SPDXRef-File-tmp.I2RYTsbJsG-cmd-opampsupervisor-preinstall.sh",
+        "SPDXRef-File-tmp.I2RYTsbJsG-cmd-opampsupervisor-postinstall.sh",
+        "SPDXRef-File-tmp.I2RYTsbJsG-cmd-opampsupervisor-preremove.sh",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-Dockerfile",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-.goreleaser.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-cmd-opampsupervisor-.goreleaser.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-README.md",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-Windows.dockerfile",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-config.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-manifest.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otelcol.service",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-README.md",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-postinstall.sh",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-preinstall.sh",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-preremove.sh",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-opentelemetry.ico",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-.goreleaser-build.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-Dockerfile",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-Windows.dockerfile",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otelcol.conf",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-README.md",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-config.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-manifest.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-otelcol-contrib.service",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-otelcol-contrib.conf",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-postinstall.sh",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-preremove.sh",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-opentelemetry.ico",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-.goreleaser.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-ebpf-profiler-Dockerfile",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-ebpf-profiler-.goreleaser.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-ebpf-profiler-README.md",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-ebpf-profiler-manifest.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-k8s-.goreleaser.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-preinstall.sh",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-k8s-Dockerfile",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-k8s-Windows.dockerfile",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-k8s-README.md",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otlp-Dockerfile",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otlp-Windows.dockerfile",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otlp-README.md",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-k8s-manifest.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otlp-manifest.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otlp-otelcol-otlp.service",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otlp-otelcol-otlp.conf",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otlp-postinstall.sh",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otlp-preinstall.sh",
+        "SPDXRef-File-tmp.I2RYTsbJsG-go.mod",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otlp-preremove.sh",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otlp-opentelemetry.ico",
+        "SPDXRef-File-tmp.I2RYTsbJsG-docs-release.md",
+        "SPDXRef-File-tmp.I2RYTsbJsG-go.sum",
+        "SPDXRef-File-tmp.I2RYTsbJsG-internal-tools-go.sum",
+        "SPDXRef-File-tmp.I2RYTsbJsG-internal-tools-go.mod",
+        "SPDXRef-File-tmp.I2RYTsbJsG-renovate.json",
+        "SPDXRef-File-tmp.I2RYTsbJsG-scripts-generate-goreleaser.sh",
+        "SPDXRef-File-tmp.I2RYTsbJsG-scripts-build.sh",
+        "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otlp-.goreleaser.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-scripts-package-tests-Dockerfile.test.deb",
+        "SPDXRef-File-tmp.I2RYTsbJsG-scripts-package-tests-Dockerfile.test.rpm",
+        "SPDXRef-File-tmp.I2RYTsbJsG-scripts-package-tests-README.md",
+        "SPDXRef-File-tmp.I2RYTsbJsG-scripts-package-tests-common.sh",
+        "SPDXRef-File-tmp.I2RYTsbJsG-internal-tools-tools.go",
+        "SPDXRef-File-tmp.I2RYTsbJsG-tests-docker-tests-default-config.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-tests-docker-tests-ebpf-profiler-config.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-scripts-package-tests-package-tests.sh",
+        "SPDXRef-File-tmp.I2RYTsbJsG-tests-golden-README.md",
+        "SPDXRef-File-tmp.I2RYTsbJsG-tests-golden-docker-compose.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-tests-golden-data-expected.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-tests-golden-config.yaml",
+        "SPDXRef-File-tmp.I2RYTsbJsG-tests-msi-go.mod",
+        "SPDXRef-File-tmp.I2RYTsbJsG-tests-msi-go.sum",
+        "SPDXRef-File-tmp.I2RYTsbJsG-tests-msi-msiC95test.go",
+        "SPDXRef-File-tmp.I2RYTsbJsG-scripts-validate-components.sh"
+      ],
+      "licenseInfoFromFiles": [
+        "Apache-2.0"
+      ],
+      "checksums": [],
+      "packageVerificationCode": {
+        "packageVerificationCodeValue": "66eac7f5310c0dde3fe571c03137db2db272becb"
+      }
+    },
+    {
+      "SPDXID": "SPDXRef-Package-gomod-go.yaml.in-yaml-v3-v3.0.4",
+      "name": "go.yaml.in/yaml/v3",
+      "versionInfo": "v3.0.4",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "downloadLocation": "https://proxy.golang.org/go.yaml.in/yaml/v3/@v/v3.0.4.zip",
+      "copyrightText": "\nThis project is covered by two different licenses: MIT and Apache.\n\n#### MIT License ####\n\nThe following files were ported to Go from C files of libyaml, and thus\nare still covered by their original MIT license, with the additional\ncopyright staring in 2011 when the project was ported over:\n\n    apic.go emitterc.go parserc.go readerc.go scannerc.go\n    writerc.go yamlh.go yamlprivateh.go\n\nCopyright (c) 2006-2010 Kirill Simonov\nCopyright (c) 2006-2011 Kirill Simonov\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of\nthis software and associated documentation files (the \"Software\"), to deal in\nthe Software without restriction, including without limitation the rights to\nuse, copy, modify, merge, publish, distribute, sublicense, and/or sell copies\nof the Software, and to permit persons to whom the Software is furnished to do\nso, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n\n### Apache License ###\n\nAll the remaining project files are covered by the Apache license:\n\nCopyright (c) 2011-2019 Canonical Ltd\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.\n",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/go.yaml.in/yaml/v3@v3.0.4",
+          "referenceType": "purl"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.github-CODEOWNERS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.github-lychee.toml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.github-release-template.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.chloggen-config.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-base-ci-binary.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-base-binary-release.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-base-package-tests.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-base-ci-goreleaser.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-base-release.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-ci-builder.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-changelog.yml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-ci-goreleaser-contrib.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-ci-goreleaser-ebpf-profiler.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-ci-goreleaser-core.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-ci-goreleaser-otlp.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.chloggen-TEMPLATE.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-ci-opampsupervisor.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-ci.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-fossa.yml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-msi-tests.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-nightly-release.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-ossf-scorecard.yml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-regression-tests.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-ci-goreleaser-k8s.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-release-builder.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-release-contrib.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-release-core.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-release-ebpf-profiler.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-release-k8s.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-release-opampsupervisor.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-release-otlp.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-scripts-bump-versions.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-package-test.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-update-version.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-stale.yml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.gitignore"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.goreleaser.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-CHANGELOG.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-CONTRIBUTING.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-Makefile"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-.github-workflows-shellcheck.yml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-builder-Dockerfile"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-README.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-builder-.goreleaser.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-internal-constants.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-internal-distroC95contrib.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-internal-builder.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-internal-container.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-internal-distroC95k8s.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-internal-distroC95ebpfC95profiler.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-internal-distroC95ocb.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-LICENSE"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-internal-distroC95otelcol.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-internal-distroC95otlp.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-internal-platforms.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-internal-helpers.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-main.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-msi-generator-main.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-opampsupervisor-Dockerfile"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-msi-generator-windows-installer.wxs.tmpl"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-goreleaser-internal-distroC95opamp.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-opampsupervisor-config.example.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-opampsupervisor-opampsupervisor.service"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-opampsupervisor-opampsupervisor.conf"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-opampsupervisor-preinstall.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-opampsupervisor-postinstall.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-opampsupervisor-preremove.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-Dockerfile"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-.goreleaser.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-cmd-opampsupervisor-.goreleaser.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-README.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-Windows.dockerfile"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-config.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-manifest.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otelcol.service"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-README.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-postinstall.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-preinstall.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-preremove.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-opentelemetry.ico"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-.goreleaser-build.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-Dockerfile"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-Windows.dockerfile"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otelcol.conf"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-README.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-config.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-manifest.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-otelcol-contrib.service"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-otelcol-contrib.conf"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-postinstall.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-preremove.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-opentelemetry.ico"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-.goreleaser.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-ebpf-profiler-Dockerfile"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-ebpf-profiler-.goreleaser.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-ebpf-profiler-README.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-ebpf-profiler-manifest.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-k8s-.goreleaser.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-contrib-preinstall.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-k8s-Dockerfile"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-k8s-Windows.dockerfile"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-k8s-README.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otlp-Dockerfile"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otlp-Windows.dockerfile"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otlp-README.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-k8s-manifest.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otlp-manifest.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otlp-otelcol-otlp.service"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otlp-otelcol-otlp.conf"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otlp-postinstall.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otlp-preinstall.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-go.mod"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otlp-preremove.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otlp-opentelemetry.ico"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-docs-release.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-go.sum"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-internal-tools-go.sum"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-internal-tools-go.mod"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-renovate.json"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-scripts-generate-goreleaser.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-scripts-build.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-distributions-otelcol-otlp-.goreleaser.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-scripts-package-tests-Dockerfile.test.deb"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-scripts-package-tests-Dockerfile.test.rpm"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-scripts-package-tests-README.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-scripts-package-tests-common.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-internal-tools-tools.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-tests-docker-tests-default-config.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-tests-docker-tests-ebpf-profiler-config.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-scripts-package-tests-package-tests.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-tests-golden-README.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-tests-golden-docker-compose.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-tests-golden-data-expected.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-tests-golden-config.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-tests-msi-go.mod"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-tests-msi-go.sum"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-tests-msi-msiC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.I2RYTsbJsG-scripts-validate-components.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-gomod-github.com-goreleaser-goreleaser-pro-v2-v2.12.7"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.I2RYTsbJsG",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-gomod-go.yaml.in-yaml-v3-v3.0.4"
+    }
+  ],
+  "annotations": [
+    {
+      "annotationDate": "2026-03-06T16:56:47Z",
+      "annotationType": "OTHER",
+      "annotator": "Tool: cncf-automation",
+      "comment": "Repository: open-telemetry/opentelemetry-collector-releases\nVersion: v0.140.0"
+    }
+  ],
+  "hasExtractedLicensingInfo": []
+}

@@ -18,7 +18,7 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain go.mod.
   auto_generated: true
-  last_updated: "2026-03-06T15:58:12Z"
+  last_updated: "2026-03-09T04:55:48Z"
 repositories:
   - owner: antrea-io
     repo: antrea-ui
@@ -5090,6 +5090,12 @@ repositories:
     category: networking
     project_status: sandbox
     discovered_by: org-scan from ovn-kubernetes/ovn-kubernetes
+  - owner: oxia-db
+    repo: okk
+    name: okk
+    category: networking
+    project_status: sandbox
+    discovered_by: org-scan from oxia-db/oxia
   - owner: paralus
     repo: cli
     name: cli

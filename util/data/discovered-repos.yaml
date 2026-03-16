@@ -18,7 +18,7 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain go.mod.
   auto_generated: true
-  last_updated: "2026-03-09T04:55:48Z"
+  last_updated: "2026-03-16T05:11:55Z"
 repositories:
   - owner: antrea-io
     repo: antrea-ui
@@ -230,6 +230,12 @@ repositories:
     category: other
     project_status: sandbox
     discovered_by: org-scan from bfenetworks/bfe
+  - owner: bootc-dev
+    repo: podman-bootc
+    name: podman-bootc
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from bootc-dev/bootc
   - owner: bpfman
     repo: bpfman-operator
     name: bpfman-operator
@@ -2270,6 +2276,18 @@ repositories:
     category: orchestration
     project_status: sandbox
     discovered_by: org-scan from koordinator-sh/koordinator
+  - owner: krkn-chaos
+    repo: krkn-operator
+    name: krkn-operator
+    category: chaos-engineering
+    project_status: sandbox
+    discovered_by: org-scan from krkn-chaos/krkn
+  - owner: krkn-chaos
+    repo: krkn-operator-acm
+    name: krkn-operator-acm
+    category: chaos-engineering
+    project_status: sandbox
+    discovered_by: org-scan from krkn-chaos/krkn
   - owner: krkn-chaos
     repo: krknctl
     name: krknctl

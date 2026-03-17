@@ -23,7 +23,7 @@ repositories:
   - owner: argoproj
     repo: argo-cd
     name: Argo
-    category: gitops
+    category: ci-cd
     project_status: graduated
     accepted_date: "2020-03-26"
   - owner: cert-manager
@@ -59,7 +59,7 @@ repositories:
   - owner: cri-o
     repo: cri-o
     name: CRI-O
-    category: container-runtime
+    category: ml-platform
     project_status: graduated
     accepted_date: "2019-04-08"
   - owner: crossplane
@@ -83,7 +83,7 @@ repositories:
   - owner: dragonflyoss
     repo: dragonfly
     name: Dragonfly
-    category: ml-platform
+    category: registry
     project_status: graduated
     accepted_date: "2018-11-13"
   - owner: envoyproxy
@@ -113,7 +113,7 @@ repositories:
   - owner: fluxcd
     repo: flux2
     name: Flux
-    category: ci-cd
+    category: gitops
     project_status: graduated
     accepted_date: "2019-07-15"
   - owner: goharbor
@@ -347,7 +347,7 @@ repositories:
   - owner: lima-vm
     repo: lima
     name: Lima
-    category: container-runtime
+    category: ml-platform
     project_status: incubating
     accepted_date: "2022-09-14"
   - owner: litmuschaos
@@ -641,7 +641,7 @@ repositories:
   - owner: distribution
     repo: distribution
     name: Distribution
-    category: ml-platform
+    category: registry
     project_status: sandbox
     accepted_date: "2021-01-26"
   - owner: drasi-project
@@ -701,13 +701,13 @@ repositories:
   - owner: hyperlight-dev
     repo: hyperlight
     name: Hyperlight
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2025-03-04"
   - owner: inclavare-containers
     repo: inclavare-containers
     name: Inclavare Containers
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2021-09-14"
   - owner: inspektor-gadget
@@ -758,6 +758,12 @@ repositories:
     category: automation
     project_status: sandbox
     accepted_date: "2025-05-22"
+  - owner: kai-scheduler
+    repo: KAI-Scheduler
+    name: KAI Scheduler
+    category: orchestration
+    project_status: sandbox
+    accepted_date: "2025-12-21"
   - owner: kairos-io
     repo: kairos
     name: Kairos
@@ -863,7 +869,7 @@ repositories:
   - owner: kube-burner
     repo: kube-burner
     name: Kube-burner
-    category: gitops
+    category: ci-cd
     project_status: sandbox
     accepted_date: "2023-12-18"
   - owner: kubeovn
@@ -1025,7 +1031,7 @@ repositories:
   - owner: openchoreo
     repo: openchoreo
     name: OpenChoreo
-    category: gitops
+    category: ci-cd
     project_status: sandbox
     accepted_date: "2026-01-06"
   - owner: openebs
@@ -1283,7 +1289,7 @@ repositories:
   - owner: virtual-kubelet
     repo: virtual-kubelet
     name: Virtual Kubelet
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2018-12-04"
   - owner: vscode-kubernetes-tools
@@ -1301,7 +1307,7 @@ repositories:
   - owner: werf
     repo: werf
     name: werf
-    category: gitops
+    category: ci-cd
     project_status: sandbox
     accepted_date: "2022-12-13"
   - owner: xregistry
@@ -1313,7 +1319,7 @@ repositories:
   - owner: youki-dev
     repo: youki
     name: youki
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2024-10-17"
   - owner: project-zot

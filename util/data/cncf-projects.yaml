@@ -170,6 +170,12 @@ repositories:
     category: orchestration
     project_status: graduated
     accepted_date: "2016-03-10"
+  - owner: kyverno
+    repo: kyverno
+    name: Kyverno
+    category: security
+    project_status: graduated
+    accepted_date: "2020-11-10"
   - owner: linkerd
     repo: linkerd2
     name: Linkerd
@@ -338,12 +344,6 @@ repositories:
     category: build
     project_status: incubating
     accepted_date: "2019-09-06"
-  - owner: kyverno
-    repo: kyverno
-    name: Kyverno
-    category: security
-    project_status: incubating
-    accepted_date: "2020-11-10"
   - owner: lima-vm
     repo: lima
     name: Lima
@@ -401,7 +401,7 @@ repositories:
   - owner: openkruise
     repo: kruise
     name: OpenKruise
-    category: ci-cd
+    category: gitops
     project_status: incubating
     accepted_date: "2020-11-10"
   - owner: open-telemetry
@@ -686,6 +686,12 @@ repositories:
     category: security
     project_status: sandbox
     accepted_date: "2022-07-26"
+  - owner: alibaba
+    repo: higress
+    name: Higress
+    category: other
+    project_status: sandbox
+    accepted_date: "2026-03-15"
   - owner: HolmesGPT
     repo: holmesgpt
     name: HolmesGPT
@@ -701,13 +707,13 @@ repositories:
   - owner: hyperlight-dev
     repo: hyperlight
     name: Hyperlight
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2025-03-04"
   - owner: inclavare-containers
     repo: inclavare-containers
     name: Inclavare Containers
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2021-09-14"
   - owner: inspektor-gadget
@@ -719,7 +725,7 @@ repositories:
   - owner: interlink-hq
     repo: interLink
     name: Interlink
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2025-03-04"
   - owner: k0sproject
@@ -869,7 +875,7 @@ repositories:
   - owner: kube-burner
     repo: kube-burner
     name: Kube-burner
-    category: ci-cd
+    category: gitops
     project_status: sandbox
     accepted_date: "2023-12-18"
   - owner: kubeovn
@@ -1031,7 +1037,7 @@ repositories:
   - owner: openchoreo
     repo: openchoreo
     name: OpenChoreo
-    category: ci-cd
+    category: gitops
     project_status: sandbox
     accepted_date: "2026-01-06"
   - owner: openebs
@@ -1055,7 +1061,7 @@ repositories:
   - owner: open-gitops
     repo: project
     name: OpenGitOps
-    category: ci-cd
+    category: gitops
     project_status: sandbox
     accepted_date: "2021-01-26"
   - owner: opentofu
@@ -1109,7 +1115,7 @@ repositories:
   - owner: pipe-cd
     repo: pipecd
     name: PipeCD
-    category: ci-cd
+    category: gitops
     project_status: sandbox
     accepted_date: "2023-05-17"
   - owner: piraeusdatastore
@@ -1289,7 +1295,7 @@ repositories:
   - owner: virtual-kubelet
     repo: virtual-kubelet
     name: Virtual Kubelet
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2018-12-04"
   - owner: vscode-kubernetes-tools
@@ -1307,7 +1313,7 @@ repositories:
   - owner: werf
     repo: werf
     name: werf
-    category: ci-cd
+    category: gitops
     project_status: sandbox
     accepted_date: "2022-12-13"
   - owner: xregistry
@@ -1319,7 +1325,7 @@ repositories:
   - owner: youki-dev
     repo: youki
     name: youki
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2024-10-17"
   - owner: project-zot

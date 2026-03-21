@@ -23,7 +23,7 @@ repositories:
   - owner: argoproj
     repo: argo-cd
     name: Argo
-    category: ci-cd
+    category: gitops
     project_status: graduated
     accepted_date: "2020-03-26"
   - owner: cert-manager
@@ -47,7 +47,7 @@ repositories:
   - owner: containerd
     repo: containerd
     name: containerd
-    category: ml-platform
+    category: container-runtime
     project_status: graduated
     accepted_date: "2017-03-29"
   - owner: coredns
@@ -83,7 +83,7 @@ repositories:
   - owner: dragonflyoss
     repo: dragonfly
     name: Dragonfly
-    category: registry
+    category: ml-platform
     project_status: graduated
     accepted_date: "2018-11-13"
   - owner: envoyproxy
@@ -119,7 +119,7 @@ repositories:
   - owner: goharbor
     repo: harbor
     name: Harbor
-    category: registry
+    category: ml-platform
     project_status: graduated
     accepted_date: "2018-07-31"
   - owner: helm
@@ -401,7 +401,7 @@ repositories:
   - owner: openkruise
     repo: kruise
     name: OpenKruise
-    category: gitops
+    category: ci-cd
     project_status: incubating
     accepted_date: "2020-11-10"
   - owner: open-telemetry
@@ -641,7 +641,7 @@ repositories:
   - owner: distribution
     repo: distribution
     name: Distribution
-    category: registry
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2021-01-26"
   - owner: drasi-project
@@ -869,13 +869,13 @@ repositories:
   - owner: kuasar-io
     repo: kuasar
     name: Kuasar
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2023-12-19"
   - owner: kube-burner
     repo: kube-burner
     name: Kube-burner
-    category: gitops
+    category: ci-cd
     project_status: sandbox
     accepted_date: "2023-12-18"
   - owner: kubeovn
@@ -1046,6 +1046,12 @@ repositories:
     category: storage
     project_status: sandbox
     accepted_date: "2024-10-10"
+  - owner: openeverest
+    repo: openeverest
+    name: OpenEverest
+    category: storage
+    project_status: sandbox
+    accepted_date: "2026-03-15"
   - owner: OpenFunction
     repo: OpenFunction
     name: OpenFunction
@@ -1133,7 +1139,7 @@ repositories:
   - owner: containers
     repo: podman
     name: Podman Container Tools
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2025-01-21"
   - owner: podman-desktop
@@ -1283,7 +1289,7 @@ repositories:
   - owner: urunc-dev
     repo: urunc
     name: urunc
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2025-05-22"
   - owner: v6d-io
@@ -1307,7 +1313,7 @@ repositories:
   - owner: WasmEdge
     repo: WasmEdge
     name: WasmEdge Runtime
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2021-04-28"
   - owner: werf
@@ -1325,7 +1331,7 @@ repositories:
   - owner: youki-dev
     repo: youki
     name: youki
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2024-10-17"
   - owner: project-zot

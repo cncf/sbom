@@ -1,0 +1,5172 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "Kairos - kairos v4.0.2",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "created": "2026-03-22T05:54:26Z",
+    "creators": [
+      "Tool: bom-v0.7.1",
+      "Tool: cncf-automation-sbom-generator",
+      "Tool: go-licenses"
+    ],
+    "licenseListVersion": "3.27",
+    "comment": "SBOM generated for CNCF project: Kairos (kairos-io/kairos@v4.0.2)"
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://github.com/kairos-io/kairos/releases/tag/v4.0.2",
+  "documentDescribes": [
+    "SPDXRef-Package-tmp.ddcUYvrQSn"
+  ],
+  "files": [
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-plans-system-upgrade.yaml",
+      "fileName": "examples/plans/system-upgrade.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "07b787390c7fbf9f5f3c179e074514936b4165e0"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "74765b60596b3d6978b04ab353fca0d38ff759147a9c4f8f74af5d3117c8bfd6"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "cdb216ea79a68f09470f36680c61202b192dac2e05f593b37c2b9bfce78e137324dca83c1d0ec7a28e426a195e07dbd21d76f2315f55ca7bff8ee5344e9db1c9"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-22.04-fips-pro-attach-config.yaml",
+      "fileName": "examples/builds/ubuntu-22.04-fips/pro-attach-config.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "59c56ed6f8ca9652d86d4115de5c378492389ed8a165bcdfee1b509d8829c854"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "abb326c0e964207415ac4921a1587d48b3e162009427635321c5e16e794d2b19df46de8bdeeb6ca5298544fcf6ab8f72c8e600485c5ad9ab63732553a6cf27da"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "7d1b74aba15f6ab715c5f1964fd2710741a52afd"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-cloud-configs-initramfs-stage.yaml",
+      "fileName": "examples/cloud-configs/initramfs-stage.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "531e85bcc6aad0884ba512e5ef823a79e9d60093"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c1560f98e8257655a85e066f11fa2987a417b00db1b45837e9aecc12ff7b1025"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "6ba079f71b30fd66b000fd5aca664c91d826d6c5754d2e61b8b9bd3f77b90f6939f1aee26cdfff1ea0ce1a6d8a18f4def0d57e08bb32d8f8ace50306f682e722"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.github-ISSUEC95TEMPLATE-release.md",
+      "fileName": ".github/ISSUE_TEMPLATE/release.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "7aae1d86681598a94bfb7c1a75e0d02782ec757248a7dbedd889377b337b2035514287aa299d56905de9e44e8dc935e092e17c0d47dbcca1afdaea2f42973e29"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "38ef77896eef32ab87677bdc45f5d73501f1b309"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a00892d07d0f110a61b1cbe2d381514ba921f6ceacfb70e0b1803b9c30b10a04"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-installC95targetC95test.go",
+      "fileName": "tests/install_target_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "609e2f34ba6006fe2d3ee80b8b841d3e4b5eae81"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8681f0f9fe437cf61329779d8222816362b72f65448acd5a07b19d518c02ab31"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f3be2adf5a54e9b46953aca58ab52345547aca3d10ac8f4c2fa51d01c928a3ece9a27265a110b0aad4cab5bab3deb7c4de39bc740c17a2af50fd16635dbd2997"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-fedora-fips-Dockerfile",
+      "fileName": "examples/builds/fedora-fips/Dockerfile",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f28c47311f61d8aab2df61663a7991d185fde7ffb4350df388d6d7fb8e70449d"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "9cc9f9ab9379aa3b2c21ca2722e3b0de6e61190f1fa4329c31ff8b979b586587e5e5d6a08a4df53a283814af744084520a173fe7de7105c43c2a5267a006fd6a"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "858601c3c3969b50aa78ea0f8d8f322215b97ebb"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-24.04-fips-pro-attach-config.yaml",
+      "fileName": "examples/builds/ubuntu-24.04-fips/pro-attach-config.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "0174004c29629424713cff8f80690e18e46f8910"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "75a537972b283865dc44c4a23e3eef0218de1e0f58c5a54d0dd8199815939883"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "afcc38d86d8296e3770c76fb00b924b494f555e8c978891928ad447d7b5b5d335ec2b12ff883fffcb7d3b43d0e7717006c290203c25dce2d0dfd5039901f4fec"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-LICENSE",
+      "fileName": "LICENSE",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "Pixar"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "2f2db65b68712fab4dbfaaf52e7361caad060aa0"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ef83dcde11f35f77198e9500d31a286eaf0a512aebe1c2ac5f46b0c52a34d82c"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "c178b842e70931ac3bf3f37c7c89e814e0c0dcdd34ae8e6203fa55039225b954c7607eae5a56c48ed7fa214df5df9bbbafddff646c846e80d76e05eb504f0df8"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-encryption-cluster-issuer.yaml",
+      "fileName": "tests/assets/encryption/cluster-issuer.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7a827b6b880d4a7cabd83832034eeeb85f54a621057a6c1df493b75eb1032dd5"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "10f805374ce1ef523121b8f30d16271b9cb1a7955ef49d9f382c5083d6e1f5cb88d3aba33b7d40934508aedbcfea6c65de14f3c7cc884d5e824331bae7d71569"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "07bb8232c8cb330986714c87ad7950e78a749dca"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-plans-networkC95tokenC95rotation.yaml",
+      "fileName": "examples/plans/network_token_rotation.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "060aa61e1d3e2acd3efca703b40d59ef92344564715a9864222a79c776968de56c2a2db1e35a177d5a0e2aefcfe81d463b514dc1edf42c1627e9cdb4eac3708e"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a8b630b36a48c4cf10011924ab7ecb7fe6acdb75"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "840212872ee4a34a01c8cd913227356e34d4daa470c65bdf54297a95db827833"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-uki.yaml",
+      "fileName": ".github/workflows/uki.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "0a49e5c932fe12c226fa5c8ce1c1a616f5913a66"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a336bb57d927f91eb882b31f6b11fa84cb9b72df6fedadcac275c042a8735bd1"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "37a731867045a409569c1d38385f73a08dd1448d5f8e79548fe86674fb8b0677c3a54892f55bc64ae2a04309b8245d20a94dccfae9f7f963e0986415c7946add"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-encryption-challenger-server-ingress.template.yaml",
+      "fileName": "tests/assets/encryption/challenger-server-ingress.template.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "1f7f1b4947bd04fe9082754f97a87e3ca6376fb3"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1ea15d8d67a8ce796a2815ced6bbcf192f3d2a8f978d9792c7f4498bc1c919dd"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "a363985b32a21dbbd187f2997cd883c6245fdd0fb320dcd88f89eefa57406581681abb877956b112d22e747d37d42eb1255c72ea1578b61c9fa05d76e45062d9"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-KEK.key",
+      "fileName": "tests/assets/keys/KEK.key",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "bc2a8e1429b137911923fc84d5f03cd8d297bd8a"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5211eaec1a94dea45c4b769a311305dbd43c014af4b8129abf899c20a2890a21"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b9eee67b64838b74063126727ceb0f279d746916a8602e7f3fa0b4c8066654fe2d8e7399af4eb6fcb1c18fed5447be77779bd291cf37c7d4c0e1c13601017b25"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-tpm2-pcr-private.pem",
+      "fileName": "tests/assets/keys/tpm2-pcr-private.pem",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "98fa5619d7c7923c33b0fef92266b9d3d36809a0"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "41bf7c6ec52794648ccaf97261bedf8fcfd4a035cc3c4d24769aa270c25dda61"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "ce322a08043f9c59f8d533981a47cc74c3dad1a52370c2709fb7c628b0f9db1de89597ad83a91475a27f2a0d22b4b932ba8ba23fadd517be4225153249dda213"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-20.04-fips-dracut.conf",
+      "fileName": "examples/builds/ubuntu-20.04-fips/dracut.conf",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "92e41af6f6a85cc6655cd75605674a679b7c0d81"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "df01d6dae49ee85733422225f9040e17772f05b0968820b126552d07e5afe5ec"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "6ff6f3fa660bdeaaa91183895a21404923b87b43f4a4399b7bd779db870936f0bfdd558fb0697d2d89b7f2bd2a959d990708bd3f87d8e325049e221fc7c5158d"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.github-public-cloud-upload-image-to-azure.sh",
+      "fileName": ".github/public-cloud/upload-image-to-azure.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "5e8f7f2bd960a831055c729dab5d879e074b0472"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5ab1dd5611627def3a502b9f04c4f5697609a16abd0571fb86d6cba09a87c956"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "8de6ff2bbe2e20af1ed98d5fd58a0fead5de0c3484b8ef0687e8811f548d13227667df965a682c45db08e2b5e38b59e6bcc591b67de42f36590325f059a37e97"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-efivars.empty.fd",
+      "fileName": "tests/assets/efivars.empty.fd",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "b73d69c62886e17d052110407239f30334fbfb29"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "469f981b8e4fe3e2605c9d549d93464ead6bee8d4cd096d1cd12dd4b84930b0e"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "4b277439402206b67743fabffbabef757100989057859ee684e552b3877df60be6bc6667190c278649099d61d1d076254ff53216c94c149c18530f72b1863675"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-ukiC95test.go",
+      "fileName": "tests/uki_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "aaefab5acfa8296af1e7b3b37adb26876e8eb7ef17873420cfa0612777a64613131012c81169269e50d7de2627ec1b07d0d7fe51223f070da13d97e803b8b080"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f27c9a570d30902b5a62ac931e981ff98b4a8695"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7f45e737e3405a5ec47f9f11e6c5730f05baad0de036ab90a7b0e912f988d5f3"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.github-scripts-create-onboarding-issue.js",
+      "fileName": ".github/scripts/create-onboarding-issue.js",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "df798adc17c49a95bda050ba410a13e20d97f595"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "845d83c88fec88cbb5beb4b3857ca60797ebf38b57533d1c12bba58f2ded33f7"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "93fa40fc59366cdaccb530a6230cbe951031b8d90d02591c7e498dffce7a8233e3335c52dd0ae4452505a15fccb6bb6cb739585744fb52dd8a5fa8ebb8e65e60"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-PK.auth",
+      "fileName": "tests/assets/keys/PK.auth",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4f6f8cdf3ad91d3e457924aaf29647f4b58886bd"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "03c392aec9f2e606a782e00147d3e1dcc0ed350d7369fbff1bb7d198f161ead1"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "2c0c49a1061f9ee04fe398acb3a4ba3901888ffe826e3d11cd32d554806b34530a24076206e74a11c2effd370a2d41f1c2f960fd6cb4459e7e1bc64c1341b25f"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-images-Dockerfile.img",
+      "fileName": "images/Dockerfile.img",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e178145f1162afca3e64c8bb3b051d0ddb7d6a1b"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "934db52dc824e4501500e3768573f2a7548038f8d31e1b9698c160906e1ecc1d"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "8b280b4bbae4231e17bf9814ddd49c6ef0579042934591aa5c7a810b8ab489b8e27cb28fbdd7d284f14124c89e24ea3c42c04c620ee1ebf06877dd6225b5f1b2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-KEK.pem",
+      "fileName": "tests/assets/keys/KEK.pem",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "801c5fc59d21ff85a65ee9756c4b15a89be40782"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a46db3d5444a7b510e7ace2587e46ebec858a0bb208b4ec2164ad8fa0810749a"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "a662f962446b8247db9e8afe6b6eab95501bc21d17030a55ab733eea6b4aec6bdd082dfbec4b5c63492022572da6b2d3aa5ba9fff8b003a178749b94647f8eaf"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.github-encryption-tests.sh",
+      "fileName": ".github/encryption-tests.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "dba3c3e53227c2176bc6fdbc1ee96570c20236481db151e3f4984821ec541260"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "4848e8a4dc26d55d5872ea06f43777059a1004e1e462fc8f1b3b4e6d09941fa588676120f5fa31643ec673ed39b7dfb57ac249cbcaca8fce8fa74288c93ce4d3"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "22beff11a1ef95531f34ff864cb36b4f7dcb42fa"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-providerC95decentralizedC95test.go",
+      "fileName": "tests/provider_decentralized_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "7c56dc8d42aef56e0d34ca47ef2a402d1e208e2c"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "59badcbdfd5599210df9e29fa4e44e23819adfa5ee137fd5f2dbb3e6b5f02de9"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "58adc91cfbf5702b0e1ad26775331e1c9455f588e06a87fc3b9565490a37dd916216bd42695562d06428ac96003be25a41ad8202f7c939f8b33098531fa0f26e"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-cloud-configs-worker.yaml",
+      "fileName": "examples/cloud-configs/worker.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "b458ed3967b1300e7474afcc84d0f998062bb9ac"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "01c66fc8c04cf31f930c4b5970dc681fe30a9cafe974fd0b607a367393bf838c"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "cfbfb5d7f56a486830415a17cef37fe3d06350a8432a4a72f3669adc7deff7564c422b3ff23c24bd1aa28e8c8414032d9f3a6a206ab0ced1dae5af5789438fdb"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-rockylinux-fips-Dockerfile",
+      "fileName": "examples/builds/rockylinux-fips/Dockerfile",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "2201e81b5ac0e57338c8298a98f221a0c01ecd47"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1d77ad6a6d90ae611629d869a62f2679101a2269954991759838145e9af317d5"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "d1983672766db4cf7f70ab3ee4d889d075278cb26dd1f36c9455e8487c94b44e439164072debf016d3c03fccef447750d484e6a0b906e2b1be86f2e300807f1c"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-bundlesC95test.go",
+      "fileName": "tests/bundles_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "90e69b9d166ce21767ac4f0cb0b1bc3689122aab"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "801185d4d0217a21ea8bfe437cdc0e8f8fe50c70476ecf31bddb11bcce758d88"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "c86d6fb8a8433569e366cc5066b63559d99c60a61e63e85cb91eba1a62ac6476906b14714393021f087fc7b440d6d3b3fe5a44408d8c597e6e38dd78df23300c"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-db.der",
+      "fileName": "tests/assets/keys/db.der",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "413b4c147454e210576c9e9d0fa9b55ff80a0e1a"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8f92c35098b0c0ca7496800d67219035ed6e0caff6e19f5f75d7c4847e5ee38f"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "3a4d8710434d633d77886f2c9cab19eec808275f28dbdf4482dde292005cc5430cd5d92cb8f65a194a9435e2c6ac6d9b093711c0e08298e023aaf3563ea76bc2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-20.04-fips-README.md",
+      "fileName": "examples/builds/ubuntu-20.04-fips/README.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "0e64f9373397177e51245a2616651e7117a6b9415aaab5fa6b35897c1af201d0e9628dbe3eb67e7af1f59d991639de548024962662e149e27ada2e9e901340e1"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ae329470e3befb9b2cd9692b7926d3354fb12a6a"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "eecd48638e9925109819a801541993c8b51bb0abc8050514a633298e97c2c79a"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-reusable-qemu-test.yaml",
+      "fileName": ".github/workflows/reusable-qemu-test.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "5d86b8c83f2e78963cb83a14c671820456588318"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4df3de5ed73b408fd07896d6d09c0814ae455a6bf2612d8911bd7af2aff73982"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "c92781d5b8097340ce725b8de661478c944ced9f9665f835aedec6cc94da02b916029f21e847c4de287329b2534d9597eba3744e7dc202c695b045e9f92bae62"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.snyk",
+      "fileName": ".snyk",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "34e06ef627e6068d16302a1aef7631a71ea7f0607a7643d21175a4215be02081"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "951e18e006209624a5ab91783ad2e9ad526e315f5f2767a81d3652c9f4331b892921b5e6f08522cfaaf4e739d54c35fc6a67bf060b7ccd06e4fecc7fe1ed7569"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "21987db9c23337f323e6e8c52f816dbb01db3544"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-go.sum",
+      "fileName": "tests/go.sum",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "28576c6b215315acea055bcbd220f79ca5adc7399e9a19a98be97c8895df5834"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "9f6d45c0a502be2eedf3e193ae4e1726df30c339609ca474bd53d1d6c5a08d86271922e590e821a438b3f212369a1a4e8e50465c387921c7edf195f17b8e1e31"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "900c6bd530938342edaa0363480c20976daa81f1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.github-ISSUEC95TEMPLATE-bugC95report.md",
+      "fileName": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "31016f1ea70b9817c87b9445b09f1f3fc8fff2316cd9062f54adbfa842d5d18f"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "44f44dd1bdc1c609f3e60ddd2c55d77cf1e755956e90a5c71542a639a64218ffb1b6ce25a59d0226b7e1d2689737d564e9cd665aa316461ce5874219137011bf"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "5c5091c2b614edbe88e01cf375aa38fe9574e37f"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.gitvote.yml",
+      "fileName": ".gitvote.yml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7185e7b8bc2d14a8d35af31df84098e1483322b500eac87fc031277422e5fb8b"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "5ca93f850f20c7752ac5b8b7b9babd099aed81f5642e3dd1d8842ae013ccc8743aa033232ec4acfd8f0e2f27ec8a1c0bb5070576562070a913542092fdfaeb97"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f4a53e3f137324403972353e6167a929c248ef57"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-qrcode.yaml",
+      "fileName": "tests/assets/qrcode.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4d9d2404b52225c3797caa0cdfb5a4df4cd1a136"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d00a2c015409b887478d002caac29a28efcaebfdc368ca84cc9f4e72e4406197"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "a82d97709d0ffd9d9ad3cb231dc11700c550bcfe1f106eb9ee5c32f5b5fcdc77ffa858448f41ad52a1e3d174da231195886d927c2db8e475afa36a5dd3b66c49"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-cloud-configs-wifi.yaml",
+      "fileName": "examples/cloud-configs/wifi.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "2b15004880ea1fea81c2fcf1e327f599dfb81a14868478dda9fdc505be13dfda89fc39a6ee31f2c34515231f9cc1e0b1aa83e92ae212350641188a6dcce395fd"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e029f8059c413fe00aeec757fd2067016a16b1b4"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "48f52fbc09f0c4f949194f9cbc3ecd2bf89b54dcd9e1f3dab0de9eaee0d15099"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-db.key",
+      "fileName": "tests/assets/keys/db.key",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "b6a06885db9a44c5a552055920fcef570c31035a"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "208ef65164f515eb10b2312dcf8c27089c936ac2173f87f2c6929e3bba0068e9"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "afc6178424b8eed948e455914923c0419dfc9c3e4440468aa923769df4fa4649683d1bf41b6a219bdd5696adc0923b68b991bdd5cb3f19aa6d7739c134063416"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-image-pr-arm.yaml",
+      "fileName": ".github/workflows/image-pr-arm.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "091f272d54f805f6d88d98b7d185aefa22ad327f"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "56d99d3787269b1ae1d79c2134ad663758c2267a743b4358713a717b0e5ebcb5"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "e14867b13ec643c71709fb97b1b398fc7843379675e0a38436d792022d2b07b87d4cd3a2132a16742e8081887d2208b52346c03fe5a3a9db00ff96b8dd772f20"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-24.04-fips-README.md",
+      "fileName": "examples/builds/ubuntu-24.04-fips/README.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "63ca819795baf416e600165e01cea16326cdebd9"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f0c1e3bf16ac678a37daaf2d29997fb35c44eaf7c6010d123c10e3b43cf02d62"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b7adbc5025973cdeb863f792c0fbb01905277587de19a46a0a9d9d52e85fc5cb565cd41cf5e2e69ac63bf7b23e1eb9a1ef804363025994d43c6bc605e3e7a172"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-sysext-work.sysext.raw",
+      "fileName": "tests/assets/sysext/work.sysext.raw",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "40a33b6b93e175b8c76c303b96427e958878be5c334ef4c15c08c4aad00ab634"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "014270c2bc4a1b75f47f7f591855affad03f15abdd3b4576e58f5efa32220494c4ae8e6c083499113ea42d780d0f53c9c96074b1c1dc70933b5af593ac36f313"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "07262d210c2505c3965c7883f4bce2b5ff5292b6"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-zfsC95test.go",
+      "fileName": "tests/zfs_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "43ce4fb235bf2bc6b6231967b659b75dd79dfc5c9f450af85a027bb8a2b398dc"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "de822398472988be4e64c0b2dfa5a2f20637ee615408d62c7fc5998ef798bfca5635785f406dace58474d51ac799aacc96580012ad0f0f06259fb08492b1ce0d"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c2cf62b1d98cc514ac4b2c20abd7b3b300ce0094"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-rockylinux-fips-dracut.conf",
+      "fileName": "examples/builds/rockylinux-fips/dracut.conf",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "82179a860cb8294e275accd83cc61318fc35e56b"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0ddab6e80c671950f27b4fa1e327283b5062b6865ed5267ec222ffb7e41f09d1"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "fd573e5ad6fd38aa00364b8a3d43d3d88b075342a02ba604c0ce4759a45bc763a79d18c148bb454b547bd530fcf168d3e2e9f0572718b0cb53890820aeae9477"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-24.04-fips-run.sh",
+      "fileName": "examples/builds/ubuntu-24.04-fips/run.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "13d440d96b30bcb3eac78ffc0a43f44b402bcaae1b8aa778269b7e3a0e9efcdb"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "41b313c3ae78551e0d1a599e7eaf56a59afacdc1ba8d3b08c6c2ed71155157e860055e6b7e236514a761a3bbd132557ddb596f0b19f68e6dad2eb047066d3e90"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c1bfdec5e998ca079ce23ae91ccfcdd5ca9738da"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-24.04-fips-build.sh",
+      "fileName": "examples/builds/ubuntu-24.04-fips/build.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e1769ded28535d796117ebb72dcf64adff4d1e17"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f6dc3337fa9cbfce391bde8053ba5e828df1ad00bf6e56908bcc60168d32fe00"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "5353e24dcd3da8dac9043270856bccd38d4714ad2ee8e219f05c2191aec6bb6643aac0d9bc07cf0c5ce96a86529a236e9ad7e7ed75e9ec488e759cc1d35903ff"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-efivars-aarch64.fd",
+      "fileName": "tests/assets/efivars-aarch64.fd",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "450766d07ea8acdba4e42a47e3de22ddb35678d62ae5446832b6e3e51780ab92f365ab982152d4d63be9954770997a5438b4fb7f4db5927b9973e82dd1ce0346"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "44fac4bedde4df04b9572ac665d3ac2c5cd00c7d"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3b6a07d0d404fab4e23b6d34bc6696a6a312dd92821332385e5af7c01c421351"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-uki-install.yaml",
+      "fileName": "tests/assets/uki-install.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f5e1585932c602b40a7aae4739d51b3bf06121ba"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3020a351065a2c83d729fc8a1fd195aabe3364a62982aaefd8ba22833a89e0d9"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "829a2d99f12c703e9d4deda9bb4d157d7134e69345a5aa7957604ac656b4bdf7d4a3a666896af4eff54f79747198fb135080466599c1eb66483f31b6d7d368be"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-go.mod",
+      "fileName": "tests/go.mod",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "2c594a5b0f299346dfb8d151c4b10cb7a10e94afd85740990f29abd5963b9215631219966fc3fae9b6678abe975e2b1a49609fd2d80f7c94a317751702462fbc"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4d79661ab68062a0a152c4ec21dc877256a241bf"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d90512111e241106bd06705092259d372bbbede5f7c00a19149d39caae9ecd31"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-renovate.json",
+      "fileName": "renovate.json",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "825dab0833277f4b5a1d3c3820cdf43c5b24a57f"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0b9cb20698c0deca9cbd1f10c522df95defafb896d172ccd1053052f7e9c0f97"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "97d7aee26aaf68df20b292ef7e960a9cd13363b6983d89e7233c0184781da146b3a4cf132eb4e6ff4d72947f486f6e49847969dcda074f5092b35bf6faae4507"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-db.esl",
+      "fileName": "tests/assets/keys/db.esl",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "72d3dcce3a9a8d8e37717486a8af85f5d43f6c6a"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "000af83911f707f69ac69334149800733dd414a06c8978b6f88eb93414aacdcb"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "fdee346ba34e79af6ac75cd0834ea4c8fef75d554546568cabd02f86a2d603009f29ecd8b1932e4b7d7a8a2b712372ba828fc46bfc0d2bdffc382098e5a14487"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-autoinstall.yaml",
+      "fileName": "tests/assets/autoinstall.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "afcd0d645feabcc07812e1a62c000ab5c533363d88b6f605ffce42744efc15dabce998df54bd908f1a963acc10c120bb9321465f7b6643d988e2bd15bf9c2b1a"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "84f342686d12e482b8f6be060600680b45969694"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8c4077bd69dbdf12842ff3b2beca6c1aa0cba65fa93baae87ca0e1156cfbe28a"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.github-public-cloud-test-azure-image.sh",
+      "fileName": ".github/public-cloud/test-azure-image.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "bd19e5d3ba5f0e1eb2369ca1836e03945740c27b"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "25d48bfe82ba7b7f49a3c353e63a657426af4ee947a86031705f1cf0f0ddbd18"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "766e939dd57ba741c99440ba9c53e3006b29bddfa5d119e3aae4fbf16d3f5519064a6f4b2a004c21a56373e73e17e828654943d7a485fa667c43c2fa1f5ab8a0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-efivars.4m.fd",
+      "fileName": "tests/assets/efivars.4m.fd",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "459e517e6a8ae1c122aea267612c0d4898172821695c6d01cad687ccb58a3628"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "91c9b0e9b94d832a67e621570a98b29cb743626762016621d26f2639353507672d252f9f670563ac17898ce94282e6d8bd9b34332713ca69301afd86542f97a5"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "8c334c2b8825639ec4abea084fda77a7bd3a4f7c"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.github-ISSUEC95TEMPLATE-featureC95request.md",
+      "fileName": ".github/ISSUE_TEMPLATE/feature_request.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c7e7b7bdac751061a2e05b4093e4ae53fdae238a"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "fcb8b7e4e529e770a997bf0e086c4fbc938a08467e24d91847f1e9305b5446a2"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "3538341ad1d91bbe146a2e361c842c6d70b967caebba2ce318914447cc07fb3abf35c34bde81ca5152b64688195f96742072b6864b5b0fb60819391efc77a800"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-providerC95upgradeC95latestC95k8sC95test.go",
+      "fileName": "tests/provider_upgrade_latest_k8s_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ebdac96de7a5a1aacb05aacd9520dca2765ea9fe"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2f070d7ed1e20720cd772314c8fb3681d082415065367fa3b73991254563039f"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "2171307b80e98cebf9d67a0021f3b804400d4d55a191a5e6b976a315f38314740426909577af6fe3a0e62c64ec503cd48014dfc17800bd033188c5f8a55c0107"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.hadolint.yaml",
+      "fileName": ".hadolint.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9bba8124fa6c3b18b798003b72d234b94785d14d839147ea516dc1e25f577f37"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "4b115bfaae0e5cf702bedcff401d49ef4a4c66aba01e5839b411b19ddee74c490bb0c3e272ab7c8dbedd23ca740e52d123ff55f575f3968ac0ae70b6921755d7"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6472b5b13b4172e6d3e9cd1fc49fb0ca9e82f8a5"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.github-PULLC95REQUESTC95TEMPLATE.md",
+      "fileName": ".github/PULL_REQUEST_TEMPLATE.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "d208ae5fa244176e833f6cb4c5023d52674f5cb98d0ee459c367f51103e085644a7525220f1ca8929edf2b61f667e6540754cbd8e11d19a4d4376295ba3c4011"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "40291855b6fa79ee0db2b7b10d15825aea8b9062"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5b1df4cdf4fcdd364a494ed8a7891aaf8fe532371ca609a850c0ba0a02ef1703"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-20.04-fips-pro-attach-config.yaml",
+      "fileName": "examples/builds/ubuntu-20.04-fips/pro-attach-config.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3540799771834fa581b3a31979ae3e12bd2c0639ae463ec9f3ca7d357621c31d"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "bc8f5b745b127f31d9d69ecdf65a632be808306b3495043d28d4ffbb8a22a13c18576e1e3588de0437a102a4188d04ec65b78bbaef85bc21a1ffefd1d9d2703c"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "dcb2981c5b1e9729f8cbefa21492a2b6e948dbc5"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.github-ISSUEC95TEMPLATE-maintainerC95application.md",
+      "fileName": ".github/ISSUE_TEMPLATE/maintainer_application.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "02e6a027890fc9f8d724f82e0a4e02778b1a18f8"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "fb3022c5f271fdb991a134c319a84c6a0c5507f4cbe8b9bcb8e22aa477b03cb8"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "050576a0dead71f9cb8607d7ee0df31f4c899018d89754db61ef247536130d4b7e75394739a082bf8d9fe80caa30fcb2528adfcedf796ae1b8673fe2896a9420"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-encryption-kustomization.yaml",
+      "fileName": "tests/assets/encryption/kustomization.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "5fa602add9a52b33d2323844db7e3a11e8421b292c64f9f949776f4c12eb5818d8fb7a260c2cad312e5c9b951473990037913af5e51624530429d23136ab5a76"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "fc2463572ee3b51014e8b3f01b78754c7cc79f82"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "da1902fa3a115933f9d2c61a5b3151a6e1cf70a84283fb3b826cf8d2acaf9f83"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-single.yaml",
+      "fileName": "tests/assets/single.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "cc8a55598ee6fbcdb5aec45f71cf12f557ffb017"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "614eb1dfafc8e298842db774ced2e049050d3348bdd7978af4992d40e9e0e500"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "07698f32570ec0cfb8d4f0669e4f7f224e726accb1e56425aed5627c74754c435b91ddf6d63556aac7ef9e7796f4a617528cffcb416690dd3d987c493061dcc2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-image-pr.yaml",
+      "fileName": ".github/workflows/image-pr.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "815cd9f9d1fc2b0a48601dc51a01e5faae80934c"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b8515ef49d460be2e7b8c60f44c049c9a12168e6598ac3c7d32952465ce1e246"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b0930f2bcb5f490111ebf31486fbacc9e2d224f3030b9c4a3491dafcc358463ac448871e4d726a7a6c71c044145f2c5f41de9d9963d48feb532d2efde6763064"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-configC95withC95reboot.yaml",
+      "fileName": "tests/assets/config_with_reboot.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5428bf42516e9548357078082d431656b645540b12ed01efb1abc40c5ce1a3ab"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "d3744b901203b424c5fad5b9ab447e1739d0bb99c1b006ebe7dbbc093350d79401064faaa0c0b5ea7a50eea012fd8288185ee80028a6f3668bb819cd20d1758d"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "2d3cbef66d883b38828585d18438da8c53677490"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-non-hwe-README.md",
+      "fileName": "examples/builds/ubuntu-non-hwe/README.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "49791357ffb94ba16426e9c2bac7fd5ab57a67b2"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b0b7d8c7dec5a3ad59fec32f221e454c2bfc79a23e3ca4e2415d0f692219aef1"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "c0752192eed7d983087422ad6ea37e4c1ccf0979e46a172ca4ba99fe64b6ecf5fc76e0c1d22a1fb7da07642cf3b6933101dfedacdc45f3f532af428666a08777"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.github-public-cloud-cleanup-old-images-aws.sh",
+      "fileName": ".github/public-cloud/cleanup-old-images-aws.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "578899e40cfdfbe6b428c2d06928252710177ffa"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e000f0d6953f1316c6268b148ac50a32a0af2750e9ada4b294a20d733f308aca"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "c0586a74d5fad1baad74c3ebb1e870d84da722c1031a4204fe2d22ddc1239290c248d3eeae88c62480b7d53cc1a59678411433bb833ae27b4b7fe37322f9ccf6"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-CONTRIBUTING.md",
+      "fileName": "CONTRIBUTING.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "3586de64aac196d402173d4c4fcac031fbef245f"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8162f76a1fa62918a28598c88652bdc5c61b319bef9e3d9f4e711a553fd2ad40"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "ae00bdf546bc6cabe7fed74880f73840a92f8c014711245a2fd382cc60d51e2d12ebccbd659f073166aa6154bb6b0f3f1491acc3953f91543e9585a97904f12d"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-22.04-fips-modules.fips",
+      "fileName": "examples/builds/ubuntu-22.04-fips/modules.fips",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a3bf27a7a4b316752ab094868bf539bca7a5ead9"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a9ebb6d05a30fb52cd16b16e9b956687ad2d526878c2aefc254960eb9208f538"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "93218b8b48104e6b17d20ac176729e219c0e567952095744d250f5a62e20a8922a0e2273adeeeb8088c00c430e49c3bd0b5b20131015279436b68c35f40ae789"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-providerC95installC95qrcodeC95test.go",
+      "fileName": "tests/provider_install_qrcode_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "5a6d8fe049e2eb5a1c3c34326bf88f71277e65e7"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a589ea602cda9e4995ef77f892dbd78c2fa6e5103efca677c23ef1c3d5374c8f"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "27bf770f86ecdfed8db4edcf7544c72ed3cf7f67162790bb90e43c2e4a72a66bac13a33a7f15b4d024e00442c0c3529597a5b23dc748186b8b32cc664704ad59"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-fedora-fips-build.sh",
+      "fileName": "examples/builds/fedora-fips/build.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f8fd8ecf2d7af2ee4455405e6449fef9965f23d59972ab367b7b4b99998462fd5774fbf9e249e696b66fa0d41915262f78fcba04969b9998c99f721a2c421191"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "5f6f38513c485a098d111f08c06126040b4d1488"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3e1487cd7494351aaab4b3a9a0f49b6d59a8a2721b07c3c432d41a84dde8f667"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.github-public-cloud-upload-image-to-aws.sh",
+      "fileName": ".github/public-cloud/upload-image-to-aws.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d120e9270888a00b31e5210b7a109f554ad43247bca2d6fd7fed664ce2fd58f4"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "99031878fae994ab7e43cac19e186dd04c4cd25126fd9094e269ce0601dd048da7a568536703cd6b53b813de98cad21326a6bda2b3f6d026a9973f4e0b1bce28"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "5e96145b3b0546f94da310a9e3b8934982bf2686"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-rockylinux-fips-README.md",
+      "fileName": "examples/builds/rockylinux-fips/README.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b32e9193334e81635fba134b65a897d24be13d90aa9e689628349db881e1a09f"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "7c20b1c3eaa5fb502c4557eb4a5b265e8e3e4dc33c4b168eb9e81e12eddb84aa3e900933442ea5e544bb322f784a1d9dbe6dce469c4593f80e8d7df2ff9eba9b"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "519dc91c696e4aa03413adae75815587c1f85664"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-PK.esl",
+      "fileName": "tests/assets/keys/PK.esl",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e2090b0561b2b462c23c0d9b3d895b4b603c9984"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5281c559856cd9871dfb0dbe5f3fd77f629931c9b0da5d11b0620eceace76fdf"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "a0693e64df01930f7ef4fa53540ee76b7b8f38fb2cdb987c3a928644a99f0415fecf5aeed0f81758ddebe2cd01cef9a038fdd02971184f0682ed4300110bbe85"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.gitattributes",
+      "fileName": ".gitattributes",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6600b3409f043440767d7d1a3733940811df8540"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c7cbec43653266fba8c8c85a5e63721c42ee7e729ca82e7ceceea96c50032fe6"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "dde6c5ccfc8dc163c8b4d87bf26dd2dd4f9822f0bc5538cda2485104ab635ec8713e45da9584b79748f8d238bba866b0f82b7f317db111e0577f0073a9e104d0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-images-.hadolint.yaml",
+      "fileName": "images/.hadolint.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6945e264d21ca31548e34c8d0258d2add30be909"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d4ca4a1856614c29ffb9fea040f2d60d0e48d52fcb27ace5a126a0c08f38e7f3"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "2d5b83d5ac9578f9a13dc2791bc672e24c317799d34b536e5b088d8a4ed4c5e8f73ae4d4d9d0d8202da2fc8c3350971e0d946b6b2e2095b11e0e4a54d9e71703"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-db.pem",
+      "fileName": "tests/assets/keys/db.pem",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "70119bd5611ed18ae4c7ad3b8fb59a87cb496b57"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "367f4d9664e0f4fcc52a79db963595efd689f07e83f8d14deca43e0f051d4a96"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "e7cf59d83111cf3afc443562daf0ba60bced42a0394b7cbea6e819b0242b0cfb243dd353a153bea0ace4d6313e29995dc7540baf31988fd0c7bc169a0e3c2adf"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-zfs.yaml",
+      "fileName": "tests/assets/zfs.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "4cbb84a2a9bd4da5df9e3a72be26a2ddccb6bf74c55b30d4de946de735bb5e1e6f0e242d98512f82ee4b54ffaca94d5e4da7e185590f092e60be42bc3fb003bd"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "5af44fa8e1b39cc7f01a0089a24ccdc12cd2d67c"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ed533b7d92c03c2a14b5f14218e2c7ef96db74a7507b87a746dff9c69598827d"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-configC95k3sC95disabled.yaml",
+      "fileName": "tests/assets/config_k3s_disabled.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "3088d3d43857b635e0fab3b0569085059cb3cbcd6d3a5b261126d489fa4eb33a421244223fb59aa28205679a41928700b46879143f1d1f0c618269fb43c20455"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "d40f8924c5bfe250e2e859854f1a2675e2236c6b"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "960f251e15e025298b7ad85d974fb9905dece23b674b888baa2ca4e48df1d7d5"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-20.04-fips-Dockerfile",
+      "fileName": "examples/builds/ubuntu-20.04-fips/Dockerfile",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f86269819e2e4d926645b6ca1297dff4238fbec4"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "05440cb5c79edb3b9daf1c9db633b0435f35fa78c913f08dfe8003ca8a9341fd"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "ce1833018295c0ff3e3b753d8b03fbf7f6ba645f61818362d4806eaf9ca629cfeff4da91e45bcd4fe1e0eb80ea99501dce6a77214b29322a06b4f386aa203f5e"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-PK.key",
+      "fileName": "tests/assets/keys/PK.key",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4ebdb33a6dfc26373d005b8de7f8e88a77a4069a"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b0ccf54e5e8b59c2920daaf9185bb9e011c4644e48f7ff1c3cdf0366a6d83e63"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "94f992801680a7b9ae2dc75b7ec04bb421d0edaf0fa0a7be855fc2f9837cdc7bf94a3301e33c92ea29c6e189f90981f26f3a6c45c937a6af488dfe345138d60e"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-image-master.yaml",
+      "fileName": ".github/workflows/image-master.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "13c79fccb37bfa1ac865bb94feb678f9887bfaed22ed70d6f7de744e8c00d131aedf57df9aa93a03db1db283c7b76e63b4fd3506a15684cb3908e52abe14f96b"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "01896db6be50995d04315c0505ec6c18ee97e048"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "75d9290da0503fe1568c1c28cc3056b4cc2435f66ce08ec191fdde72dfe9b490"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-rockylinux-fips-run.sh",
+      "fileName": "examples/builds/rockylinux-fips/run.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c1bfdec5e998ca079ce23ae91ccfcdd5ca9738da"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "13d440d96b30bcb3eac78ffc0a43f44b402bcaae1b8aa778269b7e3a0e9efcdb"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "41b313c3ae78551e0d1a599e7eaf56a59afacdc1ba8d3b08c6c2ed71155157e860055e6b7e236514a761a3bbd132557ddb596f0b19f68e6dad2eb047066d3e90"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-rockylinux-fips-build.sh",
+      "fileName": "examples/builds/rockylinux-fips/build.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "dddf95d96edc1836f568146b3287d0a6066556f2"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "02b40100b172810725067683641cc4996a836b64fb38551976a42af792d262af"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "d7ae674ac722f4d7a14ada2b45c80e24594c26215206a1717e7d366fe637f2f507176d94272498565f68c235f689cd0a1a6ca5747db9a8360aef70b921f902b1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-22.04-fips-build.sh",
+      "fileName": "examples/builds/ubuntu-22.04-fips/build.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "8eb0f12e9f009a8d8484510a628a2f7724a8274a"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "76a37dfe2046bd96f21d38b1410f2603c8b21f3ceeaba5005f04ca361c389f51"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "3028aadeb340f806aa0ec108b577b05adf94387fb8f129e3f95dfae530b53bdc7c846ead9649e4667d29c879e64784c5539d787a2f51244cd851904dc4337c45"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-encryption-challenger-patch.yaml",
+      "fileName": "tests/assets/encryption/challenger-patch.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "af660ddba1a3d1a03c68a48268b02f5d14c2c865"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e07fb85299ea0f2dfcaeb0530b5a36f5af2de621abd2ca690306dc3bb5d43f29"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "d759083c16d9dd0c6e21fa72267625dc7021f1c1ac42d414e8b1ea245a0908c0af6cb20ac17f1d6738562ffecc568dae2556c16d6197d62e8f21a2c95c66b749"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-PK.pem",
+      "fileName": "tests/assets/keys/PK.pem",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "2a4512564a9936b0e8cb534e3e86e52d396608ad"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f5cd89f06525e63ee090618e8f841e3b4be384064ee9789b5ee2a7aa5b08b45c"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "5677cdff2fc2662c7dd50448fc3b6d404c178c7b1549109ef2483b6fe1cbbc6b003cdfd6389af7c0fff4a68b42b4911af6a297d807b48b7d5519117be932540e"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.github-actions-find-ovmf-firmware-action.yml",
+      "fileName": ".github/actions/find-ovmf-firmware/action.yml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "10e216387caca8e44550293fd288639155220d59"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "191a572ae0146641d621fce3f0e5bff60edfa956b428ae24b863b1437e05a395"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "3f64f9cd61fc2c3f43b9147350d2af66130cd2b27efc212665a0bc3c6665bf8c0ad1a8a120963eabf9e8b2ead308ac3ab05c6bd8c1fb83ca9e81ac90ac62b128"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-db.auth",
+      "fileName": "tests/assets/keys/db.auth",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "49eec3df45c53682a86f5993cdddbad51e701162e53e29268bd5f4fbf02d60ce94048790cf65e1daef06ca289c3ce871638f43d5a51809ede47bc11fc70ea191"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6f4cf4d0c73931db24f8de99839098d9efd9ee64"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2279ac0bd2644cf9a1b5efc94b5139beb18012d57edb9c14d8f46cb61ccd19bc"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-upgradeC95latestC95cliC95test.go",
+      "fileName": "tests/upgrade_latest_cli_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "3ee289c15cd6a4c491adba4665ad3c3b30f739282f17c5cbe4e3712f407bcbe139dfcda7844f08bfb4ca1671a50ef8f7ce0f84be4108102a24e09ef2969eec80"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a25e59db25f46ad2d83ec6c9c35d58fe5a5c70ac"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "870781bbbfd10110fcc6a1d35de255f67dc0c35abcedff67941647905e502c5c"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-maintainers.md",
+      "fileName": "maintainers.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "2405961e4a38f898a7e743751cb00d680e2e1b62"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "52e282d359ed578472efc1a35851e267b2c99afe734e8d78952371283341ed66"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "2a0cfe3f037cf58d852d7e0ef3789de72f5308bf5c7117d327a11d34528fd11eda141642598639d1822a3139c9d62288b0e42a12dbb9c9771ab7a2d776bef712"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.github-CODEOWNERS",
+      "fileName": ".github/CODEOWNERS",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "BINARY",
+        "APPLICATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "9ae3915423d1f50f3bf55060e724b687c8e246db"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4802b04be8b57d1bfe42db23ce88372fbd1d3e4bd85fa24ca31039b34c321bdf"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "43744ce0bc6aabc6f6169690ea65c725298b215c58a11aed5ebf04c46bba9a1db00074f548fa3a304bf05eaedf88547f3b76064d431ca767f01991b8e32e96fd"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-release-arm.yaml",
+      "fileName": ".github/workflows/release-arm.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "94e391ddedaf8bbc22e20c107143f6c20a0c00e6"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1ddaebf70f9987cf49c59c98e7bd62447b25e8f9507c5fde095df2a17a65d09b"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "9b0258f2095e7ee8bfee9c6544cd5ed0770bbe71012a19e76976d83874ad35c141e03a96f1ad068f51b4251f3ba13a782d8486ec4da6dee27bb5e2c9b7ed94bd"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-non-hwe-Dockerfile",
+      "fileName": "examples/builds/ubuntu-non-hwe/Dockerfile",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f1e0f7655d7e276250a407eb91315d6a5eca5e78a07c46faa5d6a10ec2375efd34e5afe74ab49b060c99ed2721d739492f6c51cb285681d39469ac73bf6e78c0"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ae491a852f1f2b43a30416403f687f9e05680197"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "16d257812dbcc851730d864c973d1efd499d5944530e89acb7d30445bef9572a"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-rawC95image.yaml",
+      "fileName": "tests/assets/raw_image.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "83838b5ccbe442ecd348c8849d3180214417aa12"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8659da7419835e23d4ad14023284faf74398b556ca3caba69edbea9f4473b5d1"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "2bed5b91b0386feafa4bb9e70c4c271855342c638bdb1aef94fbbfd92d227ad64d4b6e5979371666e6ffb7a129751af34311e8c61537e0df0d64c0305d13981a"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-config.yaml",
+      "fileName": "tests/assets/config.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "886f703c4fdb786d47494bd6858f3aa7f4de9242"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2743bbef229d3e3340536e38b08b2bb6e0b26f588f5894f5156c9870f630ff6e"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "e115f8e1b764d6d34ed786e1fb25e57a2e96b1049a5f7ed10f4e2862a31fd015fd22fc064f9609dd51bf86e8d46ebc107fd0c7eaf91e27dd98003c23540b75bc"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-22.04-fips-run.sh",
+      "fileName": "examples/builds/ubuntu-22.04-fips/run.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "13d440d96b30bcb3eac78ffc0a43f44b402bcaae1b8aa778269b7e3a0e9efcdb"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "41b313c3ae78551e0d1a599e7eaf56a59afacdc1ba8d3b08c6c2ed71155157e860055e6b7e236514a761a3bbd132557ddb596f0b19f68e6dad2eb047066d3e90"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c1bfdec5e998ca079ce23ae91ccfcdd5ca9738da"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-efivars.empty.4m.fd",
+      "fileName": "tests/assets/efivars.empty.4m.fd",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "b62e676c9317a32aaa9ee1d76268d8c55663bd6e"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5d2ac383371b408398accee7ec27c8c09ea5b74a0de0ceea6513388b15be5d1e"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "448412fd7ba267b4180db8ade6edb67af467e5b9b3e3ff8dfd583a2fded4070f6951667297e6896ce8bd9f4d2ec3dd8a5a70b6e9a2f686efec9a57124fec512a"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-sysext-README.md",
+      "fileName": "tests/assets/sysext/README.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "81e46a522d5f73f6ec9e561820b24ea512250265a488246e07d02efaa86c6c57babe038412a6435c87a037b465a0571aa27caf502230b8688e06e087ec60c211"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "45e3eaabe1575bae1163995944dee56c0174eca9"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "86b1fbbc9ebb9796df6a7dc15f85c8ec078e3a616d82f03d5f2010a55fa07a62"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-20.04-fips-run.sh",
+      "fileName": "examples/builds/ubuntu-20.04-fips/run.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c1bfdec5e998ca079ce23ae91ccfcdd5ca9738da"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "13d440d96b30bcb3eac78ffc0a43f44b402bcaae1b8aa778269b7e3a0e9efcdb"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "41b313c3ae78551e0d1a599e7eaf56a59afacdc1ba8d3b08c6c2ed71155157e860055e6b7e236514a761a3bbd132557ddb596f0b19f68e6dad2eb047066d3e90"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-auroraboot-master-template.yaml",
+      "fileName": "examples/auroraboot/master-template.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "cecdd6c4079c17bc0fb673e23b1ea0ed538783f1"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b99eceafd157f1799caab3b98fe93d5ef391f12530b711617767237f908defac"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "d5458176644a6b13d3310cf39efb728e7c5e3175b81531d3776aa0a14318c158f4e3f09583269b1b04a6afce885e3fadde97d3ddf12ed1fdccbf0e9b2e0a92a3"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-efivars.md",
+      "fileName": "tests/assets/efivars.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "757005ac47e76f11d9db3102da8ce3b9ef9df245"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "963f9b9f6a6ed4795d91a2bccd0651aded3883ce1f2a6af0568df13f8b8aff32"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "1bafd5e7501d707c58b9a12210a46191ac2f357dd28df21d5bb8ef8b529dc585f848014cd008821472c2d731a11f0aa67805a7819dd15d07eb0eee6b061cc8e6"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-24.04-fips-modules.fips",
+      "fileName": "examples/builds/ubuntu-24.04-fips/modules.fips",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a3bf27a7a4b316752ab094868bf539bca7a5ead9"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a9ebb6d05a30fb52cd16b16e9b956687ad2d526878c2aefc254960eb9208f538"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "93218b8b48104e6b17d20ac176729e219c0e567952095744d250f5a62e20a8922a0e2273adeeeb8088c00c430e49c3bd0b5b20131015279436b68c35f40ae789"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-fedora-fips-dracut.conf",
+      "fileName": "examples/builds/fedora-fips/dracut.conf",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "fd573e5ad6fd38aa00364b8a3d43d3d88b075342a02ba604c0ce4759a45bc763a79d18c148bb454b547bd530fcf168d3e2e9f0572718b0cb53890820aeae9477"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "82179a860cb8294e275accd83cc61318fc35e56b"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0ddab6e80c671950f27b4fa1e327283b5062b6865ed5267ec222ffb7e41f09d1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-CODEC95OFC95CONDUCT.md",
+      "fileName": "CODE_OF_CONDUCT.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e77fd5f7d7f2aa9b56d806f8c254f7d6a01fb2d558ceaedd376bfc2f417d453f"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f00dba8db2e0c5d854bacc4f41cb6d1d16edb7e27a03db8a9d5d24b084a29f4b4cd6231227e9a7a2dd6616af5f84382ba159e5c1080255a3efd7c464dbc02ffa"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "0e29b42f0b2372199457cd13110daba130eba92a"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-providerC95k3sC95disabledC95test.go",
+      "fileName": "tests/provider_k3s_disabled_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3b9371a82dff2130ec967ac6491dd4ceecafdcecbb338278092d4f7b6a675102"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "7755613cf80de7fa4890f925cd0cfd6dda1ff269960fd6096721a9ab4671fa592b43305cec2c253995568a1499836019acfcae5fe53a87ce3e82c769443e4d35"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "8394545a46068dba1d862c48d2942242eed223d9"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-adopters.md",
+      "fileName": "adopters.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "df376622a43828098f391d6033b2847cefa76a32172afe5780a2c6ab6d9ab554"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "976f41fdf462f9b4afa5b35779259741b9470845c96affbb615fd66472f55833cfcf7e5ec283f962883b5aeacb26878a10fd33c1ab799886d6a5d366c77d066e"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "798373b2a46450cc7b667e017a3a2b17900b1826"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-kubernetesC95logs.sh",
+      "fileName": "tests/assets/kubernetes_logs.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "34d47787b79e00a6d36a53f8926a6e43af5a121120606dbb50a4be12929c275c"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "826193e54cc860cdcaa4f1b024186ff82a0ab1f256fbe46ed7ac4b91697910d6a0f2957a8d2455c12e60debb5e8e9117583d3f8ed8409cd584323b5364549806"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "27637ba828f0cc57ea165699959d3b89883ac114"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-testsC95suiteC95test.go",
+      "fileName": "tests/tests_suite_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "2206c862d682b30f651e965b9c71140d00dac80d"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a78fe2eceac841a5d6634c77fde378cf9abf6678759c98f4e0b3868b832f13bb"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f5040510fa2b32452fb0cc0c36aa91cfa834e0b539432b77308630ec1408c786d56cf34cc4f3d3be7d2792205814801e41880aaabb3c456692c8d78b0bae2ce2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-installC95test.go",
+      "fileName": "tests/install_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "09daa4a37fb108e02a5fce3d94c86e3f336becd2"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c16193a122025ce6669f7eeeb2a6ec86a83759195ca410d4794981cdc2c6d486"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "6821905ad8283a533918ae7d1bee2abf25643d6bb662d0bc49ab0e198a4bb104cef61aaccdbe305333f5d29dcf8e05e8700b9595c2166c1ca1f57cb19792c352"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-encryptionC95test.go",
+      "fileName": "tests/encryption_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e7213a6d4a65679601266906a7cd724ede30bdac"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ead252685fe76a82e21a043d456703e0ecdb5e939d14583690abfe4e729c7b41"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "5c25c8dd801d5a3fec99d9ef731dc117b496e2be84d0e29d8735f908a71ab288acfda9801c24d2037799432e1ff135db408b62c87cf07d9eb87083cf5dcb6c81"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-customC95partitioningC95test.go",
+      "fileName": "tests/custom_partitioning_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "5c71bbeb83b3524374a69164f3acb847b33ef7e40f62578e11df41647f3099c55d5acac3827779bd9fdce558ee4f3bfc016693fb4ef4521620c82195f97f902d"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "71325cfa2fad9ae29087ffce17deaf466dc51df4"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ac6dc843f1152f2d5ac5d2b4510e9cd18152039f383bcc1d09127c9ab1f1c3e6"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-KEK.auth",
+      "fileName": "tests/assets/keys/KEK.auth",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "1befbf3d66875781dd4d72e23e2e2dc9409213b5558d5934485c5810d3fef07b452bb877b5c3210f0efb4e102f30a319878c2d61635cd600d37e0fcde646fa35"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "d5aa8db5e8deb6616c15ccee0ddf19e0511a9f33"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f94e99e841b3353cad24e399f4a481e3188ffda7046b148a80bbcc485b0448bc"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.gitmodules",
+      "fileName": ".gitmodules",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-autoinstallC95test.go",
+      "fileName": "tests/autoinstall_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "8f8162314d83d1b7f7b2a4129bd2e74ffdfd746d"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f2e7711a675f0785c35f034027c6d0dcac81cdfb181efc28608a54e2a304b0db"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "a50d9f19eac298fd835f2c1242964d5bafdef652d2a5c66c1409eeb3d8554aa5404d6523fc9398721f37adef1b4c1427bbe05e162c753e05e9096ddabb715a5e"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-osv-scanner.toml",
+      "fileName": "tests/osv-scanner.toml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "92dc85d7578ffb5b9d07c69a18e425b4e0d4031db34191e7251abca469a1e1bb"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "988e0b0bf504d051bd9a8cf06e23c282e849f4e37ea75605931e38d8639338a6e1cf04cf53c2052d92678d262e355b67e960ecc6d1ed41995c3f10ba29b3dc15"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "1972638f36c492e4f94693066a3735f5cc5d912d"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.yamllint",
+      "fileName": ".yamllint",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "bc2fed7f44ccb652a67b9f59d27fc2efc8f732ccdf958ef76de975e65512f864"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "759c2b76b1d9e226fd863aea4090b0909e18b89ba5fc28064efac05dd9e87c8c1cac101fd955d9f400757eb9449937dddc32cae3c74ecec499da973ead2fb3cb"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "3c4248c83b6c16936a64469f0891d4c3ee2e4fe1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-vote-monitor.yml",
+      "fileName": ".github/workflows/vote-monitor.yml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "21fc11e29bedacc382a7831d4260e8d5eb5648a5"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "83efabd633650c35b9ff2cf4e7609b886248fdbe6a74f3bc5e5cbf21bab1d417"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "5f3a5ccdf2d9f58e62e82d8280c01564982ac5944916bd29baa7a04303afdfc2df4c29a7b7d11c3080278c1ea07eb99f8e55ebf40382fddd72d191a18c489f9d"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-images-Dockerfile",
+      "fileName": "images/Dockerfile",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b04111e9f1406ec0504f178fc08c1f6341856cccf15ed26e8406ea56766cac24b9d36c00712bfa775e3610ff9e065b0dd6d374238d169c900913399c60367689"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ff9f8661befb4c4baf865c8722075eb5ab5a92ec"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4e84ad65bfa281af67287e5833fb355fe307a1d70ed73fd8fbd05b623caef6c8"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-PK.der",
+      "fileName": "tests/assets/keys/PK.der",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "beeab956250dc18b3194ecda232614218cd3548d0f9a29b925cc9137dbc6fc20"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "c3898a11e553372d5860c4d2b0de474c022e67665a7163bca6b8c15221eaf3f27cbbcf982e54a35b728611fa5c3fde90807d4022b1c6e249107a370a10807c5d"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "13d71870245f52dda3a83c00a2da6f8258fa178a"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-KEK.der",
+      "fileName": "tests/assets/keys/KEK.der",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "11d4345ec6285a335d091a2c9690b8665b178d94"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6fed2a0e8fffe25bab5d4f3b5fe22610dcce1732539926d909d810b19ee7479f"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "a178444ec3715665ab3331c2ad2b3ccfff6b6ca4f8628fa4d87ec0114f96ce3ed2cdf8e9ea4c79a325cde32a28078ff2d3525a39ca3d049ab4113ec2c0d7e361"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-cloud-configs-wifi-alpine.yaml",
+      "fileName": "examples/cloud-configs/wifi-alpine.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c0615fd72121abc39cbde5576030abfcd9fe6c33"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "eef18cceadbc8443861d548bf0de129679397be1a598ffa871ad7b8555d9db38"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "e976201d86b486e6ced154def3cb419507a7d3cec4266edf5de74b072837f7ab10fe8f270db07e2df27039b71ba9b1be613f9054ba9a0a881762c6ec3e84ced9"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-efivars.json",
+      "fileName": "tests/assets/efivars.json",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "70c1c346e3dfcbdb9280128d3628b6ac62553f2a"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b15d4b26880138c09980c874075d0fd964c2058e6145610aca8a8b27fab08ff8"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "8ce3e2655835f0e332dcb30515287eee1671b5d72f2075a89afbab64563dd09330dfe6d373a2597e0c9a6c36d93ea23afb216dade1151a2a5a51dab6fb902c5e"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-bundle-Dockerfile",
+      "fileName": "examples/bundle/Dockerfile",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "9a1c5b2d0b35d5dbdf5d125ee6f651e18f051ed6"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0bb3277915a295e9e2a8bc3fa66390b3d9c5179b707f95c80c2ae072a7227de4"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "00c7cc0635f370b4c135136588261b14628223e1e727261e1980f1b736a1ffe1b997ec832218d21d08fae26150da48b122a8ab4b6ec03864ea030cf48e587688"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-upload-cloud-images.yaml",
+      "fileName": ".github/workflows/upload-cloud-images.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "86182e154f3fd67b85faa0899bd259cd393b12db"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9193e6106140da76c39f7fac3a4b8f1fa0913ef7c4096fb00bb1770f8b52cc6e"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "df5460194a3f5963855e306212040731282d31f59de56aa9e7cee8678dbdf3a481c03cde64e1bed6b07c660a8b93ae5c02140e432b9561ed549ed60edb902aaf"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-README.md",
+      "fileName": "examples/README.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6e6488f6fb34adce2e09b8040598158bae49a340"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a8268ee8a8c129262f16d29bafba11c0471f93a46f00392b12a007158b81bd42"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "17979d03fe283775ce908770860dc730eebb670a9d4b1c9cc7a3339f30f237d30330750bf13c0d0850416a29f278acfd3188ae87bb695021b84e10146cc6028c"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-sysext-hello-broke.sysext.raw",
+      "fileName": "tests/assets/sysext/hello-broke.sysext.raw",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e528bd54d6718bf20861c01945f5d22784453280"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0dfc66728448ee30f97e2cfe6edae421d3263dbfdbc4c2829bb5db0ca3da7746"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "79c3e9639a707ba0a888b817a6f8986f1390325bf75a6d7778f896ce0d86f194dc5af02fa88bf8ad63d7787ba9feff80a54952789e8e9d578210a52fe76bedfd"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-fedora-fips-README.md",
+      "fileName": "examples/builds/fedora-fips/README.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "d7ffa1237382d8b966178919ad13a00cbef22a8a"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1534157c6e7e0df8d3eabacd77f74b73a0107562c3351a40e9f259bce00c0b68"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "404547513e1c3571cfee5a29b7b4eca635f99ca0a070e5b021db041e1a62438fc045d25d4e96a29f9295d36b624aec8ef1202880d5fd3c425e1f9a9cf8d9607a"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-KEK.esl",
+      "fileName": "tests/assets/keys/KEK.esl",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "2ea90c1ce9d1f3844a18d82cd6c5ae3b5f62c5afeed40b26e7412c1b2db8ec56aaac10a7e7bb700ba7b780c8ef56f3a1c6dabc955a6470a8d4e8ec0b41c4ea3e"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e62fdf3f7d0bea252db7219cf6a69743ebbe70f6"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8e032e54a3e14dae6377a386947a1125f7b01cf79b87163d492d3dfc1b1ba24d"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-README.md",
+      "fileName": "README.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d70f95f2c72e11be8d766df9c7a3dc36c572aa42dec2c0d22f03dd9b4db68354"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "8374dcdf76621919e63f33225d1cca178aab6647ef8f0c98e943e5d8f891d9e7938a88557146dcdf4fce8cf917ed7582614ea59370d374d3db2994d3c332db66"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "8e251a05e25b9b59e0975e1c3fc3ae483567ed68"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.github-public-cloud-test-aws-image.sh",
+      "fileName": ".github/public-cloud/test-aws-image.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "327228c3f60ac11ffa985111f2d60b55e5338747fef60c5c9d23804b7a2f2ccc08aab885ba42544e25a82e50c9501b7e9f1e943f5b804a0491d3f2564754a54f"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "df1f34d31f97ecd9481fd0db697d7b58a1eb38e1"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "338bf4620968607bc9947159ba6addfb808124bbe7709bbf55418573abb9fb22"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-24.04-fips-Dockerfile",
+      "fileName": "examples/builds/ubuntu-24.04-fips/Dockerfile",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "0d5fda8745f5e1977a1e898361269323450261fd"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a776eb1a0a7268796f821ea92640617531b3c7229e749073bbfa829281c13440"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "c03927ab4ef1cd42fcc48022ccfee21a81a868fbbd6249ebafa3507c41290070dbf3aaae7a0638401f5920f322fdd8c11886c0f6165c960b2a43d088d770c4d6"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-stale.yaml",
+      "fileName": ".github/workflows/stale.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "8a31683b654f29113b67abc4ec1700286f960967"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f9541df36d05896133a6b7508c7734c636a183681f5ffe37a087d45d3b5cffa5"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "6553e2a2ae15761c36c491c14b2f22d4174877230fa070692f618759376e5ad4f5d141712ff560deb425441c8e901c6549e55ff62e2bae4289ac31eee591f27e"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-22.04-fips-README.md",
+      "fileName": "examples/builds/ubuntu-22.04-fips/README.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b7adbc5025973cdeb863f792c0fbb01905277587de19a46a0a9d9d52e85fc5cb565cd41cf5e2e69ac63bf7b23e1eb9a1ef804363025994d43c6bc605e3e7a172"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "63ca819795baf416e600165e01cea16326cdebd9"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f0c1e3bf16ac678a37daaf2d29997fb35c44eaf7c6010d123c10e3b43cf02d62"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.clomonitor.yml",
+      "fileName": ".clomonitor.yml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a945c2c8cb2490c519bf94ff2528d8c6a611e9c2"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "246e8d0c2d49af0ab75a3279e772c8953013dbfe6f22f9185290ad28a8e031df"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f7ab36c7295852ae884aad1610cd7339b7e97287ced1f100c9f3fd9945df8cc3ec54e257218df893ada8d68ab5e3e14ba8e0c5557bdba037e279860932ddf5dc"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-osv-scanner.yml",
+      "fileName": ".github/workflows/osv-scanner.yml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "47f90afb9660f78edc7f51e7cadb924c32fab2a5"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d90d891bb3c8df6fd90cf79062ae5c868e1eeab71027fb0edf5eb0e8a18e8999"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "918db9ba23b96eac9a34a584cc72c8b209069c08247e5940fc67cdc67f4fabba52cb12b1a18733636bcb04a1b9986caab3129ab47a96bca47f2688cc0dfbad1f"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-lint.yaml",
+      "fileName": ".github/workflows/lint.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7bfabad464358243c30068fd081c14303219874d17f152bbf17f25e5e3165724"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "5dc27ab439447150dc19c9458557bd901f323590e3ee82820e9167ae4e0ecda1d3315afdf4cd865232aa2d1524ed716be84a2f6ef0ded3cd0a7593982892baf6"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "126daed70afacddb4e2a1819ba03e982e87aacfc"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-uki-assessment.yaml",
+      "fileName": "tests/assets/uki-assessment.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "751e30e4c0a69e39b32ee5f60429cdd9cfc47661"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "952ebe62983bdb6c59eb9b56f5d8dd7196b9d617a4723a44aafa562451b3f1e2"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "2772141858dab6271d5b3c2d4901ccdb7d2c2a87eceedd292b3967257c2b5274c72f1cb84147d9f4bfa41bc3d161c07c2d0c29a09c2f5dcb29e1685455711d34"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-22.04-fips-Dockerfile",
+      "fileName": "examples/builds/ubuntu-22.04-fips/Dockerfile",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f1066839fca848afaa81571b8592dd170eb539c1"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "22e54aeb375c76309d7d4d3f5f89a2be5545d9f39378a0294425493bfade132f"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f4ddfe23c6c24620c8f72ca62795514f058d51efd5ed9bfcc2137733c0efe86500df4b47edb359142ea52557fa84fc2288a32ac74e4c5ae0bf3fdd130631380f"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-cloud-configs-master.yaml",
+      "fileName": "examples/cloud-configs/master.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "909667b1736d4db71a22b6359959322cb6d4f626"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "667435d870a01c8ff803f65ab4416c31ef1ad0b070fb191efc63423d67c8a96e"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "02742698376f6bd7c5f7a84cee0e426f2bd488bdfad201dbb54c5f79a72b221ad5fbc70d6b2a17c7953c2dea9e39cc9d875a2233bba71dbb5774966473e29077"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-SECURITY.md",
+      "fileName": "SECURITY.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f0d13be7f89d7bb80ed762c7e0618e15d81958e9"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0ef367bb136b86af6277db35ebfb07b16b1c9f9bcc7a7decfd5bf07f28290309"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "d0a2a70227e94ff2295b96337cfb88adfb9794f259c89513fc1f2564b507e8aae174ef4143ee10596cf81a31d7ee78e0d07fc161afc07aee0bf4d19e0b4add1f"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.github-public-cloud-cleanup-old-images-azure.sh",
+      "fileName": ".github/public-cloud/cleanup-old-images-azure.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6ebcea493156d091e2c4e48fa4b4ffbbf9317afb"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6ad7f57760baa590f4ab8f81a82d79f1bced6c37e7f86c306624785f2c1263aa"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "72834182d22aa8167c508253ca0167fa0c4484087365c0d611107631f9e935781acaf8412df48db98b610e3631973d1101762f3a1f5fd44cc2c03af1a53a16fc"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.github-public-cloud-cleanup-old-images-gcp.sh",
+      "fileName": ".github/public-cloud/cleanup-old-images-gcp.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "631b5832b717008d6a45427a2b3a92bd7170a1be256e1ac0e1971703e0061567ff35c12a67a5316835e7f352da2aa8d2eb336c5592d0dd3c7572751004a6bab6"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "5e9e59a3aa9c4332620dc896955cdc626dd9649f"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "36133c8821d38162d3b29cfbac209a726d6b675963b39cbf6b7322cf47cea450"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.github-public-cloud-test-gcp-image.sh",
+      "fileName": ".github/public-cloud/test-gcp-image.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "cc331389aecd12ee19b3cde96d08b006ac07951adb3faa55b9435f2160321340"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "0618797db331cb6c0fd00809bdcb8689c566902188ddf2f967a84cabacfca8c871fbbdfac31746d78f0b52bcb3b3c6cf364ddc5edbe9a676dbf1b34906f811d8"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "0485850eefd7f6f57eb5bba7adca00aac4752332"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.github-ISSUEC95TEMPLATE-contributorC95nomination.md",
+      "fileName": ".github/ISSUE_TEMPLATE/contributor_nomination.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "5c10b8d36e39b9b13bfba9ea2b64d4c6e1bc112d"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3b32c078e35c5080d69caa3d4710c5f2b7d3bfd998d99f4ece90ce261a4f8f96"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "55abcc8350547a2abb17477e53d0c903ee83b28f34c194475626a7c7953ff8de72924fa17dd07d2a0970e2f48f04598299ac13af6c862b4aed1ec816a94902a7"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-providerC95upgradeC95k8sC95test.go",
+      "fileName": "tests/provider_upgrade_k8s_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "cad948bbd9441861f628f68055c40ed434995e6f1de362ad40de1a269cacef65"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "4829100e645b655dd97e0d6cec7bc20e991fe08e6d1493dbac64165066cc9b16d87ec609e8847196f1f6a4c1225fe54830f80ae580ed039d626c83613303eb39"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f7de1ede9afd510f32de0506eb74b53e0f34651d"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.grype.yaml",
+      "fileName": ".grype.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "57f18f3fa9561c1e2ed45c7a6ff06ba3797cd46de361162d4aa66f02676214eabf0f0afa12c56c9f4857aa0c639529b6bcfdf5015f97577027d3c9e80776cca7"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "97c3507edefd4e301a1b2d33bdb22fe1f9e8c9ea"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c8503aa0a74af8ff3e9374ae6161ebb287ee1c4167ffec9b927b7b1b06d43dd8"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-upgradeC95cliC95test.go",
+      "fileName": "tests/upgrade_cli_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b57e64fe5d68c208a138edad837ffbda3ad580c6e424c5b39a7d05fb3a5afa1b6405a4c3aa3ecd70ed49aee273671915f68a6e73384cac7b268a603bc95e547e"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "8cbac34fc3c1ab2bac04eacc5bc46680d0d0f0e4"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c70c956736da3696bfeeed334b85c887c98834dbfa8683404f0fdd36b8faab96"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-efivars.fd",
+      "fileName": "tests/assets/efivars.fd",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "62db4556039079842c54287d8172b4fd3a8363f56c56836c4a43425393dfdcf71549ba8191b1358d68d3a116271d6378306e2aa4b8426ddb47dd1bb661de3800"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "3f5bf9e8131b07bfbd3b0ec91ec2433a8756389e"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "646e3186e88a3cdf3faa7332dd0e5df7d2612ec5a640ea9434cf2870bc91a235"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.gitignore",
+      "fileName": ".gitignore",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "703aa3a7617a2bc4e2390ef0d5d84f43a570ce30"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "96ababec573a803a20a2be1d413c0d498b2627dd7c733b0dd4441f97fe1a8264"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "701e882ca4a6138864bcacdabb4a412f502124ca9c747880700baf15786b1e2d11582367b760a5c8859a203f748d00f123d8aa42fda8c191ea9d6f7f7cfbe43e"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-cloud-configs-single-node.yaml",
+      "fileName": "examples/cloud-configs/single-node.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "02742698376f6bd7c5f7a84cee0e426f2bd488bdfad201dbb54c5f79a72b221ad5fbc70d6b2a17c7953c2dea9e39cc9d875a2233bba71dbb5774966473e29077"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "909667b1736d4db71a22b6359959322cb6d4f626"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "667435d870a01c8ff803f65ab4416c31ef1ad0b070fb191efc63423d67c8a96e"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-release.yaml",
+      "fileName": ".github/workflows/release.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "fc7a47c661bd9aa730d62ccde84c7490f086d378"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9b2e6e9fd3ce95019dfa42bc2db20cf4edd8d9555bff6bfa2a27914a83ef75e9"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "e79e654c9489eca8cba9a8ac2845c527ca45867263b5a5486e212c618fef289a615d78a445811c0b27624531da8d54dc13501e6e4cf9d70ec270eae85e4a36dd"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-nodeopupgrade.yaml",
+      "fileName": "tests/assets/nodeopupgrade.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "5d66f46c7c0d1eca2ee2588e7b50d11f89d633145aaea95967d43904248f5fa6ebed1295242a9366f8a912f1d1dbe0a12f34734c9fbd7e2a5cb88afedf0b8071"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a86d98a5b040940d574d96323123a7d666397874"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2b4dd4ca0fc058bad69ef94ceeea3e78f0def349d774206964acf3be365a6f6e"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.github-ISSUEC95TEMPLATE-config.yml",
+      "fileName": ".github/ISSUE_TEMPLATE/config.yml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "0e077128133abb180569a3155419f94ed41e27b7"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5bb80648d3ba16f14bff2f02c95c2425a27b2800204ea6ceabf5a8c23faacf69"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "fd412943faf5c8cc325c573d0e126b1f927b7ad977179910cf06615ea23958a5832f46f649fde3d05e3e6d51df936e9565fc45586ec907835dbbd353cafbbbb4"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-build-examples.yaml",
+      "fileName": ".github/workflows/build-examples.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "8739c1bc6001b5a7dfa1d496ba9823b197c9a733ceb093cce8f26a04f81c53d77c6dfcd082e29026905f6c870125d23398068f379bf800cd117ecdc8cc7b6695"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "bcaf4bf9f81afcee9ea9da1510efeafc66f55c6f"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "79faa606f41dae24abef57a40a549d0b76ea759be50c732e6315b7f29d66df92"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.github-public-cloud-upload-image-to-gcp.sh",
+      "fileName": ".github/public-cloud/upload-image-to-gcp.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "60182044dae5e2645d490a2cafb086e52cfd78ca"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "54ff09a50d5733c3fb45f4867aeea0ba2987232f5e11ea72fc603cc857ae9ad3"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b684c021e29e333be4fa3e9b6318cd0d9b15f216a3a36df5d703e2f7abbac7c01f92ed54ebe61b2f379bd468067d46e75757581447c88264919bb514fa448dea"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-scorecards.yaml",
+      "fileName": ".github/workflows/scorecards.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a48165b2871b8fe69160bbb39f7d133466e7dadb"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3d27564298b782e4b3c680c5a8a63cbc568f48f5fb4d14713c8cf63c26b91c85"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "9fcfb6befc7264cc2de4c656f040b1698cecd0f4fbdcda3050450ba47e63cbe18ffbfb434a0d11b75aea8053b6547880d08fec4274e60f28bde522f65a805e60"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-fedora-fips-run.sh",
+      "fileName": "examples/builds/fedora-fips/run.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c1bfdec5e998ca079ce23ae91ccfcdd5ca9738da"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "13d440d96b30bcb3eac78ffc0a43f44b402bcaae1b8aa778269b7e3a0e9efcdb"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "41b313c3ae78551e0d1a599e7eaf56a59afacdc1ba8d3b08c6c2ed71155157e860055e6b7e236514a761a3bbd132557ddb596f0b19f68e6dad2eb047066d3e90"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-bundles.yaml",
+      "fileName": "tests/assets/bundles.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c87059aa228080cf3a3c8a96a03788678e19f1e0"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6ca4d5ad33b1e1a810995a2caf0a3c4abc89e6335f3fd7642ba0b3bc71b9d545"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f2c95634513fe9ac168cfa97a3b86c3ae2450e92d0e22bbe91663a585cbfe6370a94e0a58fe371ed938a7617f8cff872ab17f651fe18029e483b44f306eda92f"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-tests-resetC95test.go",
+      "fileName": "tests/reset_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5eb449d610fd021764a8da807cd3386a5ac6e831b346c329bf586fbdb744c0d1"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b8fcc849512bbb72c7ed372222befa8f03c76377539dc42008b5484004e21eb7f88d83068059ec35991a444ad21ee3e0762197d7df5564b21cde0684f2b1ad56"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c8936db4fa212595be5b2fed52a8d4762ccb8c02"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-image-master-arm.yaml",
+      "fileName": ".github/workflows/image-master-arm.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "991bcfc1689a803fd114c489d2664550b8cbb03d"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a96dd0fd0e4b888b47d2eabf17a5f36358c3759d8dbce562112fab21152ab222"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "ca2ef6755ab43bf29c6182496b69d07a12ddd531f1a13670b3abe05bbe9c1c1305cd3b4ad93f099213d350464f94cc7718cd7e41b557bf51c35f81dc6de480c0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-20.04-fips-build.sh",
+      "fileName": "examples/builds/ubuntu-20.04-fips/build.sh",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Pixar",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "2d6d3df6e42d80f2efac099bb10df444029e1b28"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "18ea8ae4bb6a53838531eed0d7be2b1fcc8a7aa4cbd3f55bf91a3ec0ee547644"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "9b5778e26b9e2a221b9e1c4bf33c6bd1a914f029cdae8d344ee6fc9f546143852b3aa328afc7a35c25cf8cb049c5e42aaa45eb0d076acff701d234394beb8ce4"
+        }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "name": "tmp.ddcUYvrQSn",
+      "versionInfo": "",
+      "filesAnalyzed": true,
+      "licenseConcluded": "Pixar",
+      "downloadLocation": "NONE",
+      "copyrightText": "NOASSERTION",
+      "hasFiles": [
+        "SPDXRef-File-tmp.ddcUYvrQSn-.gitattributes",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.github-ISSUEC95TEMPLATE-config.yml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.clomonitor.yml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.github-CODEOWNERS",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.github-ISSUEC95TEMPLATE-featureC95request.md",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.github-ISSUEC95TEMPLATE-contributorC95nomination.md",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.github-ISSUEC95TEMPLATE-maintainerC95application.md",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.github-ISSUEC95TEMPLATE-release.md",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.github-PULLC95REQUESTC95TEMPLATE.md",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.github-actions-find-ovmf-firmware-action.yml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.github-public-cloud-cleanup-old-images-aws.sh",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.github-public-cloud-cleanup-old-images-azure.sh",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.github-ISSUEC95TEMPLATE-bugC95report.md",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.github-public-cloud-cleanup-old-images-gcp.sh",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.github-public-cloud-test-aws-image.sh",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.github-public-cloud-test-azure-image.sh",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.github-public-cloud-test-gcp-image.sh",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.github-public-cloud-upload-image-to-aws.sh",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.github-public-cloud-upload-image-to-gcp.sh",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.github-scripts-create-onboarding-issue.js",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.github-public-cloud-upload-image-to-azure.sh",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-build-examples.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-image-master-arm.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-image-pr-arm.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-image-pr.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-image-master.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-lint.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.github-encryption-tests.sh",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-osv-scanner.yml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-release.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-scorecards.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-reusable-qemu-test.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-stale.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.gitignore",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-uki.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-upload-cloud-images.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-vote-monitor.yml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.gitmodules",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.gitvote.yml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.grype.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.hadolint.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.snyk",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.yamllint",
+        "SPDXRef-File-tmp.ddcUYvrQSn-CODEC95OFC95CONDUCT.md",
+        "SPDXRef-File-tmp.ddcUYvrQSn-CONTRIBUTING.md",
+        "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-release-arm.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-README.md",
+        "SPDXRef-File-tmp.ddcUYvrQSn-adopters.md",
+        "SPDXRef-File-tmp.ddcUYvrQSn-SECURITY.md",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-README.md",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-auroraboot-master-template.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-fedora-fips-Dockerfile",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-fedora-fips-build.sh",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-fedora-fips-dracut.conf",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-fedora-fips-README.md",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-fedora-fips-run.sh",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-rockylinux-fips-Dockerfile",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-rockylinux-fips-dracut.conf",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-rockylinux-fips-build.sh",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-rockylinux-fips-README.md",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-rockylinux-fips-run.sh",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-20.04-fips-README.md",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-20.04-fips-build.sh",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-20.04-fips-dracut.conf",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-20.04-fips-pro-attach-config.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-20.04-fips-run.sh",
+        "SPDXRef-File-tmp.ddcUYvrQSn-LICENSE",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-22.04-fips-Dockerfile",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-22.04-fips-README.md",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-22.04-fips-modules.fips",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-22.04-fips-build.sh",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-22.04-fips-pro-attach-config.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-22.04-fips-run.sh",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-24.04-fips-README.md",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-24.04-fips-Dockerfile",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-24.04-fips-modules.fips",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-24.04-fips-build.sh",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-24.04-fips-pro-attach-config.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-24.04-fips-run.sh",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-non-hwe-Dockerfile",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-bundle-Dockerfile",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-non-hwe-README.md",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-cloud-configs-initramfs-stage.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-cloud-configs-master.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-20.04-fips-Dockerfile",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-cloud-configs-wifi-alpine.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-cloud-configs-wifi.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-plans-networkC95tokenC95rotation.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-cloud-configs-worker.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-images-.hadolint.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-plans-system-upgrade.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-images-Dockerfile",
+        "SPDXRef-File-tmp.ddcUYvrQSn-maintainers.md",
+        "SPDXRef-File-tmp.ddcUYvrQSn-renovate.json",
+        "SPDXRef-File-tmp.ddcUYvrQSn-images-Dockerfile.img",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-autoinstall.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-bundles.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-config.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-configC95withC95reboot.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-configC95k3sC95disabled.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-examples-cloud-configs-single-node.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-efivars.fd",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-efivars.json",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-efivars.md",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-efivars.empty.4m.fd",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-efivars.empty.fd",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-efivars.4m.fd",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-encryption-challenger-patch.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-encryption-cluster-issuer.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-encryption-kustomization.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-KEK.auth",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-encryption-challenger-server-ingress.template.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-KEK.der",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-KEK.esl",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-KEK.key",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-KEK.pem",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-PK.auth",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-PK.der",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-PK.esl",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-PK.pem",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-db.der",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-db.auth",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-db.esl",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-db.key",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-db.pem",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-tpm2-pcr-private.pem",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-kubernetesC95logs.sh",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-qrcode.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-nodeopupgrade.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-single.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-rawC95image.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-sysext-README.md",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-sysext-hello-broke.sysext.raw",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-PK.key",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-uki-assessment.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-uki-install.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-zfs.yaml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-bundlesC95test.go",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-autoinstallC95test.go",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-customC95partitioningC95test.go",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-go.mod",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-encryptionC95test.go",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-go.sum",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-installC95targetC95test.go",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-installC95test.go",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-providerC95installC95qrcodeC95test.go",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-providerC95decentralizedC95test.go",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-osv-scanner.toml",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-providerC95k3sC95disabledC95test.go",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-providerC95upgradeC95latestC95k8sC95test.go",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-providerC95upgradeC95k8sC95test.go",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-resetC95test.go",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-ukiC95test.go",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-testsC95suiteC95test.go",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-upgradeC95cliC95test.go",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-zfsC95test.go",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-upgradeC95latestC95cliC95test.go",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-sysext-work.sysext.raw",
+        "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-efivars-aarch64.fd"
+      ],
+      "licenseInfoFromFiles": [
+        "Pixar"
+      ],
+      "checksums": [],
+      "packageVerificationCode": {
+        "packageVerificationCodeValue": "88209d486c77e9ab9a2fcda095fdc07925a01cf2"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.gitattributes"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.github-ISSUEC95TEMPLATE-config.yml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.clomonitor.yml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.github-CODEOWNERS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.github-ISSUEC95TEMPLATE-featureC95request.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.github-ISSUEC95TEMPLATE-contributorC95nomination.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.github-ISSUEC95TEMPLATE-maintainerC95application.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.github-ISSUEC95TEMPLATE-release.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.github-PULLC95REQUESTC95TEMPLATE.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.github-actions-find-ovmf-firmware-action.yml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.github-public-cloud-cleanup-old-images-aws.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.github-public-cloud-cleanup-old-images-azure.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.github-ISSUEC95TEMPLATE-bugC95report.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.github-public-cloud-cleanup-old-images-gcp.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.github-public-cloud-test-aws-image.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.github-public-cloud-test-azure-image.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.github-public-cloud-test-gcp-image.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.github-public-cloud-upload-image-to-aws.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.github-public-cloud-upload-image-to-gcp.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.github-scripts-create-onboarding-issue.js"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.github-public-cloud-upload-image-to-azure.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-build-examples.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-image-master-arm.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-image-pr-arm.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-image-pr.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-image-master.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-lint.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.github-encryption-tests.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-osv-scanner.yml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-release.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-scorecards.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-reusable-qemu-test.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-stale.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.gitignore"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-uki.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-upload-cloud-images.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-vote-monitor.yml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.gitmodules"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.gitvote.yml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.grype.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.hadolint.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.snyk"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.yamllint"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-CODEC95OFC95CONDUCT.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-CONTRIBUTING.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-.github-workflows-release-arm.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-README.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-adopters.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-SECURITY.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-README.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-auroraboot-master-template.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-fedora-fips-Dockerfile"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-fedora-fips-build.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-fedora-fips-dracut.conf"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-fedora-fips-README.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-fedora-fips-run.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-rockylinux-fips-Dockerfile"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-rockylinux-fips-dracut.conf"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-rockylinux-fips-build.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-rockylinux-fips-README.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-rockylinux-fips-run.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-20.04-fips-README.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-20.04-fips-build.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-20.04-fips-dracut.conf"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-20.04-fips-pro-attach-config.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-20.04-fips-run.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-LICENSE"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-22.04-fips-Dockerfile"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-22.04-fips-README.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-22.04-fips-modules.fips"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-22.04-fips-build.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-22.04-fips-pro-attach-config.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-22.04-fips-run.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-24.04-fips-README.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-24.04-fips-Dockerfile"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-24.04-fips-modules.fips"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-24.04-fips-build.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-24.04-fips-pro-attach-config.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-24.04-fips-run.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-non-hwe-Dockerfile"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-bundle-Dockerfile"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-non-hwe-README.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-cloud-configs-initramfs-stage.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-cloud-configs-master.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-builds-ubuntu-20.04-fips-Dockerfile"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-cloud-configs-wifi-alpine.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-cloud-configs-wifi.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-plans-networkC95tokenC95rotation.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-cloud-configs-worker.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-images-.hadolint.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-plans-system-upgrade.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-images-Dockerfile"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-maintainers.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-renovate.json"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-images-Dockerfile.img"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-autoinstall.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-bundles.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-config.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-configC95withC95reboot.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-configC95k3sC95disabled.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-examples-cloud-configs-single-node.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-efivars.fd"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-efivars.json"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-efivars.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-efivars.empty.4m.fd"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-efivars.empty.fd"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-efivars.4m.fd"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-encryption-challenger-patch.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-encryption-cluster-issuer.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-encryption-kustomization.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-KEK.auth"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-encryption-challenger-server-ingress.template.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-KEK.der"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-KEK.esl"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-KEK.key"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-KEK.pem"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-PK.auth"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-PK.der"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-PK.esl"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-PK.pem"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-db.der"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-db.auth"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-db.esl"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-db.key"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-db.pem"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-tpm2-pcr-private.pem"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-kubernetesC95logs.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-qrcode.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-nodeopupgrade.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-single.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-rawC95image.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-sysext-README.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-sysext-hello-broke.sysext.raw"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-keys-PK.key"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-uki-assessment.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-uki-install.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-zfs.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-bundlesC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-autoinstallC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-customC95partitioningC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-go.mod"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-encryptionC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-go.sum"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-installC95targetC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-installC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-providerC95installC95qrcodeC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-providerC95decentralizedC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-osv-scanner.toml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-providerC95k3sC95disabledC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-providerC95upgradeC95latestC95k8sC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-providerC95upgradeC95k8sC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-resetC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-ukiC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-testsC95suiteC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-upgradeC95cliC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-zfsC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-upgradeC95latestC95cliC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-sysext-work.sysext.raw"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.ddcUYvrQSn",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.ddcUYvrQSn-tests-assets-efivars-aarch64.fd"
+    }
+  ],
+  "annotations": [
+    {
+      "annotationDate": "2026-03-22T05:54:26Z",
+      "annotationType": "OTHER",
+      "annotator": "Tool: cncf-automation",
+      "comment": "CNCF Project: Kairos\nRepository: kairos-io/kairos\nVersion: v4.0.2"
+    }
+  ],
+  "hasExtractedLicensingInfo": []
+}

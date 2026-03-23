@@ -18,8 +18,92 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain go.mod.
   auto_generated: true
-  last_updated: "2026-03-16T05:11:55Z"
+  last_updated: "2026-03-23T05:13:11Z"
 repositories:
+  - owner: alibaba
+    repo: IOC-golang
+    name: IOC-golang
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: MongoShake
+    name: MongoShake
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: hybridnet
+    name: hybridnet
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: kt-connect
+    name: kt-connect
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: kubeskoop
+    name: kubeskoop
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: loongcollector
+    name: loongcollector
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: loongsuite-go-agent
+    name: loongsuite-go-agent
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: open-local
+    name: open-local
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: open-object
+    name: open-object
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: open-simulator
+    name: open-simulator
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: schedulerx-worker-go
+    name: schedulerx-worker-go
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: sentinel-golang
+    name: sentinel-golang
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: tengine-ingress
+    name: tengine-ingress
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: virtual-environment
+    name: virtual-environment
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
   - owner: antrea-io
     repo: antrea-ui
     name: antrea-ui
@@ -1869,6 +1953,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from kairos-io/kairos
   - owner: kairos-io
+    repo: kairos-lab
+    name: kairos-lab
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from kairos-io/kairos
+  - owner: kairos-io
     repo: kairos-must-burn
     name: kairos-must-burn
     category: automation
@@ -2219,6 +2309,12 @@ repositories:
   - owner: konveyor
     repo: kantra
     name: kantra
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from konveyor/operator
+  - owner: konveyor
+    repo: koncur
+    name: koncur
     category: build
     project_status: sandbox
     discovered_by: org-scan from konveyor/operator
@@ -2921,6 +3017,12 @@ repositories:
   - owner: kubernetes-sigs
     repo: dra-example-driver
     name: dra-example-driver
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kubernetes-sigs/headlamp
+  - owner: kubernetes-sigs
+    repo: dranet
+    name: dranet
     category: observability
     project_status: sandbox
     discovered_by: org-scan from kubernetes-sigs/headlamp
@@ -4209,6 +4311,12 @@ repositories:
     project_status: incubating
     discovered_by: org-scan from nats-io/nats-server
   - owner: nats-io
+    repo: nkeys.net
+    name: nkeys.net
+    category: messaging
+    project_status: incubating
+    discovered_by: org-scan from nats-io/nats-server
+  - owner: nats-io
     repo: nsc
     name: nsc
     category: messaging
@@ -4901,6 +5009,12 @@ repositories:
   - owner: openkruise
     repo: agents
     name: agents
+    category: gitops
+    project_status: incubating
+    discovered_by: org-scan from openkruise/kruise
+  - owner: openkruise
+    repo: agents-api
+    name: agents-api
     category: gitops
     project_status: incubating
     discovered_by: org-scan from openkruise/kruise

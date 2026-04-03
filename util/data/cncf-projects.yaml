@@ -113,13 +113,13 @@ repositories:
   - owner: fluxcd
     repo: flux2
     name: Flux
-    category: gitops
+    category: ci-cd
     project_status: graduated
     accepted_date: "2019-07-15"
   - owner: goharbor
     repo: harbor
     name: Harbor
-    category: registry
+    category: ml-platform
     project_status: graduated
     accepted_date: "2018-07-31"
   - owner: helm
@@ -347,7 +347,7 @@ repositories:
   - owner: lima-vm
     repo: lima
     name: Lima
-    category: container-runtime
+    category: ml-platform
     project_status: incubating
     accepted_date: "2022-09-14"
   - owner: litmuschaos
@@ -503,7 +503,7 @@ repositories:
   - owner: bootc-dev
     repo: bootc
     name: bootc
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2025-01-21"
   - owner: bpfman
@@ -581,7 +581,7 @@ repositories:
   - owner: containers
     repo: composefs
     name: composefs
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2025-01-21"
   - owner: confidential-containers
@@ -719,7 +719,7 @@ repositories:
   - owner: inclavare-containers
     repo: inclavare-containers
     name: Inclavare Containers
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2021-09-14"
   - owner: inspektor-gadget
@@ -875,7 +875,7 @@ repositories:
   - owner: kuasar-io
     repo: kuasar
     name: Kuasar
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2023-12-19"
   - owner: kube-burner
@@ -1022,6 +1022,12 @@ repositories:
     category: networking
     project_status: sandbox
     accepted_date: "2019-04-11"
+  - owner: nmstate
+    repo: nmstate
+    name: NMstate
+    category: automation
+    project_status: sandbox
+    accepted_date: "2026-03-12"
   - owner: oauth2-proxy
     repo: oauth2-proxy
     name: OAuth2 Proxy
@@ -1043,7 +1049,7 @@ repositories:
   - owner: openchoreo
     repo: openchoreo
     name: OpenChoreo
-    category: ci-cd
+    category: gitops
     project_status: sandbox
     accepted_date: "2026-01-06"
   - owner: openebs
@@ -1127,7 +1133,7 @@ repositories:
   - owner: pipe-cd
     repo: pipecd
     name: PipeCD
-    category: ci-cd
+    category: gitops
     project_status: sandbox
     accepted_date: "2023-05-17"
   - owner: piraeusdatastore
@@ -1145,7 +1151,7 @@ repositories:
   - owner: containers
     repo: podman
     name: Podman Container Tools
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2025-01-21"
   - owner: podman-desktop
@@ -1319,13 +1325,13 @@ repositories:
   - owner: WasmEdge
     repo: WasmEdge
     name: WasmEdge Runtime
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2021-04-28"
   - owner: werf
     repo: werf
     name: werf
-    category: ci-cd
+    category: gitops
     project_status: sandbox
     accepted_date: "2022-12-13"
   - owner: xregistry
@@ -1337,12 +1343,12 @@ repositories:
   - owner: youki-dev
     repo: youki
     name: youki
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2024-10-17"
   - owner: project-zot
     repo: zot
     name: zot
-    category: ml-platform
+    category: registry
     project_status: sandbox
     accepted_date: "2022-12-13"

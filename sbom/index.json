@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-29T08:46:13Z",
+  "generated_at": "2026-04-05T09:20:40Z",
   "sboms": [
     {
       "project": "aeraki-mesh",
@@ -36,6 +36,12 @@
       "repo": "aeraki",
       "version": "1.1.3",
       "path": "aeraki-mesh/aeraki/1.1.3/aeraki.json"
+    },
+    {
+      "project": "antrea",
+      "repo": "antrea",
+      "version": "2.6.1",
+      "path": "antrea/antrea/2.6.1/antrea.json"
     },
     {
       "project": "antrea",
@@ -598,6 +604,12 @@
     {
       "project": "bootc",
       "repo": "bootc",
+      "version": "1.15.0",
+      "path": "bootc/bootc/1.15.0/bootc.json"
+    },
+    {
+      "project": "bootc",
+      "repo": "bootc",
       "version": "1.14.1",
       "path": "bootc/bootc/1.14.1/bootc.json"
     },
@@ -636,6 +648,12 @@
       "repo": "bootc",
       "version": "1.10.0",
       "path": "bootc/bootc/1.10.0/bootc.json"
+    },
+    {
+      "project": "bpfman",
+      "repo": "bpfman",
+      "version": "0.6.0",
+      "path": "bpfman/bpfman/0.6.0/bpfman.json"
     },
     {
       "project": "bpfman",
@@ -1390,6 +1408,18 @@
     {
       "project": "cloudnativepg",
       "repo": "cloudnative-pg",
+      "version": "1.29.0",
+      "path": "cloudnativepg/cloudnative-pg/1.29.0/cloudnative-pg.json"
+    },
+    {
+      "project": "cloudnativepg",
+      "repo": "cloudnative-pg",
+      "version": "1.28.2",
+      "path": "cloudnativepg/cloudnative-pg/1.28.2/cloudnative-pg.json"
+    },
+    {
+      "project": "cloudnativepg",
+      "repo": "cloudnative-pg",
       "version": "1.28.1",
       "path": "cloudnativepg/cloudnative-pg/1.28.1/cloudnative-pg.json"
     },
@@ -1398,6 +1428,12 @@
       "repo": "cloudnative-pg",
       "version": "1.28.0",
       "path": "cloudnativepg/cloudnative-pg/1.28.0/cloudnative-pg.json"
+    },
+    {
+      "project": "cloudnativepg",
+      "repo": "cloudnative-pg",
+      "version": "1.27.4",
+      "path": "cloudnativepg/cloudnative-pg/1.27.4/cloudnative-pg.json"
     },
     {
       "project": "cloudnativepg",
@@ -1548,6 +1584,12 @@
       "repo": "composefs",
       "version": "1.0.3",
       "path": "composefs/composefs/1.0.3/composefs.json"
+    },
+    {
+      "project": "confidential-containers",
+      "repo": "confidential-containers",
+      "version": "0.19.0",
+      "path": "confidential-containers/confidential-containers/0.19.0/confidential-containers.json"
     },
     {
       "project": "confidential-containers",
@@ -2032,8 +2074,26 @@
     {
       "project": "cozystack",
       "repo": "cozystack",
+      "version": "1.2.1",
+      "path": "cozystack/cozystack/1.2.1/cozystack.json"
+    },
+    {
+      "project": "cozystack",
+      "repo": "cozystack",
       "version": "1.2.0",
       "path": "cozystack/cozystack/1.2.0/cozystack.json"
+    },
+    {
+      "project": "cozystack",
+      "repo": "cozystack",
+      "version": "1.1.5",
+      "path": "cozystack/cozystack/1.1.5/cozystack.json"
+    },
+    {
+      "project": "cozystack",
+      "repo": "cozystack",
+      "version": "1.1.4",
+      "path": "cozystack/cozystack/1.1.4/cozystack.json"
     },
     {
       "project": "cozystack",
@@ -2058,6 +2118,12 @@
       "repo": "cozystack",
       "version": "1.1.0",
       "path": "cozystack/cozystack/1.1.0/cozystack.json"
+    },
+    {
+      "project": "cozystack",
+      "repo": "cozystack",
+      "version": "1.0.7",
+      "path": "cozystack/cozystack/1.0.7/cozystack.json"
     },
     {
       "project": "cozystack",
@@ -2146,8 +2212,20 @@
     {
       "project": "cri-o",
       "repo": "cri-o",
+      "version": "1.35.2",
+      "path": "cri-o/cri-o/1.35.2/cri-o.json"
+    },
+    {
+      "project": "cri-o",
+      "repo": "cri-o",
       "version": "1.35.1",
       "path": "cri-o/cri-o/1.35.1/cri-o.json"
+    },
+    {
+      "project": "cri-o",
+      "repo": "cri-o",
+      "version": "1.34.7",
+      "path": "cri-o/cri-o/1.34.7/cri-o.json"
     },
     {
       "project": "cri-o",
@@ -2178,6 +2256,12 @@
       "repo": "cri-o",
       "version": "1.33.8",
       "path": "cri-o/cri-o/1.33.8/cri-o.json"
+    },
+    {
+      "project": "cri-o",
+      "repo": "cri-o",
+      "version": "1.33.11",
+      "path": "cri-o/cri-o/1.33.11/cri-o.json"
     },
     {
       "project": "cri-o",
@@ -2424,6 +2508,12 @@
       "repo": "dapr",
       "version": "1.16.2",
       "path": "dapr/dapr/1.16.2/dapr.json"
+    },
+    {
+      "project": "dapr",
+      "repo": "dapr",
+      "version": "1.16.12",
+      "path": "dapr/dapr/1.16.12/dapr.json"
     },
     {
       "project": "dapr",
@@ -2729,13 +2819,13 @@
       "project": "emissary-ingress",
       "repo": "emissary",
       "version": "chart",
-      "path": "emissary-ingress/emissary/chart/v8.9.0/emissary.json"
+      "path": "emissary-ingress/emissary/chart/v8.9.1/emissary.json"
     },
     {
       "project": "emissary-ingress",
       "repo": "emissary",
       "version": "chart",
-      "path": "emissary-ingress/emissary/chart/v8.9.1/emissary.json"
+      "path": "emissary-ingress/emissary/chart/v8.9.0/emissary.json"
     },
     {
       "project": "emissary-ingress",
@@ -2914,6 +3004,18 @@
     {
       "project": "etcd",
       "repo": "etcd",
+      "version": "3.6.10",
+      "path": "etcd/etcd/3.6.10/etcd.json"
+    },
+    {
+      "project": "etcd",
+      "repo": "etcd",
+      "version": "3.5.29",
+      "path": "etcd/etcd/3.5.29/etcd.json"
+    },
+    {
+      "project": "etcd",
+      "repo": "etcd",
       "version": "3.5.28",
       "path": "etcd/etcd/3.5.28/etcd.json"
     },
@@ -2940,6 +3042,12 @@
       "repo": "etcd",
       "version": "3.5.24",
       "path": "etcd/etcd/3.5.24/etcd.json"
+    },
+    {
+      "project": "etcd",
+      "repo": "etcd",
+      "version": "3.4.43",
+      "path": "etcd/etcd/3.4.43/etcd.json"
     },
     {
       "project": "etcd",
@@ -3682,6 +3790,12 @@
     {
       "project": "hyperlight",
       "repo": "hyperlight",
+      "version": "0.14.0",
+      "path": "hyperlight/hyperlight/0.14.0/hyperlight.json"
+    },
+    {
+      "project": "hyperlight",
+      "repo": "hyperlight",
       "version": "0.13.1",
       "path": "hyperlight/hyperlight/0.13.1/hyperlight.json"
     },
@@ -3966,6 +4080,12 @@
       "repo": "istio",
       "version": "1.26.7",
       "path": "istio/istio/1.26.7/istio.json"
+    },
+    {
+      "project": "jaeger",
+      "repo": "jaeger",
+      "version": "2.17.0",
+      "path": "jaeger/jaeger/2.17.0/jaeger.json"
     },
     {
       "project": "jaeger",
@@ -4384,6 +4504,24 @@
     {
       "project": "kagent",
       "repo": "kagent",
+      "version": "0.8.4",
+      "path": "kagent/kagent/0.8.4/kagent.json"
+    },
+    {
+      "project": "kagent",
+      "repo": "kagent",
+      "version": "0.8.3",
+      "path": "kagent/kagent/0.8.3/kagent.json"
+    },
+    {
+      "project": "kagent",
+      "repo": "kagent",
+      "version": "0.8.2",
+      "path": "kagent/kagent/0.8.2/kagent.json"
+    },
+    {
+      "project": "kagent",
+      "repo": "kagent",
       "version": "0.8.1",
       "path": "kagent/kagent/0.8.1/kagent.json"
     },
@@ -4476,6 +4614,12 @@
       "repo": "KAI-Scheduler",
       "version": "0.6.18",
       "path": "kai-scheduler/KAI-Scheduler/0.6.18/KAI-Scheduler.json"
+    },
+    {
+      "project": "kai-scheduler",
+      "repo": "KAI-Scheduler",
+      "version": "0.14.0",
+      "path": "kai-scheduler/KAI-Scheduler/0.14.0/KAI-Scheduler.json"
     },
     {
       "project": "kai-scheduler",
@@ -4586,6 +4730,24 @@
       "path": "kairos/kairos/3.0.14/kairos.json"
     },
     {
+      "project": "kairos",
+      "repo": "kairos",
+      "version": "3.0.13",
+      "path": "kairos/kairos/3.0.13/kairos.json"
+    },
+    {
+      "project": "kairos",
+      "repo": "kairos",
+      "version": "3.0.12",
+      "path": "kairos/kairos/3.0.12/kairos.json"
+    },
+    {
+      "project": "kairos",
+      "repo": "kairos",
+      "version": "3.0.11",
+      "path": "kairos/kairos/3.0.11/kairos.json"
+    },
+    {
       "project": "kaito",
       "repo": "kaito",
       "version": "0.9.3",
@@ -4684,8 +4846,20 @@
     {
       "project": "karmada",
       "repo": "karmada",
+      "version": "1.17.1",
+      "path": "karmada/karmada/1.17.1/karmada.json"
+    },
+    {
+      "project": "karmada",
+      "repo": "karmada",
       "version": "1.17.0",
       "path": "karmada/karmada/1.17.0/karmada.json"
+    },
+    {
+      "project": "karmada",
+      "repo": "karmada",
+      "version": "1.16.4",
+      "path": "karmada/karmada/1.16.4/karmada.json"
     },
     {
       "project": "karmada",
@@ -4710,6 +4884,12 @@
       "repo": "karmada",
       "version": "1.16.0",
       "path": "karmada/karmada/1.16.0/karmada.json"
+    },
+    {
+      "project": "karmada",
+      "repo": "karmada",
+      "version": "1.15.7",
+      "path": "karmada/karmada/1.15.7/karmada.json"
     },
     {
       "project": "karmada",
@@ -4798,6 +4978,18 @@
     {
       "project": "kcp",
       "repo": "kcp",
+      "version": "0.30.3",
+      "path": "kcp/kcp/0.30.3/kcp.json"
+    },
+    {
+      "project": "kcp",
+      "repo": "kcp",
+      "version": "0.30.2",
+      "path": "kcp/kcp/0.30.2/kcp.json"
+    },
+    {
+      "project": "kcp",
+      "repo": "kcp",
       "version": "0.30.1",
       "path": "kcp/kcp/0.30.1/kcp.json"
     },
@@ -4806,6 +4998,18 @@
       "repo": "kcp",
       "version": "0.30.0",
       "path": "kcp/kcp/0.30.0/kcp.json"
+    },
+    {
+      "project": "kcp",
+      "repo": "kcp",
+      "version": "0.29.3",
+      "path": "kcp/kcp/0.29.3/kcp.json"
+    },
+    {
+      "project": "kcp",
+      "repo": "kcp",
+      "version": "0.29.2",
+      "path": "kcp/kcp/0.29.2/kcp.json"
     },
     {
       "project": "kcp",
@@ -4926,6 +5130,12 @@
       "repo": "kepler",
       "version": "0.0.10-reboot",
       "path": "kepler/kepler/0.0.10-reboot/kepler.json"
+    },
+    {
+      "project": "keycloak",
+      "repo": "keycloak",
+      "version": "26.5.7",
+      "path": "keycloak/keycloak/26.5.7/keycloak.json"
     },
     {
       "project": "keycloak",
@@ -5116,6 +5326,12 @@
     {
       "project": "kitops",
       "repo": "kitops",
+      "version": "1.12.0",
+      "path": "kitops/kitops/1.12.0/kitops.json"
+    },
+    {
+      "project": "kitops",
+      "repo": "kitops",
       "version": "1.11.0",
       "path": "kitops/kitops/1.11.0/kitops.json"
     },
@@ -5272,6 +5488,12 @@
     {
       "project": "konveyor",
       "repo": "operator",
+      "version": "0.9.2",
+      "path": "konveyor/operator/0.9.2/operator.json"
+    },
+    {
+      "project": "konveyor",
+      "repo": "operator",
       "version": "0.9.1",
       "path": "konveyor/operator/0.9.1/operator.json"
     },
@@ -5357,7 +5579,7 @@
       "project": "kpt",
       "repo": "kpt",
       "version": "porch",
-      "path": "kpt/kpt/porch/v0.0.30/kpt.json"
+      "path": "kpt/kpt/porch/v0.0.23/kpt.json"
     },
     {
       "project": "kpt",
@@ -5375,7 +5597,7 @@
       "project": "kpt",
       "repo": "kpt",
       "version": "porch",
-      "path": "kpt/kpt/porch/v0.0.23/kpt.json"
+      "path": "kpt/kpt/porch/v0.0.30/kpt.json"
     },
     {
       "project": "kpt",
@@ -5500,6 +5722,12 @@
     {
       "project": "kuadrant",
       "repo": "kuadrant-operator",
+      "version": "1.4.3",
+      "path": "kuadrant/kuadrant-operator/1.4.3/kuadrant-operator.json"
+    },
+    {
+      "project": "kuadrant",
+      "repo": "kuadrant-operator",
       "version": "1.4.2",
       "path": "kuadrant/kuadrant-operator/1.4.2/kuadrant-operator.json"
     },
@@ -5586,6 +5814,12 @@
       "repo": "kuasar",
       "version": "0.5.1",
       "path": "kuasar/kuasar/0.5.1/kuasar.json"
+    },
+    {
+      "project": "kube-burner",
+      "repo": "kube-burner",
+      "version": "2.5.1",
+      "path": "kube-burner/kube-burner/2.5.1/kube-burner.json"
     },
     {
       "project": "kube-burner",
@@ -5782,6 +6016,12 @@
     {
       "project": "kube-vip",
       "repo": "kube-vip",
+      "version": "1.1.2",
+      "path": "kube-vip/kube-vip/1.1.2/kube-vip.json"
+    },
+    {
+      "project": "kube-vip",
+      "repo": "kube-vip",
       "version": "1.1.1",
       "path": "kube-vip/kube-vip/1.1.1/kube-vip.json"
     },
@@ -5938,6 +6178,12 @@
     {
       "project": "kubearmor",
       "repo": "kubearmor",
+      "version": "1.6.16",
+      "path": "kubearmor/kubearmor/1.6.16/kubearmor.json"
+    },
+    {
+      "project": "kubearmor",
+      "repo": "kubearmor",
       "version": "1.6.15",
       "path": "kubearmor/kubearmor/1.6.15/kubearmor.json"
     },
@@ -6054,6 +6300,12 @@
       "repo": "kubeedge",
       "version": "1.16.6",
       "path": "kubeedge/kubeedge/1.16.6/kubeedge.json"
+    },
+    {
+      "project": "kubeelasti",
+      "repo": "KubeElasti",
+      "version": "0.1.22",
+      "path": "kubeelasti/KubeElasti/0.1.22/KubeElasti.json"
     },
     {
       "project": "kubeelasti",
@@ -6478,6 +6730,12 @@
     {
       "project": "kubevela",
       "repo": "kubevela",
+      "version": "1.10.8",
+      "path": "kubevela/kubevela/1.10.8/kubevela.json"
+    },
+    {
+      "project": "kubevela",
+      "repo": "kubevela",
       "version": "1.10.7",
       "path": "kubevela/kubevela/1.10.7/kubevela.json"
     },
@@ -6522,6 +6780,12 @@
       "repo": "kubevela",
       "version": "1.10.0",
       "path": "kubevela/kubevela/1.10.0/kubevela.json"
+    },
+    {
+      "project": "kubevirt",
+      "repo": "kubevirt",
+      "version": "1.8.1",
+      "path": "kubevirt/kubevirt/1.8.1/kubevirt.json"
     },
     {
       "project": "kubevirt",
@@ -6958,6 +7222,12 @@
     {
       "project": "lima",
       "repo": "lima",
+      "version": "2.1.1",
+      "path": "lima/lima/2.1.1/lima.json"
+    },
+    {
+      "project": "lima",
+      "repo": "lima",
       "version": "2.1.0",
       "path": "lima/lima/2.1.0/lima.json"
     },
@@ -6996,6 +7266,12 @@
       "repo": "lima",
       "version": "1.2.2",
       "path": "lima/lima/1.2.2/lima.json"
+    },
+    {
+      "project": "linkerd",
+      "repo": "linkerd2",
+      "version": "edge-26.4.1",
+      "path": "linkerd/linkerd2/edge-26.4.1/linkerd2.json"
     },
     {
       "project": "linkerd",
@@ -7780,6 +8056,12 @@
     {
       "project": "open-policy-agent-opa",
       "repo": "opa",
+      "version": "1.15.1",
+      "path": "open-policy-agent-opa/opa/1.15.1/opa.json"
+    },
+    {
+      "project": "open-policy-agent-opa",
+      "repo": "opa",
       "version": "1.15.0",
       "path": "open-policy-agent-opa/opa/1.15.0/opa.json"
     },
@@ -8094,6 +8376,12 @@
       "repo": "spec",
       "version": "0.5.0",
       "path": "openfeature/spec/0.5.0/spec.json"
+    },
+    {
+      "project": "openfga",
+      "repo": "openfga",
+      "version": "1.14.0",
+      "path": "openfga/openfga/1.14.0/openfga.json"
     },
     {
       "project": "openfga",
@@ -9118,6 +9406,12 @@
     {
       "project": "prometheus",
       "repo": "prometheus",
+      "version": "3.11.0",
+      "path": "prometheus/prometheus/3.11.0/prometheus.json"
+    },
+    {
+      "project": "prometheus",
+      "repo": "prometheus",
       "version": "3.10.0",
       "path": "prometheus/prometheus/3.10.0/prometheus.json"
     },
@@ -9576,6 +9870,18 @@
       "repo": "build",
       "version": "0.18.0",
       "path": "shipwright/build/0.18.0/build.json"
+    },
+    {
+      "project": "slimfaas",
+      "repo": "SlimFaas",
+      "version": "0.70.1",
+      "path": "slimfaas/SlimFaas/0.70.1/SlimFaas.json"
+    },
+    {
+      "project": "slimfaas",
+      "repo": "SlimFaas",
+      "version": "0.70.0",
+      "path": "slimfaas/SlimFaas/0.70.0/SlimFaas.json"
     },
     {
       "project": "slimfaas",
@@ -10104,6 +10410,12 @@
       "repo": "submariner",
       "version": "0.17.6",
       "path": "submariner/submariner/0.17.6/submariner.json"
+    },
+    {
+      "project": "telepresence",
+      "repo": "telepresence",
+      "version": "2.27.3",
+      "path": "telepresence/telepresence/2.27.3/telepresence.json"
     },
     {
       "project": "telepresence",
@@ -10714,6 +11026,12 @@
     {
       "project": "volcano",
       "repo": "volcano",
+      "version": "1.13.2",
+      "path": "volcano/volcano/1.13.2/volcano.json"
+    },
+    {
+      "project": "volcano",
+      "repo": "volcano",
       "version": "1.13.1",
       "path": "volcano/volcano/1.13.1/volcano.json"
     },
@@ -10770,6 +11088,12 @@
       "repo": "wasmCloud",
       "version": "wash-v0.42.0",
       "path": "wasmcloud/wasmCloud/wash-v0.42.0/wasmCloud.json"
+    },
+    {
+      "project": "wasmcloud",
+      "repo": "wasmCloud",
+      "version": "2.0.2",
+      "path": "wasmcloud/wasmCloud/2.0.2/wasmCloud.json"
     },
     {
       "project": "wasmcloud",
@@ -10842,6 +11166,18 @@
       "repo": "WasmEdge",
       "version": "0.13.5",
       "path": "wasmedge-runtime/WasmEdge/0.13.5/WasmEdge.json"
+    },
+    {
+      "project": "werf",
+      "repo": "werf",
+      "version": "2.65.1",
+      "path": "werf/werf/2.65.1/werf.json"
+    },
+    {
+      "project": "werf",
+      "repo": "werf",
+      "version": "2.65.0",
+      "path": "werf/werf/2.65.0/werf.json"
     },
     {
       "project": "werf",
@@ -11184,6 +11520,12 @@
     {
       "owner": "argoproj",
       "repo": "argo-workflows",
+      "version": "4.0.4",
+      "path": "subprojects/argoproj/argo-workflows/4.0.4/argo-workflows.json"
+    },
+    {
+      "owner": "argoproj",
+      "repo": "argo-workflows",
       "version": "4.0.3",
       "path": "subprojects/argoproj/argo-workflows/4.0.3/argo-workflows.json"
     },
@@ -11222,6 +11564,12 @@
       "repo": "argo-workflows",
       "version": "3.7.7",
       "path": "subprojects/argoproj/argo-workflows/3.7.7/argo-workflows.json"
+    },
+    {
+      "owner": "argoproj",
+      "repo": "argo-workflows",
+      "version": "3.7.13",
+      "path": "subprojects/argoproj/argo-workflows/3.7.13/argo-workflows.json"
     },
     {
       "owner": "argoproj",
@@ -12114,6 +12462,12 @@
     {
       "owner": "bpfman",
       "repo": "bpfman-operator",
+      "version": "0.6.0",
+      "path": "subprojects/bpfman/bpfman-operator/0.6.0/bpfman-operator.json"
+    },
+    {
+      "owner": "bpfman",
+      "repo": "bpfman-operator",
       "version": "0.5.6",
       "path": "subprojects/bpfman/bpfman-operator/0.5.6/bpfman-operator.json"
     },
@@ -12164,6 +12518,12 @@
       "repo": "github-actions",
       "version": "5.9.5",
       "path": "subprojects/buildpacks/github-actions/5.9.5/github-actions.json"
+    },
+    {
+      "owner": "buildpacks",
+      "repo": "github-actions",
+      "version": "5.12.0",
+      "path": "subprojects/buildpacks/github-actions/5.12.0/github-actions.json"
     },
     {
       "owner": "buildpacks",
@@ -12494,6 +12854,12 @@
       "repo": "kapp",
       "version": "0.63.2",
       "path": "subprojects/carvel-dev/kapp/0.63.2/kapp.json"
+    },
+    {
+      "owner": "carvel-dev",
+      "repo": "kapp-controller",
+      "version": "0.59.6",
+      "path": "subprojects/carvel-dev/kapp-controller/0.59.6/kapp-controller.json"
     },
     {
       "owner": "carvel-dev",
@@ -14196,6 +14562,12 @@
     {
       "owner": "cilium",
       "repo": "tetragon",
+      "version": "1.6.1",
+      "path": "subprojects/cilium/tetragon/1.6.1/tetragon.json"
+    },
+    {
+      "owner": "cilium",
+      "repo": "tetragon",
       "version": "1.6.0",
       "path": "subprojects/cilium/tetragon/1.6.0/tetragon.json"
     },
@@ -14342,6 +14714,18 @@
       "repo": "barman-cloud",
       "version": "0.2.0",
       "path": "subprojects/cloudnative-pg/barman-cloud/0.2.0/barman-cloud.json"
+    },
+    {
+      "owner": "cloudnative-pg",
+      "repo": "cnpg-i",
+      "version": "0.5.0",
+      "path": "subprojects/cloudnative-pg/cnpg-i/0.5.0/cnpg-i.json"
+    },
+    {
+      "owner": "cloudnative-pg",
+      "repo": "cnpg-i",
+      "version": "0.4.0",
+      "path": "subprojects/cloudnative-pg/cnpg-i/0.4.0/cnpg-i.json"
     },
     {
       "owner": "cloudnative-pg",
@@ -14736,6 +15120,12 @@
     {
       "owner": "containerd",
       "repo": "accelerated-container-image",
+      "version": "1.4.3",
+      "path": "subprojects/containerd/accelerated-container-image/1.4.3/accelerated-container-image.json"
+    },
+    {
+      "owner": "containerd",
+      "repo": "accelerated-container-image",
       "version": "1.4.2",
       "path": "subprojects/containerd/accelerated-container-image/1.4.2/accelerated-container-image.json"
     },
@@ -15110,6 +15500,12 @@
       "repo": "ltag",
       "version": "0.2.2",
       "path": "subprojects/containerd/ltag/0.2.2/ltag.json"
+    },
+    {
+      "owner": "containerd",
+      "repo": "nerdctl",
+      "version": "2.2.2",
+      "path": "subprojects/containerd/nerdctl/2.2.2/nerdctl.json"
     },
     {
       "owner": "containerd",
@@ -15668,6 +16064,12 @@
       "repo": "image",
       "version": "5.34.2",
       "path": "subprojects/containers/image/5.34.2/image.json"
+    },
+    {
+      "owner": "containers",
+      "repo": "kubernetes-mcp-server",
+      "version": "0.0.60",
+      "path": "subprojects/containers/kubernetes-mcp-server/0.0.60/kubernetes-mcp-server.json"
     },
     {
       "owner": "containers",
@@ -16446,6 +16848,12 @@
     {
       "owner": "cozystack",
       "repo": "readme-generator-for-helm",
+      "version": "1.0.1",
+      "path": "subprojects/cozystack/readme-generator-for-helm/1.0.1/readme-generator-for-helm.json"
+    },
+    {
+      "owner": "cozystack",
+      "repo": "readme-generator-for-helm",
       "version": "1.0.0",
       "path": "subprojects/cozystack/readme-generator-for-helm/1.0.0/readme-generator-for-helm.json"
     },
@@ -16808,6 +17216,12 @@
       "repo": "cli",
       "version": "1.16.0",
       "path": "subprojects/dapr/cli/1.16.0/cli.json"
+    },
+    {
+      "owner": "dapr",
+      "repo": "components-contrib",
+      "version": "1.17.3",
+      "path": "subprojects/dapr/components-contrib/1.17.3/components-contrib.json"
     },
     {
       "owner": "dapr",
@@ -17269,6 +17683,12 @@
       "owner": "envoyproxy",
       "repo": "go-control-plane",
       "version": "envoy",
+      "path": "subprojects/envoyproxy/go-control-plane/envoy/v1.37.0/go-control-plane.json"
+    },
+    {
+      "owner": "envoyproxy",
+      "repo": "go-control-plane",
+      "version": "envoy",
       "path": "subprojects/envoyproxy/go-control-plane/envoy/v1.35.0/go-control-plane.json"
     },
     {
@@ -17276,12 +17696,6 @@
       "repo": "go-control-plane",
       "version": "envoy",
       "path": "subprojects/envoyproxy/go-control-plane/envoy/v1.36.0/go-control-plane.json"
-    },
-    {
-      "owner": "envoyproxy",
-      "repo": "go-control-plane",
-      "version": "envoy",
-      "path": "subprojects/envoyproxy/go-control-plane/envoy/v1.37.0/go-control-plane.json"
     },
     {
       "owner": "envoyproxy",
@@ -17432,6 +17846,12 @@
       "repo": "bitwarden-sdk-server",
       "version": "0.4.0",
       "path": "subprojects/external-secrets/bitwarden-sdk-server/0.4.0/bitwarden-sdk-server.json"
+    },
+    {
+      "owner": "external-secrets",
+      "repo": "reloader",
+      "version": "0.1.0",
+      "path": "subprojects/external-secrets/reloader/0.1.0/reloader.json"
     },
     {
       "owner": "external-secrets",
@@ -17666,6 +18086,12 @@
       "repo": "event-generator",
       "version": "0.10.0",
       "path": "subprojects/falcosecurity/event-generator/0.10.0/event-generator.json"
+    },
+    {
+      "owner": "falcosecurity",
+      "repo": "falco-operator",
+      "version": "0.2.1",
+      "path": "subprojects/falcosecurity/falco-operator/0.2.1/falco-operator.json"
     },
     {
       "owner": "falcosecurity",
@@ -19200,6 +19626,18 @@
     {
       "owner": "goharbor",
       "repo": "terraform-provider-harbor",
+      "version": "3.11.5",
+      "path": "subprojects/goharbor/terraform-provider-harbor/3.11.5/terraform-provider-harbor.json"
+    },
+    {
+      "owner": "goharbor",
+      "repo": "terraform-provider-harbor",
+      "version": "3.11.4",
+      "path": "subprojects/goharbor/terraform-provider-harbor/3.11.4/terraform-provider-harbor.json"
+    },
+    {
+      "owner": "goharbor",
+      "repo": "terraform-provider-harbor",
       "version": "3.11.3",
       "path": "subprojects/goharbor/terraform-provider-harbor/3.11.3/terraform-provider-harbor.json"
     },
@@ -19250,6 +19688,12 @@
       "repo": "grpc-go",
       "version": "cmd",
       "path": "subprojects/grpc/grpc-go/cmd/protoc-gen-go-grpc/v1.6.1/grpc-go.json"
+    },
+    {
+      "owner": "grpc",
+      "repo": "grpc-go",
+      "version": "1.80.0",
+      "path": "subprojects/grpc/grpc-go/1.80.0/grpc-go.json"
     },
     {
       "owner": "grpc",
@@ -19814,6 +20258,12 @@
       "repo": "interlink-docker-plugin",
       "version": "0.0.24-no-gpu",
       "path": "subprojects/interlink-hq/interlink-docker-plugin/0.0.24-no-gpu/interlink-docker-plugin.json"
+    },
+    {
+      "owner": "interlink-hq",
+      "repo": "interlink-slurm-plugin",
+      "version": "0.6.1",
+      "path": "subprojects/interlink-hq/interlink-slurm-plugin/0.6.1/interlink-slurm-plugin.json"
     },
     {
       "owner": "interlink-hq",
@@ -20484,6 +20934,12 @@
     {
       "owner": "kagent-dev",
       "repo": "kmcp",
+      "version": "0.2.8",
+      "path": "subprojects/kagent-dev/kmcp/0.2.8/kmcp.json"
+    },
+    {
+      "owner": "kagent-dev",
+      "repo": "kmcp",
       "version": "0.2.7",
       "path": "subprojects/kagent-dev/kmcp/0.2.7/kmcp.json"
     },
@@ -20516,6 +20972,18 @@
       "repo": "kmcp",
       "version": "0.2.2",
       "path": "subprojects/kagent-dev/kmcp/0.2.2/kmcp.json"
+    },
+    {
+      "owner": "kagent-dev",
+      "repo": "tools",
+      "version": "0.1.4",
+      "path": "subprojects/kagent-dev/tools/0.1.4/tools.json"
+    },
+    {
+      "owner": "kagent-dev",
+      "repo": "tools",
+      "version": "0.1.3",
+      "path": "subprojects/kagent-dev/tools/0.1.3/tools.json"
     },
     {
       "owner": "kagent-dev",
@@ -20840,6 +21308,12 @@
       "repo": "kairos-init",
       "version": "0.6.5",
       "path": "subprojects/kairos-io/kairos-init/0.6.5/kairos-init.json"
+    },
+    {
+      "owner": "kairos-io",
+      "repo": "kairos-lab",
+      "version": "0.1.0",
+      "path": "subprojects/kairos-io/kairos-lab/0.1.0/kairos-lab.json"
     },
     {
       "owner": "kairos-io",
@@ -22008,6 +22482,18 @@
     {
       "owner": "kcp-dev",
       "repo": "kcp-operator",
+      "version": "0.6.0",
+      "path": "subprojects/kcp-dev/kcp-operator/0.6.0/kcp-operator.json"
+    },
+    {
+      "owner": "kcp-dev",
+      "repo": "kcp-operator",
+      "version": "0.5.2",
+      "path": "subprojects/kcp-dev/kcp-operator/0.5.2/kcp-operator.json"
+    },
+    {
+      "owner": "kcp-dev",
+      "repo": "kcp-operator",
       "version": "0.5.1",
       "path": "subprojects/kcp-dev/kcp-operator/0.5.1/kcp-operator.json"
     },
@@ -22500,6 +22986,12 @@
     {
       "owner": "konveyor",
       "repo": "analyzer-lsp",
+      "version": "0.9.2",
+      "path": "subprojects/konveyor/analyzer-lsp/0.9.2/analyzer-lsp.json"
+    },
+    {
+      "owner": "konveyor",
+      "repo": "analyzer-lsp",
       "version": "0.9.1",
       "path": "subprojects/konveyor/analyzer-lsp/0.9.1/analyzer-lsp.json"
     },
@@ -22616,6 +23108,12 @@
       "repo": "controller",
       "version": "0.10.0",
       "path": "subprojects/konveyor/controller/0.10.0/controller.json"
+    },
+    {
+      "owner": "konveyor",
+      "repo": "kantra",
+      "version": "0.9.2",
+      "path": "subprojects/konveyor/kantra/0.9.2/kantra.json"
     },
     {
       "owner": "konveyor",
@@ -22740,6 +23238,12 @@
     {
       "owner": "konveyor",
       "repo": "tackle2-addon",
+      "version": "0.9.2",
+      "path": "subprojects/konveyor/tackle2-addon/0.9.2/tackle2-addon.json"
+    },
+    {
+      "owner": "konveyor",
+      "repo": "tackle2-addon",
       "version": "0.9.1",
       "path": "subprojects/konveyor/tackle2-addon/0.9.1/tackle2-addon.json"
     },
@@ -22784,6 +23288,12 @@
       "repo": "tackle2-addon",
       "version": "0.6.0",
       "path": "subprojects/konveyor/tackle2-addon/0.6.0/tackle2-addon.json"
+    },
+    {
+      "owner": "konveyor",
+      "repo": "tackle2-addon-analyzer",
+      "version": "0.9.2",
+      "path": "subprojects/konveyor/tackle2-addon-analyzer/0.9.2/tackle2-addon-analyzer.json"
     },
     {
       "owner": "konveyor",
@@ -22836,6 +23346,12 @@
     {
       "owner": "konveyor",
       "repo": "tackle2-addon-discovery",
+      "version": "0.9.2",
+      "path": "subprojects/konveyor/tackle2-addon-discovery/0.9.2/tackle2-addon-discovery.json"
+    },
+    {
+      "owner": "konveyor",
+      "repo": "tackle2-addon-discovery",
       "version": "0.9.1",
       "path": "subprojects/konveyor/tackle2-addon-discovery/0.9.1/tackle2-addon-discovery.json"
     },
@@ -22884,6 +23400,12 @@
     {
       "owner": "konveyor",
       "repo": "tackle2-addon-platform",
+      "version": "0.9.2",
+      "path": "subprojects/konveyor/tackle2-addon-platform/0.9.2/tackle2-addon-platform.json"
+    },
+    {
+      "owner": "konveyor",
+      "repo": "tackle2-addon-platform",
       "version": "0.9.1",
       "path": "subprojects/konveyor/tackle2-addon-platform/0.9.1/tackle2-addon-platform.json"
     },
@@ -22898,6 +23420,12 @@
       "repo": "tackle2-addon-platform",
       "version": "0.8.0",
       "path": "subprojects/konveyor/tackle2-addon-platform/0.8.0/tackle2-addon-platform.json"
+    },
+    {
+      "owner": "konveyor",
+      "repo": "tackle2-hub",
+      "version": "0.9.2",
+      "path": "subprojects/konveyor/tackle2-hub/0.9.2/tackle2-hub.json"
     },
     {
       "owner": "konveyor",
@@ -23094,6 +23622,12 @@
     {
       "owner": "kuadrant",
       "repo": "authorino",
+      "version": "0.25.0",
+      "path": "subprojects/kuadrant/authorino/0.25.0/authorino.json"
+    },
+    {
+      "owner": "kuadrant",
+      "repo": "authorino",
       "version": "0.24.0",
       "path": "subprojects/kuadrant/authorino/0.24.0/authorino.json"
     },
@@ -23126,6 +23660,12 @@
       "repo": "authorino",
       "version": "0.19.0",
       "path": "subprojects/kuadrant/authorino/0.19.0/authorino.json"
+    },
+    {
+      "owner": "kuadrant",
+      "repo": "authorino-operator",
+      "version": "0.24.0",
+      "path": "subprojects/kuadrant/authorino-operator/0.24.0/authorino-operator.json"
     },
     {
       "owner": "kuadrant",
@@ -23348,6 +23888,18 @@
       "repo": "mcp-gateway",
       "version": "0.4",
       "path": "subprojects/kuadrant/mcp-gateway/0.4/mcp-gateway.json"
+    },
+    {
+      "owner": "kube-burner",
+      "repo": "kube-burner-ocp",
+      "version": "1.11.7",
+      "path": "subprojects/kube-burner/kube-burner-ocp/1.11.7/kube-burner-ocp.json"
+    },
+    {
+      "owner": "kube-burner",
+      "repo": "kube-burner-ocp",
+      "version": "1.11.6",
+      "path": "subprojects/kube-burner/kube-burner-ocp/1.11.6/kube-burner-ocp.json"
     },
     {
       "owner": "kube-burner",
@@ -23742,6 +24294,12 @@
     {
       "owner": "kubeflow",
       "repo": "model-registry",
+      "version": "0.3.8",
+      "path": "subprojects/kubeflow/model-registry/0.3.8/model-registry.json"
+    },
+    {
+      "owner": "kubeflow",
+      "repo": "model-registry",
       "version": "0.3.7",
       "path": "subprojects/kubeflow/model-registry/0.3.7/model-registry.json"
     },
@@ -24116,6 +24674,12 @@
       "repo": "cloud-provider-vsphere",
       "version": "sphere-cpi-chart-1.32.3",
       "path": "subprojects/kubernetes/cloud-provider-vsphere/sphere-cpi-chart-1.32.3/cloud-provider-vsphere.json"
+    },
+    {
+      "owner": "kubernetes",
+      "repo": "cloud-provider-vsphere",
+      "version": "1.35.1",
+      "path": "subprojects/kubernetes/cloud-provider-vsphere/1.35.1/cloud-provider-vsphere.json"
     },
     {
       "owner": "kubernetes",
@@ -24894,6 +25458,12 @@
     {
       "owner": "kubernetes-sigs",
       "repo": "aws-ebs-csi-driver",
+      "version": "helm-chart-aws-ebs-csi-driver-2.58.0",
+      "path": "subprojects/kubernetes-sigs/aws-ebs-csi-driver/helm-chart-aws-ebs-csi-driver-2.58.0/aws-ebs-csi-driver.json"
+    },
+    {
+      "owner": "kubernetes-sigs",
+      "repo": "aws-ebs-csi-driver",
       "version": "helm-chart-aws-ebs-csi-driver-2.57.1",
       "path": "subprojects/kubernetes-sigs/aws-ebs-csi-driver/helm-chart-aws-ebs-csi-driver-2.57.1/aws-ebs-csi-driver.json"
     },
@@ -24932,6 +25502,12 @@
       "repo": "aws-ebs-csi-driver",
       "version": "helm-chart-aws-ebs-csi-driver-2.54.0",
       "path": "subprojects/kubernetes-sigs/aws-ebs-csi-driver/helm-chart-aws-ebs-csi-driver-2.54.0/aws-ebs-csi-driver.json"
+    },
+    {
+      "owner": "kubernetes-sigs",
+      "repo": "aws-ebs-csi-driver",
+      "version": "1.58.0",
+      "path": "subprojects/kubernetes-sigs/aws-ebs-csi-driver/1.58.0/aws-ebs-csi-driver.json"
     },
     {
       "owner": "kubernetes-sigs",
@@ -25020,6 +25596,12 @@
     {
       "owner": "kubernetes-sigs",
       "repo": "aws-fsx-csi-driver",
+      "version": "helm-chart-aws-fsx-csi-driver-1.16.0",
+      "path": "subprojects/kubernetes-sigs/aws-fsx-csi-driver/helm-chart-aws-fsx-csi-driver-1.16.0/aws-fsx-csi-driver.json"
+    },
+    {
+      "owner": "kubernetes-sigs",
+      "repo": "aws-fsx-csi-driver",
       "version": "helm-chart-aws-fsx-csi-driver-1.15.0",
       "path": "subprojects/kubernetes-sigs/aws-fsx-csi-driver/helm-chart-aws-fsx-csi-driver-1.15.0/aws-fsx-csi-driver.json"
     },
@@ -25056,6 +25638,12 @@
     {
       "owner": "kubernetes-sigs",
       "repo": "aws-fsx-openzfs-csi-driver",
+      "version": "helm-chart-aws-fsx-openzfs-csi-driver-1.3.0",
+      "path": "subprojects/kubernetes-sigs/aws-fsx-openzfs-csi-driver/helm-chart-aws-fsx-openzfs-csi-driver-1.3.0/aws-fsx-openzfs-csi-driver.json"
+    },
+    {
+      "owner": "kubernetes-sigs",
+      "repo": "aws-fsx-openzfs-csi-driver",
       "version": "helm-chart-aws-fsx-openzfs-csi-driver-1.2.0",
       "path": "subprojects/kubernetes-sigs/aws-fsx-openzfs-csi-driver/helm-chart-aws-fsx-openzfs-csi-driver-1.2.0/aws-fsx-openzfs-csi-driver.json"
     },
@@ -25070,6 +25658,12 @@
       "repo": "aws-fsx-openzfs-csi-driver",
       "version": "helm-chart-aws-fsx-openzfs-csi-driver-1.0.0",
       "path": "subprojects/kubernetes-sigs/aws-fsx-openzfs-csi-driver/helm-chart-aws-fsx-openzfs-csi-driver-1.0.0/aws-fsx-openzfs-csi-driver.json"
+    },
+    {
+      "owner": "kubernetes-sigs",
+      "repo": "aws-fsx-openzfs-csi-driver",
+      "version": "1.3.0",
+      "path": "subprojects/kubernetes-sigs/aws-fsx-openzfs-csi-driver/1.3.0/aws-fsx-openzfs-csi-driver.json"
     },
     {
       "owner": "kubernetes-sigs",
@@ -25254,6 +25848,12 @@
     {
       "owner": "kubernetes-sigs",
       "repo": "azurelustre-csi-driver",
+      "version": "0.4.0",
+      "path": "subprojects/kubernetes-sigs/azurelustre-csi-driver/0.4.0/azurelustre-csi-driver.json"
+    },
+    {
+      "owner": "kubernetes-sigs",
+      "repo": "azurelustre-csi-driver",
       "version": "0.3.1",
       "path": "subprojects/kubernetes-sigs/azurelustre-csi-driver/0.3.1/azurelustre-csi-driver.json"
     },
@@ -25404,6 +26004,12 @@
     {
       "owner": "kubernetes-sigs",
       "repo": "cloud-provider-azure",
+      "version": "1.35.3",
+      "path": "subprojects/kubernetes-sigs/cloud-provider-azure/1.35.3/cloud-provider-azure.json"
+    },
+    {
+      "owner": "kubernetes-sigs",
+      "repo": "cloud-provider-azure",
       "version": "1.35.2",
       "path": "subprojects/kubernetes-sigs/cloud-provider-azure/1.35.2/cloud-provider-azure.json"
     },
@@ -25412,6 +26018,12 @@
       "repo": "cloud-provider-azure",
       "version": "1.35.1",
       "path": "subprojects/kubernetes-sigs/cloud-provider-azure/1.35.1/cloud-provider-azure.json"
+    },
+    {
+      "owner": "kubernetes-sigs",
+      "repo": "cloud-provider-azure",
+      "version": "1.34.8",
+      "path": "subprojects/kubernetes-sigs/cloud-provider-azure/1.34.8/cloud-provider-azure.json"
     },
     {
       "owner": "kubernetes-sigs",
@@ -25458,8 +26070,20 @@
     {
       "owner": "kubernetes-sigs",
       "repo": "cloud-provider-azure",
+      "version": "1.33.11",
+      "path": "subprojects/kubernetes-sigs/cloud-provider-azure/1.33.11/cloud-provider-azure.json"
+    },
+    {
+      "owner": "kubernetes-sigs",
+      "repo": "cloud-provider-azure",
       "version": "1.33.10",
       "path": "subprojects/kubernetes-sigs/cloud-provider-azure/1.33.10/cloud-provider-azure.json"
+    },
+    {
+      "owner": "kubernetes-sigs",
+      "repo": "cloud-provider-azure",
+      "version": "1.32.16",
+      "path": "subprojects/kubernetes-sigs/cloud-provider-azure/1.32.16/cloud-provider-azure.json"
     },
     {
       "owner": "kubernetes-sigs",
@@ -25670,6 +26294,12 @@
       "repo": "cluster-api",
       "version": "1.10.10",
       "path": "subprojects/kubernetes-sigs/cluster-api/1.10.10/cluster-api.json"
+    },
+    {
+      "owner": "kubernetes-sigs",
+      "repo": "cluster-api-addon-provider-helm",
+      "version": "0.6.2",
+      "path": "subprojects/kubernetes-sigs/cluster-api-addon-provider-helm/0.6.2/cluster-api-addon-provider-helm.json"
     },
     {
       "owner": "kubernetes-sigs",
@@ -26832,6 +27462,18 @@
     {
       "owner": "kubernetes-sigs",
       "repo": "gcp-compute-persistent-disk-csi-driver",
+      "version": "1.25.1",
+      "path": "subprojects/kubernetes-sigs/gcp-compute-persistent-disk-csi-driver/1.25.1/gcp-compute-persistent-disk-csi-driver.json"
+    },
+    {
+      "owner": "kubernetes-sigs",
+      "repo": "gcp-compute-persistent-disk-csi-driver",
+      "version": "1.25.0",
+      "path": "subprojects/kubernetes-sigs/gcp-compute-persistent-disk-csi-driver/1.25.0/gcp-compute-persistent-disk-csi-driver.json"
+    },
+    {
+      "owner": "kubernetes-sigs",
+      "repo": "gcp-compute-persistent-disk-csi-driver",
       "version": "1.24.1",
       "path": "subprojects/kubernetes-sigs/gcp-compute-persistent-disk-csi-driver/1.24.1/gcp-compute-persistent-disk-csi-driver.json"
     },
@@ -27018,6 +27660,12 @@
     {
       "owner": "kubernetes-sigs",
       "repo": "ibm-vpc-block-csi-driver",
+      "version": "5.2.23",
+      "path": "subprojects/kubernetes-sigs/ibm-vpc-block-csi-driver/5.2.23/ibm-vpc-block-csi-driver.json"
+    },
+    {
+      "owner": "kubernetes-sigs",
+      "repo": "ibm-vpc-block-csi-driver",
       "version": "5.2.22",
       "path": "subprojects/kubernetes-sigs/ibm-vpc-block-csi-driver/5.2.22/ibm-vpc-block-csi-driver.json"
     },
@@ -27038,6 +27686,12 @@
       "repo": "ibm-vpc-block-csi-driver",
       "version": "5.2.19",
       "path": "subprojects/kubernetes-sigs/ibm-vpc-block-csi-driver/5.2.19/ibm-vpc-block-csi-driver.json"
+    },
+    {
+      "owner": "kubernetes-sigs",
+      "repo": "ibm-vpc-block-csi-driver",
+      "version": "5.1.26",
+      "path": "subprojects/kubernetes-sigs/ibm-vpc-block-csi-driver/5.1.26/ibm-vpc-block-csi-driver.json"
     },
     {
       "owner": "kubernetes-sigs",
@@ -27384,6 +28038,12 @@
     {
       "owner": "kubernetes-sigs",
       "repo": "kro",
+      "version": "0.9.1",
+      "path": "subprojects/kubernetes-sigs/kro/0.9.1/kro.json"
+    },
+    {
+      "owner": "kubernetes-sigs",
+      "repo": "kro",
       "version": "0.9.0",
       "path": "subprojects/kubernetes-sigs/kro/0.9.0/kro.json"
     },
@@ -27552,6 +28212,18 @@
     {
       "owner": "kubernetes-sigs",
       "repo": "kueue",
+      "version": "0.17.0",
+      "path": "subprojects/kubernetes-sigs/kueue/0.17.0/kueue.json"
+    },
+    {
+      "owner": "kubernetes-sigs",
+      "repo": "kueue",
+      "version": "0.16.5",
+      "path": "subprojects/kubernetes-sigs/kueue/0.16.5/kueue.json"
+    },
+    {
+      "owner": "kubernetes-sigs",
+      "repo": "kueue",
       "version": "0.16.4",
       "path": "subprojects/kubernetes-sigs/kueue/0.16.4/kueue.json"
     },
@@ -27578,6 +28250,12 @@
       "repo": "kueue",
       "version": "0.16.0",
       "path": "subprojects/kubernetes-sigs/kueue/0.16.0/kueue.json"
+    },
+    {
+      "owner": "kubernetes-sigs",
+      "repo": "kueue",
+      "version": "0.15.8",
+      "path": "subprojects/kubernetes-sigs/kueue/0.15.8/kueue.json"
     },
     {
       "owner": "kubernetes-sigs",
@@ -27756,6 +28434,12 @@
     {
       "owner": "kubernetes-sigs",
       "repo": "mcs-api",
+      "version": "0.4.1",
+      "path": "subprojects/kubernetes-sigs/mcs-api/0.4.1/mcs-api.json"
+    },
+    {
+      "owner": "kubernetes-sigs",
+      "repo": "mcs-api",
       "version": "0.4.0",
       "path": "subprojects/kubernetes-sigs/mcs-api/0.4.0/mcs-api.json"
     },
@@ -27854,6 +28538,12 @@
       "repo": "minikube-preloads",
       "version": "18",
       "path": "subprojects/kubernetes-sigs/minikube-preloads/18/minikube-preloads.json"
+    },
+    {
+      "owner": "kubernetes-sigs",
+      "repo": "multicluster-runtime",
+      "version": "0.23.3",
+      "path": "subprojects/kubernetes-sigs/multicluster-runtime/0.23.3/multicluster-runtime.json"
     },
     {
       "owner": "kubernetes-sigs",
@@ -28116,6 +28806,12 @@
     {
       "owner": "kubernetes-sigs",
       "repo": "promo-tools",
+      "version": "4.4.1",
+      "path": "subprojects/kubernetes-sigs/promo-tools/4.4.1/promo-tools.json"
+    },
+    {
+      "owner": "kubernetes-sigs",
+      "repo": "promo-tools",
       "version": "4.4.0",
       "path": "subprojects/kubernetes-sigs/promo-tools/4.4.0/promo-tools.json"
     },
@@ -28208,6 +28904,12 @@
       "repo": "release-sdk",
       "version": "0.12.0",
       "path": "subprojects/kubernetes-sigs/release-sdk/0.12.0/release-sdk.json"
+    },
+    {
+      "owner": "kubernetes-sigs",
+      "repo": "release-utils",
+      "version": "0.12.4",
+      "path": "subprojects/kubernetes-sigs/release-utils/0.12.4/release-utils.json"
     },
     {
       "owner": "kubernetes-sigs",
@@ -28470,6 +29172,24 @@
     {
       "owner": "kubernetes-sigs",
       "repo": "tejolote",
+      "version": "0.4.7",
+      "path": "subprojects/kubernetes-sigs/tejolote/0.4.7/tejolote.json"
+    },
+    {
+      "owner": "kubernetes-sigs",
+      "repo": "tejolote",
+      "version": "0.4.6",
+      "path": "subprojects/kubernetes-sigs/tejolote/0.4.6/tejolote.json"
+    },
+    {
+      "owner": "kubernetes-sigs",
+      "repo": "tejolote",
+      "version": "0.4.5",
+      "path": "subprojects/kubernetes-sigs/tejolote/0.4.5/tejolote.json"
+    },
+    {
+      "owner": "kubernetes-sigs",
+      "repo": "tejolote",
       "version": "0.4.4",
       "path": "subprojects/kubernetes-sigs/tejolote/0.4.4/tejolote.json"
     },
@@ -28596,6 +29316,18 @@
     {
       "owner": "kubernetes-sigs",
       "repo": "zeitgeist",
+      "version": "0.7.0",
+      "path": "subprojects/kubernetes-sigs/zeitgeist/0.7.0/zeitgeist.json"
+    },
+    {
+      "owner": "kubernetes-sigs",
+      "repo": "zeitgeist",
+      "version": "0.6.2",
+      "path": "subprojects/kubernetes-sigs/zeitgeist/0.6.2/zeitgeist.json"
+    },
+    {
+      "owner": "kubernetes-sigs",
+      "repo": "zeitgeist",
       "version": "0.5.4",
       "path": "subprojects/kubernetes-sigs/zeitgeist/0.5.4/zeitgeist.json"
     },
@@ -28628,6 +29360,12 @@
       "repo": "zeitgeist",
       "version": "0.4.1",
       "path": "subprojects/kubernetes-sigs/zeitgeist/0.4.1/zeitgeist.json"
+    },
+    {
+      "owner": "kubescape",
+      "repo": "backend",
+      "version": "0.0.40",
+      "path": "subprojects/kubescape/backend/0.0.40/backend.json"
     },
     {
       "owner": "kubescape",
@@ -28866,6 +29604,18 @@
     {
       "owner": "kubescape",
       "repo": "kubevuln",
+      "version": "0.3.119",
+      "path": "subprojects/kubescape/kubevuln/0.3.119/kubevuln.json"
+    },
+    {
+      "owner": "kubescape",
+      "repo": "kubevuln",
+      "version": "0.3.114",
+      "path": "subprojects/kubescape/kubevuln/0.3.114/kubevuln.json"
+    },
+    {
+      "owner": "kubescape",
+      "repo": "kubevuln",
       "version": "0.3.110",
       "path": "subprojects/kubescape/kubevuln/0.3.110/kubevuln.json"
     },
@@ -28950,6 +29700,12 @@
     {
       "owner": "kubescape",
       "repo": "messaging",
+      "version": "0.0.102",
+      "path": "subprojects/kubescape/messaging/0.0.102/messaging.json"
+    },
+    {
+      "owner": "kubescape",
+      "repo": "messaging",
       "version": "0.0.101",
       "path": "subprojects/kubescape/messaging/0.0.101/messaging.json"
     },
@@ -28958,6 +29714,18 @@
       "repo": "messaging",
       "version": "0.0.100",
       "path": "subprojects/kubescape/messaging/0.0.100/messaging.json"
+    },
+    {
+      "owner": "kubescape",
+      "repo": "node-agent",
+      "version": "0.3.79",
+      "path": "subprojects/kubescape/node-agent/0.3.79/node-agent.json"
+    },
+    {
+      "owner": "kubescape",
+      "repo": "node-agent",
+      "version": "0.3.75",
+      "path": "subprojects/kubescape/node-agent/0.3.75/node-agent.json"
     },
     {
       "owner": "kubescape",
@@ -29066,6 +29834,12 @@
       "repo": "opa-utils",
       "version": "0.0.287",
       "path": "subprojects/kubescape/opa-utils/0.0.287/opa-utils.json"
+    },
+    {
+      "owner": "kubescape",
+      "repo": "operator",
+      "version": "0.2.134",
+      "path": "subprojects/kubescape/operator/0.2.134/operator.json"
     },
     {
       "owner": "kubescape",
@@ -29232,6 +30006,30 @@
     {
       "owner": "kubescape",
       "repo": "storage",
+      "version": "0.0.265",
+      "path": "subprojects/kubescape/storage/0.0.265/storage.json"
+    },
+    {
+      "owner": "kubescape",
+      "repo": "storage",
+      "version": "0.0.264",
+      "path": "subprojects/kubescape/storage/0.0.264/storage.json"
+    },
+    {
+      "owner": "kubescape",
+      "repo": "storage",
+      "version": "0.0.263",
+      "path": "subprojects/kubescape/storage/0.0.263/storage.json"
+    },
+    {
+      "owner": "kubescape",
+      "repo": "storage",
+      "version": "0.0.262",
+      "path": "subprojects/kubescape/storage/0.0.262/storage.json"
+    },
+    {
+      "owner": "kubescape",
+      "repo": "storage",
       "version": "0.0.261",
       "path": "subprojects/kubescape/storage/0.0.261/storage.json"
     },
@@ -29352,6 +30150,12 @@
     {
       "owner": "kubescape",
       "repo": "synchronizer",
+      "version": "0.0.136",
+      "path": "subprojects/kubescape/synchronizer/0.0.136/synchronizer.json"
+    },
+    {
+      "owner": "kubescape",
+      "repo": "synchronizer",
       "version": "0.0.134",
       "path": "subprojects/kubescape/synchronizer/0.0.134/synchronizer.json"
     },
@@ -29390,6 +30194,12 @@
       "repo": "synchronizer",
       "version": "0.0.127",
       "path": "subprojects/kubescape/synchronizer/0.0.127/synchronizer.json"
+    },
+    {
+      "owner": "kubescape",
+      "repo": "workflows",
+      "version": "1.0.175",
+      "path": "subprojects/kubescape/workflows/1.0.175/workflows.json"
     },
     {
       "owner": "kubescape",
@@ -30162,6 +30972,12 @@
     {
       "owner": "kubestellar",
       "repo": "console",
+      "version": "0.3.17",
+      "path": "subprojects/kubestellar/console/0.3.17/console.json"
+    },
+    {
+      "owner": "kubestellar",
+      "repo": "console",
       "version": "0.3.16",
       "path": "subprojects/kubestellar/console/0.3.16/console.json"
     },
@@ -30672,6 +31488,12 @@
     {
       "owner": "kubevirt",
       "repo": "cluster-network-addons-operator",
+      "version": "0.102.0",
+      "path": "subprojects/kubevirt/cluster-network-addons-operator/0.102.0/cluster-network-addons-operator.json"
+    },
+    {
+      "owner": "kubevirt",
+      "repo": "cluster-network-addons-operator",
       "version": "0.101.2",
       "path": "subprojects/kubevirt/cluster-network-addons-operator/0.101.2/cluster-network-addons-operator.json"
     },
@@ -30728,6 +31550,12 @@
       "repo": "common-templates",
       "version": "0.32.0",
       "path": "subprojects/kubevirt/common-templates/0.32.0/common-templates.json"
+    },
+    {
+      "owner": "kubevirt",
+      "repo": "containerized-data-importer",
+      "version": "1.65.0",
+      "path": "subprojects/kubevirt/containerized-data-importer/1.65.0/containerized-data-importer.json"
     },
     {
       "owner": "kubevirt",
@@ -30954,6 +31782,12 @@
     {
       "owner": "kubevirt",
       "repo": "ipam-extensions",
+      "version": "0.6.0",
+      "path": "subprojects/kubevirt/ipam-extensions/0.6.0/ipam-extensions.json"
+    },
+    {
+      "owner": "kubevirt",
+      "repo": "ipam-extensions",
       "version": "0.4.0",
       "path": "subprojects/kubevirt/ipam-extensions/0.4.0/ipam-extensions.json"
     },
@@ -31022,6 +31856,12 @@
       "repo": "kubesecondarydns",
       "version": "0.0.18",
       "path": "subprojects/kubevirt/kubesecondarydns/0.0.18/kubesecondarydns.json"
+    },
+    {
+      "owner": "kubevirt",
+      "repo": "kubevirt-aie-webhook",
+      "version": "1.1.0",
+      "path": "subprojects/kubevirt/kubevirt-aie-webhook/1.1.0/kubevirt-aie-webhook.json"
     },
     {
       "owner": "kubevirt",
@@ -31556,6 +32396,12 @@
       "repo": "sbomscanner",
       "version": "0.7.1",
       "path": "subprojects/kubewarden/sbomscanner/0.7.1/sbomscanner.json"
+    },
+    {
+      "owner": "kubewarden",
+      "repo": "sbomscanner",
+      "version": "0.10.3",
+      "path": "subprojects/kubewarden/sbomscanner/0.10.3/sbomscanner.json"
     },
     {
       "owner": "kubewarden",
@@ -33036,6 +33882,24 @@
     {
       "owner": "meshery",
       "repo": "meshkit",
+      "version": "1.0.2",
+      "path": "subprojects/meshery/meshkit/1.0.2/meshkit.json"
+    },
+    {
+      "owner": "meshery",
+      "repo": "meshkit",
+      "version": "1.0.1",
+      "path": "subprojects/meshery/meshkit/1.0.1/meshkit.json"
+    },
+    {
+      "owner": "meshery",
+      "repo": "meshkit",
+      "version": "1.0.0",
+      "path": "subprojects/meshery/meshkit/1.0.0/meshkit.json"
+    },
+    {
+      "owner": "meshery",
+      "repo": "meshkit",
       "version": "0.8.70",
       "path": "subprojects/meshery/meshkit/0.8.70/meshkit.json"
     },
@@ -33122,6 +33986,30 @@
       "repo": "meshsync",
       "version": "0.8.21",
       "path": "subprojects/meshery/meshsync/0.8.21/meshsync.json"
+    },
+    {
+      "owner": "meshery",
+      "repo": "schemas",
+      "version": "1.0.3",
+      "path": "subprojects/meshery/schemas/1.0.3/schemas.json"
+    },
+    {
+      "owner": "meshery",
+      "repo": "schemas",
+      "version": "1.0.2",
+      "path": "subprojects/meshery/schemas/1.0.2/schemas.json"
+    },
+    {
+      "owner": "meshery",
+      "repo": "schemas",
+      "version": "1.0.1",
+      "path": "subprojects/meshery/schemas/1.0.1/schemas.json"
+    },
+    {
+      "owner": "meshery",
+      "repo": "schemas",
+      "version": "1.0.0",
+      "path": "subprojects/meshery/schemas/1.0.0/schemas.json"
     },
     {
       "owner": "meshery",
@@ -33390,6 +34278,12 @@
     {
       "owner": "metallb",
       "repo": "frr-k8s",
+      "version": "frr-k8s-chart-0.0.23",
+      "path": "subprojects/metallb/frr-k8s/frr-k8s-chart-0.0.23/frr-k8s.json"
+    },
+    {
+      "owner": "metallb",
+      "repo": "frr-k8s",
       "version": "frr-k8s-chart-0.0.22",
       "path": "subprojects/metallb/frr-k8s/frr-k8s-chart-0.0.22/frr-k8s.json"
     },
@@ -33404,6 +34298,12 @@
       "repo": "frr-k8s",
       "version": "frr-k8s-chart-0.0.20",
       "path": "subprojects/metallb/frr-k8s/frr-k8s-chart-0.0.20/frr-k8s.json"
+    },
+    {
+      "owner": "metallb",
+      "repo": "frr-k8s",
+      "version": "0.0.23",
+      "path": "subprojects/metallb/frr-k8s/0.0.23/frr-k8s.json"
     },
     {
       "owner": "metallb",
@@ -33686,6 +34586,12 @@
       "repo": "jsm.go",
       "version": "0.2.0",
       "path": "subprojects/nats-io/jsm.go/0.2.0/jsm.go.json"
+    },
+    {
+      "owner": "nats-io",
+      "repo": "nack",
+      "version": "0.22.4",
+      "path": "subprojects/nats-io/nack/0.22.4/nack.json"
     },
     {
       "owner": "nats-io",
@@ -36685,13 +37591,25 @@
       "owner": "open-feature",
       "repo": "flagd-schemas",
       "version": "json",
+      "path": "subprojects/open-feature/flagd-schemas/json/json-schema-v0.2.12/flagd-schemas.json"
+    },
+    {
+      "owner": "open-feature",
+      "repo": "flagd-schemas",
+      "version": "json",
       "path": "subprojects/open-feature/flagd-schemas/json/json-schema-v0.2.13/flagd-schemas.json"
     },
     {
       "owner": "open-feature",
       "repo": "flagd-schemas",
       "version": "json",
-      "path": "subprojects/open-feature/flagd-schemas/json/json-schema-v0.2.12/flagd-schemas.json"
+      "path": "subprojects/open-feature/flagd-schemas/json/json-schema-v0.2.14/flagd-schemas.json"
+    },
+    {
+      "owner": "open-feature",
+      "repo": "flagd-schemas",
+      "version": "json",
+      "path": "subprojects/open-feature/flagd-schemas/json/json-schema-v0.2.15/flagd-schemas.json"
     },
     {
       "owner": "open-feature",
@@ -36818,6 +37736,12 @@
       "repo": "cert-controller",
       "version": "0.11.0",
       "path": "subprojects/open-policy-agent/cert-controller/0.11.0/cert-controller.json"
+    },
+    {
+      "owner": "open-policy-agent",
+      "repo": "conftest",
+      "version": "0.68.0",
+      "path": "subprojects/open-policy-agent/conftest/0.68.0/conftest.json"
     },
     {
       "owner": "open-policy-agent",
@@ -37056,6 +37980,12 @@
     {
       "owner": "open-policy-agent",
       "repo": "opa-envoy-plugin",
+      "version": "1.15.1-envoy",
+      "path": "subprojects/open-policy-agent/opa-envoy-plugin/1.15.1-envoy/opa-envoy-plugin.json"
+    },
+    {
+      "owner": "open-policy-agent",
+      "repo": "opa-envoy-plugin",
       "version": "1.15.0-envoy",
       "path": "subprojects/open-policy-agent/opa-envoy-plugin/1.15.0-envoy/opa-envoy-plugin.json"
     },
@@ -37158,6 +38088,12 @@
     {
       "owner": "open-telemetry",
       "repo": "opentelemetry-collector",
+      "version": "0.149.0",
+      "path": "subprojects/open-telemetry/opentelemetry-collector/0.149.0/opentelemetry-collector.json"
+    },
+    {
+      "owner": "open-telemetry",
+      "repo": "opentelemetry-collector",
       "version": "0.148.0",
       "path": "subprojects/open-telemetry/opentelemetry-collector/0.148.0/opentelemetry-collector.json"
     },
@@ -37212,6 +38148,12 @@
     {
       "owner": "open-telemetry",
       "repo": "opentelemetry-collector-contrib",
+      "version": "0.149.0",
+      "path": "subprojects/open-telemetry/opentelemetry-collector-contrib/0.149.0/opentelemetry-collector-contrib.json"
+    },
+    {
+      "owner": "open-telemetry",
+      "repo": "opentelemetry-collector-contrib",
       "version": "0.148.0",
       "path": "subprojects/open-telemetry/opentelemetry-collector-contrib/0.148.0/opentelemetry-collector-contrib.json"
     },
@@ -37261,13 +38203,19 @@
       "owner": "open-telemetry",
       "repo": "opentelemetry-collector-releases",
       "version": "cmd",
-      "path": "subprojects/open-telemetry/opentelemetry-collector-releases/cmd/builder/v0.147.0/opentelemetry-collector-releases.json"
+      "path": "subprojects/open-telemetry/opentelemetry-collector-releases/cmd/opampsupervisor/v0.147.0/opentelemetry-collector-releases.json"
     },
     {
       "owner": "open-telemetry",
       "repo": "opentelemetry-collector-releases",
       "version": "cmd",
-      "path": "subprojects/open-telemetry/opentelemetry-collector-releases/cmd/opampsupervisor/v0.147.0/opentelemetry-collector-releases.json"
+      "path": "subprojects/open-telemetry/opentelemetry-collector-releases/cmd/builder/v0.147.0/opentelemetry-collector-releases.json"
+    },
+    {
+      "owner": "open-telemetry",
+      "repo": "opentelemetry-collector-releases",
+      "version": "0.149.0",
+      "path": "subprojects/open-telemetry/opentelemetry-collector-releases/0.149.0/opentelemetry-collector-releases.json"
     },
     {
       "owner": "open-telemetry",
@@ -37343,6 +38291,24 @@
     },
     {
       "owner": "open-telemetry",
+      "repo": "opentelemetry-collector-releases",
+      "version": "0.122.0",
+      "path": "subprojects/open-telemetry/opentelemetry-collector-releases/0.122.0/opentelemetry-collector-releases.json"
+    },
+    {
+      "owner": "open-telemetry",
+      "repo": "opentelemetry-collector-releases",
+      "version": "0.121.0",
+      "path": "subprojects/open-telemetry/opentelemetry-collector-releases/0.121.0/opentelemetry-collector-releases.json"
+    },
+    {
+      "owner": "open-telemetry",
+      "repo": "opentelemetry-ebpf-instrumentation",
+      "version": "0.7.0",
+      "path": "subprojects/open-telemetry/opentelemetry-ebpf-instrumentation/0.7.0/opentelemetry-ebpf-instrumentation.json"
+    },
+    {
+      "owner": "open-telemetry",
       "repo": "opentelemetry-ebpf-instrumentation",
       "version": "0.6.0",
       "path": "subprojects/open-telemetry/opentelemetry-ebpf-instrumentation/0.6.0/opentelemetry-ebpf-instrumentation.json"
@@ -37388,6 +38354,12 @@
       "repo": "opentelemetry-go",
       "version": "exporters",
       "path": "subprojects/open-telemetry/opentelemetry-go/exporters/prometheus/v0.59.1/opentelemetry-go.json"
+    },
+    {
+      "owner": "open-telemetry",
+      "repo": "opentelemetry-go",
+      "version": "1.43.0",
+      "path": "subprojects/open-telemetry/opentelemetry-go/1.43.0/opentelemetry-go.json"
     },
     {
       "owner": "open-telemetry",
@@ -37460,6 +38432,12 @@
       "repo": "opentelemetry-go-build-tools",
       "version": "0.26.0",
       "path": "subprojects/open-telemetry/opentelemetry-go-build-tools/0.26.0/opentelemetry-go-build-tools.json"
+    },
+    {
+      "owner": "open-telemetry",
+      "repo": "opentelemetry-go-compile-instrumentation",
+      "version": "0.3.0",
+      "path": "subprojects/open-telemetry/opentelemetry-go-compile-instrumentation/0.3.0/opentelemetry-go-compile-instrumentation.json"
     },
     {
       "owner": "open-telemetry",
@@ -39391,13 +40369,13 @@
       "owner": "perses",
       "repo": "plugins",
       "version": "timeseriestable",
-      "path": "subprojects/perses/plugins/timeseriestable/v0.11.0/plugins.json"
+      "path": "subprojects/perses/plugins/timeseriestable/v0.11.1/plugins.json"
     },
     {
       "owner": "perses",
       "repo": "plugins",
       "version": "timeseriestable",
-      "path": "subprojects/perses/plugins/timeseriestable/v0.11.1/plugins.json"
+      "path": "subprojects/perses/plugins/timeseriestable/v0.11.0/plugins.json"
     },
     {
       "owner": "perses",
@@ -39415,19 +40393,13 @@
       "owner": "perses",
       "repo": "plugins",
       "version": "tempo",
-      "path": "subprojects/perses/plugins/tempo/v0.57.1/plugins.json"
-    },
-    {
-      "owner": "perses",
-      "repo": "plugins",
-      "version": "tempo",
       "path": "subprojects/perses/plugins/tempo/v0.57.0/plugins.json"
     },
     {
       "owner": "perses",
       "repo": "plugins",
-      "version": "table",
-      "path": "subprojects/perses/plugins/table/v0.10.1/plugins.json"
+      "version": "tempo",
+      "path": "subprojects/perses/plugins/tempo/v0.57.1/plugins.json"
     },
     {
       "owner": "perses",
@@ -39450,14 +40422,20 @@
     {
       "owner": "perses",
       "repo": "plugins",
-      "version": "statushistorychart",
-      "path": "subprojects/perses/plugins/statushistorychart/v0.12.1/plugins.json"
+      "version": "table",
+      "path": "subprojects/perses/plugins/table/v0.10.1/plugins.json"
     },
     {
       "owner": "perses",
       "repo": "plugins",
       "version": "statushistorychart",
       "path": "subprojects/perses/plugins/statushistorychart/v0.12.0/plugins.json"
+    },
+    {
+      "owner": "perses",
+      "repo": "plugins",
+      "version": "statushistorychart",
+      "path": "subprojects/perses/plugins/statushistorychart/v0.12.1/plugins.json"
     },
     {
       "owner": "perses",
@@ -39475,13 +40453,13 @@
       "owner": "perses",
       "repo": "plugins",
       "version": "staticlistvariable",
-      "path": "subprojects/perses/plugins/staticlistvariable/v0.8.1/plugins.json"
+      "path": "subprojects/perses/plugins/staticlistvariable/v0.8.0/plugins.json"
     },
     {
       "owner": "perses",
       "repo": "plugins",
       "version": "staticlistvariable",
-      "path": "subprojects/perses/plugins/staticlistvariable/v0.8.0/plugins.json"
+      "path": "subprojects/perses/plugins/staticlistvariable/v0.8.1/plugins.json"
     },
     {
       "owner": "perses",
@@ -39565,25 +40543,25 @@
       "owner": "perses",
       "repo": "plugins",
       "version": "markdown",
-      "path": "subprojects/perses/plugins/markdown/v0.11.0/plugins.json"
-    },
-    {
-      "owner": "perses",
-      "repo": "plugins",
-      "version": "markdown",
       "path": "subprojects/perses/plugins/markdown/v0.11.1/plugins.json"
     },
     {
       "owner": "perses",
       "repo": "plugins",
-      "version": "loki",
-      "path": "subprojects/perses/plugins/loki/v0.5.0/plugins.json"
+      "version": "markdown",
+      "path": "subprojects/perses/plugins/markdown/v0.11.0/plugins.json"
     },
     {
       "owner": "perses",
       "repo": "plugins",
       "version": "loki",
       "path": "subprojects/perses/plugins/loki/v0.5.1/plugins.json"
+    },
+    {
+      "owner": "perses",
+      "repo": "plugins",
+      "version": "loki",
+      "path": "subprojects/perses/plugins/loki/v0.5.0/plugins.json"
     },
     {
       "owner": "perses",
@@ -39601,13 +40579,13 @@
       "owner": "perses",
       "repo": "plugins",
       "version": "ictorialogs",
-      "path": "subprojects/perses/plugins/ictorialogs/v0.3.1/plugins.json"
+      "path": "subprojects/perses/plugins/ictorialogs/v0.3.0/plugins.json"
     },
     {
       "owner": "perses",
       "repo": "plugins",
       "version": "ictorialogs",
-      "path": "subprojects/perses/plugins/ictorialogs/v0.3.0/plugins.json"
+      "path": "subprojects/perses/plugins/ictorialogs/v0.3.1/plugins.json"
     },
     {
       "owner": "perses",
@@ -39625,25 +40603,25 @@
       "owner": "perses",
       "repo": "plugins",
       "version": "heatmapchart",
-      "path": "subprojects/perses/plugins/heatmapchart/v0.4.0/plugins.json"
-    },
-    {
-      "owner": "perses",
-      "repo": "plugins",
-      "version": "heatmapchart",
       "path": "subprojects/perses/plugins/heatmapchart/v0.4.1/plugins.json"
     },
     {
       "owner": "perses",
       "repo": "plugins",
-      "version": "gaugechart",
-      "path": "subprojects/perses/plugins/gaugechart/v0.12.0/plugins.json"
+      "version": "heatmapchart",
+      "path": "subprojects/perses/plugins/heatmapchart/v0.4.0/plugins.json"
     },
     {
       "owner": "perses",
       "repo": "plugins",
       "version": "gaugechart",
       "path": "subprojects/perses/plugins/gaugechart/v0.12.1/plugins.json"
+    },
+    {
+      "owner": "perses",
+      "repo": "plugins",
+      "version": "gaugechart",
+      "path": "subprojects/perses/plugins/gaugechart/v0.12.0/plugins.json"
     },
     {
       "owner": "perses",
@@ -39685,13 +40663,13 @@
       "owner": "perses",
       "repo": "plugins",
       "version": "barchart",
-      "path": "subprojects/perses/plugins/barchart/v0.11.0/plugins.json"
+      "path": "subprojects/perses/plugins/barchart/v0.11.1/plugins.json"
     },
     {
       "owner": "perses",
       "repo": "plugins",
       "version": "barchart",
-      "path": "subprojects/perses/plugins/barchart/v0.11.1/plugins.json"
+      "path": "subprojects/perses/plugins/barchart/v0.11.0/plugins.json"
     },
     {
       "owner": "perses",
@@ -40110,6 +41088,12 @@
     {
       "owner": "projectcapsule",
       "repo": "capsule-proxy",
+      "version": "0.11.3",
+      "path": "subprojects/projectcapsule/capsule-proxy/0.11.3/capsule-proxy.json"
+    },
+    {
+      "owner": "projectcapsule",
+      "repo": "capsule-proxy",
       "version": "0.11.2",
       "path": "subprojects/projectcapsule/capsule-proxy/0.11.2/capsule-proxy.json"
     },
@@ -40434,6 +41418,12 @@
     {
       "owner": "prometheus",
       "repo": "exporter-toolkit",
+      "version": "0.16.0",
+      "path": "subprojects/prometheus/exporter-toolkit/0.16.0/exporter-toolkit.json"
+    },
+    {
+      "owner": "prometheus",
+      "repo": "exporter-toolkit",
       "version": "0.15.1",
       "path": "subprojects/prometheus/exporter-toolkit/0.15.1/exporter-toolkit.json"
     },
@@ -40634,6 +41624,12 @@
       "repo": "node_exporter",
       "version": "1.8.2",
       "path": "subprojects/prometheus/node_exporter/1.8.2/node_exporter.json"
+    },
+    {
+      "owner": "prometheus",
+      "repo": "node_exporter",
+      "version": "1.11.0",
+      "path": "subprojects/prometheus/node_exporter/1.11.0/node_exporter.json"
     },
     {
       "owner": "prometheus",
@@ -40962,6 +41958,12 @@
     {
       "owner": "rook",
       "repo": "kubectl-rook-ceph",
+      "version": "0.9.6",
+      "path": "subprojects/rook/kubectl-rook-ceph/0.9.6/kubectl-rook-ceph.json"
+    },
+    {
+      "owner": "rook",
+      "repo": "kubectl-rook-ceph",
       "version": "0.9.5",
       "path": "subprojects/rook/kubectl-rook-ceph/0.9.5/kubectl-rook-ceph.json"
     },
@@ -41018,6 +42020,18 @@
       "repo": "docs",
       "version": "0.1.28",
       "path": "subprojects/score-spec/docs/0.1.28/docs.json"
+    },
+    {
+      "owner": "score-spec",
+      "repo": "score-compose",
+      "version": "0.36.5",
+      "path": "subprojects/score-spec/score-compose/0.36.5/score-compose.json"
+    },
+    {
+      "owner": "score-spec",
+      "repo": "score-compose",
+      "version": "0.36.4",
+      "path": "subprojects/score-spec/score-compose/0.36.4/score-compose.json"
     },
     {
       "owner": "score-spec",
@@ -41112,6 +42126,12 @@
     {
       "owner": "score-spec",
       "repo": "score-k8s",
+      "version": "0.10.4",
+      "path": "subprojects/score-spec/score-k8s/0.10.4/score-k8s.json"
+    },
+    {
+      "owner": "score-spec",
+      "repo": "score-k8s",
       "version": "0.10.3",
       "path": "subprojects/score-spec/score-k8s/0.10.3/score-k8s.json"
     },
@@ -41150,6 +42170,12 @@
       "repo": "score-radius",
       "version": "0.0.6",
       "path": "subprojects/score-spec/score-radius/0.0.6/score-radius.json"
+    },
+    {
+      "owner": "score-spec",
+      "repo": "score-radius",
+      "version": "0.0.10",
+      "path": "subprojects/score-spec/score-radius/0.0.10/score-radius.json"
     },
     {
       "owner": "serverlessworkflow",
@@ -41336,6 +42362,12 @@
       "repo": "cni-plugins",
       "version": "0.2.6",
       "path": "subprojects/spidernet-io/cni-plugins/0.2.6/cni-plugins.json"
+    },
+    {
+      "owner": "spidernet-io",
+      "repo": "egressgateway",
+      "version": "0.6.8",
+      "path": "subprojects/spidernet-io/egressgateway/0.6.8/egressgateway.json"
     },
     {
       "owner": "spidernet-io",
@@ -41633,6 +42665,12 @@
     },
     {
       "owner": "spiffe",
+      "repo": "spiffe-csi",
+      "version": "0.2.10",
+      "path": "subprojects/spiffe/spiffe-csi/0.2.10/spiffe-csi.json"
+    },
+    {
+      "owner": "spiffe",
       "repo": "spiffe-helper",
       "version": "0.9.1",
       "path": "subprojects/spiffe/spiffe-helper/0.9.1/spiffe-helper.json"
@@ -41804,6 +42842,36 @@
       "repo": "spire-ha-agent",
       "version": "0.0.8",
       "path": "subprojects/spiffe/spire-ha-agent/0.0.8/spire-ha-agent.json"
+    },
+    {
+      "owner": "spiffe",
+      "repo": "spire-ha-agent",
+      "version": "0.0.18",
+      "path": "subprojects/spiffe/spire-ha-agent/0.0.18/spire-ha-agent.json"
+    },
+    {
+      "owner": "spiffe",
+      "repo": "spire-ha-agent",
+      "version": "0.0.17",
+      "path": "subprojects/spiffe/spire-ha-agent/0.0.17/spire-ha-agent.json"
+    },
+    {
+      "owner": "spiffe",
+      "repo": "spire-ha-agent",
+      "version": "0.0.16",
+      "path": "subprojects/spiffe/spire-ha-agent/0.0.16/spire-ha-agent.json"
+    },
+    {
+      "owner": "spiffe",
+      "repo": "spire-ha-agent",
+      "version": "0.0.15",
+      "path": "subprojects/spiffe/spire-ha-agent/0.0.15/spire-ha-agent.json"
+    },
+    {
+      "owner": "spiffe",
+      "repo": "spire-ha-agent",
+      "version": "0.0.14",
+      "path": "subprojects/spiffe/spire-ha-agent/0.0.14/spire-ha-agent.json"
     },
     {
       "owner": "spiffe",
@@ -42506,6 +43574,12 @@
       "repo": "mockster",
       "version": "1.1.1",
       "path": "subprojects/trickstercache/mockster/1.1.1/mockster.json"
+    },
+    {
+      "owner": "truefoundry",
+      "repo": "CruiseKube",
+      "version": "0.2.5",
+      "path": "subprojects/truefoundry/CruiseKube/0.2.5/CruiseKube.json"
     },
     {
       "owner": "truefoundry",

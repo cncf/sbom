@@ -18,7 +18,7 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain go.mod.
   auto_generated: true
-  last_updated: "2026-03-30T05:18:10Z"
+  last_updated: "2026-04-06T05:17:33Z"
 repositories:
   - owner: alibaba
     repo: IOC-golang
@@ -3015,6 +3015,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from kubernetes-sigs/headlamp
   - owner: kubernetes-sigs
+    repo: dra-driver-cpu
+    name: dra-driver-cpu
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kubernetes-sigs/headlamp
+  - owner: kubernetes-sigs
     repo: dra-example-driver
     name: dra-example-driver
     category: observability
@@ -3299,6 +3305,12 @@ repositories:
   - owner: kubernetes-sigs
     repo: node-readiness-controller
     name: node-readiness-controller
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kubernetes-sigs/headlamp
+  - owner: kubernetes-sigs
+    repo: nvidia-dra-driver-gpu
+    name: nvidia-dra-driver-gpu
     category: observability
     project_status: sandbox
     discovered_by: org-scan from kubernetes-sigs/headlamp
@@ -3761,6 +3773,12 @@ repositories:
   - owner: kubevirt
     repo: hyperconverged-cluster-operator
     name: hyperconverged-cluster-operator
+    category: build
+    project_status: incubating
+    discovered_by: org-scan from kubevirt/kubevirt
+  - owner: kubevirt
+    repo: iommufd-device-plugin
+    name: iommufd-device-plugin
     category: build
     project_status: incubating
     discovered_by: org-scan from kubevirt/kubevirt
@@ -4610,6 +4628,12 @@ repositories:
     category: networking
     project_status: sandbox
     discovered_by: org-scan from networkservicemesh/api
+  - owner: nmstate
+    repo: kubernetes-nmstate
+    name: kubernetes-nmstate
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from nmstate/nmstate
   - owner: notaryproject
     repo: notation-core-go
     name: notation-core-go
@@ -5561,6 +5585,12 @@ repositories:
   - owner: score-spec
     repo: score-go
     name: score-go
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from score-spec/spec
+  - owner: score-spec
+    repo: score-helm
+    name: score-helm
     category: build
     project_status: sandbox
     discovered_by: org-scan from score-spec/spec

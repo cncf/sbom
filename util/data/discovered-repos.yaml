@@ -18,7 +18,7 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain go.mod.
   auto_generated: true
-  last_updated: "2026-04-06T05:17:33Z"
+  last_updated: "2026-04-21T16:54:37Z"
 repositories:
   - owner: alibaba
     repo: IOC-golang
@@ -861,6 +861,12 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from containerd/containerd
   - owner: containerd
+    repo: go-dmverity
+    name: go-dmverity
+    category: container-runtime
+    project_status: graduated
+    discovered_by: org-scan from containerd/containerd
+  - owner: containerd
     repo: go-runc
     name: go-runc
     category: ml-platform
@@ -1269,6 +1275,12 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from dragonflyoss/dragonfly
   - owner: dragonflyoss
+    repo: dragonfly-injector
+    name: dragonfly-injector
+    category: ml-platform
+    project_status: graduated
+    discovered_by: org-scan from dragonflyoss/dragonfly
+  - owner: dragonflyoss
     repo: snapshotter
     name: snapshotter
     category: registry
@@ -1470,6 +1482,12 @@ repositories:
     repo: flagger
     name: flagger
     category: ci-cd
+    project_status: graduated
+    discovered_by: org-scan from fluxcd/flux2
+  - owner: fluxcd
+    repo: flux-schema
+    name: flux-schema
+    category: gitops
     project_status: graduated
     discovered_by: org-scan from fluxcd/flux2
   - owner: fluxcd
@@ -2949,6 +2967,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from kubernetes-sigs/headlamp
   - owner: kubernetes-sigs
+    repo: cluster-inventory-api
+    name: cluster-inventory-api
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kubernetes-sigs/headlamp
+  - owner: kubernetes-sigs
     repo: cluster-proportional-autoscaler
     name: cluster-proportional-autoscaler
     category: observability
@@ -3017,6 +3041,12 @@ repositories:
   - owner: kubernetes-sigs
     repo: dra-driver-cpu
     name: dra-driver-cpu
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kubernetes-sigs/headlamp
+  - owner: kubernetes-sigs
+    repo: dra-driver-nvidia-gpu
+    name: dra-driver-nvidia-gpu
     category: observability
     project_status: sandbox
     discovered_by: org-scan from kubernetes-sigs/headlamp
@@ -3233,6 +3263,12 @@ repositories:
   - owner: kubernetes-sigs
     repo: maintainers
     name: maintainers
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kubernetes-sigs/headlamp
+  - owner: kubernetes-sigs
+    repo: mcp-lifecycle-operator
+    name: mcp-lifecycle-operator
     category: observability
     project_status: sandbox
     discovered_by: org-scan from kubernetes-sigs/headlamp

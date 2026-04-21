@@ -47,6 +47,26 @@ jobs:
           go-version: '1.22'
           cache: false
 
+      - name: Install AWS CLI
+        run: |
+          python3 -m pip install --user awscli
+          echo "$HOME/.local/bin" >> $GITHUB_PATH
+
+      - name: Validate S3 configuration
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          S3_ENDPOINT: ${{ vars.S3_ENDPOINT }}
+          S3_REGION: ${{ vars.S3_REGION }}
+        run: |
+          set -e
+          for VAR in AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY S3_ENDPOINT; do
+            if [ -z "${!VAR}" ]; then
+              echo "Missing required S3 config: $VAR"
+              exit 1
+            fi
+          done
+
       - name: Install bom tool and go-licenses
         run: |
           go install sigs.k8s.io/bom/cmd/bom@latest
@@ -61,19 +81,35 @@ jobs:
           RELEASES_MODE: ${{ inputs.releases_mode }}
           MAX_RELEASES: ${{ inputs.max_releases }}
           SBOM_PATH_PREFIX: ${{ inputs.sbom_path_prefix }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_SESSION_TOKEN: ${{ secrets.AWS_SESSION_TOKEN }}
+          S3_ENDPOINT: ${{ vars.S3_ENDPOINT }}
+          S3_REGION: ${{ vars.S3_REGION }}
+          PROJECT_BUCKET: ${{ vars.PROJECT_BUCKET }}
+          SUBPROJECT_BUCKET: ${{ vars.SUBPROJECT_BUCKET }}
         run: |
           set -e
           
           OWNER="${{ matrix.owner }}"
           REPO="${{ matrix.repo }}"
           PROJECT_NAME="${{ matrix.name }}"
-          SANITIZED_PROJECT=$(echo "$PROJECT_NAME" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr -cd '[:alnum:]-')
-          
+          PARENT_PROJECT="${{ matrix.parent_project || '' }}"
+
+          slugify() {
+            echo "$1" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr -cd '[:alnum:]-'
+          }
+
+          REPO_SLUG=$(slugify "$REPO")
           if [ -n "$SBOM_PATH_PREFIX" ]; then
-            SBOM_BASE_DIR="sbom/${SBOM_PATH_PREFIX}/${OWNER}/${REPO}"
+            PROJECT_SLUG=$(slugify "${PARENT_PROJECT:-$OWNER}")
+            TARGET_BUCKET="${SUBPROJECT_BUCKET:-cncf-subproject-sboms}"
           else
-            SBOM_BASE_DIR="sbom/${SANITIZED_PROJECT}/${REPO}"
+            PROJECT_SLUG=$(slugify "$PROJECT_NAME")
+            TARGET_BUCKET="${PROJECT_BUCKET:-cncf-project-sboms}"
           fi
+
+          TARGET_REGION="${S3_REGION:-us-east-1}"
           
           PROCESSED=0
           ONE_WEEK_AGO=$(date -u -d '7 days ago' +%Y-%m-%dT%H:%M:%SZ 2>/dev/null || date -u -v-7d +%Y-%m-%dT%H:%M:%SZ)
@@ -110,15 +146,52 @@ jobs:
             
             cd - > /dev/null
           }
+
+          object_exists() {
+            local OBJECT_KEY="$1"
+            aws s3api head-object \
+              --endpoint-url "$S3_ENDPOINT" \
+              --region "$TARGET_REGION" \
+              --bucket "$TARGET_BUCKET" \
+              --key "$OBJECT_KEY" >/dev/null 2>&1
+          }
+
+          upload_sbom() {
+            local LOCAL_FILE="$1"
+            local OBJECT_KEY="$2"
+
+            aws s3api put-object \
+              --endpoint-url "$S3_ENDPOINT" \
+              --region "$TARGET_REGION" \
+              --bucket "$TARGET_BUCKET" \
+              --key "$OBJECT_KEY" \
+              --body "$LOCAL_FILE" >/dev/null
+          }
           
           generate_sbom() {
             local TAG="$1"
-            local VERSION=$(echo "$TAG" | sed 's/^v//')
-            local SBOM_DIR="${SBOM_BASE_DIR}/${VERSION}"
-            local SBOM_FILE="${SBOM_DIR}/${REPO}.json"
-            
-            if [ -f "$SBOM_FILE" ] && [ "$FORCE_REGENERATE" != "true" ]; then
-              echo "SBOM already exists, skipping..."
+            local VERSION
+            VERSION=$(echo "$TAG" | sed 's/^v//' | tr '/[:space:]' '-' | tr -cd '[:alnum:]._-')
+            if [ -z "$VERSION" ]; then
+              VERSION="unknown"
+            fi
+
+            local FILENAME_VERSION
+            FILENAME_VERSION=$(echo "$VERSION" | tr '.' '_')
+
+            local OBJECT_KEY
+            local OBJECT_FILE
+
+            if [ -n "$SBOM_PATH_PREFIX" ]; then
+              OBJECT_FILE="${PROJECT_SLUG}_${REPO_SLUG}_${FILENAME_VERSION}_spdx.json"
+              OBJECT_KEY="${PROJECT_SLUG}/${REPO_SLUG}/${VERSION}/${OBJECT_FILE}"
+            else
+              OBJECT_FILE="${PROJECT_SLUG}_${FILENAME_VERSION}_spdx.json"
+              OBJECT_KEY="${PROJECT_SLUG}/${VERSION}/${OBJECT_FILE}"
+            fi
+
+            if [ "$FORCE_REGENERATE" != "true" ] && object_exists "$OBJECT_KEY"; then
+              echo "SBOM already exists in bucket ($OBJECT_KEY), skipping..."
               return 1
             fi
             
@@ -130,7 +203,8 @@ jobs:
               return 1
             fi
             
-            mkdir -p "$SBOM_DIR"
+            local SBOM_FILE
+            SBOM_FILE=$(mktemp)
             
             local SBOM_NAME="${OWNER}/${REPO} ${TAG}"
             local SBOM_NAMESPACE="https://github.com/${OWNER}/${REPO}/releases/tag/${TAG}"
@@ -158,10 +232,21 @@ jobs:
                  ' "$SBOM_FILE" > "$TEMP_SBOM" && mv "$TEMP_SBOM" "$SBOM_FILE"
               
               rm -f "$LICENSES_FILE"
-              echo "Successfully generated SBOM: $SBOM_FILE"
+
+              if upload_sbom "$SBOM_FILE" "$OBJECT_KEY"; then
+                echo "Uploaded SBOM to oci://${TARGET_BUCKET}/${OBJECT_KEY}"
+              else
+                echo "Failed to upload SBOM to oci://${TARGET_BUCKET}/${OBJECT_KEY}"
+                rm -f "$SBOM_FILE"
+                rm -rf "$TEMP_DIR"
+                return 1
+              fi
+
+              rm -f "$SBOM_FILE"
               rm -rf "$TEMP_DIR"
               return 0
             else
+              rm -f "$SBOM_FILE"
               rm -rf "$TEMP_DIR"
               return 1
             fi
@@ -216,27 +301,6 @@ jobs:
           
           echo "::endgroup::"
 
-      - name: Commit and push SBOMs
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          
-          git add sbom/
-          
-          if git diff --cached --quiet; then
-            echo "No new SBOMs generated"
-            exit 0
-          fi
-          
-          git commit -m "chore(sbom): update SBOM for ${{ matrix.owner }}/${{ matrix.repo }}"
-          
-          for i in $(seq 1 5); do
-            if git pull --rebase origin ${{ github.ref_name }} && git push origin HEAD:${{ github.ref_name }}; then
-              exit 0
-            fi
-            sleep $((i * 5))
-          done
-          exit 1
+      - name: SBOMs uploaded to OCI
+        run: echo "SBOM generation complete; artifacts were uploaded to Oracle Object Storage."
 

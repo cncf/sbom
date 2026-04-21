@@ -29,24 +29,16 @@ The SBOM generator:
 - Skips alpha, beta, RC, and other pre-release versions
 - Generates SPDX-compliant SBOM files using the [kubernetes-sigs/bom](https://github.com/kubernetes-sigs/bom) tool
 - Enriches SBOMs with license information using [google/go-licenses](https://github.com/google/go-licenses)
-- Stores SBOMs in a structured directory format: `sbom/{projectname}/{reponame}/{version}/{reponame}.json`
+- Stores SBOMs in Oracle Object Storage (not in Git):
+  - Bucket `Cncf-project-sboms`: `{project}/{version}/{project}_{version}_spdx.json`
+  - Bucket `Cncf-subproject-sboms`: `{project}/{subproject}/{version}/{project}_{subproject}_{version}_spdx.json`
 
 ## Directory Structure
 
 ```
 ./
 ├── README.md                           # This file
-├── sbom/                               # Generated SBOM files
-│   ├── index.json                      # Index of all generated SBOMs
-│   ├── <project-name>/                 # Official CNCF projects
-│   │   └── <repo-name>/
-│   │       └── <version>/
-│   │           └── <repo>.json         # SPDX SBOM file
-│   └── subprojects/                    # Subproject repos from CNCF orgs
-│       └── <owner>/
-│           └── <repo>/
-│               └── <version>/
-│                   └── <repo>.json     # SPDX SBOM file
+├── sbom/                               # Legacy/previously generated artifacts (kept for history)
 └── util/
     ├── data/
     │   ├── cncf-projects.yaml          # Auto-synced CNCF project list (DO NOT EDIT)
@@ -98,6 +90,21 @@ Generates SBOMs for CNCF projects.
 | `releases_mode` | `recent` (past week) or `latest` (N latest releases) | recent |
 | `max_releases` | Max releases per repo (only for `latest` mode) | 3 |
 
+Generated SBOMs are uploaded to OCI buckets:
+- `Cncf-project-sboms`: `<project>/<version>/<project>_<version>_spdx.json`
+- `Cncf-subproject-sboms`: `<project>/<subproject>/<version>/<project>_<subproject>_<version>_spdx.json`
+
+Required repository **Secrets** for OCI S3-compatible upload:
+- `AWS_ACCESS_KEY_ID`
+- `AWS_SECRET_ACCESS_KEY`
+- `AWS_SESSION_TOKEN` (optional)
+
+Required repository **Variables**:
+- `S3_ENDPOINT` (for example: `https://axtwf1hkrwcy.compat.objectstorage.us-sanjose-1.oraclecloud.com`)
+- `S3_REGION` (usually `us-east-1` for OCI S3 compatibility)
+- `PROJECT_BUCKET` (for example: `cncf-project-sboms`)
+- `SUBPROJECT_BUCKET` (for example: `cncf-subproject-sboms`)
+
 ### Running the Workflow Manually
 
 1. Go to Actions tab in GitHub
@@ -143,11 +150,44 @@ go run . /path/to/cncf-automation            # Execute cleanup
 
 ### generate-index
 
-Go tool that generates the `index.json` file for all SBOMs.
+Go tool for legacy local/repository SBOM index generation. The CI SBOM workflow now uploads artifacts directly to OCI buckets.
+
+### ingest-sbom-oci.sh
+
+Bash script for manual backfill of existing repository SBOM JSON files into OCI buckets.
+
+The script auto-loads environment variables from `./.env.sbom` (preferred) or `./.env` if present.
 
 ```bash
-cd util/generate-index
-go run . /path/to/cncf-automation
+./util/ingest-sbom-oci.sh --dry-run
+./util/ingest-sbom-oci.sh
+./util/ingest-sbom-oci.sh --force --oci-profile DEFAULT
+./util/ingest-sbom-oci.sh --auth-mode s3 --s3-endpoint "https://<namespace>.compat.objectstorage.<region>.oraclecloud.com"
+```
+
+The script reads legacy paths under `sbom/` and uploads using the active naming scheme:
+- Projects bucket (`Cncf-project-sboms`): `<project>/<version>/<project>_<version>_spdx.json`
+- Subprojects bucket (`Cncf-subproject-sboms`): `<project>/<subproject>/<version>/<project>_<subproject>_<version>_spdx.json`
+
+For S3-compatible auth (Access Key / Secret Key), export credentials before running:
+
+```bash
+export AWS_ACCESS_KEY_ID="<your-access-key>"
+export AWS_SECRET_ACCESS_KEY="<your-secret-key>"
+export AWS_SESSION_TOKEN="<optional-session-token>"
+./util/ingest-sbom-oci.sh --auth-mode s3 --s3-endpoint "https://<namespace>.compat.objectstorage.<region>.oraclecloud.com" --s3-region "us-east-1"
+```
+
+Or store them in `./.env.sbom`:
+
+```bash
+AWS_ACCESS_KEY_ID="<your-access-key>"
+AWS_SECRET_ACCESS_KEY="<your-secret-key>"
+AWS_SESSION_TOKEN="<optional-session-token>"
+S3_ENDPOINT="https://<namespace>.compat.objectstorage.<region>.oraclecloud.com"
+S3_REGION="us-east-1"
+PROJECT_BUCKET="cncf-project-sboms"
+SUBPROJECT_BUCKET="cncf-subproject-sboms"
 ```
 
 ## Local Testing
@@ -245,7 +285,7 @@ Each SBOM includes enriched metadata:
 
 ## Index File
 
-The `sbom/index.json` file provides a searchable index of all generated SBOMs:
+`sbom/index.json` is retained for legacy/local flows. OCI uploads are now the source of truth for generated SBOM artifacts.
 
 ```json
 {

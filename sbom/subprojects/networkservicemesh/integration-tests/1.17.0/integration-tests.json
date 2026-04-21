@@ -1,0 +1,2910 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "networkservicemesh/integration-tests v1.17.0",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "created": "2026-03-15T08:03:11Z",
+    "creators": [
+      "Tool: bom-v0.7.1",
+      "Tool: cncf-automation-sbom-generator"
+    ],
+    "licenseListVersion": "3.27",
+    "comment": "SBOM for CNCF project: networkservicemesh/integration-tests@v1.17.0"
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://github.com/networkservicemesh/integration-tests/releases/tag/v1.17.0",
+  "documentDescribes": [
+    "SPDXRef-Package-tmp.F7zquoDs5J"
+  ],
+  "files": [
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-extensions-parallel-suite.go",
+      "fileName": "extensions/parallel/suite.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "fa3b4377a69368bd4e4154b72885bc3ef1fc238d"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9d3a8f25f1c86c7245fc15a46118728c489c57d2023573e6297515ad402a6edb"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "93bc551dec5d99507418f7ba836c8616edffaff6c5f41ae6db2e2138c1c56d4817a035383cf6c15dffc7a985b528cbc766f6b66de9a3eeccdf6d0c18ddfbb25b"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-ovs-suite.gen.go",
+      "fileName": "suites/ovs/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "b7807c4d589fe8b8213c0c82f390094809c524dd"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f2b1d0346367422b78e0afe6dca563b433eef4a19cb6f78494d6f91922d19ff2"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "94327162fdbe81fec148688ec4be97e10ec421633920eb7d9866720ffadbd01a540f154e196c17561dfa07fc7bf9f6caf940491abd1c15b092304f3096f395b1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-.github-workflows-automerge.yaml",
+      "fileName": ".github/workflows/automerge.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "802fdd0727638fbfccf596cc48dafc472f595cf190f93134fba79eaa8fa78f498768825130700cb1918c8e7f607b6c0af1dbd811aafe82cb96ef65cf34039025"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "8fc38c6198e11e3b8de1f9970b078d8a84afdf62"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "cfb0b61310296b80ac9c10e0faed78da7de7c302dc8d9aa81eff2231e04f5973"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-afxdp-suite.gen.go",
+      "fileName": "suites/afxdp/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "bea79dbaf86a9a485a5dca1eb472d448abe02b3c"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "bf40b4ab81cd0b1b6c8eb32fff683e6ec56d4a487712a69f18c49de00d9e86c0"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "c644db14b4bbb1e16176fb727afa70ccd681067c6c56f91840dbd72937dadb0fca2e95200b45e68ac1a25962b5b0927eada7d780e16f5d80c7109538e4e92bd0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-multiforwarderC95vlantag-suite.gen.go",
+      "fileName": "suites/multiforwarder_vlantag/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "8155a81112a62126e6f7bd869727550a59692881"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d27d08d47d08d99a34a7f581f63fd2c4844adc48d97eee12eb3a3de8a160ca74"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "46cb051eafb2d7a56427d672eb83e2baf064ef634464166909ff0e55d5321f7d7261cb3075ab4c297b2a6aa6ec09d1a28cbbfc35c9803284a1584e24c54b2c7d"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-.github-workflows-pr-for-updates.yaml",
+      "fileName": ".github/workflows/pr-for-updates.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1f507e0e40ce23917c31355acdd8ea6bac511e246815ec2d2d2afb84d8e5dc63"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "d879d502518ae0813947213bc2f0cdae7885635357af7b40c1482784fbbfd11b9342f2931097fcd5acb8b55c2a2e4795be1a83e426034fcee266ff3ed5144b6a"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f15fb77f8141f618da3fb0fefa6eb8478f61cd81"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-threeC95clusterC95configuration-basic-suite.gen.go",
+      "fileName": "suites/interdomain/three_cluster_configuration/basic/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "550ae0d6a5adcd48461ebce431e362147517cee8a5b889b01c3b787c6e2eef29"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "45ddf6c99b470564f1104c90490b36ef7134b0386a44fbfe6b703bc859b1651f9763b4db7a1d099b9c7b94b6c7d994c5b56cfaccc39368fe89c9f1280fe21d02"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a1cac8308b5e9b95faa83761918756e4ba799e33"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-spire-cluster2-suite.gen.go",
+      "fileName": "suites/spire/cluster2/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "2b4c0a6d6148ee20810001cc2818fca6f5559a4a"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "fb0cfab4920e03331a3185a0662968b070b1e0cba3a0857589502af54f2d0477"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "95991d0f394b47fc135aec273c3d630d10ab4d27d147638583c4d6fc0d4c8ca14781335b524e8e98494608f071629bc5bbb2511b45b01a792285dfa755edf4c9"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-k8sC95monolith-externalC95nsc-suite.gen.go",
+      "fileName": "suites/k8s_monolith/external_nsc/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "4f8c187ad2952e1e82537c3658423bbcab99b76954e917a0438145e5b8a7d8093af52c8748ff67df567aeb6310eb6e83c19c8070fcb550033c8935ff0598b098"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ae67222c14c516dc860cc732c1c97b381fc1da01"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "317bbb23917fb7e080611c5a6997164b21988d6193f51a5dc2c3acf48f81ac92"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-extensions-parallel-options.go",
+      "fileName": "extensions/parallel/options.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c5d732d067de389bdea1817b4106a6b2b5afedee"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "da89c32746b0bbcb3e86a315d1d6e0acfd14c510a850e9ce529ff8155521a717"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "ef6d0885d0a6348f6048c149e7225349499f313d1f84a287a07b4ba22289643abf582a46ec9cd48f49a7f664bdff721a4632c48fc18188a48dfe15a4554abc97"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-k8sC95monolith-externalC95nsc-docker-suite.gen.go",
+      "fileName": "suites/k8s_monolith/external_nsc/docker/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "26df84c484314602c577c7382425fc7ed759b8c8e6aacfe37122e0812d588542"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "a8d76004171bd2740c88769eff1c1503689a329bdde2524ff33ef8ebef8e1b3eca5c8dbf638d32a110a992d5926073ce02af8a6c8b16c9fdd3ecb415322ba33e"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "cfcb32fc4d35c5142c991987afe5d62f89778bc9"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-.license-README.md",
+      "fileName": ".license/README.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "07ff4d29cc58cfaa71d9ce75d1628b5d4aaec756bd199413e7da170bbe54be8e3610c7b4828978838fc1bf0474d8cd40a9194a583132f6a3bc1428a4c079d5c9"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4951af38a6b79ed7140853f8b3fee4f6884e9581"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1f7e6ae03f6e5d3a30d989a0ce683ae218447359746b096ce952c4f03bfa6bc2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-k8sC95monolith-externalC95nsc-dns-suite.gen.go",
+      "fileName": "suites/k8s_monolith/external_nsc/dns/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "265446af122897c70d4c53d7e743d57fb08793bb2156f2471237a4d86710afc4"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "97635e2e64bbf40a879bf61899cfc3593e25259051c24730541891bc7aa1e43b0f3cd4e86c06a575522f96f7c118371a5c226dd2460ff4f1d9f0c179aa362776"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "7210a1dfa9d2c2b325a7dbad14e4b9525ca61ca0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-extensions-checkout-suite.go",
+      "fileName": "extensions/checkout/suite.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "7e5969cfaf58bf9c8159bddbca8b0250ba19d687388e751710e906b0a679c64a5b1b85db49cbd80f3b8c94614f9994793794e8962f9320351555892e7c22c837"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "1735a77004cc36ef479c2b536ea2a17833e73e00"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6f1fbd911a0486119a74eb6e79b2bfd98ec50b2c3f8a43324472f12380f23886"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-observability-suite.gen.go",
+      "fileName": "suites/observability/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "45749c6b35396cbed0222957551331a948dcd980"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "688abf7b3ea098b4df6b6eeff2c6dd400ef9fb17f10251a9fa3ce0e0098ba675"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "afa60e27f273c423f30ebbdd259e2db751bc227bb19496e006725399c21bc5a62ae8b4a499c9aea64e97e89bdc1db101df215259838c7f4ca9a4b442b80cc476"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-.github-workflows-ci.yaml",
+      "fileName": ".github/workflows/ci.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "e0f57fbc55894b57eee678dde4d2d01dc23392adb84eeddda3eacf044938478ab4f041fe630685674162f4b3b6bfd63c486f3b9a74532c113028b65ab4c36640"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "8af1e89d2bfa946939ada18ad2b8f6876f95e181"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "66d38b8d5d4a2d00851e34ecb3578f9d6d9e5085a0fddc77c1ef2936a901ab3d"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-.golangci.yml",
+      "fileName": ".golangci.yml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "5f5ae37653f52a8498bbe0d096bf38fcc5a6e360136bf5ec7fa6a5515749d0c4ae7e0a33a5a69742ea8eebf4f0b552ffff207ae1e9a8c3767407f8f67915650c"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "3f86e1b66f4781e8cb892560decaad3d3436f949"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b4a2129864a17807d19e92035a25d9cf7112cee38f74a314c51a9805c7157b57"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-heal-suite.gen.go",
+      "fileName": "suites/heal/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "2278e685f46a9b2cfba363310c6f53ed4656fe3f80df18c82ad16596782d4add421254aa297a6da98a85d2b9544314a144708c3e40d895dfcc9a1256fee64873"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c5c4a4a54a711953d97251bd365e8c73b1b42b13"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5186370f3e92c7607f0d1898a2d2b004451ad0b05cedbc1666946e19cef808a5"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-extensions-base-suite.go",
+      "fileName": "extensions/base/suite.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "94b22d2d12bd0868f9b0c334459fd517c376b49df5d8725258fbb67b598f3f681af3f00440b54b097dcf2131341e27fc730d4dbb75e106cbd5ff63a928f14b14"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "96337abeb15501949ae51f0155102e693063d6a4"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1101aa308f3da223f913afc978c5531d01d86e82cc0dcbc64cd2bd5996e134c3"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-features-jaeger-suite.gen.go",
+      "fileName": "suites/features/jaeger/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "258bfceaf6838aa0b31d456c12ae2e254fafa5fe500232c9f08c62eded71e7272f61d727c5fa1587022f09c0241df5d950e4a9e98270622c55189705583901fc"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "55a6814b67d7ac9ac63c0db44fb6000549c02c8f"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "081cee62afb3a1f1be75fedcb0f55213fda38148afccc5def095fbad4fa15d6f"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-basic-suite.gen.go",
+      "fileName": "suites/basic/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "134221c25d0d56a342c58a72bf7a53e0d05230ca"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "24d99b3ac4ad78fd168fcee339bbb9cad472eb7cc95e0d294fe59adae775a60d"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "08032a3f4a42771dd6dafe30d6140e61544e83613a8ccebb97d5dd34f49ff1b3f37a1f5d3229df76f89e53a5b08b71d5c079dc312b143b8fbbf581d9ee5870fc"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-features-suite.gen.go",
+      "fileName": "suites/features/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "5205ad10041bfca5aac9a339f098b0750e686e35"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0bb64620d85262e2ab2f65d6f071840dde1680b47aab436e01fe4ffb13be0e09"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "5a9b6244758079f0a22d9a50254557540452e85dcef39ac59498291de08e66ee28c591fd13bfb6ea3a0baea5e23e96c056376a1f767952f169f2bf586be43bac"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-extensions-prefetch-images-imagesC95test.go",
+      "fileName": "extensions/prefetch/images/images_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "6db2877ed870353da1dd70a0b280a0844738b20ffcaf07fc38640bc115cfa9e57a160786b7ba614d2fc9feb229fcee8723bde9f7af4f2599b2b515a257348bc9"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6abd6ec198c70abe4dae9cb9252b6d4d573ded36"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6152e92d97bf52bdb683a8da76167fb570379cf1f8ab99ed5b15c75e94859cb9"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-spire-cluster3-suite.gen.go",
+      "fileName": "suites/spire/cluster3/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "03186e9a74ab59c74087164d31834759d9002ef0b369f442b87b4c5a5b4e893f"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "13d4f82ac0fbaea45742d66698f934e96f286f27a98c7e5b2b83855796b98c46a68448fbb36407ad25abd330aabe70fc305eaff1644b6472a7b194b8a9b0e688"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6d30ee09fe44a2a5e7cf2fc2ee4078d8dbcc9e95"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-spire-singleC95cluster-suite.gen.go",
+      "fileName": "suites/spire/single_cluster/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "8c0824de3c90663ed7504c1f637f4de77417bb6b"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "141918010468f62943f0140a9bd1825b8b311601f2cd3e03717375e61c917993"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "a6d0436db6c382c8170aecd9f7a299e5af6d9dfafd530e314af9c0464c4f5e19cd0c69070e857ebc2344f12f38dd919791342cba4c9a5b84376e9e81c52fd1f0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-spire-cluster1-suite.gen.go",
+      "fileName": "suites/spire/cluster1/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a46360c7124d0c4f30e155063bf9180c3aa4d996"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "804051cece45961223988fef5e95a2a3e973c33b7974ee1e4265feecede25737"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "38003235540c7e87591a70d51f472765f155551e488f6b6d6fefac0409adf21a5a38044563ba9d51ae63e2ecbfc1a9bf0193784261d1a3543195774c29d9ada6"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-README.md",
+      "fileName": "README.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c3e0f2ce6d02636a547a436c380f378e13d9851f"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ea0352c4839b181b160778eb3c5d14faf270c99cea1f13aa06a0a41fbac01ac1"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "5d9c68102c95e159e882db8807a0a4736cfab7bf2196c264a8a3d8b90fc71fe1b968a9a79d195f748fab40a1abbc695692898c9e63e105fe2fe2895b0ef78e3c"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-threeC95clusterC95configuration-dns-suite.gen.go",
+      "fileName": "suites/interdomain/three_cluster_configuration/dns/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "27f4d85aba25cd387c81dc73845e20b443bbd68d"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "730ce4450414b10373e4b9dc0669d08932b2bc66dab9917e9eb8e87c70903eab"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f09fbb2d3d28742d3f14d4061bc7b18efd49fe91e7c3edbd694c2b659de4d383868860dcbbfb7902e5ac545018ad587ad4822f71f8cf5bac8d1b952ff7ca124e"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-suites-ipsec-suite.gen.go",
+      "fileName": "suites/interdomain/suites/ipsec/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b70e6a3a6e2092d9c7b554b31f61ba738f579a30315e054bd8e68144046312fb8cdbdb40449facd285887adc59c6cf10f8828561153e318a787b88fa8ed4661c"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "67c303afa40d0c635f1aeae6172a1f678a3b1cb0"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "244cf7de3c6653388c9110d895a4464685e4c19db150fd41298d018d6a6b86bb"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-extensions-prefetch-images-samples-prefetch.yaml",
+      "fileName": "extensions/prefetch/images/samples/prefetch.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "2a9ad905f75e206df4175b34c67d5cefbe3bf660"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0ae2b30dfd43af67ab72a56d1df8df1c013c0c02350a0099eaa6c57fc498ce1f"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "dd2a7f26f75e7475af61865337135d84e9c506aa0225e5cc082c4a8093c6bb149d4b4d9d983d134369c50cb0532b9198595dc15d3db3ad0abc51c8817c9dfae8"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-k8sC95monolith-externalC95nse-docker-suite.gen.go",
+      "fileName": "suites/k8s_monolith/external_nse/docker/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "2a78c4470155f9740b8a49252c4948f2ba995eac"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f937128c511243119565a6073b32cd4137ee74b7c89d42d952c44c5b9a6ba8a3"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "3be164c17c33c4649388b95a9a2efc45e6e48c2f8d2ae68eab6f041461fdd42b552b325871672664e94fbb5acc12d540b53df943c696f86f3570bd4d9b03107d"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-sriov-suite.gen.go",
+      "fileName": "suites/sriov/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a618f323eb64a8abc7b8215443c36971ea2ea9b1"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5037284a211dd02e3b81d596f6a4acc7fd0a9c4b8ed97e2d19dd39c27b4f085c"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "fd2707677681d1813f5342c94c09d4eba0a601fe88bb10b1c143ea90859e48e1f17abc1ba0ee183fe5779bb54721402895055a59aa50ca1fc54665cb165a3416"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-extensions-prefetch-images-samples-alpine.yaml",
+      "fileName": "extensions/prefetch/images/samples/alpine.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c4bdaa09184e95e1ab4772841e3b84a05d72979a"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1d648c900549e62796e9f7d828b5db5d64c081e6835ff0348ecc70f606929414"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "9f9cea6f0978a5b4d2e688ff27ec5695def8e2bce18aeafdb1686c7476414e59ca4ccaa3199b912edb62736a038d36ea2cf92349ee4bde7169a04cd516cd5628"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-observability-dashboard-suite.gen.go",
+      "fileName": "suites/observability/dashboard/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "1cf75afcd352b0fb53487af6c29bd5bb15444dfa32c2e10421d85f5b99893de9dac7c426c6ba2f596169a92ff25f617d8f751e575742b91d29f3b1b44285f9f6"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "528e3b9159859fd91947e7ee363698e901195292"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e6eeae548b281a6fc2abd453c50cae06921220b96a605bf5f457a2add84867bd"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-.gitignore",
+      "fileName": ".gitignore",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "98de8130e94f188d9165459d36819613b316f87f"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "fe40f6d16d4e9b409d57e621427edb9b30cf493d41a3952397f531f05e8604a4"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "070c63b2cf3387f077ea21bd85670ab1abd51325374b3054edb20c0d895f5695d483f4d7aec6eaf27ddef5c7b85cc81fc4923e1f4626d7893e5a241b7d66a519"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-.github-dependabot.yml",
+      "fileName": ".github/dependabot.yml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "2a7679d292b570fb188e196bd0f5282b0696d204"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2126677e3b06373ed04d93b7a882cbb0b20c3edab90931f5de5212b70066ecb4"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "409220b854608459b32962b1350e78b91a72f99808c14b384d3ebfd5e736e13e8f13c83011810d3371dbbb1317f39345a468ef159c459926feaec7d1591fa998"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-observability-jaegerC95andC95prometheus-suite.gen.go",
+      "fileName": "suites/observability/jaeger_and_prometheus/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ac52c742014e1175c555e78c8dcf7e1ee1c7bfe7"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0249af099c3a2a6ef9b5b117bfa20e2ff1e14a63052f71f6f38ff85dcebfd96b"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "4422e815ad04d4bb09beed9f6b756d59a5667094124c004c1a014ca842dba4c89b2c4374a715820817154bb728f59084179615342e11e5b4ccacde1c0113b7be"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-suites-heal-suite.gen.go",
+      "fileName": "suites/interdomain/suites/heal/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "d60827d36729e463d0c326ba901167d3936f8e31"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "912069464eac17c19dc1b030d0405bd142349cba03e9973e64f4c3b0f3239838"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "4ab32ee94d516ccde7861a6ba9a4aea5f0ef40aaf4c568db4a838cc9dc4db6c331ef26f22b13ef0afedbf9dbe622c4e29c7b315ed8848f4502409c38740163bd"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-extensions-prefetch-suite.go",
+      "fileName": "extensions/prefetch/suite.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4e07737c48514eaf195eaf9b8011a263081b5567"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "040bdc06be0a3187e4eab1aacc84f35b5eefdc30a6c46dd107b3fb10916e20dc"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "6864102665806a742151cab82d601894ef0dc23deb10c86c2959304aa72627691f3d79527de5370df08c4877c5dd676f80d0714a7588b4b87133a56d30be1973"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-memory-suite.gen.go",
+      "fileName": "suites/memory/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "46e7dc67d82904616b7e621d2cc67f68153a01bd75933e033a88052acdbebf5c"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "5e79085d8963536ab1a90bada63230f112c60378dda3b7db7f493f0468fc0264d3745d3cd2942f9f0e9831a021ddc31804c3f998e3c8b719030531fb7985e9fa"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "051d4feddadab17784ee21f973e6ee80f02d393f"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-extensions-prefetch-images-images.go",
+      "fileName": "extensions/prefetch/images/images.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "84e037c16479042c3c9fe8705fe41884ae38874b"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ff1013b1dd823b4b51ca9f6b4fcca3a6ddbde07e10a625001e1f131a5b3e711b"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "dd3d984d66cfdf2d3a042872e0b38825ad73699bb0e886ecea49ef162ed9620e9d5225482ef045ae6d1687386666449ba717ad393c45242a715086f489173a6c"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-healC95ovs-suite.gen.go",
+      "fileName": "suites/heal_ovs/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a45488c6aa19c72afe04ad6aa7fad38dd43af7d8"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6602b8790e6450706f386bda9226219a8debe7ef61a32c2b7ad3b2817052d52e"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "68c518e780c68819a4a9d62e0c35162cdfdfb6c3a3fe66ddc187b03e82ac08e74ee3f3a23becd590168453c825e6180b196ce827e79102b08614dbc1b4b00634"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-twoC95clusterC95configuration-basic-suite.gen.go",
+      "fileName": "suites/interdomain/two_cluster_configuration/basic/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "d713f24b30ce33f5d1b26c6e64be28d598c784a7"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "15a20395feaac9e9e3120a4e6f5385d8c68eba2354eeeb352d72b40c223e8324"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "6bb906dba0f1497e99c06ed8d821e2d7bf33eaf878d9498f10f6fd23c9028d30f8dfa19ab89e0c5606b725d9f6a9378fd66624302ae486cd3c6418f60ebc1b0f"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-go.sum",
+      "fileName": "go.sum",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "5b29015ea79b6ee2f5a81fdf6a1491f9e4869ea6"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "bc6ca12511aee5dc4607396467661738994821fcbcbd09ef971e4b83afe9e1bf"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "ca0ffa1fdc73f6b270c201a6ed36ecf7fe4066fa05ed68dbe1d29ffdcab66759cccf6395bc7772372112d4129af02906c217e2cf03d148ee1eb1e6b09d582c5a"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-extensions-prefetch-ignore.go",
+      "fileName": "extensions/prefetch/ignore.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "27ead7264d51284a58f32e5a5e0fe04e650117b10230f8a4b657336d5ae5e952"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "0ec3de9ef8ef468dd7a053592570ab90de1c5a15ba4103978033af29a479d10b8cbe04ceac9ecb134aaa792e5d9eaad99297813e5236fae3bdd8548b08a79783"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "7838abcae4444f5b406cb73eb328f23363a1027d"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-extensions-prefetch-sriov-sriov.go",
+      "fileName": "extensions/prefetch/sriov/sriov.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "d1323d2c84e57e5701ef61e12fcb9d20ba27096f"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "70ceba2ed6aac82937490e369ce14546ed783693bff0c4284bf1ede7531ab364"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b94af3da1cbb9162d2825ce9b3de6f0b2b0de9f3663feca1062d2f69103fa3cc0bec421bcc77c0aad477200cc19728e202d0ccd60dd27c1916ebe45dbd5b6da7"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-k8sC95monolith-externalC95nse-spiffeC95federation-suite.gen.go",
+      "fileName": "suites/k8s_monolith/external_nse/spiffe_federation/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0433f5ecf66e0d3239be4a663037b41d9228a58952a50a50a003d620db35a2a6"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f59bb8804c4fb35badbc978dd1cfeeb07b0429371afc2da4d1f115e0da2c000b084b1e01c2dfb3fbb588c1c44fd26a37379bd741f73737a26d13e6e927768d64"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "dbb2af83eb9c6ba902fe99de619d446a9e9079d2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-suites-basic-suite.gen.go",
+      "fileName": "suites/interdomain/suites/basic/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "cfbfe1986b218481f461972f7a65485f03aa810b4331cc6bf0eba22bdb9cacf7"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "5580228cc2441144f13d1ea2780d8a564da8331280479d3aa1e412d78a6e3e1a3d4ef9f47fcaf66d2c18ed26894b22a80e05dbe27d10cc1f9ca8e145079a64be"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "5c78bbbe553c307501104c807e63e38052b33c91"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-remotevlanC95vpp-suite.gen.go",
+      "fileName": "suites/remotevlan_vpp/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "9cdc6a62aa7678f40d8fc3c05c27f35d1072f3735f27b9d881e00f45a43d8a01f4bdfd862eaed68995badd4433fb1bde577083ee05bc44f42a105c9cee4eb79a"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "646b1a334fe0042267de2635cb822e522beaaa35"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "53f84eb363caa6501da79677122d9ed0961b7a5bbe677fae989a06a0d584b820"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-gen.go",
+      "fileName": "gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "96030d5a6c87b1a3e34636a5e59ec249fa3c35bd"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "24c1d0c720f0d9584a55028e451b20aa88328cd5df4455c92244afc4dedcf426"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "bb05d7ac9bee17c389c4197e08605cf538d56dea907a40d6d674335895e36e369d2f634bc304dcf90778e1965c9af26634c619ca5251b9c0d8c1c910a8399deb"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-remotevlanC95ovs-suite.gen.go",
+      "fileName": "suites/remotevlan_ovs/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "eecf2574ec0ca0e6c2fe0490a7837a78a81b2dc0"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1b14918c611f6ca948b918d5de8556632bc3c316f8d2503784a6e6fa9a77f76b"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "189b64ee4d2fc19663789d66d7a44663e70d01a7d81fa84e81359cd876d07723a7171217651bce4da85a16633e042fcf3395bbc3f9c29c0d71f01b9a22b032d4"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-suites-multiservicemesh-suite.gen.go",
+      "fileName": "suites/interdomain/suites/multiservicemesh/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d3b617a84f480b37f690595ab1e793dd3c170a9ca19494c13c297e54fbea1bd9"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "8bd907cf6e5388f8b455365ddf03441307b4b0ff4dae745c261b17b62a401e3fefa775aac9b2be4c3b3fb4176c3e3a3622811c049cd778314bf4f33b0305a780"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6c7f2afe53152fff8fac3613f44db451aa1090e6"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-multiforwarder-suite.gen.go",
+      "fileName": "suites/multiforwarder/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "fedab1c46f0a9a70f6e0c84fd38485fa54857deee9646e1b6449b42dd08154af3e79bbd12a8904ee4fe0a35ae20c9027fbedc08724bb641d3c491eb8ae5fbbde"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "5244296abc810f89684b9bbd5c7d16a9f6b4af95"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c06669bf1488b0ab6dcf67a03221b551ac974c9647faffa91956f7795fcdd496"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-extensions-parallel-suiteC95test.go",
+      "fileName": "extensions/parallel/suite_test.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3f83031d22a0bc8b0e7f363d93e3bbc8568f9dd9b8986d44699c690b57b023d1"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "7bf492b4a0205acdef83aefb140afa0330c4b3e731ebbf1326736c5e979cc744d0e8a693927d494abbb0dd78dd133ac6e0a19869fe63de91d573b8de7c9b651b"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "eb807c16d2cedc14a64e20fe26990aeac046adc2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-spire-suite.gen.go",
+      "fileName": "suites/spire/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f75abb21d4b80369acab4aa2412f1c049c8930bf"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3421345798c01774df2b1b73c95a2430df89e3c28310eeda654f38fdd236c34b"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "81e40ef0a24b35dcdb64ac32cba03fc5e01ba5828078107806b1a3197e1775efb17f9fe5c7b7cca6f6ddd4c2a9c03e1bbf6c1feef8df9cfdc832ced626d0ee0c"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-threeC95clusterC95configuration-loadbalancer-suite.gen.go",
+      "fileName": "suites/interdomain/three_cluster_configuration/loadbalancer/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "e21bf12f7c6d7d3554abd85c44e12d29831eb72d6f331fdcc04ad2cbc1a548c226546bfc0e82fc3dff3a12b30ebd08d35807d7520313161627f13b30647521b3"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6f4c6c001affc2da9e0bd78acbc11051fd89dfc4"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9dbd2e3062dc2166950117c2279c7fb01a0a5dd1a344f10a54a2b0985d556c1d"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-twoC95clusterC95configuration-spiffeC95federation-suite.gen.go",
+      "fileName": "suites/interdomain/two_cluster_configuration/spiffe_federation/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "56f12328a6bc54bf32e2b67f40b33eb4f375df4e"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7d543c7add27e321cee3e2fd02148adb9eb86892acc557a945838225698f963e"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "4cd4657bbf62ee7e5721c05d349d2f9645de402fcda04714a6b3ade8c8192c76a214006324c5fe1b0663d7ce8a8c972f15dbaaca0aa6cae2a8a24115b38dfb91"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-LICENSE",
+      "fileName": "LICENSE",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "7df059597099bb7dcf25d2a9aedfaf4465f72d8d"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "dc6b68d13b8cf959644b935f1192b02c71aa7a5cf653bd43b4480fa89eec8d4d3f16a2278ec8c3b40ab1fdb233b3173a78fd83590d6f739e0c9e8ff56c282557"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-pss-suite.gen.go",
+      "fileName": "suites/pss/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "349d3b78b8187adfda6cef6aa05ebdf028f703f4"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7912015096ce10805440addf49dbb03445cc24a400fabe33859a114d0ba6d172"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "30e671fc66b53be4f3afbc7ecf15be379b401b8f631fc2af27098f922aa2163f95ed132d035edf2c07c7b699be4b3c662e93fb46b94cb8a16b17240c826af49e"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-go.mod",
+      "fileName": "go.mod",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "73e18faa410e02a7260bcf6eea0d94d7296eb49132dad26981581a4f993a8a06"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "a4e7297596c76e04bafcd4f939795a20f8571e7688acd19a3ca646fa1842dd3a66101e2efed2023ce3e110a893b998f4e7e20de23849b7f1a66529d64538373d"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "514e269935b88f234658ac4d89eeaee8ff60d498"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-sriovC95vlantag-suite.gen.go",
+      "fileName": "suites/sriov_vlantag/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "1ef5a6dd2fa77bf908513f229c89c8ba27f26fa0"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8ef5713ded5bb530f4124134e4e987afe936d35737a5ed69ddf4026f58a96f86"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "4ea1750a99df365f633b5b8f140b1e6efeb88e042310bf463c251c7b09273b13d73d6079e49a272432c56e762a02fc970697b85aa14e20bc8dd8fd091fceb499"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-threeC95clusterC95configuration-ipsec-suite.gen.go",
+      "fileName": "suites/interdomain/three_cluster_configuration/ipsec/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c40010553949299ca661e006ceaf1102ed2998d8eb8293b583cc988590809589"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f8e46b12be0ae25ec93eb84f55dc11bd3f1c4563872956214a1b0512debaec910ae53839a18401e33e2f3b989b91c43e5a566e5614a3a4ccfee4b0c6bb0a8619"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4aa06be2fd2cd703594d0f80223619305ee6c5d0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-extensions-logs-logs.go",
+      "fileName": "extensions/logs/logs.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "581024b69ca287cae354f9780235731c26b3a342d1a4f66e1f9325908897521e"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "06637f3adecf60831ed8ff691531658238b6edbeaaa5b2946815974de606fa2b9f6cdaa4f5a542ee62f785607c81af4198e07f5cd0f82d5fdef1fd8ba9729df4"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "5481975d55e8d2c3ae4c34036a4099ef79ce4b94"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-featuresC95ovs-suite.gen.go",
+      "fileName": "suites/features_ovs/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "cdfe2a5d9cc4a269b297da49a1c188700c2ae8ff"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9f6cd4a62cad43fb2b034fbbba87081d0519aac8c9cd52d194c66a51d54a7c59"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "c96119f97f5f2a63e707fa0d2b192778939dcce428e0b255f43f7c6c68170c6d13a9bedc3e215f3fb3530422b85e05f238ea48cb48ff8763d3930a7db762325a"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-observability-nsmC95system-suite.gen.go",
+      "fileName": "suites/observability/nsm_system/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "458c3abf5e5b8741851bd71e3b6180523e871445f3252d081775658c291f2795"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "26b5cff4c25682b03b07a4013cfdbed51d41cede8f8327b7b806f7d4d5c8f207153516a4327b7295b84a3f7897e268859066f8a0b41804f07d2ddccd36f23d7e"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "337d2b261c4bfaff07f66d7dc93252406487408e"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-extensions-prefetch-k8s.go",
+      "fileName": "extensions/prefetch/k8s.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "03ce78af44e5427b3af25a2ea8a7e791be69ed79"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3757db8aa0445a0f6a4b5e160ae3723512fb724e8abc89fc1ad588ea365d8626"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b9cb86fd0ae3d066fbe07b0b201b759a7eed59f473edb14e91fc07ea96db4c14ca0ad9ab22fe74c61eb864343d8fe4170dd75e82f59426189793c0e5067e8031"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-.license-template.txt",
+      "fileName": ".license/template.txt",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e2d4bb0958f816072dc8ab2acc93cd427406e337"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c245c3b0a6c1aa8a652ed7d3ddaba538e9c05373adec51b041dd1e9ca4248eff"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "266685b3836b092075b86f42ff2c96a4fbeb079c5128afb8b2fddaebcd239ea34f19fd682e0c290dd1eb5d0193fd24d76c51ff5374e314ee2496ec141bd7ecb9"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-k8sC95monolith-externalC95nse-suite.gen.go",
+      "fileName": "suites/k8s_monolith/external_nse/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ca995cd9cb6221885d36d263a56ff990ddf4c90c"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "51b0bd949340ce85d368563ffdc420a8c2ab59200cd6c7f9e7c81d4bcf03e08e"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "e61f87e0b8d4a93b9a830dc15a72aeedc1200786974a1c394f271b23ddf6970d0f75097a334de323d3b75139e3c926df3b76c4484abe3577777b207dec820c5a"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-ipsecC95mechanism-suite.gen.go",
+      "fileName": "suites/ipsec_mechanism/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b0cc5d22dcc0110640f8f978fbea97f8f2f33396f6cd4d8a533af9a2e93f99795943c8e517a008a89e84a54d5bf4af68a3ad97fcb20de1b8c00298ad6f38c4d6"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "27a5b6e92b7c9d47965e57255841eff6deda6d24"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ae73e9edbabc5cfb40edc96bce2b13f89b43f7e483a7a70f7be025394cd4ed1c"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-twoC95clusterC95configuration-dns-suite.gen.go",
+      "fileName": "suites/interdomain/two_cluster_configuration/dns/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "770e08a82d53493f75db0d373a3d2181a87c9bf7"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f65174a7a54556c40aaaa5fadcba96c9aa33859e50090237b1d0c7ab4ba98b59"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "3f370f9193b9c8d2af42ecd17cba5ffc1a3f5a9cc2301dfe2e313cc1e32312db44f7c31faf99628c058bc447a930d6921d1b3d3981183c65b25d382731395c60"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-extensions-base-suite.gen.go",
+      "fileName": "extensions/base/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c21b392db976a8e40cf8a503167fc484b325c358"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3b1b03fc452f43130cf19e1fd90690015f67d811d9ff3fd5ed92267cbb31f9a0"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "1b327a420eff14287817f30f9ab260925032d27998bae82094c8d92a8bd3d9bbeeed936688c556615fc49581f58f3f45706806e9d974928e689a7c1302328759"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-twoC95clusterC95configuration-loadbalancer-suite.gen.go",
+      "fileName": "suites/interdomain/two_cluster_configuration/loadbalancer/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "9e75b39abb02d93cb8fc5bc723f9882772e60d3e"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1470fb642e6306b00caf1a38395f93a56c8e2e4839c7dd3692d9050375f431d9"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "fa717a4b1fe6c71dd3e87fd4c19e7aff33ac807f879a4bdc9f363ee131d711145d5030c9bf0721d1ec39a14a01b00aeacd85307c945bccb2ef89b17e7287b4b3"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-healC95extended-suite.gen.go",
+      "fileName": "suites/heal_extended/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "63b572ab7ed940db80e52e46888aa7adc729fb93a9dec7d7281e413efd25df58ba72b7e4dcb21f6895c87bdd7e23e2dd38aa40ab9e96036184290ebfe5bd137f"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "18a23288a0d248a65a707f67b5ff8e389424be05"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b1928e421f0bed9ae94d6b6dd2423361c3442d2b7e4a6bcaf8130241920332ee"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-spire-singleC95clusterC95csi-suite.gen.go",
+      "fileName": "suites/spire/single_cluster_csi/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a19e5c190c7fd66bcc2eb2e6b5053a2f1c463afd"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0cab7e6b060f8cecc14fa1850a06efa110a04484227804ff411bea3626273fd1"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "a74d4088863fcfe455584003ac5691107ef3c6adc1d19842e27f121da94f60b862576a1d3dd8b343f47ec9aa73c7e1fa840e0eaeddeaa286e0507f47daaeb3e5"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-k8sC95monolith-configuration-loadbalancer-suite.gen.go",
+      "fileName": "suites/k8s_monolith/configuration/loadbalancer/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "061be79be3797e585a27f4d607408895213f9309073b400fc1b27153e25fd9bd"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "59ae51b089e862a0251d21ac3beb20fd9cac4aff2f45391259d1eea0cf282cc869052988784317581ad3faf7f879d876c6f0f179eba7a0ab6401f45d153cfb97"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e50a5f2620a9933465d80fe99d429a51e92c6e15"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-extensions-logs-singleC95operation.go",
+      "fileName": "extensions/logs/single_operation.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "b9ae799aeb1d54ccecbf41d3efcfd059c9a3dbfe"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "732acfb2f75be7021dd60e713977c7121652c14c2c96bb38d2e9322e401f35a4"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b992b32bf2f8b696173e68a814f0478f56c9cce0040ff937bf486664e1466453e3279bc6b8358e344e81ebcee78d3be060d3aa40dbc0f16629f8c7f8fa51ff5d"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-k8sC95monolith-externalC95nsc-spiffeC95federation-suite.gen.go",
+      "fileName": "suites/k8s_monolith/external_nsc/spiffe_federation/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4f6c0a485b73b89410f8e5e03bdd7d1a992b9acd"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6f59fbf7e3d946c8a7d2b52200883a7d88eb24592bbf6d1ca295dd5b21a1ceaa"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "6d1da4402fe56645eb233f23263235a1cff40036edaa5eb2e5fe419d78505388ecda5aadaec1ee4fe8e3128584207f1a1d92aa22d2fb00503cfc81d1fa1b1560"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-usecases-nsmC95istioC95booking-suite.gen.go",
+      "fileName": "suites/interdomain/usecases/nsm_istio_booking/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "28b6e0472e3593eeceec8f4958c9fd3cf83930c1"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4fe0103c65516ecae42074a11d7bc4336c588b496843eace3933a13f7d32c5bb"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "d911e38278e1e90cb78f2f3f2bf7a0283c3a44a646b6f5ae06b2639b77f8f60be1acd4d4a906610309dbcd97a5180bc4a6b638fe5bc10635a3dbea7a966128de"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-threeC95clusterC95configuration-spiffeC95federation-suite.gen.go",
+      "fileName": "suites/interdomain/three_cluster_configuration/spiffe_federation/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "613177229bd84ba19bc546c99a45a770fcb4e77379432cc2aaffa91dd4eb3b95"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "befdc01e1971b2252c2b65f04689793ca22ec7ec25d6f445bcb3232b4cce962ce64f0fb448f16d11784c6c634da7f9fc28fab2431170d86709a13e2ea0b8b3fb"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "530166b4e50d0c0867d6b5bb08188ced17dfe852"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-k8sC95monolith-suite.gen.go",
+      "fileName": "suites/k8s_monolith/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "0353fbc1cd7a46a6f4de0a8523d6403dbffd86fb"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3ab2a59609ae3f1f3f9ae9c2c62fd8ad6d4defbbbae4a225734de81cba9a91a2"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "0a40855922c58ecbc434e55178e5ec30a224abecb21da5df968a37e5d1846aa41340e10a08c7f3ca353d064f623c13d7fd0a52f99678271119d10f95374c6679"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-suites-k8sC95monolith-externalC95nse-dns-suite.gen.go",
+      "fileName": "suites/k8s_monolith/external_nse/dns/suite.gen.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f77e53b38b1dc200925c54a699457e0264aebd30d3579c1a71272e67d7d6c317"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "0739df4e9d233a56c214eb7a5067f95d4b57932aa732846232166cf19ed392a1e5029128a9b751db5002bfa65331b2439e1f69b1bcd9a6dae616cbe25aead475"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "671a59f0cc9717572015473d0ff045ae27b153f4"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-.github-workflows-update-dependent-repositories-gomod.yaml",
+      "fileName": ".github/workflows/update-dependent-repositories-gomod.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ab8a62db898f5fe5aa8aa95b576464b3d527d655"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a1485d87ba17c4e33882eadb4013277411e66269f67ba46535f799176b1b139c"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "78ed19e2ac0aa6caf850cca510db8f5a941f11997a1f30c9146d62198c8c8d4fe2b31871e56e5efde813713d393588fed5256b80531132db113b9c452e8f6c36"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.F7zquoDs5J-.github-workflows-release.yaml",
+      "fileName": ".github/workflows/release.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "bf8f7cc7abcf37a38317d3c7ca0ef3638f106d62"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6918a448e75c2f485513eeaf16000ca3b75fea2af9655d09c2e13c4b770794ed"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "1aaeea71cb8f32a4ae28259ba52831f6044e0531285f01a7c318ad0ccd16205bb9edb2ca06171b6d82beb2670fb70e52f861cbd0dc094e267f8534aba34cef1f"
+        }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-gomod-github.com-google-uuid-v1.3.0",
+      "name": "github.com/google/uuid",
+      "versionInfo": "v1.3.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "BSD-3-Clause",
+      "downloadLocation": "https://proxy.golang.org/github.com/google/uuid/@v/v1.3.0.zip",
+      "copyrightText": "Copyright (c) 2009,2014 Google Inc. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are\nmet:\n\n   * Redistributions of source code must retain the above copyright\nnotice, this list of conditions and the following disclaimer.\n   * Redistributions in binary form must reproduce the above\ncopyright notice, this list of conditions and the following disclaimer\nin the documentation and/or other materials provided with the\ndistribution.\n   * Neither the name of Google Inc. nor the names of its\ncontributors may be used to endorse or promote products derived from\nthis software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\n\"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT\nLIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\nA PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT\nOWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,\nDATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY\nTHEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/github.com/google/uuid@v1.3.0",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "name": "tmp.F7zquoDs5J",
+      "versionInfo": "",
+      "filesAnalyzed": true,
+      "licenseConcluded": "Apache-2.0",
+      "downloadLocation": "NONE",
+      "copyrightText": "NOASSERTION",
+      "hasFiles": [
+        "SPDXRef-File-tmp.F7zquoDs5J-.github-workflows-automerge.yaml",
+        "SPDXRef-File-tmp.F7zquoDs5J-.github-workflows-ci.yaml",
+        "SPDXRef-File-tmp.F7zquoDs5J-.github-workflows-pr-for-updates.yaml",
+        "SPDXRef-File-tmp.F7zquoDs5J-.github-workflows-release.yaml",
+        "SPDXRef-File-tmp.F7zquoDs5J-.gitignore",
+        "SPDXRef-File-tmp.F7zquoDs5J-.github-workflows-update-dependent-repositories-gomod.yaml",
+        "SPDXRef-File-tmp.F7zquoDs5J-.license-README.md",
+        "SPDXRef-File-tmp.F7zquoDs5J-.golangci.yml",
+        "SPDXRef-File-tmp.F7zquoDs5J-.license-template.txt",
+        "SPDXRef-File-tmp.F7zquoDs5J-extensions-base-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-README.md",
+        "SPDXRef-File-tmp.F7zquoDs5J-LICENSE",
+        "SPDXRef-File-tmp.F7zquoDs5J-extensions-base-suite.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-extensions-logs-logs.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-.github-dependabot.yml",
+        "SPDXRef-File-tmp.F7zquoDs5J-extensions-logs-singleC95operation.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-extensions-parallel-options.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-extensions-parallel-suiteC95test.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-extensions-parallel-suite.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-extensions-prefetch-ignore.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-extensions-checkout-suite.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-extensions-prefetch-images-imagesC95test.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-extensions-prefetch-images-images.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-extensions-prefetch-images-samples-prefetch.yaml",
+        "SPDXRef-File-tmp.F7zquoDs5J-extensions-prefetch-sriov-sriov.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-extensions-prefetch-k8s.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-extensions-prefetch-suite.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-go.mod",
+        "SPDXRef-File-tmp.F7zquoDs5J-go.sum",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-afxdp-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-extensions-prefetch-images-samples-alpine.yaml",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-features-jaeger-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-featuresC95ovs-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-features-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-healC95extended-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-heal-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-basic-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-suites-heal-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-suites-basic-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-suites-ipsec-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-threeC95clusterC95configuration-basic-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-suites-multiservicemesh-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-threeC95clusterC95configuration-ipsec-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-threeC95clusterC95configuration-loadbalancer-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-healC95ovs-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-twoC95clusterC95configuration-basic-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-threeC95clusterC95configuration-spiffeC95federation-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-twoC95clusterC95configuration-loadbalancer-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-twoC95clusterC95configuration-dns-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-twoC95clusterC95configuration-spiffeC95federation-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-usecases-nsmC95istioC95booking-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-threeC95clusterC95configuration-dns-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-k8sC95monolith-configuration-loadbalancer-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-ipsecC95mechanism-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-k8sC95monolith-externalC95nsc-dns-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-k8sC95monolith-externalC95nsc-spiffeC95federation-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-k8sC95monolith-externalC95nsc-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-k8sC95monolith-externalC95nse-dns-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-k8sC95monolith-externalC95nse-docker-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-k8sC95monolith-externalC95nse-spiffeC95federation-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-k8sC95monolith-externalC95nse-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-k8sC95monolith-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-memory-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-k8sC95monolith-externalC95nsc-docker-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-multiforwarder-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-observability-dashboard-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-observability-jaegerC95andC95prometheus-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-ovs-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-observability-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-observability-nsmC95system-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-pss-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-remotevlanC95ovs-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-multiforwarderC95vlantag-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-spire-cluster1-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-spire-cluster2-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-spire-cluster3-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-spire-singleC95clusterC95csi-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-spire-singleC95cluster-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-spire-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-remotevlanC95vpp-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-sriov-suite.gen.go",
+        "SPDXRef-File-tmp.F7zquoDs5J-suites-sriovC95vlantag-suite.gen.go"
+      ],
+      "licenseInfoFromFiles": [
+        "Apache-2.0"
+      ],
+      "checksums": [],
+      "packageVerificationCode": {
+        "packageVerificationCodeValue": "7775d87c8cd217bc18faf3b2a350cb8ac8ba9d52"
+      }
+    },
+    {
+      "SPDXID": "SPDXRef-Package-gomod-github.com-stretchr-testify-v1.8.4",
+      "name": "github.com/stretchr/testify",
+      "versionInfo": "v1.8.4",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "downloadLocation": "https://proxy.golang.org/github.com/stretchr/testify/@v/v1.8.4.zip",
+      "copyrightText": "MIT License\n\nCopyright (c) 2012-2020 Mat Ryer, Tyler Bunnell and contributors.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/github.com/stretchr/testify@v1.8.4",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-gomod-github.com-kelseyhightower-envconfig-v1.4.0",
+      "name": "github.com/kelseyhightower/envconfig",
+      "versionInfo": "v1.4.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "downloadLocation": "https://proxy.golang.org/github.com/kelseyhightower/envconfig/@v/v1.4.0.zip",
+      "copyrightText": "Copyright (c) 2013 Kelsey Hightower\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of\nthis software and associated documentation files (the \"Software\"), to deal in\nthe Software without restriction, including without limitation the rights to\nuse, copy, modify, merge, publish, distribute, sublicense, and/or sell copies\nof the Software, and to permit persons to whom the Software is furnished to do\nso, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/github.com/kelseyhightower/envconfig@v1.4.0",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-gomod-gopkg.in-yaml.v3-v3.0.1",
+      "name": "gopkg.in/yaml.v3",
+      "versionInfo": "v3.0.1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "downloadLocation": "https://proxy.golang.org/gopkg.in/yaml.v3/@v/v3.0.1.zip",
+      "copyrightText": "\nThis project is covered by two different licenses: MIT and Apache.\n\n#### MIT License ####\n\nThe following files were ported to Go from C files of libyaml, and thus\nare still covered by their original MIT license, with the additional\ncopyright staring in 2011 when the project was ported over:\n\n    apic.go emitterc.go parserc.go readerc.go scannerc.go\n    writerc.go yamlh.go yamlprivateh.go\n\nCopyright (c) 2006-2010 Kirill Simonov\nCopyright (c) 2006-2011 Kirill Simonov\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of\nthis software and associated documentation files (the \"Software\"), to deal in\nthe Software without restriction, including without limitation the rights to\nuse, copy, modify, merge, publish, distribute, sublicense, and/or sell copies\nof the Software, and to permit persons to whom the Software is furnished to do\nso, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n\n### Apache License ###\n\nAll the remaining project files are covered by the Apache license:\n\nCopyright (c) 2011-2019 Canonical Ltd\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.\n",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-gomod-github.com-davecgh-go-spew-v1.1.1",
+      "name": "github.com/davecgh/go-spew",
+      "versionInfo": "v1.1.1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "ISC",
+      "downloadLocation": "https://proxy.golang.org/github.com/davecgh/go-spew/@v/v1.1.1.zip",
+      "copyrightText": "ISC License\n\nCopyright (c) 2012-2016 Dave Collins <dave@davec.name>\n\nPermission to use, copy, modify, and/or distribute this software for any\npurpose with or without fee is hereby granted, provided that the above\ncopyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\nANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\nACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\nOR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.\n",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/github.com/davecgh/go-spew@v1.1.1",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-gomod-github.com-sirupsen-logrus-v1.8.1",
+      "name": "github.com/sirupsen/logrus",
+      "versionInfo": "v1.8.1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "downloadLocation": "https://proxy.golang.org/github.com/sirupsen/logrus/@v/v1.8.1.zip",
+      "copyrightText": "The MIT License (MIT)\n\nCopyright (c) 2014 Simon Eskildsen\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.\n",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/github.com/sirupsen/logrus@v1.8.1",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-gomod-golang.org-x-sys-v0.15.0",
+      "name": "golang.org/x/sys",
+      "versionInfo": "v0.15.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "BSD-3-Clause",
+      "downloadLocation": "https://proxy.golang.org/golang.org/x/sys/@v/v0.15.0.zip",
+      "copyrightText": "Copyright (c) 2009 The Go Authors. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are\nmet:\n\n   * Redistributions of source code must retain the above copyright\nnotice, this list of conditions and the following disclaimer.\n   * Redistributions in binary form must reproduce the above\ncopyright notice, this list of conditions and the following disclaimer\nin the documentation and/or other materials provided with the\ndistribution.\n   * Neither the name of Google Inc. nor the names of its\ncontributors may be used to endorse or promote products derived from\nthis software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\n\"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT\nLIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\nA PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT\nOWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,\nDATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY\nTHEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/golang.org/x/sys@v0.15.0",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-gomod-github.com-pmezard-go-difflib-v1.0.0",
+      "name": "github.com/pmezard/go-difflib",
+      "versionInfo": "v1.0.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "BSD-3-Clause",
+      "downloadLocation": "https://proxy.golang.org/github.com/pmezard/go-difflib/@v/v1.0.0.zip",
+      "copyrightText": "Copyright (c) 2013, Patrick Mezard\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are\nmet:\n\n    Redistributions of source code must retain the above copyright\nnotice, this list of conditions and the following disclaimer.\n    Redistributions in binary form must reproduce the above copyright\nnotice, this list of conditions and the following disclaimer in the\ndocumentation and/or other materials provided with the distribution.\n    The names of its contributors may not be used to endorse or promote\nproducts derived from this software without specific prior written\npermission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS\nIS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED\nTO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A\nPARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT\nHOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED\nTO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR\nPROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\nLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\nNEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/github.com/pmezard/go-difflib@v1.0.0",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-gomod-github.com-networkservicemesh-gotestmd-v0.0.0-20220628095933-eabbdc09e0dc",
+      "name": "github.com/networkservicemesh/gotestmd",
+      "versionInfo": "v0.0.0-20220628095933-eabbdc09e0dc",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0",
+      "downloadLocation": "https://proxy.golang.org/github.com/networkservicemesh/gotestmd/@v/v0.0.0-20220628095933-eabbdc09e0dc.zip",
+      "copyrightText": "                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or entity authorized by\n      the copyright owner that is granting the License.\n\n      \"Legal Entity\" shall mean the union of the acting entity and all\n      other entities that control, are controlled by, or are under common\n      control with that entity. For the purposes of this definition,\n      \"control\" means (i) the power, direct or indirect, to cause the\n      direction or management of such entity, whether by contract or\n      otherwise, or (ii) ownership of fifty percent (50%) or more of the\n      outstanding shares, or (iii) beneficial ownership of such entity.\n\n      \"You\" (or \"Your\") shall mean an individual or Legal Entity\n      exercising permissions granted by this License.\n\n      \"Source\" form shall mean the preferred form for making modifications,\n      including but not limited to software source code, documentation\n      source, and configuration files.\n\n      \"Object\" form shall mean any form resulting from mechanical\n      transformation or translation of a Source form, including but\n      not limited to compiled object code, generated documentation,\n      and conversions to other media types.\n\n      \"Work\" shall mean the work of authorship, whether in Source or\n      Object form, made available under the License, as indicated by a\n      copyright notice that is included in or attached to the work\n      (an example is provided in the Appendix below).\n\n      \"Derivative Works\" shall mean any work, whether in Source or Object\n      form, that is based on (or derived from) the Work and for which the\n      editorial revisions, annotations, elaborations, or other modifications\n      represent, as a whole, an original work of authorship. For the purposes\n      of this License, Derivative Works shall not include works that remain\n      separable from, or merely link (or bind by name) to the interfaces of,\n      the Work and Derivative Works thereof.\n\n      \"Contribution\" shall mean any work of authorship, including\n      the original version of the Work and any modifications or additions\n      to that Work or Derivative Works thereof, that is intentionally\n      submitted to Licensor for inclusion in the Work by the copyright owner\n      or by an individual or Legal Entity authorized to submit on behalf of\n      the copyright owner. For the purposes of this definition, \"submitted\"\n      means any form of electronic, verbal, or written communication sent\n      to the Licensor or its representatives, including but not limited to\n      communication on electronic mailing lists, source code control systems,\n      and issue tracking systems that are managed by, or on behalf of, the\n      Licensor for the purpose of discussing and improving the Work, but\n      excluding communication that is conspicuously marked or otherwise\n      designated in writing by the copyright owner as \"Not a Contribution.\"\n\n      \"Contributor\" shall mean Licensor and any individual or Legal Entity\n      on behalf of whom a Contribution has been received by Licensor and\n      subsequently incorporated within the Work.\n\n   2. Grant of Copyright License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      copyright license to reproduce, prepare Derivative Works of,\n      publicly display, publicly perform, sublicense, and distribute the\n      Work and such Derivative Works in Source or Object form.\n\n   3. Grant of Patent License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      (except as stated in this section) patent license to make, have made,\n      use, offer to sell, sell, import, and otherwise transfer the Work,\n      where such license applies only to those patent claims licensable\n      by such Contributor that are necessarily infringed by their\n      Contribution(s) alone or by combination of their Contribution(s)\n      with the Work to which such Contribution(s) was submitted. If You\n      institute patent litigation against any entity (including a\n      cross-claim or counterclaim in a lawsuit) alleging that the Work\n      or a Contribution incorporated within the Work constitutes direct\n      or contributory patent infringement, then any patent licenses\n      granted to You under this License for that Work shall terminate\n      as of the date such litigation is filed.\n\n   4. Redistribution. You may reproduce and distribute copies of the\n      Work or Derivative Works thereof in any medium, with or without\n      modifications, and in Source or Object form, provided that You\n      meet the following conditions:\n\n      (a) You must give any other recipients of the Work or\n          Derivative Works a copy of this License; and\n\n      (b) You must cause any modified files to carry prominent notices\n          stating that You changed the files; and\n\n      (c) You must retain, in the Source form of any Derivative Works\n          that You distribute, all copyright, patent, trademark, and\n          attribution notices from the Source form of the Work,\n          excluding those notices that do not pertain to any part of\n          the Derivative Works; and\n\n      (d) If the Work includes a \"NOTICE\" text file as part of its\n          distribution, then any Derivative Works that You distribute must\n          include a readable copy of the attribution notices contained\n          within such NOTICE file, excluding those notices that do not\n          pertain to any part of the Derivative Works, in at least one\n          of the following places: within a NOTICE text file distributed\n          as part of the Derivative Works; within the Source form or\n          documentation, if provided along with the Derivative Works; or,\n          within a display generated by the Derivative Works, if and\n          wherever such third-party notices normally appear. The contents\n          of the NOTICE file are for informational purposes only and\n          do not modify the License. You may add Your own attribution\n          notices within Derivative Works that You distribute, alongside\n          or as an addendum to the NOTICE text from the Work, provided\n          that such additional attribution notices cannot be construed\n          as modifying the License.\n\n      You may add Your own copyright statement to Your modifications and\n      may provide additional or different license terms and conditions\n      for use, reproduction, or distribution of Your modifications, or\n      for any such Derivative Works as a whole, provided Your use,\n      reproduction, and distribution of the Work otherwise complies with\n      the conditions stated in this License.\n\n   5. Submission of Contributions. Unless You explicitly state otherwise,\n      any Contribution intentionally submitted for inclusion in the Work\n      by You to the Licensor shall be under the terms and conditions of\n      this License, without any additional terms or conditions.\n      Notwithstanding the above, nothing herein shall supersede or modify\n      the terms of any separate license agreement you may have executed\n      with Licensor regarding such Contributions.\n\n   6. Trademarks. This License does not grant permission to use the trade\n      names, trademarks, service marks, or product names of the Licensor,\n      except as required for reasonable and customary use in describing the\n      origin of the Work and reproducing the content of the NOTICE file.\n\n   7. Disclaimer of Warranty. Unless required by applicable law or\n      agreed to in writing, Licensor provides the Work (and each\n      Contributor provides its Contributions) on an \"AS IS\" BASIS,\n      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\n      implied, including, without limitation, any warranties or conditions\n      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A\n      PARTICULAR PURPOSE. You are solely responsible for determining the\n      appropriateness of using or redistributing the Work and assume any\n      risks associated with Your exercise of permissions under this License.\n\n   8. Limitation of Liability. In no event and under no legal theory,\n      whether in tort (including negligence), contract, or otherwise,\n      unless required by applicable law (such as deliberate and grossly\n      negligent acts) or agreed to in writing, shall any Contributor be\n      liable to You for damages, including any direct, indirect, special,\n      incidental, or consequential damages of any character arising as a\n      result of this License or out of the use or inability to use the\n      Work (including but not limited to damages for loss of goodwill,\n      work stoppage, computer failure or malfunction, or any and all\n      other commercial damages or losses), even if such Contributor\n      has been advised of the possibility of such damages.\n\n   9. Accepting Warranty or Additional Liability. While redistributing\n      the Work or Derivative Works thereof, You may choose to offer,\n      and charge a fee for, acceptance of support, warranty, indemnity,\n      or other liability obligations and/or rights consistent with this\n      License. However, in accepting such obligations, You may act only\n      on Your own behalf and on Your sole responsibility, not on behalf\n      of any other Contributor, and only if You agree to indemnify,\n      defend, and hold each Contributor harmless for any liability\n      incurred by, or claims asserted against, such Contributor by reason\n      of your accepting any such warranty or additional liability.\n\n   END OF TERMS AND CONDITIONS\n\n   APPENDIX: How to apply the Apache License to your work.\n\n      To apply the Apache License to your work, attach the following\n      boilerplate notice, with the fields enclosed by brackets \"[]\"\n      replaced with your own identifying information. (Don't include\n      the brackets!)  The text should be enclosed in the appropriate\n      comment syntax for the file format. We also recommend that a\n      file or class name and description of purpose be included on the\n      same \"printed page\" as the copyright notice for easier\n      identification within third-party archives.\n\n   Copyright [yyyy] [name of copyright owner]\n\n   Licensed under the Apache License, Version 2.0 (the \"License\");\n   you may not use this file except in compliance with the License.\n   You may obtain a copy of the License at\n\n       http://www.apache.org/licenses/LICENSE-2.0\n\n   Unless required by applicable law or agreed to in writing, software\n   distributed under the License is distributed on an \"AS IS\" BASIS,\n   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n   See the License for the specific language governing permissions and\n   limitations under the License.\n",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/github.com/networkservicemesh/gotestmd@v0.0.0-20220628095933-eabbdc09e0dc",
+          "referenceType": "purl"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-.github-workflows-automerge.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-.github-workflows-ci.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-.github-workflows-pr-for-updates.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-.github-workflows-release.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-.gitignore"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-.github-workflows-update-dependent-repositories-gomod.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-.license-README.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-.golangci.yml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-.license-template.txt"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-extensions-base-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-README.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-LICENSE"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-extensions-base-suite.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-extensions-logs-logs.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-.github-dependabot.yml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-extensions-logs-singleC95operation.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-extensions-parallel-options.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-extensions-parallel-suiteC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-extensions-parallel-suite.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-extensions-prefetch-ignore.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-extensions-checkout-suite.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-extensions-prefetch-images-imagesC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-extensions-prefetch-images-images.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-extensions-prefetch-images-samples-prefetch.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-extensions-prefetch-sriov-sriov.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-extensions-prefetch-k8s.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-extensions-prefetch-suite.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-go.mod"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-go.sum"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-afxdp-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-extensions-prefetch-images-samples-alpine.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-features-jaeger-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-featuresC95ovs-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-features-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-healC95extended-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-heal-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-basic-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-suites-heal-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-suites-basic-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-suites-ipsec-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-threeC95clusterC95configuration-basic-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-suites-multiservicemesh-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-threeC95clusterC95configuration-ipsec-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-threeC95clusterC95configuration-loadbalancer-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-healC95ovs-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-twoC95clusterC95configuration-basic-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-threeC95clusterC95configuration-spiffeC95federation-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-twoC95clusterC95configuration-loadbalancer-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-twoC95clusterC95configuration-dns-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-twoC95clusterC95configuration-spiffeC95federation-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-usecases-nsmC95istioC95booking-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-interdomain-threeC95clusterC95configuration-dns-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-k8sC95monolith-configuration-loadbalancer-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-ipsecC95mechanism-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-k8sC95monolith-externalC95nsc-dns-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-k8sC95monolith-externalC95nsc-spiffeC95federation-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-k8sC95monolith-externalC95nsc-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-k8sC95monolith-externalC95nse-dns-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-k8sC95monolith-externalC95nse-docker-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-k8sC95monolith-externalC95nse-spiffeC95federation-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-k8sC95monolith-externalC95nse-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-k8sC95monolith-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-memory-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-k8sC95monolith-externalC95nsc-docker-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-multiforwarder-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-observability-dashboard-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-observability-jaegerC95andC95prometheus-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-ovs-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-observability-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-observability-nsmC95system-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-pss-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-remotevlanC95ovs-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-multiforwarderC95vlantag-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-spire-cluster1-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-spire-cluster2-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-spire-cluster3-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-spire-singleC95clusterC95csi-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-spire-singleC95cluster-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-spire-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-remotevlanC95vpp-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-sriov-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.F7zquoDs5J-suites-sriovC95vlantag-suite.gen.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-gomod-github.com-davecgh-go-spew-v1.1.1"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-gomod-github.com-pmezard-go-difflib-v1.0.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-gomod-gopkg.in-yaml.v3-v3.0.1"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-gomod-github.com-kelseyhightower-envconfig-v1.4.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-gomod-github.com-networkservicemesh-gotestmd-v0.0.0-20220628095933-eabbdc09e0dc"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-gomod-golang.org-x-sys-v0.15.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-gomod-github.com-stretchr-testify-v1.8.4"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-gomod-github.com-google-uuid-v1.3.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.F7zquoDs5J",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-gomod-github.com-sirupsen-logrus-v1.8.1"
+    }
+  ],
+  "annotations": [
+    {
+      "annotationDate": "2026-03-15T08:03:13Z",
+      "annotationType": "OTHER",
+      "annotator": "Tool: cncf-automation",
+      "comment": "Repository: networkservicemesh/integration-tests\nVersion: v1.17.0"
+    }
+  ],
+  "hasExtractedLicensingInfo": []
+}

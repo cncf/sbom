@@ -23,7 +23,7 @@ repositories:
   - owner: argoproj
     repo: argo-cd
     name: Argo
-    category: ci-cd
+    category: gitops
     project_status: graduated
     accepted_date: "2020-03-26"
   - owner: cert-manager
@@ -83,7 +83,7 @@ repositories:
   - owner: dragonflyoss
     repo: dragonfly
     name: Dragonfly
-    category: ml-platform
+    category: registry
     project_status: graduated
     accepted_date: "2018-11-13"
   - owner: envoyproxy
@@ -113,13 +113,13 @@ repositories:
   - owner: fluxcd
     repo: flux2
     name: Flux
-    category: ci-cd
+    category: gitops
     project_status: graduated
     accepted_date: "2019-07-15"
   - owner: goharbor
     repo: harbor
     name: Harbor
-    category: registry
+    category: ml-platform
     project_status: graduated
     accepted_date: "2018-07-31"
   - owner: helm
@@ -170,6 +170,12 @@ repositories:
     category: orchestration
     project_status: graduated
     accepted_date: "2016-03-10"
+  - owner: kyverno
+    repo: kyverno
+    name: Kyverno
+    category: security
+    project_status: graduated
+    accepted_date: "2020-11-10"
   - owner: linkerd
     repo: linkerd2
     name: Linkerd
@@ -338,16 +344,10 @@ repositories:
     category: build
     project_status: incubating
     accepted_date: "2019-09-06"
-  - owner: kyverno
-    repo: kyverno
-    name: Kyverno
-    category: security
-    project_status: incubating
-    accepted_date: "2020-11-10"
   - owner: lima-vm
     repo: lima
     name: Lima
-    category: container-runtime
+    category: ml-platform
     project_status: incubating
     accepted_date: "2022-09-14"
   - owner: litmuschaos
@@ -401,7 +401,7 @@ repositories:
   - owner: openkruise
     repo: kruise
     name: OpenKruise
-    category: ci-cd
+    category: gitops
     project_status: incubating
     accepted_date: "2020-11-10"
   - owner: open-telemetry
@@ -452,6 +452,12 @@ repositories:
     category: service-mesh
     project_status: sandbox
     accepted_date: "2022-06-17"
+  - owner: agones-dev
+    repo: agones
+    name: Agones
+    category: orchestration
+    project_status: sandbox
+    accepted_date: "2025-12-21"
   - owner: project-akri
     repo: akri
     name: Akri
@@ -494,10 +500,10 @@ repositories:
     category: other
     project_status: sandbox
     accepted_date: "2020-06-25"
-  - owner: containers
+  - owner: bootc-dev
     repo: bootc
     name: bootc
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2025-01-21"
   - owner: bpfman
@@ -575,7 +581,7 @@ repositories:
   - owner: containers
     repo: composefs
     name: composefs
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2025-01-21"
   - owner: confidential-containers
@@ -686,6 +692,12 @@ repositories:
     category: security
     project_status: sandbox
     accepted_date: "2022-07-26"
+  - owner: alibaba
+    repo: higress
+    name: Higress
+    category: other
+    project_status: sandbox
+    accepted_date: "2026-03-15"
   - owner: HolmesGPT
     repo: holmesgpt
     name: HolmesGPT
@@ -707,7 +719,7 @@ repositories:
   - owner: inclavare-containers
     repo: inclavare-containers
     name: Inclavare Containers
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2021-09-14"
   - owner: inspektor-gadget
@@ -719,7 +731,7 @@ repositories:
   - owner: interlink-hq
     repo: interLink
     name: Interlink
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2025-03-04"
   - owner: k0sproject
@@ -758,6 +770,12 @@ repositories:
     category: automation
     project_status: sandbox
     accepted_date: "2025-05-22"
+  - owner: kai-scheduler
+    repo: KAI-Scheduler
+    name: KAI Scheduler
+    category: orchestration
+    project_status: sandbox
+    accepted_date: "2025-12-21"
   - owner: kairos-io
     repo: kairos
     name: Kairos
@@ -863,7 +881,7 @@ repositories:
   - owner: kube-burner
     repo: kube-burner
     name: Kube-burner
-    category: ci-cd
+    category: gitops
     project_status: sandbox
     accepted_date: "2023-12-18"
   - owner: kubeovn
@@ -1004,6 +1022,12 @@ repositories:
     category: networking
     project_status: sandbox
     accepted_date: "2019-04-11"
+  - owner: nmstate
+    repo: nmstate
+    name: NMstate
+    category: automation
+    project_status: sandbox
+    accepted_date: "2026-03-12"
   - owner: oauth2-proxy
     repo: oauth2-proxy
     name: OAuth2 Proxy
@@ -1034,6 +1058,12 @@ repositories:
     category: storage
     project_status: sandbox
     accepted_date: "2024-10-10"
+  - owner: openeverest
+    repo: openeverest
+    name: OpenEverest
+    category: storage
+    project_status: sandbox
+    accepted_date: "2026-03-15"
   - owner: OpenFunction
     repo: OpenFunction
     name: OpenFunction
@@ -1049,7 +1079,7 @@ repositories:
   - owner: open-gitops
     repo: project
     name: OpenGitOps
-    category: ci-cd
+    category: gitops
     project_status: sandbox
     accepted_date: "2021-01-26"
   - owner: opentofu
@@ -1121,7 +1151,7 @@ repositories:
   - owner: containers
     repo: podman
     name: Podman Container Tools
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2025-01-21"
   - owner: podman-desktop
@@ -1271,7 +1301,7 @@ repositories:
   - owner: urunc-dev
     repo: urunc
     name: urunc
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2025-05-22"
   - owner: v6d-io
@@ -1313,7 +1343,7 @@ repositories:
   - owner: youki-dev
     repo: youki
     name: youki
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2024-10-17"
   - owner: project-zot

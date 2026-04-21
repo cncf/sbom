@@ -18,8 +18,92 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain go.mod.
   auto_generated: true
-  last_updated: "2026-03-09T04:55:48Z"
+  last_updated: "2026-04-06T05:17:33Z"
 repositories:
+  - owner: alibaba
+    repo: IOC-golang
+    name: IOC-golang
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: MongoShake
+    name: MongoShake
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: hybridnet
+    name: hybridnet
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: kt-connect
+    name: kt-connect
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: kubeskoop
+    name: kubeskoop
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: loongcollector
+    name: loongcollector
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: loongsuite-go-agent
+    name: loongsuite-go-agent
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: open-local
+    name: open-local
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: open-object
+    name: open-object
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: open-simulator
+    name: open-simulator
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: schedulerx-worker-go
+    name: schedulerx-worker-go
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: sentinel-golang
+    name: sentinel-golang
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: tengine-ingress
+    name: tengine-ingress
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: virtual-environment
+    name: virtual-environment
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
   - owner: antrea-io
     repo: antrea-ui
     name: antrea-ui
@@ -230,6 +314,12 @@ repositories:
     category: other
     project_status: sandbox
     discovered_by: org-scan from bfenetworks/bfe
+  - owner: bootc-dev
+    repo: podman-bootc
+    name: podman-bootc
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from bootc-dev/bootc
   - owner: bpfman
     repo: bpfman-operator
     name: bpfman-operator
@@ -1863,6 +1953,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from kairos-io/kairos
   - owner: kairos-io
+    repo: kairos-lab
+    name: kairos-lab
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from kairos-io/kairos
+  - owner: kairos-io
     repo: kairos-must-burn
     name: kairos-must-burn
     category: automation
@@ -2217,6 +2313,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from konveyor/operator
   - owner: konveyor
+    repo: koncur
+    name: koncur
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from konveyor/operator
+  - owner: konveyor
     repo: move2kube
     name: move2kube
     category: build
@@ -2270,6 +2372,18 @@ repositories:
     category: orchestration
     project_status: sandbox
     discovered_by: org-scan from koordinator-sh/koordinator
+  - owner: krkn-chaos
+    repo: krkn-operator
+    name: krkn-operator
+    category: chaos-engineering
+    project_status: sandbox
+    discovered_by: org-scan from krkn-chaos/krkn
+  - owner: krkn-chaos
+    repo: krkn-operator-acm
+    name: krkn-operator-acm
+    category: chaos-engineering
+    project_status: sandbox
+    discovered_by: org-scan from krkn-chaos/krkn
   - owner: krkn-chaos
     repo: krknctl
     name: krknctl
@@ -2901,8 +3015,20 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from kubernetes-sigs/headlamp
   - owner: kubernetes-sigs
+    repo: dra-driver-cpu
+    name: dra-driver-cpu
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kubernetes-sigs/headlamp
+  - owner: kubernetes-sigs
     repo: dra-example-driver
     name: dra-example-driver
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kubernetes-sigs/headlamp
+  - owner: kubernetes-sigs
+    repo: dranet
+    name: dranet
     category: observability
     project_status: sandbox
     discovered_by: org-scan from kubernetes-sigs/headlamp
@@ -3179,6 +3305,12 @@ repositories:
   - owner: kubernetes-sigs
     repo: node-readiness-controller
     name: node-readiness-controller
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kubernetes-sigs/headlamp
+  - owner: kubernetes-sigs
+    repo: nvidia-dra-driver-gpu
+    name: nvidia-dra-driver-gpu
     category: observability
     project_status: sandbox
     discovered_by: org-scan from kubernetes-sigs/headlamp
@@ -3641,6 +3773,12 @@ repositories:
   - owner: kubevirt
     repo: hyperconverged-cluster-operator
     name: hyperconverged-cluster-operator
+    category: build
+    project_status: incubating
+    discovered_by: org-scan from kubevirt/kubevirt
+  - owner: kubevirt
+    repo: iommufd-device-plugin
+    name: iommufd-device-plugin
     category: build
     project_status: incubating
     discovered_by: org-scan from kubevirt/kubevirt
@@ -4191,6 +4329,12 @@ repositories:
     project_status: incubating
     discovered_by: org-scan from nats-io/nats-server
   - owner: nats-io
+    repo: nkeys.net
+    name: nkeys.net
+    category: messaging
+    project_status: incubating
+    discovered_by: org-scan from nats-io/nats-server
+  - owner: nats-io
     repo: nsc
     name: nsc
     category: messaging
@@ -4484,6 +4628,12 @@ repositories:
     category: networking
     project_status: sandbox
     discovered_by: org-scan from networkservicemesh/api
+  - owner: nmstate
+    repo: kubernetes-nmstate
+    name: kubernetes-nmstate
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from nmstate/nmstate
   - owner: notaryproject
     repo: notation-core-go
     name: notation-core-go
@@ -4883,6 +5033,12 @@ repositories:
   - owner: openkruise
     repo: agents
     name: agents
+    category: gitops
+    project_status: incubating
+    discovered_by: org-scan from openkruise/kruise
+  - owner: openkruise
+    repo: agents-api
+    name: agents-api
     category: gitops
     project_status: incubating
     discovered_by: org-scan from openkruise/kruise
@@ -5429,6 +5585,12 @@ repositories:
   - owner: score-spec
     repo: score-go
     name: score-go
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from score-spec/spec
+  - owner: score-spec
+    repo: score-helm
+    name: score-helm
     category: build
     project_status: sandbox
     discovered_by: org-scan from score-spec/spec

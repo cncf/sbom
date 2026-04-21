@@ -1,0 +1,2754 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "oxia-db/okk v0.16.1",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "created": "2026-03-15T05:10:11Z",
+    "creators": [
+      "Tool: bom-v0.7.1",
+      "Tool: cncf-automation-sbom-generator"
+    ],
+    "licenseListVersion": "3.27",
+    "comment": "SBOM for CNCF project: oxia-db/okk@v0.16.1"
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://github.com/oxia-db/okk/releases/tag/v0.16.1",
+  "documentDescribes": [
+    "SPDXRef-Package-tmp.5EbcxMgQ8f"
+  ],
+  "files": [
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-.github-workflows-dockerC95publish.yaml",
+      "fileName": ".github/workflows/docker_publish.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6ead7b86916338e27439d0d3ce0c72cb48338a6629de39e8b8550a08cd94a2aa"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "c1023bb9b8c18d8cd3e54707f0c87291ea09296610f9866074cb62a276241059bffb2f4be3e94b386265379f65f7c6a655884af034e76ff0c2bc144ca9a2bb3c"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "be5be2ec8278c52e350bb06db6122f834ed1f495"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-build.gradle",
+      "fileName": "worker/jvm/build.gradle",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "37ec8fe8567440ae2548ae50ee5b33923f7740cf01c916cce207bae8f9205738"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f02964326b54d53c83604f58af4b3408742a589bcd1dd9105f8b0cb92520cd8c4f91bba5857f0fb963131acba8efbb42566c1d0cbc4b5ff2660fdc97cf44f53c"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e36e390735253f41034469fdb22c52938645e4d1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-.claude-skills-test-SKILL.md",
+      "fileName": ".claude/skills/test/SKILL.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "1a2bba0cb36d1cea09d4b46ca5823e8f94848649"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "302f5b834b7feaa7654b69c6f195f3a54c64d0c5b445d403bdf5dd4257407944"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b93b49b8be8c9d94157e76c91c040deb948bec1613f80c04f21ff6761c150eda00c09cca81f437ff1b10b010dcf6534579df79a0963a171c4246c46795fbdb3d"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-.claude-skills-build-SKILL.md",
+      "fileName": ".claude/skills/build/SKILL.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6b0fc0432c81e9940293b70375d483de92a25e7c"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9a053e35af8e076240df40b7dd807502669b4763873ac88cee6c788090b9262d"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "e6542ed39652010651258e62d92a1862147f0cf90067049c7c4ab65b7a715c0349a7df813a1826e1f994a0fe9c4c9dd4b7a30379aa2a8a697c096bd54d82fc6f"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-pilot.py",
+      "fileName": "pilot/src/okk_pilot/pilot.py",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "a4ebff91e20a570d86880c68f70f7b5ab86b346bffbf8e397be86465e7c3c7ad45e8a73fdf9513a738cc75edd3fb2c62c38f37100e6b494629eb32b5f10440fd"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4349f994da7c01913f335dc84d2a0e7e4cf05611"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9091d69c7646525dcf1caa6a5edeb5c45dcf468f67fd06cf2c0f68c78f06ffca"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-worker-src-main-java-io-github-oxia-okk-worker-Options.java",
+      "fileName": "worker/jvm/worker/src/main/java/io/github/oxia/okk/worker/Options.java",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "3f84324461926d2759503f13fb1e9117231a3e07"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d0c3605628279cd613c2b860e9e948d1b209c4f39adbdc1636b29ac62c0b3a4b"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "1a749d3ad2dc90433ab7adfd4ab5f3731dd56ce557d8f544b018846164d74d837142a2f45fcccfbf88b08f3906958bbded514c8443477460c6c08e29426f01b0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-cmd-main.go",
+      "fileName": "coordinator/cmd/main.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f4d424890116d318826813278b005438f48f679d"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "04dcde79aa4ac3283acaf2519a6f2cf0a2ca96ed8427a3bd873599f26904c130"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "4148c4a7b16b94bbfa7e194066bf45217c471f01e23616aca769cb95144a323f1154b051459a5f9a2155a892e8698c707d69eb0da11ef13a97c50026d3b806c5"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-.github-workflows-helm-release.yaml",
+      "fileName": ".github/workflows/helm-release.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f81369073e63d43c3c1326952f05ce13ec0d4761"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "cb125023a78843e780550f258b95d6e8d261b0c647480d7dd4e57559d9b584cb"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "ada21bb29f309dd6751b70ab25a76f20f78ae6cee8b307a778368a200a336bd918cd99869c4ad817cad5a191c5507ae08a4970706c9f371773001fd0aeb3e07e"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-worker-src-main-java-io-github-oxia-okk-worker-EngineFactory.java",
+      "fileName": "worker/jvm/worker/src/main/java/io/github/oxia/okk/worker/EngineFactory.java",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "524e8b3a302b888093a4da7a6716e3672c1accd2"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "637d75b9838a2e6e53cc5b091b77aa19483ab18d95f83d684d03a51946bc7b3b"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "92a7c014a0b15e9951d78c68c5a2637de7cc03d74bf22512cc73f21682bc365b07ed160561f04f2a0486fea5deedff019b2f24f48992d595d90b2811ddcad01b"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-task-generator-streamingC95sequence.go",
+      "fileName": "coordinator/internal/task/generator/streaming_sequence.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "aaa7e562538e2b4054e35c7a6091366d4ed47aa5f8ab622219ee56fa8c901e8fdf4483a16d5885aa7faf48b66d3692f9070340773cf27cb35cb43f033a3a1ad6"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "60961ef969c36fbaaad10c43e61640dfb66d3ee7"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9897e4ce59f08d175e5434027fb5a613915f6238fc3742661d8fb94601e44c96"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-gradle-libs.versions.toml",
+      "fileName": "worker/jvm/gradle/libs.versions.toml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "5242a9a63870ea6080e4ad39b1e3d7408274dead"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3f010eb243b3702a75e6217a675621cc32f659971550f1e05a1eb592463af4e9"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "77f0011931b0cc06c253c7458c8a32afd7fe19772b48f08758ee7827f80fd69307d5a2582be7c8b012a925329869c287ba80f017717ebe0ee3e9535f077d1691"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-task-generator-conditionalC95put.go",
+      "fileName": "coordinator/internal/task/generator/conditional_put.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "0547e9224e8d39edc2cb39336ba1f7e728bd5aca"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3b0efceec41f23ed60d7a07305c6f865284314b6ca5e3ecdc72a379958f047ea"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "807494177d16ece289f977e815522fe6c3cd57826504bc73364bc1a6607df9abd93302c0b68c25e2ca29be4e136aff98c66dd3b23fcb3436f1d023d72e75c6ae"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-engine-oxia-build.gradle",
+      "fileName": "worker/jvm/engine-oxia/build.gradle",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "9bbe0c35575d07131065a9d4ee1aef115a4a868d"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f5472ccbbf003666cc6993d93d1bad37064de2216f1ba0646ef996a570ad5366"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "44c17e6a6aeb3c309f1b05c0ef793213f930bab5a18d6b9976090a88c35586d4a8daca86954ebd7efe5cb617d4016a8a13b25689f0f24c5dfd7c5692f90e2a6e"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-charts-okk-templates-coordinator-deployment.yaml",
+      "fileName": "charts/okk/templates/coordinator-deployment.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "257db29625d57b8d46f032fdc221ed772750fceb"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "28a76d4a017d45d31814c39cc6a92be8c093ab610ef725a6c6b1c556a1a5e6b3"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "7aea9004bbd40bea6e8ac3fd07e44abd2c4d4b89a2dd3b9ea7f1b2ef066b5426aaab9e1ff48ad5e64be00746aaec27b5f031113068ce6f971f9e7321a4e1e92f"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-api-server.go",
+      "fileName": "coordinator/internal/api/server.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "83c79a39f1443e6a893581df7bb73185c7fb3f1c81309b0398df4d22c5370321be86e0fb6e10718b53274ab7dc73b18323aab9bde86859030d67105db97bf47a"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "84c5f2675d03def457f9aa98214fccc9d922e52b"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0d7e150ddb465553484bf3b02fd0442aee7086ece770d7955c11eaf6c3cfdcf0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-worker-src-main-java-io-github-oxia-okk-worker-Worker.java",
+      "fileName": "worker/jvm/worker/src/main/java/io/github/oxia/okk/worker/Worker.java",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "843329d818b871d9e1205dd5ad5dc692ec404e503aff3d7bd156edc7eb93c108d601f35164118199148ac1fbddbbe0835d45f5d175ba13b2643fe0b5cc38220e"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e6efaa2b1f926e2d351e7190662717f4d9b40514"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5dc870c8978bdf216b1feb458d82339adae600bef7b26b6023c7447d6e0bf7d5"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-events-C95C95initC95C95.py",
+      "fileName": "pilot/src/okk_pilot/events/__init__.py",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-charts-okk-templates-pilot-secrets.yaml",
+      "fileName": "charts/okk/templates/pilot-secrets.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f457222d80715cbcf792411e691234a4d33c1b67"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d92c628a143c3abc700848820f693e355cd9ffc33bbe40fec2491207b708303f"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "3160f3e20e34899b68abca5acfc9f4a4f059eeaa2c93c8ea41af0b225a6db8e09ec32ec73f24fc84c5f170bfe142e1b692398e8efad808057e1d6deb050417e8"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-charts-okk-templates-pilot-deployment.yaml",
+      "fileName": "charts/okk/templates/pilot-deployment.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "d5b5628af728f2fa8ff1f4c91d82a78802e35dd9091e7e24aab45fa631bf26252332ca7bd0c5afdfd66e326ef0dfa5a2809a0ecc270b2225721dbd0f4fdbae35"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "89deaa6b3fed173bdf681b93e64cb78b463e84fd"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0540cf8cd412dfa16a2dbbe8f0e8211ca86d278c8d28578a9898eadf7ac05d3e"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-events-githubC95poller.py",
+      "fileName": "pilot/src/okk_pilot/events/github_poller.py",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "641b3e4cd0a45c62005d97b2f0c81561ed014478"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "36483e2cdec5299b1109e486cc480c4dfcf62bf7ccd604993272baacf8215186"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f3b15738f8f98eeec1ffb1be04d791c930383705055e76bf7be8eb9960d290e6276d3aee45be0c6e65930b562058a4e2e134871095d5e476bd4ceae20b9484f2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-worker-src-main-java-io-github-oxia-okk-worker-WorkerService.java",
+      "fileName": "worker/jvm/worker/src/main/java/io/github/oxia/okk/worker/WorkerService.java",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c7b03c6864875e91c08738bd61d12fb1ad47c5814f490a705859c33e1caa654d"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "ea9c40b264ed965fcc4256865139740c3c8bcfba9d0440f29d7edf618240e87f027a112e2c95eb5c09a088404fcc0d221c93675e616b1dbb1af0bf8fbf122276"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "50f1418d72251ef31b1f83031f66c1906f2e5943"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-proto-okk.proto",
+      "fileName": "coordinator/proto/okk.proto",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a848e9fcdbeb04916f14c702cc91caa7e247a7d1"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "940ef777067b7f963a26c7432cb87ec596584e163f9bf403d1058933021b6da0"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "4ff04a458792b73a4d0d36bfdb20bea3c8ad0d3bf2d8a03f04b098381bf81e33c65e5adf560bff1d8a11c1583b275c95696161089ee41b95e3130ffae3efcd76"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-go.mod",
+      "fileName": "coordinator/go.mod",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6e55838076494a2c4ea77dfa81399b098b8124b9"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "abb781a64339086a756f636c7ef5647ebaec59fb86fcb8a5f339054eaae2a4d0"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "24a0a5597666e57a1244335bd578a4648166b736913542b9487a93364eda51f7fcfa8d972d8d8b88c59c398b1fdce1287e8c8bbccf82901a1317b91e68e28d7d"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-config-config.go",
+      "fileName": "coordinator/internal/config/config.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "591f59d12d58a4a07c646c54b262d4ec0935db44"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b32bbd48d2e1cbca55e39d580b5105d31f9e5513728b80cb2cf8aa1b6733d22b"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "5b874f14f3627ba9fea39a0db1773ef6af4aab3146ecff58a6596cdb41929d245576460046ed98a04587cc705ef06adbf9fd086d65857b0c3ed32cec130621f8"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-.gitignore",
+      "fileName": ".gitignore",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "d16a18ecd2a801b096da58f50216ea82f4788267"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b06e4aee670a2c3726a21e46a694e02e872a4b073ab32cb725f3349f3c81be73"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "a00a6476c61724c963b556283c08e96eed0a962211ec10f30aaf07913e7ada23fc58abb33a2854972f1b9c534d45c5db0b60049a052f274a5d2b3207d850e0dc"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-Dockerfile",
+      "fileName": "pilot/Dockerfile",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "BINARY",
+        "APPLICATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "84e8552a66221082f7d9e9644fa6889c3a8e2b36a030c1cdcc2c7f7b728c3e5f"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "5522ef8dcdc0f7e6282f806cc82b7c5d9aa0164c02f473bf5b3c25d64f1abcbc5dc38d8e5ed5874dd0091bc16318acf1ec138e1ec15718d8db26de2d9351693f"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a71ef333e3398688223f970f38f8050e520d3d9d"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-worker-src-main-java-io-github-oxia-okk-worker-CmdWorker.java",
+      "fileName": "worker/jvm/worker/src/main/java/io/github/oxia/okk/worker/CmdWorker.java",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a20aab150964056312a0d6ce3f0376638c7e8101"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "68ac216328d61ac2e53e5d973d03d7217f3cbd8aca745ccf226ef0630f3f7fcb"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "7e9cf84239af773e21dd0b31b041de04b5e84a5383127f704cdea3e29fb5ff5b5288577f27a9de39fea80946e0a562e4f5b2bc89da7ad358952583b315a8bb27"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-charts-okk-templates-C95helpers.tpl",
+      "fileName": "charts/okk/templates/_helpers.tpl",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "8ada3ccd79dc26f2d7bdf4be48539fadeca02c86"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "611075a184033c413cc0187f889d8dc72782faaeb7a473f9ef135c5aa3dfa46c"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "796850a853cab4998fffeb6bb84c724d71ca2f11d800861af5cf38052ea9368bcf5c08be58b430f2904e7ef0b3f01a5acd9c5e36f1de77d7077eb59d48c86548"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-Makefile",
+      "fileName": "Makefile",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f55b09e5b9a0d3a21cbe5c802b7c947520f15f8f"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d468c89fd8d6938bbe428cab1f325ea3ed9cdecc3fe5696d0aefc75ea681a831"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "a547bd132ebbb10d828e0234fc8d93c6d431b6a1a56820857d620c2a93639ee0973a41692cbd8af6cada06d5f6a7db6e2eafd94afdf9e803e42b8ace573e9d14"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-tools-state.py",
+      "fileName": "pilot/src/okk_pilot/tools/state.py",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9a45949d7724fb92b65a64b7783d2abdb1468cc981abca6a235881094d899960"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "7c5dabadd4281448cf49aec5b4141988853f574a60d6a09e27e00c0348b35f6cac3ee8090ad2a2783eca0e4cbeb2f6c95977407afab29015dca1d7e5cb193b79"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "49705a7348bac5d1fc5bf1e5ad3cac5d603e781e"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-task-generator-metadataC95notification.go",
+      "fileName": "coordinator/internal/task/generator/metadata_notification.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "795dbfdf10eb5e2e97de55af1f126625ebe8a405"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ea2ce779b35345109b6a62b7e708d448095cfb634a9732677a66345c31e4cd92"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "39c552519de5a8768c9bd5712a71f3dbab0ada69e2f6b65f91c2ae00142f5ba76f384b904a2913c9fe896c4563ba841a3c2ddb9d5790e9dd38feb7f1f167efaf"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-task-providerC95manager.go",
+      "fileName": "coordinator/internal/task/provider_manager.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d61d2dba76019ea677ca53136b3154aee37b695e8cdf7c11790b1e8e101c8b10"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "9268ef9e338c5fb86d1954ec84c5766ab6f32bcf606015f2d974eaa16ab366f8a10d09c9e9f005ad3651660fc8b764ec2cc504362d8d2c670f0d316e086e0c1d"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "8d0d2aa0786d0b70e6eeaa7b11aa1349f6fa8d35"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-engine-oxia-src-main-java-io-github-oxia-worker-engine-oxia-Options.java",
+      "fileName": "worker/jvm/engine-oxia/src/main/java/io/github/oxia/worker/engine/oxia/Options.java",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c7d639875ddb7da66ce9e49c6a6e7cbafeaa54b9"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "093797a11bf92ea041048c3940bbf402f55a8b4908f5d973d83b78cb0922ed29"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "47eabbf8383e012e2a1b01124d511569817d973be88ca38c63e18d3ec5ebf36b7c499166641f3ebd36180ef4a43a9afd3688d3b1e2c3712741b03fcb68bca255"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-Dockerfile",
+      "fileName": "worker/jvm/Dockerfile",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "BINARY",
+        "APPLICATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "8b5c2b766ccf6493fa16b8326042aec74ad6bf47"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e70d95c255254d8ba7dab052ac218b42a912ee60d1bb1a003546d67e3f5517e5"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "8d2ef4f3ed6f563ab47106846c5eb00f57280fbb632ea729f1eb270a8f932b02de1fdbdaa4cf669118760605ce3ecb69ed829c746134f45e3d99f3d8af0dcc64"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-tools-invariants.py",
+      "fileName": "pilot/src/okk_pilot/tools/invariants.py",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3f98e3ab118f152bbf2f6a1f526ffbe8c7c532de0650fdf79728bf4ea58912fd"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "d54374c83ffa3f45a4145f345a65dcb8da8aff15430e7818d86557ab179e0bc0a82ea37577867c18743ff5b348c238a5ea80b5589a028657668f5baa5c53f6b7"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4236701016888ab17e7b815647390fbcba175019"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-go.sum",
+      "fileName": "coordinator/go.sum",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "317d615a371135b13fa76d171a05e905aa3873fb"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1e582a73c2cdfa60df6e26f85f2825583e8d90d82773976f2c8e301c82d369b8"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "3918062a804a8d07f131051693454c11793ee60a7e521a9fc4ad199784cca96f030b2d0ae7e1c56cf9438b61c2db2bf40e4245803b7a52f122800083c2fe7f27"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-events-webhook.py",
+      "fileName": "pilot/src/okk_pilot/events/webhook.py",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c2de61af3293d0b4b8692e5c4c965ce04b28fba3"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5637ac3e17a5bd5e4f5f0818f3aef66b169a26e4da091ef0f5e69d921311cb4f"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "444d336741453ad4bc73d0e7e504eecdd907b01150de14a83f78a07fc8c360113cc4d4e48ce3695943866b4c90269df6566cb6fc4b437848abdfb421c7b9a395"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-task-generator-actionC95generator.go",
+      "fileName": "coordinator/internal/task/generator/action_generator.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "56fbd2fcc426522744107bf60efee99e0a1117cb"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "76caad40c155bfe71132d29a84bb78ef43add4f0d4b7a2f132de9a519e544748"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "a2eed2aee526730edea74b424166a29b51601c51100fab68b16ea9834842313bf852b965b41bacbd2a80fb767cefbbbae3955e1c7d92d23f70130ff25d17ad89"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-events-cron.py",
+      "fileName": "pilot/src/okk_pilot/events/cron.py",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "e482beb05221296d37bd3f61ff1d7a38ba3df3f0844f0fe374bad34fcd3eef7808b50c4296bac917f4228b6f87c9dd8017bc7653e245d2894d11c6e2731c16ea"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6cec43c4fda4969517acc3879ccbcb97cde0acd3"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "096a03a71f21fe98d006b8b8956265e94bc1b0f43c19d9bcdd8fcdd402cc9d41"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-golang-go.mod",
+      "fileName": "worker/golang/go.mod",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "98827c6d49c624ea8257d2327768647eca8f748511d154a9f0af8af995b64923"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "6bd26e9ef3a88afdc6c1c69c6ff6d956e610acdceca9f3f6917a18f69a20e52573fcc8439520f8502e6e4990bf2e41d392e580283fa27b35c285244adad52a66"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "7cfefade78d2e2291475789b033023cf58571dcd"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-gradle.properties",
+      "fileName": "worker/jvm/gradle.properties",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c575f8c9ea7d0f308d2ce146a43fec99b8b6d546"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c5b0ffa9dc773a3f104db89a1faf33477150f1932c105f3825169fe4dcddf082"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "840173617c8cdcb9755bf2fb7b0938f24fa9e44e6c1cf4e60a351612386a20532961468e4ae6bab4c33dd7ad40ed191c8fd6ad26e3d540abd8be1d165a02b3a0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-main.py",
+      "fileName": "pilot/src/okk_pilot/main.py",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "437ae67637a0c2e966f83a6c54422dd5dd6b260c093c4776d1037ade409d3c9f281070fd9f695e9a19409675b96d6622a94d8dac4d8953ad17c3d9817f678300"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ff25e9d3aa80de62673a3fc6035cad4ad49ed3d7"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6e289f5432fdff29e2b310c25ef261154436a981bb3f30f05cb2b89ccc4e839b"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-tools-C95C95initC95C95.py",
+      "fileName": "pilot/src/okk_pilot/tools/__init__.py",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-pyproject.toml",
+      "fileName": "pilot/pyproject.toml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "39c506f0dea3aae3ae187e64d0577978cdcd178e"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a2b35d5dac341d6caa9d8903289b2fdca7d95d207f4a51c3ea2655bb29ec3d86"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "ed5a8218740ac0117020286006c3e31a6ede40d15d422ec3b1a9da439fd76bc6f6429b1b687090891ba27aaddcf9e21e62cee2678c22a77985032d5bb8efd661"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-tools-observe.py",
+      "fileName": "pilot/src/okk_pilot/tools/observe.py",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "947c18a4966c1d4f315f9432e9ff549cb13328ec"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "810ff4180d9979728ee519fcb1b9fefe6d575f96fc3cca619a58be7b59310c79"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "63269308ee1ba4c9ee90cfa7c5caa180834b07705d56225ad46b306b95d6d1815e8c2c8a0d616b055f251b40aac9deb1fcb22a20e335dce52be972efee271512"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-charts-okk-Chart.yaml",
+      "fileName": "charts/okk/Chart.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ae8255cf89599a091e757d80aeb812f18184be48"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0ea327edde2c83abf168742600c43dd4baf6570ed025245d99cae208cb69f6b4"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "7978a52ee72644da50975986c894e747e6276422a59dd6290bb01d2df3faf063d80559babae50fb673533b2191993a5cab3af75cbd943459da4d897ca1f1e469"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-gradle-wrapper-gradle-wrapper.jar",
+      "fileName": "worker/jvm/gradle/wrapper/gradle-wrapper.jar",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "BINARY",
+        "APPLICATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4f81e6618c7d31dec2c9501c2d4580996abc66b9"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "423cb469ccc0ecc31f0e4e1c309976198ccb734cdcbb7029d4bda0f18f57e8d9"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "e72dcfb45f44de17ea1a5ac41a3127cf34de7991fad770e572414661286602310046a0f7cdda837abe7fb0bda61694c433c06069cfb7963058bad145ed31806c"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-tools-act.py",
+      "fileName": "pilot/src/okk_pilot/tools/act.py",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "9292e09500d40091efede69e202a0d333f6a4d71"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7d90b5efd522691659936571895d0b7028ee1bdd5ed324df677a7d4a65c75626"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "c5e615ed12ae712e95d8c3c385fdd72555e62c38dc626f38dcd6165ce79d8825829184e4077ea35c74266325ddc3a50a36857cd656ef990880e4cfbc65f1ff9d"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-task-generator-basickv.go",
+      "fileName": "coordinator/internal/task/generator/basickv.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f3e19bb916d223747c57f9adf2684eee350f9bd15f4ace14f326fc44d3f63595"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "a6eebe8ba281e4b69628083d1c3f00bf4d7184ccda12e09f24bb31a3c24dc781d975b02d33d321a34db7a1c85a562111d54020ea0c7c3459f32fe04ffa0268b5"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "dd10f63576d3fe260d5a32669da6c395cfa2e76c"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-golang-go.sum",
+      "fileName": "worker/golang/go.sum",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "b31896095fad6f401e1692fa52cda18cd3e0d1bf"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "53462c95784b7b01c082cb4ee019758e23d12ee8702a59525191eb8b8722d55c"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "3a6921e880db4290d833a8a3168c62e04d42e2fb5a77b4fb47bf012996a19816ba4e7821a5ea862d0441cb08b8ee334bbf141ca736015652ec4ee6fd530ba99b"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-pipeline.py",
+      "fileName": "pilot/src/okk_pilot/pipeline.py",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "07e3d8012cb469787dc4957dfe6035d5bb786c2c"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b87630b79f51d04c8bb76fa3b2bcedddd0d8dd37281ccf1e3a4ec5180c69b49c"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "225f6016c9b3fd126d1904c8da62a35aaf51b61a7e2f3614cec47e9ae41a99445ee703a205c73c8eb18c9f4ae544c991067a3d2ffe123e8ad1439f426b7c1d68"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-.gitignore",
+      "fileName": "worker/jvm/.gitignore",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "08278ea89fe91c42521a3ac32c870dc3aa9477bd918523c50884c207b914029759efdc1abdae9ad4bfc1ab8c9320163c8411baf2079cacebfa71290a8dcc9d8e"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c55699e60769059348a0f60929e4acc6ca23a1b9"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "db0a6577b955583791c2313de81b4cb41914bbc3234fa6ab86b28d15f9f2a922"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-task-generator-generator.go",
+      "fileName": "coordinator/internal/task/generator/generator.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ebc25f286862235b63a7032b77e52861653f665b286015de2927f6e5281374b9"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "60f28452527fcde77c85550f43b6dd1520e824bf5f4baefcfe00620e2d3a3965219b171afca7cd9b4d5ef06062b2e52e827618385af326b7fb9bc0bf69e046aa"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "101c2380a32ad6f177a399df3684006fbb250e6c"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-gradlew",
+      "fileName": "worker/jvm/gradlew",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "db4497934951ffdd9f8ff35551b6d6537b79d4c1"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "fb68debc1b1acf8ec55dc0d5e5495e1dedd0bd6b61f304bee61613eeb2bd9b92"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "9a8d9ce15fb6674b802ec02b9c9c6e88e027469268db11bb8e5ae59526ea2f3f3cbe92c15f3156b88fcffe48bb7b2c53e8282daec5f16c9bff91be698dfd597c"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-settings.gradle",
+      "fileName": "worker/jvm/settings.gradle",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "2497b8fb6fd1346aed2456dc9ab8ad789a0508d9"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "feee418f544ac9bfa7aceb4ac060765c77abb54fa05684737e01326bac558a01"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "dcd08d8d65f7cbfa6cdb98b6aa5c30f1379e86f4d3f48f15ef72a1e4a6d8e152305d5de1e912e73bf9bda9a83da27290d001acba52d46dca641597661f0c0a7a"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-docs-design-okk-pilot.md",
+      "fileName": "docs/design/okk-pilot.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "50356ee1c066f5d9aaa13db736d70047ff507a66"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a73b9c02c16d3df9ef7e747026aeddb220adc3eb464849c40e7eca4e27c9e954"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b80f417fe0388fc9e9ace52e8ddf265956dbf1c2e01c233ccff81ff135db2b46296bbc619c7f237ae6faa6c2b27f8181b8c03d7cc0a8bd86427258645139b258"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-.claude-skills-status-SKILL.md",
+      "fileName": ".claude/skills/status/SKILL.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "9345f16a8901e8bb4feee673574e7efa1b4f8dbb"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "596a81f41f386dad93ff708f49efad2922e6ee2275565ce9b1af65db52f3ce65"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "a1bea5ab59dd15e300cef02251e336d65acc3a4334d901d02e0f476f96e7930a6d7b7043f7dfa4ddc620eac55ba9220ee63ff57cf3aa7e6a7bc72422a5803e52"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-gradlew.bat",
+      "fileName": "worker/jvm/gradlew.bat",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "BINARY",
+        "APPLICATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "fedad02c18e266ec094995a5751b7fe1eb6e74f66bf75db64fae2e50eb22c234"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "73dd6183a87f476eb5fba5a62fe97fe8083f1a3889b52eed26a1d556fe64226a9f1128c81c486d90dfbdb88effe69ef3aadbb1b007439e2ab8e0e37a048adf34"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "483bdee17a45112d5b6521203afbf43073a8d4f6"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-task-generator-metadataC95ephemeral.go",
+      "fileName": "coordinator/internal/task/generator/metadata_ephemeral.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "d1b17c2a520041c2a90977d00cdaab399b38d960"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "be43a10e892d8e708132224e47efaceb3e83099dd31341a9da832342a603fc86"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "572c7c82187fd973ebe63d36f4ec94a511cd0ae7e67f548013284c742b0710a5b38b25d4d2d3928a2f6238301991d3a4108bface224f5c28d771024866ece20d"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-proto-okkC95vtproto.pb.go",
+      "fileName": "coordinator/internal/proto/okk_vtproto.pb.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "5252a577f361c981fc9c950c9e66a5c3432c43c1"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "782014d254db2261524b9b34f3e665733706aa957680416d932963e8f7940719"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "d2ff6f79e003e9601510335217e99784c010e5f6cfad6e2dde304777199ead02952bbb9485ae220b95fd76aafc71b5728789d42e6b5b0703e483e0c08f23f556"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-Dockerfile",
+      "fileName": "coordinator/Dockerfile",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "BINARY",
+        "APPLICATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "1b7728b5e405e9e55df8dc6852b4cf1a0644cb2f"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a2274274419e4412be996cb5aae915d4a3c60d2588222cf02596a15ae69228fa"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "633d7ae6b886e2311d0d3fc73921d8781a30a0007d470250b9eee0eea79d0169dbdbcbe02e927a51d2cd1f4a2e18bcf693397b245813efd79677a0e490a32978"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-charts-okk-values.yaml",
+      "fileName": "charts/okk/values.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7ad79ca010601c7bfb444f0a05b88a888a007165f55f716f837f1afe642235cf"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "9a2793e514f68411520d06c37b3b2e79a00f5aeb164d26786646bdd01ad77aca28a40865cb822913f41272cfb3cea464a76eec151292a5d9a370d3456c9ee12a"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "49258a3a091f2d08b33e36b8299a76544ea1f362"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-worker-src-main-resources-log4j2.xml",
+      "fileName": "worker/jvm/worker/src/main/resources/log4j2.xml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f43fd0d8cfb8f0c9d0f5c463457f6e9ea9ac7fea6c8bf28e3e0bb96e1e513c2032cf3e82906c7d6b0bed9f1dc51e882fc45e383c58221c08a1f7301665c34c1f"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "0172923477760c7830ac04ecbe4d2f44f613636f"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "80f0063146c3beac86f9cbca7c09d83602f7f0771f017a7c005768b274b1e439"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-charts-okk-templates-worker-deployment.yaml",
+      "fileName": "charts/okk/templates/worker-deployment.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "8bdcfb72a08446dd4606463c58b4ea5d420ef60d"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8b36f2fc59d41de7537240e4304813f1cb727db2977f64d9042ee73020eb0fdd"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b9586f3508e9a961e40e3a66ecf4b460e9e23c21c8da15f8779982e2c7b23e54637d81804ae69eab4831c9a3916394b1833b6c5bc9ebb8c1aaed01ee369690ee"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-README.md",
+      "fileName": "README.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "850e42db7e523a2a1eac9113b4680f327db2898c"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e5e9a8b280eeae8269e6b09adb14d7170ae3c08249f859a9021299acb0efe8da"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "4ac7922f5285906c6c54d6d3c9bd84be899020e1110bcf565d2736930c42af892c0d6d5d7fe8718a8e8648275320776c9cae6b26d28d063f587fd9a7724d9931"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-task-task.go",
+      "fileName": "coordinator/internal/task/task.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "187c194f5199438f1ca282baa0a2728969bb190e"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7b0822b8be3a8c0077052930fc39214660d7ac8fd243831462000d67eb289512"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "847fa05f3d114ca9b7e62814239655ba300533c38a5f9afdeb487bab84e185bad2efdb2248d427eaa7c2f582b9a93c37b69046fa91cccd362d6b046aed229a88"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-.claude-skills-deploy-SKILL.md",
+      "fileName": ".claude/skills/deploy/SKILL.md",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "59844aa507338b0d9aeab959091410c3f8aa1b60"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7ca9a40a5d097d7b39e46fa81441d64836966aeb5a827c441f0f89209359f051"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "5d5013b0667243099210ba5be995f7d30bac1792217106ec9893793d4431267a365ff28ae2fd061b2234326551ad7b781fde5d6ac68d1319afb07c3674a34372"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-config.py",
+      "fileName": "pilot/src/okk_pilot/config.py",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "5890b303ae94a31cc9ac4df5311ea52cdf8e2abd"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "32e265c610feb78a937f27085189327a4c4b68a01cc65d5722d2608d8102ff02"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "2388336beb01374cd27c2bfbef3eba725d24e920a48c0a412b50d577b89d6eb97c5c9b63b006898f2dd833425259af355ea7b477352a75feb2570b596f2fbc24"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-LICENSE",
+      "fileName": "LICENSE",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "7df059597099bb7dcf25d2a9aedfaf4465f72d8d"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "dc6b68d13b8cf959644b935f1192b02c71aa7a5cf653bd43b4480fa89eec8d4d3f16a2278ec8c3b40ab1fdb233b3173a78fd83590d6f739e0c9e8ff56c282557"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-task-generator-dataC95tree.go",
+      "fileName": "coordinator/internal/task/generator/data_tree.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "fb16a693cb1b7a218d87bd0b183a94e612e1938309660b9d6e6e421af3138ce04a7880262612359335d9db0b65e696fe1b3f9ff115b003083ffb1616e1e07310"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "b84839296998718abca8904d5cd7c156a232e7f3"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9e8d9fc5c356519a49e56188f8aa6db115cabaf334383cfaf34a1b820845b9d6"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-gradle-wrapper-gradle-wrapper.properties",
+      "fileName": "worker/jvm/gradle/wrapper/gradle-wrapper.properties",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "8bee7073d8135e9e4c8383b8993bad0130a2bc778dbc46f3e7ed591a8f67e254277ce4dc181984caa32858cfb972851e96e37904ca46f4567cc00ef2f823518a"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "68c9c0b72885936c077c84e084d561482d5a62f3"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "297d70e976c3434033149e1a72983da5db39a70c114a9b60d58357ef7a320041"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-task-manager.go",
+      "fileName": "coordinator/internal/task/manager.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "2d2a3766b4ec3b50f80ebf92426a1641f74abaf0"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7d95c129f7599b045e99b0b398c11827eea643ff714aae4b465154fc964607fe"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "c776c996a76ae6c100a12a36b655adc6cf46f6d3337f7fe9756907b1d2151a4103eae47a0b2ee940412b7ef6c86ce8ef571693dfc9e3970ec495a2c1c204bffc"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-events-k8s.py",
+      "fileName": "pilot/src/okk_pilot/events/k8s.py",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f20feeedeca08e61d19f0cb51c6585aa49750dd4"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3685fa05bd30ab5aca0844d4588fb6a4882c5ec42f27cd2f8f62bacf601a2249"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "9b55172c6e85206fdb20cfc4bf7e47bae7e2ab0afc595cd1e3c1d9aa187713eb0e8ed0228dbc649b43fceeaa4ac37c512c493f33488334c17b68d778eae3ed94"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-engine-oxia-src-main-java-io-github-oxia-worker-engine-oxia-OxiaEngine.java",
+      "fileName": "worker/jvm/engine-oxia/src/main/java/io/github/oxia/worker/engine/oxia/OxiaEngine.java",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "dd20d9a78f8f3d7df634c0702349625dc3baa55f"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "44c8f7aa7270be478198260475e805c94ba7d32c15f1e892c8a36c1161fe154d"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "2ec04830c0ca12bbc9fb4f8fc7cc9b3ce82a06db02dc84e747ee87f51c02ce5f1255d950774ec3b28ae456241160ae9f32f7ea044804709c86cb5edc1975602d"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-engine-build.gradle",
+      "fileName": "worker/jvm/engine/build.gradle",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6885a3f60a308ea44e7d9f39f5957b78c81f91e2e093b9b083bbcd2608199167"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "a625cacc2f990a84d4407370d97022796ea42b5acb5a410829897a9d82149ca5708d4b6fdfcf0c1df8c55bf4dd7ded7a8d55c0b1f01d4a4bde79f50aa67cc4ec"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e919d2c6e31df70d5a2834d7e3185a857b1acaa2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-proto-okkC95grpc.pb.go",
+      "fileName": "coordinator/internal/proto/okk_grpc.pb.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a104d53113b8fd7b6f2fc7f1609ffd6f99d95dea"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9940edf126078f262c198652ce623320c91b00bafde11e4c61ab5ec70e9d5893"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "207165a69c30fab4855320eba5ac27df94611aa9a73c7afd432ee6e10060e89895fca93de3bafa677cb9d8f252ced9e88816e234fe8b3acfdb679e519ddf347b"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-proto-okk.pb.go",
+      "fileName": "coordinator/internal/proto/okk.pb.go",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ad1d13e50b921e329b7aedc5d72dc3d49b324a78"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "039dd22182a76f3c7ab5fc0aebd3d8d289e62b35fc58ac4bbde09b4e1497777a"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "fb5bd732aa6e9bd1a0e842971d2c3799a04c9ea4b64eff4f994666e2e5563e497893bcaf47204b3c24afed4a2d83be87a250eef196e7d4dee140dd88831f2fbe"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-engine-src-main-java-io-github-oxia-okk-worker-engine-Engine.java",
+      "fileName": "worker/jvm/engine/src/main/java/io/github/oxia/okk/worker/engine/Engine.java",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c081d9c46046c7d810e09319f45b612ff9b343d0"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c3aaec8d475ac6956d72c0e9a1c9f3b42aa5e18111614bf24cd7f939b6c3a225"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "9836bbebb51fc4bc09d15caab7ac49d51dda8388a7b1579d4468f903d6075f028e955b54912ff879cbb2b9e5567efbfe23a9cf370219b9c7297ab6669b4d605b"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-pipeline.yaml",
+      "fileName": "pilot/pipeline.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "796dbbc807b148e390336f9b91f5db168edefcd1818424c0162ff3ffbc51cbadc73366af99e1e5b76070f9bc1c83b033fac2624a6eec85f56d4e41b7137c6f28"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "2b409f68622aa4d7914b47ee928c4dc5bcc4dce9"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "76d25967743539b95ea0fb23d48e2df388f60affb60dd8cc58377450becd4e13"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-charts-okk-templates-pilot-rbac.yaml",
+      "fileName": "charts/okk/templates/pilot-rbac.yaml",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "d340e426bcd281f34616568e7c0e329a29632507"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "eadfc0109bb279e643f53ef5674913c4e5aebdc0d90e6027051278c328548b5f"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "d57dd97667ee5d7e9bc7f8efe25d10f8eb9d9cc8968342a1662dc91af8091edeaddeb27e8e0349c1de343baf8ffe8bb95d43b6082c4e35d393da57083909d761"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-tools-report.py",
+      "fileName": "pilot/src/okk_pilot/tools/report.py",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ac4ea4a134eb189a7e658b7cd11f9fdefd422976cde3c62f76815db465ec0aff"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "45051d9e1f70737e3f6c9443fbb8911936357804e2bf08862cf18bcfea69cc5828c2819c628e285db0cbdd31fd80182b279fa5a938c32dae5714abe6683849d8"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "faebc2a81ed6221fe54804e39072e4b7bbfbf8d4"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-worker-build.gradle",
+      "fileName": "worker/jvm/worker/build.gradle",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "3e9de4cef5c49cfb2296505c57508332db6e3012"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e93b7f2247c35250823c1b9f1903ffe58f4406931425a3f9859b4eb5dac337d5"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "eb86d443a800d28ef68743d45d71a60fe5533de0ac342c2c2849455bbb1b1a183132c9a47bd0f9b8cd00f108f3b63d3e33d931e7e6b761dd0f9ba1f0ce0571f9"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-.gitattributes",
+      "fileName": "worker/jvm/.gitattributes",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "d508991a9bfb7d30c140590d58b00eab220ba88a"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ca40924bbe3db74fe4f39c9b32500ca5a15e7bc1cff355033fe859702e5dbb97"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "33aacf58e122dccf1f2917e04932d0a56b699dacb070bb48b1e727495f00b3e3b450babe1e1071c998d521b635ea1b66391a1607d4ca50d832ff1692ba6d5959"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-C95C95initC95C95.py",
+      "fileName": "pilot/src/okk_pilot/__init__.py",
+      "copyrightText": "NOASSERTION",
+      "licenseConcluded": "Apache-2.0",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e"
+        }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "name": "tmp.5EbcxMgQ8f",
+      "versionInfo": "",
+      "filesAnalyzed": true,
+      "licenseConcluded": "Apache-2.0",
+      "downloadLocation": "NONE",
+      "copyrightText": "NOASSERTION",
+      "hasFiles": [
+        "SPDXRef-File-tmp.5EbcxMgQ8f-.github-workflows-dockerC95publish.yaml",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-.claude-skills-status-SKILL.md",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-.claude-skills-deploy-SKILL.md",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-.claude-skills-build-SKILL.md",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-.github-workflows-helm-release.yaml",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-.gitignore",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-Makefile",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-README.md",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-charts-okk-Chart.yaml",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-charts-okk-templates-C95helpers.tpl",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-charts-okk-templates-coordinator-deployment.yaml",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-LICENSE",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-charts-okk-templates-pilot-deployment.yaml",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-charts-okk-templates-pilot-secrets.yaml",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-charts-okk-values.yaml",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-charts-okk-templates-worker-deployment.yaml",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-.claude-skills-test-SKILL.md",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-Dockerfile",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-go.mod",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-go.sum",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-cmd-main.go",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-api-server.go",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-config-config.go",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-proto-okkC95grpc.pb.go",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-proto-okk.pb.go",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-task-generator-actionC95generator.go",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-task-generator-conditionalC95put.go",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-task-generator-basickv.go",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-charts-okk-templates-pilot-rbac.yaml",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-task-generator-generator.go",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-proto-okkC95vtproto.pb.go",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-task-generator-metadataC95ephemeral.go",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-task-generator-metadataC95notification.go",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-task-providerC95manager.go",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-task-generator-streamingC95sequence.go",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-task-manager.go",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-task-task.go",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-Dockerfile",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-proto-okk.proto",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-docs-design-okk-pilot.md",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-C95C95initC95C95.py",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-pipeline.yaml",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-events-C95C95initC95C95.py",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-pyproject.toml",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-config.py",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-events-cron.py",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-events-githubC95poller.py",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-task-generator-dataC95tree.go",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-events-webhook.py",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-main.py",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-tools-C95C95initC95C95.py",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-pipeline.py",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-events-k8s.py",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-pilot.py",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-tools-invariants.py",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-tools-observe.py",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-tools-report.py",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-worker-golang-go.mod",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-worker-golang-go.sum",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-tools-state.py",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-.gitattributes",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-.gitignore",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-Dockerfile",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-build.gradle",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-engine-build.gradle",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-engine-oxia-build.gradle",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-engine-src-main-java-io-github-oxia-okk-worker-engine-Engine.java",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-gradle-libs.versions.toml",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-tools-act.py",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-engine-oxia-src-main-java-io-github-oxia-worker-engine-oxia-OxiaEngine.java",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-gradle-wrapper-gradle-wrapper.properties",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-gradle.properties",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-gradle-wrapper-gradle-wrapper.jar",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-gradlew",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-worker-build.gradle",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-settings.gradle",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-gradlew.bat",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-worker-src-main-java-io-github-oxia-okk-worker-CmdWorker.java",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-worker-src-main-java-io-github-oxia-okk-worker-EngineFactory.java",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-worker-src-main-java-io-github-oxia-okk-worker-Options.java",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-worker-src-main-java-io-github-oxia-okk-worker-WorkerService.java",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-worker-src-main-resources-log4j2.xml",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-worker-src-main-java-io-github-oxia-okk-worker-Worker.java",
+        "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-engine-oxia-src-main-java-io-github-oxia-worker-engine-oxia-Options.java"
+      ],
+      "licenseInfoFromFiles": [
+        "Apache-2.0"
+      ],
+      "checksums": [],
+      "packageVerificationCode": {
+        "packageVerificationCodeValue": "d4898168ed1b3c469cbcd989cc59ae2a45fd2f80"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-.github-workflows-dockerC95publish.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-.claude-skills-status-SKILL.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-.claude-skills-deploy-SKILL.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-.claude-skills-build-SKILL.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-.github-workflows-helm-release.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-.gitignore"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-Makefile"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-README.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-charts-okk-Chart.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-charts-okk-templates-C95helpers.tpl"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-charts-okk-templates-coordinator-deployment.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-LICENSE"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-charts-okk-templates-pilot-deployment.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-charts-okk-templates-pilot-secrets.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-charts-okk-values.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-charts-okk-templates-worker-deployment.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-.claude-skills-test-SKILL.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-Dockerfile"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-go.mod"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-go.sum"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-cmd-main.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-api-server.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-config-config.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-proto-okkC95grpc.pb.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-proto-okk.pb.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-task-generator-actionC95generator.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-task-generator-conditionalC95put.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-task-generator-basickv.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-charts-okk-templates-pilot-rbac.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-task-generator-generator.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-proto-okkC95vtproto.pb.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-task-generator-metadataC95ephemeral.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-task-generator-metadataC95notification.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-task-providerC95manager.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-task-generator-streamingC95sequence.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-task-manager.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-task-task.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-Dockerfile"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-proto-okk.proto"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-docs-design-okk-pilot.md"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-C95C95initC95C95.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-pipeline.yaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-events-C95C95initC95C95.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-pyproject.toml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-config.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-events-cron.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-events-githubC95poller.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-coordinator-internal-task-generator-dataC95tree.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-events-webhook.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-main.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-tools-C95C95initC95C95.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-pipeline.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-events-k8s.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-pilot.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-tools-invariants.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-tools-observe.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-tools-report.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-golang-go.mod"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-golang-go.sum"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-tools-state.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-.gitattributes"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-.gitignore"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-Dockerfile"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-build.gradle"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-engine-build.gradle"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-engine-oxia-build.gradle"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-engine-src-main-java-io-github-oxia-okk-worker-engine-Engine.java"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-gradle-libs.versions.toml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-pilot-src-okkC95pilot-tools-act.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-engine-oxia-src-main-java-io-github-oxia-worker-engine-oxia-OxiaEngine.java"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-gradle-wrapper-gradle-wrapper.properties"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-gradle.properties"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-gradle-wrapper-gradle-wrapper.jar"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-gradlew"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-worker-build.gradle"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-settings.gradle"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-gradlew.bat"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-worker-src-main-java-io-github-oxia-okk-worker-CmdWorker.java"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-worker-src-main-java-io-github-oxia-okk-worker-EngineFactory.java"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-worker-src-main-java-io-github-oxia-okk-worker-Options.java"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-worker-src-main-java-io-github-oxia-okk-worker-WorkerService.java"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-worker-src-main-resources-log4j2.xml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-worker-src-main-java-io-github-oxia-okk-worker-Worker.java"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-tmp.5EbcxMgQ8f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tmp.5EbcxMgQ8f-worker-jvm-engine-oxia-src-main-java-io-github-oxia-worker-engine-oxia-Options.java"
+    }
+  ],
+  "annotations": [
+    {
+      "annotationDate": "2026-03-15T05:10:11Z",
+      "annotationType": "OTHER",
+      "annotator": "Tool: cncf-automation",
+      "comment": "Repository: oxia-db/okk\nVersion: v0.16.1"
+    }
+  ],
+  "hasExtractedLicensingInfo": []
+}

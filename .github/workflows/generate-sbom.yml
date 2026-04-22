@@ -45,7 +45,7 @@ on:
           - discovered    # Only discovered repos from CNCF orgs
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   # ===========================================
@@ -59,7 +59,7 @@ jobs:
       has_repos: ${{ steps.set-matrix.outputs.has_repos }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup yq
         run: |
@@ -115,7 +115,7 @@ jobs:
       has_repos8: ${{ steps.set-matrix.outputs.has_repos8 }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup yq
         run: |
@@ -146,10 +146,6 @@ jobs:
           else
             ALL_REPOS=$(yq -o=json '.repositories' "$DISCOVERED_FILE")
           fi
-
-          ALL_REPOS=$(echo "$ALL_REPOS" | jq 'map(. + {
-            parent_project: ((.discovered_by // "") | capture("from [^/]+/(?<repo>[^ ]+)")?.repo // .owner)
-          })')
           
           TOTAL=$(echo "$ALL_REPOS" | jq 'length')
           echo "Total discovered repos: $TOTAL"
@@ -183,42 +179,27 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
+        uses: actions/checkout@v5
 
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           go-version: '1.22'
           cache: false
-
-      - name: Install AWS CLI
-        run: |
-          python3 -m pip install --user awscli
-          echo "$HOME/.local/bin" >> $GITHUB_PATH
-
-      - name: Validate S3 configuration
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          S3_ENDPOINT: ${{ vars.S3_ENDPOINT }}
-          S3_REGION: ${{ vars.S3_REGION }}
-        run: |
-          set -e
-          for VAR in AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY S3_ENDPOINT; do
-            if [ -z "${!VAR}" ]; then
-              echo "Missing required S3 config: $VAR"
-              exit 1
-            fi
-          done
 
       - name: Install bom tool and go-licenses
         run: |
           go install sigs.k8s.io/bom/cmd/bom@latest
           go install github.com/google/go-licenses@latest
           echo "$(go env GOPATH)/bin" >> $GITHUB_PATH
+
+      - name: Install AWS CLI
+        run: |
+          if ! command -v aws &>/dev/null; then
+            curl -sSL "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o /tmp/awscliv2.zip
+            unzip -q /tmp/awscliv2.zip -d /tmp
+            sudo /tmp/aws/install
+          fi
 
       - name: Check if repository is a Go project
         id: check-go
@@ -249,12 +230,6 @@ jobs:
           FORCE_REGENERATE: ${{ github.event.inputs.force_regenerate }}
           RELEASES_MODE: ${{ github.event.inputs.releases_mode || 'recent' }}
           MAX_RELEASES: ${{ github.event.inputs.max_releases || '3' }}
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_SESSION_TOKEN: ${{ secrets.AWS_SESSION_TOKEN }}
-          S3_ENDPOINT: ${{ vars.S3_ENDPOINT }}
-          S3_REGION: ${{ vars.S3_REGION }}
-          PROJECT_BUCKET: ${{ vars.PROJECT_BUCKET }}
         run: |
           set -e
           
@@ -262,8 +237,8 @@ jobs:
           REPO="${{ matrix.repo }}"
           PROJECT_NAME="${{ matrix.name }}"
           SANITIZED_PROJECT=$(echo "$PROJECT_NAME" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr -cd '[:alnum:]-')
-          TARGET_BUCKET="${PROJECT_BUCKET:-cncf-project-sboms}"
-          TARGET_REGION="${S3_REGION:-us-east-1}"
+          SBOM_BASE_DIR="sbom/${SANITIZED_PROJECT}/${REPO}"
+          GENERATED_FILES=""
           PROCESSED=0
           
           ONE_WEEK_AGO=$(date -u -d '7 days ago' +%Y-%m-%dT%H:%M:%SZ 2>/dev/null || date -u -v-7d +%Y-%m-%dT%H:%M:%SZ)
@@ -306,44 +281,15 @@ jobs:
             cd - > /dev/null
             return 0
           }
-
-          object_exists() {
-            local OBJECT_KEY="$1"
-            aws s3api head-object \
-              --endpoint-url "$S3_ENDPOINT" \
-              --region "$TARGET_REGION" \
-              --bucket "$TARGET_BUCKET" \
-              --key "$OBJECT_KEY" >/dev/null 2>&1
-          }
-
-          upload_sbom() {
-            local LOCAL_FILE="$1"
-            local OBJECT_KEY="$2"
-
-            aws s3api put-object \
-              --endpoint-url "$S3_ENDPOINT" \
-              --region "$TARGET_REGION" \
-              --bucket "$TARGET_BUCKET" \
-              --key "$OBJECT_KEY" \
-              --body "$LOCAL_FILE" >/dev/null
-          }
           
           generate_sbom() {
             local TAG="$1"
-            local VERSION
-            VERSION=$(echo "$TAG" | sed 's/^v//' | tr '/[:space:]' '-' | tr -cd '[:alnum:]._-')
-            if [ -z "$VERSION" ]; then
-              VERSION="unknown"
-            fi
+            local VERSION=$(echo "$TAG" | sed 's/^v//')
+            local SBOM_DIR="${SBOM_BASE_DIR}/${VERSION}"
+            local SBOM_FILE="${SBOM_DIR}/${REPO}.json"
 
-            local FILENAME_VERSION
-            FILENAME_VERSION=$(echo "$VERSION" | tr '.' '_')
-
-            local SBOM_FILENAME="${SANITIZED_PROJECT}_${FILENAME_VERSION}_spdx.json"
-            local OBJECT_KEY="${SANITIZED_PROJECT}/${VERSION}/${SBOM_FILENAME}"
-
-            if [ "$FORCE_REGENERATE" != "true" ] && object_exists "$OBJECT_KEY"; then
-              echo "SBOM already exists in bucket ($OBJECT_KEY), skipping..."
+            if [ -f "$SBOM_FILE" ] && [ "$FORCE_REGENERATE" != "true" ]; then
+              echo "SBOM already exists: $SBOM_FILE, skipping..."
               return 1
             fi
             
@@ -356,8 +302,7 @@ jobs:
               return 1
             fi
             
-            local SBOM_FILE
-            SBOM_FILE=$(mktemp)
+            mkdir -p "$SBOM_DIR"
             
             local SBOM_NAME="${PROJECT_NAME} - ${REPO} ${TAG}"
             local SBOM_NAMESPACE="https://github.com/${OWNER}/${REPO}/releases/tag/${TAG}"
@@ -388,22 +333,12 @@ jobs:
                  ' "$SBOM_FILE" > "$TEMP_SBOM" && mv "$TEMP_SBOM" "$SBOM_FILE"
               
               rm -f "$LICENSES_FILE"
-
-              if upload_sbom "$SBOM_FILE" "$OBJECT_KEY"; then
-                echo "Uploaded SBOM to oci://${TARGET_BUCKET}/${OBJECT_KEY}"
-              else
-                echo "Failed to upload SBOM to oci://${TARGET_BUCKET}/${OBJECT_KEY}"
-                rm -f "$SBOM_FILE"
-                rm -rf "$TEMP_DIR"
-                return 1
-              fi
-
-              rm -f "$SBOM_FILE"
+              echo "Successfully generated SBOM: $SBOM_FILE"
+              GENERATED_FILES="$GENERATED_FILES $SBOM_FILE"
               rm -rf "$TEMP_DIR"
               return 0
             else
               echo "Failed to generate SBOM for $OWNER/$REPO@$TAG"
-              rm -f "$SBOM_FILE"
               rm -rf "$TEMP_DIR"
               return 1
             fi
@@ -466,9 +401,51 @@ jobs:
           
           echo "::endgroup::"
 
-      - name: SBOMs uploaded to OCI
+      - name: Upload SBOMs to S3
         if: steps.check-go.outputs.is_go_project == 'true'
-        run: echo "SBOM generation complete; artifacts were uploaded to Oracle Object Storage."
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.OCI_S3_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.OCI_S3_SECRET_KEY }}
+          AWS_SESSION_TOKEN: ""
+          AWS_REQUEST_CHECKSUM_CALCULATION: when_required
+          AWS_RESPONSE_CHECKSUM_VALIDATION: when_required
+          S3_ENDPOINT: ${{ vars.OCI_S3_ENDPOINT }}
+          S3_REGION: ${{ vars.OCI_S3_REGION }}
+          PROJECT_BUCKET: ${{ vars.OCI_PROJECT_BUCKET }}
+        run: |
+          OWNER="${{ matrix.owner }}"
+          REPO="${{ matrix.repo }}"
+          PROJECT_NAME="${{ matrix.name }}"
+          SANITIZED_PROJECT=$(echo "$PROJECT_NAME" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr -cd '[:alnum:]-')
+          SBOM_BASE_DIR="sbom/${SANITIZED_PROJECT}/${REPO}"
+
+          if [ ! -d "$SBOM_BASE_DIR" ]; then
+            echo "No SBOMs generated, nothing to upload"
+            exit 0
+          fi
+
+          UPLOADED=0
+          while IFS= read -r file; do
+            rel="${file#${SBOM_BASE_DIR}/}"
+            VERSION=$(dirname "$rel")
+            VERSION_SLUG=$(echo "$VERSION" | tr '.' '_')
+
+            S3_KEY="${SANITIZED_PROJECT}/${VERSION}/${SANITIZED_PROJECT}_${VERSION_SLUG}_spdx.json"
+
+            echo "Uploading: s3://${PROJECT_BUCKET}/${S3_KEY}"
+            if aws s3api put-object \
+              --endpoint-url "$S3_ENDPOINT" \
+              --region "$S3_REGION" \
+              --bucket "$PROJECT_BUCKET" \
+              --key "$S3_KEY" \
+              --body "$file" >/dev/null; then
+              UPLOADED=$((UPLOADED + 1))
+            else
+              echo "::warning::Upload failed for ${file}"
+            fi
+          done < <(find "$SBOM_BASE_DIR" -type f -name '*.json' | sort)
+
+          echo "Uploaded ${UPLOADED} SBOMs to s3://${PROJECT_BUCKET}/"
 
   # ===========================================
   # Generate SBOMs for subproject repos (Batch 1)
@@ -597,4 +574,5 @@ jobs:
       releases_mode: ${{ github.event.inputs.releases_mode || 'recent' }}
       max_releases: ${{ github.event.inputs.max_releases || '3' }}
     secrets: inherit
+
 

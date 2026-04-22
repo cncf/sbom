@@ -1,0 +1,3 @@
+# SBOM data files are stored in OCI S3 buckets, not in the repo
+sbom/*/
+

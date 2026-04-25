@@ -23,7 +23,7 @@ repositories:
   - owner: argoproj
     repo: argo-cd
     name: Argo
-    category: ci-cd
+    category: gitops
     project_status: graduated
     accepted_date: "2020-03-26"
   - owner: cert-manager
@@ -401,7 +401,7 @@ repositories:
   - owner: openkruise
     repo: kruise
     name: OpenKruise
-    category: ci-cd
+    category: gitops
     project_status: incubating
     accepted_date: "2020-11-10"
   - owner: open-telemetry
@@ -886,7 +886,7 @@ repositories:
   - owner: kube-burner
     repo: kube-burner
     name: Kube-burner
-    category: ci-cd
+    category: gitops
     project_status: sandbox
     accepted_date: "2023-12-18"
   - owner: kubeovn
@@ -1054,7 +1054,7 @@ repositories:
   - owner: openchoreo
     repo: openchoreo
     name: OpenChoreo
-    category: ci-cd
+    category: gitops
     project_status: sandbox
     accepted_date: "2026-01-06"
   - owner: openebs
@@ -1084,7 +1084,7 @@ repositories:
   - owner: open-gitops
     repo: project
     name: OpenGitOps
-    category: ci-cd
+    category: gitops
     project_status: sandbox
     accepted_date: "2021-01-26"
   - owner: opentofu
@@ -1306,7 +1306,7 @@ repositories:
   - owner: urunc-dev
     repo: urunc
     name: urunc
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2025-05-22"
   - owner: v6d-io

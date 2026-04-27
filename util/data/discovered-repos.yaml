@@ -18,7 +18,7 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain go.mod.
   auto_generated: true
-  last_updated: "2026-04-21T16:54:37Z"
+  last_updated: "2026-04-27T05:29:24Z"
 repositories:
   - owner: alibaba
     repo: IOC-golang
@@ -2385,6 +2385,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from koordinator-sh/koordinator
   - owner: koordinator-sh
+    repo: koord-queue
+    name: koord-queue
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from koordinator-sh/koordinator
+  - owner: koordinator-sh
     repo: yarn-copilot
     name: yarn-copilot
     category: orchestration
@@ -2555,6 +2561,12 @@ repositories:
   - owner: kubeflow
     repo: arena
     name: arena
+    category: orchestration
+    project_status: incubating
+    discovered_by: org-scan from kubeflow/kubeflow
+  - owner: kubeflow
+    repo: hub
+    name: hub
     category: orchestration
     project_status: incubating
     discovered_by: org-scan from kubeflow/kubeflow
@@ -4946,6 +4958,12 @@ repositories:
     category: observability
     project_status: incubating
     discovered_by: org-scan from open-telemetry/community
+  - owner: opencost
+    repo: bingen
+    name: bingen
+    category: ci-cd
+    project_status: incubating
+    discovered_by: org-scan from opencost/opencost
   - owner: openebs
     repo: dynamic-localpv-provisioner
     name: dynamic-localpv-provisioner

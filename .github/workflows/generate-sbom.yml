@@ -44,6 +44,9 @@ on:
           - cncf          # Only official CNCF projects
           - discovered    # Only discovered repos from CNCF orgs
 
+env:
+  MIKEBOM_VERSION: v0.1.0-alpha.9
+
 permissions:
   contents: read
 
@@ -181,17 +184,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v5
 
-      - name: Setup Go
-        uses: actions/setup-go@v6
-        with:
-          go-version: '1.24'
-          cache: false
-
-      - name: Install bom tool and go-licenses
+      - name: Install mikebom
         run: |
-          go install sigs.k8s.io/bom/cmd/bom@latest
-          go install github.com/google/go-licenses@latest
-          echo "$(go env GOPATH)/bin" >> $GITHUB_PATH
+          curl -sL "https://github.com/kusari-sandbox/mikebom/releases/download/${MIKEBOM_VERSION}/mikebom-${MIKEBOM_VERSION}-x86_64-unknown-linux-gnu.tar.gz" -o /tmp/mikebom.tar.gz
+          tar xzf /tmp/mikebom.tar.gz -C /tmp
+          sudo cp /tmp/mikebom-${MIKEBOM_VERSION}-x86_64-unknown-linux-gnu/mikebom /usr/local/bin/
+          chmod +x /usr/local/bin/mikebom
+          mikebom --version
 
       - name: Install AWS CLI
         run: |
@@ -201,30 +200,8 @@ jobs:
             sudo /tmp/aws/install
           fi
 
-      - name: Check if repository is a Go project
-        id: check-go
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          OWNER="${{ matrix.owner }}"
-          REPO="${{ matrix.repo }}"
-          
-          echo "Checking if $OWNER/$REPO is a Go project..."
-          
-          HAS_GO_MOD=$(gh api repos/${OWNER}/${REPO}/contents/go.mod --jq '.name' 2>/dev/null || echo "")
-          HAS_GO_SUM=$(gh api repos/${OWNER}/${REPO}/contents/go.sum --jq '.name' 2>/dev/null || echo "")
-          
-          if [ -n "$HAS_GO_MOD" ] || [ -n "$HAS_GO_SUM" ]; then
-            echo "Found Go project files"
-            echo "is_go_project=true" >> $GITHUB_OUTPUT
-          else
-            echo "No go.mod or go.sum found - skipping"
-            echo "is_go_project=false" >> $GITHUB_OUTPUT
-          fi
-
       - name: Get stable releases and generate SBOMs
         id: generate
-        if: steps.check-go.outputs.is_go_project == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           FORCE_REGENERATE: ${{ github.event.inputs.force_regenerate }}
@@ -238,7 +215,6 @@ jobs:
           PROJECT_NAME="${{ matrix.name }}"
           SANITIZED_PROJECT=$(echo "$PROJECT_NAME" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr -cd '[:alnum:]-')
           SBOM_BASE_DIR="sbom/${SANITIZED_PROJECT}/${REPO}"
-          GENERATED_FILES=""
           PROCESSED=0
           
           ONE_WEEK_AGO=$(date -u -d '7 days ago' +%Y-%m-%dT%H:%M:%SZ 2>/dev/null || date -u -v-7d +%Y-%m-%dT%H:%M:%SZ)
@@ -246,47 +222,12 @@ jobs:
           echo "::group::Processing $PROJECT_NAME ($OWNER/$REPO)"
           echo "Releases mode: $RELEASES_MODE"
           
-          extract_go_licenses() {
-            local DIR="$1"
-            local OUTPUT_FILE="$2"
-            
-            if [ ! -f "$DIR/go.mod" ]; then
-              echo "[]" > "$OUTPUT_FILE"
-              return 0
-            fi
-            
-            echo "  Extracting Go licenses..."
-            cd "$DIR"
-            go mod download 2>/dev/null || true
-            
-            local LICENSES_CSV
-            LICENSES_CSV=$(go-licenses csv ./... 2>/dev/null || echo "")
-            
-            if [ -z "$LICENSES_CSV" ]; then
-              echo "[]" > "$OUTPUT_FILE"
-              cd - > /dev/null
-              return 0
-            fi
-            
-            echo "$LICENSES_CSV" | awk -F',' '{
-              gsub(/"/, "\\\"", $1);
-              gsub(/"/, "\\\"", $2);
-              gsub(/"/, "\\\"", $3);
-              id = $1;
-              gsub(/[^a-zA-Z0-9]/, "-", id);
-              id = substr(id, 1, 50);
-              printf "{\"licenseId\": \"LicenseRef-%s\", \"extractedText\": \"License: %s\", \"name\": \"%s\", \"comment\": \"Package: %s, License URL: %s\"}\n", id, $3, $3, $1, $2
-            }' | jq -s '.' > "$OUTPUT_FILE" 2>/dev/null || echo "[]" > "$OUTPUT_FILE"
-            
-            cd - > /dev/null
-            return 0
-          }
-          
           generate_sbom() {
             local TAG="$1"
             local VERSION=$(echo "$TAG" | sed 's/^v//')
+            local VERSION_SLUG=$(echo "$VERSION" | tr '.' '_')
             local SBOM_DIR="${SBOM_BASE_DIR}/${VERSION}"
-            local SBOM_FILE="${SBOM_DIR}/${REPO}.json"
+            local SBOM_FILE="${SBOM_DIR}/${SANITIZED_PROJECT}_${VERSION_SLUG}_spdx.json"
 
             if [ -f "$SBOM_FILE" ] && [ "$FORCE_REGENERATE" != "true" ]; then
               echo "SBOM already exists: $SBOM_FILE, skipping..."
@@ -304,37 +245,12 @@ jobs:
             
             mkdir -p "$SBOM_DIR"
             
-            local SBOM_NAME="${PROJECT_NAME} - ${REPO} ${TAG}"
-            local SBOM_NAMESPACE="https://github.com/${OWNER}/${REPO}/releases/tag/${TAG}"
-            
-            if bom generate --format json --name "$SBOM_NAME" --namespace "$SBOM_NAMESPACE" --output "$SBOM_FILE" "$TEMP_DIR" 2>/dev/null; then
-              local LICENSES_FILE=$(mktemp)
-              extract_go_licenses "$TEMP_DIR" "$LICENSES_FILE"
-              
-              local TEMP_SBOM=$(mktemp)
-              jq --arg owner "$OWNER" \
-                 --arg repo "$REPO" \
-                 --arg tag "$TAG" \
-                 --arg project "$PROJECT_NAME" \
-                 --arg ghUrl "https://github.com/${OWNER}/${REPO}" \
-                 --arg releaseUrl "https://github.com/${OWNER}/${REPO}/releases/tag/${TAG}" \
-                 --arg generatedAt "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
-                 --slurpfile licenses "$LICENSES_FILE" \
-                 '
-                 .creationInfo.creators += ["Tool: cncf-automation-sbom-generator", "Tool: go-licenses"] |
-                 .creationInfo.comment = "SBOM generated for CNCF project: \($project) (\($owner)/\($repo)@\($tag))" |
-                 .annotations = ((.annotations // []) + [{
-                   "annotationDate": $generatedAt,
-                   "annotationType": "OTHER",
-                   "annotator": "Tool: cncf-automation",
-                   "comment": "CNCF Project: \($project)\nRepository: \($owner)/\($repo)\nVersion: \($tag)"
-                 }]) |
-                 .hasExtractedLicensingInfo = ((.hasExtractedLicensingInfo // []) + $licenses[0])
-                 ' "$SBOM_FILE" > "$TEMP_SBOM" && mv "$TEMP_SBOM" "$SBOM_FILE"
-              
-              rm -f "$LICENSES_FILE"
+            # Generate SBOM with mikebom (SPDX 2.3 + deps.dev enrichment)
+            if mikebom sbom scan \
+              --path "$TEMP_DIR" \
+              --format spdx-2.3-json \
+              --output "$SBOM_FILE" 2>&1 | tail -5; then
               echo "Successfully generated SBOM: $SBOM_FILE"
-              GENERATED_FILES="$GENERATED_FILES $SBOM_FILE"
               rm -rf "$TEMP_DIR"
               return 0
             else
@@ -402,7 +318,6 @@ jobs:
           echo "::endgroup::"
 
       - name: Upload SBOMs to S3
-        if: steps.check-go.outputs.is_go_project == 'true'
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.OCI_S3_ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.OCI_S3_SECRET_KEY }}
@@ -574,5 +489,4 @@ jobs:
       releases_mode: ${{ github.event.inputs.releases_mode || 'recent' }}
       max_releases: ${{ github.event.inputs.max_releases || '3' }}
     secrets: inherit
-
 

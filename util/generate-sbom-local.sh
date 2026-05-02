@@ -4,11 +4,11 @@
 # This script mimics the GitHub Actions workflow for local testing
 #
 # Prerequisites:
-#   - Go 1.22+
 #   - git
 #   - gh CLI (GitHub CLI) - for API access
 #   - jq
 #   - yq (https://github.com/mikefarah/yq)
+#   - mikebom (https://github.com/kusari-sandbox/mikebom)
 #
 # Usage:
 #   ./generate-sbom-local.sh                           # Process all projects
@@ -18,14 +18,16 @@
 # Environment variables:
 #   GH_TOKEN or GITHUB_TOKEN - GitHub token for API access
 #   MAX_RELEASES - Maximum releases to process per repo (default: 3)
+#   MIKEBOM_VERSION - mikebom release version (default: v0.1.0-alpha.9)
 #
 
 set -e
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-ROOT_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
+ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 DATA_FILE="$ROOT_DIR/util/data/repositories.yaml"
 SBOM_BASE_DIR="$ROOT_DIR/sbom"
+MIKEBOM_VERSION="${MIKEBOM_VERSION:-v0.1.0-alpha.9}"
 
 # Parse arguments
 FORCE_REGENERATE="false"
@@ -70,10 +72,6 @@ MAX_RELEASES="${MAX_RELEASES:-3}"
 check_prerequisites() {
   local missing=()
 
-  if ! command -v go &> /dev/null; then
-    missing+=("go")
-  fi
-
   if ! command -v git &> /dev/null; then
     missing+=("git")
   fi
@@ -94,7 +92,6 @@ check_prerequisites() {
     echo "Error: Missing required tools: ${missing[*]}"
     echo ""
     echo "Installation:"
-    echo "  go:  https://golang.org/dl/"
     echo "  gh:  https://cli.github.com/"
     echo "  jq:  https://stedolan.github.io/jq/"
     echo "  yq:  https://github.com/mikefarah/yq"
@@ -102,20 +99,67 @@ check_prerequisites() {
   fi
 }
 
-# Install bom tool if not present
-install_bom() {
-  if ! command -v bom &> /dev/null; then
-    echo "Installing bom tool..."
-    go install sigs.k8s.io/bom/cmd/bom@latest
-    export PATH="$PATH:$(go env GOPATH)/bin"
+# Install mikebom if not present
+install_mikebom() {
+  if command -v mikebom &> /dev/null; then
+    echo "Using mikebom: $(which mikebom)"
+    return
   fi
 
-  if ! command -v bom &> /dev/null; then
-    echo "Error: Failed to install bom tool"
+  # Check in local bin directory
+  local LOCAL_BIN="$ROOT_DIR/.local/bin"
+  if [ -x "$LOCAL_BIN/mikebom" ]; then
+    export PATH="$LOCAL_BIN:$PATH"
+    echo "Using mikebom: $LOCAL_BIN/mikebom"
+    return
+  fi
+
+  echo "Installing mikebom ${MIKEBOM_VERSION}..."
+  mkdir -p "$LOCAL_BIN"
+
+  local ARCH
+  ARCH=$(uname -m)
+  local OS
+  OS=$(uname -s | tr '[:upper:]' '[:lower:]')
+
+  local PLATFORM=""
+  case "${ARCH}-${OS}" in
+    x86_64-linux)
+      PLATFORM="x86_64-unknown-linux-gnu"
+      ;;
+    aarch64-linux)
+      PLATFORM="aarch64-unknown-linux-gnu"
+      ;;
+    arm64-darwin|aarch64-darwin)
+      PLATFORM="aarch64-apple-darwin"
+      ;;
+    *)
+      echo "Error: Unsupported platform: ${ARCH}-${OS}"
+      echo "Download mikebom manually from https://github.com/kusari-sandbox/mikebom/releases"
+      exit 1
+      ;;
+  esac
+
+  local DOWNLOAD_URL="https://github.com/kusari-sandbox/mikebom/releases/download/${MIKEBOM_VERSION}/mikebom-${MIKEBOM_VERSION}-${PLATFORM}.tar.gz"
+  local TMP_TAR
+  TMP_TAR=$(mktemp)
+
+  echo "Downloading from: $DOWNLOAD_URL"
+  if ! curl -sL "$DOWNLOAD_URL" -o "$TMP_TAR"; then
+    echo "Error: Failed to download mikebom"
+    rm -f "$TMP_TAR"
     exit 1
   fi
 
-  echo "Using bom: $(which bom)"
+  local TMP_EXTRACT
+  TMP_EXTRACT=$(mktemp -d)
+  tar xzf "$TMP_TAR" -C "$TMP_EXTRACT"
+  cp "$TMP_EXTRACT"/*/mikebom "$LOCAL_BIN/mikebom"
+  chmod +x "$LOCAL_BIN/mikebom"
+  rm -rf "$TMP_TAR" "$TMP_EXTRACT"
+
+  export PATH="$LOCAL_BIN:$PATH"
+  echo "Installed mikebom to: $LOCAL_BIN/mikebom"
 }
 
 # Generate SBOM for a specific tag
@@ -128,7 +172,8 @@ generate_sbom() {
   local SANITIZED_PROJECT=$(echo "$PROJECT_NAME" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr -cd '[:alnum:]-')
   local VERSION=$(echo "$TAG" | sed 's/^v//')
   local SBOM_DIR="${SBOM_BASE_DIR}/${SANITIZED_PROJECT}/${REPO}/${VERSION}"
-  local SBOM_FILE="${SBOM_DIR}/${REPO}.json"
+  local FILENAME_VERSION=$(echo "$VERSION" | tr '.' '_')
+  local SBOM_FILE="${SBOM_DIR}/${SANITIZED_PROJECT}_${FILENAME_VERSION}_spdx.json"
 
   # Check if SBOM already exists
   if [ -f "$SBOM_FILE" ] && [ "$FORCE_REGENERATE" != "true" ]; then
@@ -151,8 +196,12 @@ generate_sbom() {
   # Create output directory
   mkdir -p "$SBOM_DIR"
 
-  # Generate SBOM with bom tool
-  if bom generate --format json --output "$SBOM_FILE" "$TEMP_DIR" 2>/dev/null; then
+  # Generate SBOM with mikebom (SPDX 2.3 + deps.dev enrichment)
+  if mikebom sbom scan \
+    --path "$TEMP_DIR" \
+    --format spdx-2.3-json \
+    --output "$SBOM_FILE" \
+    2>/dev/null; then
     echo "  Successfully generated SBOM: $SBOM_FILE"
     rm -rf "$TEMP_DIR"
     return 0
@@ -271,18 +320,19 @@ generate_index() {
 
 # Main execution
 main() {
-  echo "SBOM Generator for CNCF Projects"
-  echo "================================="
+  echo "SBOM Generator for CNCF Projects (powered by mikebom)"
+  echo "======================================================"
   echo ""
   echo "Settings:"
   echo "  Force regenerate: $FORCE_REGENERATE"
   echo "  Project filter: ${PROJECT_FILTER:-all}"
   echo "  Max releases per repo: $MAX_RELEASES"
   echo "  Output directory: $SBOM_BASE_DIR"
+  echo "  mikebom version: $MIKEBOM_VERSION"
   echo ""
 
   check_prerequisites
-  install_bom
+  install_mikebom
 
   # Ensure data file exists
   if [ ! -f "$DATA_FILE" ]; then

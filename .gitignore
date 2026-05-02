@@ -1,3 +1,14 @@
 # SBOM data files are stored in OCI S3 buckets, not in the repo
 sbom/*/
 
+# Local mikebom binary (auto-downloaded by generate-sbom-local.sh)
+.local/
+
+# IDE
+.idea/
+
+# Environment files with credentials
+.env
+.env.sbom
+
+MIKEBOM_FINDINGS.md

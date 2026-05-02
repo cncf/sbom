@@ -4,6 +4,7 @@
 
 .DESCRIPTION
     This script mimics the GitHub Actions workflow for local testing on Windows.
+    Uses mikebom (https://github.com/kusari-sandbox/mikebom) for SBOM generation.
 
 .PARAMETER ProjectFilter
     Filter by owner/repo (e.g., "kubernetes/kubernetes"). Leave empty for all.
@@ -28,13 +29,14 @@
 
 .NOTES
     Prerequisites:
-    - Go 1.22+
     - git
     - gh CLI (GitHub CLI) - for API access
     - yq (https://github.com/mikefarah/yq) - install via: choco install yq
+    - mikebom (auto-downloaded if not present)
 
     Environment variables:
     - GH_TOKEN or GITHUB_TOKEN - GitHub token for API access
+    - MIKEBOM_VERSION - mikebom release version (default: v0.1.0-alpha.9)
 #>
 
 param(
@@ -52,6 +54,7 @@ $ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $RootDir = Split-Path -Parent (Split-Path -Parent $ScriptDir)
 $DataFile = Join-Path $RootDir "util\data\repositories.yaml"
 $SbomBaseDir = Join-Path $RootDir "sbom"
+$MikebomVersion = if ($env:MIKEBOM_VERSION) { $env:MIKEBOM_VERSION } else { "v0.1.0-alpha.9" }
 
 function Write-Header($text) {
     Write-Host ""
@@ -62,10 +65,6 @@ function Write-Header($text) {
 
 function Test-Prerequisites {
     $missing = @()
-
-    if (-not (Get-Command "go" -ErrorAction SilentlyContinue)) {
-        $missing += "go"
-    }
 
     if (-not (Get-Command "git" -ErrorAction SilentlyContinue)) {
         $missing += "git"
@@ -83,33 +82,32 @@ function Test-Prerequisites {
         Write-Host "Error: Missing required tools: $($missing -join ', ')" -ForegroundColor Red
         Write-Host ""
         Write-Host "Installation:"
-        Write-Host "  go:  https://golang.org/dl/"
         Write-Host "  gh:  https://cli.github.com/ or: winget install GitHub.cli"
         Write-Host "  yq:  choco install yq or: winget install MikeFarah.yq"
         exit 1
     }
 }
 
-function Install-Bom {
-    $bomPath = & go env GOPATH
-    $bomExe = Join-Path $bomPath "bin\bom.exe"
-
-    if (-not (Test-Path $bomExe)) {
-        Write-Host "Installing bom tool..."
-        & go install sigs.k8s.io/bom/cmd/bom@latest
-        if ($LASTEXITCODE -ne 0) {
-            Write-Host "Error: Failed to install bom tool" -ForegroundColor Red
-            exit 1
-        }
+function Install-Mikebom {
+    if (Get-Command "mikebom" -ErrorAction SilentlyContinue) {
+        Write-Host "Using mikebom: $(Get-Command mikebom | Select-Object -ExpandProperty Source)"
+        return
     }
 
-    # Add to PATH if not already there
-    $goBin = Join-Path $bomPath "bin"
-    if ($env:PATH -notlike "*$goBin*") {
-        $env:PATH = "$goBin;$env:PATH"
+    $localBin = Join-Path $RootDir ".local\bin"
+    $mikebomExe = Join-Path $localBin "mikebom.exe"
+
+    if (Test-Path $mikebomExe) {
+        $env:PATH = "$localBin;$env:PATH"
+        Write-Host "Using mikebom: $mikebomExe"
+        return
     }
 
-    Write-Host "Using bom: $bomExe"
+    Write-Host "mikebom not found. Please download it manually from:"
+    Write-Host "  https://github.com/kusari-sandbox/mikebom/releases/tag/$MikebomVersion"
+    Write-Host ""
+    Write-Host "Place the mikebom binary in your PATH or in: $localBin"
+    exit 1
 }
 
 function Get-SanitizedProjectName($name) {
@@ -120,7 +118,8 @@ function New-Sbom($Owner, $Repo, $ProjectName, $Tag) {
     $sanitizedProject = Get-SanitizedProjectName $ProjectName
     $version = $Tag -replace '^v', ''
     $sbomDir = Join-Path $SbomBaseDir "$sanitizedProject\$Repo\$version"
-    $sbomFile = Join-Path $sbomDir "$Repo.json"
+    $filenameVersion = $version -replace '\.', '_'
+    $sbomFile = Join-Path $sbomDir "${sanitizedProject}_${filenameVersion}_spdx.json"
 
     # Check if SBOM already exists
     if ((Test-Path $sbomFile) -and -not $Force) {
@@ -145,14 +144,14 @@ function New-Sbom($Owner, $Repo, $ProjectName, $Tag) {
             New-Item -ItemType Directory -Path $sbomDir -Force | Out-Null
         }
 
-        # Generate SBOM with bom tool
-        $bomOutput = & bom generate --format json --output $sbomFile $tempDir 2>&1
+        # Generate SBOM with mikebom (SPDX 2.3 + deps.dev enrichment)
+        $mikebomOutput = & mikebom sbom scan --path $tempDir --format spdx-2.3-json --output $sbomFile 2>&1
         if ($LASTEXITCODE -eq 0) {
             Write-Host "  Successfully generated SBOM: $sbomFile" -ForegroundColor Green
             return $true
         } else {
             Write-Host "  Failed to generate SBOM for $Owner/$Repo@$Tag" -ForegroundColor Red
-            Write-Host "  Error: $bomOutput" -ForegroundColor Red
+            Write-Host "  Error: $mikebomOutput" -ForegroundColor Red
             return $false
         }
     }
@@ -294,18 +293,19 @@ function New-SbomIndex {
 
 # Main execution
 function Main {
-    Write-Host "SBOM Generator for CNCF Projects" -ForegroundColor Cyan
-    Write-Host "=================================" -ForegroundColor Cyan
+    Write-Host "SBOM Generator for CNCF Projects (powered by mikebom)" -ForegroundColor Cyan
+    Write-Host "======================================================" -ForegroundColor Cyan
     Write-Host ""
     Write-Host "Settings:"
     Write-Host "  Force regenerate: $Force"
     Write-Host "  Project filter: $(if ($ProjectFilter) { $ProjectFilter } else { 'all' })"
     Write-Host "  Max releases per repo: $MaxReleases"
     Write-Host "  Output directory: $SbomBaseDir"
+    Write-Host "  mikebom version: $MikebomVersion"
     Write-Host ""
 
     Test-Prerequisites
-    Install-Bom
+    Install-Mikebom
 
     # Ensure data file exists
     if (-not (Test-Path $DataFile)) {

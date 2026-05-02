@@ -18,7 +18,7 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain go.mod.
   auto_generated: true
-  last_updated: "2026-04-27T05:29:24Z"
+  last_updated: "2026-04-27T07:24:28Z"
 repositories:
   - owner: alibaba
     repo: IOC-golang

@@ -45,7 +45,7 @@ on:
           - discovered    # Only discovered repos from CNCF orgs
 
 env:
-  MIKEBOM_VERSION: v0.1.0-alpha.9
+  MIKEBOM_VERSION: v0.1.0-alpha.16
 
 permissions:
   contents: read

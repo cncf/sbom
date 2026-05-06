@@ -36,7 +36,7 @@
 
     Environment variables:
     - GH_TOKEN or GITHUB_TOKEN - GitHub token for API access
-    - MIKEBOM_VERSION - mikebom release version (default: v0.1.0-alpha.9)
+    - MIKEBOM_VERSION - mikebom release version (default: v0.1.0-alpha.16)
 #>
 
 param(
@@ -54,7 +54,7 @@ $ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $RootDir = Split-Path -Parent (Split-Path -Parent $ScriptDir)
 $DataFile = Join-Path $RootDir "util\data\repositories.yaml"
 $SbomBaseDir = Join-Path $RootDir "sbom"
-$MikebomVersion = if ($env:MIKEBOM_VERSION) { $env:MIKEBOM_VERSION } else { "v0.1.0-alpha.9" }
+$MikebomVersion = if ($env:MIKEBOM_VERSION) { $env:MIKEBOM_VERSION } else { "v0.1.0-alpha.16" }
 
 function Write-Header($text) {
     Write-Host ""

@@ -27,7 +27,7 @@ on:
         default: '3'
 
 env:
-  MIKEBOM_VERSION: v0.1.0-alpha.9
+  MIKEBOM_VERSION: v0.1.0-alpha.16
 
 jobs:
   generate:

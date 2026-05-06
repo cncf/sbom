@@ -23,7 +23,7 @@ repositories:
   - owner: argoproj
     repo: argo-cd
     name: Argo
-    category: gitops
+    category: ci-cd
     project_status: graduated
     accepted_date: "2020-03-26"
   - owner: cert-manager
@@ -347,7 +347,7 @@ repositories:
   - owner: lima-vm
     repo: lima
     name: Lima
-    category: ml-platform
+    category: container-runtime
     project_status: incubating
     accepted_date: "2022-09-14"
   - owner: litmuschaos
@@ -368,6 +368,12 @@ repositories:
     category: automation
     project_status: incubating
     accepted_date: "2020-09-08"
+  - owner: microcks
+    repo: microcks
+    name: Microcks
+    category: build
+    project_status: incubating
+    accepted_date: "2023-06-22"
   - owner: nats-io
     repo: nats-server
     name: NATS
@@ -401,7 +407,7 @@ repositories:
   - owner: openkruise
     repo: kruise
     name: OpenKruise
-    category: gitops
+    category: ci-cd
     project_status: incubating
     accepted_date: "2020-11-10"
   - owner: open-telemetry
@@ -652,7 +658,7 @@ repositories:
   - owner: distribution
     repo: distribution
     name: Distribution
-    category: registry
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2021-01-26"
   - owner: drasi-project
@@ -886,7 +892,7 @@ repositories:
   - owner: kube-burner
     repo: kube-burner
     name: Kube-burner
-    category: gitops
+    category: ci-cd
     project_status: sandbox
     accepted_date: "2023-12-18"
   - owner: kubeovn
@@ -1009,12 +1015,6 @@ repositories:
     category: other
     project_status: sandbox
     accepted_date: "2021-09-14"
-  - owner: microcks
-    repo: microcks
-    name: Microcks
-    category: build
-    project_status: sandbox
-    accepted_date: "2023-06-22"
   - owner: modelpack
     repo: model-spec
     name: ModelPack
@@ -1336,7 +1336,7 @@ repositories:
   - owner: werf
     repo: werf
     name: werf
-    category: gitops
+    category: ci-cd
     project_status: sandbox
     accepted_date: "2022-12-13"
   - owner: xregistry
@@ -1348,12 +1348,12 @@ repositories:
   - owner: youki-dev
     repo: youki
     name: youki
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2024-10-17"
   - owner: project-zot
     repo: zot
     name: zot
-    category: registry
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2022-12-13"

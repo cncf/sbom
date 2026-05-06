@@ -18,7 +18,7 @@
 # Environment variables:
 #   GH_TOKEN or GITHUB_TOKEN - GitHub token for API access
 #   MAX_RELEASES - Maximum releases to process per repo (default: 3)
-#   MIKEBOM_VERSION - mikebom release version (default: v0.1.0-alpha.9)
+#   MIKEBOM_VERSION - mikebom release version (default: v0.1.0-alpha.16)
 #
 
 set -e
@@ -27,7 +27,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 DATA_FILE="$ROOT_DIR/util/data/repositories.yaml"
 SBOM_BASE_DIR="$ROOT_DIR/sbom"
-MIKEBOM_VERSION="${MIKEBOM_VERSION:-v0.1.0-alpha.9}"
+MIKEBOM_VERSION="${MIKEBOM_VERSION:-v0.1.0-alpha.16}"
 
 # Parse arguments
 FORCE_REGENERATE="false"

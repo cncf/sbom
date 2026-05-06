@@ -18,7 +18,7 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain go.mod.
   auto_generated: true
-  last_updated: "2026-04-27T07:24:28Z"
+  last_updated: "2026-05-04T05:36:46Z"
 repositories:
   - owner: alibaba
     repo: IOC-golang
@@ -1116,6 +1116,12 @@ repositories:
     repo: boot-to-talos
     name: boot-to-talos
     category: ml-platform
+    project_status: sandbox
+    discovered_by: org-scan from cozystack/cozystack
+  - owner: cozystack
+    repo: copy-fail-blocker
+    name: copy-fail-blocker
+    category: orchestration
     project_status: sandbox
     discovered_by: org-scan from cozystack/cozystack
   - owner: cozystack
@@ -3927,6 +3933,12 @@ repositories:
     project_status: incubating
     discovered_by: org-scan from kubevirt/kubevirt
   - owner: kubewarden
+    repo: adm-controller
+    name: adm-controller
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from kubewarden/kubewarden-controller
+  - owner: kubewarden
     repo: policy-sdk-go
     name: policy-sdk-go
     category: security
@@ -5765,6 +5777,12 @@ repositories:
   - owner: spiffe
     repo: spiffe-helper
     name: spiffe-helper
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from spiffe/spire
+  - owner: spiffe
+    repo: spiffe-step-ssh
+    name: spiffe-step-ssh
     category: security
     project_status: graduated
     discovered_by: org-scan from spiffe/spire

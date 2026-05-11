@@ -18,7 +18,7 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain go.mod.
   auto_generated: true
-  last_updated: "2026-05-04T05:36:46Z"
+  last_updated: "2026-05-11T05:41:06Z"
 repositories:
   - owner: alibaba
     repo: IOC-golang
@@ -665,6 +665,12 @@ repositories:
   - owner: cilium
     repo: pwru
     name: pwru
+    category: networking
+    project_status: graduated
+    discovered_by: org-scan from cilium/cilium
+  - owner: cilium
+    repo: stackwhere
+    name: stackwhere
     category: networking
     project_status: graduated
     discovered_by: org-scan from cilium/cilium
@@ -2583,6 +2589,12 @@ repositories:
     project_status: incubating
     discovered_by: org-scan from kubeflow/kubeflow
   - owner: kubeflow
+    repo: mlflow-integration
+    name: mlflow-integration
+    category: orchestration
+    project_status: incubating
+    discovered_by: org-scan from kubeflow/kubeflow
+  - owner: kubeflow
     repo: model-registry
     name: model-registry
     category: orchestration
@@ -3059,6 +3071,12 @@ repositories:
   - owner: kubernetes-sigs
     repo: dra-driver-cpu
     name: dra-driver-cpu
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kubernetes-sigs/headlamp
+  - owner: kubernetes-sigs
+    repo: dra-driver-google-tpu
+    name: dra-driver-google-tpu
     category: observability
     project_status: sandbox
     discovered_by: org-scan from kubernetes-sigs/headlamp
@@ -4046,6 +4064,12 @@ repositories:
     category: automation
     project_status: sandbox
     discovered_by: org-scan from KusionStack/kusion
+  - owner: kyverno
+    repo: api
+    name: api
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from kyverno/kyverno
   - owner: kyverno
     repo: chainsaw
     name: chainsaw
@@ -5741,6 +5765,12 @@ repositories:
   - owner: spidernet-io
     repo: spiderdoctor
     name: spiderdoctor
+    category: networking
+    project_status: sandbox
+    discovered_by: org-scan from spidernet-io/spiderpool
+  - owner: spidernet-io
+    repo: vlan-cni
+    name: vlan-cni
     category: networking
     project_status: sandbox
     discovered_by: org-scan from spidernet-io/spiderpool

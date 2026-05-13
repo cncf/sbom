@@ -7,6 +7,11 @@ concurrency:
   group: migrate-sboms
   cancel-in-progress: false
 
+# OCI S3 push uses OCI_S3_ACCESS_KEY + OCI_S3_SECRET_KEY; default
+# GITHUB_TOKEN only needs read for the checkout.
+permissions:
+  contents: read
+
 jobs:
   migrate:
     runs-on: ubuntu-latest

@@ -36,7 +36,7 @@
 
     Environment variables:
     - GH_TOKEN or GITHUB_TOKEN - GitHub token for API access
-    - MIKEBOM_VERSION - mikebom release version (default: v0.1.0-alpha.16)
+    - MIKEBOM_VERSION - mikebom release version (default: v0.1.0-alpha.31)
 #>
 
 param(
@@ -54,7 +54,7 @@ $ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $RootDir = Split-Path -Parent (Split-Path -Parent $ScriptDir)
 $DataFile = Join-Path $RootDir "util\data\repositories.yaml"
 $SbomBaseDir = Join-Path $RootDir "sbom"
-$MikebomVersion = if ($env:MIKEBOM_VERSION) { $env:MIKEBOM_VERSION } else { "v0.1.0-alpha.16" }
+$MikebomVersion = if ($env:MIKEBOM_VERSION) { $env:MIKEBOM_VERSION } else { "v0.1.0-alpha.31" }
 
 function Write-Header($text) {
     Write-Host ""
@@ -145,7 +145,7 @@ function New-Sbom($Owner, $Repo, $ProjectName, $Tag) {
         }
 
         # Generate SBOM with mikebom (SPDX 2.3 + deps.dev enrichment)
-        $mikebomOutput = & mikebom sbom scan --path $tempDir --format spdx-2.3-json --output $sbomFile 2>&1
+        $mikebomOutput = & mikebom sbom scan --path $tempDir --format spdx-2.3-json --root-name "$Owner/$Repo" --root-version $Tag --repo "https://github.com/$Owner/$Repo.git" --git-ref $Tag --output $sbomFile 2>&1
         if ($LASTEXITCODE -eq 0) {
             Write-Host "  Successfully generated SBOM: $sbomFile" -ForegroundColor Green
             return $true

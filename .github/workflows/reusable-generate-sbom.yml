@@ -27,14 +27,14 @@ on:
         default: '3'
 
 env:
-  MIKEBOM_VERSION: v0.1.0-alpha.16
+  MIKEBOM_VERSION: v0.1.0-alpha.31
 
 jobs:
   generate:
-    runs-on: oracle-vm-2cpu-8gb-x86-64
+    runs-on: oracle-2cpu-8gb-x86-64
     strategy:
       fail-fast: false
-      max-parallel: 5
+      max-parallel: 15
       matrix: ${{ fromJson(inputs.matrix) }}
 
     steps:
@@ -110,6 +110,10 @@ jobs:
             if mikebom sbom scan \
               --path "$TEMP_DIR" \
               --format spdx-2.3-json \
+              --root-name "${OWNER}/${REPO}" \
+              --root-version "$TAG" \
+              --repo "https://github.com/${OWNER}/${REPO}.git" \
+              --git-ref "$TAG" \
               --output "$SBOM_FILE" 2>&1 | tail -5; then
               echo "Successfully generated SBOM: $SBOM_FILE"
               rm -rf "$TEMP_DIR"

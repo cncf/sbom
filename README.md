@@ -28,7 +28,7 @@ The SBOM generator:
 - Fetches stable releases (major, minor, patch) from CNCF project repositories
 - Supports **all ecosystems** with lockfile-aware dependency graph extraction (Go, Rust, npm, Python, Maven, Ruby, etc.)
 - Skips alpha, beta, RC, and other pre-release versions
-- Generates SPDX 2.3-compliant SBOM files using [mikebom](https://github.com/kusari-sandbox/mikebom) (v0.1.0-alpha.16)
+- Generates SPDX 2.3-compliant SBOM files using [mikebom](https://github.com/kusari-sandbox/mikebom) (v0.1.0-alpha.31)
 - Automatically enriches SBOMs with license information via [deps.dev](https://deps.dev) and [ClearlyDefined](https://clearlydefined.io)
 - Extracts real dependency graph edges (not a flat fan-out) from lockfiles
 - **Uploads SBOMs directly to OCI S3-compatible buckets** (no SBOM files are stored in this repository)
@@ -261,7 +261,7 @@ MAX_RELEASES=5 ./util/generate-sbom-local.sh
 |----------|-------------|
 | `GH_TOKEN` or `GITHUB_TOKEN` | GitHub token for API access (recommended for higher rate limits) |
 | `MAX_RELEASES` | Maximum releases to process per repo (default: 3, bash only) |
-| `MIKEBOM_VERSION` | mikebom release version to use (default: v0.1.0-alpha.16) |
+| `MIKEBOM_VERSION` | mikebom release version to use (default: v0.1.0-alpha.31) |
 
 ## Project List
 
@@ -303,7 +303,7 @@ Generated SBOMs are in SPDX 2.3 JSON format, containing:
 
 Each SBOM includes:
 - SPDX 2.3 document information
-- Creator: `Tool: mikebom-0.1.0-alpha.16`
+- Creator: `Tool: mikebom-0.1.0-alpha.31`
 - Scope annotation (manifest vs artifact SBOM)
 - Per-component `mikebom:sbom-tier` annotations (source, deployed, analyzed, etc.)
 
@@ -324,8 +324,8 @@ mikebom is a precompiled binary — no build step required:
 ./util/generate-sbom-local.sh
 
 # Or install manually
-curl -sL https://github.com/kusari-sandbox/mikebom/releases/download/v0.1.0-alpha.16/mikebom-v0.1.0-alpha.16-x86_64-unknown-linux-gnu.tar.gz | tar xz
-sudo cp mikebom-v0.1.0-alpha.16-x86_64-unknown-linux-gnu/mikebom /usr/local/bin/
+curl -sL https://github.com/kusari-sandbox/mikebom/releases/download/v0.1.0-alpha.31/mikebom-v0.1.0-alpha.31-x86_64-unknown-linux-gnu.tar.gz | tar xz
+sudo cp mikebom-v0.1.0-alpha.31-x86_64-unknown-linux-gnu/mikebom /usr/local/bin/
 ```
 
 ### Clone Failures

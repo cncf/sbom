@@ -8,7 +8,9 @@
 # These repositories:
 # - Belong to the same GitHub org/user as a CNCF project
 # - Have at least one release
-# - Contain a go.mod file (Go-based project)
+# - Contain a supported package manifest (Go, Cargo, npm, pip, Maven, gem, etc.)
+#
+# Supported ecosystems: deb, apk, rpm, cargo, gem, golang, maven, npm, pip
 #
 # Generator: util/discover-repos
 # Workflow: .github/workflows/discover-cncf-repos.yml
@@ -16,10 +18,100 @@
 # ============================================================================
 
 metadata:
-  description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain go.mod.
+  description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain supported package manifests (Go, Cargo, npm, pip, Maven, gem, Dockerfile, etc.).
   auto_generated: true
-  last_updated: "2026-05-11T05:41:06Z"
+  last_updated: "2026-05-13T12:57:23Z"
 repositories:
+  - owner: aeraki-mesh
+    repo: meta-protocol-proxy
+    name: meta-protocol-proxy
+    category: service-mesh
+    project_status: sandbox
+    discovered_by: org-scan from aeraki-mesh/aeraki
+  - owner: alibaba
+    repo: Alink
+    name: Alink
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: Appactive
+    name: Appactive
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: BizCharts
+    name: BizCharts
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: COLA
+    name: COLA
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: ChatLearn
+    name: ChatLearn
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: ChatUI
+    name: ChatUI
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: DataX
+    name: DataX
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: EasyCV
+    name: EasyCV
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: EasyNLP
+    name: EasyNLP
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: EasyRec
+    name: EasyRec
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: EasyTransfer
+    name: EasyTransfer
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: FederatedScope
+    name: FederatedScope
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: GaiaSketch
+    name: GaiaSketch
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: GraphScope
+    name: GraphScope
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
   - owner: alibaba
     repo: IOC-golang
     name: IOC-golang
@@ -33,8 +125,302 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from alibaba/higress
   - owner: alibaba
+    repo: NimoShake
+    name: NimoShake
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: PyFlightProfiler
+    name: PyFlightProfiler
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: QLExpress
+    name: QLExpress
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: ROCK
+    name: ROCK
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: ROLL
+    name: ROLL
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: RecIS
+    name: RecIS
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: Sentinel
+    name: Sentinel
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: SmartEngine
+    name: SmartEngine
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: SparkCube
+    name: SparkCube
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: Thera
+    name: Thera
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: TinyNeuralNetwork
+    name: TinyNeuralNetwork
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: TorchEasyRec
+    name: TorchEasyRec
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: agui-chain
+    name: agui-chain
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: alibaba.alicloud
+    name: alibaba.alicloud
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: aliyun-spring-boot
+    name: aliyun-spring-boot
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: aliyunpan-ios-sdk
+    name: aliyunpan-ios-sdk
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: anolisa
+    name: anolisa
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: arthas
+    name: arthas
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: async_simple
+    name: async_simple
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: beidou
+    name: beidou
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: bifrostui
+    name: bifrostui
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: browser-extension-kit
+    name: browser-extension-kit
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: canal
+    name: canal
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: cloud-charts
+    name: cloud-charts
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: cloud-kernel
+    name: cloud-kernel
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: code-data-share-for-python
+    name: code-data-share-for-python
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: compileflow
+    name: compileflow
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: dawn
+    name: dawn
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: designable
+    name: designable
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: dimbin
+    name: dimbin
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: druid
+    name: druid
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: easyrobust
+    name: easyrobust
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: euler
+    name: euler
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: f2e-spec
+    name: f2e-spec
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: fast-modeling-language
+    name: fast-modeling-language
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: fastjson2
+    name: fastjson2
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: formily
+    name: formily
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: funcraft
+    name: funcraft
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: general-scene-interface
+    name: general-scene-interface
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: graph-gpt
+    name: graph-gpt
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: graphlearn-for-pytorch
+    name: graphlearn-for-pytorch
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: hooks
+    name: hooks
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
     repo: hybridnet
     name: hybridnet
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: ice
+    name: ice
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: innodb-java-reader
+    name: innodb-java-reader
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: iot_remote_access
+    name: iot_remote_access
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: java-dns-cache-manipulator
+    name: java-dns-cache-manipulator
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: jetcache
+    name: jetcache
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: jvm-sandbox
+    name: jvm-sandbox
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: jvm-sandbox-repeater
+    name: jvm-sandbox-repeater
     category: other
     project_status: sandbox
     discovered_by: org-scan from alibaba/higress
@@ -51,6 +437,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from alibaba/higress
   - owner: alibaba
+    repo: lightproxy
+    name: lightproxy
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
     repo: loongcollector
     name: loongcollector
     category: other
@@ -59,6 +451,48 @@ repositories:
   - owner: alibaba
     repo: loongsuite-go-agent
     name: loongsuite-go-agent
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: loongsuite-python-agent
+    name: loongsuite-python-agent
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: lowcode-engine
+    name: lowcode-engine
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: metrics
+    name: metrics
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: nacos
+    name: nacos
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: node-hbase-client
+    name: node-hbase-client
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: obz-cli
+    name: obz-cli
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: open-agent-auth
+    name: open-agent-auth
     category: other
     project_status: sandbox
     discovered_by: org-scan from alibaba/higress
@@ -81,8 +515,74 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from alibaba/higress
   - owner: alibaba
+    repo: otter
+    name: otter
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: packer-provider
+    name: packer-provider
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: page-agent
+    name: page-agent
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: pemja
+    name: pemja
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: pilotscope
+    name: pilotscope
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: pipcook
+    name: pipcook
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: pont
+    name: pont
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: proxima
+    name: proxima
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: rax
+    name: rax
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: rsqldb
+    name: rsqldb
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
     repo: schedulerx-worker-go
     name: schedulerx-worker-go
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: sec-code-bench
+    name: sec-code-bench
     category: other
     project_status: sandbox
     discovered_by: org-scan from alibaba/higress
@@ -93,14 +593,110 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from alibaba/higress
   - owner: alibaba
+    repo: serverless-vscode
+    name: serverless-vscode
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: simplehbase
+    name: simplehbase
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: spring-ai-alibaba
+    name: spring-ai-alibaba
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: spring-cloud-alibaba
+    name: spring-cloud-alibaba
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: spring-context-support
+    name: spring-context-support
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: structure-view
+    name: structure-view
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: tamper
+    name: tamper
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
     repo: tengine-ingress
     name: tengine-ingress
     category: other
     project_status: sandbox
     discovered_by: org-scan from alibaba/higress
   - owner: alibaba
+    repo: terraform-provider
+    name: terraform-provider
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: tidevice
+    name: tidevice
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: transmittable-thread-local
+    name: transmittable-thread-local
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: velocity-spring-boot-project
+    name: velocity-spring-boot-project
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
     repo: virtual-environment
     name: virtual-environment
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: webar.js
+    name: webar.js
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: weex
+    name: weex
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: x-render
+    name: x-render
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: yugong
+    name: yugong
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from alibaba/higress
+  - owner: alibaba
+    repo: zvec
+    name: zvec
     category: other
     project_status: sandbox
     discovered_by: org-scan from alibaba/higress
@@ -113,6 +709,12 @@ repositories:
   - owner: antrea-io
     repo: benchci
     name: benchci
+    category: networking
+    project_status: sandbox
+    discovered_by: org-scan from antrea-io/antrea
+  - owner: antrea-io
+    repo: has-changes
+    name: has-changes
     category: networking
     project_status: sandbox
     discovered_by: org-scan from antrea-io/antrea
@@ -138,6 +740,12 @@ repositories:
     repo: argo-rollouts
     name: argo-rollouts
     category: gitops
+    project_status: graduated
+    discovered_by: org-scan from argoproj/argo-cd
+  - owner: argoproj
+    repo: argo-ui
+    name: argo-ui
+    category: ci-cd
     project_status: graduated
     discovered_by: org-scan from argoproj/argo-cd
   - owner: argoproj
@@ -224,6 +832,30 @@ repositories:
     category: security
     project_status: sandbox
     discovered_by: org-scan from AthenZ/athenz
+  - owner: backstage
+    repo: actions
+    name: actions
+    category: build
+    project_status: incubating
+    discovered_by: org-scan from backstage/backstage
+  - owner: backstage
+    repo: backstage-deploy
+    name: backstage-deploy
+    category: build
+    project_status: incubating
+    discovered_by: org-scan from backstage/backstage
+  - owner: backstage
+    repo: mkdocs-techdocs-core
+    name: mkdocs-techdocs-core
+    category: build
+    project_status: incubating
+    discovered_by: org-scan from backstage/backstage
+  - owner: backstage
+    repo: techdocs-container
+    name: techdocs-container
+    category: build
+    project_status: incubating
+    discovered_by: org-scan from backstage/backstage
   - owner: bank-vaults
     repo: secret-init
     name: secret-init
@@ -303,6 +935,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from bfenetworks/bfe
   - owner: bfenetworks
+    repo: dashboard
+    name: dashboard
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from bfenetworks/bfe
+  - owner: bfenetworks
     repo: ingress-bfe
     name: ingress-bfe
     category: other
@@ -314,6 +952,30 @@ repositories:
     category: other
     project_status: sandbox
     discovered_by: org-scan from bfenetworks/bfe
+  - owner: bootc-dev
+    repo: bcvk
+    name: bcvk
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from bootc-dev/bootc
+  - owner: bootc-dev
+    repo: containers-image-proxy-rs
+    name: containers-image-proxy-rs
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from bootc-dev/bootc
+  - owner: bootc-dev
+    repo: jsonrpc-fdpass
+    name: jsonrpc-fdpass
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from bootc-dev/bootc
+  - owner: bootc-dev
+    repo: ocidir-rs
+    name: ocidir-rs
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from bootc-dev/bootc
   - owner: bootc-dev
     repo: podman-bootc
     name: podman-bootc
@@ -345,6 +1007,12 @@ repositories:
     project_status: incubating
     discovered_by: org-scan from buildpacks/pack
   - owner: buildpacks
+    repo: pack-orb
+    name: pack-orb
+    category: build
+    project_status: incubating
+    discovered_by: org-scan from buildpacks/pack
+  - owner: buildpacks
     repo: profile
     name: profile
     category: build
@@ -357,6 +1025,18 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from cadence-workflow/cadence
   - owner: cadence-workflow
+    repo: cadence-python-client
+    name: cadence-python-client
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from cadence-workflow/cadence
+  - owner: cadence-workflow
+    repo: cadence-web
+    name: cadence-web
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from cadence-workflow/cadence
+  - owner: cadence-workflow
     repo: starlark-worker
     name: starlark-worker
     category: automation
@@ -365,6 +1045,12 @@ repositories:
   - owner: carina-io
     repo: carina-api
     name: carina-api
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from carina-io/carina
+  - owner: carina-io
+    repo: charts
+    name: charts
     category: storage
     project_status: sandbox
     discovered_by: org-scan from carina-io/carina
@@ -405,6 +1091,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from carvel-dev/ytt
   - owner: carvel-dev
+    repo: setup-action
+    name: setup-action
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from carvel-dev/ytt
+  - owner: carvel-dev
     repo: terraform-provider-carvel
     name: terraform-provider-carvel
     category: build
@@ -416,9 +1108,141 @@ repositories:
     category: build
     project_status: sandbox
     discovered_by: org-scan from carvel-dev/ytt
+  - owner: carvel-dev
+    repo: vscode-ytt
+    name: vscode-ytt
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from carvel-dev/ytt
+  - owner: cdk8s-team
+    repo: cdk8s-aws-cdk
+    name: cdk8s-aws-cdk
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from cdk8s-team/cdk8s
+  - owner: cdk8s-team
+    repo: cdk8s-awscdk-resolver
+    name: cdk8s-awscdk-resolver
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from cdk8s-team/cdk8s
+  - owner: cdk8s-team
+    repo: cdk8s-cdktf-resolver
+    name: cdk8s-cdktf-resolver
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from cdk8s-team/cdk8s
+  - owner: cdk8s-team
+    repo: cdk8s-cli
+    name: cdk8s-cli
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from cdk8s-team/cdk8s
+  - owner: cdk8s-team
+    repo: cdk8s-core
+    name: cdk8s-core
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from cdk8s-team/cdk8s
+  - owner: cdk8s-team
+    repo: cdk8s-grafana
+    name: cdk8s-grafana
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from cdk8s-team/cdk8s
+  - owner: cdk8s-team
+    repo: cdk8s-image
+    name: cdk8s-image
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from cdk8s-team/cdk8s
+  - owner: cdk8s-team
+    repo: cdk8s-jenkins
+    name: cdk8s-jenkins
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from cdk8s-team/cdk8s
+  - owner: cdk8s-team
+    repo: cdk8s-operator
+    name: cdk8s-operator
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from cdk8s-team/cdk8s
+  - owner: cdk8s-team
+    repo: cdk8s-plus
+    name: cdk8s-plus
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from cdk8s-team/cdk8s
+  - owner: cdk8s-team
+    repo: cdk8s-projen-common
+    name: cdk8s-projen-common
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from cdk8s-team/cdk8s
+  - owner: cdk8s-team
+    repo: cdk8s-redis
+    name: cdk8s-redis
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from cdk8s-team/cdk8s
+  - owner: cdk8s-team
+    repo: cdk8s-validation-plugin-example
+    name: cdk8s-validation-plugin-example
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from cdk8s-team/cdk8s
+  - owner: cedar-policy
+    repo: authorization-for-expressjs
+    name: authorization-for-expressjs
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from cedar-policy/cedar
+  - owner: cedar-policy
+    repo: cedar-authorization
+    name: cedar-authorization
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from cedar-policy/cedar
   - owner: cedar-policy
     repo: cedar-go
     name: cedar-go
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from cedar-policy/cedar
+  - owner: cedar-policy
+    repo: cedar-local-agent
+    name: cedar-local-agent
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from cedar-policy/cedar
+  - owner: cedar-policy
+    repo: cedar-monaco-editor
+    name: cedar-monaco-editor
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from cedar-policy/cedar
+  - owner: cedar-policy
+    repo: cedar-spec
+    name: cedar-spec
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from cedar-policy/cedar
+  - owner: cedar-policy
+    repo: highlightjs-cedar
+    name: highlightjs-cedar
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from cedar-policy/cedar
+  - owner: cedar-policy
+    repo: prism-cedar
+    name: prism-cedar
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from cedar-policy/cedar
+  - owner: cedar-policy
+    repo: vscode-cedar
+    name: vscode-cedar
     category: security
     project_status: sandbox
     discovered_by: org-scan from cedar-policy/cedar
@@ -543,6 +1367,12 @@ repositories:
     project_status: incubating
     discovered_by: org-scan from chaos-mesh/chaos-mesh
   - owner: chaos-mesh
+    repo: datasource
+    name: datasource
+    category: chaos-engineering
+    project_status: incubating
+    discovered_by: org-scan from chaos-mesh/chaos-mesh
+  - owner: chaos-mesh
     repo: k8s_dns_chaos
     name: k8s_dns_chaos
     category: chaos-engineering
@@ -554,9 +1384,33 @@ repositories:
     category: chaos-engineering
     project_status: incubating
     discovered_by: org-scan from chaos-mesh/chaos-mesh
+  - owner: chaos-mesh
+    repo: nsexec
+    name: nsexec
+    category: chaos-engineering
+    project_status: incubating
+    discovered_by: org-scan from chaos-mesh/chaos-mesh
+  - owner: chaos-mesh
+    repo: toda
+    name: toda
+    category: chaos-engineering
+    project_status: incubating
+    discovered_by: org-scan from chaos-mesh/chaos-mesh
+  - owner: chaosblade-io
+    repo: chaosblade-box
+    name: chaosblade-box
+    category: chaos-engineering
+    project_status: sandbox
+    discovered_by: org-scan from chaosblade-io/chaosblade
   - owner: chaosblade-io
     repo: chaosblade-box-agent
     name: chaosblade-box-agent
+    category: chaos-engineering
+    project_status: sandbox
+    discovered_by: org-scan from chaosblade-io/chaosblade
+  - owner: chaosblade-io
+    repo: chaosblade-box-fe
+    name: chaosblade-box-fe
     category: chaos-engineering
     project_status: sandbox
     discovered_by: org-scan from chaosblade-io/chaosblade
@@ -585,6 +1439,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from chaosblade-io/chaosblade
   - owner: chaosblade-io
+    repo: chaosblade-exec-jvm
+    name: chaosblade-exec-jvm
+    category: chaos-engineering
+    project_status: sandbox
+    discovered_by: org-scan from chaosblade-io/chaosblade
+  - owner: chaosblade-io
     repo: chaosblade-exec-middleware
     name: chaosblade-exec-middleware
     category: chaos-engineering
@@ -603,11 +1463,23 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from chaosblade-io/chaosblade
   - owner: chaosblade-io
+    repo: chaosblade-space-exploration
+    name: chaosblade-space-exploration
+    category: chaos-engineering
+    project_status: sandbox
+    discovered_by: org-scan from chaosblade-io/chaosblade
+  - owner: chaosblade-io
     repo: chaosblade-spec-go
     name: chaosblade-spec-go
     category: chaos-engineering
     project_status: sandbox
     discovered_by: org-scan from chaosblade-io/chaosblade
+  - owner: cilium
+    repo: alpine-curl
+    name: alpine-curl
+    category: networking
+    project_status: graduated
+    discovered_by: org-scan from cilium/cilium
   - owner: cilium
     repo: certgen
     name: certgen
@@ -621,8 +1493,32 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from cilium/cilium
   - owner: cilium
+    repo: connectivity-container
+    name: connectivity-container
+    category: networking
+    project_status: graduated
+    discovered_by: org-scan from cilium/cilium
+  - owner: cilium
     repo: coverbee
     name: coverbee
+    category: networking
+    project_status: graduated
+    discovered_by: org-scan from cilium/cilium
+  - owner: cilium
+    repo: demo-image
+    name: demo-image
+    category: networking
+    project_status: graduated
+    discovered_by: org-scan from cilium/cilium
+  - owner: cilium
+    repo: dnssec-client
+    name: dnssec-client
+    category: networking
+    project_status: graduated
+    discovered_by: org-scan from cilium/cilium
+  - owner: cilium
+    repo: docker-bind
+    name: docker-bind
     category: networking
     project_status: graduated
     discovered_by: org-scan from cilium/cilium
@@ -633,8 +1529,20 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from cilium/cilium
   - owner: cilium
+    repo: echoserver
+    name: echoserver
+    category: networking
+    project_status: graduated
+    discovered_by: org-scan from cilium/cilium
+  - owner: cilium
     repo: fake
     name: fake
+    category: networking
+    project_status: graduated
+    discovered_by: org-scan from cilium/cilium
+  - owner: cilium
+    repo: helm-toolbox
+    name: helm-toolbox
     category: networking
     project_status: graduated
     discovered_by: org-scan from cilium/cilium
@@ -651,6 +1559,18 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from cilium/cilium
   - owner: cilium
+    repo: hubble-export-stdout
+    name: hubble-export-stdout
+    category: networking
+    project_status: graduated
+    discovered_by: org-scan from cilium/cilium
+  - owner: cilium
+    repo: hubble-ui
+    name: hubble-ui
+    category: networking
+    project_status: graduated
+    discovered_by: org-scan from cilium/cilium
+  - owner: cilium
     repo: linters
     name: linters
     category: networking
@@ -663,8 +1583,26 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from cilium/cilium
   - owner: cilium
+    repo: log-gatherer
+    name: log-gatherer
+    category: networking
+    project_status: graduated
+    discovered_by: org-scan from cilium/cilium
+  - owner: cilium
+    repo: misc-scripts
+    name: misc-scripts
+    category: networking
+    project_status: graduated
+    discovered_by: org-scan from cilium/cilium
+  - owner: cilium
     repo: pwru
     name: pwru
+    category: networking
+    project_status: graduated
+    discovered_by: org-scan from cilium/cilium
+  - owner: cilium
+    repo: python-bmemcached
+    name: python-bmemcached
     category: networking
     project_status: graduated
     discovered_by: org-scan from cilium/cilium
@@ -704,6 +1642,60 @@ repositories:
     category: networking
     project_status: graduated
     discovered_by: org-scan from cilium/cilium
+  - owner: cloud-custodian
+    repo: cel-python
+    name: cel-python
+    category: automation
+    project_status: incubating
+    discovered_by: org-scan from cloud-custodian/cloud-custodian
+  - owner: cloud-custodian
+    repo: helm-charts
+    name: helm-charts
+    category: automation
+    project_status: incubating
+    discovered_by: org-scan from cloud-custodian/cloud-custodian
+  - owner: cloud-custodian
+    repo: poetry-plugin-freeze
+    name: poetry-plugin-freeze
+    category: automation
+    project_status: incubating
+    discovered_by: org-scan from cloud-custodian/cloud-custodian
+  - owner: cloud-custodian
+    repo: pytest-terraform
+    name: pytest-terraform
+    category: automation
+    project_status: incubating
+    discovered_by: org-scan from cloud-custodian/cloud-custodian
+  - owner: cloud-custodian
+    repo: tfparse
+    name: tfparse
+    category: automation
+    project_status: incubating
+    discovered_by: org-scan from cloud-custodian/cloud-custodian
+  - owner: cloudevents
+    repo: sdk-java
+    name: sdk-java
+    category: messaging
+    project_status: graduated
+    discovered_by: org-scan from cloudevents/spec
+  - owner: cloudevents
+    repo: sdk-javascript
+    name: sdk-javascript
+    category: messaging
+    project_status: graduated
+    discovered_by: org-scan from cloudevents/spec
+  - owner: cloudevents
+    repo: sdk-ruby
+    name: sdk-ruby
+    category: messaging
+    project_status: graduated
+    discovered_by: org-scan from cloudevents/spec
+  - owner: cloudevents
+    repo: sdk-rust
+    name: sdk-rust
+    category: messaging
+    project_status: graduated
+    discovered_by: org-scan from cloudevents/spec
   - owner: cloudnative-pg
     repo: api
     name: api
@@ -713,6 +1705,18 @@ repositories:
   - owner: cloudnative-pg
     repo: barman-cloud
     name: barman-cloud
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from cloudnative-pg/cloudnative-pg
+  - owner: cloudnative-pg
+    repo: charts
+    name: charts
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from cloudnative-pg/cloudnative-pg
+  - owner: cloudnative-pg
+    repo: ciclops
+    name: ciclops
     category: storage
     project_status: sandbox
     discovered_by: org-scan from cloudnative-pg/cloudnative-pg
@@ -729,6 +1733,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from cloudnative-pg/cloudnative-pg
   - owner: cloudnative-pg
+    repo: grafana-dashboards
+    name: grafana-dashboards
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from cloudnative-pg/cloudnative-pg
+  - owner: cloudnative-pg
     repo: machinery
     name: machinery
     category: storage
@@ -740,6 +1750,12 @@ repositories:
     category: storage
     project_status: sandbox
     discovered_by: org-scan from cloudnative-pg/cloudnative-pg
+  - owner: cloudnative-pg
+    repo: webtest
+    name: webtest
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from cloudnative-pg/cloudnative-pg
   - owner: clusternet
     repo: kubectl-clusternet
     name: kubectl-clusternet
@@ -747,8 +1763,50 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from clusternet/clusternet
   - owner: confidential-containers
+    repo: cloud-api-adaptor
+    name: cloud-api-adaptor
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from confidential-containers/confidential-containers
+  - owner: confidential-containers
     repo: confidentialcontainers.org
     name: confidentialcontainers.org
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from confidential-containers/confidential-containers
+  - owner: confidential-containers
+    repo: enclave-cc
+    name: enclave-cc
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from confidential-containers/confidential-containers
+  - owner: confidential-containers
+    repo: guest-components
+    name: guest-components
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from confidential-containers/confidential-containers
+  - owner: confidential-containers
+    repo: kbs-types
+    name: kbs-types
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from confidential-containers/confidential-containers
+  - owner: confidential-containers
+    repo: simple-kbs
+    name: simple-kbs
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from confidential-containers/confidential-containers
+  - owner: confidential-containers
+    repo: td-shim
+    name: td-shim
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from confidential-containers/confidential-containers
+  - owner: confidential-containers
+    repo: trustee
+    name: trustee
     category: security
     project_status: sandbox
     discovered_by: org-scan from confidential-containers/confidential-containers
@@ -767,6 +1825,42 @@ repositories:
   - owner: connectrpc
     repo: conformance
     name: conformance
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from connectrpc/connect-go
+  - owner: connectrpc
+    repo: connect-es
+    name: connect-es
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from connectrpc/connect-go
+  - owner: connectrpc
+    repo: connect-kotlin
+    name: connect-kotlin
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from connectrpc/connect-go
+  - owner: connectrpc
+    repo: connect-playwright-es
+    name: connect-playwright-es
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from connectrpc/connect-go
+  - owner: connectrpc
+    repo: connect-python
+    name: connect-python
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from connectrpc/connect-go
+  - owner: connectrpc
+    repo: connect-query-es
+    name: connect-query-es
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from connectrpc/connect-go
+  - owner: connectrpc
+    repo: connect-swift
+    name: connect-swift
     category: other
     project_status: sandbox
     discovered_by: org-scan from connectrpc/connect-go
@@ -791,6 +1885,12 @@ repositories:
   - owner: connectrpc
     repo: otelconnect-go
     name: otelconnect-go
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from connectrpc/connect-go
+  - owner: connectrpc
+    repo: validate-es
+    name: validate-es
     category: other
     project_status: sandbox
     discovered_by: org-scan from connectrpc/connect-go
@@ -945,6 +2045,18 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from containerd/containerd
   - owner: containerd
+    repo: runwasi
+    name: runwasi
+    category: container-runtime
+    project_status: graduated
+    discovered_by: org-scan from containerd/containerd
+  - owner: containerd
+    repo: rust-extensions
+    name: rust-extensions
+    category: container-runtime
+    project_status: graduated
+    discovered_by: org-scan from containerd/containerd
+  - owner: containerd
     repo: stargz-snapshotter
     name: stargz-snapshotter
     category: ml-platform
@@ -975,6 +2087,18 @@ repositories:
     project_status: incubating
     discovered_by: org-scan from containernetworking/cni
   - owner: containers
+    repo: BuildSourceImage
+    name: BuildSourceImage
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from containers/podman
+  - owner: containers
+    repo: aardvark-dns
+    name: aardvark-dns
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from containers/podman
+  - owner: containers
     repo: buildah
     name: buildah
     category: ml-platform
@@ -987,9 +2111,39 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from containers/podman
   - owner: containers
+    repo: conmon
+    name: conmon
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from containers/podman
+  - owner: containers
     repo: conmon-rs
     name: conmon-rs
     category: ml-platform
+    project_status: sandbox
+    discovered_by: org-scan from containers/podman
+  - owner: containers
+    repo: container-libs
+    name: container-libs
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from containers/podman
+  - owner: containers
+    repo: container-selinux
+    name: container-selinux
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from containers/podman
+  - owner: containers
+    repo: containerimage-py
+    name: containerimage-py
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from containers/podman
+  - owner: containers
+    repo: crun-vm
+    name: crun-vm
+    category: container-runtime
     project_status: sandbox
     discovered_by: org-scan from containers/podman
   - owner: containers
@@ -999,9 +2153,21 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from containers/podman
   - owner: containers
+    repo: engine-stressor
+    name: engine-stressor
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from containers/podman
+  - owner: containers
     repo: fetchit
     name: fetchit
     category: ml-platform
+    project_status: sandbox
+    discovered_by: org-scan from containers/podman
+  - owner: containers
+    repo: fuse-overlayfs
+    name: fuse-overlayfs
+    category: container-runtime
     project_status: sandbox
     discovered_by: org-scan from containers/podman
   - owner: containers
@@ -1017,6 +2183,18 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from containers/podman
   - owner: containers
+    repo: krunkit
+    name: krunkit
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from containers/podman
+  - owner: containers
+    repo: krunvm
+    name: krunvm
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from containers/podman
+  - owner: containers
     repo: kubernetes-mcp-server
     name: kubernetes-mcp-server
     category: ml-platform
@@ -1026,6 +2204,24 @@ repositories:
     repo: libhvee
     name: libhvee
     category: ml-platform
+    project_status: sandbox
+    discovered_by: org-scan from containers/podman
+  - owner: containers
+    repo: libkrun
+    name: libkrun
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from containers/podman
+  - owner: containers
+    repo: libkrunfw
+    name: libkrunfw
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from containers/podman
+  - owner: containers
+    repo: netavark
+    name: netavark
+    category: container-runtime
     project_status: sandbox
     discovered_by: org-scan from containers/podman
   - owner: containers
@@ -1047,6 +2243,42 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from containers/podman
   - owner: containers
+    repo: olot
+    name: olot
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from containers/podman
+  - owner: containers
+    repo: omlmd
+    name: omlmd
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from containers/podman
+  - owner: containers
+    repo: podlet
+    name: podlet
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from containers/podman
+  - owner: containers
+    repo: podman-compose
+    name: podman-compose
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from containers/podman
+  - owner: containers
+    repo: podman-desktop-extension-ai-lab
+    name: podman-desktop-extension-ai-lab
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from containers/podman
+  - owner: containers
+    repo: podman-py
+    name: podman-py
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from containers/podman
+  - owner: containers
     repo: podman-tui
     name: podman-tui
     category: ml-platform
@@ -1065,6 +2297,30 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from containers/podman
   - owner: containers
+    repo: qm
+    name: qm
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from containers/podman
+  - owner: containers
+    repo: ramalama
+    name: ramalama
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from containers/podman
+  - owner: containers
+    repo: ramalama-stack
+    name: ramalama-stack
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from containers/podman
+  - owner: containers
+    repo: shortnames
+    name: shortnames
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from containers/podman
+  - owner: containers
     repo: skopeo
     name: skopeo
     category: ml-platform
@@ -1080,6 +2336,12 @@ repositories:
     repo: tar-diff
     name: tar-diff
     category: ml-platform
+    project_status: sandbox
+    discovered_by: org-scan from containers/podman
+  - owner: containers
+    repo: udica
+    name: udica
+    category: container-runtime
     project_status: sandbox
     discovered_by: org-scan from containers/podman
   - owner: containerssh
@@ -1112,9 +2374,27 @@ repositories:
     category: networking
     project_status: graduated
     discovered_by: org-scan from coredns/coredns
+  - owner: coredns
+    repo: deployment
+    name: deployment
+    category: networking
+    project_status: graduated
+    discovered_by: org-scan from coredns/coredns
+  - owner: coredns
+    repo: distributed
+    name: distributed
+    category: networking
+    project_status: graduated
+    discovered_by: org-scan from coredns/coredns
   - owner: cortexproject
     repo: auth-gateway
     name: auth-gateway
+    category: observability
+    project_status: incubating
+    discovered_by: org-scan from cortexproject/cortex
+  - owner: cortexproject
+    repo: cortex-helm-chart
+    name: cortex-helm-chart
     category: observability
     project_status: incubating
     discovered_by: org-scan from cortexproject/cortex
@@ -1185,8 +2465,38 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from crossplane/crossplane
   - owner: crossplane
+    repo: docs
+    name: docs
+    category: orchestration
+    project_status: graduated
+    discovered_by: org-scan from crossplane/crossplane
+  - owner: crossplane
     repo: function-sdk-go
     name: function-sdk-go
+    category: orchestration
+    project_status: graduated
+    discovered_by: org-scan from crossplane/crossplane
+  - owner: crossplane
+    repo: function-sdk-java
+    name: function-sdk-java
+    category: orchestration
+    project_status: graduated
+    discovered_by: org-scan from crossplane/crossplane
+  - owner: crossplane
+    repo: function-sdk-python
+    name: function-sdk-python
+    category: orchestration
+    project_status: graduated
+    discovered_by: org-scan from crossplane/crossplane
+  - owner: crossplane
+    repo: function-sdk-typescript
+    name: function-sdk-typescript
+    category: orchestration
+    project_status: graduated
+    discovered_by: org-scan from crossplane/crossplane
+  - owner: crossplane
+    repo: function-template-typescript
+    name: function-template-typescript
     category: orchestration
     project_status: graduated
     discovered_by: org-scan from crossplane/crossplane
@@ -1209,8 +2519,26 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from crossplane/crossplane
   - owner: cubefs
+    repo: compass
+    name: compass
+    category: storage
+    project_status: graduated
+    discovered_by: org-scan from cubeFS/cubefs
+  - owner: cubefs
     repo: cubefs-csi
     name: cubefs-csi
+    category: storage
+    project_status: graduated
+    discovered_by: org-scan from cubeFS/cubefs
+  - owner: cubefs
+    repo: cubefs-helm
+    name: cubefs-helm
+    category: storage
+    project_status: graduated
+    discovered_by: org-scan from cubeFS/cubefs
+  - owner: cubefs
+    repo: shuttle
+    name: shuttle
     category: storage
     project_status: graduated
     discovered_by: org-scan from cubeFS/cubefs
@@ -1223,6 +2551,12 @@ repositories:
   - owner: dapr
     repo: components-contrib
     name: components-contrib
+    category: build
+    project_status: graduated
+    discovered_by: org-scan from dapr/dapr
+  - owner: dapr
+    repo: dapr-agents
+    name: dapr-agents
     category: build
     project_status: graduated
     discovered_by: org-scan from dapr/dapr
@@ -1245,6 +2579,24 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from dapr/dapr
   - owner: dapr
+    repo: installer-bundle
+    name: installer-bundle
+    category: build
+    project_status: graduated
+    discovered_by: org-scan from dapr/dapr
+  - owner: dapr
+    repo: java-sdk
+    name: java-sdk
+    category: build
+    project_status: graduated
+    discovered_by: org-scan from dapr/dapr
+  - owner: dapr
+    repo: js-sdk
+    name: js-sdk
+    category: build
+    project_status: graduated
+    discovered_by: org-scan from dapr/dapr
+  - owner: dapr
     repo: kit
     name: kit
     category: build
@@ -1256,9 +2608,33 @@ repositories:
     category: build
     project_status: graduated
     discovered_by: org-scan from dapr/dapr
+  - owner: dapr
+    repo: php-sdk
+    name: php-sdk
+    category: build
+    project_status: graduated
+    discovered_by: org-scan from dapr/dapr
+  - owner: dapr
+    repo: rust-sdk
+    name: rust-sdk
+    category: build
+    project_status: graduated
+    discovered_by: org-scan from dapr/dapr
+  - owner: dapr
+    repo: setup-dapr
+    name: setup-dapr
+    category: build
+    project_status: graduated
+    discovered_by: org-scan from dapr/dapr
   - owner: devfile
     repo: alizer
     name: alizer
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from devfile/api
+  - owner: devfile
+    repo: docs
+    name: docs
     category: build
     project_status: sandbox
     discovered_by: org-scan from devfile/api
@@ -1274,12 +2650,30 @@ repositories:
     category: build
     project_status: sandbox
     discovered_by: org-scan from devfile/api
+  - owner: devfile
+    repo: vscode-walkthrough-extension
+    name: vscode-walkthrough-extension
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from devfile/api
+  - owner: dexidp
+    repo: helm-charts
+    name: helm-charts
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from dexidp/dex
   - owner: distribution
     repo: reference
     name: reference
     category: ml-platform
     project_status: sandbox
     discovered_by: org-scan from distribution/distribution
+  - owner: dragonflyoss
+    repo: client
+    name: client
+    category: ml-platform
+    project_status: graduated
+    discovered_by: org-scan from dragonflyoss/dragonfly
   - owner: dragonflyoss
     repo: console
     name: console
@@ -1293,14 +2687,50 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from dragonflyoss/dragonfly
   - owner: dragonflyoss
+    repo: nydus
+    name: nydus
+    category: ml-platform
+    project_status: graduated
+    discovered_by: org-scan from dragonflyoss/dragonfly
+  - owner: dragonflyoss
     repo: snapshotter
     name: snapshotter
     category: registry
     project_status: graduated
     discovered_by: org-scan from dragonflyoss/dragonfly
+  - owner: drasi-project
+    repo: drasi-core
+    name: drasi-core
+    category: messaging
+    project_status: sandbox
+    discovered_by: org-scan from drasi-project/drasi-platform
+  - owner: drasi-project
+    repo: drasi-server
+    name: drasi-server
+    category: messaging
+    project_status: sandbox
+    discovered_by: org-scan from drasi-project/drasi-platform
+  - owner: drasi-project
+    repo: grafana-signalr
+    name: grafana-signalr
+    category: messaging
+    project_status: sandbox
+    discovered_by: org-scan from drasi-project/drasi-platform
+  - owner: easegress-io
+    repo: easegress-portal
+    name: easegress-portal
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from easegress-io/easegress
   - owner: envoyproxy
     repo: ai-gateway
     name: ai-gateway
+    category: other
+    project_status: graduated
+    discovered_by: org-scan from envoyproxy/envoy
+  - owner: envoyproxy
+    repo: envoy-mobile
+    name: envoy-mobile
     category: other
     project_status: graduated
     discovered_by: org-scan from envoyproxy/envoy
@@ -1319,6 +2749,12 @@ repositories:
   - owner: envoyproxy
     repo: go-control-plane
     name: go-control-plane
+    category: other
+    project_status: graduated
+    discovered_by: org-scan from envoyproxy/envoy
+  - owner: envoyproxy
+    repo: playground
+    name: playground
     category: other
     project_status: graduated
     discovered_by: org-scan from envoyproxy/envoy
@@ -1389,6 +2825,12 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from falcosecurity/falco
   - owner: falcosecurity
+    repo: elftoolchain
+    name: elftoolchain
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from falcosecurity/falco
+  - owner: falcosecurity
     repo: event-generator
     name: event-generator
     category: security
@@ -1397,6 +2839,12 @@ repositories:
   - owner: falcosecurity
     repo: falco-operator
     name: falco-operator
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from falcosecurity/falco
+  - owner: falcosecurity
+    repo: falco-playground
+    name: falco-playground
     category: security
     project_status: graduated
     discovered_by: org-scan from falcosecurity/falco
@@ -1425,8 +2873,26 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from falcosecurity/falco
   - owner: falcosecurity
+    repo: flycheck-falco-rules
+    name: flycheck-falco-rules
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from falcosecurity/falco
+  - owner: falcosecurity
     repo: k8s-metacollector
     name: k8s-metacollector
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from falcosecurity/falco
+  - owner: falcosecurity
+    repo: kernel-crawler
+    name: kernel-crawler
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from falcosecurity/falco
+  - owner: falcosecurity
+    repo: libs
+    name: libs
     category: security
     project_status: graduated
     discovered_by: org-scan from falcosecurity/falco
@@ -1443,8 +2909,32 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from falcosecurity/falco
   - owner: falcosecurity
+    repo: plugin-sdk-cpp
+    name: plugin-sdk-cpp
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from falcosecurity/falco
+  - owner: falcosecurity
     repo: plugin-sdk-go
     name: plugin-sdk-go
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from falcosecurity/falco
+  - owner: falcosecurity
+    repo: plugin-sdk-rs
+    name: plugin-sdk-rs
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from falcosecurity/falco
+  - owner: falcosecurity
+    repo: plugins
+    name: plugins
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from falcosecurity/falco
+  - owner: falcosecurity
+    repo: prempti
+    name: prempti
     category: security
     project_status: graduated
     discovered_by: org-scan from falcosecurity/falco
@@ -1484,15 +2974,75 @@ repositories:
     category: other
     project_status: incubating
     discovered_by: org-scan from flatcar/Flatcar
+  - owner: flatcar
+    repo: nebraska
+    name: nebraska
+    category: other
+    project_status: incubating
+    discovered_by: org-scan from flatcar/Flatcar
+  - owner: flatcar
+    repo: ue-rs
+    name: ue-rs
+    category: other
+    project_status: incubating
+    discovered_by: org-scan from flatcar/Flatcar
+  - owner: fluent
+    repo: fluent-bit
+    name: fluent-bit
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from fluent/fluentd
+  - owner: fluent
+    repo: fluent-logger-forward-node
+    name: fluent-logger-forward-node
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from fluent/fluentd
+  - owner: fluent
+    repo: fluent-logger-python
+    name: fluent-logger-python
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from fluent/fluentd
   - owner: fluent
     repo: fluent-operator
     name: fluent-operator
     category: observability
     project_status: graduated
     discovered_by: org-scan from fluent/fluentd
+  - owner: fluent
+    repo: fluentd-aggregator-docker-image
+    name: fluentd-aggregator-docker-image
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from fluent/fluentd
+  - owner: fluent
+    repo: fluentd-docker-image
+    name: fluentd-docker-image
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from fluent/fluentd
+  - owner: fluent
+    repo: fluentd-kubernetes-daemonset
+    name: fluentd-kubernetes-daemonset
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from fluent/fluentd
+  - owner: fluxcd
+    repo: agent-skills
+    name: agent-skills
+    category: ci-cd
+    project_status: graduated
+    discovered_by: org-scan from fluxcd/flux2
   - owner: fluxcd
     repo: flagger
     name: flagger
+    category: ci-cd
+    project_status: graduated
+    discovered_by: org-scan from fluxcd/flux2
+  - owner: fluxcd
+    repo: flux-benchmark
+    name: flux-benchmark
     category: ci-cd
     project_status: graduated
     discovered_by: org-scan from fluxcd/flux2
@@ -1535,6 +3085,12 @@ repositories:
   - owner: fluxcd
     repo: notification-controller
     name: notification-controller
+    category: ci-cd
+    project_status: graduated
+    discovered_by: org-scan from fluxcd/flux2
+  - owner: fluxcd
+    repo: plugins
+    name: plugins
     category: ci-cd
     project_status: graduated
     discovered_by: org-scan from fluxcd/flux2
@@ -1601,6 +3157,12 @@ repositories:
   - owner: getporter
     repo: gcloud-mixin
     name: gcloud-mixin
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from getporter/porter
+  - owner: getporter
+    repo: gh-action
+    name: gh-action
     category: build
     project_status: sandbox
     discovered_by: org-scan from getporter/porter
@@ -1701,6 +3263,18 @@ repositories:
     project_status: incubating
     discovered_by: org-scan from grpc/grpc
   - owner: grpc
+    repo: grpc-node
+    name: grpc-node
+    category: other
+    project_status: incubating
+    discovered_by: org-scan from grpc/grpc
+  - owner: grpc
+    repo: grpc-web
+    name: grpc-web
+    category: other
+    project_status: incubating
+    discovered_by: org-scan from grpc/grpc
+  - owner: grpc
     repo: test-infra
     name: test-infra
     category: other
@@ -1749,6 +3323,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from hwameistor/hwameistor
   - owner: hwameistor
+    repo: drbd-adapter
+    name: drbd-adapter
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from hwameistor/hwameistor
+  - owner: hwameistor
     repo: hwameistor-operator
     name: hwameistor-operator
     category: storage
@@ -1760,6 +3340,48 @@ repositories:
     category: storage
     project_status: sandbox
     discovered_by: org-scan from hwameistor/hwameistor
+  - owner: hyperlight-dev
+    repo: cargo-hyperlight
+    name: cargo-hyperlight
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from hyperlight-dev/hyperlight
+  - owner: hyperlight-dev
+    repo: hyperagent
+    name: hyperagent
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from hyperlight-dev/hyperlight
+  - owner: hyperlight-dev
+    repo: hyperlight-js
+    name: hyperlight-js
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from hyperlight-dev/hyperlight
+  - owner: hyperlight-dev
+    repo: hyperlight-sandbox
+    name: hyperlight-sandbox
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from hyperlight-dev/hyperlight
+  - owner: hyperlight-dev
+    repo: hyperlight-wasm
+    name: hyperlight-wasm
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from hyperlight-dev/hyperlight
+  - owner: hyperlight-dev
+    repo: wasm-udp-echo-sample
+    name: wasm-udp-echo-sample
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from hyperlight-dev/hyperlight
+  - owner: in-toto
+    repo: apt-transport-in-toto
+    name: apt-transport-in-toto
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from in-toto/in-toto
   - owner: in-toto
     repo: archivista
     name: archivista
@@ -1769,6 +3391,12 @@ repositories:
   - owner: in-toto
     repo: attestation
     name: attestation
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from in-toto/in-toto
+  - owner: in-toto
+    repo: github-action
+    name: github-action
     category: security
     project_status: graduated
     discovered_by: org-scan from in-toto/in-toto
@@ -1785,6 +3413,18 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from in-toto/in-toto
   - owner: in-toto
+    repo: in-toto-java
+    name: in-toto-java
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from in-toto/in-toto
+  - owner: in-toto
+    repo: in-toto-rs
+    name: in-toto-rs
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from in-toto/in-toto
+  - owner: in-toto
     repo: scai-demos
     name: scai-demos
     category: security
@@ -1796,6 +3436,18 @@ repositories:
     category: security
     project_status: graduated
     discovered_by: org-scan from in-toto/in-toto
+  - owner: inclavare-containers
+    repo: TNG
+    name: TNG
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from inclavare-containers/inclavare-containers
+  - owner: inspektor-gadget
+    repo: headlamp-plugin
+    name: headlamp-plugin
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from inspektor-gadget/inspektor-gadget
   - owner: inspektor-gadget
     repo: ig-desktop
     name: ig-desktop
@@ -1814,9 +3466,21 @@ repositories:
     category: observability
     project_status: sandbox
     discovered_by: org-scan from inspektor-gadget/inspektor-gadget
+  - owner: inspektor-gadget
+    repo: insights-plugin
+    name: insights-plugin
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from inspektor-gadget/inspektor-gadget
   - owner: interlink-hq
     repo: interlink-docker-plugin
     name: interlink-docker-plugin
+    category: ml-platform
+    project_status: sandbox
+    discovered_by: org-scan from interlink-hq/interLink
+  - owner: interlink-hq
+    repo: interlink-helm-chart
+    name: interlink-helm-chart
     category: ml-platform
     project_status: sandbox
     discovered_by: org-scan from interlink-hq/interLink
@@ -1826,9 +3490,33 @@ repositories:
     category: ml-platform
     project_status: sandbox
     discovered_by: org-scan from interlink-hq/interLink
+  - owner: interlink-hq
+    repo: vk-test-set
+    name: vk-test-set
+    category: ml-platform
+    project_status: sandbox
+    discovered_by: org-scan from interlink-hq/interLink
+  - owner: istio
+    repo: get-istioctl
+    name: get-istioctl
+    category: service-mesh
+    project_status: graduated
+    discovered_by: org-scan from istio/istio
   - owner: jaegertracing
     repo: base-image-with-debugger
     name: base-image-with-debugger
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from jaegertracing/jaeger
+  - owner: jaegertracing
+    repo: docker-protobuf
+    name: docker-protobuf
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from jaegertracing/jaeger
+  - owner: jaegertracing
+    repo: helm-charts
+    name: helm-charts
     category: observability
     project_status: graduated
     discovered_by: org-scan from jaegertracing/jaeger
@@ -1850,9 +3538,33 @@ repositories:
     category: observability
     project_status: graduated
     discovered_by: org-scan from jaegertracing/jaeger
+  - owner: jaegertracing
+    repo: jaeger-ui
+    name: jaeger-ui
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from jaegertracing/jaeger
+  - owner: jaegertracing
+    repo: jaeger-vscode
+    name: jaeger-vscode
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from jaegertracing/jaeger
+  - owner: jaegertracing
+    repo: spark-dependencies
+    name: spark-dependencies
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from jaegertracing/jaeger
   - owner: k0sproject
     repo: bootloose
     name: bootloose
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from k0sproject/k0s
+  - owner: k0sproject
+    repo: cni-node
+    name: cni-node
     category: orchestration
     project_status: sandbox
     discovered_by: org-scan from k0sproject/k0s
@@ -1905,8 +3617,44 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from k3s-io/k3s
   - owner: k3s-io
+    repo: k3s-root
+    name: k3s-root
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from k3s-io/k3s
+  - owner: k3s-io
+    repo: k3s-selinux
+    name: k3s-selinux
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from k3s-io/k3s
+  - owner: k3s-io
+    repo: k3s-upgrade
+    name: k3s-upgrade
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from k3s-io/k3s
+  - owner: k3s-io
     repo: kine
     name: kine
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from k3s-io/k3s
+  - owner: k3s-io
+    repo: klipper-helm
+    name: klipper-helm
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from k3s-io/k3s
+  - owner: k3s-io
+    repo: klipper-lb
+    name: klipper-lb
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from k3s-io/k3s
+  - owner: k3s-io
+    repo: vagrant-k3s
+    name: vagrant-k3s
     category: other
     project_status: sandbox
     discovered_by: org-scan from k3s-io/k3s
@@ -1928,6 +3676,24 @@ repositories:
     category: observability
     project_status: sandbox
     discovered_by: org-scan from k8sgpt-ai/k8sgpt
+  - owner: k8sgpt-ai
+    repo: schemas
+    name: schemas
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from k8sgpt-ai/k8sgpt
+  - owner: k8up-io
+    repo: antora-ui-default
+    name: antora-ui-default
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from k8up-io/k8up
+  - owner: kagent-dev
+    repo: doc2vec
+    name: doc2vec
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from kagent-dev/kagent
   - owner: kagent-dev
     repo: khook
     name: khook
@@ -1953,6 +3719,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from kairos-io/kairos
   - owner: kairos-io
+    repo: efi-key-enroller
+    name: efi-key-enroller
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from kairos-io/kairos
+  - owner: kairos-io
     repo: go-nodepair
     name: go-nodepair
     category: automation
@@ -1961,6 +3733,12 @@ repositories:
   - owner: kairos-io
     repo: go-ukify
     name: go-ukify
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from kairos-io/kairos
+  - owner: kairos-io
+    repo: hadron
+    name: hadron
     category: automation
     project_status: sandbox
     discovered_by: org-scan from kairos-io/kairos
@@ -2073,15 +3851,45 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from kaito-project/kaito
   - owner: kaito-project
+    repo: airunway
+    name: airunway
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from kaito-project/kaito
+  - owner: kaito-project
+    repo: headlamp-kaito
+    name: headlamp-kaito
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from kaito-project/kaito
+  - owner: kaito-project
     repo: kaito-kubectl-plugin
     name: kaito-kubectl-plugin
     category: ml-platform
     project_status: sandbox
     discovered_by: org-scan from kaito-project/kaito
   - owner: kaito-project
+    repo: kaito-pr-agent
+    name: kaito-pr-agent
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from kaito-project/kaito
+  - owner: kaito-project
+    repo: kaito-rag-api
+    name: kaito-rag-api
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from kaito-project/kaito
+  - owner: kaito-project
     repo: keda-kaito-scaler
     name: keda-kaito-scaler
     category: ml-platform
+    project_status: sandbox
+    discovered_by: org-scan from kaito-project/kaito
+  - owner: kaito-project
+    repo: production-stack
+    name: production-stack
+    category: other
     project_status: sandbox
     discovered_by: org-scan from kaito-project/kaito
   - owner: kanisterio
@@ -2115,6 +3923,12 @@ repositories:
     project_status: incubating
     discovered_by: org-scan from karmada-io/karmada
   - owner: kcl-lang
+    repo: actions
+    name: actions
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from kcl-lang/kcl
+  - owner: kcl-lang
     repo: cli
     name: cli
     category: automation
@@ -2133,8 +3947,20 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from kcl-lang/kcl
   - owner: kcl-lang
+    repo: intellij-kcl
+    name: intellij-kcl
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from kcl-lang/kcl
+  - owner: kcl-lang
     repo: kcl-go
     name: kcl-go
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from kcl-lang/kcl
+  - owner: kcl-lang
+    repo: kcl-lang.io
+    name: kcl-lang.io
     category: automation
     project_status: sandbox
     discovered_by: org-scan from kcl-lang/kcl
@@ -2151,8 +3977,20 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from kcl-lang/kcl
   - owner: kcl-lang
+    repo: kcl-playground
+    name: kcl-playground
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from kcl-lang/kcl
+  - owner: kcl-lang
     repo: kcl-plugin
     name: kcl-plugin
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from kcl-lang/kcl
+  - owner: kcl-lang
+    repo: konfig
+    name: konfig
     category: automation
     project_status: sandbox
     discovered_by: org-scan from kcl-lang/kcl
@@ -2201,6 +4039,12 @@ repositories:
   - owner: kcl-lang
     repo: tree-sitter-kcl
     name: tree-sitter-kcl
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from kcl-lang/kcl
+  - owner: kcl-lang
+    repo: vscode-kcl
+    name: vscode-kcl
     category: automation
     project_status: sandbox
     discovered_by: org-scan from kcl-lang/kcl
@@ -2265,17 +4109,83 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from kedacore/keda
   - owner: keycloak
+    repo: keycloak-benchmark
+    name: keycloak-benchmark
+    category: security
+    project_status: incubating
+    discovered_by: org-scan from keycloak/keycloak
+  - owner: keycloak
+    repo: keycloak-js
+    name: keycloak-js
+    category: security
+    project_status: incubating
+    discovered_by: org-scan from keycloak/keycloak
+  - owner: keycloak
+    repo: keycloak-nodejs-connect
+    name: keycloak-nodejs-connect
+    category: security
+    project_status: incubating
+    discovered_by: org-scan from keycloak/keycloak
+  - owner: keycloak
+    repo: keycloak-web
+    name: keycloak-web
+    category: security
+    project_status: incubating
+    discovered_by: org-scan from keycloak/keycloak
+  - owner: keycloak
     repo: terraform-provider-keycloak
     name: terraform-provider-keycloak
     category: security
     project_status: incubating
     discovered_by: org-scan from keycloak/keycloak
+  - owner: keylime
+    repo: rust-keylime
+    name: rust-keylime
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from keylime/keylime
   - owner: kgateway-dev
     repo: kgateway.dev
     name: kgateway.dev
     category: other
     project_status: sandbox
     discovered_by: org-scan from kgateway-dev/kgateway
+  - owner: kitops-ml
+    repo: gh-kit-setup
+    name: gh-kit-setup
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from kitops-ml/kitops
+  - owner: kitops-ml
+    repo: kitops-desktop
+    name: kitops-desktop
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from kitops-ml/kitops
+  - owner: kitops-ml
+    repo: kitops-ts
+    name: kitops-ts
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from kitops-ml/kitops
+  - owner: kitops-ml
+    repo: pykitops
+    name: pykitops
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from kitops-ml/kitops
+  - owner: kmesh-net
+    repo: orion
+    name: orion
+    category: service-mesh
+    project_status: sandbox
+    discovered_by: org-scan from kmesh-net/kmesh
+  - owner: kmesh-net
+    repo: website
+    name: website
+    category: service-mesh
+    project_status: sandbox
+    discovered_by: org-scan from kmesh-net/kmesh
   - owner: knative
     repo: client
     name: client
@@ -2331,8 +4241,32 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from konveyor/operator
   - owner: konveyor
+    repo: c-sharp-analyzer-provider
+    name: c-sharp-analyzer-provider
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from konveyor/operator
+  - owner: konveyor
     repo: controller
     name: controller
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from konveyor/operator
+  - owner: konveyor
+    repo: editor-extensions
+    name: editor-extensions
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from konveyor/operator
+  - owner: konveyor
+    repo: java-analyzer-bundle
+    name: java-analyzer-bundle
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from konveyor/operator
+  - owner: konveyor
+    repo: kai
+    name: kai
     category: build
     project_status: sandbox
     discovered_by: org-scan from konveyor/operator
@@ -2349,6 +4283,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from konveyor/operator
   - owner: konveyor
+    repo: maven-search-index
+    name: maven-search-index
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from konveyor/operator
+  - owner: konveyor
     repo: move2kube
     name: move2kube
     category: build
@@ -2357,6 +4297,60 @@ repositories:
   - owner: konveyor
     repo: move2kube-api
     name: move2kube-api
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from konveyor/operator
+  - owner: konveyor
+    repo: move2kube-create-release-draft
+    name: move2kube-create-release-draft
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from konveyor/operator
+  - owner: konveyor
+    repo: move2kube-get-env-info
+    name: move2kube-get-env-info
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from konveyor/operator
+  - owner: konveyor
+    repo: move2kube-get-release-info
+    name: move2kube-get-release-info
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from konveyor/operator
+  - owner: konveyor
+    repo: move2kube-operator
+    name: move2kube-operator
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from konveyor/operator
+  - owner: konveyor
+    repo: move2kube-tests
+    name: move2kube-tests
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from konveyor/operator
+  - owner: konveyor
+    repo: move2kube-ui
+    name: move2kube-ui
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from konveyor/operator
+  - owner: konveyor
+    repo: static-report
+    name: static-report
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from konveyor/operator
+  - owner: konveyor
+    repo: tackle-data-gravity-insights
+    name: tackle-data-gravity-insights
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from konveyor/operator
+  - owner: konveyor
+    repo: tackle-diva
+    name: tackle-diva
     category: build
     project_status: sandbox
     discovered_by: org-scan from konveyor/operator
@@ -2390,6 +4384,12 @@ repositories:
     category: build
     project_status: sandbox
     discovered_by: org-scan from konveyor/operator
+  - owner: konveyor
+    repo: tackle2-ui
+    name: tackle2-ui
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from konveyor/operator
   - owner: koordinator-sh
     repo: apis
     name: apis
@@ -2408,6 +4408,48 @@ repositories:
     category: orchestration
     project_status: sandbox
     discovered_by: org-scan from koordinator-sh/koordinator
+  - owner: kptdev
+    repo: krm-functions-catalog
+    name: krm-functions-catalog
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from kptdev/kpt
+  - owner: kptdev
+    repo: krm-functions-sdk
+    name: krm-functions-sdk
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from kptdev/kpt
+  - owner: kptdev
+    repo: porch
+    name: porch
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from kptdev/kpt
+  - owner: krkn-chaos
+    repo: cerberus
+    name: cerberus
+    category: chaos-engineering
+    project_status: sandbox
+    discovered_by: org-scan from krkn-chaos/krkn
+  - owner: krkn-chaos
+    repo: krkn-ai
+    name: krkn-ai
+    category: chaos-engineering
+    project_status: sandbox
+    discovered_by: org-scan from krkn-chaos/krkn
+  - owner: krkn-chaos
+    repo: krkn-dashboard
+    name: krkn-dashboard
+    category: chaos-engineering
+    project_status: sandbox
+    discovered_by: org-scan from krkn-chaos/krkn
+  - owner: krkn-chaos
+    repo: krkn-lib
+    name: krkn-lib
+    category: chaos-engineering
+    project_status: sandbox
+    discovered_by: org-scan from krkn-chaos/krkn
   - owner: krkn-chaos
     repo: krkn-operator
     name: krkn-operator
@@ -2417,6 +4459,12 @@ repositories:
   - owner: krkn-chaos
     repo: krkn-operator-acm
     name: krkn-operator-acm
+    category: chaos-engineering
+    project_status: sandbox
+    discovered_by: org-scan from krkn-chaos/krkn
+  - owner: krkn-chaos
+    repo: krkn-operator-console
+    name: krkn-operator-console
     category: chaos-engineering
     project_status: sandbox
     discovered_by: org-scan from krkn-chaos/krkn
@@ -2436,6 +4484,12 @@ repositories:
     repo: modelmesh-serving
     name: modelmesh-serving
     category: ml-platform
+    project_status: incubating
+    discovered_by: org-scan from kserve/kserve
+  - owner: kserve
+    repo: models-web-app
+    name: models-web-app
+    category: other
     project_status: incubating
     discovered_by: org-scan from kserve/kserve
   - owner: kserve
@@ -2475,8 +4529,26 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from kuadrant/kuadrant-operator
   - owner: kuadrant
+    repo: kuadrant-backstage-plugin
+    name: kuadrant-backstage-plugin
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from kuadrant/kuadrant-operator
+  - owner: kuadrant
+    repo: kuadrant-console-plugin
+    name: kuadrant-console-plugin
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from kuadrant/kuadrant-operator
+  - owner: kuadrant
     repo: kuadrantctl
     name: kuadrantctl
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from kuadrant/kuadrant-operator
+  - owner: kuadrant
+    repo: limitador
+    name: limitador
     category: other
     project_status: sandbox
     discovered_by: org-scan from kuadrant/kuadrant-operator
@@ -2489,6 +4561,30 @@ repositories:
   - owner: kuadrant
     repo: mcp-gateway
     name: mcp-gateway
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from kuadrant/kuadrant-operator
+  - owner: kuadrant
+    repo: testsuite
+    name: testsuite
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from kuadrant/kuadrant-operator
+  - owner: kuadrant
+    repo: testsuite-pipelines
+    name: testsuite-pipelines
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from kuadrant/kuadrant-operator
+  - owner: kuadrant
+    repo: testsuite-rptool
+    name: testsuite-rptool
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from kuadrant/kuadrant-operator
+  - owner: kuadrant
+    repo: wasm-shim
+    name: wasm-shim
     category: other
     project_status: sandbox
     discovered_by: org-scan from kuadrant/kuadrant-operator
@@ -2516,6 +4612,36 @@ repositories:
     category: observability
     project_status: sandbox
     discovered_by: org-scan from kube-logging/logging-operator
+  - owner: kube-rs
+    repo: controller-rs
+    name: controller-rs
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from kube-rs/kube
+  - owner: kube-rs
+    repo: envtest
+    name: envtest
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from kube-rs/kube
+  - owner: kube-rs
+    repo: gateway-api-rs
+    name: gateway-api-rs
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from kube-rs/kube
+  - owner: kube-rs
+    repo: k8s-pb
+    name: k8s-pb
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from kube-rs/kube
+  - owner: kube-rs
+    repo: kopium
+    name: kopium
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from kube-rs/kube
   - owner: kube-vip
     repo: kube-vip-cloud-provider
     name: kube-vip-cloud-provider
@@ -2528,9 +4654,21 @@ repositories:
     category: networking
     project_status: sandbox
     discovered_by: org-scan from kube-vip/kube-vip
+  - owner: kubean-io
+    repo: kube-node-tuning
+    name: kube-node-tuning
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from kubean-io/kubean
   - owner: kubearmor
     repo: grafana-datasource
     name: grafana-datasource
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from kubearmor/kubearmor
+  - owner: kubearmor
+    repo: k8tls
+    name: k8tls
     category: security
     project_status: sandbox
     discovered_by: org-scan from kubearmor/kubearmor
@@ -2552,9 +4690,21 @@ repositories:
     category: security
     project_status: sandbox
     discovered_by: org-scan from kubearmor/kubearmor
+  - owner: kubeclipper
+    repo: console
+    name: console
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from kubeclipper/kubeclipper
   - owner: kubeedge
     repo: beehive
     name: beehive
+    category: automation
+    project_status: graduated
+    discovered_by: org-scan from kubeedge/kubeedge
+  - owner: kubeedge
+    repo: ianvs
+    name: ianvs
     category: automation
     project_status: graduated
     discovered_by: org-scan from kubeedge/kubeedge
@@ -2570,6 +4720,12 @@ repositories:
     category: automation
     project_status: graduated
     discovered_by: org-scan from kubeedge/kubeedge
+  - owner: kubefleet-dev
+    repo: kubefleet-headlamp-plugin
+    name: kubefleet-headlamp-plugin
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from kubefleet-dev/kubefleet
   - owner: kubeflow
     repo: arena
     name: arena
@@ -2583,8 +4739,20 @@ repositories:
     project_status: incubating
     discovered_by: org-scan from kubeflow/kubeflow
   - owner: kubeflow
+    repo: kale
+    name: kale
+    category: orchestration
+    project_status: incubating
+    discovered_by: org-scan from kubeflow/kubeflow
+  - owner: kubeflow
     repo: katib
     name: katib
+    category: orchestration
+    project_status: incubating
+    discovered_by: org-scan from kubeflow/kubeflow
+  - owner: kubeflow
+    repo: mcp-apache-spark-history-server
+    name: mcp-apache-spark-history-server
     category: orchestration
     project_status: incubating
     discovered_by: org-scan from kubeflow/kubeflow
@@ -2609,6 +4777,12 @@ repositories:
   - owner: kubeflow
     repo: pipelines
     name: pipelines
+    category: orchestration
+    project_status: incubating
+    discovered_by: org-scan from kubeflow/kubeflow
+  - owner: kubeflow
+    repo: sdk
+    name: sdk
     category: orchestration
     project_status: incubating
     discovered_by: org-scan from kubeflow/kubeflow
@@ -3165,6 +5339,18 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from kubernetes-sigs/headlamp
   - owner: kubernetes-sigs
+    repo: image-builder
+    name: image-builder
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kubernetes-sigs/headlamp
+  - owner: kubernetes-sigs
+    repo: inference-perf
+    name: inference-perf
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kubernetes-sigs/headlamp
+  - owner: kubernetes-sigs
     repo: ingress2gateway
     name: ingress2gateway
     category: observability
@@ -3243,6 +5429,18 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from kubernetes-sigs/headlamp
   - owner: kubernetes-sigs
+    repo: kube-scheduler-simulator
+    name: kube-scheduler-simulator
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kubernetes-sigs/headlamp
+  - owner: kubernetes-sigs
+    repo: kube-scheduler-wasm-extension
+    name: kube-scheduler-wasm-extension
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kubernetes-sigs/headlamp
+  - owner: kubernetes-sigs
     repo: kube-storage-version-migrator
     name: kube-storage-version-migrator
     category: observability
@@ -3251,6 +5449,12 @@ repositories:
   - owner: kubernetes-sigs
     repo: kubebuilder
     name: kubebuilder
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kubernetes-sigs/headlamp
+  - owner: kubernetes-sigs
+    repo: kubebuilder-release-tools
+    name: kubebuilder-release-tools
     category: observability
     project_status: sandbox
     discovered_by: org-scan from kubernetes-sigs/headlamp
@@ -3267,8 +5471,20 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from kubernetes-sigs/headlamp
   - owner: kubernetes-sigs
+    repo: kubespray
+    name: kubespray
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kubernetes-sigs/headlamp
+  - owner: kubernetes-sigs
     repo: kueue
     name: kueue
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kubernetes-sigs/headlamp
+  - owner: kubernetes-sigs
+    repo: kustomize
+    name: kustomize
     category: observability
     project_status: sandbox
     discovered_by: org-scan from kubernetes-sigs/headlamp
@@ -3453,6 +5669,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from kubernetes-sigs/headlamp
   - owner: kubernetes-sigs
+    repo: sig-windows-dev-tools
+    name: sig-windows-dev-tools
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kubernetes-sigs/headlamp
+  - owner: kubernetes-sigs
     repo: structured-merge-diff
     name: structured-merge-diff
     category: observability
@@ -3495,8 +5717,26 @@ repositories:
     project_status: incubating
     discovered_by: org-scan from kubescape/kubescape
   - owner: kubescape
+    repo: cel-admission-library
+    name: cel-admission-library
+    category: security
+    project_status: incubating
+    discovered_by: org-scan from kubescape/kubescape
+  - owner: kubescape
+    repo: github-action
+    name: github-action
+    category: security
+    project_status: incubating
+    discovered_by: org-scan from kubescape/kubescape
+  - owner: kubescape
     repo: go-git-url
     name: go-git-url
+    category: security
+    project_status: incubating
+    discovered_by: org-scan from kubescape/kubescape
+  - owner: kubescape
+    repo: headlamp-plugin
+    name: headlamp-plugin
     category: security
     project_status: incubating
     discovered_by: org-scan from kubescape/kubescape
@@ -3531,6 +5771,12 @@ repositories:
     project_status: incubating
     discovered_by: org-scan from kubescape/kubescape
   - owner: kubescape
+    repo: lens-extension
+    name: lens-extension
+    category: security
+    project_status: incubating
+    discovered_by: org-scan from kubescape/kubescape
+  - owner: kubescape
     repo: messaging
     name: messaging
     category: security
@@ -3539,6 +5785,12 @@ repositories:
   - owner: kubescape
     repo: node-agent
     name: node-agent
+    category: security
+    project_status: incubating
+    discovered_by: org-scan from kubescape/kubescape
+  - owner: kubescape
+    repo: node-kubescape
+    name: node-kubescape
     category: security
     project_status: incubating
     discovered_by: org-scan from kubescape/kubescape
@@ -3581,6 +5833,12 @@ repositories:
   - owner: kubescape
     repo: synchronizer
     name: synchronizer
+    category: security
+    project_status: incubating
+    discovered_by: org-scan from kubescape/kubescape
+  - owner: kubescape
+    repo: vscode-kubescape
+    name: vscode-kubescape
     category: security
     project_status: incubating
     discovered_by: org-scan from kubescape/kubescape
@@ -3699,6 +5957,18 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from kubeslice/kubeslice
   - owner: kubeslice
+    repo: wait-for-it
+    name: wait-for-it
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from kubeslice/kubeslice
+  - owner: kubeslice
+    repo: wireguard
+    name: wireguard
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from kubeslice/kubeslice
+  - owner: kubeslice
     repo: worker-operator
     name: worker-operator
     category: orchestration
@@ -3735,8 +6005,26 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from kubestellar/kubestellar
   - owner: kubevela
+    repo: cloudshell
+    name: cloudshell
+    category: build
+    project_status: incubating
+    discovered_by: org-scan from kubevela/kubevela
+  - owner: kubevela
     repo: kube-trigger
     name: kube-trigger
+    category: build
+    project_status: incubating
+    discovered_by: org-scan from kubevela/kubevela
+  - owner: kubevela
+    repo: kubevela-github-actions
+    name: kubevela-github-actions
+    category: build
+    project_status: incubating
+    discovered_by: org-scan from kubevela/kubevela
+  - owner: kubevela
+    repo: kubevela.github.io
+    name: kubevela.github.io
     category: build
     project_status: incubating
     discovered_by: org-scan from kubevela/kubevela
@@ -3795,6 +6083,12 @@ repositories:
     project_status: incubating
     discovered_by: org-scan from kubevirt/kubevirt
   - owner: kubevirt
+    repo: client-python
+    name: client-python
+    category: build
+    project_status: incubating
+    discovered_by: org-scan from kubevirt/kubevirt
+  - owner: kubevirt
     repo: cloud-provider-kubevirt
     name: cloud-provider-kubevirt
     category: build
@@ -3803,6 +6097,12 @@ repositories:
   - owner: kubevirt
     repo: cluster-network-addons-operator
     name: cluster-network-addons-operator
+    category: build
+    project_status: incubating
+    discovered_by: org-scan from kubevirt/kubevirt
+  - owner: kubevirt
+    repo: common-instancetypes
+    name: common-instancetypes
     category: build
     project_status: incubating
     discovered_by: org-scan from kubevirt/kubevirt
@@ -3897,6 +6197,18 @@ repositories:
     project_status: incubating
     discovered_by: org-scan from kubevirt/kubevirt
   - owner: kubevirt
+    repo: kubevirt.core
+    name: kubevirt.core
+    category: build
+    project_status: incubating
+    discovered_by: org-scan from kubevirt/kubevirt
+  - owner: kubevirt
+    repo: kubevirtci
+    name: kubevirtci
+    category: build
+    project_status: incubating
+    discovered_by: org-scan from kubevirt/kubevirt
+  - owner: kubevirt
     repo: macvtap-cni
     name: macvtap-cni
     category: build
@@ -3911,6 +6223,12 @@ repositories:
   - owner: kubevirt
     repo: monitoring
     name: monitoring
+    category: build
+    project_status: incubating
+    discovered_by: org-scan from kubevirt/kubevirt
+  - owner: kubevirt
+    repo: must-gather
+    name: must-gather
     category: build
     project_status: incubating
     discovered_by: org-scan from kubevirt/kubevirt
@@ -3957,8 +6275,32 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from kubewarden/kubewarden-controller
   - owner: kubewarden
+    repo: helm-charts
+    name: helm-charts
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from kubewarden/kubewarden-controller
+  - owner: kubewarden
+    repo: policies
+    name: policies
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from kubewarden/kubewarden-controller
+  - owner: kubewarden
     repo: policy-sdk-go
     name: policy-sdk-go
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from kubewarden/kubewarden-controller
+  - owner: kubewarden
+    repo: policy-sdk-js
+    name: policy-sdk-js
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from kubewarden/kubewarden-controller
+  - owner: kubewarden
+    repo: policy-sdk-rust
+    name: policy-sdk-rust
     category: security
     project_status: sandbox
     discovered_by: org-scan from kubewarden/kubewarden-controller
@@ -3995,6 +6337,12 @@ repositories:
   - owner: kumahq
     repo: coredns-builds
     name: coredns-builds
+    category: service-mesh
+    project_status: sandbox
+    discovered_by: org-scan from kumahq/kuma
+  - owner: kumahq
+    repo: envoy-builds
+    name: envoy-builds
     category: service-mesh
     project_status: sandbox
     discovered_by: org-scan from kumahq/kuma
@@ -4041,6 +6389,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from KusionStack/kusion
   - owner: kusionstack
+    repo: kusion-actions
+    name: kusion-actions
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from KusionStack/kusion
+  - owner: kusionstack
     repo: kusion-api-go
     name: kusion-api-go
     category: automation
@@ -4071,6 +6425,12 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from kyverno/kyverno
   - owner: kyverno
+    repo: backstage-policy-reporter-plugin
+    name: backstage-policy-reporter-plugin
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from kyverno/kyverno
+  - owner: kyverno
     repo: chainsaw
     name: chainsaw
     category: security
@@ -4089,6 +6449,12 @@ repositories:
     project_status: incubating
     discovered_by: org-scan from kyverno/kyverno
   - owner: kyverno
+    repo: playground
+    name: playground
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from kyverno/kyverno
+  - owner: kyverno
     repo: policy-reporter
     name: policy-reporter
     category: security
@@ -4101,14 +6467,38 @@ repositories:
     project_status: incubating
     discovered_by: org-scan from kyverno/kyverno
   - owner: kyverno
+    repo: policy-reporter-plugins
+    name: policy-reporter-plugins
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from kyverno/kyverno
+  - owner: kyverno
+    repo: policy-reporter-ui
+    name: policy-reporter-ui
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from kyverno/kyverno
+  - owner: kyverno
     repo: reports-server
     name: reports-server
     category: security
     project_status: incubating
     discovered_by: org-scan from kyverno/kyverno
   - owner: lima-vm
+    repo: alpine-lima
+    name: alpine-lima
+    category: container-runtime
+    project_status: incubating
+    discovered_by: org-scan from lima-vm/lima
+  - owner: lima-vm
     repo: go-qcow2reader
     name: go-qcow2reader
+    category: container-runtime
+    project_status: incubating
+    discovered_by: org-scan from lima-vm/lima
+  - owner: lima-vm
+    repo: socket_vmnet
+    name: socket_vmnet
     category: container-runtime
     project_status: incubating
     discovered_by: org-scan from lima-vm/lima
@@ -4118,6 +6508,48 @@ repositories:
     category: container-runtime
     project_status: incubating
     discovered_by: org-scan from lima-vm/lima
+  - owner: linkerd
+    repo: dev
+    name: dev
+    category: service-mesh
+    project_status: graduated
+    discovered_by: org-scan from linkerd/linkerd2
+  - owner: linkerd
+    repo: drain-rs
+    name: drain-rs
+    category: service-mesh
+    project_status: graduated
+    discovered_by: org-scan from linkerd/linkerd2
+  - owner: linkerd
+    repo: k8s-gateway-api-rs
+    name: k8s-gateway-api-rs
+    category: service-mesh
+    project_status: graduated
+    discovered_by: org-scan from linkerd/linkerd2
+  - owner: linkerd
+    repo: linkerd-await
+    name: linkerd-await
+    category: service-mesh
+    project_status: graduated
+    discovered_by: org-scan from linkerd/linkerd2
+  - owner: linkerd
+    repo: linkerd-extension-init
+    name: linkerd-extension-init
+    category: service-mesh
+    project_status: graduated
+    discovered_by: org-scan from linkerd/linkerd2
+  - owner: linkerd
+    repo: linkerd-viz
+    name: linkerd-viz
+    category: service-mesh
+    project_status: graduated
+    discovered_by: org-scan from linkerd/linkerd2
+  - owner: linkerd
+    repo: linkerd2-proxy
+    name: linkerd2-proxy
+    category: service-mesh
+    project_status: graduated
+    discovered_by: org-scan from linkerd/linkerd2
   - owner: linkerd
     repo: linkerd2-proxy-api
     name: linkerd2-proxy-api
@@ -4130,9 +6562,27 @@ repositories:
     category: service-mesh
     project_status: graduated
     discovered_by: org-scan from linkerd/linkerd2
+  - owner: linkerd
+    repo: namerctl
+    name: namerctl
+    category: service-mesh
+    project_status: graduated
+    discovered_by: org-scan from linkerd/linkerd2
   - owner: litmuschaos
     repo: admission-controllers
     name: admission-controllers
+    category: chaos-engineering
+    project_status: incubating
+    discovered_by: org-scan from litmuschaos/litmus
+  - owner: litmuschaos
+    repo: backstage-plugin
+    name: backstage-plugin
+    category: chaos-engineering
+    project_status: incubating
+    discovered_by: org-scan from litmuschaos/litmus
+  - owner: litmuschaos
+    repo: chaos-charts
+    name: chaos-charts
     category: chaos-engineering
     project_status: incubating
     discovered_by: org-scan from litmuschaos/litmus
@@ -4167,8 +6617,32 @@ repositories:
     project_status: incubating
     discovered_by: org-scan from litmuschaos/litmus
   - owner: litmuschaos
+    repo: github-chaos-actions
+    name: github-chaos-actions
+    category: chaos-engineering
+    project_status: incubating
+    discovered_by: org-scan from litmuschaos/litmus
+  - owner: litmuschaos
+    repo: litmus-ansible
+    name: litmus-ansible
+    category: chaos-engineering
+    project_status: incubating
+    discovered_by: org-scan from litmuschaos/litmus
+  - owner: litmuschaos
+    repo: litmus-docs
+    name: litmus-docs
+    category: chaos-engineering
+    project_status: incubating
+    discovered_by: org-scan from litmuschaos/litmus
+  - owner: litmuschaos
     repo: litmus-go
     name: litmus-go
+    category: chaos-engineering
+    project_status: incubating
+    discovered_by: org-scan from litmuschaos/litmus
+  - owner: litmuschaos
+    repo: litmus-python
+    name: litmus-python
     category: chaos-engineering
     project_status: incubating
     discovered_by: org-scan from litmuschaos/litmus
@@ -4199,6 +6673,12 @@ repositories:
   - owner: longhorn
     repo: cli
     name: cli
+    category: storage
+    project_status: incubating
+    discovered_by: org-scan from longhorn/longhorn
+  - owner: longhorn
+    repo: kbench
+    name: kbench
     category: storage
     project_status: incubating
     discovered_by: org-scan from longhorn/longhorn
@@ -4241,6 +6721,12 @@ repositories:
   - owner: loxilb-io
     repo: loxicmd
     name: loxicmd
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from loxilb-io/loxilb
+  - owner: loxilb-io
+    repo: loxilb-ebpf
+    name: loxilb-ebpf
     category: other
     project_status: sandbox
     discovered_by: org-scan from loxilb-io/loxilb
@@ -4299,6 +6785,18 @@ repositories:
     project_status: incubating
     discovered_by: org-scan from metal3-io/baremetal-operator
   - owner: metal3-io
+    repo: ironic-image
+    name: ironic-image
+    category: automation
+    project_status: incubating
+    discovered_by: org-scan from metal3-io/baremetal-operator
+  - owner: metal3-io
+    repo: ironic-ipa-downloader
+    name: ironic-ipa-downloader
+    category: automation
+    project_status: incubating
+    discovered_by: org-scan from metal3-io/baremetal-operator
+  - owner: metal3-io
     repo: ironic-standalone-operator
     name: ironic-standalone-operator
     category: automation
@@ -4317,10 +6815,28 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from metallb/metallb
   - owner: microcks
+    repo: hub.microcks.io
+    name: hub.microcks.io
+    category: build
+    project_status: incubating
+    discovered_by: org-scan from microcks/microcks
+  - owner: microcks
+    repo: microcks-backstage-provider
+    name: microcks-backstage-provider
+    category: build
+    project_status: incubating
+    discovered_by: org-scan from microcks/microcks
+  - owner: microcks
     repo: microcks-cli
     name: microcks-cli
     category: build
     project_status: sandbox
+    discovered_by: org-scan from microcks/microcks
+  - owner: microcks
+    repo: microcks-docker-desktop-extension
+    name: microcks-docker-desktop-extension
+    category: build
+    project_status: incubating
     discovered_by: org-scan from microcks/microcks
   - owner: microcks
     repo: microcks-go-client
@@ -4329,10 +6845,58 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from microcks/microcks
   - owner: microcks
+    repo: microcks-java-client
+    name: microcks-java-client
+    category: build
+    project_status: incubating
+    discovered_by: org-scan from microcks/microcks
+  - owner: microcks
+    repo: microcks-jenkins-plugin
+    name: microcks-jenkins-plugin
+    category: build
+    project_status: incubating
+    discovered_by: org-scan from microcks/microcks
+  - owner: microcks
+    repo: microcks-operator
+    name: microcks-operator
+    category: build
+    project_status: incubating
+    discovered_by: org-scan from microcks/microcks
+  - owner: microcks
+    repo: microcks-postman-runtime
+    name: microcks-postman-runtime
+    category: build
+    project_status: incubating
+    discovered_by: org-scan from microcks/microcks
+  - owner: microcks
+    repo: microcks-quarkus
+    name: microcks-quarkus
+    category: build
+    project_status: incubating
+    discovered_by: org-scan from microcks/microcks
+  - owner: microcks
+    repo: microcks-spectral-ruleset
+    name: microcks-spectral-ruleset
+    category: build
+    project_status: incubating
+    discovered_by: org-scan from microcks/microcks
+  - owner: microcks
     repo: microcks-testcontainers-go
     name: microcks-testcontainers-go
     category: build
     project_status: sandbox
+    discovered_by: org-scan from microcks/microcks
+  - owner: microcks
+    repo: microcks-testcontainers-java
+    name: microcks-testcontainers-java
+    category: build
+    project_status: incubating
+    discovered_by: org-scan from microcks/microcks
+  - owner: microcks
+    repo: microcks-testcontainers-node
+    name: microcks-testcontainers-node
+    category: build
+    project_status: incubating
     discovered_by: org-scan from microcks/microcks
   - owner: modelpack
     repo: modctl
@@ -4359,6 +6923,12 @@ repositories:
     project_status: incubating
     discovered_by: org-scan from nats-io/nats-server
   - owner: nats-io
+    repo: jwt.js
+    name: jwt.js
+    category: messaging
+    project_status: incubating
+    discovered_by: org-scan from nats-io/nats-server
+  - owner: nats-io
     repo: nack
     name: nack
     category: messaging
@@ -4371,14 +6941,32 @@ repositories:
     project_status: incubating
     discovered_by: org-scan from nats-io/nats-server
   - owner: nats-io
+    repo: nats-box
+    name: nats-box
+    category: messaging
+    project_status: incubating
+    discovered_by: org-scan from nats-io/nats-server
+  - owner: nats-io
     repo: nats-kafka
     name: nats-kafka
     category: messaging
     project_status: incubating
     discovered_by: org-scan from nats-io/nats-server
   - owner: nats-io
+    repo: nats-pure.rb
+    name: nats-pure.rb
+    category: messaging
+    project_status: incubating
+    discovered_by: org-scan from nats-io/nats-server
+  - owner: nats-io
     repo: nats-rest-config-proxy
     name: nats-rest-config-proxy
+    category: messaging
+    project_status: incubating
+    discovered_by: org-scan from nats-io/nats-server
+  - owner: nats-io
+    repo: nats-site
+    name: nats-site
     category: messaging
     project_status: incubating
     discovered_by: org-scan from nats-io/nats-server
@@ -4395,8 +6983,38 @@ repositories:
     project_status: incubating
     discovered_by: org-scan from nats-io/nats-server
   - owner: nats-io
+    repo: nats.deno
+    name: nats.deno
+    category: messaging
+    project_status: incubating
+    discovered_by: org-scan from nats-io/nats-server
+  - owner: nats-io
     repo: nats.go
     name: nats.go
+    category: messaging
+    project_status: incubating
+    discovered_by: org-scan from nats-io/nats-server
+  - owner: nats-io
+    repo: nats.js
+    name: nats.js
+    category: messaging
+    project_status: incubating
+    discovered_by: org-scan from nats-io/nats-server
+  - owner: nats-io
+    repo: nats.py
+    name: nats.py
+    category: messaging
+    project_status: incubating
+    discovered_by: org-scan from nats-io/nats-server
+  - owner: nats-io
+    repo: nats.rb
+    name: nats.rb
+    category: messaging
+    project_status: incubating
+    discovered_by: org-scan from nats-io/nats-server
+  - owner: nats-io
+    repo: nats.rs
+    name: nats.rs
     category: messaging
     project_status: incubating
     discovered_by: org-scan from nats-io/nats-server
@@ -4413,8 +7031,20 @@ repositories:
     project_status: incubating
     discovered_by: org-scan from nats-io/nats-server
   - owner: nats-io
+    repo: nkeys.js
+    name: nkeys.js
+    category: messaging
+    project_status: incubating
+    discovered_by: org-scan from nats-io/nats-server
+  - owner: nats-io
     repo: nkeys.net
     name: nkeys.net
+    category: messaging
+    project_status: incubating
+    discovered_by: org-scan from nats-io/nats-server
+  - owner: nats-io
+    repo: nkeys.py
+    name: nkeys.py
     category: messaging
     project_status: incubating
     discovered_by: org-scan from nats-io/nats-server
@@ -4431,8 +7061,20 @@ repositories:
     project_status: incubating
     discovered_by: org-scan from nats-io/nats-server
   - owner: nats-io
+    repo: nuid.js
+    name: nuid.js
+    category: messaging
+    project_status: incubating
+    discovered_by: org-scan from nats-io/nats-server
+  - owner: nats-io
     repo: prometheus-nats-exporter
     name: prometheus-nats-exporter
+    category: messaging
+    project_status: incubating
+    discovered_by: org-scan from nats-io/nats-server
+  - owner: nats-io
+    repo: spring-nats
+    name: spring-nats
     category: messaging
     project_status: incubating
     discovered_by: org-scan from nats-io/nats-server
@@ -4463,6 +7105,12 @@ repositories:
   - owner: networkservicemesh
     repo: cmd-dashboard-backend
     name: cmd-dashboard-backend
+    category: networking
+    project_status: sandbox
+    discovered_by: org-scan from networkservicemesh/api
+  - owner: networkservicemesh
+    repo: cmd-dashboard-ui
+    name: cmd-dashboard-ui
     category: networking
     project_status: sandbox
     discovered_by: org-scan from networkservicemesh/api
@@ -4719,6 +7367,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from nmstate/nmstate
   - owner: notaryproject
+    repo: notation-action
+    name: notation-action
+    category: security
+    project_status: incubating
+    discovered_by: org-scan from notaryproject/notation
+  - owner: notaryproject
     repo: notation-core-go
     name: notation-core-go
     category: security
@@ -4845,8 +7499,26 @@ repositories:
     project_status: incubating
     discovered_by: org-scan from open-feature/spec
   - owner: open-feature
+    repo: flagd
+    name: flagd
+    category: other
+    project_status: incubating
+    discovered_by: org-scan from open-feature/spec
+  - owner: open-feature
+    repo: flagd-ofrep-cf-worker
+    name: flagd-ofrep-cf-worker
+    category: other
+    project_status: incubating
+    discovered_by: org-scan from open-feature/spec
+  - owner: open-feature
     repo: flagd-schemas
     name: flagd-schemas
+    category: other
+    project_status: incubating
+    discovered_by: org-scan from open-feature/spec
+  - owner: open-feature
+    repo: flagd-testbed
+    name: flagd-testbed
     category: other
     project_status: incubating
     discovered_by: org-scan from open-feature/spec
@@ -4857,8 +7529,92 @@ repositories:
     project_status: incubating
     discovered_by: org-scan from open-feature/spec
   - owner: open-feature
+    repo: go-sdk-contrib
+    name: go-sdk-contrib
+    category: other
+    project_status: incubating
+    discovered_by: org-scan from open-feature/spec
+  - owner: open-feature
+    repo: java-sdk
+    name: java-sdk
+    category: other
+    project_status: incubating
+    discovered_by: org-scan from open-feature/spec
+  - owner: open-feature
+    repo: java-sdk-contrib
+    name: java-sdk-contrib
+    category: other
+    project_status: incubating
+    discovered_by: org-scan from open-feature/spec
+  - owner: open-feature
+    repo: js-sdk
+    name: js-sdk
+    category: other
+    project_status: incubating
+    discovered_by: org-scan from open-feature/spec
+  - owner: open-feature
+    repo: js-sdk-contrib
+    name: js-sdk-contrib
+    category: other
+    project_status: incubating
+    discovered_by: org-scan from open-feature/spec
+  - owner: open-feature
+    repo: mcp
+    name: mcp
+    category: other
+    project_status: incubating
+    discovered_by: org-scan from open-feature/spec
+  - owner: open-feature
     repo: open-feature-operator
     name: open-feature-operator
+    category: other
+    project_status: incubating
+    discovered_by: org-scan from open-feature/spec
+  - owner: open-feature
+    repo: playground
+    name: playground
+    category: other
+    project_status: incubating
+    discovered_by: org-scan from open-feature/spec
+  - owner: open-feature
+    repo: python-sdk
+    name: python-sdk
+    category: other
+    project_status: incubating
+    discovered_by: org-scan from open-feature/spec
+  - owner: open-feature
+    repo: python-sdk-contrib
+    name: python-sdk-contrib
+    category: other
+    project_status: incubating
+    discovered_by: org-scan from open-feature/spec
+  - owner: open-feature
+    repo: ruby-sdk
+    name: ruby-sdk
+    category: other
+    project_status: incubating
+    discovered_by: org-scan from open-feature/spec
+  - owner: open-feature
+    repo: rust-sdk
+    name: rust-sdk
+    category: other
+    project_status: incubating
+    discovered_by: org-scan from open-feature/spec
+  - owner: open-feature
+    repo: rust-sdk-contrib
+    name: rust-sdk-contrib
+    category: other
+    project_status: incubating
+    discovered_by: org-scan from open-feature/spec
+  - owner: open-feature
+    repo: slidev-open-feature
+    name: slidev-open-feature
+    category: other
+    project_status: incubating
+    discovered_by: org-scan from open-feature/spec
+  - owner: open-feature
+    repo: toggle-shop
+    name: toggle-shop
     category: other
     project_status: incubating
     discovered_by: org-scan from open-feature/spec
@@ -4887,6 +7643,12 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from open-policy-agent/opa
   - owner: open-policy-agent
+    repo: frameworks
+    name: frameworks
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from open-policy-agent/opa
+  - owner: open-policy-agent
     repo: gatekeeper
     name: gatekeeper
     category: security
@@ -4895,6 +7657,12 @@ repositories:
   - owner: open-policy-agent
     repo: kube-mgmt
     name: kube-mgmt
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from open-policy-agent/opa
+  - owner: open-policy-agent
+    repo: npm-opa-wasm
+    name: npm-opa-wasm
     category: security
     project_status: graduated
     discovered_by: org-scan from open-policy-agent/opa
@@ -4917,8 +7685,38 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from open-policy-agent/opa
   - owner: open-policy-agent
+    repo: opa-typescript
+    name: opa-typescript
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from open-policy-agent/opa
+  - owner: open-policy-agent
     repo: regal
     name: regal
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from open-policy-agent/opa
+  - owner: open-policy-agent
+    repo: setup-opa
+    name: setup-opa
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from open-policy-agent/opa
+  - owner: open-policy-agent
+    repo: setup-regal
+    name: setup-regal
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from open-policy-agent/opa
+  - owner: open-policy-agent
+    repo: swift-opa
+    name: swift-opa
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from open-policy-agent/opa
+  - owner: open-policy-agent
+    repo: vscode-opa
+    name: vscode-opa
     category: security
     project_status: graduated
     discovered_by: org-scan from open-policy-agent/opa
@@ -4927,6 +7725,18 @@ repositories:
     name: opamp-go
     category: observability
     project_status: incubating
+    discovered_by: org-scan from open-telemetry/community
+  - owner: open-telemetry
+    repo: opamp-spec
+    name: opamp-spec
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from open-telemetry/community
+  - owner: open-telemetry
+    repo: opentelemetry-browser
+    name: opentelemetry-browser
+    category: observability
+    project_status: graduated
     discovered_by: org-scan from open-telemetry/community
   - owner: open-telemetry
     repo: opentelemetry-collector
@@ -4945,6 +7755,18 @@ repositories:
     name: opentelemetry-collector-releases
     category: observability
     project_status: incubating
+    discovered_by: org-scan from open-telemetry/community
+  - owner: open-telemetry
+    repo: opentelemetry-configuration
+    name: opentelemetry-configuration
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from open-telemetry/community
+  - owner: open-telemetry
+    repo: opentelemetry-demo
+    name: opentelemetry-demo
+    category: observability
+    project_status: graduated
     discovered_by: org-scan from open-telemetry/community
   - owner: open-telemetry
     repo: opentelemetry-ebpf-instrumentation
@@ -4983,10 +7805,64 @@ repositories:
     project_status: incubating
     discovered_by: org-scan from open-telemetry/community
   - owner: open-telemetry
+    repo: opentelemetry-helm-charts
+    name: opentelemetry-helm-charts
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from open-telemetry/community
+  - owner: open-telemetry
+    repo: opentelemetry-injector
+    name: opentelemetry-injector
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from open-telemetry/community
+  - owner: open-telemetry
+    repo: opentelemetry-js
+    name: opentelemetry-js
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from open-telemetry/community
+  - owner: open-telemetry
+    repo: opentelemetry-js-contrib
+    name: opentelemetry-js-contrib
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from open-telemetry/community
+  - owner: open-telemetry
+    repo: opentelemetry-network
+    name: opentelemetry-network
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from open-telemetry/community
+  - owner: open-telemetry
     repo: opentelemetry-operator
     name: opentelemetry-operator
     category: observability
     project_status: incubating
+    discovered_by: org-scan from open-telemetry/community
+  - owner: open-telemetry
+    repo: opentelemetry-php
+    name: opentelemetry-php
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from open-telemetry/community
+  - owner: open-telemetry
+    repo: opentelemetry-php-contrib
+    name: opentelemetry-php-contrib
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from open-telemetry/community
+  - owner: open-telemetry
+    repo: opentelemetry-php-instrumentation
+    name: opentelemetry-php-instrumentation
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from open-telemetry/community
+  - owner: open-telemetry
+    repo: opentelemetry-proto
+    name: opentelemetry-proto
+    category: observability
+    project_status: graduated
     discovered_by: org-scan from open-telemetry/community
   - owner: open-telemetry
     repo: opentelemetry-proto-go
@@ -4994,9 +7870,99 @@ repositories:
     category: observability
     project_status: incubating
     discovered_by: org-scan from open-telemetry/community
+  - owner: open-telemetry
+    repo: opentelemetry-python
+    name: opentelemetry-python
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from open-telemetry/community
+  - owner: open-telemetry
+    repo: opentelemetry-python-contrib
+    name: opentelemetry-python-contrib
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from open-telemetry/community
+  - owner: open-telemetry
+    repo: opentelemetry-ruby
+    name: opentelemetry-ruby
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from open-telemetry/community
+  - owner: open-telemetry
+    repo: opentelemetry-ruby-contrib
+    name: opentelemetry-ruby-contrib
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from open-telemetry/community
+  - owner: open-telemetry
+    repo: opentelemetry-rust
+    name: opentelemetry-rust
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from open-telemetry/community
+  - owner: open-telemetry
+    repo: opentelemetry-rust-contrib
+    name: opentelemetry-rust-contrib
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from open-telemetry/community
+  - owner: open-telemetry
+    repo: opentelemetry-specification
+    name: opentelemetry-specification
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from open-telemetry/community
+  - owner: open-telemetry
+    repo: opentelemetry-swift
+    name: opentelemetry-swift
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from open-telemetry/community
+  - owner: open-telemetry
+    repo: opentelemetry-swift-core
+    name: opentelemetry-swift-core
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from open-telemetry/community
+  - owner: open-telemetry
+    repo: opentelemetry.io
+    name: opentelemetry.io
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from open-telemetry/community
+  - owner: open-telemetry
+    repo: otel-arrow
+    name: otel-arrow
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from open-telemetry/community
+  - owner: open-telemetry
+    repo: semantic-conventions
+    name: semantic-conventions
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from open-telemetry/community
+  - owner: open-telemetry
+    repo: weaver
+    name: weaver
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from open-telemetry/community
   - owner: opencost
     repo: bingen
     name: bingen
+    category: ci-cd
+    project_status: incubating
+    discovered_by: org-scan from opencost/opencost
+  - owner: opencost
+    repo: opencost-parquet-exporter
+    name: opencost-parquet-exporter
+    category: ci-cd
+    project_status: incubating
+    discovered_by: org-scan from opencost/opencost
+  - owner: opencost
+    repo: opencost-ui
+    name: opencost-ui
     category: ci-cd
     project_status: incubating
     discovered_by: org-scan from opencost/opencost
@@ -5019,14 +7985,44 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from openebs/openebs
   - owner: openebs
+    repo: linux-utils
+    name: linux-utils
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openebs/openebs
+  - owner: openebs
     repo: lvm-localpv
     name: lvm-localpv
     category: storage
     project_status: sandbox
     discovered_by: org-scan from openebs/openebs
   - owner: openebs
+    repo: mayastor
+    name: mayastor
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openebs/openebs
+  - owner: openebs
+    repo: mayastor-control-plane
+    name: mayastor-control-plane
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openebs/openebs
+  - owner: openebs
+    repo: mayastor-extensions
+    name: mayastor-extensions
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openebs/openebs
+  - owner: openebs
     repo: openebsctl
     name: openebsctl
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openebs/openebs
+  - owner: openebs
+    repo: rawfile-localpv
+    name: rawfile-localpv
     category: storage
     project_status: sandbox
     discovered_by: org-scan from openebs/openebs
@@ -5042,9 +8038,33 @@ repositories:
     category: storage
     project_status: sandbox
     discovered_by: org-scan from openebs/openebs
+  - owner: openeverest
+    repo: everest-doc
+    name: everest-doc
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openeverest/openeverest
+  - owner: openeverest
+    repo: plugin-mongodb-explorer
+    name: plugin-mongodb-explorer
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openeverest/openeverest
   - owner: openfga
     repo: cli
     name: cli
+    category: security
+    project_status: incubating
+    discovered_by: org-scan from openfga/openfga
+  - owner: openfga
+    repo: dotnet-sdk
+    name: dotnet-sdk
+    category: security
+    project_status: incubating
+    discovered_by: org-scan from openfga/openfga
+  - owner: openfga
+    repo: frontend-utils
+    name: frontend-utils
     category: security
     project_status: incubating
     discovered_by: org-scan from openfga/openfga
@@ -5055,8 +8075,38 @@ repositories:
     project_status: incubating
     discovered_by: org-scan from openfga/openfga
   - owner: openfga
+    repo: java-sdk
+    name: java-sdk
+    category: security
+    project_status: incubating
+    discovered_by: org-scan from openfga/openfga
+  - owner: openfga
+    repo: js-sdk
+    name: js-sdk
+    category: security
+    project_status: incubating
+    discovered_by: org-scan from openfga/openfga
+  - owner: openfga
+    repo: language
+    name: language
+    category: security
+    project_status: incubating
+    discovered_by: org-scan from openfga/openfga
+  - owner: openfga
+    repo: python-sdk
+    name: python-sdk
+    category: security
+    project_status: incubating
+    discovered_by: org-scan from openfga/openfga
+  - owner: openfga
     repo: terraform-provider-openfga
     name: terraform-provider-openfga
+    category: security
+    project_status: incubating
+    discovered_by: org-scan from openfga/openfga
+  - owner: openfga
+    repo: vscode-ext
+    name: vscode-ext
     category: security
     project_status: incubating
     discovered_by: org-scan from openfga/openfga
@@ -5079,6 +8129,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from OpenFunction/OpenFunction
   - owner: openfunction
+    repo: functions-framework-python
+    name: functions-framework-python
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from OpenFunction/OpenFunction
+  - owner: openfunction
     repo: revision-controller
     name: revision-controller
     category: orchestration
@@ -5093,6 +8149,12 @@ repositories:
   - owner: opengemini
     repo: gemix
     name: gemix
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openGemini/openGemini
+  - owner: opengemini
+    repo: grafana-opengemini-datasource
+    name: grafana-opengemini-datasource
     category: storage
     project_status: sandbox
     discovered_by: org-scan from openGemini/openGemini
@@ -5115,8 +8177,38 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from openGemini/openGemini
   - owner: opengemini
+    repo: openGemini-trino-plugin
+    name: openGemini-trino-plugin
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openGemini/openGemini
+  - owner: opengemini
     repo: opengemini-client-go
     name: opengemini-client-go
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openGemini/openGemini
+  - owner: opengemini
+    repo: opengemini-client-java
+    name: opengemini-client-java
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openGemini/openGemini
+  - owner: opengemini
+    repo: opengemini-client-python
+    name: opengemini-client-python
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openGemini/openGemini
+  - owner: opengemini
+    repo: opengemini-client-rust
+    name: opengemini-client-rust
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openGemini/openGemini
+  - owner: opengemini
+    repo: pr-title-checker
+    name: pr-title-checker
     category: storage
     project_status: sandbox
     discovered_by: org-scan from openGemini/openGemini
@@ -5129,6 +8221,12 @@ repositories:
   - owner: openkruise
     repo: agents-api
     name: agents-api
+    category: gitops
+    project_status: incubating
+    discovered_by: org-scan from openkruise/kruise
+  - owner: openkruise
+    repo: charts
+    name: charts
     category: gitops
     project_status: incubating
     discovered_by: org-scan from openkruise/kruise
@@ -5181,8 +8279,20 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from opentofu/opentofu
   - owner: opentofu
+    repo: opentofu-mcp-server
+    name: opentofu-mcp-server
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from opentofu/opentofu
+  - owner: opentofu
     repo: opentofu-schema
     name: opentofu-schema
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from opentofu/opentofu
+  - owner: opentofu
+    repo: setup-opentofu
+    name: setup-opentofu
     category: automation
     project_status: sandbox
     discovered_by: org-scan from opentofu/opentofu
@@ -5219,6 +8329,12 @@ repositories:
   - owner: opentofu
     repo: tofudl
     name: tofudl
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from opentofu/opentofu
+  - owner: opentofu
+    repo: vscode-opentofu
+    name: vscode-opentofu
     category: automation
     project_status: sandbox
     discovered_by: org-scan from opentofu/opentofu
@@ -5259,6 +8375,24 @@ repositories:
     project_status: incubating
     discovered_by: org-scan from operator-framework/operator-sdk
   - owner: operator-framework
+    repo: java-operator-sdk
+    name: java-operator-sdk
+    category: build
+    project_status: incubating
+    discovered_by: org-scan from operator-framework/operator-sdk
+  - owner: operator-framework
+    repo: josdk-spring-boot-starter
+    name: josdk-spring-boot-starter
+    category: build
+    project_status: incubating
+    discovered_by: org-scan from operator-framework/operator-sdk
+  - owner: operator-framework
+    repo: josdk-webhooks
+    name: josdk-webhooks
+    category: build
+    project_status: incubating
+    discovered_by: org-scan from operator-framework/operator-sdk
+  - owner: operator-framework
     repo: kpm
     name: kpm
     category: build
@@ -5273,6 +8407,12 @@ repositories:
   - owner: operator-framework
     repo: operator-controller
     name: operator-controller
+    category: build
+    project_status: incubating
+    discovered_by: org-scan from operator-framework/operator-sdk
+  - owner: operator-framework
+    repo: operator-courier
+    name: operator-courier
     category: build
     project_status: incubating
     discovered_by: org-scan from operator-framework/operator-sdk
@@ -5301,14 +8441,32 @@ repositories:
     project_status: incubating
     discovered_by: org-scan from operator-framework/operator-sdk
   - owner: operator-framework
+    repo: operator-sdk-ansible-util
+    name: operator-sdk-ansible-util
+    category: build
+    project_status: incubating
+    discovered_by: org-scan from operator-framework/operator-sdk
+  - owner: operator-framework
     repo: webhook-operator
     name: webhook-operator
     category: build
     project_status: incubating
     discovered_by: org-scan from operator-framework/operator-sdk
   - owner: oras-project
+    repo: oras-dotnet
+    name: oras-dotnet
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from oras-project/oras
+  - owner: oras-project
     repo: oras-go
     name: oras-go
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from oras-project/oras
+  - owner: oras-project
+    repo: oras-java
+    name: oras-java
     category: storage
     project_status: sandbox
     discovered_by: org-scan from oras-project/oras
@@ -5318,9 +8476,39 @@ repositories:
     category: storage
     project_status: sandbox
     discovered_by: org-scan from oras-project/oras
+  - owner: oras-project
+    repo: oras-py
+    name: oras-py
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from oras-project/oras
+  - owner: oras-project
+    repo: rust-oci-client
+    name: rust-oci-client
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from oras-project/oras
+  - owner: oras-project
+    repo: setup-oras
+    name: setup-oras
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from oras-project/oras
+  - owner: oscal-compass
+    repo: compliance-to-policy
+    name: compliance-to-policy
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from oscal-compass/compliance-trestle
   - owner: oscal-compass
     repo: compliance-to-policy-go
     name: compliance-to-policy-go
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from oscal-compass/compliance-trestle
+  - owner: oscal-compass
+    repo: compliance-trestle-fedramp
+    name: compliance-trestle-fedramp
     category: security
     project_status: sandbox
     discovered_by: org-scan from oscal-compass/compliance-trestle
@@ -5337,14 +8525,56 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from ovn-kubernetes/ovn-kubernetes
   - owner: oxia-db
+    repo: liboxia
+    name: liboxia
+    category: networking
+    project_status: sandbox
+    discovered_by: org-scan from oxia-db/oxia
+  - owner: oxia-db
     repo: okk
     name: okk
     category: networking
     project_status: sandbox
     discovered_by: org-scan from oxia-db/oxia
+  - owner: oxia-db
+    repo: oxia-client-node
+    name: oxia-client-node
+    category: networking
+    project_status: sandbox
+    discovered_by: org-scan from oxia-db/oxia
+  - owner: oxia-db
+    repo: oxia-client-python
+    name: oxia-client-python
+    category: networking
+    project_status: sandbox
+    discovered_by: org-scan from oxia-db/oxia
+  - owner: parallaxsecond
+    repo: parsec-client-java
+    name: parsec-client-java
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from parallaxsecond/parsec
+  - owner: parallaxsecond
+    repo: parsec-openssl-provider
+    name: parsec-openssl-provider
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from parallaxsecond/parsec
+  - owner: parallaxsecond
+    repo: rust-tss-esapi
+    name: rust-tss-esapi
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from parallaxsecond/parsec
   - owner: paralus
     repo: cli
     name: cli
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from paralus/paralus
+  - owner: paralus
+    repo: dashboard
+    name: dashboard
     category: security
     project_status: sandbox
     discovered_by: org-scan from paralus/paralus
@@ -5363,6 +8593,12 @@ repositories:
   - owner: perses
     repo: common
     name: common
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from perses/perses
+  - owner: perses
+    repo: helm-charts
+    name: helm-charts
     category: observability
     project_status: sandbox
     discovered_by: org-scan from perses/perses
@@ -5408,6 +8644,30 @@ repositories:
     category: observability
     project_status: sandbox
     discovered_by: org-scan from perses/perses
+  - owner: pipe-cd
+    repo: actions-gh-release
+    name: actions-gh-release
+    category: gitops
+    project_status: sandbox
+    discovered_by: org-scan from pipe-cd/pipecd
+  - owner: pipe-cd
+    repo: actions-plan-preview
+    name: actions-plan-preview
+    category: gitops
+    project_status: sandbox
+    discovered_by: org-scan from pipe-cd/pipecd
+  - owner: pipe-cd
+    repo: community-plugins
+    name: community-plugins
+    category: gitops
+    project_status: sandbox
+    discovered_by: org-scan from pipe-cd/pipecd
+  - owner: pipe-cd
+    repo: docs-mcp-server
+    name: docs-mcp-server
+    category: gitops
+    project_status: sandbox
+    discovered_by: org-scan from pipe-cd/pipecd
   - owner: pipe-cd
     repo: piped-plugin-sdk-go
     name: piped-plugin-sdk-go
@@ -5462,9 +8722,123 @@ repositories:
     category: observability
     project_status: sandbox
     discovered_by: org-scan from pixie-io/pixie
+  - owner: pixie-io
+    repo: slackin
+    name: slackin
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from pixie-io/pixie
+  - owner: podman-desktop
+    repo: eslint-plugin
+    name: eslint-plugin
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from podman-desktop/podman-desktop
+  - owner: podman-desktop
+    repo: extension-apple-container
+    name: extension-apple-container
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from podman-desktop/podman-desktop
+  - owner: podman-desktop
+    repo: extension-bootc
+    name: extension-bootc
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from podman-desktop/podman-desktop
+  - owner: podman-desktop
+    repo: extension-github
+    name: extension-github
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from podman-desktop/podman-desktop
+  - owner: podman-desktop
+    repo: extension-grype
+    name: extension-grype
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from podman-desktop/podman-desktop
+  - owner: podman-desktop
+    repo: extension-kreate
+    name: extension-kreate
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from podman-desktop/podman-desktop
+  - owner: podman-desktop
+    repo: extension-kubernetes-contexts
+    name: extension-kubernetes-contexts
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from podman-desktop/podman-desktop
+  - owner: podman-desktop
+    repo: extension-kubernetes-dashboard
+    name: extension-kubernetes-dashboard
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from podman-desktop/podman-desktop
+  - owner: podman-desktop
+    repo: extension-layers-explorer
+    name: extension-layers-explorer
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from podman-desktop/podman-desktop
+  - owner: podman-desktop
+    repo: extension-minikube
+    name: extension-minikube
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from podman-desktop/podman-desktop
+  - owner: podman-desktop
+    repo: extension-pack-kubernetes
+    name: extension-pack-kubernetes
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from podman-desktop/podman-desktop
+  - owner: podman-desktop
+    repo: extension-podman-quadlet
+    name: extension-podman-quadlet
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from podman-desktop/podman-desktop
+  - owner: podman-desktop
+    repo: extension-postgresql
+    name: extension-postgresql
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from podman-desktop/podman-desktop
+  - owner: project-copacetic
+    repo: copa-action
+    name: copa-action
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from project-copacetic/copacetic
+  - owner: project-copacetic
+    repo: copa-extension
+    name: copa-extension
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from project-copacetic/copacetic
+  - owner: project-dalec
+    repo: dalec-vscode-extension
+    name: dalec-vscode-extension
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from project-dalec/dalec
   - owner: project-hami
     repo: HAMi-DRA
     name: HAMi-DRA
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from Project-HAMi/HAMi
+  - owner: project-hami
+    repo: HAMi-WebUI
+    name: HAMi-WebUI
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from Project-HAMi/HAMi
+  - owner: project-hami
+    repo: k8s-dra-driver
+    name: k8s-dra-driver
     category: orchestration
     project_status: sandbox
     discovered_by: org-scan from Project-HAMi/HAMi
@@ -5475,11 +8849,41 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from Project-HAMi/HAMi
   - owner: project-stacker
+    repo: c3
+    name: c3
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from project-stacker/stacker
+  - owner: project-stacker
+    repo: project-stacker.github.io
+    name: project-stacker.github.io
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from project-stacker/stacker
+  - owner: project-stacker
     repo: stacker-bom
     name: stacker-bom
     category: build
     project_status: sandbox
     discovered_by: org-scan from project-stacker/stacker
+  - owner: project-stacker
+    repo: stacker-build-push-action
+    name: stacker-build-push-action
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from project-stacker/stacker
+  - owner: project-zot
+    repo: project-zot.github.io
+    name: project-zot.github.io
+    category: registry
+    project_status: sandbox
+    discovered_by: org-scan from project-zot/zot
+  - owner: project-zot
+    repo: zui
+    name: zui
+    category: registry
+    project_status: sandbox
+    discovered_by: org-scan from project-zot/zot
   - owner: projectcapsule
     repo: capsule-addon-fluxcd
     name: capsule-addon-fluxcd
@@ -5505,6 +8909,12 @@ repositories:
     project_status: incubating
     discovered_by: org-scan from projectcontour/contour
   - owner: prometheus
+    repo: OpenMetrics
+    name: OpenMetrics
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from prometheus/prometheus
+  - owner: prometheus
     repo: alertmanager
     name: alertmanager
     category: observability
@@ -5523,8 +8933,38 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from prometheus/prometheus
   - owner: prometheus
+    repo: client_java
+    name: client_java
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from prometheus/prometheus
+  - owner: prometheus
     repo: client_model
     name: client_model
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from prometheus/prometheus
+  - owner: prometheus
+    repo: client_python
+    name: client_python
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from prometheus/prometheus
+  - owner: prometheus
+    repo: client_ruby
+    name: client_ruby
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from prometheus/prometheus
+  - owner: prometheus
+    repo: client_rust
+    name: client_rust
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from prometheus/prometheus
+  - owner: prometheus
+    repo: cloudwatch_exporter
+    name: cloudwatch_exporter
     category: observability
     project_status: graduated
     discovered_by: org-scan from prometheus/prometheus
@@ -5565,6 +9005,12 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from prometheus/prometheus
   - owner: prometheus
+    repo: jmx_exporter
+    name: jmx_exporter
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from prometheus/prometheus
+  - owner: prometheus
     repo: memcached_exporter
     name: memcached_exporter
     category: observability
@@ -5597,6 +9043,12 @@ repositories:
   - owner: prometheus
     repo: prom2json
     name: prom2json
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from prometheus/prometheus
+  - owner: prometheus
+    repo: prometheus_api_client_ruby
+    name: prometheus_api_client_ruby
     category: observability
     project_status: graduated
     discovered_by: org-scan from prometheus/prometheus
@@ -5654,6 +9106,36 @@ repositories:
     category: storage
     project_status: graduated
     discovered_by: org-scan from rook/rook
+  - owner: runatlantis
+    repo: helm-charts
+    name: helm-charts
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from runatlantis/atlantis
+  - owner: runmedev
+    repo: runme-web-extension
+    name: runme-web-extension
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from runmedev/runme
+  - owner: runmedev
+    repo: runmejs
+    name: runmejs
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from runmedev/runme
+  - owner: runmedev
+    repo: vscode-runme
+    name: vscode-runme
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from runmedev/runme
+  - owner: schemahero
+    repo: schemahero-helm
+    name: schemahero-helm
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from schemahero/schemahero
   - owner: score-spec
     repo: docs
     name: docs
@@ -5702,9 +9184,111 @@ repositories:
     category: build
     project_status: sandbox
     discovered_by: org-scan from score-spec/spec
+  - owner: score-spec
+    repo: setup-score
+    name: setup-score
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from score-spec/spec
+  - owner: sermant-io
+    repo: Sermant-examples
+    name: Sermant-examples
+    category: service-mesh
+    project_status: sandbox
+    discovered_by: org-scan from sermant-io/Sermant
+  - owner: sermant-io
+    repo: first-plugin
+    name: first-plugin
+    category: service-mesh
+    project_status: sandbox
+    discovered_by: org-scan from sermant-io/Sermant
+  - owner: serverless-devs
+    repo: Serverless-Devs-Python
+    name: Serverless-Devs-Python
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from serverless-devs/serverless-devs
+  - owner: serverless-devs
+    repo: agentrun-cli
+    name: agentrun-cli
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from serverless-devs/serverless-devs
+  - owner: serverless-devs
+    repo: agentrun-sdk-nodejs
+    name: agentrun-sdk-nodejs
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from serverless-devs/serverless-devs
+  - owner: serverless-devs
+    repo: agentrun-sdk-python
+    name: agentrun-sdk-python
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from serverless-devs/serverless-devs
+  - owner: serverless-devs
+    repo: cicd
+    name: cicd
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from serverless-devs/serverless-devs
+  - owner: serverless-devs
+    repo: core
+    name: core
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from serverless-devs/serverless-devs
+  - owner: serverless-devs
+    repo: fc-http
+    name: fc-http
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from serverless-devs/serverless-devs
+  - owner: serverless-devs
+    repo: openapi-mcp-converter
+    name: openapi-mcp-converter
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from serverless-devs/serverless-devs
+  - owner: serverless-devs
+    repo: registry-cli
+    name: registry-cli
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from serverless-devs/serverless-devs
   - owner: serverlessworkflow
     repo: sdk-go
     name: sdk-go
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from serverlessworkflow/specification
+  - owner: serverlessworkflow
+    repo: sdk-java
+    name: sdk-java
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from serverlessworkflow/specification
+  - owner: serverlessworkflow
+    repo: sdk-python
+    name: sdk-python
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from serverlessworkflow/specification
+  - owner: serverlessworkflow
+    repo: sdk-rust
+    name: sdk-rust
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from serverlessworkflow/specification
+  - owner: serverlessworkflow
+    repo: sdk-typescript
+    name: sdk-typescript
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from serverlessworkflow/specification
+  - owner: serverlessworkflow
+    repo: vscode-extension
+    name: vscode-extension
     category: build
     project_status: sandbox
     discovered_by: org-scan from serverlessworkflow/specification
@@ -5732,6 +9316,12 @@ repositories:
     category: build
     project_status: sandbox
     discovered_by: org-scan from shipwright-io/build
+  - owner: spidernet-io
+    repo: cilium-chaining
+    name: cilium-chaining
+    category: networking
+    project_status: sandbox
+    discovered_by: org-scan from spidernet-io/spiderpool
   - owner: spidernet-io
     repo: cni-plugins
     name: cni-plugins
@@ -5783,6 +9373,18 @@ repositories:
   - owner: spiffe
     repo: go-spiffe
     name: go-spiffe
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from spiffe/spire
+  - owner: spiffe
+    repo: helm-charts-hardened
+    name: helm-charts-hardened
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from spiffe/spire
+  - owner: spiffe
+    repo: java-spiffe
+    name: java-spiffe
     category: security
     project_status: graduated
     discovered_by: org-scan from spiffe/spire
@@ -5865,6 +9467,18 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from spiffe/spire
   - owner: spinframework
+    repo: containerd-shim-spin
+    name: containerd-shim-spin
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from spinframework/spin-operator
+  - owner: spinframework
+    repo: js-wasi-ext
+    name: js-wasi-ext
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from spinframework/spin-operator
+  - owner: spinframework
     repo: otel-plugin
     name: otel-plugin
     category: orchestration
@@ -5877,8 +9491,32 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from spinframework/spin-operator
   - owner: spinframework
+    repo: spin-deps-plugin
+    name: spin-deps-plugin
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from spinframework/spin-operator
+  - owner: spinframework
+    repo: spin-fileserver
+    name: spin-fileserver
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from spinframework/spin-operator
+  - owner: spinframework
+    repo: spin-js-sdk
+    name: spin-js-sdk
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from spinframework/spin-operator
+  - owner: spinframework
     repo: spin-plugin-kube
     name: spin-plugin-kube
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from spinframework/spin-operator
+  - owner: spinframework
+    repo: spin-python-sdk
+    name: spin-python-sdk
     category: orchestration
     project_status: sandbox
     discovered_by: org-scan from spinframework/spin-operator
@@ -5888,6 +9526,78 @@ repositories:
     category: orchestration
     project_status: sandbox
     discovered_by: org-scan from spinframework/spin-operator
+  - owner: spinframework
+    repo: spin-test
+    name: spin-test
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from spinframework/spin-operator
+  - owner: spinframework
+    repo: spin-trigger-plugins
+    name: spin-trigger-plugins
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from spinframework/spin-operator
+  - owner: strimzi
+    repo: drain-cleaner
+    name: drain-cleaner
+    category: messaging
+    project_status: incubating
+    discovered_by: org-scan from strimzi/strimzi-kafka-operator
+  - owner: strimzi
+    repo: kafka-access-operator
+    name: kafka-access-operator
+    category: messaging
+    project_status: incubating
+    discovered_by: org-scan from strimzi/strimzi-kafka-operator
+  - owner: strimzi
+    repo: kafka-kubernetes-config-provider
+    name: kafka-kubernetes-config-provider
+    category: messaging
+    project_status: incubating
+    discovered_by: org-scan from strimzi/strimzi-kafka-operator
+  - owner: strimzi
+    repo: metrics-reporter
+    name: metrics-reporter
+    category: messaging
+    project_status: incubating
+    discovered_by: org-scan from strimzi/strimzi-kafka-operator
+  - owner: strimzi
+    repo: strimzi-kafka-bridge
+    name: strimzi-kafka-bridge
+    category: messaging
+    project_status: incubating
+    discovered_by: org-scan from strimzi/strimzi-kafka-operator
+  - owner: strimzi
+    repo: strimzi-kafka-oauth
+    name: strimzi-kafka-oauth
+    category: messaging
+    project_status: incubating
+    discovered_by: org-scan from strimzi/strimzi-kafka-operator
+  - owner: strimzi
+    repo: strimzi-mqtt-bridge
+    name: strimzi-mqtt-bridge
+    category: messaging
+    project_status: incubating
+    discovered_by: org-scan from strimzi/strimzi-kafka-operator
+  - owner: strimzi
+    repo: test-clients
+    name: test-clients
+    category: messaging
+    project_status: incubating
+    discovered_by: org-scan from strimzi/strimzi-kafka-operator
+  - owner: strimzi
+    repo: test-container
+    name: test-container
+    category: messaging
+    project_status: incubating
+    discovered_by: org-scan from strimzi/strimzi-kafka-operator
+  - owner: strimzi
+    repo: test-container-images
+    name: test-container-images
+    category: messaging
+    project_status: incubating
+    discovered_by: org-scan from strimzi/strimzi-kafka-operator
   - owner: submariner-io
     repo: admiral
     name: admiral
@@ -5907,6 +9617,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from submariner-io/submariner
   - owner: submariner-io
+    repo: releases
+    name: releases
+    category: networking
+    project_status: sandbox
+    discovered_by: org-scan from submariner-io/submariner
+  - owner: submariner-io
     repo: shipyard
     name: shipyard
     category: networking
@@ -5919,11 +9635,35 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from submariner-io/submariner
   - owner: submariner-io
+    repo: submariner-charts
+    name: submariner-charts
+    category: networking
+    project_status: sandbox
+    discovered_by: org-scan from submariner-io/submariner
+  - owner: submariner-io
     repo: submariner-operator
     name: submariner-operator
     category: networking
     project_status: sandbox
     discovered_by: org-scan from submariner-io/submariner
+  - owner: submariner-io
+    repo: submariner-website
+    name: submariner-website
+    category: networking
+    project_status: sandbox
+    discovered_by: org-scan from submariner-io/submariner
+  - owner: sustainable-computing-io
+    repo: aws_ec2_self_hosted_runner
+    name: aws_ec2_self_hosted_runner
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from sustainable-computing-io/kepler
+  - owner: sustainable-computing-io
+    repo: kepler-model-server
+    name: kepler-model-server
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from sustainable-computing-io/kepler
   - owner: sustainable-computing-io
     repo: kepler-operator
     name: kepler-operator
@@ -5937,6 +9677,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from telepresenceio/telepresence
   - owner: thanos-io
+    repo: kube-thanos
+    name: kube-thanos
+    category: observability
+    project_status: incubating
+    discovered_by: org-scan from thanos-io/thanos
+  - owner: thanos-io
     repo: thanosbench
     name: thanosbench
     category: observability
@@ -5948,6 +9694,30 @@ repositories:
     category: security
     project_status: graduated
     discovered_by: org-scan from theupdateframework/python-tuf
+  - owner: theupdateframework
+    repo: specification
+    name: specification
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from theupdateframework/python-tuf
+  - owner: theupdateframework
+    repo: tuf-conformance
+    name: tuf-conformance
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from theupdateframework/python-tuf
+  - owner: theupdateframework
+    repo: tuf-js
+    name: tuf-js
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from theupdateframework/python-tuf
+  - owner: tikv
+    repo: async-speed-limit
+    name: async-speed-limit
+    category: storage
+    project_status: graduated
+    discovered_by: org-scan from tikv/tikv
   - owner: tikv
     repo: client-go
     name: client-go
@@ -5955,8 +9725,68 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from tikv/tikv
   - owner: tikv
+    repo: client-java
+    name: client-java
+    category: storage
+    project_status: graduated
+    discovered_by: org-scan from tikv/tikv
+  - owner: tikv
+    repo: crc64fast
+    name: crc64fast
+    category: storage
+    project_status: graduated
+    discovered_by: org-scan from tikv/tikv
+  - owner: tikv
+    repo: fail-rs
+    name: fail-rs
+    category: storage
+    project_status: graduated
+    discovered_by: org-scan from tikv/tikv
+  - owner: tikv
+    repo: grpc-rs
+    name: grpc-rs
+    category: storage
+    project_status: graduated
+    discovered_by: org-scan from tikv/tikv
+  - owner: tikv
+    repo: importer
+    name: importer
+    category: storage
+    project_status: graduated
+    discovered_by: org-scan from tikv/tikv
+  - owner: tikv
+    repo: migration
+    name: migration
+    category: storage
+    project_status: graduated
+    discovered_by: org-scan from tikv/tikv
+  - owner: tikv
+    repo: minitrace-rust
+    name: minitrace-rust
+    category: storage
+    project_status: graduated
+    discovered_by: org-scan from tikv/tikv
+  - owner: tikv
+    repo: minstant
+    name: minstant
+    category: storage
+    project_status: graduated
+    discovered_by: org-scan from tikv/tikv
+  - owner: tikv
     repo: pd
     name: pd
+    category: storage
+    project_status: graduated
+    discovered_by: org-scan from tikv/tikv
+  - owner: tikv
+    repo: raft-engine
+    name: raft-engine
+    category: storage
+    project_status: graduated
+    discovered_by: org-scan from tikv/tikv
+  - owner: tikv
+    repo: raft-rs
+    name: raft-rs
     category: storage
     project_status: graduated
     discovered_by: org-scan from tikv/tikv
@@ -5972,6 +9802,42 @@ repositories:
     category: automation
     project_status: sandbox
     discovered_by: org-scan from tinkerbell/tinkerbell
+  - owner: tremor-rs
+    repo: dissect
+    name: dissect
+    category: messaging
+    project_status: sandbox
+    discovered_by: org-scan from tremor-rs/tremor-runtime
+  - owner: tremor-rs
+    repo: kv
+    name: kv
+    category: messaging
+    project_status: sandbox
+    discovered_by: org-scan from tremor-rs/tremor-runtime
+  - owner: tremor-rs
+    repo: tremor-benchmark
+    name: tremor-benchmark
+    category: messaging
+    project_status: sandbox
+    discovered_by: org-scan from tremor-rs/tremor-runtime
+  - owner: tremor-rs
+    repo: tremor-language-server
+    name: tremor-language-server
+    category: messaging
+    project_status: sandbox
+    discovered_by: org-scan from tremor-rs/tremor-runtime
+  - owner: tremor-rs
+    repo: tremor-vscode
+    name: tremor-vscode
+    category: messaging
+    project_status: sandbox
+    discovered_by: org-scan from tremor-rs/tremor-runtime
+  - owner: trickstercache
+    repo: helm-charts
+    name: helm-charts
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from trickstercache/trickster
   - owner: trickstercache
     repo: mockster
     name: mockster
@@ -5981,6 +9847,54 @@ repositories:
   - owner: truefoundry
     repo: CruiseKube
     name: CruiseKube
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from truefoundry/KubeElasti
+  - owner: truefoundry
+    repo: async_service
+    name: async_service
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from truefoundry/KubeElasti
+  - owner: truefoundry
+    repo: check-chart-version-upgrade
+    name: check-chart-version-upgrade
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from truefoundry/KubeElasti
+  - owner: truefoundry
+    repo: emotion-classification-fastapi
+    name: emotion-classification-fastapi
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from truefoundry/KubeElasti
+  - owner: truefoundry
+    repo: llm-finetune
+    name: llm-finetune
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from truefoundry/KubeElasti
+  - owner: truefoundry
+    repo: secretsfoundry
+    name: secretsfoundry
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from truefoundry/KubeElasti
+  - owner: truefoundry
+    repo: train-iris-job
+    name: train-iris-job
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from truefoundry/KubeElasti
+  - owner: truefoundry
+    repo: truefoundry-python-sdk
+    name: truefoundry-python-sdk
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from truefoundry/KubeElasti
+  - owner: truefoundry
+    repo: truefoundry-typescript-sdk
+    name: truefoundry-typescript-sdk
     category: other
     project_status: sandbox
     discovered_by: org-scan from truefoundry/KubeElasti
@@ -6015,6 +9929,12 @@ repositories:
     project_status: incubating
     discovered_by: org-scan from volcano-sh/volcano
   - owner: volcano-sh
+    repo: dashboard
+    name: dashboard
+    category: other
+    project_status: incubating
+    discovered_by: org-scan from volcano-sh/kthena
+  - owner: volcano-sh
     repo: descheduler
     name: descheduler
     category: orchestration
@@ -6044,9 +9964,21 @@ repositories:
     category: orchestration
     project_status: incubating
     discovered_by: org-scan from volcano-sh/volcano
+  - owner: vscode-kubernetes-tools
+    repo: vscode-kubernetes-tools-api
+    name: vscode-kubernetes-tools-api
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from vscode-kubernetes-tools/vscode-kubernetes-tools
   - owner: wasmcloud
     repo: kasmcloud
     name: kasmcloud
+    category: orchestration
+    project_status: incubating
+    discovered_by: org-scan from wasmCloud/wasmCloud
+  - owner: wasmcloud
+    repo: nkeys
+    name: nkeys
     category: orchestration
     project_status: incubating
     discovered_by: org-scan from wasmCloud/wasmCloud
@@ -6062,6 +9994,66 @@ repositories:
     category: orchestration
     project_status: incubating
     discovered_by: org-scan from wasmCloud/wasmCloud
+  - owner: wasmcloud
+    repo: wadm
+    name: wadm
+    category: orchestration
+    project_status: incubating
+    discovered_by: org-scan from wasmCloud/wasmCloud
+  - owner: wasmcloud
+    repo: wadm-operator
+    name: wadm-operator
+    category: orchestration
+    project_status: incubating
+    discovered_by: org-scan from wasmCloud/wasmCloud
+  - owner: wasmcloud
+    repo: wasmcloud-component-adapters
+    name: wasmcloud-component-adapters
+    category: orchestration
+    project_status: incubating
+    discovered_by: org-scan from wasmCloud/wasmCloud
+  - owner: wasmcloud
+    repo: wasmcloud-otp
+    name: wasmcloud-otp
+    category: orchestration
+    project_status: incubating
+    discovered_by: org-scan from wasmCloud/wasmCloud
+  - owner: wasmcloud
+    repo: wasmcloud-test
+    name: wasmcloud-test
+    category: orchestration
+    project_status: incubating
+    discovered_by: org-scan from wasmCloud/wasmCloud
+  - owner: wasmcloud
+    repo: weld
+    name: weld
+    category: orchestration
+    project_status: incubating
+    discovered_by: org-scan from wasmCloud/wasmCloud
+  - owner: wasmedge
+    repo: rust-plugins
+    name: rust-plugins
+    category: ml-platform
+    project_status: sandbox
+    discovered_by: org-scan from WasmEdge/WasmEdge
+  - owner: wasmedge
+    repo: wasmedge-rust-sdk
+    name: wasmedge-rust-sdk
+    category: ml-platform
+    project_status: sandbox
+    discovered_by: org-scan from WasmEdge/WasmEdge
+  - owner: wasmedge
+    repo: wasmedgeup
+    name: wasmedgeup
+    category: ml-platform
+    project_status: sandbox
+    discovered_by: org-scan from WasmEdge/WasmEdge
+  - owner: werf
+    repo: actions
+    name: actions
+    category: ci-cd
+    project_status: sandbox
+    discovered_by: org-scan from werf/werf
   - owner: werf
     repo: kubedog
     name: kubedog
@@ -6092,3 +10084,15 @@ repositories:
     category: ci-cd
     project_status: sandbox
     discovered_by: org-scan from werf/werf
+  - owner: xregistry
+    repo: codegen
+    name: codegen
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from xregistry/server
+  - owner: youki-dev
+    repo: oci-spec-rs
+    name: oci-spec-rs
+    category: ml-platform
+    project_status: sandbox
+    discovered_by: org-scan from youki-dev/youki

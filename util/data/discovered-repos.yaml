@@ -20,7 +20,7 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain supported package manifests (Go, Cargo, npm, pip, Maven, gem, Dockerfile, etc.).
   auto_generated: true
-  last_updated: "2026-05-13T12:57:23Z"
+  last_updated: "2026-05-18T05:45:18Z"
 repositories:
   - owner: aeraki-mesh
     repo: meta-protocol-proxy
@@ -3047,6 +3047,12 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from fluxcd/flux2
   - owner: fluxcd
+    repo: flux-mirror
+    name: flux-mirror
+    category: gitops
+    project_status: graduated
+    discovered_by: org-scan from fluxcd/flux2
+  - owner: fluxcd
     repo: flux-schema
     name: flux-schema
     category: gitops
@@ -3316,6 +3322,36 @@ repositories:
     category: security
     project_status: sandbox
     discovered_by: org-scan from hexa-org/policy-orchestrator
+  - owner: higress-group
+    repo: db-log-pusher
+    name: db-log-pusher
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from higress-group/higress
+  - owner: higress-group
+    repo: himarket
+    name: himarket
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from higress-group/higress
+  - owner: higress-group
+    repo: openapi-to-mcpserver
+    name: openapi-to-mcpserver
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from higress-group/higress
+  - owner: higress-group
+    repo: plugin-server
+    name: plugin-server
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from higress-group/higress
+  - owner: higress-group
+    repo: wasm-go
+    name: wasm-go
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from higress-group/higress
   - owner: hwameistor
     repo: datastore
     name: datastore

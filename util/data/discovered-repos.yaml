@@ -20,7 +20,7 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain supported package manifests (Go, Cargo, npm, pip, Maven, gem, Dockerfile, etc.).
   auto_generated: true
-  last_updated: "2026-05-18T05:45:18Z"
+  last_updated: "2026-05-25T06:06:24Z"
 repositories:
   - owner: aeraki-mesh
     repo: meta-protocol-proxy
@@ -1997,6 +1997,12 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from containerd/containerd
   - owner: containerd
+    repo: nerdbox
+    name: nerdbox
+    category: container-runtime
+    project_status: graduated
+    discovered_by: org-scan from containerd/containerd
+  - owner: containerd
     repo: nerdctl
     name: nerdctl
     category: ml-platform
@@ -2192,6 +2198,12 @@ repositories:
     repo: krunvm
     name: krunvm
     category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from containers/podman
+  - owner: containers
+    repo: kubensmnt
+    name: kubensmnt
+    category: ml-platform
     project_status: sandbox
     discovered_by: org-scan from containers/podman
   - owner: containers
@@ -2455,6 +2467,12 @@ repositories:
   - owner: crossplane
     repo: changelogs-sidecar
     name: changelogs-sidecar
+    category: orchestration
+    project_status: graduated
+    discovered_by: org-scan from crossplane/crossplane
+  - owner: crossplane
+    repo: cli
+    name: cli
     category: orchestration
     project_status: graduated
     discovered_by: org-scan from crossplane/crossplane
@@ -3275,6 +3293,12 @@ repositories:
     project_status: incubating
     discovered_by: org-scan from grpc/grpc
   - owner: grpc
+    repo: grpc-rust
+    name: grpc-rust
+    category: other
+    project_status: incubating
+    discovered_by: org-scan from grpc/grpc
+  - owner: grpc
     repo: grpc-web
     name: grpc-web
     category: other
@@ -3551,6 +3575,12 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from jaegertracing/jaeger
   - owner: jaegertracing
+    repo: grafana-plugin
+    name: grafana-plugin
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from jaegertracing/jaeger
+  - owner: jaegertracing
     repo: helm-charts
     name: helm-charts
     category: observability
@@ -3751,6 +3781,12 @@ repositories:
   - owner: kairos-io
     repo: AuroraBoot
     name: AuroraBoot
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from kairos-io/kairos
+  - owner: kairos-io
+    repo: cluster-api-provider-kairos
+    name: cluster-api-provider-kairos
     category: automation
     project_status: sandbox
     discovered_by: org-scan from kairos-io/kairos
@@ -4174,6 +4210,12 @@ repositories:
     category: security
     project_status: incubating
     discovered_by: org-scan from keycloak/keycloak
+  - owner: keylime
+    repo: keylime-mcp
+    name: keylime-mcp
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from keylime/keylime
   - owner: keylime
     repo: rust-keylime
     name: rust-keylime
@@ -8081,6 +8123,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from openeverest/openeverest
   - owner: openeverest
+    repo: generic-plugin-template
+    name: generic-plugin-template
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openeverest/openeverest
+  - owner: openeverest
     repo: plugin-mongodb-explorer
     name: plugin-mongodb-explorer
     category: storage
@@ -9455,6 +9503,12 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from spiffe/spire
   - owner: spiffe
+    repo: spiffefs
+    name: spiffefs
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from spiffe/spire
+  - owner: spiffe
     repo: spike
     name: spike
     category: security
@@ -9469,6 +9523,12 @@ repositories:
   - owner: spiffe
     repo: spire-controller-manager
     name: spire-controller-manager
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from spiffe/spire
+  - owner: spiffe
+    repo: spire-controller-manager-dynamic-registration
+    name: spire-controller-manager-dynamic-registration
     category: security
     project_status: graduated
     discovered_by: org-scan from spiffe/spire

@@ -20,7 +20,7 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain supported package manifests (Go, Cargo, npm, pip, Maven, gem, Dockerfile, etc.).
   auto_generated: true
-  last_updated: "2026-05-25T06:06:24Z"
+  last_updated: "2026-06-01T06:06:30Z"
 repositories:
   - owner: aeraki-mesh
     repo: meta-protocol-proxy
@@ -2243,6 +2243,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from containers/podman
   - owner: containers
+    repo: oci-delta
+    name: oci-delta
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from containers/podman
+  - owner: containers
     repo: oci-seccomp-bpf-hook
     name: oci-seccomp-bpf-hook
     category: ml-platform
@@ -2410,6 +2416,12 @@ repositories:
     category: observability
     project_status: incubating
     discovered_by: org-scan from cortexproject/cortex
+  - owner: cozystack
+    repo: blockstor
+    name: blockstor
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from cozystack/cozystack
   - owner: cozystack
     repo: boot-to-talos
     name: boot-to-talos
@@ -5711,6 +5723,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from kubernetes-sigs/headlamp
   - owner: kubernetes-sigs
+    repo: resource-state-metrics
+    name: resource-state-metrics
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kubernetes-sigs/headlamp
+  - owner: kubernetes-sigs
     repo: scheduler-plugins
     name: scheduler-plugins
     category: observability
@@ -8129,8 +8147,26 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from openeverest/openeverest
   - owner: openeverest
+    repo: plugin-audit
+    name: plugin-audit
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openeverest/openeverest
+  - owner: openeverest
     repo: plugin-mongodb-explorer
     name: plugin-mongodb-explorer
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openeverest/openeverest
+  - owner: openeverest
+    repo: provider-percona-server-mongodb
+    name: provider-percona-server-mongodb
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openeverest/openeverest
+  - owner: openeverest
+    repo: provider-sdk
+    name: provider-sdk
     category: storage
     project_status: sandbox
     discovered_by: org-scan from openeverest/openeverest

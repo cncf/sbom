@@ -174,7 +174,7 @@ jobs:
   generate-sbom-cncf:
     needs: prepare-cncf-matrix
     if: ${{ needs.prepare-cncf-matrix.outputs.has_repos == 'true' }}
-    runs-on: oracle-2cpu-8gb-x86-64
+    runs-on: cncf-c-ubuntu-2-8-x86
     strategy:
       fail-fast: false
       max-parallel: 5

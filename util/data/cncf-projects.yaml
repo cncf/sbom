@@ -23,7 +23,7 @@ repositories:
   - owner: argoproj
     repo: argo-cd
     name: Argo
-    category: ci-cd
+    category: gitops
     project_status: graduated
     accepted_date: "2020-03-26"
   - owner: cert-manager
@@ -47,7 +47,7 @@ repositories:
   - owner: containerd
     repo: containerd
     name: containerd
-    category: ml-platform
+    category: container-runtime
     project_status: graduated
     accepted_date: "2017-03-29"
   - owner: coredns
@@ -113,13 +113,13 @@ repositories:
   - owner: fluxcd
     repo: flux2
     name: Flux
-    category: ci-cd
+    category: gitops
     project_status: graduated
     accepted_date: "2019-07-15"
   - owner: goharbor
     repo: harbor
     name: Harbor
-    category: ml-platform
+    category: registry
     project_status: graduated
     accepted_date: "2018-07-31"
   - owner: helm
@@ -587,7 +587,7 @@ repositories:
   - owner: containers
     repo: composefs
     name: composefs
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2025-01-21"
   - owner: confidential-containers
@@ -653,7 +653,7 @@ repositories:
   - owner: distribution
     repo: distribution
     name: Distribution
-    category: ml-platform
+    category: registry
     project_status: sandbox
     accepted_date: "2021-01-26"
   - owner: drasi-project
@@ -725,7 +725,7 @@ repositories:
   - owner: inclavare-containers
     repo: inclavare-containers
     name: Inclavare Containers
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2021-09-14"
   - owner: inspektor-gadget
@@ -737,7 +737,7 @@ repositories:
   - owner: interlink-hq
     repo: interLink
     name: Interlink
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2025-03-04"
   - owner: k0sproject
@@ -881,13 +881,13 @@ repositories:
   - owner: kuasar-io
     repo: kuasar
     name: Kuasar
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2023-12-19"
   - owner: kube-burner
     repo: kube-burner
     name: Kube-burner
-    category: ci-cd
+    category: gitops
     project_status: sandbox
     accepted_date: "2023-12-18"
   - owner: kubeovn
@@ -1079,7 +1079,7 @@ repositories:
   - owner: open-gitops
     repo: project
     name: OpenGitOps
-    category: ci-cd
+    category: gitops
     project_status: sandbox
     accepted_date: "2021-01-26"
   - owner: opentofu
@@ -1133,7 +1133,7 @@ repositories:
   - owner: pipe-cd
     repo: pipecd
     name: PipeCD
-    category: ci-cd
+    category: gitops
     project_status: sandbox
     accepted_date: "2023-05-17"
   - owner: piraeusdatastore
@@ -1313,7 +1313,7 @@ repositories:
   - owner: virtual-kubelet
     repo: virtual-kubelet
     name: Virtual Kubelet
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2018-12-04"
   - owner: vscode-kubernetes-tools
@@ -1325,13 +1325,13 @@ repositories:
   - owner: WasmEdge
     repo: WasmEdge
     name: WasmEdge Runtime
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2021-04-28"
   - owner: werf
     repo: werf
     name: werf
-    category: ci-cd
+    category: gitops
     project_status: sandbox
     accepted_date: "2022-12-13"
   - owner: xregistry
@@ -1343,12 +1343,12 @@ repositories:
   - owner: youki-dev
     repo: youki
     name: youki
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2024-10-17"
   - owner: project-zot
     repo: zot
     name: zot
-    category: ml-platform
+    category: registry
     project_status: sandbox
     accepted_date: "2022-12-13"

@@ -20,7 +20,7 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain supported package manifests (Go, Cargo, npm, pip, Maven, gem, Dockerfile, etc.).
   auto_generated: true
-  last_updated: "2026-06-01T06:06:30Z"
+  last_updated: "2026-06-08T05:55:27Z"
 repositories:
   - owner: aeraki-mesh
     repo: meta-protocol-proxy
@@ -2464,6 +2464,12 @@ repositories:
     category: ml-platform
     project_status: sandbox
     discovered_by: org-scan from cozystack/cozystack
+  - owner: cozystack
+    repo: talos-meta-tool
+    name: talos-meta-tool
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from cozystack/cozystack
   - owner: cri-o
     repo: crio-credential-provider
     name: crio-credential-provider
@@ -3905,6 +3911,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from kairos-io/kairos
   - owner: kairos-io
+    repo: provider-kubernetes
+    name: provider-kubernetes
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from kairos-io/kairos
+  - owner: kairos-io
     repo: provider-microk8s
     name: provider-microk8s
     category: automation
@@ -4475,6 +4487,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from konveyor/operator
   - owner: konveyor
+    repo: tackle2-seed
+    name: tackle2-seed
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from konveyor/operator
+  - owner: konveyor
     repo: tackle2-ui
     name: tackle2-ui
     category: build
@@ -4615,6 +4633,12 @@ repositories:
   - owner: kuadrant
     repo: gateway-api-state-metrics
     name: gateway-api-state-metrics
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from kuadrant/kuadrant-operator
+  - owner: kuadrant
+    repo: internal-extensions
+    name: internal-extensions
     category: other
     project_status: sandbox
     discovered_by: org-scan from kuadrant/kuadrant-operator
@@ -9715,6 +9739,12 @@ repositories:
   - owner: strimzi
     repo: test-clients
     name: test-clients
+    category: messaging
+    project_status: incubating
+    discovered_by: org-scan from strimzi/strimzi-kafka-operator
+  - owner: strimzi
+    repo: test-connectors
+    name: test-connectors
     category: messaging
     project_status: incubating
     discovered_by: org-scan from strimzi/strimzi-kafka-operator

@@ -23,7 +23,7 @@ repositories:
   - owner: argoproj
     repo: argo-cd
     name: Argo
-    category: gitops
+    category: ci-cd
     project_status: graduated
     accepted_date: "2020-03-26"
   - owner: cert-manager
@@ -83,7 +83,7 @@ repositories:
   - owner: dragonflyoss
     repo: dragonfly
     name: Dragonfly
-    category: ml-platform
+    category: registry
     project_status: graduated
     accepted_date: "2018-11-13"
   - owner: envoyproxy
@@ -113,7 +113,7 @@ repositories:
   - owner: fluxcd
     repo: flux2
     name: Flux
-    category: gitops
+    category: ci-cd
     project_status: graduated
     accepted_date: "2019-07-15"
   - owner: goharbor
@@ -353,7 +353,7 @@ repositories:
   - owner: lima-vm
     repo: lima
     name: Lima
-    category: container-runtime
+    category: ml-platform
     project_status: incubating
     accepted_date: "2022-09-14"
   - owner: litmuschaos
@@ -587,7 +587,7 @@ repositories:
   - owner: containers
     repo: composefs
     name: composefs
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2025-01-21"
   - owner: confidential-containers
@@ -737,7 +737,7 @@ repositories:
   - owner: interlink-hq
     repo: interLink
     name: Interlink
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2025-03-04"
   - owner: k0sproject
@@ -1049,7 +1049,7 @@ repositories:
   - owner: openchoreo
     repo: openchoreo
     name: OpenChoreo
-    category: gitops
+    category: ci-cd
     project_status: sandbox
     accepted_date: "2026-01-06"
   - owner: openebs
@@ -1091,7 +1091,7 @@ repositories:
   - owner: oras-project
     repo: oras
     name: ORAS
-    category: storage
+    category: build
     project_status: sandbox
     accepted_date: "2021-07-13"
   - owner: oscal-compass
@@ -1151,7 +1151,7 @@ repositories:
   - owner: containers
     repo: podman
     name: Podman Container Tools
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2025-01-21"
   - owner: podman-desktop
@@ -1304,6 +1304,12 @@ repositories:
     category: container-runtime
     project_status: sandbox
     accepted_date: "2025-05-22"
+  - owner: velero-io
+    repo: velero
+    name: Velero
+    category: storage
+    project_status: sandbox
+    accepted_date: "2026-03-11"
   - owner: v6d-io
     repo: v6d
     name: Vineyard
@@ -1349,6 +1355,6 @@ repositories:
   - owner: project-zot
     repo: zot
     name: zot
-    category: registry
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2022-12-13"

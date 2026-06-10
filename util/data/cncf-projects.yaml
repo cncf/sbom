@@ -59,7 +59,7 @@ repositories:
   - owner: cri-o
     repo: cri-o
     name: CRI-O
-    category: container-runtime
+    category: ml-platform
     project_status: graduated
     accepted_date: "2019-04-08"
   - owner: crossplane
@@ -509,7 +509,7 @@ repositories:
   - owner: bootc-dev
     repo: bootc
     name: bootc
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2025-01-21"
   - owner: bpfman
@@ -587,7 +587,7 @@ repositories:
   - owner: containers
     repo: composefs
     name: composefs
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2025-01-21"
   - owner: confidential-containers
@@ -653,7 +653,7 @@ repositories:
   - owner: distribution
     repo: distribution
     name: Distribution
-    category: registry
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2021-01-26"
   - owner: drasi-project
@@ -719,13 +719,13 @@ repositories:
   - owner: hyperlight-dev
     repo: hyperlight
     name: Hyperlight
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2025-03-04"
   - owner: inclavare-containers
     repo: inclavare-containers
     name: Inclavare Containers
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2021-09-14"
   - owner: inspektor-gadget
@@ -881,13 +881,13 @@ repositories:
   - owner: kuasar-io
     repo: kuasar
     name: Kuasar
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2023-12-19"
   - owner: kube-burner
     repo: kube-burner
     name: Kube-burner
-    category: gitops
+    category: ci-cd
     project_status: sandbox
     accepted_date: "2023-12-18"
   - owner: kubeovn
@@ -1079,7 +1079,7 @@ repositories:
   - owner: open-gitops
     repo: project
     name: OpenGitOps
-    category: gitops
+    category: ci-cd
     project_status: sandbox
     accepted_date: "2021-01-26"
   - owner: opentofu
@@ -1301,7 +1301,7 @@ repositories:
   - owner: urunc-dev
     repo: urunc
     name: urunc
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2025-05-22"
   - owner: velero-io
@@ -1331,13 +1331,13 @@ repositories:
   - owner: WasmEdge
     repo: WasmEdge
     name: WasmEdge Runtime
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2021-04-28"
   - owner: werf
     repo: werf
     name: werf
-    category: gitops
+    category: ci-cd
     project_status: sandbox
     accepted_date: "2022-12-13"
   - owner: xregistry
@@ -1349,12 +1349,12 @@ repositories:
   - owner: youki-dev
     repo: youki
     name: youki
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2024-10-17"
   - owner: project-zot
     repo: zot
     name: zot
-    category: ml-platform
+    category: registry
     project_status: sandbox
     accepted_date: "2022-12-13"

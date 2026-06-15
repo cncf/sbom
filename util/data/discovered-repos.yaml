@@ -20,7 +20,7 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain supported package manifests (Go, Cargo, npm, pip, Maven, gem, Dockerfile, etc.).
   auto_generated: true
-  last_updated: "2026-06-08T05:55:27Z"
+  last_updated: "2026-06-15T06:10:17Z"
 repositories:
   - owner: aeraki-mesh
     repo: meta-protocol-proxy
@@ -2453,6 +2453,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from cozystack/cozystack
   - owner: cozystack
+    repo: etcd-operator
+    name: etcd-operator
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from cozystack/cozystack
+  - owner: cozystack
     repo: readme-generator-for-helm
     name: readme-generator-for-helm
     category: ml-platform
@@ -2467,6 +2473,12 @@ repositories:
   - owner: cozystack
     repo: talos-meta-tool
     name: talos-meta-tool
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from cozystack/cozystack
+  - owner: cozystack
+    repo: terraform-provider-cozystack
+    name: terraform-provider-cozystack
     category: orchestration
     project_status: sandbox
     discovered_by: org-scan from cozystack/cozystack
@@ -2989,6 +3001,12 @@ repositories:
   - owner: flatcar
     repo: flatcar-linux-update-operator
     name: flatcar-linux-update-operator
+    category: other
+    project_status: incubating
+    discovered_by: org-scan from flatcar/Flatcar
+  - owner: flatcar
+    repo: flatcar-socials-scripts
+    name: flatcar-socials-scripts
     category: other
     project_status: incubating
     discovered_by: org-scan from flatcar/Flatcar
@@ -3847,6 +3865,12 @@ repositories:
   - owner: kairos-io
     repo: kairos-init
     name: kairos-init
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from kairos-io/kairos
+  - owner: kairos-io
+    repo: kairos-installer
+    name: kairos-installer
     category: automation
     project_status: sandbox
     discovered_by: org-scan from kairos-io/kairos
@@ -4918,6 +4942,108 @@ repositories:
     category: networking
     project_status: sandbox
     discovered_by: org-scan from kubeovn/kube-ovn
+  - owner: kuberhealthy
+    repo: ami-check
+    name: ami-check
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kuberhealthy/kuberhealthy
+  - owner: kuberhealthy
+    repo: daemonset-check
+    name: daemonset-check
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kuberhealthy/kuberhealthy
+  - owner: kuberhealthy
+    repo: deployment-check
+    name: deployment-check
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kuberhealthy/kuberhealthy
+  - owner: kuberhealthy
+    repo: dns-resolution-check
+    name: dns-resolution-check
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kuberhealthy/kuberhealthy
+  - owner: kuberhealthy
+    repo: http-check
+    name: http-check
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kuberhealthy/kuberhealthy
+  - owner: kuberhealthy
+    repo: http-content-check
+    name: http-content-check
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kuberhealthy/kuberhealthy
+  - owner: kuberhealthy
+    repo: image-download-check
+    name: image-download-check
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kuberhealthy/kuberhealthy
+  - owner: kuberhealthy
+    repo: kiam-check
+    name: kiam-check
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kuberhealthy/kuberhealthy
+  - owner: kuberhealthy
+    repo: namespace-pod-check
+    name: namespace-pod-check
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kuberhealthy/kuberhealthy
+  - owner: kuberhealthy
+    repo: network-connection-check
+    name: network-connection-check
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kuberhealthy/kuberhealthy
+  - owner: kuberhealthy
+    repo: pod-restarts-check
+    name: pod-restarts-check
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kuberhealthy/kuberhealthy
+  - owner: kuberhealthy
+    repo: pod-status-check
+    name: pod-status-check
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kuberhealthy/kuberhealthy
+  - owner: kuberhealthy
+    repo: resource-quota-check
+    name: resource-quota-check
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kuberhealthy/kuberhealthy
+  - owner: kuberhealthy
+    repo: ssh-check
+    name: ssh-check
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kuberhealthy/kuberhealthy
+  - owner: kuberhealthy
+    repo: ssl-expiry-check
+    name: ssl-expiry-check
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kuberhealthy/kuberhealthy
+  - owner: kuberhealthy
+    repo: ssl-handshake-check
+    name: ssl-handshake-check
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kuberhealthy/kuberhealthy
+  - owner: kuberhealthy
+    repo: test-check
+    name: test-check
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kuberhealthy/kuberhealthy
   - owner: kubernetes
     repo: apiextensions-apiserver
     name: apiextensions-apiserver
@@ -8177,6 +8303,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from openeverest/openeverest
   - owner: openeverest
+    repo: plugin-hub
+    name: plugin-hub
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openeverest/openeverest
+  - owner: openeverest
     repo: plugin-mongodb-explorer
     name: plugin-mongodb-explorer
     category: storage
@@ -8849,6 +8981,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from piraeusdatastore/piraeus-operator
   - owner: piraeusdatastore
+    repo: nri-volume-qos
+    name: nri-volume-qos
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from piraeusdatastore/piraeus-operator
+  - owner: piraeusdatastore
     repo: piraeus-ha-controller
     name: piraeus-ha-controller
     category: storage
@@ -9037,6 +9175,12 @@ repositories:
   - owner: projectcapsule
     repo: capsule-proxy
     name: capsule-proxy
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from projectcapsule/capsule
+  - owner: projectcapsule
+    repo: headlamp-plugin
+    name: headlamp-plugin
     category: orchestration
     project_status: sandbox
     discovered_by: org-scan from projectcapsule/capsule
@@ -10060,6 +10204,24 @@ repositories:
     category: other
     project_status: sandbox
     discovered_by: org-scan from truefoundry/KubeElasti
+  - owner: velero-io
+    repo: velero-plugin-for-aws
+    name: velero-plugin-for-aws
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from velero-io/velero
+  - owner: velero-io
+    repo: velero-plugin-for-gcp
+    name: velero-plugin-for-gcp
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from velero-io/velero
+  - owner: velero-io
+    repo: velero-plugin-for-microsoft-azure
+    name: velero-plugin-for-microsoft-azure
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from velero-io/velero
   - owner: virtual-kubelet
     repo: azure-aci
     name: azure-aci
@@ -10078,6 +10240,12 @@ repositories:
     category: container-runtime
     project_status: sandbox
     discovered_by: org-scan from virtual-kubelet/virtual-kubelet
+  - owner: vitessio
+    repo: goyacc
+    name: goyacc
+    category: storage
+    project_status: graduated
+    discovered_by: org-scan from vitessio/vitess
   - owner: vitessio
     repo: vitess-releaser
     name: vitess-releaser
@@ -10183,6 +10351,12 @@ repositories:
   - owner: wasmcloud
     repo: wasmcloud-test
     name: wasmcloud-test
+    category: orchestration
+    project_status: incubating
+    discovered_by: org-scan from wasmCloud/wasmCloud
+  - owner: wasmcloud
+    repo: wasmcloud.com
+    name: wasmcloud.com
     category: orchestration
     project_status: incubating
     discovered_by: org-scan from wasmCloud/wasmCloud

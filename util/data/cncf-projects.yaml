@@ -23,7 +23,7 @@ repositories:
   - owner: argoproj
     repo: argo-cd
     name: Argo
-    category: gitops
+    category: ci-cd
     project_status: graduated
     accepted_date: "2020-03-26"
   - owner: cert-manager
@@ -47,7 +47,7 @@ repositories:
   - owner: containerd
     repo: containerd
     name: containerd
-    category: ml-platform
+    category: container-runtime
     project_status: graduated
     accepted_date: "2017-03-29"
   - owner: coredns
@@ -83,7 +83,7 @@ repositories:
   - owner: dragonflyoss
     repo: dragonfly
     name: Dragonfly
-    category: ml-platform
+    category: registry
     project_status: graduated
     accepted_date: "2018-11-13"
   - owner: envoyproxy
@@ -119,7 +119,7 @@ repositories:
   - owner: goharbor
     repo: harbor
     name: Harbor
-    category: ml-platform
+    category: registry
     project_status: graduated
     accepted_date: "2018-07-31"
   - owner: helm
@@ -413,7 +413,7 @@ repositories:
   - owner: openkruise
     repo: kruise
     name: OpenKruise
-    category: gitops
+    category: ci-cd
     project_status: incubating
     accepted_date: "2020-11-10"
   - owner: openyurtio
@@ -653,7 +653,7 @@ repositories:
   - owner: distribution
     repo: distribution
     name: Distribution
-    category: ml-platform
+    category: registry
     project_status: sandbox
     accepted_date: "2021-01-26"
   - owner: drasi-project
@@ -692,12 +692,6 @@ repositories:
     category: observability
     project_status: sandbox
     accepted_date: "2023-05-17"
-  - owner: hexa-org
-    repo: policy-orchestrator
-    name: Hexa
-    category: security
-    project_status: sandbox
-    accepted_date: "2022-07-26"
   - owner: higress-group
     repo: higress
     name: Higress
@@ -887,7 +881,7 @@ repositories:
   - owner: kube-burner
     repo: kube-burner
     name: Kube-burner
-    category: gitops
+    category: ci-cd
     project_status: sandbox
     accepted_date: "2023-12-18"
   - owner: kubeovn
@@ -1079,7 +1073,7 @@ repositories:
   - owner: open-gitops
     repo: project
     name: OpenGitOps
-    category: gitops
+    category: ci-cd
     project_status: sandbox
     accepted_date: "2021-01-26"
   - owner: opentofu
@@ -1133,7 +1127,7 @@ repositories:
   - owner: pipe-cd
     repo: pipecd
     name: PipeCD
-    category: gitops
+    category: ci-cd
     project_status: sandbox
     accepted_date: "2023-05-17"
   - owner: piraeusdatastore
@@ -1331,13 +1325,13 @@ repositories:
   - owner: WasmEdge
     repo: WasmEdge
     name: WasmEdge Runtime
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2021-04-28"
   - owner: werf
     repo: werf
     name: werf
-    category: gitops
+    category: ci-cd
     project_status: sandbox
     accepted_date: "2022-12-13"
   - owner: xregistry
@@ -1355,6 +1349,6 @@ repositories:
   - owner: project-zot
     repo: zot
     name: zot
-    category: ml-platform
+    category: registry
     project_status: sandbox
     accepted_date: "2022-12-13"

@@ -20,7 +20,7 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain supported package manifests (Go, Cargo, npm, pip, Maven, gem, Dockerfile, etc.).
   auto_generated: true
-  last_updated: "2026-06-15T06:10:17Z"
+  last_updated: "2026-06-22T06:19:26Z"
 repositories:
   - owner: aeraki-mesh
     repo: meta-protocol-proxy
@@ -956,6 +956,12 @@ repositories:
     repo: bcvk
     name: bcvk
     category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from bootc-dev/bootc
+  - owner: bootc-dev
+    repo: bink
+    name: bink
+    category: ml-platform
     project_status: sandbox
     discovered_by: org-scan from bootc-dev/bootc
   - owner: bootc-dev
@@ -2063,6 +2069,12 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from containerd/containerd
   - owner: containerd
+    repo: shimtest
+    name: shimtest
+    category: container-runtime
+    project_status: graduated
+    discovered_by: org-scan from containerd/containerd
+  - owner: containerd
     repo: stargz-snapshotter
     name: stargz-snapshotter
     category: ml-platform
@@ -2455,6 +2467,12 @@ repositories:
   - owner: cozystack
     repo: etcd-operator
     name: etcd-operator
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from cozystack/cozystack
+  - owner: cozystack
+    repo: kilo-clustermesh-operator
+    name: kilo-clustermesh-operator
     category: orchestration
     project_status: sandbox
     discovered_by: org-scan from cozystack/cozystack
@@ -4780,6 +4798,12 @@ repositories:
     category: orchestration
     project_status: sandbox
     discovered_by: org-scan from kube-rs/kube
+  - owner: kube-rs
+    repo: kube-cel
+    name: kube-cel
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from kube-rs/kube
   - owner: kube-vip
     repo: kube-vip-cloud-provider
     name: kube-vip-cloud-provider
@@ -5659,6 +5683,12 @@ repositories:
   - owner: kubernetes-sigs
     repo: kro
     name: kro
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kubernetes-sigs/headlamp
+  - owner: kubernetes-sigs
+    repo: kube-agentic-networking
+    name: kube-agentic-networking
     category: observability
     project_status: sandbox
     discovered_by: org-scan from kubernetes-sigs/headlamp
@@ -6910,6 +6940,42 @@ repositories:
     category: chaos-engineering
     project_status: incubating
     discovered_by: org-scan from litmuschaos/litmus
+  - owner: llm-d
+    repo: llm-d-batch-gateway
+    name: llm-d-batch-gateway
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from llm-d/llm-d
+  - owner: llm-d
+    repo: llm-d-benchmark
+    name: llm-d-benchmark
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from llm-d/llm-d
+  - owner: llm-d
+    repo: llm-d-inference-sim
+    name: llm-d-inference-sim
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from llm-d/llm-d
+  - owner: llm-d
+    repo: llm-d-kv-cache
+    name: llm-d-kv-cache
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from llm-d/llm-d
+  - owner: llm-d
+    repo: llm-d-router
+    name: llm-d-router
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from llm-d/llm-d
+  - owner: llm-d
+    repo: llm-d-workload-variant-autoscaler
+    name: llm-d-workload-variant-autoscaler
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from llm-d/llm-d
   - owner: longhorn
     repo: backing-image-manager
     name: backing-image-manager

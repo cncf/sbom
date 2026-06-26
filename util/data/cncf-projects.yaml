@@ -83,7 +83,7 @@ repositories:
   - owner: dragonflyoss
     repo: dragonfly
     name: Dragonfly
-    category: registry
+    category: ml-platform
     project_status: graduated
     accepted_date: "2018-11-13"
   - owner: envoyproxy
@@ -113,13 +113,13 @@ repositories:
   - owner: fluxcd
     repo: flux2
     name: Flux
-    category: gitops
+    category: ci-cd
     project_status: graduated
     accepted_date: "2019-07-15"
   - owner: goharbor
     repo: harbor
     name: Harbor
-    category: ml-platform
+    category: registry
     project_status: graduated
     accepted_date: "2018-07-31"
   - owner: helm
@@ -353,7 +353,7 @@ repositories:
   - owner: lima-vm
     repo: lima
     name: Lima
-    category: ml-platform
+    category: container-runtime
     project_status: incubating
     accepted_date: "2022-09-14"
   - owner: litmuschaos
@@ -413,7 +413,7 @@ repositories:
   - owner: openkruise
     repo: kruise
     name: OpenKruise
-    category: gitops
+    category: ci-cd
     project_status: incubating
     accepted_date: "2020-11-10"
   - owner: openyurtio
@@ -515,7 +515,7 @@ repositories:
   - owner: bootc-dev
     repo: bootc
     name: bootc
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2025-01-21"
   - owner: bpfman
@@ -725,7 +725,7 @@ repositories:
   - owner: inclavare-containers
     repo: inclavare-containers
     name: Inclavare Containers
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2021-09-14"
   - owner: inspektor-gadget
@@ -887,7 +887,7 @@ repositories:
   - owner: kube-burner
     repo: kube-burner
     name: Kube-burner
-    category: gitops
+    category: ci-cd
     project_status: sandbox
     accepted_date: "2023-12-18"
   - owner: kubeovn
@@ -1085,7 +1085,7 @@ repositories:
   - owner: open-gitops
     repo: project
     name: OpenGitOps
-    category: gitops
+    category: ci-cd
     project_status: sandbox
     accepted_date: "2021-01-26"
   - owner: opentofu
@@ -1139,7 +1139,7 @@ repositories:
   - owner: pipe-cd
     repo: pipecd
     name: PipeCD
-    category: gitops
+    category: ci-cd
     project_status: sandbox
     accepted_date: "2023-05-17"
   - owner: piraeusdatastore
@@ -1307,7 +1307,7 @@ repositories:
   - owner: urunc-dev
     repo: urunc
     name: urunc
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2025-05-22"
   - owner: velero-io
@@ -1343,7 +1343,7 @@ repositories:
   - owner: werf
     repo: werf
     name: werf
-    category: ci-cd
+    category: gitops
     project_status: sandbox
     accepted_date: "2022-12-13"
   - owner: xregistry
@@ -1355,12 +1355,12 @@ repositories:
   - owner: youki-dev
     repo: youki
     name: youki
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2024-10-17"
   - owner: project-zot
     repo: zot
     name: zot
-    category: registry
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2022-12-13"

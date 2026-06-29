@@ -20,7 +20,7 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain supported package manifests (Go, Cargo, npm, pip, Maven, gem, Dockerfile, etc.).
   auto_generated: true
-  last_updated: "2026-06-22T06:19:26Z"
+  last_updated: "2026-06-29T05:57:24Z"
 repositories:
   - owner: aeraki-mesh
     repo: meta-protocol-proxy
@@ -1853,6 +1853,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from connectrpc/connect-go
   - owner: connectrpc
+    repo: connect-py
+    name: connect-py
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from connectrpc/connect-go
+  - owner: connectrpc
     repo: connect-python
     name: connect-python
     category: other
@@ -2467,6 +2473,12 @@ repositories:
   - owner: cozystack
     repo: etcd-operator
     name: etcd-operator
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from cozystack/cozystack
+  - owner: cozystack
+    repo: keycloak-kms-proxy
+    name: keycloak-kms-proxy
     category: orchestration
     project_status: sandbox
     discovered_by: org-scan from cozystack/cozystack
@@ -6461,6 +6473,12 @@ repositories:
     project_status: incubating
     discovered_by: org-scan from kubevirt/kubevirt
   - owner: kubevirt
+    repo: kubevirt-observability-controller
+    name: kubevirt-observability-controller
+    category: build
+    project_status: incubating
+    discovered_by: org-scan from kubevirt/kubevirt
+  - owner: kubevirt
     repo: kubevirt-tekton-tasks
     name: kubevirt-tekton-tasks
     category: build
@@ -6961,6 +6979,12 @@ repositories:
   - owner: llm-d
     repo: llm-d-kv-cache
     name: llm-d-kv-cache
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from llm-d/llm-d
+  - owner: llm-d
+    repo: llm-d-latency-predictor
+    name: llm-d-latency-predictor
     category: other
     project_status: sandbox
     discovered_by: org-scan from llm-d/llm-d
@@ -9293,6 +9317,12 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from prometheus/prometheus
   - owner: prometheus
+    repo: client_js
+    name: client_js
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from prometheus/prometheus
+  - owner: prometheus
     repo: client_model
     name: client_model
     category: observability
@@ -9397,6 +9427,12 @@ repositories:
   - owner: prometheus
     repo: prom2json
     name: prom2json
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from prometheus/prometheus
+  - owner: prometheus
+    repo: prometheus-mcp
+    name: prometheus-mcp
     category: observability
     project_status: graduated
     discovered_by: org-scan from prometheus/prometheus
@@ -9815,6 +9851,12 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from spiffe/spire
   - owner: spiffe
+    repo: spire-identity-exchange
+    name: spire-identity-exchange
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from spiffe/spire
+  - owner: spiffe
     repo: spire-server-attestor-tpm
     name: spire-server-attestor-tpm
     category: security
@@ -10219,6 +10261,12 @@ repositories:
   - owner: truefoundry
     repo: CruiseKube
     name: CruiseKube
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from truefoundry/KubeElasti
+  - owner: truefoundry
+    repo: aitori
+    name: aitori
     category: other
     project_status: sandbox
     discovered_by: org-scan from truefoundry/KubeElasti

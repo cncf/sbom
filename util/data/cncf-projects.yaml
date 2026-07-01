@@ -659,7 +659,7 @@ repositories:
   - owner: distribution
     repo: distribution
     name: Distribution
-    category: ml-platform
+    category: registry
     project_status: sandbox
     accepted_date: "2021-01-26"
   - owner: drasi-project
@@ -725,7 +725,7 @@ repositories:
   - owner: inclavare-containers
     repo: inclavare-containers
     name: Inclavare Containers
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2021-09-14"
   - owner: inspektor-gadget
@@ -737,7 +737,7 @@ repositories:
   - owner: interlink-hq
     repo: interLink
     name: Interlink
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2025-03-04"
   - owner: k0sproject
@@ -887,7 +887,7 @@ repositories:
   - owner: kube-burner
     repo: kube-burner
     name: Kube-burner
-    category: gitops
+    category: ci-cd
     project_status: sandbox
     accepted_date: "2023-12-18"
   - owner: kubeovn
@@ -1085,7 +1085,7 @@ repositories:
   - owner: open-gitops
     repo: project
     name: OpenGitOps
-    category: ci-cd
+    category: gitops
     project_status: sandbox
     accepted_date: "2021-01-26"
   - owner: opentofu
@@ -1307,7 +1307,7 @@ repositories:
   - owner: urunc-dev
     repo: urunc
     name: urunc
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2025-05-22"
   - owner: velero-io
@@ -1325,7 +1325,7 @@ repositories:
   - owner: virtual-kubelet
     repo: virtual-kubelet
     name: Virtual Kubelet
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2018-12-04"
   - owner: vscode-kubernetes-tools
@@ -1337,13 +1337,13 @@ repositories:
   - owner: WasmEdge
     repo: WasmEdge
     name: WasmEdge Runtime
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2021-04-28"
   - owner: werf
     repo: werf
     name: werf
-    category: gitops
+    category: ci-cd
     project_status: sandbox
     accepted_date: "2022-12-13"
   - owner: xregistry
@@ -1361,6 +1361,6 @@ repositories:
   - owner: project-zot
     repo: zot
     name: zot
-    category: registry
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2022-12-13"

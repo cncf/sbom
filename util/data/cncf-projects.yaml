@@ -83,7 +83,7 @@ repositories:
   - owner: dragonflyoss
     repo: dragonfly
     name: Dragonfly
-    category: registry
+    category: ml-platform
     project_status: graduated
     accepted_date: "2018-11-13"
   - owner: envoyproxy
@@ -113,7 +113,7 @@ repositories:
   - owner: fluxcd
     repo: flux2
     name: Flux
-    category: gitops
+    category: ci-cd
     project_status: graduated
     accepted_date: "2019-07-15"
   - owner: goharbor
@@ -593,7 +593,7 @@ repositories:
   - owner: containers
     repo: composefs
     name: composefs
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2025-01-21"
   - owner: confidential-containers
@@ -719,7 +719,7 @@ repositories:
   - owner: hyperlight-dev
     repo: hyperlight
     name: Hyperlight
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2025-03-04"
   - owner: inclavare-containers
@@ -887,7 +887,7 @@ repositories:
   - owner: kube-burner
     repo: kube-burner
     name: Kube-burner
-    category: ci-cd
+    category: gitops
     project_status: sandbox
     accepted_date: "2023-12-18"
   - owner: kubeovn
@@ -1085,7 +1085,7 @@ repositories:
   - owner: open-gitops
     repo: project
     name: OpenGitOps
-    category: gitops
+    category: ci-cd
     project_status: sandbox
     accepted_date: "2021-01-26"
   - owner: opentofu
@@ -1139,7 +1139,7 @@ repositories:
   - owner: pipe-cd
     repo: pipecd
     name: PipeCD
-    category: gitops
+    category: ci-cd
     project_status: sandbox
     accepted_date: "2023-05-17"
   - owner: piraeusdatastore

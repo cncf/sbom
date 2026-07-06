@@ -20,7 +20,7 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain supported package manifests (Go, Cargo, npm, pip, Maven, gem, Dockerfile, etc.).
   auto_generated: true
-  last_updated: "2026-06-29T05:57:24Z"
+  last_updated: "2026-07-06T05:55:50Z"
 repositories:
   - owner: aeraki-mesh
     repo: meta-protocol-proxy
@@ -913,6 +913,12 @@ repositories:
   - owner: bfenetworks
     repo: api-server
     name: api-server
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from bfenetworks/bfe
+  - owner: bfenetworks
+    repo: bfe-access-pb
+    name: bfe-access-pb
     category: other
     project_status: sandbox
     discovered_by: org-scan from bfenetworks/bfe
@@ -1867,6 +1873,12 @@ repositories:
   - owner: connectrpc
     repo: connect-query-es
     name: connect-query-es
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from connectrpc/connect-go
+  - owner: connectrpc
+    repo: connect-rust
+    name: connect-rust
     category: other
     project_status: sandbox
     discovered_by: org-scan from connectrpc/connect-go
@@ -6971,6 +6983,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from llm-d/llm-d
   - owner: llm-d
+    repo: llm-d-inference-payload-processor
+    name: llm-d-inference-payload-processor
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from llm-d/llm-d
+  - owner: llm-d
     repo: llm-d-inference-sim
     name: llm-d-inference-sim
     category: other
@@ -9413,6 +9431,12 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from prometheus/prometheus
   - owner: prometheus
+    repo: opentelemetry-collector-bridge
+    name: opentelemetry-collector-bridge
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from prometheus/prometheus
+  - owner: prometheus
     repo: otlptranslator
     name: otlptranslator
     category: observability
@@ -10303,6 +10327,18 @@ repositories:
   - owner: truefoundry
     repo: train-iris-job
     name: train-iris-job
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from truefoundry/KubeElasti
+  - owner: truefoundry
+    repo: truefoundry-gateway-python-sdk
+    name: truefoundry-gateway-python-sdk
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from truefoundry/KubeElasti
+  - owner: truefoundry
+    repo: truefoundry-gateway-typescript-sdk
+    name: truefoundry-gateway-typescript-sdk
     category: other
     project_status: sandbox
     discovered_by: org-scan from truefoundry/KubeElasti

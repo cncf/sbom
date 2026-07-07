@@ -47,7 +47,7 @@ repositories:
   - owner: containerd
     repo: containerd
     name: containerd
-    category: container-runtime
+    category: ml-platform
     project_status: graduated
     accepted_date: "2017-03-29"
   - owner: coredns
@@ -359,7 +359,7 @@ repositories:
   - owner: lima-vm
     repo: lima
     name: Lima
-    category: ml-platform
+    category: container-runtime
     project_status: incubating
     accepted_date: "2022-09-14"
   - owner: litmuschaos
@@ -599,7 +599,7 @@ repositories:
   - owner: containers
     repo: composefs
     name: composefs
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2025-01-21"
   - owner: confidential-containers
@@ -665,7 +665,7 @@ repositories:
   - owner: distribution
     repo: distribution
     name: Distribution
-    category: ml-platform
+    category: registry
     project_status: sandbox
     accepted_date: "2021-01-26"
   - owner: drasi-project
@@ -887,7 +887,7 @@ repositories:
   - owner: kube-burner
     repo: kube-burner
     name: Kube-burner
-    category: gitops
+    category: ci-cd
     project_status: sandbox
     accepted_date: "2023-12-18"
   - owner: kubeovn
@@ -1307,7 +1307,7 @@ repositories:
   - owner: urunc-dev
     repo: urunc
     name: urunc
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2025-05-22"
   - owner: velero-io
@@ -1325,7 +1325,7 @@ repositories:
   - owner: virtual-kubelet
     repo: virtual-kubelet
     name: Virtual Kubelet
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2018-12-04"
   - owner: vscode-kubernetes-tools
@@ -1343,7 +1343,7 @@ repositories:
   - owner: werf
     repo: werf
     name: werf
-    category: ci-cd
+    category: gitops
     project_status: sandbox
     accepted_date: "2022-12-13"
   - owner: xregistry

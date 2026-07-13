@@ -20,7 +20,7 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain supported package manifests (Go, Cargo, npm, pip, Maven, gem, Dockerfile, etc.).
   auto_generated: true
-  last_updated: "2026-07-06T05:55:50Z"
+  last_updated: "2026-07-13T06:44:27Z"
 repositories:
   - owner: aeraki-mesh
     repo: meta-protocol-proxy
@@ -979,6 +979,12 @@ repositories:
   - owner: bootc-dev
     repo: jsonrpc-fdpass
     name: jsonrpc-fdpass
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from bootc-dev/bootc
+  - owner: bootc-dev
+    repo: linux-kernel-cmdline
+    name: linux-kernel-cmdline
     category: container-runtime
     project_status: sandbox
     discovered_by: org-scan from bootc-dev/bootc
@@ -2156,6 +2162,12 @@ repositories:
     repo: conmon-rs
     name: conmon-rs
     category: ml-platform
+    project_status: sandbox
+    discovered_by: org-scan from containers/podman
+  - owner: containers
+    repo: conmon-v3
+    name: conmon-v3
+    category: container-runtime
     project_status: sandbox
     discovered_by: org-scan from containers/podman
   - owner: containers
@@ -5933,6 +5945,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from kubernetes-sigs/headlamp
   - owner: kubernetes-sigs
+    repo: scheduler-library
+    name: scheduler-library
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kubernetes-sigs/headlamp
+  - owner: kubernetes-sigs
     repo: scheduler-plugins
     name: scheduler-plugins
     category: observability
@@ -8237,6 +8255,12 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from open-telemetry/community
   - owner: open-telemetry
+    repo: opentelemetry-python-genai
+    name: opentelemetry-python-genai
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from open-telemetry/community
+  - owner: open-telemetry
     repo: opentelemetry-ruby
     name: opentelemetry-ruby
     category: observability
@@ -10315,6 +10339,12 @@ repositories:
   - owner: truefoundry
     repo: llm-finetune
     name: llm-finetune
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from truefoundry/KubeElasti
+  - owner: truefoundry
+    repo: network-policy-operator
+    name: network-policy-operator
     category: other
     project_status: sandbox
     discovered_by: org-scan from truefoundry/KubeElasti

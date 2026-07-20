@@ -20,7 +20,7 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain supported package manifests (Go, Cargo, npm, pip, Maven, gem, Dockerfile, etc.).
   auto_generated: true
-  last_updated: "2026-07-13T06:44:27Z"
+  last_updated: "2026-07-20T05:36:06Z"
 repositories:
   - owner: aeraki-mesh
     repo: meta-protocol-proxy
@@ -953,6 +953,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from bfenetworks/bfe
   - owner: bfenetworks
+    repo: log-reader
+    name: log-reader
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from bfenetworks/bfe
+  - owner: bfenetworks
     repo: service-controller
     name: service-controller
     category: other
@@ -1471,6 +1477,12 @@ repositories:
   - owner: chaosblade-io
     repo: chaosblade-exec-os
     name: chaosblade-exec-os
+    category: chaos-engineering
+    project_status: sandbox
+    discovered_by: org-scan from chaosblade-io/chaosblade
+  - owner: chaosblade-io
+    repo: chaosblade-exec-python
+    name: chaosblade-exec-python
     category: chaos-engineering
     project_status: sandbox
     discovered_by: org-scan from chaosblade-io/chaosblade
@@ -3449,6 +3461,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from higress-group/higress
   - owner: higress-group
+    repo: issue-spec
+    name: issue-spec
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from higress-group/higress
+  - owner: higress-group
     repo: openapi-to-mcpserver
     name: openapi-to-mcpserver
     category: other
@@ -3868,6 +3886,12 @@ repositories:
     category: automation
     project_status: sandbox
     discovered_by: org-scan from kagent-dev/kagent
+  - owner: kai-scheduler
+    repo: api
+    name: api
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from kai-scheduler/KAI-Scheduler
   - owner: kairos-io
     repo: AuroraBoot
     name: AuroraBoot
@@ -6592,6 +6616,12 @@ repositories:
     category: build
     project_status: incubating
     discovered_by: org-scan from kubevirt/kubevirt
+  - owner: kubevirt
+    repo: vm-file-restore-operator
+    name: vm-file-restore-operator
+    category: build
+    project_status: incubating
+    discovered_by: org-scan from kubevirt/kubevirt
   - owner: kubewarden
     repo: adm-controller
     name: adm-controller
@@ -6988,6 +7018,12 @@ repositories:
     category: chaos-engineering
     project_status: incubating
     discovered_by: org-scan from litmuschaos/litmus
+  - owner: llm-d
+    repo: llm-d-async
+    name: llm-d-async
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from llm-d/llm-d
   - owner: llm-d
     repo: llm-d-batch-gateway
     name: llm-d-batch-gateway
@@ -8213,6 +8249,12 @@ repositories:
     project_status: incubating
     discovered_by: org-scan from open-telemetry/community
   - owner: open-telemetry
+    repo: opentelemetry-packaging
+    name: opentelemetry-packaging
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from open-telemetry/community
+  - owner: open-telemetry
     repo: opentelemetry-php
     name: opentelemetry-php
     category: observability
@@ -8479,6 +8521,12 @@ repositories:
   - owner: openfga
     repo: go-sdk
     name: go-sdk
+    category: security
+    project_status: incubating
+    discovered_by: org-scan from openfga/openfga
+  - owner: openfga
+    repo: intellij-plugin
+    name: intellij-plugin
     category: security
     project_status: incubating
     discovered_by: org-scan from openfga/openfga
@@ -8933,6 +8981,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from ovn-kubernetes/ovn-kubernetes
   - owner: oxia-db
+    repo: benchmark
+    name: benchmark
+    category: networking
+    project_status: sandbox
+    discovered_by: org-scan from oxia-db/oxia
+  - owner: oxia-db
     repo: liboxia
     name: liboxia
     category: networking
@@ -8953,6 +9007,12 @@ repositories:
   - owner: oxia-db
     repo: oxia-client-python
     name: oxia-client-python
+    category: networking
+    project_status: sandbox
+    discovered_by: org-scan from oxia-db/oxia
+  - owner: oxia-db
+    repo: oxia-client-rust
+    name: oxia-client-rust
     category: networking
     project_status: sandbox
     discovered_by: org-scan from oxia-db/oxia
@@ -10132,6 +10192,54 @@ repositories:
     category: observability
     project_status: sandbox
     discovered_by: org-scan from sustainable-computing-io/kepler
+  - owner: tektoncd
+    repo: chains
+    name: chains
+    category: ci-cd
+    project_status: incubating
+    discovered_by: org-scan from tektoncd/pipeline
+  - owner: tektoncd
+    repo: cli
+    name: cli
+    category: ci-cd
+    project_status: incubating
+    discovered_by: org-scan from tektoncd/pipeline
+  - owner: tektoncd
+    repo: dashboard
+    name: dashboard
+    category: ci-cd
+    project_status: incubating
+    discovered_by: org-scan from tektoncd/pipeline
+  - owner: tektoncd
+    repo: operator
+    name: operator
+    category: ci-cd
+    project_status: incubating
+    discovered_by: org-scan from tektoncd/pipeline
+  - owner: tektoncd
+    repo: pipelines-as-code
+    name: pipelines-as-code
+    category: ci-cd
+    project_status: incubating
+    discovered_by: org-scan from tektoncd/pipeline
+  - owner: tektoncd
+    repo: pruner
+    name: pruner
+    category: ci-cd
+    project_status: incubating
+    discovered_by: org-scan from tektoncd/pipeline
+  - owner: tektoncd
+    repo: results
+    name: results
+    category: ci-cd
+    project_status: incubating
+    discovered_by: org-scan from tektoncd/pipeline
+  - owner: tektoncd
+    repo: triggers
+    name: triggers
+    category: ci-cd
+    project_status: incubating
+    discovered_by: org-scan from tektoncd/pipeline
   - owner: telepresenceio
     repo: go-fuseftp
     name: go-fuseftp

@@ -23,7 +23,7 @@ repositories:
   - owner: argoproj
     repo: argo-cd
     name: Argo
-    category: ci-cd
+    category: gitops
     project_status: graduated
     accepted_date: "2020-03-26"
   - owner: buildpacks
@@ -53,7 +53,7 @@ repositories:
   - owner: containerd
     repo: containerd
     name: containerd
-    category: container-runtime
+    category: ml-platform
     project_status: graduated
     accepted_date: "2017-03-29"
   - owner: coredns
@@ -65,7 +65,7 @@ repositories:
   - owner: cri-o
     repo: cri-o
     name: CRI-O
-    category: container-runtime
+    category: ml-platform
     project_status: graduated
     accepted_date: "2019-04-08"
   - owner: crossplane
@@ -320,6 +320,12 @@ repositories:
     category: orchestration
     project_status: incubating
     accepted_date: "2024-08-21"
+  - owner: k8gb-io
+    repo: k8gb
+    name: k8gb
+    category: networking
+    project_status: incubating
+    accepted_date: "2021-03-30"
   - owner: karmada-io
     repo: karmada
     name: Karmada
@@ -533,7 +539,7 @@ repositories:
   - owner: bootc-dev
     repo: bootc
     name: bootc
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2025-01-21"
   - owner: bpfman
@@ -671,7 +677,7 @@ repositories:
   - owner: distribution
     repo: distribution
     name: Distribution
-    category: ml-platform
+    category: registry
     project_status: sandbox
     accepted_date: "2021-01-26"
   - owner: drasi-project
@@ -725,7 +731,7 @@ repositories:
   - owner: hyperlight-dev
     repo: hyperlight
     name: Hyperlight
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2025-03-04"
   - owner: inclavare-containers
@@ -758,12 +764,6 @@ repositories:
     category: other
     project_status: sandbox
     accepted_date: "2020-08-19"
-  - owner: k8gb-io
-    repo: k8gb
-    name: k8gb
-    category: networking
-    project_status: sandbox
-    accepted_date: "2021-03-30"
   - owner: k8sgpt-ai
     repo: k8sgpt
     name: K8sGPT
@@ -887,7 +887,7 @@ repositories:
   - owner: kuasar-io
     repo: kuasar
     name: Kuasar
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2023-12-19"
   - owner: kube-burner
@@ -1061,7 +1061,7 @@ repositories:
   - owner: openchoreo
     repo: openchoreo
     name: OpenChoreo
-    category: ci-cd
+    category: gitops
     project_status: sandbox
     accepted_date: "2026-01-06"
   - owner: openebs
@@ -1325,7 +1325,7 @@ repositories:
   - owner: virtual-kubelet
     repo: virtual-kubelet
     name: Virtual Kubelet
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2018-12-04"
   - owner: vscode-kubernetes-tools
@@ -1343,7 +1343,7 @@ repositories:
   - owner: werf
     repo: werf
     name: werf
-    category: gitops
+    category: ci-cd
     project_status: sandbox
     accepted_date: "2022-12-13"
   - owner: xregistry
@@ -1355,12 +1355,12 @@ repositories:
   - owner: youki-dev
     repo: youki
     name: youki
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2024-10-17"
   - owner: project-zot
     repo: zot
     name: zot
-    category: ml-platform
+    category: registry
     project_status: sandbox
     accepted_date: "2022-12-13"

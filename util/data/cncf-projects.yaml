@@ -371,7 +371,7 @@ repositories:
   - owner: lima-vm
     repo: lima
     name: Lima
-    category: container-runtime
+    category: ml-platform
     project_status: incubating
     accepted_date: "2022-09-14"
   - owner: litmuschaos
@@ -455,7 +455,7 @@ repositories:
   - owner: tektoncd
     repo: pipeline
     name: Tekton
-    category: ci-cd
+    category: gitops
     project_status: incubating
     accepted_date: "2026-03-13"
   - owner: thanos-io
@@ -617,7 +617,7 @@ repositories:
   - owner: containers
     repo: composefs
     name: composefs
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2025-01-21"
   - owner: connectrpc
@@ -731,13 +731,13 @@ repositories:
   - owner: hyperlight-dev
     repo: hyperlight
     name: Hyperlight
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2025-03-04"
   - owner: inclavare-containers
     repo: inclavare-containers
     name: Inclavare Containers
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2021-09-14"
   - owner: inspektor-gadget
@@ -749,7 +749,7 @@ repositories:
   - owner: interlink-hq
     repo: interLink
     name: Interlink
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2025-03-04"
   - owner: k0sproject
@@ -887,7 +887,7 @@ repositories:
   - owner: kuasar-io
     repo: kuasar
     name: Kuasar
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2023-12-19"
   - owner: kube-burner
@@ -1145,7 +1145,7 @@ repositories:
   - owner: pipe-cd
     repo: pipecd
     name: PipeCD
-    category: ci-cd
+    category: gitops
     project_status: sandbox
     accepted_date: "2023-05-17"
   - owner: piraeusdatastore
@@ -1313,7 +1313,7 @@ repositories:
   - owner: urunc-dev
     repo: urunc
     name: urunc
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2025-05-22"
   - owner: velero-io
@@ -1337,13 +1337,13 @@ repositories:
   - owner: WasmEdge
     repo: WasmEdge
     name: WasmEdge Runtime
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2021-04-28"
   - owner: werf
     repo: werf
     name: werf
-    category: ci-cd
+    category: gitops
     project_status: sandbox
     accepted_date: "2022-12-13"
   - owner: xregistry
@@ -1355,7 +1355,7 @@ repositories:
   - owner: youki-dev
     repo: youki
     name: youki
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2024-10-17"
   - owner: project-zot

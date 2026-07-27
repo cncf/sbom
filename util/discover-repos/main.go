@@ -180,9 +180,9 @@ func hasGoMod(owner, repo, token string) bool {
 }
 
 // hasSupportedEcosystem checks if a repo contains any package manifest
-// that mikebom can scan (deb, apk, rpm, cargo, gem, golang, maven, npm, pip, or generic binaries).
+// that waybill can scan (deb, apk, rpm, cargo, gem, golang, maven, npm, pip, or generic binaries).
 func hasSupportedEcosystem(owner, repo, token string) bool {
-	// Check for common manifest files that mikebom supports
+	// Check for common manifest files that waybill supports
 	manifestFiles := []string{
 		"go.mod",            // golang
 		"Cargo.lock",        // cargo
@@ -309,7 +309,7 @@ func main() {
 				continue
 			}
 
-			// Check if it has a supported ecosystem (any language mikebom can scan)
+			// Check if it has a supported ecosystem (any language waybill can scan)
 			if !hasSupportedEcosystem(org, repo.Name, token) {
 				continue
 			}

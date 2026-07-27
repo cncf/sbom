@@ -20,7 +20,7 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain supported package manifests (Go, Cargo, npm, pip, Maven, gem, Dockerfile, etc.).
   auto_generated: true
-  last_updated: "2026-07-20T05:36:06Z"
+  last_updated: "2026-07-27T05:38:39Z"
 repositories:
   - owner: aeraki-mesh
     repo: meta-protocol-proxy
@@ -5621,6 +5621,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from kubernetes-sigs/headlamp
   - owner: kubernetes-sigs
+    repo: gateway-api-conformance-images
+    name: gateway-api-conformance-images
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kubernetes-sigs/headlamp
+  - owner: kubernetes-sigs
     repo: gateway-api-inference-extension
     name: gateway-api-inference-extension
     category: observability
@@ -8669,6 +8675,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from openGemini/openGemini
   - owner: openkruise
+    repo: agentio
+    name: agentio
+    category: gitops
+    project_status: incubating
+    discovered_by: org-scan from openkruise/kruise
+  - owner: openkruise
     repo: agents
     name: agents
     category: gitops
@@ -8977,6 +8989,12 @@ repositories:
   - owner: ovn-kubernetes
     repo: libovsdb
     name: libovsdb
+    category: networking
+    project_status: sandbox
+    discovered_by: org-scan from ovn-kubernetes/ovn-kubernetes
+  - owner: ovn-kubernetes
+    repo: ovn-kubernetes-mcp
+    name: ovn-kubernetes-mcp
     category: networking
     project_status: sandbox
     discovered_by: org-scan from ovn-kubernetes/ovn-kubernetes

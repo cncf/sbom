@@ -23,7 +23,7 @@ repositories:
   - owner: argoproj
     repo: argo-cd
     name: Argo
-    category: gitops
+    category: ci-cd
     project_status: graduated
     accepted_date: "2020-03-26"
   - owner: buildpacks
@@ -65,7 +65,7 @@ repositories:
   - owner: cri-o
     repo: cri-o
     name: CRI-O
-    category: container-runtime
+    category: ml-platform
     project_status: graduated
     accepted_date: "2019-04-08"
   - owner: crossplane
@@ -89,7 +89,7 @@ repositories:
   - owner: dragonflyoss
     repo: dragonfly
     name: Dragonfly
-    category: ml-platform
+    category: registry
     project_status: graduated
     accepted_date: "2018-11-13"
   - owner: envoyproxy
@@ -431,7 +431,7 @@ repositories:
   - owner: openkruise
     repo: kruise
     name: OpenKruise
-    category: gitops
+    category: ci-cd
     project_status: incubating
     accepted_date: "2020-11-10"
   - owner: openyurtio
@@ -539,7 +539,7 @@ repositories:
   - owner: bootc-dev
     repo: bootc
     name: bootc
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2025-01-21"
   - owner: bpfman
@@ -683,7 +683,7 @@ repositories:
   - owner: distribution
     repo: distribution
     name: Distribution
-    category: ml-platform
+    category: registry
     project_status: sandbox
     accepted_date: "2021-01-26"
   - owner: drasi-project
@@ -899,7 +899,7 @@ repositories:
   - owner: kuasar-io
     repo: kuasar
     name: Kuasar
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2023-12-19"
   - owner: kube-burner
@@ -1355,7 +1355,7 @@ repositories:
   - owner: werf
     repo: werf
     name: werf
-    category: gitops
+    category: ci-cd
     project_status: sandbox
     accepted_date: "2022-12-13"
   - owner: xregistry
@@ -1373,6 +1373,6 @@ repositories:
   - owner: project-zot
     repo: zot
     name: zot
-    category: registry
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2022-12-13"

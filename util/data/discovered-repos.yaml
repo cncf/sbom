@@ -20,7 +20,7 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain supported package manifests (Go, Cargo, npm, pip, Maven, gem, Dockerfile, etc.).
   auto_generated: true
-  last_updated: "2026-07-27T05:38:39Z"
+  last_updated: "2026-08-03T05:35:05Z"
 repositories:
   - owner: aeraki-mesh
     repo: meta-protocol-proxy
@@ -1823,6 +1823,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from confidential-containers/confidential-containers
   - owner: confidential-containers
+    repo: reference-values
+    name: reference-values
+    category: security
+    project_status: incubating
+    discovered_by: org-scan from confidential-containers/confidential-containers
+  - owner: confidential-containers
     repo: simple-kbs
     name: simple-kbs
     category: security
@@ -2819,6 +2825,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from drasi-project/drasi-platform
   - owner: drasi-project
+    repo: drasi-python
+    name: drasi-python
+    category: messaging
+    project_status: sandbox
+    discovered_by: org-scan from drasi-project/drasi-platform
+  - owner: drasi-project
     repo: drasi-server
     name: drasi-server
     category: messaging
@@ -3103,6 +3115,12 @@ repositories:
   - owner: flatcar
     repo: ue-rs
     name: ue-rs
+    category: other
+    project_status: incubating
+    discovered_by: org-scan from flatcar/Flatcar
+  - owner: flatcar
+    repo: vex-automation
+    name: vex-automation
     category: other
     project_status: incubating
     discovered_by: org-scan from flatcar/Flatcar
@@ -4977,6 +4995,12 @@ repositories:
     name: mcp-apache-spark-history-server
     category: orchestration
     project_status: incubating
+    discovered_by: org-scan from kubeflow/kubeflow
+  - owner: kubeflow
+    repo: mcp-server
+    name: mcp-server
+    category: orchestration
+    project_status: graduated
     discovered_by: org-scan from kubeflow/kubeflow
   - owner: kubeflow
     repo: mlflow-integration
@@ -8069,6 +8093,12 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from open-policy-agent/opa
   - owner: open-policy-agent
+    repo: gatekeeper-headlamp-plugin
+    name: gatekeeper-headlamp-plugin
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from open-policy-agent/opa
+  - owner: open-policy-agent
     repo: kube-mgmt
     name: kube-mgmt
     category: security
@@ -8125,6 +8155,12 @@ repositories:
   - owner: open-policy-agent
     repo: swift-opa
     name: swift-opa
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from open-policy-agent/opa
+  - owner: open-policy-agent
+    repo: swift-opa-sdk
+    name: swift-opa-sdk
     category: security
     project_status: graduated
     discovered_by: org-scan from open-policy-agent/opa
@@ -8317,6 +8353,12 @@ repositories:
   - owner: open-telemetry
     repo: opentelemetry-ruby-contrib
     name: opentelemetry-ruby-contrib
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from open-telemetry/community
+  - owner: open-telemetry
+    repo: opentelemetry-ruby-instrumentation
+    name: opentelemetry-ruby-instrumentation
     category: observability
     project_status: graduated
     discovered_by: org-scan from open-telemetry/community
@@ -9329,6 +9371,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from Project-HAMi/HAMi
   - owner: project-hami
+    repo: amd-device-plugin
+    name: amd-device-plugin
+    category: orchestration
+    project_status: incubating
+    discovered_by: org-scan from Project-HAMi/HAMi
+  - owner: project-hami
     repo: k8s-dra-driver
     name: k8s-dra-driver
     category: orchestration
@@ -10250,6 +10298,12 @@ repositories:
     repo: results
     name: results
     category: ci-cd
+    project_status: incubating
+    discovered_by: org-scan from tektoncd/pipeline
+  - owner: tektoncd
+    repo: tekton-kueue
+    name: tekton-kueue
+    category: gitops
     project_status: incubating
     discovered_by: org-scan from tektoncd/pipeline
   - owner: tektoncd

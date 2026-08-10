@@ -20,7 +20,7 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain supported package manifests (Go, Cargo, npm, pip, Maven, gem, Dockerfile, etc.).
   auto_generated: true
-  last_updated: "2026-08-03T05:35:05Z"
+  last_updated: "2026-08-10T04:55:21Z"
 repositories:
   - owner: aeraki-mesh
     repo: meta-protocol-proxy
@@ -3923,6 +3923,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from kairos-io/kairos
   - owner: kairos-io
+    repo: cluster-api-provider-kairos-fleet
+    name: cluster-api-provider-kairos-fleet
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from kairos-io/kairos
+  - owner: kairos-io
     repo: efi-key-enroller
     name: efi-key-enroller
     category: automation
@@ -4321,6 +4327,12 @@ repositories:
   - owner: kedacore
     repo: keda-olm-operator
     name: keda-olm-operator
+    category: orchestration
+    project_status: graduated
+    discovered_by: org-scan from kedacore/keda
+  - owner: kedacore
+    repo: release-flow-test
+    name: release-flow-test
     category: orchestration
     project_status: graduated
     discovered_by: org-scan from kedacore/keda
@@ -7169,8 +7181,26 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from loxilb-io/loxilb
   - owner: loxilb-io
+    repo: loxilb-inference-gateway
+    name: loxilb-inference-gateway
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from loxilb-io/loxilb
+  - owner: loxilb-io
     repo: loxilb-ingress
     name: loxilb-ingress
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from loxilb-io/loxilb
+  - owner: loxilb-io
+    repo: loxilb-oam
+    name: loxilb-oam
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from loxilb-io/loxilb
+  - owner: loxilb-io
+    repo: loxilb-ui
+    name: loxilb-ui
     category: other
     project_status: sandbox
     discovered_by: org-scan from loxilb-io/loxilb
@@ -8537,6 +8567,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from openeverest/openeverest
   - owner: openeverest
+    repo: provider-mariadb
+    name: provider-mariadb
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openeverest/openeverest
+  - owner: openeverest
     repo: provider-percona-server-mongodb
     name: provider-percona-server-mongodb
     category: storage
@@ -9262,6 +9298,24 @@ repositories:
     category: observability
     project_status: sandbox
     discovered_by: org-scan from pixie-io/pixie
+  - owner: podman-container-tools
+    repo: buildah
+    name: buildah
+    category: ml-platform
+    project_status: sandbox
+    discovered_by: org-scan from podman-container-tools/podman
+  - owner: podman-container-tools
+    repo: container-libs
+    name: container-libs
+    category: ml-platform
+    project_status: sandbox
+    discovered_by: org-scan from podman-container-tools/podman
+  - owner: podman-container-tools
+    repo: skopeo
+    name: skopeo
+    category: ml-platform
+    project_status: sandbox
+    discovered_by: org-scan from podman-container-tools/podman
   - owner: podman-desktop
     repo: eslint-plugin
     name: eslint-plugin

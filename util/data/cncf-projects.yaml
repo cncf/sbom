@@ -53,7 +53,7 @@ repositories:
   - owner: containerd
     repo: containerd
     name: containerd
-    category: container-runtime
+    category: ml-platform
     project_status: graduated
     accepted_date: "2017-03-29"
   - owner: coredns
@@ -89,7 +89,7 @@ repositories:
   - owner: dragonflyoss
     repo: dragonfly
     name: Dragonfly
-    category: registry
+    category: ml-platform
     project_status: graduated
     accepted_date: "2018-11-13"
   - owner: envoyproxy
@@ -125,7 +125,7 @@ repositories:
   - owner: goharbor
     repo: harbor
     name: Harbor
-    category: registry
+    category: ml-platform
     project_status: graduated
     accepted_date: "2018-07-31"
   - owner: helm
@@ -431,7 +431,7 @@ repositories:
   - owner: openkruise
     repo: kruise
     name: OpenKruise
-    category: gitops
+    category: ci-cd
     project_status: incubating
     accepted_date: "2020-11-10"
   - owner: openyurtio
@@ -683,7 +683,7 @@ repositories:
   - owner: distribution
     repo: distribution
     name: Distribution
-    category: registry
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2021-01-26"
   - owner: drasi-project
@@ -905,7 +905,7 @@ repositories:
   - owner: kube-burner
     repo: kube-burner
     name: Kube-burner
-    category: gitops
+    category: ci-cd
     project_status: sandbox
     accepted_date: "2023-12-18"
   - owner: kubeovn
@@ -1073,7 +1073,7 @@ repositories:
   - owner: openchoreo
     repo: openchoreo
     name: OpenChoreo
-    category: gitops
+    category: ci-cd
     project_status: sandbox
     accepted_date: "2026-01-06"
   - owner: openebs
@@ -1157,7 +1157,7 @@ repositories:
   - owner: pipe-cd
     repo: pipecd
     name: PipeCD
-    category: gitops
+    category: ci-cd
     project_status: sandbox
     accepted_date: "2023-05-17"
   - owner: piraeusdatastore
@@ -1175,7 +1175,7 @@ repositories:
   - owner: podman-container-tools
     repo: podman
     name: Podman Container Tools
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2025-01-21"
   - owner: podman-desktop
@@ -1337,7 +1337,7 @@ repositories:
   - owner: virtual-kubelet
     repo: virtual-kubelet
     name: Virtual Kubelet
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2018-12-04"
   - owner: vscode-kubernetes-tools
@@ -1373,6 +1373,6 @@ repositories:
   - owner: project-zot
     repo: zot
     name: zot
-    category: registry
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2022-12-13"

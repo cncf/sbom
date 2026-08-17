@@ -20,7 +20,7 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain supported package manifests (Go, Cargo, npm, pip, Maven, gem, Dockerfile, etc.).
   auto_generated: true
-  last_updated: "2026-08-10T04:55:21Z"
+  last_updated: "2026-08-17T04:43:37Z"
 repositories:
   - owner: aeraki-mesh
     repo: meta-protocol-proxy
@@ -943,6 +943,12 @@ repositories:
   - owner: bfenetworks
     repo: dashboard
     name: dashboard
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from bfenetworks/bfe
+  - owner: bfenetworks
+    repo: go-lib
+    name: go-lib
     category: other
     project_status: sandbox
     discovered_by: org-scan from bfenetworks/bfe
@@ -4283,6 +4289,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from kcp-dev/kcp
   - owner: kcp-dev
+    repo: contrib-access-virtual-workspace
+    name: contrib-access-virtual-workspace
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from kcp-dev/kcp
+  - owner: kcp-dev
     repo: contrib-tmc
     name: contrib-tmc
     category: orchestration
@@ -7210,6 +7222,12 @@ repositories:
     category: other
     project_status: sandbox
     discovered_by: org-scan from loxilb-io/loxilb
+  - owner: loxilb-io
+    repo: octavia-loxilb-driver
+    name: octavia-loxilb-driver
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from loxilb-io/loxilb
   - owner: meshery
     repo: meshery-adapter-library
     name: meshery-adapter-library
@@ -8573,14 +8591,32 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from openeverest/openeverest
   - owner: openeverest
+    repo: provider-percona-postgresql
+    name: provider-percona-postgresql
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openeverest/openeverest
+  - owner: openeverest
     repo: provider-percona-server-mongodb
     name: provider-percona-server-mongodb
     category: storage
     project_status: sandbox
     discovered_by: org-scan from openeverest/openeverest
   - owner: openeverest
+    repo: provider-percona-xtradb-cluster
+    name: provider-percona-xtradb-cluster
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openeverest/openeverest
+  - owner: openeverest
     repo: provider-sdk
     name: provider-sdk
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openeverest/openeverest
+  - owner: openeverest
+    repo: provider-valkey
+    name: provider-valkey
     category: storage
     project_status: sandbox
     discovered_by: org-scan from openeverest/openeverest
@@ -9706,6 +9742,12 @@ repositories:
     category: observability
     project_status: graduated
     discovered_by: org-scan from prometheus/prometheus
+  - owner: radius-project
+    repo: resource-types-contrib
+    name: resource-types-contrib
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from radius-project/radius
   - owner: ratify-project
     repo: docker-ratify
     name: docker-ratify
@@ -10699,6 +10741,12 @@ repositories:
   - owner: volcano-sh
     repo: kubegene
     name: kubegene
+    category: orchestration
+    project_status: incubating
+    discovered_by: org-scan from volcano-sh/volcano
+  - owner: volcano-sh
+    repo: resource-exporter
+    name: resource-exporter
     category: orchestration
     project_status: incubating
     discovered_by: org-scan from volcano-sh/volcano

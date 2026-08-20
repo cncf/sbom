@@ -65,7 +65,7 @@ repositories:
   - owner: cri-o
     repo: cri-o
     name: CRI-O
-    category: container-runtime
+    category: ml-platform
     project_status: graduated
     accepted_date: "2019-04-08"
   - owner: crossplane
@@ -125,7 +125,7 @@ repositories:
   - owner: goharbor
     repo: harbor
     name: Harbor
-    category: ml-platform
+    category: registry
     project_status: graduated
     accepted_date: "2018-07-31"
   - owner: helm
@@ -371,7 +371,7 @@ repositories:
   - owner: lima-vm
     repo: lima
     name: Lima
-    category: container-runtime
+    category: ml-platform
     project_status: incubating
     accepted_date: "2022-09-14"
   - owner: litmuschaos
@@ -539,7 +539,7 @@ repositories:
   - owner: bootc-dev
     repo: bootc
     name: bootc
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2025-01-21"
   - owner: bpfman
@@ -617,7 +617,7 @@ repositories:
   - owner: containers
     repo: composefs
     name: composefs
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2025-01-21"
   - owner: connectrpc
@@ -737,7 +737,7 @@ repositories:
   - owner: hyperlight-dev
     repo: hyperlight
     name: Hyperlight
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2025-03-04"
   - owner: inclavare-containers
@@ -1175,7 +1175,7 @@ repositories:
   - owner: podman-container-tools
     repo: podman
     name: Podman Container Tools
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2025-01-21"
   - owner: podman-desktop
@@ -1349,7 +1349,7 @@ repositories:
   - owner: WasmEdge
     repo: WasmEdge
     name: WasmEdge Runtime
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2021-04-28"
   - owner: werf

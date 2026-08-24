@@ -20,7 +20,7 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain supported package manifests (Go, Cargo, npm, pip, Maven, gem, Dockerfile, etc.).
   auto_generated: true
-  last_updated: "2026-08-17T04:43:37Z"
+  last_updated: "2026-08-24T04:37:26Z"
 repositories:
   - owner: aeraki-mesh
     repo: meta-protocol-proxy
@@ -28,6 +28,12 @@ repositories:
     category: service-mesh
     project_status: sandbox
     discovered_by: org-scan from aeraki-mesh/aeraki
+  - owner: agones-dev
+    repo: headlamp-plugin
+    name: headlamp-plugin
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from agones-dev/agones
   - owner: alibaba
     repo: Alink
     name: Alink
@@ -2482,6 +2488,12 @@ repositories:
     category: observability
     project_status: incubating
     discovered_by: org-scan from cortexproject/cortex
+  - owner: cortexproject
+    repo: cortex-tools
+    name: cortex-tools
+    category: observability
+    project_status: incubating
+    discovered_by: org-scan from cortexproject/cortex
   - owner: cozystack
     repo: blockstor
     name: blockstor
@@ -4295,8 +4307,20 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from kcp-dev/kcp
   - owner: kcp-dev
+    repo: contrib-mcp-virtual-workspace
+    name: contrib-mcp-virtual-workspace
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from kcp-dev/kcp
+  - owner: kcp-dev
     repo: contrib-tmc
     name: contrib-tmc
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from kcp-dev/kcp
+  - owner: kcp-dev
+    repo: contrib-virtual-ephemeral-resources-virtual-workspace
+    name: contrib-virtual-ephemeral-resources-virtual-workspace
     category: orchestration
     project_status: sandbox
     discovered_by: org-scan from kcp-dev/kcp
@@ -8464,6 +8488,48 @@ repositories:
     category: observability
     project_status: graduated
     discovered_by: org-scan from open-telemetry/community
+  - owner: open-workflow-specification
+    repo: editor
+    name: editor
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from open-workflow-specification/specification
+  - owner: open-workflow-specification
+    repo: sdk-go
+    name: sdk-go
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from open-workflow-specification/specification
+  - owner: open-workflow-specification
+    repo: sdk-java
+    name: sdk-java
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from open-workflow-specification/specification
+  - owner: open-workflow-specification
+    repo: sdk-python
+    name: sdk-python
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from open-workflow-specification/specification
+  - owner: open-workflow-specification
+    repo: sdk-rust
+    name: sdk-rust
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from open-workflow-specification/specification
+  - owner: open-workflow-specification
+    repo: sdk-typescript
+    name: sdk-typescript
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from open-workflow-specification/specification
+  - owner: open-workflow-specification
+    repo: vscode-extension
+    name: vscode-extension
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from open-workflow-specification/specification
   - owner: opencost
     repo: bingen
     name: bingen
@@ -8581,6 +8647,12 @@ repositories:
   - owner: openeverest
     repo: plugin-mongodb-explorer
     name: plugin-mongodb-explorer
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openeverest/openeverest
+  - owner: openeverest
+    repo: provider-cassandra
+    name: provider-cassandra
     category: storage
     project_status: sandbox
     discovered_by: org-scan from openeverest/openeverest
@@ -9463,6 +9535,12 @@ repositories:
   - owner: project-hami
     repo: amd-device-plugin
     name: amd-device-plugin
+    category: orchestration
+    project_status: incubating
+    discovered_by: org-scan from Project-HAMi/HAMi
+  - owner: project-hami
+    repo: ascend-device-plugin
+    name: ascend-device-plugin
     category: orchestration
     project_status: incubating
     discovered_by: org-scan from Project-HAMi/HAMi
@@ -10447,6 +10525,12 @@ repositories:
   - owner: theupdateframework
     repo: tuf-js
     name: tuf-js
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from theupdateframework/python-tuf
+  - owner: theupdateframework
+    repo: tuf-on-ci
+    name: tuf-on-ci
     category: security
     project_status: graduated
     discovered_by: org-scan from theupdateframework/python-tuf

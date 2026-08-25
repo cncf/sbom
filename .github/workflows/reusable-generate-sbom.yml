@@ -289,15 +289,15 @@ jobs:
             fi
 
             echo "Uploading: s3://${BUCKET}/${S3_KEY}"
-            if aws s3api put-object \
+            if ERR=$(aws s3api put-object \
               --endpoint-url "$S3_ENDPOINT" \
               --region "$S3_REGION" \
               --bucket "$BUCKET" \
               --key "$S3_KEY" \
-              --body "$file" >/dev/null; then
+              --body "$file" 2>&1 >/dev/null); then
               UPLOADED=$((UPLOADED + 1))
             else
-              echo "::warning::Upload failed for ${file}"
+              echo "::warning::Upload failed for ${file}: ${ERR}"
             fi
           done < <(find "$SBOM_BASE_DIR" -type f -name '*.json' | sort)
 

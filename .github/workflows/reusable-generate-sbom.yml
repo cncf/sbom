@@ -126,12 +126,27 @@ jobs:
             fi
           }
           
-          RELEASES=$(gh api repos/${OWNER}/${REPO}/releases --paginate -q '.[0:50]' 2>/dev/null || echo "[]")
+          if ! RELEASES=$(gh api "repos/${OWNER}/${REPO}/releases?per_page=50" 2>&1); then
+            echo "::error::Failed to fetch releases for ${OWNER}/${REPO}: ${RELEASES}"
+            exit 1
+          fi
+          if ! echo "$RELEASES" | jq -e 'type == "array"' >/dev/null 2>&1; then
+            echo "::error::Unexpected releases response for ${OWNER}/${REPO}: ${RELEASES}"
+            exit 1
+          fi
           
-          if [ "$RELEASES" == "[]" ] || [ -z "$RELEASES" ]; then
-            TAGS=$(gh api repos/${OWNER}/${REPO}/tags --paginate -q '.[0:20] | .[].name' 2>/dev/null || echo "")
+          if [ "$(echo "$RELEASES" | jq 'length')" -eq 0 ]; then
+            if ! TAGS_JSON=$(gh api "repos/${OWNER}/${REPO}/tags?per_page=20" 2>&1); then
+              echo "::error::Failed to fetch tags for ${OWNER}/${REPO}: ${TAGS_JSON}"
+              exit 1
+            fi
+            if ! echo "$TAGS_JSON" | jq -e 'type == "array"' >/dev/null 2>&1; then
+              echo "::error::Unexpected tags response for ${OWNER}/${REPO}: ${TAGS_JSON}"
+              exit 1
+            fi
+            readarray -t TAGS < <(echo "$TAGS_JSON" | jq -r '.[].name')
             
-            if [ -z "$TAGS" ]; then
+            if [ "${#TAGS[@]}" -eq 0 ]; then
               echo "No tags found, skipping..."
               echo "::endgroup::"
               exit 0
@@ -139,7 +154,7 @@ jobs:
             
             EFFECTIVE_MAX=$( [ "$RELEASES_MODE" == "recent" ] && echo 3 || echo $MAX_RELEASES )
             
-            for TAG in $TAGS; do
+            for TAG in "${TAGS[@]}"; do
               if echo "$TAG" | grep -qiE '[-\.](alpha|beta|rc|pre|dev|snapshot|nightly|canary|test|draft|wip)[0-9]*'; then
                 continue
               fi

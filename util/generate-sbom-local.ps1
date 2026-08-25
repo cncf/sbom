@@ -4,7 +4,7 @@
 
 .DESCRIPTION
     This script mimics the GitHub Actions workflow for local testing on Windows.
-    Uses mikebom (https://github.com/kusari-sandbox/mikebom) for SBOM generation.
+    Uses Waybill (https://github.com/kusari-oss/waybill) for SBOM generation.
 
 .PARAMETER ProjectFilter
     Filter by owner/repo (e.g., "kubernetes/kubernetes"). Leave empty for all.
@@ -32,11 +32,11 @@
     - git
     - gh CLI (GitHub CLI) - for API access
     - yq (https://github.com/mikefarah/yq) - install via: choco install yq
-    - mikebom (auto-downloaded if not present)
+    - Waybill (auto-downloaded if not present)
 
     Environment variables:
     - GH_TOKEN or GITHUB_TOKEN - GitHub token for API access
-    - MIKEBOM_VERSION - mikebom release version (default: v0.1.0-alpha.31)
+    - WAYBILL_VERSION - Waybill release version (default: v0.2.0)
 #>
 
 param(
@@ -54,7 +54,7 @@ $ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $RootDir = Split-Path -Parent (Split-Path -Parent $ScriptDir)
 $DataFile = Join-Path $RootDir "util\data\repositories.yaml"
 $SbomBaseDir = Join-Path $RootDir "sbom"
-$MikebomVersion = if ($env:MIKEBOM_VERSION) { $env:MIKEBOM_VERSION } else { "v0.1.0-alpha.31" }
+$WaybillVersion = if ($env:WAYBILL_VERSION) { $env:WAYBILL_VERSION } else { "v0.2.0" }
 
 function Write-Header($text) {
     Write-Host ""
@@ -88,25 +88,25 @@ function Test-Prerequisites {
     }
 }
 
-function Install-Mikebom {
-    if (Get-Command "mikebom" -ErrorAction SilentlyContinue) {
-        Write-Host "Using mikebom: $(Get-Command mikebom | Select-Object -ExpandProperty Source)"
+function Install-Waybill {
+    if (Get-Command "waybill" -ErrorAction SilentlyContinue) {
+        Write-Host "Using Waybill: $(Get-Command waybill | Select-Object -ExpandProperty Source)"
         return
     }
 
     $localBin = Join-Path $RootDir ".local\bin"
-    $mikebomExe = Join-Path $localBin "mikebom.exe"
+    $waybillExe = Join-Path $localBin "waybill.exe"
 
-    if (Test-Path $mikebomExe) {
+    if (Test-Path $waybillExe) {
         $env:PATH = "$localBin;$env:PATH"
-        Write-Host "Using mikebom: $mikebomExe"
+        Write-Host "Using Waybill: $waybillExe"
         return
     }
 
-    Write-Host "mikebom not found. Please download it manually from:"
-    Write-Host "  https://github.com/kusari-sandbox/mikebom/releases/tag/$MikebomVersion"
+    Write-Host "Waybill not found. Please download it manually from:"
+    Write-Host "  https://github.com/kusari-oss/waybill/releases/tag/$WaybillVersion"
     Write-Host ""
-    Write-Host "Place the mikebom binary in your PATH or in: $localBin"
+    Write-Host "Place the Waybill binary in your PATH or in: $localBin"
     exit 1
 }
 
@@ -144,14 +144,14 @@ function New-Sbom($Owner, $Repo, $ProjectName, $Tag) {
             New-Item -ItemType Directory -Path $sbomDir -Force | Out-Null
         }
 
-        # Generate SBOM with mikebom (SPDX 2.3 + deps.dev enrichment)
-        $mikebomOutput = & mikebom sbom scan --path $tempDir --format spdx-2.3-json --root-name "$Owner/$Repo" --root-version $Tag --repo "https://github.com/$Owner/$Repo.git" --git-ref $Tag --output $sbomFile 2>&1
+        # Generate SBOM with Waybill (SPDX 2.3 + deps.dev enrichment)
+        $waybillOutput = & waybill sbom scan --path $tempDir --format spdx-2.3-json --root-name "$Owner/$Repo" --root-version $Tag --repo "https://github.com/$Owner/$Repo.git" --git-ref $Tag --output $sbomFile 2>&1
         if ($LASTEXITCODE -eq 0) {
             Write-Host "  Successfully generated SBOM: $sbomFile" -ForegroundColor Green
             return $true
         } else {
             Write-Host "  Failed to generate SBOM for $Owner/$Repo@$Tag" -ForegroundColor Red
-            Write-Host "  Error: $mikebomOutput" -ForegroundColor Red
+            Write-Host "  Error: $waybillOutput" -ForegroundColor Red
             return $false
         }
     }
@@ -293,7 +293,7 @@ function New-SbomIndex {
 
 # Main execution
 function Main {
-    Write-Host "SBOM Generator for CNCF Projects (powered by mikebom)" -ForegroundColor Cyan
+    Write-Host "SBOM Generator for CNCF Projects (powered by Waybill)" -ForegroundColor Cyan
     Write-Host "======================================================" -ForegroundColor Cyan
     Write-Host ""
     Write-Host "Settings:"
@@ -301,11 +301,11 @@ function Main {
     Write-Host "  Project filter: $(if ($ProjectFilter) { $ProjectFilter } else { 'all' })"
     Write-Host "  Max releases per repo: $MaxReleases"
     Write-Host "  Output directory: $SbomBaseDir"
-    Write-Host "  mikebom version: $MikebomVersion"
+    Write-Host "  Waybill version: $WaybillVersion"
     Write-Host ""
 
     Test-Prerequisites
-    Install-Mikebom
+    Install-Waybill
 
     # Ensure data file exists
     if (-not (Test-Path $DataFile)) {

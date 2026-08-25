@@ -397,6 +397,9 @@ jobs:
           SANITIZED_PROJECT=$(echo "$PROJECT_NAME" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr -cd '[:alnum:]-')
           SBOM_BASE_DIR="sbom/${SANITIZED_PROJECT}/${REPO}"
 
+          # Normalize endpoint — ensure scheme is present
+          [[ "$S3_ENDPOINT" != http://* && "$S3_ENDPOINT" != https://* ]] && S3_ENDPOINT="https://${S3_ENDPOINT}"
+
           if [ ! -d "$SBOM_BASE_DIR" ]; then
             echo "No SBOMs generated, nothing to upload"
             exit 0

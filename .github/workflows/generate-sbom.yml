@@ -45,7 +45,7 @@ on:
           - discovered    # Only discovered repos from CNCF orgs
 
 env:
-  MIKEBOM_VERSION: v0.1.0-alpha.31
+  WAYBILL_VERSION: v0.2.0
 
 permissions:
   contents: read
@@ -175,6 +175,7 @@ jobs:
     needs: prepare-cncf-matrix
     if: ${{ needs.prepare-cncf-matrix.outputs.has_repos == 'true' }}
     runs-on: cncf-c-ubuntu-2-8-x86
+    timeout-minutes: 180
     strategy:
       fail-fast: false
       max-parallel: 5
@@ -184,12 +185,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v5
 
-      - name: Install mikebom
+      - name: Install Waybill
         run: |
-          curl -sL "https://github.com/kusari-sandbox/mikebom/releases/download/${MIKEBOM_VERSION}/mikebom-${MIKEBOM_VERSION}-x86_64-unknown-linux-gnu.tar.gz" -o /tmp/mikebom.tar.gz
-          tar xzf /tmp/mikebom.tar.gz -C /tmp
-          sudo install -m 755 /tmp/mikebom-${MIKEBOM_VERSION}-x86_64-unknown-linux-gnu/mikebom /usr/local/bin/mikebom
-          mikebom --version
+          curl -sL "https://github.com/kusari-oss/waybill/releases/download/${WAYBILL_VERSION}/waybill-${WAYBILL_VERSION}-x86_64-unknown-linux-gnu.tar.gz" -o /tmp/waybill.tar.gz
+          tar xzf /tmp/waybill.tar.gz -C /tmp
+          sudo install -m 755 /tmp/waybill-${WAYBILL_VERSION}-x86_64-unknown-linux-gnu/waybill /usr/local/bin/waybill
+          waybill --version
 
       - name: Install AWS CLI
         run: |
@@ -244,8 +245,8 @@ jobs:
             
             mkdir -p "$SBOM_DIR"
             
-            # Generate SBOM with mikebom (SPDX 2.3 + deps.dev enrichment)
-            if mikebom sbom scan \
+            # Generate SBOM with Waybill (SPDX 2.3 + deps.dev enrichment)
+            if waybill sbom scan \
               --path "$TEMP_DIR" \
               --format spdx-2.3-json \
               --root-name "${OWNER}/${REPO}" \
@@ -319,6 +320,15 @@ jobs:
           fi
           
           echo "::endgroup::"
+
+      - name: Save generated SBOMs as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sbom-${{ matrix.owner }}-${{ matrix.repo }}
+          path: sbom/**
+          if-no-files-found: ignore
+          retention-days: 14
 
       - name: Upload SBOMs to S3
         env:
@@ -492,4 +502,3 @@ jobs:
       releases_mode: ${{ github.event.inputs.releases_mode || 'recent' }}
       max_releases: ${{ github.event.inputs.max_releases || '3' }}
     secrets: inherit
-

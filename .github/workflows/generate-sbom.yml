@@ -348,7 +348,27 @@ jobs:
             done
           fi
           
+          echo "processed=${PROCESSED}" >> "$GITHUB_OUTPUT"
           echo "::endgroup::"
+
+      - name: Write job summary
+        if: always()
+        env:
+          OWNER: ${{ matrix.owner }}
+          REPO: ${{ matrix.repo }}
+          PROJECT_NAME: ${{ matrix.name }}
+          PROCESSED: ${{ steps.generate.outputs.processed || '0' }}
+          RELEASES_MODE: ${{ github.event.inputs.releases_mode || 'recent' }}
+        run: |
+          {
+            echo "### SBOM Generation: \`${OWNER}/${REPO}\`"
+            echo "| Key | Value |"
+            echo "|-----|-------|"
+            echo "| Project | ${PROJECT_NAME} |"
+            echo "| Repository | [\`${OWNER}/${REPO}\`](https://github.com/${OWNER}/${REPO}) |"
+            echo "| Mode | ${RELEASES_MODE} |"
+            echo "| SBOMs generated | **${PROCESSED}** |"
+          } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Save generated SBOMs as artifact
         if: always()
@@ -360,6 +380,7 @@ jobs:
           retention-days: 14
 
       - name: Upload SBOMs to S3
+        id: upload
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.OCI_S3_ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.OCI_S3_SECRET_KEY }}
@@ -403,6 +424,17 @@ jobs:
           done < <(find "$SBOM_BASE_DIR" -type f -name '*.json' | sort)
 
           echo "Uploaded ${UPLOADED} SBOMs to s3://${PROJECT_BUCKET}/"
+          echo "uploaded=${UPLOADED}" >> "$GITHUB_OUTPUT"
+
+      - name: Append upload count to summary
+        if: always()
+        env:
+          UPLOADED: ${{ steps.upload.outputs.uploaded || '0' }}
+          PROJECT_BUCKET: ${{ vars.OCI_PROJECT_BUCKET }}
+        run: |
+          {
+            echo "| SBOMs uploaded to S3 | **${UPLOADED}** (bucket: \`${PROJECT_BUCKET}\`) |"
+          } >> "$GITHUB_STEP_SUMMARY"
 
   # ===========================================
   # Generate SBOMs for subproject repos (Batch 1)

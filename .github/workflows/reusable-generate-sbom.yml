@@ -49,6 +49,15 @@ jobs:
           sudo install -m 755 /tmp/waybill-${WAYBILL_VERSION}-x86_64-unknown-linux-gnu/waybill /usr/local/bin/waybill
           waybill --version
 
+      - name: Install GitHub CLI
+        run: |
+          if ! command -v gh &>/dev/null; then
+            curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+            echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
+            sudo apt-get update -q && sudo apt-get install -y -q gh
+          fi
+          gh --version
+
       - name: Install AWS CLI
         run: |
           if ! command -v aws &>/dev/null; then

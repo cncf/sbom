@@ -3,9 +3,9 @@
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
   "name": "cncf/sbom CI generation chain",
-  "documentNamespace": "https://github.com/cncf/sbom/tooling-ci/9705b53adc31f8a203f447aff268f1c5c6e75ed0",
+  "documentNamespace": "https://github.com/cncf/sbom/tooling-ci/b21c7c94ea2df27a89d5d9c018b3c1d5344d9373",
   "creationInfo": {
-    "created": "2026-08-26T18:35:37Z",
+    "created": "2026-08-26T21:33:12Z",
     "creators": [
       "Tool: util/generate-tooling-sbom.sh",
       "Tool: Waybill v0.2.0"
@@ -15,7 +15,7 @@
     {
       "SPDXID": "SPDXRef-Package-Tooling-CI",
       "name": "cncf/sbom-ci-generation-chain",
-      "versionInfo": "9705b53adc31f8a203f447aff268f1c5c6e75ed0",
+      "versionInfo": "b21c7c94ea2df27a89d5d9c018b3c1d5344d9373",
       "downloadLocation": "https://github.com/cncf/sbom.git",
       "filesAnalyzed": false,
       "supplier": "Organization: CNCF",
@@ -28,11 +28,11 @@
     {
       "SPDXID": "SPDXRef----GITHUB-WORKFLOWS-REUSABLE-GENERATE-SBOM-YML",
       "name": "Local workflow ./.github/workflows/reusable-generate-sbom.yml",
-      "versionInfo": "9705b53adc31f8a203f447aff268f1c5c6e75ed0",
+      "versionInfo": "b21c7c94ea2df27a89d5d9c018b3c1d5344d9373",
       "downloadLocation": "https://github.com/cncf/sbom.git",
       "filesAnalyzed": false,
       "supplier": "Organization: CNCF",
-      "homepage": "https://github.com/cncf/sbom/blob/9705b53adc31f8a203f447aff268f1c5c6e75ed0/.github/workflows/reusable-generate-sbom.yml",
+      "homepage": "https://github.com/cncf/sbom/blob/b21c7c94ea2df27a89d5d9c018b3c1d5344d9373/.github/workflows/reusable-generate-sbom.yml",
       "primaryPackagePurpose": "SOURCE",
       "licenseConcluded": "NOASSERTION",
       "licenseDeclared": "NOASSERTION",
@@ -78,6 +78,19 @@
       "copyrightText": "NOASSERTION"
     },
     {
+      "SPDXID": "SPDXRef-ACTIONS-UPLOAD-ARTIFACT-MERGE-V4",
+      "name": "GitHub Action actions/upload-artifact/merge",
+      "versionInfo": "v4",
+      "downloadLocation": "https://github.com/actions/upload-artifact/merge",
+      "filesAnalyzed": false,
+      "supplier": "Organization: GitHub",
+      "homepage": "https://github.com/actions/upload-artifact/merge",
+      "primaryPackagePurpose": "FRAMEWORK",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
       "SPDXID": "SPDXRef-ACTIONS-UPLOAD-ARTIFACT-V4",
       "name": "GitHub Action actions/upload-artifact",
       "versionInfo": "v4",
@@ -93,11 +106,11 @@
     {
       "SPDXID": "SPDXRef-Package-ToolingWorkflow",
       "name": "Local workflow .github/workflows/generate-tooling-sbom.yml",
-      "versionInfo": "9705b53adc31f8a203f447aff268f1c5c6e75ed0",
+      "versionInfo": "b21c7c94ea2df27a89d5d9c018b3c1d5344d9373",
       "downloadLocation": "https://github.com/cncf/sbom.git",
       "filesAnalyzed": false,
       "supplier": "Organization: CNCF",
-      "homepage": "https://github.com/cncf/sbom/blob/9705b53adc31f8a203f447aff268f1c5c6e75ed0/.github/workflows/generate-tooling-sbom.yml",
+      "homepage": "https://github.com/cncf/sbom/blob/b21c7c94ea2df27a89d5d9c018b3c1d5344d9373/.github/workflows/generate-tooling-sbom.yml",
       "primaryPackagePurpose": "SOURCE",
       "licenseConcluded": "NOASSERTION",
       "licenseDeclared": "NOASSERTION",
@@ -106,11 +119,11 @@
     {
       "SPDXID": "SPDXRef-Package-ToolingScript",
       "name": "Local script util/generate-tooling-sbom.sh",
-      "versionInfo": "9705b53adc31f8a203f447aff268f1c5c6e75ed0",
+      "versionInfo": "b21c7c94ea2df27a89d5d9c018b3c1d5344d9373",
       "downloadLocation": "https://github.com/cncf/sbom.git",
       "filesAnalyzed": false,
       "supplier": "Organization: CNCF",
-      "homepage": "https://github.com/cncf/sbom/blob/9705b53adc31f8a203f447aff268f1c5c6e75ed0/util/generate-tooling-sbom.sh",
+      "homepage": "https://github.com/cncf/sbom/blob/b21c7c94ea2df27a89d5d9c018b3c1d5344d9373/util/generate-tooling-sbom.sh",
       "primaryPackagePurpose": "SOURCE",
       "licenseConcluded": "NOASSERTION",
       "licenseDeclared": "NOASSERTION",
@@ -207,6 +220,11 @@
       "spdxElementId": "SPDXRef-Package-Tooling-CI",
       "relationshipType": "DEPENDS_ON",
       "relatedSpdxElement": "SPDXRef-ACTIONS-SETUP-GO-V6"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Tooling-CI",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-ACTIONS-UPLOAD-ARTIFACT-MERGE-V4"
     },
     {
       "spdxElementId": "SPDXRef-Package-Tooling-CI",

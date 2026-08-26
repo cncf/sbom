@@ -4,7 +4,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
-OUTPUT_DIR="${OUTPUT_DIR:-$ROOT_DIR/.tooling-sbom}"
+OUTPUT_DIR="${OUTPUT_DIR:-$ROOT_DIR/tooling-sbom}"
 WAYBILL_VERSION="${WAYBILL_VERSION:-v0.2.0}"
 REPO_URL="${REPO_URL:-https://github.com/cncf/sbom.git}"
 ROOT_PACKAGE_NAME="${ROOT_PACKAGE_NAME:-cncf/sbom-tooling}"

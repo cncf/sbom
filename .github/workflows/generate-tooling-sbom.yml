@@ -29,7 +29,7 @@ jobs:
       - name: Generate tooling SBOMs
         run: |
           chmod +x util/generate-tooling-sbom.sh
-          util/generate-tooling-sbom.sh --output-dir .tooling-sbom
+          util/generate-tooling-sbom.sh --output-dir tooling-sbom
 
       - name: Write summary
         run: |
@@ -46,6 +46,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: tooling-sbom-${{ github.sha }}
-          path: .tooling-sbom/**
+          path: tooling-sbom/**
           if-no-files-found: error
           retention-days: 14

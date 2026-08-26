@@ -351,34 +351,6 @@ jobs:
           echo "processed=${PROCESSED}" >> "$GITHUB_OUTPUT"
           echo "::endgroup::"
 
-      - name: Write job summary
-        if: always()
-        env:
-          OWNER: ${{ matrix.owner }}
-          REPO: ${{ matrix.repo }}
-          PROJECT_NAME: ${{ matrix.name }}
-          PROCESSED: ${{ steps.generate.outputs.processed || '0' }}
-          RELEASES_MODE: ${{ github.event.inputs.releases_mode || 'recent' }}
-        run: |
-          {
-            echo "### SBOM Generation: \`${OWNER}/${REPO}\`"
-            echo "| Key | Value |"
-            echo "|-----|-------|"
-            echo "| Project | ${PROJECT_NAME} |"
-            echo "| Repository | [\`${OWNER}/${REPO}\`](https://github.com/${OWNER}/${REPO}) |"
-            echo "| Mode | ${RELEASES_MODE} |"
-            echo "| SBOMs generated | **${PROCESSED}** |"
-          } >> "$GITHUB_STEP_SUMMARY"
-
-      - name: Save generated SBOMs as artifact
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: sbom-${{ matrix.owner }}-${{ matrix.repo }}
-          path: sbom/**
-          if-no-files-found: ignore
-          retention-days: 14
-
       - name: Upload SBOMs to S3
         id: upload
         env:
@@ -429,15 +401,50 @@ jobs:
           echo "Uploaded ${UPLOADED} SBOMs to s3://${PROJECT_BUCKET}/"
           echo "uploaded=${UPLOADED}" >> "$GITHUB_OUTPUT"
 
-      - name: Append upload count to summary
+      - name: Write per-repository report
         if: always()
         env:
+          OWNER: ${{ matrix.owner }}
+          REPO: ${{ matrix.repo }}
+          PROJECT_NAME: ${{ matrix.name }}
+          JOB_NAME: cncf-projects
+          RELEASES_MODE: ${{ github.event.inputs.releases_mode || 'recent' }}
+          PROCESSED: ${{ steps.generate.outputs.processed || '0' }}
           UPLOADED: ${{ steps.upload.outputs.uploaded || '0' }}
           PROJECT_BUCKET: ${{ vars.OCI_PROJECT_BUCKET }}
+          JOB_STATUS: ${{ job.status }}
         run: |
-          {
-            echo "| SBOMs uploaded to S3 | **${UPLOADED}** (bucket: \`${PROJECT_BUCKET}\`) |"
-          } >> "$GITHUB_STEP_SUMMARY"
+          mkdir -p .report
+          jq -n \
+            --arg owner "$OWNER" \
+            --arg repo "$REPO" \
+            --arg project_name "$PROJECT_NAME" \
+            --arg job_name "$JOB_NAME" \
+            --arg releases_mode "$RELEASES_MODE" \
+            --arg bucket "$PROJECT_BUCKET" \
+            --arg status "$JOB_STATUS" \
+            --arg processed "$PROCESSED" \
+            --arg uploaded "$UPLOADED" \
+            '{
+              owner: $owner,
+              repo: $repo,
+              project_name: $project_name,
+              job_name: $job_name,
+              releases_mode: $releases_mode,
+              bucket: $bucket,
+              status: $status,
+              processed: ($processed | tonumber),
+              uploaded: ($uploaded | tonumber)
+            }' > ".report/${OWNER}-${REPO}.json"
+
+      - name: Upload per-repository report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: report-cncf-${{ matrix.owner }}-${{ matrix.repo }}
+          path: .report/*.json
+          if-no-files-found: error
+          retention-days: 7
 
   # ===========================================
   # Generate SBOMs for subproject repos (Batch 1)
@@ -566,3 +573,135 @@ jobs:
       releases_mode: ${{ github.event.inputs.releases_mode || 'recent' }}
       max_releases: ${{ github.event.inputs.max_releases || '3' }}
     secrets: inherit
+
+  summarize-sbom-run:
+    needs:
+      - prepare-cncf-matrix
+      - prepare-discovered-matrix
+      - generate-sbom-cncf
+      - generate-sbom-subprojects-1
+      - generate-sbom-subprojects-2
+      - generate-sbom-subprojects-3
+      - generate-sbom-subprojects-4
+      - generate-sbom-subprojects-5
+      - generate-sbom-subprojects-6
+      - generate-sbom-subprojects-7
+      - generate-sbom-subprojects-8
+    if: ${{ always() }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download per-repository reports
+        continue-on-error: true
+        uses: actions/download-artifact@v5
+        with:
+          path: reports
+          pattern: report-*
+          merge-multiple: true
+
+      - name: Build consolidated SBOM report
+        run: |
+          shopt -s nullglob
+          REPORT_FILES=(reports/*.json)
+
+          if [ ${#REPORT_FILES[@]} -eq 0 ]; then
+            mkdir -p reports
+            jq -n '{
+              total_repositories: 0,
+              succeeded_repositories: 0,
+              failed_repositories: 0,
+              total_generated: 0,
+              total_uploaded: 0,
+              batches: [],
+              failed_items_total: 0,
+              failed_items: []
+            }' > reports/summary.json
+            {
+              echo "### SBOM generation report"
+              echo ""
+              echo "No per-repository reports were produced."
+            } >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          jq -s '
+            def total(field): (map(field) | add // 0);
+            def failures: map(select(.status != "success"));
+            {
+              total_repositories: length,
+              succeeded_repositories: (map(select(.status == "success")) | length),
+              failed_repositories: (failures | length),
+              total_generated: total(.processed),
+              total_uploaded: total(.uploaded),
+              batches: (
+                sort_by(.job_name, .owner, .repo)
+                | group_by(.job_name)
+                | map({
+                    job_name: .[0].job_name,
+                    repositories: length,
+                    generated: total(.processed),
+                    uploaded: total(.uploaded),
+                    failures: (map(select(.status != "success")) | length)
+                  })
+              ),
+              failed_items_total: (failures | length),
+              failed_items: (
+                failures
+                | sort_by(.job_name, .owner, .repo)
+                | .[:25]
+                | map({
+                    job_name,
+                    repository: (.owner + "/" + .repo),
+                    processed,
+                    uploaded,
+                    status
+                  })
+              )
+            }
+          ' "${REPORT_FILES[@]}" > reports/summary.json
+
+          TOTAL_REPOSITORIES=$(jq -r '.total_repositories' reports/summary.json)
+          SUCCEEDED_REPOSITORIES=$(jq -r '.succeeded_repositories' reports/summary.json)
+          FAILED_REPOSITORIES=$(jq -r '.failed_repositories' reports/summary.json)
+          TOTAL_GENERATED=$(jq -r '.total_generated' reports/summary.json)
+          TOTAL_UPLOADED=$(jq -r '.total_uploaded' reports/summary.json)
+          FAILED_ITEMS_TOTAL=$(jq -r '.failed_items_total' reports/summary.json)
+
+          {
+            echo "### SBOM generation report"
+            echo ""
+            echo "| Metric | Value |"
+            echo "|--------|-------|"
+            echo "| Repositories reported | ${TOTAL_REPOSITORIES} |"
+            echo "| Successful repositories | ${SUCCEEDED_REPOSITORIES} |"
+            echo "| Failed repositories | ${FAILED_REPOSITORIES} |"
+            echo "| SBOMs generated | ${TOTAL_GENERATED} |"
+            echo "| SBOMs uploaded | ${TOTAL_UPLOADED} |"
+            echo ""
+            echo "#### Batch totals"
+            echo "| Batch | Repositories | Generated | Uploaded | Failures |"
+            echo "|-------|--------------|-----------|----------|----------|"
+            jq -r '.batches[] | "| \(.job_name) | \(.repositories) | \(.generated) | \(.uploaded) | \(.failures) |"' reports/summary.json
+          } >> "$GITHUB_STEP_SUMMARY"
+
+          if [ "$FAILED_REPOSITORIES" -gt 0 ]; then
+            {
+              echo ""
+              echo "#### Failed repositories (first 25)"
+              echo "| Batch | Repository | Generated | Uploaded | Status |"
+              echo "|-------|------------|-----------|----------|--------|"
+              jq -r '.failed_items[] | "| \(.job_name) | \(.repository) | \(.processed) | \(.uploaded) | \(.status) |"' reports/summary.json
+              if [ "$FAILED_ITEMS_TOTAL" -gt 25 ]; then
+                echo ""
+                echo "_Showing 25 of ${FAILED_ITEMS_TOTAL} failed repositories. See the \`sbom-generation-report\` artifact for the full report._"
+              fi
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload consolidated SBOM report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sbom-generation-report
+          path: reports/**
+          if-no-files-found: error
+          retention-days: 14

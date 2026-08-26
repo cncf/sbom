@@ -1,0 +1,252 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "cncf/sbom CI generation chain",
+  "documentNamespace": "https://github.com/cncf/sbom/tooling-ci/a13484e5a6c050bf8c43053dbec71e59098c2c06",
+  "creationInfo": {
+    "created": "2026-08-26T11:04:50Z",
+    "creators": [
+      "Tool: util/generate-tooling-sbom.sh",
+      "Tool: Waybill v0.2.0"
+    ]
+  },
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-Tooling-CI",
+      "name": "cncf/sbom-ci-generation-chain",
+      "versionInfo": "a13484e5a6c050bf8c43053dbec71e59098c2c06",
+      "downloadLocation": "https://github.com/cncf/sbom.git",
+      "filesAnalyzed": false,
+      "supplier": "Organization: CNCF",
+      "homepage": "https://github.com/cncf/sbom",
+      "primaryPackagePurpose": "APPLICATION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-ACTIONS-CHECKOUT-V5",
+      "name": "GitHub Action actions/checkout",
+      "versionInfo": "v5",
+      "downloadLocation": "https://github.com/actions/checkout",
+      "filesAnalyzed": false,
+      "supplier": "Organization: GitHub",
+      "homepage": "https://github.com/actions/checkout",
+      "primaryPackagePurpose": "FRAMEWORK",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-ACTIONS-DOWNLOAD-ARTIFACT-V5",
+      "name": "GitHub Action actions/download-artifact",
+      "versionInfo": "v5",
+      "downloadLocation": "https://github.com/actions/download-artifact",
+      "filesAnalyzed": false,
+      "supplier": "Organization: GitHub",
+      "homepage": "https://github.com/actions/download-artifact",
+      "primaryPackagePurpose": "FRAMEWORK",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-ACTIONS-SETUP-GO-V6",
+      "name": "GitHub Action actions/setup-go",
+      "versionInfo": "v6",
+      "downloadLocation": "https://github.com/actions/setup-go",
+      "filesAnalyzed": false,
+      "supplier": "Organization: GitHub",
+      "homepage": "https://github.com/actions/setup-go",
+      "primaryPackagePurpose": "FRAMEWORK",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-ACTIONS-UPLOAD-ARTIFACT-V4",
+      "name": "GitHub Action actions/upload-artifact",
+      "versionInfo": "v4",
+      "downloadLocation": "https://github.com/actions/upload-artifact",
+      "filesAnalyzed": false,
+      "supplier": "Organization: GitHub",
+      "homepage": "https://github.com/actions/upload-artifact",
+      "primaryPackagePurpose": "FRAMEWORK",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef----GITHUB-WORKFLOWS-REUSABLE-GENERATE-SBOM-YML",
+      "name": "Local workflow ./.github/workflows/reusable-generate-sbom.yml",
+      "versionInfo": "a13484e5a6c050bf8c43053dbec71e59098c2c06",
+      "downloadLocation": "https://github.com/cncf/sbom.git",
+      "filesAnalyzed": false,
+      "supplier": "Organization: CNCF",
+      "homepage": "https://github.com/cncf/sbom/blob/a13484e5a6c050bf8c43053dbec71e59098c2c06/.github/workflows/reusable-generate-sbom.yml",
+      "primaryPackagePurpose": "SOURCE",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ToolingWorkflow",
+      "name": "Local workflow .github/workflows/generate-tooling-sbom.yml",
+      "versionInfo": "a13484e5a6c050bf8c43053dbec71e59098c2c06",
+      "downloadLocation": "https://github.com/cncf/sbom.git",
+      "filesAnalyzed": false,
+      "supplier": "Organization: CNCF",
+      "homepage": "https://github.com/cncf/sbom/blob/a13484e5a6c050bf8c43053dbec71e59098c2c06/.github/workflows/generate-tooling-sbom.yml",
+      "primaryPackagePurpose": "SOURCE",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ToolingScript",
+      "name": "Local script util/generate-tooling-sbom.sh",
+      "versionInfo": "a13484e5a6c050bf8c43053dbec71e59098c2c06",
+      "downloadLocation": "https://github.com/cncf/sbom.git",
+      "filesAnalyzed": false,
+      "supplier": "Organization: CNCF",
+      "homepage": "https://github.com/cncf/sbom/blob/a13484e5a6c050bf8c43053dbec71e59098c2c06/util/generate-tooling-sbom.sh",
+      "primaryPackagePurpose": "SOURCE",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Waybill",
+      "name": "Waybill",
+      "versionInfo": "v0.2.0",
+      "downloadLocation": "https://github.com/kusari-oss/waybill/releases/download/v0.2.0/waybill-v0.2.0-x86_64-unknown-linux-gnu.tar.gz",
+      "filesAnalyzed": false,
+      "supplier": "Organization: Kusari",
+      "homepage": "https://github.com/kusari-oss/waybill",
+      "primaryPackagePurpose": "APPLICATION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-AWSCLI",
+      "name": "AWS CLI",
+      "versionInfo": "latest",
+      "downloadLocation": "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip",
+      "filesAnalyzed": false,
+      "supplier": "Organization: Amazon Web Services",
+      "homepage": "https://aws.amazon.com/cli/",
+      "primaryPackagePurpose": "APPLICATION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-GitHubCLI",
+      "name": "GitHub CLI",
+      "versionInfo": "latest",
+      "downloadLocation": "https://cli.github.com/packages",
+      "filesAnalyzed": false,
+      "supplier": "Organization: GitHub",
+      "homepage": "https://cli.github.com/",
+      "primaryPackagePurpose": "APPLICATION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-YQ",
+      "name": "yq",
+      "versionInfo": "latest",
+      "downloadLocation": "https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64",
+      "filesAnalyzed": false,
+      "supplier": "Person: Mike Farah",
+      "homepage": "https://github.com/mikefarah/yq",
+      "primaryPackagePurpose": "APPLICATION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-GoToolchain",
+      "name": "Go toolchain",
+      "versionInfo": "1.24",
+      "downloadLocation": "https://go.dev/dl/",
+      "filesAnalyzed": false,
+      "supplier": "Organization: Go team",
+      "homepage": "https://go.dev/",
+      "primaryPackagePurpose": "APPLICATION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-Tooling-CI"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Tooling-CI",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-ACTIONS-CHECKOUT-V5"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Tooling-CI",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-ACTIONS-DOWNLOAD-ARTIFACT-V5"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Tooling-CI",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-ACTIONS-SETUP-GO-V6"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Tooling-CI",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-ACTIONS-UPLOAD-ARTIFACT-V4"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Tooling-CI",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef----GITHUB-WORKFLOWS-REUSABLE-GENERATE-SBOM-YML"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Tooling-CI",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ToolingWorkflow"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Tooling-CI",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ToolingScript"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Tooling-CI",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-Waybill"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Tooling-CI",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-AWSCLI"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Tooling-CI",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-GitHubCLI"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Tooling-CI",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-YQ"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Tooling-CI",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-GoToolchain"
+    }
+  ]
+}

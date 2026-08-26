@@ -127,7 +127,8 @@ Generates SBOMs for CNCF projects and **uploads them directly to OCI S3 buckets*
 2. Each matrix job downloads Waybill and generates SBOMs using `waybill sbom scan --format spdx-2.3-json`
 3. deps.dev and ClearlyDefined enrichment runs inline (license resolution, dependency graphs)
 4. Generated SBOMs are immediately uploaded to the corresponding S3 bucket
-5. No files are committed to the repository
+5. Each repository job writes a compact JSON report, and the workflow publishes one consolidated run summary plus a `sbom-generation-report` artifact
+6. No files are committed to the repository
 
 ### 4. Migrate SBOMs to OCI (`migrate-sboms-to-oci.yml`)
 
@@ -163,6 +164,8 @@ The following must be configured in the repository settings:
 2. Select "Generate SBOM for CNCF Projects"
 3. Click "Run workflow"
 4. Optionally specify a project filter or change the releases mode
+
+The workflow summary stays compact on purpose: detailed per-repository results are collected in the `sbom-generation-report` artifact instead of emitting a large per-matrix GitHub UI summary.
 
 ## Utility Tools
 

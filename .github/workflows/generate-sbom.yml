@@ -53,6 +53,7 @@ env:
   WAYBILL_VERSION: v0.2.0
 
 permissions:
+  actions: write
   contents: read
 
 jobs:
@@ -456,6 +457,20 @@ jobs:
           if-no-files-found: warn
           retention-days: 7
 
+  merge-cncf-reports:
+    needs: generate-sbom-cncf
+    if: ${{ always() && needs.generate-sbom-cncf.result != 'skipped' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Merge per-repository reports
+        uses: actions/upload-artifact/merge@v4
+        with:
+          name: sbom-run-report-cncf
+          pattern: report-cncf-*
+          separate-directories: true
+          delete-merged: true
+          retention-days: 7
+
   # ===========================================
   # Generate SBOMs for subproject repos (Batch 1)
   # ===========================================
@@ -589,6 +604,7 @@ jobs:
       - prepare-cncf-matrix
       - prepare-discovered-matrix
       - generate-sbom-cncf
+      - merge-cncf-reports
       - generate-sbom-subprojects-1
       - generate-sbom-subprojects-2
       - generate-sbom-subprojects-3
@@ -605,13 +621,12 @@ jobs:
         uses: actions/download-artifact@v5
         with:
           path: reports
-          pattern: report-*
+          pattern: sbom-run-report-*
           merge-multiple: true
 
       - name: Build consolidated SBOM report
         run: |
-          shopt -s nullglob
-          REPORT_FILES=(reports/*.json)
+          mapfile -t REPORT_FILES < <(find reports -type f -name '*.json' | sort)
 
           if [ ${#REPORT_FILES[@]} -eq 0 ]; then
             mkdir -p reports

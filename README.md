@@ -70,6 +70,7 @@ This repository contains **only tooling and configuration** — no SBOM data fil
 │   ├── sync-cncf-projects.yml          # Sync CNCF project list from landscape
 │   ├── discover-cncf-repos.yml         # Discover subproject repos in CNCF orgs
 │   ├── generate-sbom.yml               # Generate SBOMs and upload to S3
+│   ├── generate-tooling-sbom.yml       # Generate SBOMs for this repo's tooling and CI chain
 │   ├── reusable-generate-sbom.yml      # Reusable workflow for subproject batches
 │   └── migrate-sboms-to-oci.yml        # One-time migration of legacy repo SBOMs to S3
 └── util/
@@ -79,6 +80,7 @@ This repository contains **only tooling and configuration** — no SBOM data fil
     ├── extract-projects/               # Go tool to sync projects from CNCF landscape
     ├── discover-repos/                 # Go tool to find subproject repos in CNCF orgs
     ├── generate-index/                 # Go tool to generate an index of SBOMs
+    ├── generate-tooling-sbom.sh        # Generates repo-tooling and CI-chain SBOMs for this repo
     ├── ingest-sbom-oci.sh              # Script to upload local SBOMs to OCI buckets
     ├── generate-sbom-local.sh          # Local testing script (Linux/macOS)
     └── generate-sbom-local.ps1         # Local testing script (Windows)
@@ -137,6 +139,18 @@ One-time / on-demand migration of any legacy SBOM files from the repository into
 - **Manual trigger only**: Via workflow_dispatch
 - Skips objects that already exist in the bucket (unless `FORCE` is set)
 - Uses `util/ingest-sbom-oci.sh`
+
+### 5. Generate Tooling SBOM (`generate-tooling-sbom.yml`)
+
+Generates SBOMs for this repository's own tooling on every push, pull request, and manual run.
+
+- **Triggers**: `push`, `pull_request`, `workflow_dispatch`
+- **Artifact**: `tooling-sbom-<git-sha>`
+- **Files**:
+  - `tooling-repo.spdx.json` — Waybill-generated SBOM for this repository at the checked-out commit
+  - `tooling-ci.spdx.json` — SPDX inventory of the GitHub Actions and downloaded tools involved in SBOM generation
+
+This separates the repository source inventory from the CI/generation chain, so the SBOM production tooling is captured explicitly as part of the delivered artifact set.
 
 ### Required GitHub Secrets & Variables
 
@@ -213,6 +227,18 @@ Script to upload local SBOM files to OCI S3 buckets. Supports both OCI CLI and S
 ```
 
 Credentials can also be provided via environment variables or a `.env.sbom` / `.env` file.
+
+### generate-tooling-sbom.sh
+
+Generates the repository's own tooling SBOM plus a second SPDX document for the GitHub Actions and downloaded tools that form the SBOM generation chain.
+
+```bash
+# Full output (requires waybill in PATH)
+./util/generate-tooling-sbom.sh
+
+# Only regenerate the CI/generation-chain SBOM
+./util/generate-tooling-sbom.sh --skip-repo-sbom
+```
 
 ## Local Testing
 

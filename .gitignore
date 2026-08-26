@@ -4,6 +4,9 @@ sbom/*/
 # Local mikebom binary (auto-downloaded by generate-sbom-local.sh)
 .local/
 
+# Locally generated tooling SBOM artifacts
+.tooling-sbom/
+
 # IDE
 .idea/
 

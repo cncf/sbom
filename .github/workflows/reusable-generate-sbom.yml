@@ -136,6 +136,11 @@ jobs:
           }
           
           if ! RELEASES=$(gh api "repos/${OWNER}/${REPO}/releases?per_page=50" 2>&1); then
+            if echo "$RELEASES" | grep -q '"status":"404"'; then
+              echo "::warning::Repository ${OWNER}/${REPO} not found or releases not accessible (404), skipping"
+              echo "::endgroup::"
+              exit 0
+            fi
             echo "::error::Failed to fetch releases for ${OWNER}/${REPO}: ${RELEASES}"
             exit 1
           fi
@@ -146,6 +151,11 @@ jobs:
           
           if [ "$(echo "$RELEASES" | jq 'length')" -eq 0 ]; then
             if ! TAGS_JSON=$(gh api "repos/${OWNER}/${REPO}/tags?per_page=20" 2>&1); then
+              if echo "$TAGS_JSON" | grep -q '"status":"404"'; then
+                echo "::warning::Repository ${OWNER}/${REPO} not found or tags not accessible (404), skipping"
+                echo "::endgroup::"
+                exit 0
+              fi
               echo "::error::Failed to fetch tags for ${OWNER}/${REPO}: ${TAGS_JSON}"
               exit 1
             fi

@@ -6,6 +6,7 @@ sbom/*/
 
 # Locally generated tooling SBOM artifacts
 .tooling-sbom/
+tooling-sbom/
 
 # IDE
 .idea/

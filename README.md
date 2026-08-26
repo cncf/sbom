@@ -151,6 +151,7 @@ Generates SBOMs for this repository's own tooling on every push, pull request, a
   - `tooling-ci.spdx.json` — SPDX inventory of the GitHub Actions and downloaded tools involved in SBOM generation
 
 This separates the repository source inventory from the CI/generation chain, so the SBOM production tooling is captured explicitly as part of the delivered artifact set.
+The workflow writes these files to a non-hidden `tooling-sbom/` directory before uploading them as an artifact.
 
 ### Required GitHub Secrets & Variables
 

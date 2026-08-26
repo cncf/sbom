@@ -146,12 +146,15 @@ Generates SBOMs for this repository's own tooling on every push, pull request, a
 
 - **Triggers**: `push`, `pull_request`, `workflow_dispatch`
 - **Artifact**: `tooling-sbom-<git-sha>`
+- **Tracked files on `main`**:
+  - [`tooling-sbom/tooling-repo.spdx.json`](./tooling-sbom/tooling-repo.spdx.json)
+  - [`tooling-sbom/tooling-ci.spdx.json`](./tooling-sbom/tooling-ci.spdx.json)
 - **Files**:
   - `tooling-repo.spdx.json` — Waybill-generated SBOM for this repository at the checked-out commit
   - `tooling-ci.spdx.json` — SPDX inventory of the GitHub Actions and downloaded tools involved in SBOM generation
 
 This separates the repository source inventory from the CI/generation chain, so the SBOM production tooling is captured explicitly as part of the delivered artifact set.
-The workflow writes these files to a non-hidden `tooling-sbom/` directory before uploading them as an artifact.
+The workflow generates files in `tooling-sbom-out/`, uploads them as an artifact for each run, and refreshes the tracked `tooling-sbom/` snapshots on pushes to `main`.
 
 ### Required GitHub Secrets & Variables
 
@@ -239,6 +242,9 @@ Generates the repository's own tooling SBOM plus a second SPDX document for the 
 
 # Only regenerate the CI/generation-chain SBOM
 ./util/generate-tooling-sbom.sh --skip-repo-sbom
+
+# Write directly into the tracked repo snapshot directory
+./util/generate-tooling-sbom.sh --output-dir tooling-sbom
 ```
 
 ## Local Testing

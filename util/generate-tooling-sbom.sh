@@ -4,7 +4,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
-OUTPUT_DIR="${OUTPUT_DIR:-$ROOT_DIR/tooling-sbom}"
+OUTPUT_DIR="${OUTPUT_DIR:-$ROOT_DIR/tooling-sbom-out}"
 WAYBILL_VERSION="${WAYBILL_VERSION:-v0.2.0}"
 REPO_URL="${REPO_URL:-https://github.com/cncf/sbom.git}"
 ROOT_PACKAGE_NAME="${ROOT_PACKAGE_NAME:-cncf/sbom-tooling}"
@@ -103,7 +103,7 @@ generate_repo_sbom() {
   require_cmd git
 
   temp_dir="$(mktemp -d)"
-  git -C "$ROOT_DIR" archive HEAD | tar -x -C "$temp_dir"
+  git -C "$ROOT_DIR" archive HEAD -- . ':(exclude)tooling-sbom' | tar -x -C "$temp_dir"
 
   if ! waybill sbom scan \
     --path "$temp_dir" \

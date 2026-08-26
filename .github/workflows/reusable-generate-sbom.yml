@@ -300,7 +300,7 @@ jobs:
           BUCKET: ${{ inputs.sbom_path_prefix != '' && vars.OCI_SUBPROJECT_BUCKET || vars.OCI_PROJECT_BUCKET }}
           JOB_STATUS: ${{ job.status }}
         run: |
-          mkdir -p .report
+          mkdir -p report-artifacts
           jq -n \
             --arg owner "$OWNER" \
             --arg repo "$REPO" \
@@ -321,13 +321,13 @@ jobs:
               status: $status,
               processed: ($processed | tonumber),
               uploaded: ($uploaded | tonumber)
-            }' > ".report/${OWNER}-${REPO}.json"
+            }' > "report-artifacts/${OWNER}-${REPO}.json"
 
       - name: Upload per-repository report
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: report-${{ inputs.job_name }}-${{ matrix.owner }}-${{ matrix.repo }}
-          path: .report/*.json
-          if-no-files-found: error
+          path: report-artifacts/*.json
+          if-no-files-found: warn
           retention-days: 7

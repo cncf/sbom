@@ -30,7 +30,6 @@ env:
   WAYBILL_VERSION: v0.2.0
 
 permissions:
-  actions: write
   contents: read
 
 jobs:
@@ -290,62 +289,3 @@ jobs:
 
           echo "Uploaded ${UPLOADED} SBOMs to s3://${BUCKET}/"
           echo "uploaded=${UPLOADED}" >> "$GITHUB_OUTPUT"
-
-      - name: Write per-repository report
-        if: always()
-        env:
-          OWNER: ${{ matrix.owner }}
-          REPO: ${{ matrix.repo }}
-          PROJECT_NAME: ${{ matrix.name }}
-          JOB_NAME: ${{ inputs.job_name }}
-          RELEASES_MODE: ${{ inputs.releases_mode }}
-          PROCESSED: ${{ steps.generate.outputs.processed || '0' }}
-          UPLOADED: ${{ steps.upload.outputs.uploaded || '0' }}
-          BUCKET: ${{ inputs.sbom_path_prefix != '' && vars.OCI_SUBPROJECT_BUCKET || vars.OCI_PROJECT_BUCKET }}
-          JOB_STATUS: ${{ job.status }}
-        run: |
-          mkdir -p report-artifacts
-          jq -n \
-            --arg owner "$OWNER" \
-            --arg repo "$REPO" \
-            --arg project_name "$PROJECT_NAME" \
-            --arg job_name "$JOB_NAME" \
-            --arg releases_mode "$RELEASES_MODE" \
-            --arg bucket "$BUCKET" \
-            --arg status "$JOB_STATUS" \
-            --arg processed "$PROCESSED" \
-            --arg uploaded "$UPLOADED" \
-            '{
-              owner: $owner,
-              repo: $repo,
-              project_name: $project_name,
-              job_name: $job_name,
-              releases_mode: $releases_mode,
-              bucket: $bucket,
-              status: $status,
-              processed: ($processed | tonumber),
-              uploaded: ($uploaded | tonumber)
-            }' > "report-artifacts/${OWNER}-${REPO}.json"
-
-      - name: Upload per-repository report
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: report-${{ inputs.job_name }}-${{ matrix.owner }}-${{ matrix.repo }}
-          path: report-artifacts/*.json
-          if-no-files-found: warn
-          retention-days: 7
-
-  merge-reports:
-    needs: generate
-    if: ${{ always() && needs.generate.result != 'skipped' }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Merge per-repository reports
-        uses: actions/upload-artifact/merge@v4
-        with:
-          name: sbom-run-report-${{ inputs.job_name }}
-          pattern: report-${{ inputs.job_name }}-*
-          separate-directories: true
-          delete-merged: true
-          retention-days: 7

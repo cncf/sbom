@@ -50,7 +50,7 @@ on:
           - discovered    # Only discovered repos from CNCF orgs
 
 env:
-  WAYBILL_VERSION: v0.2.0
+  WAYBILL_VERSION: v0.3.0
 
 permissions:
   contents: read
@@ -410,6 +410,7 @@ jobs:
 
           echo "Uploaded ${UPLOADED} SBOMs to s3://${PROJECT_BUCKET}/"
           echo "uploaded=${UPLOADED}" >> "$GITHUB_OUTPUT"
+          echo "::notice title=sbom-uploaded::${UPLOADED}"
 
   # ===========================================
   # Generate SBOMs for subproject repos (Batch 1)
@@ -564,6 +565,7 @@ jobs:
           TOTAL=0
           SUCCEEDED=0
           FAILED=0
+          CANCELLED=0
           FAILED_JSON="[]"
 
           page=1
@@ -571,19 +573,6 @@ jobs:
             DATA=$(gh api "repos/${GH_REPO}/actions/runs/${RUN_ID}/jobs?per_page=100&page=${page}" 2>/dev/null) || break
             COUNT=$(echo "$DATA" | jq '.jobs | length')
             [ "$COUNT" -eq 0 ] && break
-
-            BATCH=$(echo "$DATA" | jq -r '
-              .jobs[]
-              | select(
-                  (.name | startswith("generate-sbom-cncf (")) or
-                  (.name | test("^generate-sbom-subprojects-[0-9]+ / generate \\("))
-                )
-              | {
-                  name,
-                  conclusion: (.conclusion // "unknown"),
-                  failed_steps: ([.steps[]? | select(.conclusion=="failure") | .name] | join(", "))
-                }
-            ')
 
             T=$(echo "$DATA" | jq '
               [ .jobs[]
@@ -605,13 +594,22 @@ jobs:
               | select(
                   ((.name | startswith("generate-sbom-cncf (")) or
                    (.name | test("^generate-sbom-subprojects-[0-9]+ / generate \\(")))
-                  and .conclusion != "success"
+                  and (.conclusion != "success" and .conclusion != "cancelled")
+                )
+              ] | length')
+            C=$(echo "$DATA" | jq '
+              [ .jobs[]
+              | select(
+                  ((.name | startswith("generate-sbom-cncf (")) or
+                   (.name | test("^generate-sbom-subprojects-[0-9]+ / generate \\(")))
+                  and .conclusion == "cancelled"
                 )
               ] | length')
 
             TOTAL=$((TOTAL + T))
             SUCCEEDED=$((SUCCEEDED + S))
             FAILED=$((FAILED + F))
+            CANCELLED=$((CANCELLED + C))
 
             NEW_FAILURES=$(echo "$DATA" | jq -c '
               [ .jobs[]
@@ -623,12 +621,31 @@ jobs:
               | {
                   name,
                   conclusion: (.conclusion // "unknown"),
-                  failed_steps: ([.steps[]? | select(.conclusion=="failure") | .name] | join(", "))
+                  started_at,
+                  completed_at,
+                  last_step: (
+                    [ .steps[]?
+                    | select(.conclusion == "failure" or .conclusion == "cancelled")
+                    | .name
+                    ] | last // "—"
+                  )
                 }
               ]')
             FAILED_JSON=$(jq -n --argjson a "$FAILED_JSON" --argjson b "$NEW_FAILURES" '$a + $b')
 
             page=$((page + 1))
+          done
+
+          # Count total SBOMs uploaded from ::notice:: annotations
+          TOTAL_SBOMS=0
+          ann_page=1
+          while true; do
+            ANN=$(gh api "repos/${GH_REPO}/actions/runs/${RUN_ID}/attempts/1/annotations?per_page=100&page=${ann_page}" 2>/dev/null) || break
+            ANN_COUNT=$(echo "$ANN" | jq 'length')
+            [ "$ANN_COUNT" -eq 0 ] && break
+            BATCH_SBOMS=$(echo "$ANN" | jq '[.[] | select(.title == "sbom-uploaded") | .message | tonumber] | add // 0')
+            TOTAL_SBOMS=$((TOTAL_SBOMS + BATCH_SBOMS))
+            ann_page=$((ann_page + 1))
           done
 
           {
@@ -639,20 +656,22 @@ jobs:
             echo "| Total jobs | ${TOTAL} |"
             echo "| Succeeded | ${SUCCEEDED} |"
             echo "| Failed | ${FAILED} |"
+            echo "| Cancelled (runner) | ${CANCELLED} |"
+            echo "| SBOMs uploaded this run | ${TOTAL_SBOMS} |"
           } >> "$GITHUB_STEP_SUMMARY"
 
-          if [ "$FAILED" -gt 0 ]; then
+          if [ "$((FAILED + CANCELLED))" -gt 0 ]; then
             SHOW=$(echo "$FAILED_JSON" | jq 'length')
             CAPPED=$(echo "$FAILED_JSON" | jq '.[:25]')
             {
               echo ""
-              echo "#### Failed jobs (first 25 of ${FAILED})"
-              echo "| Job | Failed step | Conclusion |"
-              echo "|-----|------------|------------|"
-              echo "$CAPPED" | jq -r '.[] | "| \(.name | .[0:120]) | \(.failed_steps) | \(.conclusion) |"'
+              echo "#### Non-successful jobs (first 25 of $((FAILED + CANCELLED)))"
+              echo "| Job | Conclusion | Last step | Started | Completed |"
+              echo "|-----|-----------|-----------|---------|-----------|"
+              echo "$CAPPED" | jq -r '.[] | "| \(.name | .[0:100]) | \(.conclusion) | \(.last_step) | \(.started_at // "—") | \(.completed_at // "—") |"'
               if [ "$SHOW" -gt 25 ]; then
                 echo ""
-                echo "_Showing 25 of ${FAILED} failed jobs._"
+                echo "_Showing 25 of ${SHOW} non-successful jobs._"
               fi
             } >> "$GITHUB_STEP_SUMMARY"
           fi

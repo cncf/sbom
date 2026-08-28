@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 env:
-  WAYBILL_VERSION: v0.2.0
+  WAYBILL_VERSION: v0.3.0
 
 permissions:
   contents: write

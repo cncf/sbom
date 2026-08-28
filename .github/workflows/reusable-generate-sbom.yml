@@ -27,7 +27,7 @@ on:
         default: '3'
 
 env:
-  WAYBILL_VERSION: v0.2.0
+  WAYBILL_VERSION: v0.3.0
 
 permissions:
   contents: read
@@ -289,3 +289,4 @@ jobs:
 
           echo "Uploaded ${UPLOADED} SBOMs to s3://${BUCKET}/"
           echo "uploaded=${UPLOADED}" >> "$GITHUB_OUTPUT"
+          echo "::notice title=sbom-uploaded::${UPLOADED}"

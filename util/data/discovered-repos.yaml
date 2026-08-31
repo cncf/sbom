@@ -20,7 +20,7 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain supported package manifests (Go, Cargo, npm, pip, Maven, gem, Dockerfile, etc.).
   auto_generated: true
-  last_updated: "2026-08-24T04:37:26Z"
+  last_updated: "2026-08-31T04:35:23Z"
 repositories:
   - owner: aeraki-mesh
     repo: meta-protocol-proxy
@@ -3928,6 +3928,12 @@ repositories:
     category: orchestration
     project_status: sandbox
     discovered_by: org-scan from kai-scheduler/KAI-Scheduler
+  - owner: kai-scheduler
+    repo: kai-resource-management-api
+    name: kai-resource-management-api
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from kai-scheduler/KAI-Scheduler
   - owner: kairos-io
     repo: AuroraBoot
     name: AuroraBoot
@@ -5167,6 +5173,12 @@ repositories:
   - owner: kuberhealthy
     repo: pod-status-check
     name: pod-status-check
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kuberhealthy/kuberhealthy
+  - owner: kuberhealthy
+    repo: python
+    name: python
     category: observability
     project_status: sandbox
     discovered_by: org-scan from kuberhealthy/kuberhealthy
@@ -7211,6 +7223,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from loxilb-io/loxilb
   - owner: loxilb-io
+    repo: loxicmd-inference-gateway
+    name: loxicmd-inference-gateway
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from loxilb-io/loxilb
+  - owner: loxilb-io
     repo: loxilb-ebpf
     name: loxilb-ebpf
     category: other
@@ -8657,6 +8675,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from openeverest/openeverest
   - owner: openeverest
+    repo: provider-kserve
+    name: provider-kserve
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openeverest/openeverest
+  - owner: openeverest
     repo: provider-mariadb
     name: provider-mariadb
     category: storage
@@ -9149,6 +9173,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from oras-project/oras
   - owner: oscal-compass
+    repo: agentic-agile-authoring
+    name: agentic-agile-authoring
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from oscal-compass/compliance-trestle
+  - owner: oscal-compass
     repo: compliance-to-policy
     name: compliance-to-policy
     category: security
@@ -9163,6 +9193,12 @@ repositories:
   - owner: oscal-compass
     repo: compliance-trestle-fedramp
     name: compliance-trestle-fedramp
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from oscal-compass/compliance-trestle
+  - owner: oscal-compass
+    repo: compliance-trestle-mcp
+    name: compliance-trestle-mcp
     category: security
     project_status: sandbox
     discovered_by: org-scan from oscal-compass/compliance-trestle
@@ -10135,6 +10171,12 @@ repositories:
   - owner: spiffe
     repo: k8s-spiffe-workload-jwt-exec-auth
     name: k8s-spiffe-workload-jwt-exec-auth
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from spiffe/spire
+  - owner: spiffe
+    repo: slurm-spire-syncer
+    name: slurm-spire-syncer
     category: security
     project_status: graduated
     discovered_by: org-scan from spiffe/spire

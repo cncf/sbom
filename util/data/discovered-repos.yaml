@@ -20,7 +20,7 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain supported package manifests (Go, Cargo, npm, pip, Maven, gem, Dockerfile, etc.).
   auto_generated: true
-  last_updated: "2026-08-31T04:35:23Z"
+  last_updated: "2026-09-07T04:28:49Z"
 repositories:
   - owner: aeraki-mesh
     repo: meta-protocol-proxy
@@ -3347,6 +3347,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from getporter/porter
   - owner: getporter
+    repo: mixin-sdk-go
+    name: mixin-sdk-go
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from getporter/porter
+  - owner: getporter
     repo: skeletor
     name: skeletor
     category: build
@@ -4504,6 +4510,12 @@ repositories:
     category: build
     project_status: sandbox
     discovered_by: org-scan from ko-build/ko
+  - owner: konveyor
+    repo: agentic-controller
+    name: agentic-controller
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from konveyor/operator
   - owner: konveyor
     repo: analyzer-lsp
     name: analyzer-lsp
@@ -6725,6 +6737,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from kubewarden/kubewarden-controller
   - owner: kubewarden
+    repo: network-enforcer
+    name: network-enforcer
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from kubewarden/kubewarden-controller
+  - owner: kubewarden
     repo: policies
     name: policies
     category: security
@@ -6745,6 +6763,12 @@ repositories:
   - owner: kubewarden
     repo: policy-sdk-rust
     name: policy-sdk-rust
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from kubewarden/kubewarden-controller
+  - owner: kubewarden
+    repo: runtime-enforcer
+    name: runtime-enforcer
     category: security
     project_status: sandbox
     discovered_by: org-scan from kubewarden/kubewarden-controller
@@ -7111,6 +7135,12 @@ repositories:
   - owner: llm-d
     repo: llm-d-async
     name: llm-d-async
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from llm-d/llm-d
+  - owner: llm-d
+    repo: llm-d-autoscaling
+    name: llm-d-autoscaling
     category: other
     project_status: sandbox
     discovered_by: org-scan from llm-d/llm-d
@@ -8669,6 +8699,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from openeverest/openeverest
   - owner: openeverest
+    repo: provider-altinity-clickhouse
+    name: provider-altinity-clickhouse
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openeverest/openeverest
+  - owner: openeverest
     repo: provider-cassandra
     name: provider-cassandra
     category: storage
@@ -9538,6 +9574,12 @@ repositories:
     category: build
     project_status: sandbox
     discovered_by: org-scan from podman-desktop/podman-desktop
+  - owner: project-akri
+    repo: examples
+    name: examples
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from project-akri/akri
   - owner: project-copacetic
     repo: copa-action
     name: copa-action
@@ -9856,6 +9898,12 @@ repositories:
     category: observability
     project_status: graduated
     discovered_by: org-scan from prometheus/prometheus
+  - owner: radius-project
+    repo: ai-extensions
+    name: ai-extensions
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from radius-project/radius
   - owner: radius-project
     repo: resource-types-contrib
     name: resource-types-contrib

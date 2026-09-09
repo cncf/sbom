@@ -58,6 +58,57 @@ spdx_id() {
   echo "$1" | tr '[:lower:]' '[:upper:]' | sed 's/[^A-Z0-9]/-/g'
 }
 
+fix_spdx_document_name() {
+  local file="$1"
+  local fallback_name="${2:-}"
+
+  if [[ ! -s "$file" ]]; then
+    echo "Error: SBOM file is missing or empty: $file" >&2
+    return 1
+  fi
+
+  local spdx_id_value
+  spdx_id_value=$(jq -r '
+    (.documentDescribes? | if type == "array" and length > 0 then .[0] else empty end),
+    (.relationships? | if type == "array" then .[] | select(.relationshipType == "DESCRIBES") | .relatedSpdxElement else empty end)
+  ' "$file" | head -n 1)
+
+  local expected_name=""
+  if [[ -n "$spdx_id_value" && "$spdx_id_value" != "null" ]]; then
+    expected_name=$(jq -r --arg sid "$spdx_id_value" '
+      .packages[]? | select(.SPDXID == $sid) |
+      if (.versionInfo != null and .versionInfo != "" and .versionInfo != "NOASSERTION") then
+        (.name + " " + .versionInfo)
+      else
+        .name
+      end
+    ' "$file" | head -n 1)
+  fi
+
+  if [[ -z "$expected_name" || "$expected_name" == "null" ]]; then
+    if [[ -n "$fallback_name" ]]; then
+      expected_name="$fallback_name"
+    else
+      echo "Error: Unable to derive a valid document name for $file" >&2
+      return 1
+    fi
+  fi
+
+  local current_name
+  current_name=$(jq -r '.name // empty' "$file")
+
+  if [[ -z "$current_name" || "$current_name" == tmp.* || "$current_name" == /tmp/* ]]; then
+    jq --arg name "$expected_name" '.name = $name' "$file" > "${file}.tmp" && mv "${file}.tmp" "$file"
+    echo "Updated invalid SPDX document name from '$current_name' to '$expected_name' in $file"
+    return 0
+  fi
+
+  if [[ "$current_name" != "$expected_name" ]]; then
+    jq --arg name "$expected_name" '.name = $name' "$file" > "${file}.tmp" && mv "${file}.tmp" "$file"
+    echo "Updated SPDX document name from '$current_name' to '$expected_name' in $file"
+  fi
+}
+
 package_json() {
   local spdx_id_value="$1"
   local name="$2"
@@ -117,6 +168,7 @@ generate_repo_sbom() {
     return 1
   fi
 
+  fix_spdx_document_name "$output_file" "$ROOT_PACKAGE_NAME $REPO_COMMIT"
   rm -rf "$temp_dir"
 }
 

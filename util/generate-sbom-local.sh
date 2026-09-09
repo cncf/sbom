@@ -162,6 +162,57 @@ install_waybill() {
   echo "Installed Waybill to: $LOCAL_BIN/waybill"
 }
 
+fix_spdx_document_name() {
+  local file="$1"
+  local fallback_name="${2:-}"
+
+  if [ ! -s "$file" ]; then
+    echo "  Error: SBOM file is missing or empty: $file" >&2
+    return 1
+  fi
+
+  local spdx_id
+  spdx_id=$(jq -r '
+    (.documentDescribes? | if type == "array" and length > 0 then .[0] else empty end),
+    (.relationships? | if type == "array" then .[] | select(.relationshipType == "DESCRIBES") | .relatedSpdxElement else empty end)
+  ' "$file" | head -n 1)
+
+  local expected_name=""
+  if [ -n "$spdx_id" ] && [ "$spdx_id" != "null" ]; then
+    expected_name=$(jq -r --arg sid "$spdx_id" '
+      .packages[]? | select(.SPDXID == $sid) |
+      if (.versionInfo != null and .versionInfo != "" and .versionInfo != "NOASSERTION") then
+        (.name + " " + .versionInfo)
+      else
+        .name
+      end
+    ' "$file" | head -n 1)
+  fi
+
+  if [ -z "$expected_name" ] || [ "$expected_name" = "null" ]; then
+    if [ -n "$fallback_name" ]; then
+      expected_name="$fallback_name"
+    else
+      echo "  Error: Unable to derive a valid document name for $file" >&2
+      return 1
+    fi
+  fi
+
+  local current_name
+  current_name=$(jq -r '.name // empty' "$file")
+
+  if [ -z "$current_name" ] || [[ "$current_name" == tmp.* ]] || [[ "$current_name" == /tmp/* ]]; then
+    jq --arg name "$expected_name" '.name = $name' "$file" > "${file}.tmp" && mv "${file}.tmp" "$file"
+    echo "  Updated invalid SPDX document name from '$current_name' to '$expected_name' in $file"
+    return 0
+  fi
+
+  if [ "$current_name" != "$expected_name" ]; then
+    jq --arg name "$expected_name" '.name = $name' "$file" > "${file}.tmp" && mv "${file}.tmp" "$file"
+    echo "  Updated SPDX document name from '$current_name' to '$expected_name' in $file"
+  fi
+}
+
 # Generate SBOM for a specific tag
 generate_sbom() {
   local OWNER="$1"
@@ -206,9 +257,13 @@ generate_sbom() {
     --git-ref "$TAG" \
     --output "$SBOM_FILE" \
     2>/dev/null; then
-    echo "  Successfully generated SBOM: $SBOM_FILE"
-    rm -rf "$TEMP_DIR"
-    return 0
+   if ! fix_spdx_document_name "$SBOM_FILE" "${OWNER}/${REPO} ${TAG}"; then
+     rm -rf "$TEMP_DIR"
+     return 1
+   fi
+   echo "  Successfully generated SBOM: $SBOM_FILE"
+   rm -rf "$TEMP_DIR"
+   return 0
   else
     echo "  Failed to generate SBOM for $OWNER/$REPO@$TAG"
     rm -rf "$TEMP_DIR"

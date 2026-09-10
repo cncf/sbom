@@ -76,6 +76,7 @@ This repository contains **only tooling and configuration** — no SBOM data fil
 └── util/
     ├── data/
     │   ├── cncf-projects.yaml          # Auto-synced CNCF project list (DO NOT EDIT)
+    │   ├── repositories.yaml          # Manually maintained additional projects
     │   └── discovered-repos.yaml       # Subproject repos found in CNCF orgs (DO NOT EDIT)
     ├── extract-projects/               # Go tool to sync projects from CNCF landscape
     ├── discover-repos/                 # Go tool to find subproject repos in CNCF orgs
@@ -111,7 +112,7 @@ This workflow finds subproject repositories that:
 
 ### 3. Generate SBOMs (`generate-sbom.yml`)
 
-Generates SBOMs for CNCF projects and **uploads them directly to OCI S3 buckets**.
+Generates SBOMs for CNCF and manually added projects and **uploads them directly to OCI S3 buckets**.
 
 - **Scheduled**: Weekly on Sunday at 02:00 UTC (processes only releases from the past week)
 - **Manual trigger**: Via workflow_dispatch with optional filters
@@ -122,15 +123,39 @@ Generates SBOMs for CNCF projects and **uploads them directly to OCI S3 buckets*
 | `force_regenerate` | Force regenerate existing SBOMs | false |
 | `releases_mode` | `recent` (past week) or `latest` (N latest releases) | recent |
 | `max_releases` | Max releases per repo (only for `latest` mode) | 3 |
-| `source` | `all`, `cncf`, or `discovered` | all |
+| `source` | `all`, `cncf`, `manual`, or `discovered` | all |
 
 **How it works:**
-1. Prepares a matrix of repositories from `cncf-projects.yaml` and `discovered-repos.yaml`
+1. Prepares repository matrices from `cncf-projects.yaml`, the manually maintained `repositories.yaml`, and `discovered-repos.yaml`
 2. Each matrix job downloads Waybill and generates SBOMs using `waybill sbom scan --format spdx-2.3-json`
 3. deps.dev and ClearlyDefined enrichment runs inline (license resolution, dependency graphs)
 4. Generated SBOMs are immediately uploaded to the corresponding S3 bucket
 5. Each repository job writes a compact JSON report, and the workflow publishes one consolidated run summary plus a `sbom-generation-report` artifact
 6. No files are committed to the repository
+
+#### Adding a project manually
+
+Add an entry to `util/data/repositories.yaml`:
+
+```yaml
+repositories:
+  - owner: OmniTrustILM
+    repo: core
+    name: OmniTrust ILM
+```
+
+Entries are included in scheduled and manually triggered `source=all` runs.
+Use `source=manual` to scan only this list; `cncf` and `discovered` retain their
+existing scopes. Duplicate owner/repo entries in the CNCF and manual lists are
+scanned once (case-insensitive, with CNCF metadata taking precedence).
+Manual projects use the project bucket and the existing project-name/version
+key layout. The sync and discovery workflows do not overwrite this list.
+
+For the first scan of an older release, run the generation workflow with
+`source=manual`, `project_filter=OmniTrustILM/core`, and `releases_mode=latest`.
+Scheduled runs keep the existing recent-release selection; adding an entry
+does not itself trigger a run or backfill older releases.
+The local Bash and PowerShell generators also read `repositories.yaml`.
 
 ### 4. Migrate SBOMs to OCI (`migrate-sboms-to-oci.yml`)
 

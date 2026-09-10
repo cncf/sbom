@@ -68,6 +68,7 @@ jobs:
             unzip -q /tmp/awscliv2.zip -d /tmp
             sudo /tmp/aws/install
           fi
+          aws --version
 
       - name: Get stable releases and generate SBOMs
         id: generate
@@ -282,6 +283,7 @@ jobs:
           SUBPROJECT_BUCKET: ${{ vars.OCI_SUBPROJECT_BUCKET }}
           SBOM_PATH_PREFIX: ${{ inputs.sbom_path_prefix }}
         run: |
+          source util/s3-upload.sh
           OWNER="${{ matrix.owner }}"
           REPO="${{ matrix.repo }}"
           PROJECT_NAME="${{ matrix.name }}"
@@ -318,6 +320,7 @@ jobs:
           fi
 
           UPLOADED=0
+          FAILED=0
           while IFS= read -r file; do
             rel="${file#${SBOM_BASE_DIR}/}"
             VERSION=$(dirname "$rel")
@@ -329,19 +332,17 @@ jobs:
               S3_KEY="${SANITIZED_PROJECT}/${VERSION}/${SANITIZED_PROJECT}_${VERSION_SLUG}_spdx.json"
             fi
 
-            echo "Uploading: s3://${BUCKET}/${S3_KEY}"
-            if ERR=$(aws s3api put-object \
-              --endpoint-url "$S3_ENDPOINT" \
-              --region "$S3_REGION" \
-              --bucket "$BUCKET" \
-              --key "$S3_KEY" \
-              --body "$file" 2>&1 >/dev/null); then
+            if upload_sbom "$file" "$BUCKET" "$S3_KEY"; then
               UPLOADED=$((UPLOADED + 1))
             else
-              echo "::warning::Upload failed for ${file}: ${ERR}"
+              FAILED=$((FAILED + 1))
             fi
           done < <(find "$SBOM_BASE_DIR" -type f -name '*.json' | sort)
 
           echo "Uploaded ${UPLOADED} SBOMs to s3://${BUCKET}/"
           echo "uploaded=${UPLOADED}" >> "$GITHUB_OUTPUT"
           echo "::notice title=sbom-uploaded::${UPLOADED}"
+          if [ "$FAILED" -gt 0 ]; then
+            echo "::error::${FAILED} SBOM uploads failed"
+            exit 1
+          fi

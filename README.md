@@ -189,7 +189,7 @@ The following must be configured in the repository settings:
 
 | Secret | Description |
 |--------|-------------|
-| `OCI_S3_ACCESS_KEY` | S3-compatible access key for OCI Object Storage |
+| `OCI_S3_ACCESS_KEY` | S3-compatible access key with `PutObject` permission for both configured SBOM buckets |
 | `OCI_S3_SECRET_KEY` | S3-compatible secret key for OCI Object Storage |
 
 **Variables:**
@@ -200,6 +200,20 @@ The following must be configured in the repository settings:
 | `OCI_S3_REGION` | S3 region | `us-sanjose-1` |
 | `OCI_PROJECT_BUCKET` | Bucket name for project SBOMs | `cncf-project-sboms` |
 | `OCI_SUBPROJECT_BUCKET` | Bucket name for subproject SBOMs | `cncf-subproject-sboms` |
+
+#### Troubleshooting upload failures
+
+Upload failures fail the generation job, including partially successful uploads.
+The logs show the target bucket/key, AWS CLI exit code and diagnostic output;
+the `uploaded` output counts only successful uploads.
+
+On S3-compatible storage, an error response with an empty `Message` can cause AWS
+CLI to print `argument of type 'NoneType' is not a container or iterable` instead
+of the service error. This has been reproduced with HTTP 403 `AccessDenied`.
+Check the permissions and bucket policy for the S3 key stored in GitHub's
+`OCI_S3_ACCESS_KEY` / `OCI_S3_SECRET_KEY` secrets. Successful read access does not
+establish `PutObject` permission. Manually listed projects use `OCI_PROJECT_BUCKET`,
+the same bucket as CNCF projects.
 
 ### Running the Workflow Manually
 

@@ -8,6 +8,9 @@ sbom/*/
 .tooling-sbom/
 tooling-sbom-out/
 
+# Python helper/test bytecode
+__pycache__/
+
 # IDE
 .idea/
 

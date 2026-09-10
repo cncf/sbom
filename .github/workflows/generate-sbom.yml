@@ -45,8 +45,9 @@ on:
         default: 'all'
         type: choice
         options:
-          - all           # Both CNCF projects and discovered repos
+          - all           # CNCF projects, manually added projects, and discovered repos
           - cncf          # Only official CNCF projects
+          - manual        # Only manually added projects
           - discovered    # Only discovered repos from CNCF orgs
 
 env:
@@ -57,7 +58,7 @@ permissions:
 
 jobs:
   # ===========================================
-  # Prepare matrix for official CNCF projects
+  # Prepare matrix for CNCF and manually added projects
   # ===========================================
   prepare-cncf-matrix:
     runs-on: ubuntu-latest
@@ -74,36 +75,25 @@ jobs:
           sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
           sudo chmod +x /usr/local/bin/yq
 
-      - name: Generate CNCF projects matrix
+      - name: Generate projects matrix
         id: set-matrix
+        env:
+          PROJECT_FILTER: ${{ github.event.inputs.project_filter }}
+          PROJECT_SOURCE: ${{ github.event.inputs.source || 'all' }}
         run: |
-          FILTER="${{ github.event.inputs.project_filter }}"
-          PROJECTS_FILE="util/data/cncf-projects.yaml"
-          
-          if [ ! -f "$PROJECTS_FILE" ]; then
-            echo "Error: $PROJECTS_FILE not found. Run the sync-cncf-projects workflow first."
-            exit 1
-          fi
-          
-          if [ -n "$FILTER" ]; then
-            OWNER=$(echo "$FILTER" | cut -d'/' -f1)
-            REPO=$(echo "$FILTER" | cut -d'/' -f2)
-            MATRIX=$(yq -o=json '.repositories | map(select(.owner == "'"$OWNER"'" and .repo == "'"$REPO"'")) | {"include": .}' "$PROJECTS_FILE" | jq -c .)
-          else
-            MATRIX=$(yq -o=json '{"include": .repositories}' "$PROJECTS_FILE" | jq -c .)
-          fi
+          MATRIX=$(bash util/prepare-project-matrix.sh "$PROJECT_SOURCE" "$PROJECT_FILTER")
           
           REPO_COUNT=$(echo "$MATRIX" | jq '.include | length')
           echo "matrix=$MATRIX" >> $GITHUB_OUTPUT
           echo "has_repos=$( [ "$REPO_COUNT" -gt 0 ] && echo 'true' || echo 'false' )" >> $GITHUB_OUTPUT
-          echo "Generated CNCF matrix with $REPO_COUNT repositories"
+          echo "Generated projects matrix with $REPO_COUNT repositories"
 
   # ===========================================
   # Prepare matrix for discovered repos (split into batches due to 256 limit)
   # ===========================================
   prepare-discovered-matrix:
     runs-on: ubuntu-latest
-    if: ${{ github.event.inputs.source != 'cncf' }}
+    if: ${{ github.event.inputs.source != 'cncf' && github.event.inputs.source != 'manual' }}
     outputs:
       matrix1: ${{ steps.set-matrix.outputs.matrix1 }}
       matrix2: ${{ steps.set-matrix.outputs.matrix2 }}
@@ -174,7 +164,7 @@ jobs:
           done
 
   # ===========================================
-  # Generate SBOMs for official CNCF projects
+  # Generate SBOMs for CNCF and manually added projects
   # ===========================================
   generate-sbom-cncf:
     needs: prepare-cncf-matrix

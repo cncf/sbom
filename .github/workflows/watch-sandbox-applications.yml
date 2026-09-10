@@ -1,0 +1,126 @@
+name: Scan Sandbox Applications
+
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: read
+
+concurrency:
+  group: sandbox-application-sboms
+  cancel-in-progress: false
+
+env:
+  WAYBILL_VERSION: v0.3.0
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    outputs:
+      matrix: ${{ steps.applications.outputs.matrix }}
+      has_repos: ${{ steps.applications.outputs.has_repos }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Install AWS CLI
+        run: |
+          if ! command -v aws &>/dev/null; then
+            curl -fsSL https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip -o "$RUNNER_TEMP/awscliv2.zip"
+            unzip -q "$RUNNER_TEMP/awscliv2.zip" -d "$RUNNER_TEMP/awscli"
+            sudo "$RUNNER_TEMP/awscli/aws/install"
+          fi
+          aws --version
+
+      - name: Find unprocessed sandbox applications
+        id: applications
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.OCI_S3_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.OCI_S3_SECRET_KEY }}
+          AWS_SESSION_TOKEN: ""
+          AWS_PAGER: ""
+          AWS_REQUEST_CHECKSUM_CALCULATION: when_required
+          AWS_RESPONSE_CHECKSUM_VALIDATION: when_required
+          S3_ENDPOINT: ${{ vars.OCI_S3_ENDPOINT }}
+          S3_REGION: ${{ vars.OCI_S3_REGION }}
+          PROJECT_BUCKET: ${{ vars.OCI_PROJECT_BUCKET }}
+        run: |
+          python3 util/sandbox-applications.py discover --output "$RUNNER_TEMP/sandbox-matrix.json"
+          echo "matrix=$(jq -c . "$RUNNER_TEMP/sandbox-matrix.json")" >> "$GITHUB_OUTPUT"
+          echo "has_repos=$(jq '.include | length > 0' "$RUNNER_TEMP/sandbox-matrix.json")" >> "$GITHUB_OUTPUT"
+
+  scan:
+    needs: discover
+    if: ${{ needs.discover.outputs.has_repos == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 5
+      matrix: ${{ fromJson(needs.discover.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+
+      - name: Resolve latest stable release or default branch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO_OWNER: ${{ matrix.owner }}
+          REPO_NAME: ${{ matrix.repo }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/sandbox-output"
+          python3 util/sandbox-applications.py resolve \
+            --owner "$REPO_OWNER" --repo "$REPO_NAME" \
+            --output "$RUNNER_TEMP/sandbox-output/revision.json"
+
+      - name: Install Waybill
+        run: |
+          curl -fsSL "https://github.com/kusari-oss/waybill/releases/download/${WAYBILL_VERSION}/waybill-${WAYBILL_VERSION}-x86_64-unknown-linux-gnu.tar.gz" -o "$RUNNER_TEMP/waybill.tar.gz"
+          tar xzf "$RUNNER_TEMP/waybill.tar.gz" -C "$RUNNER_TEMP"
+          sudo install -m 755 "$RUNNER_TEMP/waybill-${WAYBILL_VERSION}-x86_64-unknown-linux-gnu/waybill" /usr/local/bin/waybill
+          waybill --version
+
+      - name: Generate immutable application snapshot
+        timeout-minutes: 30
+        run: |
+          bash util/generate-sandbox-sbom.sh \
+            "$RUNNER_TEMP/sandbox-output/revision.json" \
+            "$RUNNER_TEMP/sandbox-output/sbom.spdx.json"
+
+      - name: Preserve generated SBOM and revision
+        uses: actions/upload-artifact@v4
+        with:
+          name: sandbox-${{ matrix.issue }}-${{ matrix.owner }}-${{ matrix.repo }}
+          path: ${{ runner.temp }}/sandbox-output/
+          if-no-files-found: error
+          retention-days: 7
+
+      - name: Install AWS CLI
+        run: |
+          if ! command -v aws &>/dev/null; then
+            curl -fsSL https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip -o "$RUNNER_TEMP/awscliv2.zip"
+            unzip -q "$RUNNER_TEMP/awscliv2.zip" -d "$RUNNER_TEMP/awscli"
+            sudo "$RUNNER_TEMP/awscli/aws/install"
+          fi
+          aws --version
+
+      - name: Upload to the CNCF project bucket
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.OCI_S3_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.OCI_S3_SECRET_KEY }}
+          AWS_SESSION_TOKEN: ""
+          AWS_REQUEST_CHECKSUM_CALCULATION: when_required
+          AWS_RESPONSE_CHECKSUM_VALIDATION: when_required
+          S3_ENDPOINT: ${{ vars.OCI_S3_ENDPOINT }}
+          S3_REGION: ${{ vars.OCI_S3_REGION }}
+          PROJECT_BUCKET: ${{ vars.OCI_PROJECT_BUCKET }}
+          SBOM_KEY: ${{ matrix.key }}
+        run: |
+          source util/s3-upload.sh
+          [[ "$S3_ENDPOINT" != http://* && "$S3_ENDPOINT" != https://* ]] && S3_ENDPOINT="https://${S3_ENDPOINT}"
+          upload_sbom "$RUNNER_TEMP/sandbox-output/sbom.spdx.json" "$PROJECT_BUCKET" "$SBOM_KEY"

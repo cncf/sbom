@@ -71,6 +71,7 @@ This repository contains **only tooling and configuration** — no SBOM data fil
 │   ├── discover-cncf-repos.yml         # Discover subproject repos in CNCF orgs
 │   ├── generate-sbom.yml               # Generate SBOMs and upload to S3
 │   ├── generate-tooling-sbom.yml       # Generate SBOMs for this repo's tooling and CI chain
+│   ├── watch-sandbox-applications.yml  # One-time SBOMs for CNCF sandbox applications
 │   ├── reusable-generate-sbom.yml      # Reusable workflow for subproject batches
 │   └── migrate-sboms-to-oci.yml        # One-time migration of legacy repo SBOMs to S3
 └── util/
@@ -180,6 +181,49 @@ Generates SBOMs for this repository's own tooling on every push, pull request, a
 
 This separates the repository source inventory from the CI/generation chain, so the SBOM production tooling is captured explicitly as part of the delivered artifact set.
 The workflow generates files in `tooling-sbom-out/`, uploads them as an artifact for each run, and refreshes the tracked `tooling-sbom/` snapshots on pushes to `main`.
+
+### 6. Watch Sandbox Applications (`watch-sandbox-applications.yml`)
+
+Polls [cncf/sandbox issues](https://github.com/cncf/sandbox/issues) hourly and on
+manual dispatch. Cross-repository issue creation does not directly trigger this
+repository's workflows, so new applications are picked up on the next poll.
+
+Issues must start with `[Sandbox]`. GitHub repository URLs are extracted only
+from the `Project repo URL in scope of application` field. Each repository in
+that field gets one SBOM per application issue; links elsewhere in the issue
+are not scanned. Malformed application fields are reported in the logs.
+
+The first run includes existing **open** applications. A persistent start
+timestamp also allows subsequent polls to include newly created applications
+that have already been closed. Historical closed applications are excluded.
+
+For each unprocessed repository, the workflow selects its **latest stable
+release**, falling back to the default branch if no stable release exists.
+The selected ref is resolved to a commit SHA before scanning; branch snapshots
+use that SHA as their version. The document name explicitly identifies the
+repository and scanned version, independent of the temporary checkout directory.
+No project build scripts are run.
+
+SBOMs are uploaded to **`OCI_PROJECT_BUCKET`**, the same bucket as CNCF projects,
+under a separate application-snapshot prefix:
+
+```text
+sandbox-applications/<issue-number>/<owner>/<repo>.spdx.json
+```
+
+For example, application #525 for KubeRay produces
+`sandbox-applications/525/ray-project/kuberay.spdx.json`. The key remains stable
+even if new releases appear: a successfully uploaded SBOM marks that
+issue/repository as processed. Failed scans or uploads are retried on subsequent
+polls. Workflow runs are serialized, with up to five repository scans in parallel;
+more than 256 pending repositories are deferred to subsequent runs.
+
+The timestamp is stored at `sandbox-applications/.started-at` (not an SBOM).
+Keep this state and the uploaded snapshots to preserve one-time processing.
+The S3 key needs list, read, and write access to this prefix; access errors stop
+discovery rather than being interpreted as empty state. The scan step receives
+no S3 credentials. Generated SBOMs and their resolved revision metadata are also
+retained as GitHub Actions artifacts for seven days.
 
 ### Required GitHub Secrets & Variables
 

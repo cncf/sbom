@@ -1,0 +1,35 @@
+name: Test Sandbox Watcher
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/watch-sandbox-applications.yml'
+      - '.github/workflows/test-sandbox-applications.yml'
+      - 'util/sandbox-applications.py'
+      - 'util/generate-sandbox-sbom.sh'
+      - 'util/tests/test_sandbox_applications.py'
+      - 'util/tests/generate-sandbox-sbom.sh'
+  push:
+    paths:
+      - '.github/workflows/watch-sandbox-applications.yml'
+      - '.github/workflows/test-sandbox-applications.yml'
+      - 'util/sandbox-applications.py'
+      - 'util/generate-sandbox-sbom.sh'
+      - 'util/tests/test_sandbox_applications.py'
+      - 'util/tests/generate-sandbox-sbom.sh'
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - name: Test discovery, checkpoints, and revision selection
+        run: python3 -m unittest discover -s util/tests -p test_sandbox_applications.py
+      - name: Test immutable scanning and document names
+        run: bash util/tests/generate-sandbox-sbom.sh

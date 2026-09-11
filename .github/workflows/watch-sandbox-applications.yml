@@ -15,6 +15,7 @@ concurrency:
 
 env:
   WAYBILL_VERSION: v0.3.0
+  SANDBOX_BUCKET: ${{ vars.OCI_SANDBOX_BUCKET || 'sandbox-reviews' }}
 
 jobs:
   discover:
@@ -47,7 +48,6 @@ jobs:
           AWS_RESPONSE_CHECKSUM_VALIDATION: when_required
           S3_ENDPOINT: ${{ vars.OCI_S3_ENDPOINT }}
           S3_REGION: ${{ vars.OCI_S3_REGION }}
-          PROJECT_BUCKET: ${{ vars.OCI_PROJECT_BUCKET }}
         run: |
           python3 util/sandbox-applications.py discover --output "$RUNNER_TEMP/sandbox-matrix.json"
           echo "matrix=$(jq -c . "$RUNNER_TEMP/sandbox-matrix.json")" >> "$GITHUB_OUTPUT"
@@ -109,7 +109,7 @@ jobs:
           fi
           aws --version
 
-      - name: Upload to the CNCF project bucket
+      - name: Upload to the sandbox reviews bucket
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.OCI_S3_ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.OCI_S3_SECRET_KEY }}
@@ -118,9 +118,8 @@ jobs:
           AWS_RESPONSE_CHECKSUM_VALIDATION: when_required
           S3_ENDPOINT: ${{ vars.OCI_S3_ENDPOINT }}
           S3_REGION: ${{ vars.OCI_S3_REGION }}
-          PROJECT_BUCKET: ${{ vars.OCI_PROJECT_BUCKET }}
           SBOM_KEY: ${{ matrix.key }}
         run: |
           source util/s3-upload.sh
           [[ "$S3_ENDPOINT" != http://* && "$S3_ENDPOINT" != https://* ]] && S3_ENDPOINT="https://${S3_ENDPOINT}"
-          upload_sbom "$RUNNER_TEMP/sandbox-output/sbom.spdx.json" "$PROJECT_BUCKET" "$SBOM_KEY"
+          upload_sbom "$RUNNER_TEMP/sandbox-output/sbom.spdx.json" "$SANDBOX_BUCKET" "$SBOM_KEY"

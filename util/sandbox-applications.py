@@ -178,7 +178,7 @@ def utc_timestamp(value, context):
 class ObjectStore:
     def __init__(self, endpoint, region, bucket):
         if not all((endpoint, region, bucket)):
-            raise WatcherError("S3_ENDPOINT, S3_REGION, and PROJECT_BUCKET must be configured")
+            raise WatcherError("S3_ENDPOINT, S3_REGION, and SANDBOX_BUCKET must be configured")
         self.endpoint = endpoint if endpoint.startswith(("http://", "https://")) else "https://" + endpoint
         self.region, self.bucket = region, bucket
 
@@ -329,7 +329,7 @@ def main():
         if args.command == "discover":
             store = ObjectStore(
                 os.environ.get("S3_ENDPOINT"), os.environ.get("S3_REGION"),
-                os.environ.get("PROJECT_BUCKET"),
+                os.environ.get("SANDBOX_BUCKET"),
             )
             result = discover(github, store)
         else:

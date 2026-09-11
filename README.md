@@ -184,8 +184,8 @@ The workflow generates files in `tooling-sbom-out/`, uploads them as an artifact
 
 ### 6. Watch Sandbox Applications (`watch-sandbox-applications.yml`)
 
-Polls [cncf/sandbox issues](https://github.com/cncf/sandbox/issues) hourly and on
-manual dispatch. Cross-repository issue creation does not directly trigger this
+Polls [cncf/sandbox issues](https://github.com/cncf/sandbox/issues) daily at 02:17 UTC
+and on manual dispatch. Cross-repository issue creation does not directly trigger this
 repository's workflows, so new applications are picked up on the next poll.
 
 Issues must start with `[Sandbox]`. GitHub repository URLs are extracted only

@@ -5,3 +5,102 @@ repositories:
   - owner: OmniTrustILM
     repo: core
     name: OmniTrust ILM
+  - owner: OmniTrustILM
+    repo: auth
+    name: auth
+  - owner: OmniTrustILM
+    repo: auth-opa-policies
+    name: auth-opa-policie
+  - owner: OmniTrustILM
+    repo: automated-testing-framework
+    name: automated-testing-framework
+  - owner: OmniTrustILM
+    repo: cert-manager-issuer
+    name: cert-manager-issue
+  - owner: OmniTrustILM
+    repo: cli
+    name: cli
+  - owner: OmniTrustILM
+    repo: common-credential-provider
+    name: common-credential-provider
+  - owner: OmniTrustILM
+    repo: cryptosense-discovery-provider
+    name: cryptosense-discovery-provider
+  - owner: OmniTrustILM
+    repo: ct-logs-discovery-provider
+    name: ct-logs-discovery-provider
+  - owner: OmniTrustILM
+    repo: dependencies
+    name: dependencies
+  - owner: OmniTrustILM
+    repo: development-environment
+    name: development-environment
+  - owner: OmniTrustILM
+    repo: documentation
+    name: documentation
+  - owner: OmniTrustILM
+    repo: ejbca-ng-connector
+    name: ejbca-ng-connector
+  - owner: OmniTrustILM
+    repo: email-notification-provider
+    name: email-notification-provider
+  - owner: OmniTrustILM
+    repo: fe-administrator
+    name: fe-administrator
+  - owner: OmniTrustILM
+    repo: go-sdk
+    name: go-sdk
+  - owner: OmniTrustILM
+    repo: hashicorp-vault-connector
+    name: hashicorp-vault-connector
+  - owner: OmniTrustILM
+    repo: helm-charts
+    name: helm-charts
+  - owner: OmniTrustILM
+    repo: ilm
+    name: ilm
+  - owner: OmniTrustILM
+    repo: interface-documentation
+    name: interface-documentation
+  - owner: OmniTrustILM
+    repo: interfaces
+    name: interfaces
+  - owner: OmniTrustILM
+    repo: ip-discovery-provider
+    name: ip-discovery-provider
+  - owner: OmniTrustILM
+    repo: keycloak-optimized
+    name: keycloak-optimized
+  - owner: OmniTrustILM
+    repo: keycloak-theme
+    name: keycloak-theme
+  - owner: OmniTrustILM
+    repo: keystore-entity-provider
+    name: keystore-entity-provider
+  - owner: OmniTrustILM
+    repo: mcp-server
+    name: mcp-server
+  - owner: OmniTrustILM
+    repo: operator
+    name: operator
+  - owner: OmniTrustILM
+    repo: provisioning-rabbitmq
+    name: provisioning-rabbitmq
+  - owner: OmniTrustILM
+    repo: pyadcs-connector
+    name: pyadcs-connector
+  - owner: OmniTrustILM
+    repo: scheduler
+    name: scheduler
+  - owner: OmniTrustILM
+    repo: software-cryptography-provider
+    name: software-cryptography-provider
+  - owner: OmniTrustILM
+    repo: utils-service
+    name: utils-service
+  - owner: OmniTrustILM
+    repo: webhook-notification-provider
+    name: webhook-notification-provider
+  - owner: OmniTrustILM
+    repo: x509-compliance-provider
+    name: x509-compliance-provider

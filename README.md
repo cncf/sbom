@@ -204,8 +204,9 @@ use that SHA as their version. The document name explicitly identifies the
 repository and scanned version, independent of the temporary checkout directory.
 No project build scripts are run.
 
-SBOMs are uploaded to **`OCI_PROJECT_BUCKET`**, the same bucket as CNCF projects,
-under a separate application-snapshot prefix:
+SBOMs and processing state are stored in the dedicated **`sandbox-reviews`**
+bucket, separate from CNCF project SBOMs. The optional `OCI_SANDBOX_BUCKET`
+repository variable overrides this default. Application snapshots use the prefix:
 
 ```text
 sandbox-applications/<issue-number>/<owner>/<repo>.spdx.json
@@ -218,7 +219,8 @@ issue/repository as processed. Failed scans or uploads are retried on subsequent
 polls. Workflow runs are serialized, with up to five repository scans in parallel;
 more than 256 pending repositories are deferred to subsequent runs.
 
-The timestamp is stored at `sandbox-applications/.started-at` (not an SBOM).
+The timestamp is stored in the same sandbox bucket at
+`sandbox-applications/.started-at` (not an SBOM).
 Keep this state and the uploaded snapshots to preserve one-time processing.
 The S3 key needs list, read, and write access to this prefix; access errors stop
 discovery rather than being interpreted as empty state. The scan step receives
@@ -233,7 +235,7 @@ The following must be configured in the repository settings:
 
 | Secret | Description |
 |--------|-------------|
-| `OCI_S3_ACCESS_KEY` | S3-compatible access key with `PutObject` permission for both configured SBOM buckets |
+| `OCI_S3_ACCESS_KEY` | S3-compatible access key with `PutObject` permission for the configured project, subproject, and sandbox buckets |
 | `OCI_S3_SECRET_KEY` | S3-compatible secret key for OCI Object Storage |
 
 **Variables:**
@@ -244,6 +246,7 @@ The following must be configured in the repository settings:
 | `OCI_S3_REGION` | S3 region | `us-sanjose-1` |
 | `OCI_PROJECT_BUCKET` | Bucket name for project SBOMs | `cncf-project-sboms` |
 | `OCI_SUBPROJECT_BUCKET` | Bucket name for subproject SBOMs | `cncf-subproject-sboms` |
+| `OCI_SANDBOX_BUCKET` | Optional sandbox application bucket override (default: `sandbox-reviews`) | `sandbox-reviews` |
 
 #### Troubleshooting upload failures
 

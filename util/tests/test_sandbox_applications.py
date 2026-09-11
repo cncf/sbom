@@ -485,13 +485,16 @@ class CLITests(unittest.TestCase):
     @patch.object(watcher, "ObjectStore")
     @patch.object(watcher, "GitHub")
     def test_discovery_contract_and_failure_exit(self, github, storage, discover, write):
-        env = {"GH_TOKEN": "secret", "S3_ENDPOINT": "https://example.test", "S3_REGION": "region", "PROJECT_BUCKET": "bucket"}
+        env = {
+            "GH_TOKEN": "secret", "S3_ENDPOINT": "https://example.test", "S3_REGION": "region",
+            "SANDBOX_BUCKET": "sandbox-reviews", "PROJECT_BUCKET": "cncf-project-sboms",
+        }
         discover.return_value = {"include": []}
         with patch.dict(watcher.os.environ, env), patch.object(
             watcher.sys, "argv", ["sandbox-applications.py", "discover", "--output", "matrix.json"]
         ):
             self.assertEqual(watcher.main(), 0)
-            storage.assert_called_once_with("https://example.test", "region", "bucket")
+            storage.assert_called_once_with("https://example.test", "region", "sandbox-reviews")
             discover.assert_called_once_with(github.return_value, storage.return_value)
             self.assertEqual(json.loads(write.call_args.args[0]), {"include": []})
             write.reset_mock()

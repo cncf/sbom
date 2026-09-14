@@ -20,7 +20,7 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain supported package manifests (Go, Cargo, npm, pip, Maven, gem, Dockerfile, etc.).
   auto_generated: true
-  last_updated: "2026-09-07T04:28:49Z"
+  last_updated: "2026-09-14T04:37:57Z"
 repositories:
   - owner: aeraki-mesh
     repo: meta-protocol-proxy
@@ -1363,6 +1363,12 @@ repositories:
   - owner: cert-manager
     repo: openshift-routes
     name: openshift-routes
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from cert-manager/cert-manager
+  - owner: cert-manager
+    repo: release
+    name: release
     category: security
     project_status: graduated
     discovered_by: org-scan from cert-manager/cert-manager
@@ -2825,6 +2831,12 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from dragonflyoss/dragonfly
   - owner: dragonflyoss
+    repo: dragonfly-sdk
+    name: dragonfly-sdk
+    category: registry
+    project_status: graduated
+    discovered_by: org-scan from dragonflyoss/dragonfly
+  - owner: dragonflyoss
     repo: nydus
     name: nydus
     category: ml-platform
@@ -3575,6 +3587,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from hyperlight-dev/hyperlight
   - owner: hyperlight-dev
+    repo: hyperlight-unikraft
+    name: hyperlight-unikraft
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from hyperlight-dev/hyperlight
+  - owner: hyperlight-dev
     repo: hyperlight-wasm
     name: hyperlight-wasm
     category: container-runtime
@@ -3931,6 +3949,12 @@ repositories:
   - owner: kai-scheduler
     repo: api
     name: api
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from kai-scheduler/KAI-Scheduler
+  - owner: kai-scheduler
+    repo: kai-gpu-fractioning
+    name: kai-gpu-fractioning
     category: orchestration
     project_status: sandbox
     discovered_by: org-scan from kai-scheduler/KAI-Scheduler
@@ -4333,6 +4357,12 @@ repositories:
   - owner: kcp-dev
     repo: contrib-virtual-ephemeral-resources-virtual-workspace
     name: contrib-virtual-ephemeral-resources-virtual-workspace
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from kcp-dev/kcp
+  - owner: kcp-dev
+    repo: contrib-virtual-workspaces
+    name: contrib-virtual-workspaces
     category: orchestration
     project_status: sandbox
     discovered_by: org-scan from kcp-dev/kcp
@@ -5903,6 +5933,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from kubernetes-sigs/headlamp
   - owner: kubernetes-sigs
+    repo: kubernetes-mixin
+    name: kubernetes-mixin
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kubernetes-sigs/headlamp
+  - owner: kubernetes-sigs
     repo: kubespray
     name: kubespray
     category: observability
@@ -6091,6 +6127,12 @@ repositories:
   - owner: kubernetes-sigs
     repo: secrets-store-sync-controller
     name: secrets-store-sync-controller
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kubernetes-sigs/headlamp
+  - owner: kubernetes-sigs
+    repo: security-profiles-merger
+    name: security-profiles-merger
     category: observability
     project_status: sandbox
     discovered_by: org-scan from kubernetes-sigs/headlamp
@@ -7177,6 +7219,12 @@ repositories:
   - owner: llm-d
     repo: llm-d-latency-predictor
     name: llm-d-latency-predictor
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from llm-d/llm-d
+  - owner: llm-d
+    repo: llm-d-prism
+    name: llm-d-prism
     category: other
     project_status: sandbox
     discovered_by: org-scan from llm-d/llm-d
@@ -10936,6 +10984,12 @@ repositories:
     category: build
     project_status: sandbox
     discovered_by: org-scan from vscode-kubernetes-tools/vscode-kubernetes-tools
+  - owner: wasmcloud
+    repo: go
+    name: go
+    category: orchestration
+    project_status: incubating
+    discovered_by: org-scan from wasmCloud/wasmCloud
   - owner: wasmcloud
     repo: kasmcloud
     name: kasmcloud

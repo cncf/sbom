@@ -53,7 +53,7 @@ repositories:
   - owner: containerd
     repo: containerd
     name: containerd
-    category: ml-platform
+    category: container-runtime
     project_status: graduated
     accepted_date: "2017-03-29"
   - owner: coredns
@@ -89,7 +89,7 @@ repositories:
   - owner: dragonflyoss
     repo: dragonfly
     name: Dragonfly
-    category: registry
+    category: ml-platform
     project_status: graduated
     accepted_date: "2018-11-13"
   - owner: envoyproxy
@@ -119,13 +119,13 @@ repositories:
   - owner: fluxcd
     repo: flux2
     name: Flux
-    category: gitops
+    category: ci-cd
     project_status: graduated
     accepted_date: "2019-07-15"
   - owner: goharbor
     repo: harbor
     name: Harbor
-    category: ml-platform
+    category: registry
     project_status: graduated
     accepted_date: "2018-07-31"
   - owner: helm
@@ -386,6 +386,12 @@ repositories:
     category: storage
     project_status: incubating
     accepted_date: "2019-10-11"
+  - owner: meshery
+    repo: meshery
+    name: Meshery
+    category: automation
+    project_status: incubating
+    accepted_date: "2021-06-22"
   - owner: metal3-io
     repo: baremetal-operator
     name: metal3-io
@@ -455,7 +461,7 @@ repositories:
   - owner: tektoncd
     repo: pipeline
     name: Tekton
-    category: gitops
+    category: ci-cd
     project_status: incubating
     accepted_date: "2026-03-13"
   - owner: thanos-io
@@ -539,7 +545,7 @@ repositories:
   - owner: bootc-dev
     repo: bootc
     name: bootc
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2025-01-21"
   - owner: bpfman
@@ -899,13 +905,13 @@ repositories:
   - owner: kuasar-io
     repo: kuasar
     name: Kuasar
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2023-12-19"
   - owner: kube-burner
     repo: kube-burner
     name: Kube-burner
-    category: gitops
+    category: ci-cd
     project_status: sandbox
     accepted_date: "2023-12-18"
   - owner: kubeovn
@@ -1022,12 +1028,6 @@ repositories:
     category: other
     project_status: sandbox
     accepted_date: "2024-08-30"
-  - owner: meshery
-    repo: meshery
-    name: Meshery
-    category: automation
-    project_status: sandbox
-    accepted_date: "2021-06-22"
   - owner: metallb
     repo: metallb
     name: MetalLB
@@ -1109,7 +1109,7 @@ repositories:
   - owner: open-gitops
     repo: project
     name: OpenGitOps
-    category: gitops
+    category: ci-cd
     project_status: sandbox
     accepted_date: "2021-01-26"
   - owner: opentofu
@@ -1181,7 +1181,7 @@ repositories:
   - owner: podman-container-tools
     repo: podman
     name: Podman Container Tools
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2025-01-21"
   - owner: podman-desktop
@@ -1325,7 +1325,7 @@ repositories:
   - owner: urunc-dev
     repo: urunc
     name: urunc
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2025-05-22"
   - owner: velero-io
@@ -1367,7 +1367,7 @@ repositories:
   - owner: youki-dev
     repo: youki
     name: youki
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2024-10-17"
   - owner: project-zot

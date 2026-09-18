@@ -23,7 +23,7 @@ repositories:
   - owner: argoproj
     repo: argo-cd
     name: Argo
-    category: gitops
+    category: ci-cd
     project_status: graduated
     accepted_date: "2020-03-26"
   - owner: buildpacks
@@ -53,7 +53,7 @@ repositories:
   - owner: containerd
     repo: containerd
     name: containerd
-    category: ml-platform
+    category: container-runtime
     project_status: graduated
     accepted_date: "2017-03-29"
   - owner: coredns
@@ -89,7 +89,7 @@ repositories:
   - owner: dragonflyoss
     repo: dragonfly
     name: Dragonfly
-    category: registry
+    category: ml-platform
     project_status: graduated
     accepted_date: "2018-11-13"
   - owner: envoyproxy
@@ -119,7 +119,7 @@ repositories:
   - owner: fluxcd
     repo: flux2
     name: Flux
-    category: gitops
+    category: ci-cd
     project_status: graduated
     accepted_date: "2019-07-15"
   - owner: goharbor
@@ -545,7 +545,7 @@ repositories:
   - owner: bootc-dev
     repo: bootc
     name: bootc
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2025-01-21"
   - owner: bpfman
@@ -689,7 +689,7 @@ repositories:
   - owner: distribution
     repo: distribution
     name: Distribution
-    category: registry
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2021-01-26"
   - owner: drasi-project
@@ -911,7 +911,7 @@ repositories:
   - owner: kube-burner
     repo: kube-burner
     name: Kube-burner
-    category: ci-cd
+    category: gitops
     project_status: sandbox
     accepted_date: "2023-12-18"
   - owner: kubeovn
@@ -1079,7 +1079,7 @@ repositories:
   - owner: openchoreo
     repo: openchoreo
     name: OpenChoreo
-    category: gitops
+    category: ci-cd
     project_status: sandbox
     accepted_date: "2026-01-06"
   - owner: openebs
@@ -1181,7 +1181,7 @@ repositories:
   - owner: podman-container-tools
     repo: podman
     name: Podman Container Tools
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2025-01-21"
   - owner: podman-desktop
@@ -1337,7 +1337,7 @@ repositories:
   - owner: virtual-kubelet
     repo: virtual-kubelet
     name: Virtual Kubelet
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2018-12-04"
   - owner: vscode-kubernetes-tools
@@ -1349,13 +1349,13 @@ repositories:
   - owner: WasmEdge
     repo: WasmEdge
     name: WasmEdge Runtime
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2021-04-28"
   - owner: werf
     repo: werf
     name: werf
-    category: ci-cd
+    category: gitops
     project_status: sandbox
     accepted_date: "2022-12-13"
   - owner: xregistry

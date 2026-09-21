@@ -20,7 +20,7 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain supported package manifests (Go, Cargo, npm, pip, Maven, gem, Dockerfile, etc.).
   auto_generated: true
-  last_updated: "2026-09-14T04:37:57Z"
+  last_updated: "2026-09-21T04:28:44Z"
 repositories:
   - owner: aeraki-mesh
     repo: meta-protocol-proxy
@@ -986,6 +986,12 @@ repositories:
     repo: bink
     name: bink
     category: ml-platform
+    project_status: sandbox
+    discovered_by: org-scan from bootc-dev/bootc
+  - owner: bootc-dev
+    repo: bootc-operator
+    name: bootc-operator
+    category: container-runtime
     project_status: sandbox
     discovered_by: org-scan from bootc-dev/bootc
   - owner: bootc-dev
@@ -2633,6 +2639,12 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from crossplane/crossplane
   - owner: crossplane
+    repo: function-sdk-rust
+    name: function-sdk-rust
+    category: orchestration
+    project_status: graduated
+    discovered_by: org-scan from crossplane/crossplane
+  - owner: crossplane
     repo: function-sdk-typescript
     name: function-sdk-typescript
     category: orchestration
@@ -3959,6 +3971,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from kai-scheduler/KAI-Scheduler
   - owner: kai-scheduler
+    repo: kai-resource-management
+    name: kai-resource-management
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from kai-scheduler/KAI-Scheduler
+  - owner: kai-scheduler
     repo: kai-resource-management-api
     name: kai-resource-management-api
     category: orchestration
@@ -5153,6 +5171,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from kuberhealthy/kuberhealthy
   - owner: kuberhealthy
+    repo: cronjob-checker
+    name: cronjob-checker
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kuberhealthy/kuberhealthy
+  - owner: kuberhealthy
     repo: daemonset-check
     name: daemonset-check
     category: observability
@@ -5611,6 +5635,12 @@ repositories:
   - owner: kubernetes-sigs
     repo: cluster-api-provider-vsphere
     name: cluster-api-provider-vsphere
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kubernetes-sigs/headlamp
+  - owner: kubernetes-sigs
+    repo: cluster-autoscaler
+    name: cluster-autoscaler
     category: observability
     project_status: sandbox
     discovered_by: org-scan from kubernetes-sigs/headlamp
@@ -10205,6 +10235,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from spidernet-io/spiderpool
   - owner: spidernet-io
+    repo: eni-vlan
+    name: eni-vlan
+    category: networking
+    project_status: sandbox
+    discovered_by: org-scan from spidernet-io/spiderpool
+  - owner: spidernet-io
     repo: plugins
     name: plugins
     category: networking
@@ -10801,6 +10837,12 @@ repositories:
   - owner: trickstercache
     repo: mockster
     name: mockster
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from trickstercache/trickster
+  - owner: trickstercache
+    repo: trickstercache.org
+    name: trickstercache.org
     category: observability
     project_status: sandbox
     discovered_by: org-scan from trickstercache/trickster

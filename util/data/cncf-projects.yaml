@@ -689,7 +689,7 @@ repositories:
   - owner: distribution
     repo: distribution
     name: Distribution
-    category: registry
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2021-01-26"
   - owner: drasi-project
@@ -749,7 +749,7 @@ repositories:
   - owner: inclavare-containers
     repo: inclavare-containers
     name: Inclavare Containers
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2021-09-14"
   - owner: inspektor-gadget
@@ -1163,7 +1163,7 @@ repositories:
   - owner: pipe-cd
     repo: pipecd
     name: PipeCD
-    category: gitops
+    category: ci-cd
     project_status: sandbox
     accepted_date: "2023-05-17"
   - owner: piraeusdatastore
@@ -1349,7 +1349,7 @@ repositories:
   - owner: WasmEdge
     repo: WasmEdge
     name: WasmEdge Runtime
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2021-04-28"
   - owner: werf

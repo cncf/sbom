@@ -20,7 +20,7 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain supported package manifests (Go, Cargo, npm, pip, Maven, gem, Dockerfile, etc.).
   auto_generated: true
-  last_updated: "2026-09-21T04:28:44Z"
+  last_updated: "2026-09-28T04:30:38Z"
 repositories:
   - owner: aeraki-mesh
     repo: meta-protocol-proxy
@@ -1775,6 +1775,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from cloudnative-pg/cloudnative-pg
   - owner: cloudnative-pg
+    repo: cnpg-headlamp-plugin
+    name: cnpg-headlamp-plugin
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from cloudnative-pg/cloudnative-pg
+  - owner: cloudnative-pg
     repo: cnpg-i
     name: cnpg-i
     category: storage
@@ -3515,6 +3521,12 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from hexa-org/policy-orchestrator
   - owner: higress-group
+    repo: HiRoute
+    name: HiRoute
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from higress-group/higress
+  - owner: higress-group
     repo: db-log-pusher
     name: db-log-pusher
     category: other
@@ -3958,9 +3970,21 @@ repositories:
     category: automation
     project_status: sandbox
     discovered_by: org-scan from kagent-dev/kagent
+  - owner: kagent-dev
+    repo: website
+    name: website
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from kagent-dev/kagent
   - owner: kai-scheduler
     repo: api
     name: api
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from kai-scheduler/KAI-Scheduler
+  - owner: kai-scheduler
+    repo: gpu-fractioning
+    name: gpu-fractioning
     category: orchestration
     project_status: sandbox
     discovered_by: org-scan from kai-scheduler/KAI-Scheduler
@@ -8327,6 +8351,12 @@ repositories:
     project_status: graduated
     discovered_by: org-scan from open-policy-agent/opa
   - owner: open-policy-agent
+    repo: opa-java-wasm
+    name: opa-java-wasm
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from open-policy-agent/opa
+  - owner: open-policy-agent
     repo: opa-typescript
     name: opa-typescript
     category: security
@@ -8365,6 +8395,12 @@ repositories:
   - owner: open-policy-agent
     repo: vscode-opa
     name: vscode-opa
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from open-policy-agent/opa
+  - owner: open-policy-agent
+    repo: zed-rego
+    name: zed-rego
     category: security
     project_status: graduated
     discovered_by: org-scan from open-policy-agent/opa
@@ -8821,6 +8857,12 @@ repositories:
   - owner: openeverest
     repo: provider-sdk
     name: provider-sdk
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openeverest/openeverest
+  - owner: openeverest
+    repo: provider-tidb
+    name: provider-tidb
     category: storage
     project_status: sandbox
     discovered_by: org-scan from openeverest/openeverest
@@ -10831,6 +10873,12 @@ repositories:
   - owner: trickstercache
     repo: helm-charts
     name: helm-charts
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from trickstercache/trickster
+  - owner: trickstercache
+    repo: mecone
+    name: mecone
     category: observability
     project_status: sandbox
     discovered_by: org-scan from trickstercache/trickster

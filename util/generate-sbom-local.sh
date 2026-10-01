@@ -27,7 +27,7 @@
 # Environment variables:
 #   GH_TOKEN or GITHUB_TOKEN - GitHub token for API access
 #   MAX_RELEASES - Maximum releases to process per repo (default: 3)
-#   WAYBILL_VERSION - Waybill release version (default: v0.2.0)
+#   WAYBILL_VERSION - Waybill release version (default: v0.9.0)
 #
 
 set -e
@@ -36,7 +36,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 DISCOVERED_FILE="$ROOT_DIR/util/data/discovered-repos.yaml"
 SBOM_BASE_DIR="$ROOT_DIR/sbom"
-WAYBILL_VERSION="${WAYBILL_VERSION:-v0.2.0}"
+WAYBILL_VERSION="${WAYBILL_VERSION:-v0.9.0}"
 
 # shellcheck source=util/sbom-lib.sh
 source "$SCRIPT_DIR/sbom-lib.sh"

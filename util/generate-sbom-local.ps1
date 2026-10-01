@@ -36,7 +36,7 @@
 
     Environment variables:
     - GH_TOKEN or GITHUB_TOKEN - GitHub token for API access
-    - WAYBILL_VERSION - Waybill release version (default: v0.2.0)
+    - WAYBILL_VERSION - Waybill release version (default: v0.9.0)
     - bash + jq - to apply util/postprocess-spdx.sh as CI does (skipped with a warning otherwise)
 #>
 
@@ -55,7 +55,7 @@ $ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $RootDir = Split-Path -Parent (Split-Path -Parent $ScriptDir)
 $DataFile = Join-Path $RootDir "util\data\repositories.yaml"
 $SbomBaseDir = Join-Path $RootDir "sbom"
-$WaybillVersion = if ($env:WAYBILL_VERSION) { $env:WAYBILL_VERSION } else { "v0.2.0" }
+$WaybillVersion = if ($env:WAYBILL_VERSION) { $env:WAYBILL_VERSION } else { "v0.9.0" }
 
 function Write-Header($text) {
     Write-Host ""

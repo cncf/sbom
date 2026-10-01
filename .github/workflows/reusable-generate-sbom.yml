@@ -61,6 +61,14 @@ jobs:
           fi
           gh --version
 
+      - name: Install yq
+        run: |
+          if ! yq --version 2>/dev/null | grep -q mikefarah; then
+            sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+            sudo chmod +x /usr/local/bin/yq
+          fi
+          yq --version
+
       - name: Install AWS CLI
         run: |
           if ! command -v aws &>/dev/null; then
@@ -80,6 +88,7 @@ jobs:
           SBOM_PATH_PREFIX: ${{ inputs.sbom_path_prefix }}
         run: |
           set -e
+          source util/sbom-lib.sh
           
           OWNER="${{ matrix.owner }}"
           REPO="${{ matrix.repo }}"
@@ -282,12 +291,16 @@ jobs:
           PROJECT_BUCKET: ${{ vars.OCI_PROJECT_BUCKET }}
           SUBPROJECT_BUCKET: ${{ vars.OCI_SUBPROJECT_BUCKET }}
           SBOM_PATH_PREFIX: ${{ inputs.sbom_path_prefix }}
+          MATRIX_PARENT_PROJECT: ${{ matrix.parent_project }}
+          MATRIX_PARENT_REPO: ${{ matrix.parent_repo }}
+          MATRIX_DISCOVERED_BY: ${{ matrix.discovered_by }}
         run: |
           source util/s3-upload.sh
+          source util/sbom-lib.sh
           OWNER="${{ matrix.owner }}"
           REPO="${{ matrix.repo }}"
           PROJECT_NAME="${{ matrix.name }}"
-          SANITIZED_PROJECT=$(echo "$PROJECT_NAME" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr -cd '[:alnum:]-')
+          SANITIZED_PROJECT=$(sbom_slugify "$PROJECT_NAME")
 
           # Normalize endpoint — ensure scheme is present
           [[ "$S3_ENDPOINT" != http://* && "$S3_ENDPOINT" != https://* ]] && S3_ENDPOINT="https://${S3_ENDPOINT}"
@@ -305,15 +318,10 @@ jobs:
 
           # Determine bucket and key pattern
           if [ -n "$SBOM_PATH_PREFIX" ]; then
-            # Subproject: extract parent project from discovered_by field
-            DISCOVERED_BY="${{ matrix.discovered_by }}"
-            PARENT_REPO=$(echo "$DISCOVERED_BY" | grep -oP 'from [^/]+/\K[^ ]+' || echo "")
-            if [ -z "$PARENT_REPO" ]; then
-              PARENT_SLUG=$(echo "$OWNER" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr -cd '[:alnum:]-')
-            else
-              PARENT_SLUG=$(echo "$PARENT_REPO" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr -cd '[:alnum:]-')
-            fi
-            REPO_SLUG=$(echo "$REPO" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr -cd '[:alnum:]-')
+            # Subproject: the parent folder is the parent project's slug, i.e. the
+            # folder its project SBOMs use in the project bucket.
+            PARENT_SLUG=$(sbom_parent_slug "$MATRIX_PARENT_PROJECT" "$MATRIX_PARENT_REPO" "$MATRIX_DISCOVERED_BY" "$OWNER")
+            REPO_SLUG=$(sbom_slugify "$REPO")
             BUCKET="$SUBPROJECT_BUCKET"
           else
             BUCKET="$PROJECT_BUCKET"

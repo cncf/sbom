@@ -51,7 +51,7 @@ on:
           - discovered    # Only discovered repos from CNCF orgs
 
 env:
-  WAYBILL_VERSION: v0.3.0
+  WAYBILL_VERSION: v0.9.0
 
 permissions:
   contents: read

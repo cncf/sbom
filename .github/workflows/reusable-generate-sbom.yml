@@ -27,7 +27,7 @@ on:
         default: '3'
 
 env:
-  WAYBILL_VERSION: v0.3.0
+  WAYBILL_VERSION: v0.9.0
 
 permissions:
   contents: read

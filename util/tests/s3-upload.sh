@@ -12,6 +12,7 @@ export S3_REGION="us-east-1"
 export PROJECT_BUCKET="cncf-project-sboms"
 export SUBPROJECT_BUCKET="cncf-subproject-sboms"
 export GITHUB_OUTPUT="$TEMP_DIR/output"
+export MATRIX_DISCOVERED_BY="org-scan from parent/project" MATRIX_PARENT_PROJECT="" MATRIX_PARENT_REPO=""
 export EXPECTED_BUCKET EXPECTED_KEY_PREFIX TEST_UPLOAD_MODE
 
 aws() {
@@ -59,8 +60,7 @@ run_upload_step() {
     sed \
       -e 's/${{ matrix.owner }}/OmniTrustILM/g' \
       -e 's/${{ matrix.repo }}/core/g' \
-      -e 's/${{ matrix.name }}/OmniTrust ILM/g' \
-      -e 's/${{ matrix.discovered_by }}/from parent\/project/g' |
+      -e 's/${{ matrix.name }}/OmniTrust ILM/g' |
     (cd "$TEMP_DIR" && bash -e)
 }
 

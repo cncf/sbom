@@ -215,10 +215,11 @@ jobs:
         run: |
           set -e
           
+          source util/sbom-lib.sh
           OWNER="${{ matrix.owner }}"
           REPO="${{ matrix.repo }}"
           PROJECT_NAME="${{ matrix.name }}"
-          SANITIZED_PROJECT=$(echo "$PROJECT_NAME" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr -cd '[:alnum:]-')
+          SANITIZED_PROJECT=$(sbom_slugify "$PROJECT_NAME")
           SBOM_BASE_DIR="sbom/${SANITIZED_PROJECT}/${REPO}"
           PROCESSED=0
           
@@ -420,10 +421,11 @@ jobs:
           PROJECT_BUCKET: ${{ vars.OCI_PROJECT_BUCKET }}
         run: |
           source util/s3-upload.sh
+          source util/sbom-lib.sh
           OWNER="${{ matrix.owner }}"
           REPO="${{ matrix.repo }}"
           PROJECT_NAME="${{ matrix.name }}"
-          SANITIZED_PROJECT=$(echo "$PROJECT_NAME" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr -cd '[:alnum:]-')
+          SANITIZED_PROJECT=$(sbom_slugify "$PROJECT_NAME")
           SBOM_BASE_DIR="sbom/${SANITIZED_PROJECT}/${REPO}"
 
           # Normalize endpoint — ensure scheme is present

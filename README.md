@@ -28,7 +28,7 @@ The SBOM generator:
 - Fetches stable releases (major, minor, patch) from CNCF project repositories
 - Supports **all ecosystems** with lockfile-aware dependency graph extraction (Go, Rust, npm, Python, Maven, Ruby, etc.)
 - Skips alpha, beta, RC, and other pre-release versions
-- Generates SPDX 2.3-compliant SBOM files using [Waybill](https://github.com/kusari-oss/waybill) (v0.2.0)
+- Generates SPDX 2.3-compliant SBOM files using [Waybill](https://github.com/kusari-oss/waybill) (v0.9.0)
 - Automatically enriches SBOMs with license information via [deps.dev](https://deps.dev) and [ClearlyDefined](https://clearlydefined.io)
 - Extracts real dependency graph edges (not a flat fan-out) from lockfiles
 - **Uploads SBOMs directly to OCI S3-compatible buckets** (no SBOM files are stored in this repository)
@@ -44,19 +44,36 @@ Generated SBOMs are stored in two OCI S3-compatible buckets:
 
 ### S3 Object Naming Convention
 
-**Projects:**
+A CNCF project has **one folder name in both buckets**: `<project>` is the slug of
+its CNCF landscape name (lowercase, spaces become `-`, every other character
+outside `[a-z0-9-]` is dropped), e.g. `Argo` → `argo`, `Aeraki Mesh` → `aeraki-mesh`,
+`Open Policy Agent (OPA)` → `open-policy-agent-opa`.
+
+**Projects** (`cncf-project-sboms`):
 ```
 <project>/<version>/<project>_<version>_spdx.json
 ```
-Example: `coredns/1.12.0/coredns_1_12_0_spdx.json`
+Example: `argo/3.3.14/argo_3_3_14_spdx.json`
 
-**Subprojects:**
+**Subprojects** (`cncf-subproject-sboms`), with the same `<project>` slug as their parent:
 ```
-<parent-project>/<repo>/<version>/<parent-project>_<repo>_<version>_spdx.json
+<project>/<subproject>/<version>/<project>_<subproject>_<version>_spdx.json
 ```
-Example: `higress/IOC-golang/1.0.0/higress_ioc-golang_1_0_0_spdx.json`
+Example: `argo/argo-workflows/4.1.4/argo_argo-workflows_4_1_4_spdx.json`
+
+The parent of a subproject is recorded in `util/data/discovered-repos.yaml` as
+`parent_project` (landscape name) and `parent_repo` (the project's main repository),
+next to `discovered_by`, which is kept for provenance. When `parent_project` is
+missing, `discovered_by`'s `owner/repo` is looked up in `cncf-projects.yaml`. Only if
+the parent is no longer in the landscape is the parent's repository name used, as
+before. All writers (workflows, `ingest-sbom-oci.sh`, `migrate-subproject-keys.sh`)
+derive these names from `util/sbom-lib.sh`, so they cannot drift apart.
 
 > **Note:** Dots in version numbers are replaced with underscores in the filename to avoid potential issues.
+
+> **Migration:** subproject SBOMs uploaded before this convention live under the
+> parent's *repository* name (e.g. `argo-cd/argo-workflows/…`, `aeraki/meta-protocol-proxy/…`).
+> `util/migrate-subproject-keys.sh` moves them; see [Utility Tools](#migrate-subproject-keyssh).
 
 ## Repository Structure
 
@@ -81,8 +98,11 @@ This repository contains **only tooling and configuration** — no SBOM data fil
     │   └── discovered-repos.yaml       # Subproject repos found in CNCF orgs (DO NOT EDIT)
     ├── extract-projects/               # Go tool to sync projects from CNCF landscape
     ├── discover-repos/                 # Go tool to find subproject repos in CNCF orgs
-    ├── generate-index/                 # Go tool to generate an index of SBOMs
+    ├── generate-index/                 # Go tool to generate an index of SBOMs (with project hierarchy)
     ├── generate-tooling-sbom.sh        # Generates repo-tooling and CI-chain SBOMs for this repo
+    ├── sbom-lib.sh                     # Shared folder-slug and parent-project helpers
+    ├── postprocess-spdx.sh             # Shared SPDX post-processing applied before every upload
+    ├── migrate-subproject-keys.sh      # Moves subproject SBOMs to the project slug (dry-run by default)
     ├── ingest-sbom-oci.sh              # Script to upload local SBOMs to OCI buckets
     ├── generate-sbom-local.sh          # Local testing script (Linux/macOS)
     └── generate-sbom-local.ps1         # Local testing script (Windows)
@@ -130,9 +150,10 @@ Generates SBOMs for CNCF and manually added projects and **uploads them directly
 1. Prepares repository matrices from `cncf-projects.yaml`, the manually maintained `repositories.yaml`, and `discovered-repos.yaml`
 2. Each matrix job downloads Waybill and generates SBOMs using `waybill sbom scan --format spdx-2.3-json`
 3. deps.dev and ClearlyDefined enrichment runs inline (license resolution, dependency graphs)
-4. Generated SBOMs are immediately uploaded to the corresponding S3 bucket
-5. Each repository job writes a compact JSON report, and the workflow publishes one consolidated run summary plus a `sbom-generation-report` artifact
-6. No files are committed to the repository
+4. Every SBOM is post-processed with `util/postprocess-spdx.sh` (see [SBOM post-processing](#sbom-post-processing))
+5. Generated SBOMs are immediately uploaded to the corresponding S3 bucket
+6. Each repository job writes a compact JSON report, and the workflow publishes one consolidated run summary plus a `sbom-generation-report` artifact
+7. No files are committed to the repository
 
 #### Adding a project manually
 
@@ -164,7 +185,7 @@ One-time / on-demand migration of any legacy SBOM files from the repository into
 
 - **Manual trigger only**: Via workflow_dispatch
 - Skips objects that already exist in the bucket (unless `FORCE` is set)
-- Uses `util/ingest-sbom-oci.sh`
+- Uses `util/ingest-sbom-oci.sh`, which applies the same folder naming and post-processing as `generate-sbom.yml`
 
 ### 5. Generate Tooling SBOM (`generate-tooling-sbom.yml`)
 
@@ -294,8 +315,57 @@ go run . /path/to/cncf-automation
 The tool will:
 - Read the list of CNCF projects from `cncf-projects.yaml`
 - Scan each unique GitHub organization/user
-- Find subproject repos that have releases and contain `go.mod`
+- Find subproject repos that have releases and contain a supported package manifest
+- Record the owning project of every entry as `parent_project` / `parent_repo`
+  (also for entries discovered earlier, resolved from `discovered_by`)
 - Output results to `discovered-repos.yaml`
+
+To only (re)record the parent fields without scanning GitHub:
+
+```bash
+cd util/discover-repos
+go run . -backfill-only ../..
+```
+
+### generate-index
+
+Go tool that writes `sbom/index.json` for a local `sbom/` tree (as produced by
+`generate-sbom-local.sh`). Besides `sboms` and `subproject_sboms`, the index contains
+a `projects` list (`name`, `slug`, `owner`, `repo`, `status`) from `cncf-projects.yaml`
+and `repositories.yaml`, and every subproject entry carries `parent_project` and
+`parent_slug`, so consumers can group SBOMs without heuristics. `parent_slug` is the
+subproject's parent folder in the bucket; it equals the parent's `projects[].slug`
+whenever `parent_project` is known.
+
+```bash
+cd util/generate-index
+go run . ../..
+```
+
+### migrate-subproject-keys.sh
+
+Moves existing subproject SBOMs from the legacy parent folder (the parent's
+repository name) to the parent's project slug, e.g.
+`argo-cd/argo-workflows/…` → `argo/argo-workflows/…` and
+`aeraki/meta-protocol-proxy/…` → `aeraki-mesh/meta-protocol-proxy/…`.
+
+**Dry-run by default**: it lists the subproject bucket (read-only) and prints the
+plan (`MOVE`, `CONFLICT`, `AMBIGUOUS`, `UNKNOWN`) plus a per-folder summary. Only
+`--apply` changes the bucket: each object is copied server-side, the copy is
+verified (size and ETag), and only then is the old key deleted. Keys whose target
+already exists, and legacy folders that cannot be attributed to exactly one
+project, are reported and left in place.
+
+```bash
+# Print the plan (default; credentials from the environment or .env.sbom)
+./util/migrate-subproject-keys.sh
+
+# Review a saved key listing offline
+./util/migrate-subproject-keys.sh --listing keys.txt
+
+# Perform the moves (maintainers only, after reviewing the plan)
+./util/migrate-subproject-keys.sh --apply
+```
 
 ### ingest-sbom-oci.sh
 
@@ -343,19 +413,27 @@ Generates the repository's own tooling SBOM plus a second SPDX document for the 
 - [yq](https://github.com/mikefarah/yq)
 - Waybill (auto-downloaded by the script, or install manually)
 
-> **Note:** Go is no longer required for SBOM generation. Waybill is a precompiled Rust binary.
+> **Note:** Go is not required for SBOM generation (Waybill is a precompiled Rust binary). If Go is installed, the local script writes `sbom/index.json` with `util/generate-index`.
 
 ### Bash Script (Linux/macOS/WSL)
 
+The script reads the same repository lists as the scheduled workflow
+(`cncf-projects.yaml`, `repositories.yaml`, `discovered-repos.yaml`) and applies the
+same post-processing. A cached Waybill in `.local/bin` is replaced if it is not
+`WAYBILL_VERSION`.
+
 ```bash
-# Process all projects
+# Process all repositories
 ./util/generate-sbom-local.sh
 
 # Process specific repo
 ./util/generate-sbom-local.sh coredns/coredns
 
-# Force regenerate
-./util/generate-sbom-local.sh --force coredns/coredns
+# One specific release, regenerated
+./util/generate-sbom-local.sh --force --tag v0.10.0 kagent-dev/kagent
+
+# Only discovered subprojects (written to sbom/subprojects/<owner>/<repo>/...)
+./util/generate-sbom-local.sh --source discovered argoproj/argo-workflows
 
 # Set max releases per repo (default: 3)
 MAX_RELEASES=5 ./util/generate-sbom-local.sh
@@ -383,7 +461,21 @@ MAX_RELEASES=5 ./util/generate-sbom-local.sh
 |----------|-------------|
 | `GH_TOKEN` or `GITHUB_TOKEN` | GitHub token for API access (recommended for higher rate limits) |
 | `MAX_RELEASES` | Maximum releases to process per repo (default: 3, bash only) |
-| `WAYBILL_VERSION` | Waybill release version to use (default: v0.2.0) |
+| `WAYBILL_VERSION` | Waybill release version to use (default: v0.9.0) |
+
+### Tests
+
+```bash
+bash util/tests/sbom-lib.sh                 # folder slugs for all writers
+bash util/tests/postprocess-spdx.sh         # SPDX post-processing
+bash util/tests/migrate-subproject-keys.sh  # migration plan (stubbed aws, no bucket access)
+bash util/tests/s3-upload.sh
+bash util/tests/prepare-project-matrix.sh
+bash util/tests/generate-sandbox-sbom.sh
+python3 -m unittest discover -s util/tests -p test_sandbox_applications.py
+(cd util/discover-repos && go test ./...)
+(cd util/generate-index && go test ./...)
+```
 
 ## Project List
 
@@ -425,9 +517,33 @@ Generated SBOMs are in SPDX 2.3 JSON format, containing:
 
 Each SBOM includes:
 - SPDX 2.3 document information
-- Creator: `Tool: waybill-0.2.0`
+- Creator: `Tool: waybill-0.9.0`, plus the scanned source (`source: git:https://github.com/<owner>/<repo>.git#<tag>`)
 - Scope annotation (manifest vs artifact SBOM)
 - Per-component `waybill:sbom-tier` annotations (source, deployed, analyzed, etc.)
+
+### SBOM post-processing
+
+Every SBOM is passed through `util/postprocess-spdx.sh` before it is uploaded, on
+every path that writes to a bucket (`generate-sbom.yml`, `reusable-generate-sbom.yml`,
+`ingest-sbom-oci.sh`/`migrate-sboms-to-oci.yml`, `generate-sandbox-sbom.sh`, and the
+local scripts). It uses only the repository, the release tag and the CNCF landscape
+project name, and guarantees:
+
+| Field | Value | Example |
+|-------|-------|---------|
+| `name` | `<owner>/<repo> <tag>` (never a temporary checkout name) | `kagent-dev/kagent v0.10.0` |
+| root package `downloadLocation` | `git+https://github.com/<owner>/<repo>.git@<tag>` | `git+https://github.com/kagent-dev/kagent.git@v0.10.0` |
+| root package purl | `pkg:github/<owner>/<repo>@<tag>` (owner/repo lowercased, tag percent-encoded); replaces Waybill's `pkg:generic/<owner>%2F<repo>` purl | `pkg:github/kagent-dev/kagent@v0.10.0` |
+| root package `supplier` | `Organization: <project>`, for subprojects the parent project; `NOASSERTION` if no project is known, never the SBOM tool | `Organization: Argo` |
+
+The root package is the one the document `DESCRIBES`. A project name containing
+parentheses gets an empty contact, e.g. `Organization: Open Policy Agent (OPA) ()`,
+because SPDX tools otherwise read `(OPA)` as an e-mail address. `documentNamespace`
+is not changed and stays unique per document; everything else (packages,
+relationships, creators, annotations) is left as Waybill produced it. The script is
+idempotent and can also be run on already published documents
+(`util/postprocess-spdx.sh --project <name> <file>`; owner, repo and tag are then
+taken from the root package).
 
 ## Troubleshooting
 
@@ -446,8 +562,8 @@ Waybill is a precompiled binary — no build step required:
 ./util/generate-sbom-local.sh
 
 # Or install manually
-curl -sL https://github.com/kusari-oss/waybill/releases/download/v0.2.0/waybill-v0.2.0-x86_64-unknown-linux-gnu.tar.gz | tar xz
-sudo cp waybill-v0.2.0-x86_64-unknown-linux-gnu/waybill /usr/local/bin/
+curl -sL https://github.com/kusari-oss/waybill/releases/download/v0.9.0/waybill-v0.9.0-x86_64-unknown-linux-gnu.tar.gz | tar xz
+sudo cp waybill-v0.9.0-x86_64-unknown-linux-gnu/waybill /usr/local/bin/
 ```
 
 ### Clone Failures

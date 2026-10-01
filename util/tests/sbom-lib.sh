@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 #
 # Project and subproject SBOMs of the same CNCF project must share one folder
-# slug, whichever path writes them. Uses the checked-in util/data files.
+# slug, whichever path writes them: both workflow upload steps and the ingest
+# script. Uses the checked-in util/data files.
 
 set -euo pipefail
 
@@ -90,5 +91,25 @@ upload_keys() {
 [[ "$(upload_keys reusable-generate-sbom.yml example tool tool subprojects \
   "MATRIX_DISCOVERED_BY=org-scan from example/not-a-project")" == \
   "cncf-subproject-sboms/not-a-project/tool/1.0.0/not-a-project_tool_1_0_0_spdx.json" ]]
+
+# 4. Keys written by util/ingest-sbom-oci.sh (dry-run; post-processes a copy).
+mkdir -p "$TEMP_DIR/ingest/argo/argo-cd/3.3.14" "$TEMP_DIR/ingest/subprojects/argoproj/argo-workflows/4.1.4" \
+  "$TEMP_DIR/ingest/subprojects/alibaba/Alink/1.6.2"
+fixture="$ROOT_DIR/util/tests/data/kagent-v0.10.0-waybill.spdx.json"
+cp "$fixture" "$TEMP_DIR/ingest/argo/argo-cd/3.3.14/argo_3_3_14_spdx.json"
+cp "$fixture" "$TEMP_DIR/ingest/subprojects/argoproj/argo-workflows/4.1.4/argo-workflows_4_1_4_spdx.json"
+cp "$fixture" "$TEMP_DIR/ingest/subprojects/alibaba/Alink/1.6.2/Alink_1_6_2_spdx.json"
+aws() { return 1; } # head-object: nothing exists yet
+export -f aws
+bash "$ROOT_DIR/util/ingest-sbom-oci.sh" --source-dir "$TEMP_DIR/ingest" --auth-mode s3 \
+  --s3-endpoint https://storage.example --s3-access-key x --s3-secret-key y \
+  --project-bucket cncf-project-sboms --subproject-bucket cncf-subproject-sboms --dry-run >"$TEMP_DIR/ingest.log"
+grep -q '^DRY-RUN: oci://cncf-project-sboms/argo/3.3.14/argo_3_3_14_spdx.json <- ' "$TEMP_DIR/ingest.log"
+grep -q '^DRY-RUN: oci://cncf-subproject-sboms/argo/argo-workflows/4.1.4/argo_argo-workflows_4_1_4_spdx.json <- ' \
+  "$TEMP_DIR/ingest.log"
+# Parent no longer in the landscape (empty parent_project): legacy folder.
+grep -q '^DRY-RUN: oci://cncf-subproject-sboms/higress/alink/1.6.2/higress_alink_1_6_2_spdx.json <- ' "$TEMP_DIR/ingest.log"
+grep -q 'Failed: 0' "$TEMP_DIR/ingest.log"
+cmp "$fixture" "$TEMP_DIR/ingest/argo/argo-cd/3.3.14/argo_3_3_14_spdx.json"
 
 echo "SBOM naming tests passed"

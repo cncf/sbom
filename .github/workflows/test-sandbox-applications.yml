@@ -7,6 +7,7 @@ on:
       - '.github/workflows/test-sandbox-applications.yml'
       - 'util/sandbox-applications.py'
       - 'util/generate-sandbox-sbom.sh'
+      - 'util/postprocess-spdx.sh'
       - 'util/tests/test_sandbox_applications.py'
       - 'util/tests/generate-sandbox-sbom.sh'
   push:
@@ -15,6 +16,7 @@ on:
       - '.github/workflows/test-sandbox-applications.yml'
       - 'util/sandbox-applications.py'
       - 'util/generate-sandbox-sbom.sh'
+      - 'util/postprocess-spdx.sh'
       - 'util/tests/test_sandbox_applications.py'
       - 'util/tests/generate-sandbox-sbom.sh'
 

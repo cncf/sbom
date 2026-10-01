@@ -7,6 +7,7 @@ if [[ $# -ne 2 ]]; then
   exit 1
 fi
 
+script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 metadata="$1"
 output="$2"
 jq -e '
@@ -39,10 +40,11 @@ waybill sbom scan \
   --git-ref "$commit" \
   --output "$work_dir/raw.spdx.json"
 
-# Waybill's root overrides do not also override its checkout-derived document name.
-jq -e --arg name "$repository $version" '
-  if .spdxVersion == "SPDX-2.3" then .name = $name
-  else error("Expected an SPDX 2.3 document") end
-' "$work_dir/raw.spdx.json" >"$work_dir/named.spdx.json"
+jq -e '.spdxVersion == "SPDX-2.3"' "$work_dir/raw.spdx.json" >/dev/null ||
+  { echo "Error: Expected an SPDX 2.3 document" >&2; exit 1; }
+# Same post-processing as the project buckets; sandbox applications have no
+# CNCF project yet, so the root supplier is NOASSERTION.
+bash "$script_dir/postprocess-spdx.sh" --owner "${repository%%/*}" --repo "${repository#*/}" \
+  --tag "$version" "$work_dir/raw.spdx.json" "$work_dir/named.spdx.json"
 mkdir -p "$(dirname "$output")"
 mv "$work_dir/named.spdx.json" "$output"

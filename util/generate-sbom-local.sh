@@ -11,9 +11,18 @@
 #   - Waybill (https://github.com/kusari-oss/waybill)
 #
 # Usage:
-#   ./generate-sbom-local.sh                           # Process all projects
-#   ./generate-sbom-local.sh kubernetes/kubernetes     # Process specific repo
-#   ./generate-sbom-local.sh --force kubernetes/kubernetes  # Force regenerate
+#   ./generate-sbom-local.sh                           # Process all repositories
+#   ./generate-sbom-local.sh kagent-dev/kagent         # Process specific repo
+#   ./generate-sbom-local.sh --force kagent-dev/kagent # Force regenerate
+#   ./generate-sbom-local.sh --tag v0.10.0 kagent-dev/kagent  # One specific tag
+#   ./generate-sbom-local.sh --source discovered argoproj/argo-workflows
+#
+# Repositories come from the same files as the scheduled workflow:
+#   cncf, manual -> util/data/cncf-projects.yaml, util/data/repositories.yaml
+#                   (sbom/<project>/<repo>/<version>/...)
+#   discovered   -> util/data/discovered-repos.yaml
+#                   (sbom/subprojects/<owner>/<repo>/<version>/...)
+# Every SBOM is post-processed with util/postprocess-spdx.sh, as in CI.
 #
 # Environment variables:
 #   GH_TOKEN or GITHUB_TOKEN - GitHub token for API access
@@ -25,13 +34,18 @@ set -e
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
-DATA_FILE="$ROOT_DIR/util/data/repositories.yaml"
+DISCOVERED_FILE="$ROOT_DIR/util/data/discovered-repos.yaml"
 SBOM_BASE_DIR="$ROOT_DIR/sbom"
 WAYBILL_VERSION="${WAYBILL_VERSION:-v0.2.0}"
+
+# shellcheck source=util/sbom-lib.sh
+source "$SCRIPT_DIR/sbom-lib.sh"
 
 # Parse arguments
 FORCE_REGENERATE="false"
 PROJECT_FILTER=""
+PROJECT_SOURCE="all"
+ONLY_TAG=""
 
 while [[ $# -gt 0 ]]; do
   case $1 in
@@ -39,17 +53,27 @@ while [[ $# -gt 0 ]]; do
       FORCE_REGENERATE="true"
       shift
       ;;
+    --source)
+      PROJECT_SOURCE="$2"
+      shift 2
+      ;;
+    --tag)
+      ONLY_TAG="$2"
+      shift 2
+      ;;
     --help|-h)
-      echo "Usage: $0 [--force] [owner/repo]"
+      echo "Usage: $0 [--force] [--source all|cncf|manual|discovered] [--tag TAG] [owner/repo]"
       echo ""
       echo "Options:"
       echo "  --force, -f    Force regenerate existing SBOMs"
+      echo "  --source       Which repositories to process (default: all)"
+      echo "  --tag          Generate the SBOM for this tag only (requires owner/repo)"
       echo "  --help, -h     Show this help message"
       echo ""
       echo "Examples:"
-      echo "  $0                           # Process all projects"
-      echo "  $0 kubernetes/kubernetes     # Process specific repo"
-      echo "  $0 --force coredns/coredns   # Force regenerate for coredns"
+      echo "  $0                                   # Process all repositories"
+      echo "  $0 kagent-dev/kagent                 # Process specific repo"
+      echo "  $0 --force --tag v0.10.0 kagent-dev/kagent"
       exit 0
       ;;
     *)
@@ -101,14 +125,18 @@ check_prerequisites() {
 
 # Install Waybill if not present
 install_waybill() {
+  local WANTED="waybill ${WAYBILL_VERSION#v}"
   if command -v waybill &> /dev/null; then
-    echo "Using Waybill: $(which waybill)"
+    echo "Using Waybill: $(command -v waybill) ($(waybill --version))"
+    if [ "$(waybill --version)" != "$WANTED" ]; then
+      echo "Warning: expected $WANTED (the version CI uses); output may differ."
+    fi
     return
   fi
 
-  # Check in local bin directory
+  # Check in local bin directory; a cached binary of another version is replaced.
   local LOCAL_BIN="$ROOT_DIR/.local/bin"
-  if [ -x "$LOCAL_BIN/waybill" ]; then
+  if [ -x "$LOCAL_BIN/waybill" ] && [ "$("$LOCAL_BIN/waybill" --version)" = "$WANTED" ]; then
     export PATH="$LOCAL_BIN:$PATH"
     echo "Using Waybill: $LOCAL_BIN/waybill"
     return
@@ -162,69 +190,30 @@ install_waybill() {
   echo "Installed Waybill to: $LOCAL_BIN/waybill"
 }
 
-fix_spdx_document_name() {
-  local file="$1"
-  local fallback_name="${2:-}"
-
-  if [ ! -s "$file" ]; then
-    echo "  Error: SBOM file is missing or empty: $file" >&2
-    return 1
-  fi
-
-  local spdx_id
-  spdx_id=$(jq -r '
-    (.documentDescribes? | if type == "array" and length > 0 then .[0] else empty end),
-    (.relationships? | if type == "array" then .[] | select(.relationshipType == "DESCRIBES") | .relatedSpdxElement else empty end)
-  ' "$file" | head -n 1)
-
-  local expected_name=""
-  if [ -n "$spdx_id" ] && [ "$spdx_id" != "null" ]; then
-    expected_name=$(jq -r --arg sid "$spdx_id" '
-      .packages[]? | select(.SPDXID == $sid) |
-      if (.versionInfo != null and .versionInfo != "" and .versionInfo != "NOASSERTION") then
-        (.name + " " + .versionInfo)
-      else
-        .name
-      end
-    ' "$file" | head -n 1)
-  fi
-
-  if [ -z "$expected_name" ] || [ "$expected_name" = "null" ]; then
-    if [ -n "$fallback_name" ]; then
-      expected_name="$fallback_name"
-    else
-      echo "  Error: Unable to derive a valid document name for $file" >&2
-      return 1
-    fi
-  fi
-
-  local current_name
-  current_name=$(jq -r '.name // empty' "$file")
-
-  if [ -z "$current_name" ] || [[ "$current_name" == tmp.* ]] || [[ "$current_name" == /tmp/* ]]; then
-    jq --arg name "$expected_name" '.name = $name' "$file" > "${file}.tmp" && mv "${file}.tmp" "$file"
-    echo "  Updated invalid SPDX document name from '$current_name' to '$expected_name' in $file"
-    return 0
-  fi
-
-  if [ "$current_name" != "$expected_name" ]; then
-    jq --arg name "$expected_name" '.name = $name' "$file" > "${file}.tmp" && mv "${file}.tmp" "$file"
-    echo "  Updated SPDX document name from '$current_name' to '$expected_name' in $file"
-  fi
-}
-
 # Generate SBOM for a specific tag
+# Arguments: owner repo project-name tag kind supplier-project
+#   kind: "project" or "subproject"; supplier-project: CNCF project name for the
+#   root package supplier (the parent project for subprojects, may be empty)
 generate_sbom() {
   local OWNER="$1"
   local REPO="$2"
   local PROJECT_NAME="$3"
   local TAG="$4"
+  local KIND="$5"
+  local SUPPLIER_PROJECT="$6"
 
-  local SANITIZED_PROJECT=$(echo "$PROJECT_NAME" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr -cd '[:alnum:]-')
-  local VERSION=$(echo "$TAG" | sed 's/^v//')
-  local SBOM_DIR="${SBOM_BASE_DIR}/${SANITIZED_PROJECT}/${REPO}/${VERSION}"
-  local FILENAME_VERSION=$(echo "$VERSION" | tr '.' '_')
-  local SBOM_FILE="${SBOM_DIR}/${SANITIZED_PROJECT}_${FILENAME_VERSION}_spdx.json"
+  local SANITIZED_PROJECT
+  SANITIZED_PROJECT=$(sbom_slugify "$PROJECT_NAME")
+  local VERSION="${TAG#v}"
+  local FILENAME_VERSION="${VERSION//./_}"
+  local SBOM_DIR SBOM_FILE
+  if [ "$KIND" = "subproject" ]; then
+    SBOM_DIR="${SBOM_BASE_DIR}/subprojects/${OWNER}/${REPO}/${VERSION}"
+    SBOM_FILE="${SBOM_DIR}/${REPO}_${FILENAME_VERSION}_spdx.json"
+  else
+    SBOM_DIR="${SBOM_BASE_DIR}/${SANITIZED_PROJECT}/${REPO}/${VERSION}"
+    SBOM_FILE="${SBOM_DIR}/${SANITIZED_PROJECT}_${FILENAME_VERSION}_spdx.json"
+  fi
 
   # Check if SBOM already exists
   if [ -f "$SBOM_FILE" ] && [ "$FORCE_REGENERATE" != "true" ]; then
@@ -257,13 +246,14 @@ generate_sbom() {
     --git-ref "$TAG" \
     --output "$SBOM_FILE" \
     2>/dev/null; then
-   if ! fix_spdx_document_name "$SBOM_FILE" "${OWNER}/${REPO} ${TAG}"; then
-     rm -rf "$TEMP_DIR"
-     return 1
-   fi
-   echo "  Successfully generated SBOM: $SBOM_FILE"
-   rm -rf "$TEMP_DIR"
-   return 0
+    if ! bash "$SCRIPT_DIR/postprocess-spdx.sh" --owner "$OWNER" --repo "$REPO" --tag "$TAG" \
+      --project "$SUPPLIER_PROJECT" "$SBOM_FILE"; then
+      rm -rf "$TEMP_DIR"
+      return 1
+    fi
+    echo "  Successfully generated SBOM: $SBOM_FILE"
+    rm -rf "$TEMP_DIR"
+    return 0
   else
     echo "  Failed to generate SBOM for $OWNER/$REPO@$TAG"
     rm -rf "$TEMP_DIR"
@@ -276,12 +266,19 @@ process_repository() {
   local OWNER="$1"
   local REPO="$2"
   local PROJECT_NAME="$3"
+  local KIND="$4"
+  local SUPPLIER_PROJECT="$5"
   local PROCESSED=0
 
   echo ""
   echo "=========================================="
-  echo "Processing: $PROJECT_NAME ($OWNER/$REPO)"
+  echo "Processing: $PROJECT_NAME ($OWNER/$REPO, $KIND)"
   echo "=========================================="
+
+  if [ -n "$ONLY_TAG" ]; then
+    generate_sbom "$OWNER" "$REPO" "$PROJECT_NAME" "$ONLY_TAG" "$KIND" "$SUPPLIER_PROJECT" || true
+    return 0
+  fi
 
   # Get releases from GitHub API
   local RELEASES
@@ -311,7 +308,7 @@ process_repository() {
         continue
       fi
 
-      if generate_sbom "$OWNER" "$REPO" "$PROJECT_NAME" "$TAG"; then
+      if generate_sbom "$OWNER" "$REPO" "$PROJECT_NAME" "$TAG" "$KIND" "$SUPPLIER_PROJECT"; then
         PROCESSED=$((PROCESSED + 1))
       fi
 
@@ -331,7 +328,7 @@ process_repository() {
         continue
       fi
 
-      if generate_sbom "$OWNER" "$REPO" "$PROJECT_NAME" "$TAG"; then
+      if generate_sbom "$OWNER" "$REPO" "$PROJECT_NAME" "$TAG" "$KIND" "$SUPPLIER_PROJECT"; then
         PROCESSED=$((PROCESSED + 1))
       fi
 
@@ -353,6 +350,12 @@ generate_index() {
   echo "=========================================="
 
   local INDEX_FILE="$SBOM_BASE_DIR/index.json"
+
+  if command -v go &> /dev/null; then
+    (cd "$ROOT_DIR/util/generate-index" && go run . "$ROOT_DIR")
+    return
+  fi
+  echo "Go not found; writing a minimal index without project hierarchy."
 
   # Check if there are any SBOMs
   local SBOM_COUNT
@@ -384,6 +387,7 @@ main() {
   echo ""
   echo "Settings:"
   echo "  Force regenerate: $FORCE_REGENERATE"
+  echo "  Source: $PROJECT_SOURCE"
   echo "  Project filter: ${PROJECT_FILTER:-all}"
   echo "  Max releases per repo: $MAX_RELEASES"
   echo "  Output directory: $SBOM_BASE_DIR"
@@ -393,25 +397,31 @@ main() {
   check_prerequisites
   install_waybill
 
-  # Ensure data file exists
-  if [ ! -f "$DATA_FILE" ]; then
-    echo "Error: Repository data file not found: $DATA_FILE"
+  if [ -n "$ONLY_TAG" ] && [ -z "$PROJECT_FILTER" ]; then
+    echo "Error: --tag requires an owner/repo filter"
     exit 1
   fi
 
-  # Get repositories to process
-  if [ -n "$PROJECT_FILTER" ]; then
-    OWNER=$(echo "$PROJECT_FILTER" | cut -d'/' -f1)
-    REPO=$(echo "$PROJECT_FILTER" | cut -d'/' -f2)
-    REPOS=$(yq -o=json '.repositories | map(select(.owner == "'"$OWNER"'" and .repo == "'"$REPO"'"))' "$DATA_FILE")
-  else
-    REPOS=$(yq -o=json '.repositories' "$DATA_FILE")
+  # Projects: same selection as the workflow (cncf-projects.yaml + repositories.yaml)
+  local PROJECTS='[]' SUBPROJECTS='[]'
+  case "$PROJECT_SOURCE" in
+    all|cncf|manual)
+      PROJECTS=$(bash "$SCRIPT_DIR/prepare-project-matrix.sh" "$PROJECT_SOURCE" "$PROJECT_FILTER" | jq '.include')
+      ;;
+    discovered) ;;
+    *)
+      echo "Error: unsupported --source: $PROJECT_SOURCE"
+      exit 1
+      ;;
+  esac
+  if { [ "$PROJECT_SOURCE" = "all" ] || [ "$PROJECT_SOURCE" = "discovered" ]; } && [ -f "$DISCOVERED_FILE" ]; then
+    SUBPROJECTS=$(yq -o=json '.repositories // []' "$DISCOVERED_FILE" |
+      jq --arg filter "$PROJECT_FILTER" '
+        map(select($filter == "" or ((.owner + "/" + .repo | ascii_downcase) == ($filter | ascii_downcase))))')
   fi
 
-  # Process each repository
   local REPO_COUNT
-  REPO_COUNT=$(echo "$REPOS" | jq 'length')
-
+  REPO_COUNT=$(jq -n --argjson p "$PROJECTS" --argjson s "$SUBPROJECTS" '($p | length) + ($s | length)')
   if [ "$REPO_COUNT" -eq 0 ]; then
     echo "No repositories found matching filter: $PROJECT_FILTER"
     exit 1
@@ -419,13 +429,20 @@ main() {
 
   echo "Found $REPO_COUNT repositories to process"
 
-  echo "$REPOS" | jq -c '.[]' | while read -r REPO_JSON; do
-    OWNER=$(echo "$REPO_JSON" | jq -r '.owner')
-    REPO=$(echo "$REPO_JSON" | jq -r '.repo')
-    NAME=$(echo "$REPO_JSON" | jq -r '.name')
+  while read -r REPO_JSON; do
+    process_repository \
+      "$(jq -r '.owner' <<<"$REPO_JSON")" "$(jq -r '.repo' <<<"$REPO_JSON")" \
+      "$(jq -r '.name' <<<"$REPO_JSON")" project "$(jq -r '.name' <<<"$REPO_JSON")"
+  done < <(jq -c '.[]' <<<"$PROJECTS")
 
-    process_repository "$OWNER" "$REPO" "$NAME"
-  done
+  while read -r REPO_JSON; do
+    local OWNER REPO
+    OWNER=$(jq -r '.owner' <<<"$REPO_JSON")
+    REPO=$(jq -r '.repo' <<<"$REPO_JSON")
+    process_repository "$OWNER" "$REPO" "$(jq -r '.name' <<<"$REPO_JSON")" subproject \
+      "$(sbom_resolve_parent_project "$(jq -r '.parent_project // ""' <<<"$REPO_JSON")" \
+        "$(jq -r '.parent_repo // ""' <<<"$REPO_JSON")" "$(jq -r '.discovered_by // ""' <<<"$REPO_JSON")" "$OWNER")"
+  done < <(jq -c '.[]' <<<"$SUBPROJECTS")
 
   generate_index
 

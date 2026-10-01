@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"flag"
 	"fmt"
 	"io"
 	"net/http"
@@ -22,6 +23,11 @@ type Repository struct {
 	ProjectStatus string `yaml:"project_status" json:"project_status"`
 	AcceptedDate  string `yaml:"accepted_date,omitempty" json:"accepted_date,omitempty"`
 	DiscoveredBy  string `yaml:"discovered_by,omitempty" json:"discovered_by,omitempty"`
+	// ParentProject is the landscape name of the CNCF project the repository
+	// belongs to (e.g. "Argo"); its slug is the parent folder in the buckets.
+	ParentProject string `yaml:"parent_project,omitempty" json:"parent_project,omitempty"`
+	// ParentRepo is the project's main repository ("owner/repo") from cncf-projects.yaml.
+	ParentRepo string `yaml:"parent_repo,omitempty" json:"parent_repo,omitempty"`
 }
 
 type Metadata struct {
@@ -211,18 +217,81 @@ func hasSupportedEcosystem(owner, repo, token string) bool {
 	return false
 }
 
+// parseDiscoveredBy returns "owner/repo" from "org-scan from owner/repo".
+func parseDiscoveredBy(discoveredBy string) string {
+	fields := strings.Fields(discoveredBy)
+	for i := 0; i+1 < len(fields); i++ {
+		if fields[i] == "from" && strings.Count(fields[i+1], "/") == 1 {
+			return fields[i+1]
+		}
+	}
+	return ""
+}
+
+// resolveParentProject returns the landscape name of the project whose main
+// repository is parentRepo ("owner/repo", case-insensitive), or "" if
+// cncf-projects.yaml has no such repository. It mirrors
+// sbom_resolve_parent_project in util/sbom-lib.sh. There is deliberately no
+// owner-based fallback: organisations host several projects (spiffe) or keep
+// repositories of projects that moved elsewhere (containers/podman).
+func resolveParentProject(parentRepo string, projects []Repository) string {
+	want := strings.ToLower(parentRepo)
+	for _, p := range projects {
+		if strings.ToLower(p.Owner+"/"+p.Repo) == want {
+			return p.Name
+		}
+	}
+	return ""
+}
+
+// resolveParents records parent_repo and parent_project for every discovered
+// repository. discovered_by is kept unchanged for provenance. A previously
+// recorded parent_project is kept when the parent can no longer be resolved.
+func resolveParents(repos []Repository, projects []Repository) []Repository {
+	out := make([]Repository, len(repos))
+	for i, r := range repos {
+		if r.ParentRepo == "" {
+			r.ParentRepo = parseDiscoveredBy(r.DiscoveredBy)
+		}
+		if r.ParentRepo != "" {
+			if name := resolveParentProject(r.ParentRepo, projects); name != "" {
+				r.ParentProject = name
+			}
+		}
+		out[i] = r
+	}
+	return out
+}
+
+// discoveredRepository builds the entry for a repository found in the
+// organisation of the CNCF project parent.
+func discoveredRepository(org, name string, parent Repository) Repository {
+	return Repository{
+		Owner:         org,
+		Repo:          name,
+		Name:          name,
+		Category:      parent.Category,
+		ProjectStatus: parent.ProjectStatus,
+		DiscoveredBy:  fmt.Sprintf("org-scan from %s/%s", parent.Owner, parent.Repo),
+		ParentProject: parent.Name,
+		ParentRepo:    fmt.Sprintf("%s/%s", parent.Owner, parent.Repo),
+	}
+}
+
 func main() {
-	// Get paths from args
+	backfillOnly := flag.Bool("backfill-only", false, "only record parent_project/parent_repo for already discovered repositories; skip the GitHub scan")
+	flag.Parse()
+
 	baseDir := "."
-	if len(os.Args) > 1 {
-		baseDir = os.Args[1]
+	if flag.NArg() > 0 {
+		baseDir = flag.Arg(0)
 	}
 
 	token := os.Getenv("GITHUB_TOKEN")
 	if token == "" {
 		token = os.Getenv("GH_TOKEN")
 	}
-	if token == "" {
+	if token == "" && !*backfillOnly {
 		fmt.Println("WARNING: No GITHUB_TOKEN or GH_TOKEN set. You will likely hit rate limits.")
 		fmt.Println("Set a token with: $env:GITHUB_TOKEN = \"your-token\"")
 		fmt.Println()
@@ -274,6 +343,9 @@ func main() {
 	totalOrgRepos := 0
 
 	for org, exampleRepo := range orgs {
+		if *backfillOnly {
+			break
+		}
 		scannedOrgs++
 		fmt.Printf("[%d/%d] Scanning %s...\n", scannedOrgs, len(orgs), org)
 
@@ -315,14 +387,7 @@ func main() {
 			}
 
 			newInOrg++
-			discovered = append(discovered, Repository{
-				Owner:         org,
-				Repo:          repo.Name,
-				Name:          repo.Name,
-				Category:      exampleRepo.Category,
-				ProjectStatus: exampleRepo.ProjectStatus,
-				DiscoveredBy:  fmt.Sprintf("org-scan from %s/%s", exampleRepo.Owner, exampleRepo.Repo),
-			})
+			discovered = append(discovered, discoveredRepository(org, repo.Name, exampleRepo))
 
 			fmt.Printf("  + Found: %s/%s\n", org, repo.Name)
 		}
@@ -370,6 +435,8 @@ func main() {
 		}
 		return discovered[i].Repo < discovered[j].Repo
 	})
+
+	discovered = resolveParents(discovered, projects.Repositories)
 
 	// Write output
 	output := DiscoveredRepos{

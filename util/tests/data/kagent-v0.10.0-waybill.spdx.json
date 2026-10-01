@@ -1,0 +1,230 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "tmp.6MdADSj3yJ",
+  "documentNamespace": "https://waybill.kusari.dev/spdx/F6FKYIEA6NBDJD5Y5SWQ5IB2WLS4ZSS2",
+  "creationInfo": {
+    "created": "2026-09-07T13:38:41Z",
+    "creators": [
+      "Tool: waybill-0.3.0",
+      "Organization: waybill contributors",
+      "Tool: waybill-0.3.0 source: repo:https://github.com/kagent-dev/kagent.git",
+      "Tool: waybill-0.3.0 source: git:https://github.com/kagent-dev/kagent.git#v0.10.0"
+    ],
+    "comment": "Scope: manifest (declared transitives included). Observed lifecycle phases: pre-build. Per-component scope detail in waybill:sbom-tier annotations."
+  },
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-DocumentRoot-BK5M3V7SPYVEE75K",
+      "name": "kagent-dev/kagent",
+      "versionInfo": "v0.10.0",
+      "downloadLocation": "NOASSERTION",
+      "supplier": "Organization: waybill contributors",
+      "filesAnalyzed": false,
+      "licenseDeclared": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:generic/kagent-dev%2Fkagent@v0.10.0"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "cpe23Type",
+          "referenceLocator": "cpe:2.3:a:waybill:kagent-dev_kagent:v0.10.0:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-23FA5KEWIZPUS7PZ",
+      "name": "github.com/muesli/reflow",
+      "versionInfo": "v0.3.0",
+      "downloadLocation": "NOASSERTION",
+      "supplier": "Organization: github.com/muesli",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "205b0de8af4d7c6b637a08053feebc2387212d9576c882ac5c914d67e79687ab"
+        }
+      ],
+      "licenseDeclared": "MIT",
+      "licenseConcluded": "MIT",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:golang/github.com/muesli/reflow@v0.3.0"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "cpe23Type",
+          "referenceLocator": "cpe:2.3:a:github.com\\/muesli\\/reflow:github.com\\/muesli\\/reflow:v0.3.0:*:*:*:*:*:*:*"
+        },
+        {
+          "referenceCategory": "OTHER",
+          "referenceType": "vcs",
+          "referenceLocator": "https://github.com/muesli/reflow"
+        }
+      ],
+      "annotations": [
+        {
+          "annotator": "Tool: waybill-0.3.0",
+          "annotationDate": "2026-09-07T13:38:41Z",
+          "annotationType": "OTHER",
+          "comment": "{\"schema\":\"waybill-annotation/v1\",\"field\":\"waybill:deps-dev-match\",\"value\":\"go:github.com/muesli/reflow@v0.3.0\"}"
+        },
+        {
+          "annotator": "Tool: waybill-0.3.0",
+          "annotationDate": "2026-09-07T13:38:41Z",
+          "annotationType": "OTHER",
+          "comment": "{\"schema\":\"waybill-annotation/v1\",\"field\":\"waybill:sbom-tier\",\"value\":\"source\"}"
+        },
+        {
+          "annotator": "Tool: waybill-0.3.0",
+          "annotationDate": "2026-09-07T13:38:41Z",
+          "annotationType": "OTHER",
+          "comment": "{\"schema\":\"waybill-annotation/v1\",\"field\":\"waybill:source-files\",\"value\":[\"go/go.sum\"]}"
+        },
+        {
+          "annotator": "Tool: waybill-0.3.0",
+          "annotationDate": "2026-09-07T13:38:41Z",
+          "annotationType": "OTHER",
+          "comment": "{\"schema\":\"waybill-annotation/v1\",\"field\":\"waybill:cpe-candidates\",\"value\":[\"cpe:2.3:a:github.com\\\\/muesli\\\\/reflow:github.com\\\\/muesli\\\\/reflow:v0.3.0:*:*:*:*:*:*:*\",\"cpe:2.3:a:github.com\\\\/muesli:github.com\\\\/muesli\\\\/reflow:v0.3.0:*:*:*:*:*:*:*\"]}"
+        },
+        {
+          "annotator": "Tool: waybill-0.3.0",
+          "annotationDate": "2026-09-07T13:38:41Z",
+          "annotationType": "OTHER",
+          "comment": "{\"schema\":\"waybill-annotation/v1\",\"field\":\"evidence.identity\",\"value\":{\"confidence\":0.85,\"technique\":\"package-database\"}}"
+        },
+        {
+          "annotator": "Tool: waybill-0.3.0",
+          "annotationDate": "2026-09-07T13:38:41Z",
+          "annotationType": "OTHER",
+          "comment": "{\"schema\":\"waybill-annotation/v1\",\"field\":\"evidence.occurrences\",\"value\":[{\"location\":\"go/go.sum\",\"sha256\":\"828685d75e4876ef8a41bc2f7222f0d8ad04da586c49e6df6236978a3c1148d7\"}]}"
+        },
+        {
+          "annotator": "Tool: waybill-0.3.0",
+          "annotationDate": "2026-09-07T13:38:41Z",
+          "annotationType": "OTHER",
+          "comment": "{\"schema\":\"waybill-annotation/v1\",\"field\":\"waybill:go-transitive-source\",\"value\":\"proxy-fetch\"}"
+        },
+        {
+          "annotator": "Tool: waybill-0.3.0",
+          "annotationDate": "2026-09-07T13:38:41Z",
+          "annotationType": "OTHER",
+          "comment": "{\"schema\":\"waybill-annotation/v1\",\"field\":\"waybill:orphan-reason\",\"value\":\"unresolved-indirect-require\"}"
+        },
+        {
+          "annotator": "Tool: waybill-0.3.0",
+          "annotationDate": "2026-09-07T13:38:41Z",
+          "annotationType": "OTHER",
+          "comment": "{\"schema\":\"waybill-annotation/v1\",\"field\":\"waybill:workspace-member\",\"value\":\"[\\\"go\\\"]\"}"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-225XCSCK2SFWDPWL",
+      "name": "@radix-ui/react-select",
+      "versionInfo": "2.3.7",
+      "downloadLocation": "NOASSERTION",
+      "supplier": "Organization: @radix-ui",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "5851889a499bcdc7f1788c2affee07bd1374a62cc1c1bc105040f8235ddecd0b0375f977f199ed37a4e647c5da4b33c1aa8093a1ef2b17be63e8d3cd0d2ce16e"
+        }
+      ],
+      "licenseDeclared": "MIT",
+      "licenseConcluded": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:npm/%40radix-ui/react-select@2.3.7"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "cpe23Type",
+          "referenceLocator": "cpe:2.3:a:\\@radix-ui\\/react-select:\\@radix-ui\\/react-select:2.3.7:*:*:*:*:*:*:*"
+        }
+      ],
+      "annotations": [
+        {
+          "annotator": "Tool: waybill-0.3.0",
+          "annotationDate": "2026-09-07T13:38:41Z",
+          "annotationType": "OTHER",
+          "comment": "{\"schema\":\"waybill-annotation/v1\",\"field\":\"waybill:sbom-tier\",\"value\":\"source\"}"
+        },
+        {
+          "annotator": "Tool: waybill-0.3.0",
+          "annotationDate": "2026-09-07T13:38:41Z",
+          "annotationType": "OTHER",
+          "comment": "{\"schema\":\"waybill-annotation/v1\",\"field\":\"waybill:source-files\",\"value\":[\"ui/package-lock.json\"]}"
+        },
+        {
+          "annotator": "Tool: waybill-0.3.0",
+          "annotationDate": "2026-09-07T13:38:41Z",
+          "annotationType": "OTHER",
+          "comment": "{\"schema\":\"waybill-annotation/v1\",\"field\":\"waybill:cpe-candidates\",\"value\":[\"cpe:2.3:a:\\\\@radix-ui\\\\/react-select:\\\\@radix-ui\\\\/react-select:2.3.7:*:*:*:*:*:*:*\",\"cpe:2.3:a:radix-ui:\\\\@radix-ui\\\\/react-select:2.3.7:*:*:*:*:*:*:*\"]}"
+        },
+        {
+          "annotator": "Tool: waybill-0.3.0",
+          "annotationDate": "2026-09-07T13:38:41Z",
+          "annotationType": "OTHER",
+          "comment": "{\"schema\":\"waybill-annotation/v1\",\"field\":\"evidence.identity\",\"value\":{\"confidence\":0.85,\"technique\":\"package-database\"}}"
+        },
+        {
+          "annotator": "Tool: waybill-0.3.0",
+          "annotationDate": "2026-09-07T13:38:41Z",
+          "annotationType": "OTHER",
+          "comment": "{\"schema\":\"waybill-annotation/v1\",\"field\":\"evidence.occurrences\",\"value\":[{\"location\":\"ui/package-lock.json\",\"sha256\":\"5ee4b9ff9da269229fc55c1da22d45c834140e8f91282b0db07225853a5364ce\"}]}"
+        },
+        {
+          "annotator": "Tool: waybill-0.3.0",
+          "annotationDate": "2026-09-07T13:38:41Z",
+          "annotationType": "OTHER",
+          "comment": "{\"schema\":\"waybill-annotation/v1\",\"field\":\"waybill:peer-edge-targets\",\"value\":[\"pkg:npm/@types/react-dom@19.2.3\",\"pkg:npm/@types/react@19.2.17\",\"pkg:npm/react-dom@19.2.8\",\"pkg:npm/react@19.2.8\"]}"
+        },
+        {
+          "annotator": "Tool: waybill-0.3.0",
+          "annotationDate": "2026-09-07T13:38:41Z",
+          "annotationType": "OTHER",
+          "comment": "{\"schema\":\"waybill-annotation/v1\",\"field\":\"waybill:workspace-member\",\"value\":\"[\\\"ui\\\"]\"}"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "SPDXRef-DocumentRoot-BK5M3V7SPYVEE75K",
+      "relationshipType": "DESCRIBES"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-BK5M3V7SPYVEE75K",
+      "relatedSpdxElement": "SPDXRef-Package-225XCSCK2SFWDPWL",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-BK5M3V7SPYVEE75K",
+      "relatedSpdxElement": "SPDXRef-Package-23FA5KEWIZPUS7PZ",
+      "relationshipType": "DEPENDS_ON"
+    }
+  ],
+  "annotations": [
+    {
+      "annotator": "Tool: waybill-0.3.0",
+      "annotationDate": "2026-09-07T13:38:41Z",
+      "annotationType": "OTHER",
+      "comment": "{\"schema\":\"waybill-annotation/v1\",\"field\":\"waybill:generation-context\",\"value\":\"filesystem-scan\"}"
+    }
+  ],
+  "documentDescribes": [
+    "SPDXRef-DocumentRoot-BK5M3V7SPYVEE75K"
+  ]
+}

@@ -37,6 +37,7 @@
     Environment variables:
     - GH_TOKEN or GITHUB_TOKEN - GitHub token for API access
     - WAYBILL_VERSION - Waybill release version (default: v0.2.0)
+    - bash + jq - to apply util/postprocess-spdx.sh as CI does (skipped with a warning otherwise)
 #>
 
 param(
@@ -147,6 +148,16 @@ function New-Sbom($Owner, $Repo, $ProjectName, $Tag) {
         # Generate SBOM with Waybill (SPDX 2.3 + deps.dev enrichment)
         $waybillOutput = & waybill sbom scan --path $tempDir --format spdx-2.3-json --root-name "$Owner/$Repo" --root-version $Tag --repo "https://github.com/$Owner/$Repo.git" --git-ref $Tag --output $sbomFile 2>&1
         if ($LASTEXITCODE -eq 0) {
+            # Same post-processing as CI (document name, root purl, downloadLocation, supplier)
+            if (Get-Command bash -ErrorAction SilentlyContinue) {
+                & bash (Join-Path $ScriptDir "postprocess-spdx.sh") --owner $Owner --repo $Repo --tag $Tag --project $ProjectName $sbomFile
+                if ($LASTEXITCODE -ne 0) {
+                    Write-Host "  Post-processing failed for $sbomFile" -ForegroundColor Red
+                    return $false
+                }
+            } else {
+                Write-Host "  Warning: bash not found, SBOM is not post-processed like in CI" -ForegroundColor Yellow
+            }
             Write-Host "  Successfully generated SBOM: $sbomFile" -ForegroundColor Green
             return $true
         } else {

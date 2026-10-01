@@ -59,6 +59,9 @@ for run in first second; do
   bash "$ROOT_DIR/util/generate-sandbox-sbom.sh" "$TEMP_DIR/revision.json" "$TEMP_DIR/$run.json"
   jq -e '.name == "ray-project/kuberay v1.2.3"
     and .packages[0].versionInfo == "v1.2.3"
+    and .packages[0].downloadLocation == "git+https://github.com/ray-project/kuberay.git@v1.2.3"
+    and .packages[0].supplier == "NOASSERTION"
+    and .packages[0].externalRefs == [{referenceCategory:"PACKAGE-MANAGER",referenceType:"purl",referenceLocator:"pkg:github/ray-project/kuberay@v1.2.3"}]
     and .documentDescribes == ["SPDXRef-root"]
     and .relationships[0].relationshipType == "DESCRIBES"' "$TEMP_DIR/$run.json" >/dev/null
   if [[ "$run" == first ]]; then

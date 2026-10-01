@@ -6,6 +6,10 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
 SOURCE_DIR="${ROOT_DIR}/sbom"
 DISCOVERED_FILE="${ROOT_DIR}/util/data/discovered-repos.yaml"
+PROJECTS_FILE="${ROOT_DIR}/util/data/cncf-projects.yaml"
+MANUAL_FILE="${ROOT_DIR}/util/data/repositories.yaml"
+# shellcheck source=util/sbom-lib.sh
+source "${SCRIPT_DIR}/sbom-lib.sh"
 
 DOTENV_FILE=""
 if [[ -f "${ROOT_DIR}/.env.sbom" ]]; then
@@ -62,9 +66,12 @@ Expected legacy source layouts:
   - Projects:    sbom/<project>/<repo>/<version>/<file>.json
   - Subprojects: sbom/subprojects/<owner>/<subproject>/<version>/<file>.json
 
-Target object naming:
+Target object naming (<project> is the same slug in both buckets):
   - Projects:    <project>/<version>/<project>_<version>_spdx.json
   - Subprojects: <project>/<subproject>/<version>/<project>_<subproject>_<version>_spdx.json
+
+Every file is post-processed with util/postprocess-spdx.sh before upload
+(the source file is not modified).
 EOF
 }
 
@@ -163,7 +170,7 @@ if [[ ! -d "$SOURCE_DIR" ]]; then
 fi
 
 slugify() {
-  echo "$1" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr -cd '[:alnum:]-'
+  sbom_slugify "$1"
 }
 
 sanitize_version() {
@@ -181,26 +188,34 @@ sanitize_version() {
   fi
 }
 
-declare -A PARENT_PROJECT_BY_REPO
-load_subproject_mapping() {
-  if [[ ! -f "$DISCOVERED_FILE" ]]; then
-    return 0
-  fi
-
+# owner/repo -> parent project name and slug for subprojects
+declare -A PARENT_PROJECT_BY_REPO PARENT_SLUG_BY_REPO
+# project slug -> landscape/display name for projects
+declare -A PROJECT_NAME_BY_SLUG
+load_project_mapping() {
   if ! command -v yq >/dev/null 2>&1; then
-    echo "Info: yq not found; subproject parent mapping falls back to owner name." >&2
+    echo "Info: yq not found; subproject parents fall back to the owner name and suppliers to NOASSERTION." >&2
     return 0
   fi
 
-  while IFS=$'\t' read -r owner repo parent; do
+  local file name
+  for file in "$MANUAL_FILE" "$PROJECTS_FILE"; do
+    [[ -f "$file" ]] || continue
+    while IFS= read -r name; do
+      [[ -n "$name" ]] && PROJECT_NAME_BY_SLUG["$(slugify "$name")"]="$name"
+    done < <(yq -r '.repositories[].name' "$file")
+  done
+
+  [[ -f "$DISCOVERED_FILE" ]] || return 0
+  local owner repo parent_project parent_repo discovered_by
+  while IFS=$'\x1f' read -r owner repo parent_project parent_repo discovered_by; do
     [[ -z "$owner" || -z "$repo" ]] && continue
-    PARENT_PROJECT_BY_REPO["${owner}/${repo}"]="$parent"
+    parent_project="$(sbom_resolve_parent_project "$parent_project" "$parent_repo" "$discovered_by" "$owner")"
+    PARENT_PROJECT_BY_REPO["${owner}/${repo}"]="$parent_project"
+    PARENT_SLUG_BY_REPO["${owner}/${repo}"]="$(sbom_parent_slug "$parent_project" "$parent_repo" "$discovered_by" "$owner")"
   done < <(
-    yq -r '.repositories[] | [
-      .owner,
-      .repo,
-      ((.discovered_by // "") | capture("from [^/]+/(?<repo>[^ ]+)")?.repo // .owner)
-    ] | @tsv' "$DISCOVERED_FILE"
+    yq -o=json '.repositories // []' "$DISCOVERED_FILE" |
+    jq -r '.[] | [.owner, .repo, .parent_project // "", .parent_repo // "", .discovered_by // ""] | map(tostring) | join("\u001f")'
   )
 }
 
@@ -229,9 +244,10 @@ upload_object() {
   local bucket="$1"
   local key="$2"
   local file="$3"
+  local source_label="${4:-$3}"
 
   if [[ "$DRY_RUN" == "true" ]]; then
-    echo "DRY-RUN: oci://${bucket}/${key} <- ${file}"
+    echo "DRY-RUN: oci://${bucket}/${key} <- ${source_label}"
     return 0
   fi
 
@@ -264,7 +280,10 @@ upload_object() {
   echo "Uploaded: oci://${bucket}/${key}"
 }
 
-load_subproject_mapping
+load_project_mapping
+
+WORK_DIR="$(mktemp -d)"
+trap 'rm -rf "$WORK_DIR"' EXIT
 
 total=0
 uploaded=0
@@ -291,8 +310,8 @@ while IFS= read -r file; do
       continue
     fi
 
-    parent_project="${PARENT_PROJECT_BY_REPO["${owner}/${subproject}"]:-$owner}"
-    project_slug="$(slugify "$parent_project")"
+    supplier_project="${PARENT_PROJECT_BY_REPO["${owner}/${subproject}"]:-}"
+    project_slug="${PARENT_SLUG_BY_REPO["${owner}/${subproject}"]:-$(slugify "$owner")}"
     subproject_slug="$(slugify "$subproject")"
     version_slug="$(sanitize_version "$version")"
     filename_version="$(echo "$version_slug" | tr '.' '_')"
@@ -311,6 +330,7 @@ while IFS= read -r file; do
     fi
 
     project_slug="$(slugify "$project")"
+    supplier_project="${PROJECT_NAME_BY_SLUG["$project_slug"]:-}"
     version_slug="$(sanitize_version "$version")"
     filename_version="$(echo "$version_slug" | tr '.' '_')"
 
@@ -325,7 +345,14 @@ while IFS= read -r file; do
     continue
   fi
 
-  if upload_object "$bucket" "$key" "$file"; then
+  processed="${WORK_DIR}/sbom.json"
+  if ! bash "${SCRIPT_DIR}/postprocess-spdx.sh" --project "$supplier_project" "$file" "$processed"; then
+    echo "Post-processing failed for ${file}" >&2
+    failed=$((failed + 1))
+    continue
+  fi
+
+  if upload_object "$bucket" "$key" "$processed" "$file"; then
     uploaded=$((uploaded + 1))
   else
     echo "Upload failed for ${file}" >&2

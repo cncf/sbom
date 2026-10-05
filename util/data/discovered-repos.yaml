@@ -20,7 +20,7 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain supported package manifests (Go, Cargo, npm, pip, Maven, gem, Dockerfile, etc.).
   auto_generated: true
-  last_updated: "2026-10-01T16:25:37Z"
+  last_updated: "2026-10-05T04:46:07Z"
 repositories:
   - owner: aeraki-mesh
     repo: meta-protocol-proxy
@@ -30,6 +30,14 @@ repositories:
     discovered_by: org-scan from aeraki-mesh/aeraki
     parent_project: Aeraki Mesh
     parent_repo: aeraki-mesh/aeraki
+  - owner: agent-substrate
+    repo: env
+    name: env
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from agent-substrate/substrate
+    parent_project: Agent Substrate
+    parent_repo: agent-substrate/substrate
   - owner: agones-dev
     repo: headlamp-plugin
     name: headlamp-plugin
@@ -3160,6 +3168,14 @@ repositories:
     discovered_by: org-scan from coredns/coredns
     parent_project: CoreDNS
     parent_repo: coredns/coredns
+  - owner: coredns
+    repo: dynapi
+    name: dynapi
+    category: networking
+    project_status: graduated
+    discovered_by: org-scan from coredns/coredns
+    parent_project: CoreDNS
+    parent_repo: coredns/coredns
   - owner: cortexproject
     repo: auth-gateway
     name: auth-gateway
@@ -3547,6 +3563,14 @@ repositories:
   - owner: dapr
     repo: setup-dapr
     name: setup-dapr
+    category: build
+    project_status: graduated
+    discovered_by: org-scan from dapr/dapr
+    parent_project: Dapr
+    parent_repo: dapr/dapr
+  - owner: dapr
+    repo: testcontainer-node
+    name: testcontainer-node
     category: build
     project_status: graduated
     discovered_by: org-scan from dapr/dapr
@@ -4582,6 +4606,38 @@ repositories:
     discovered_by: org-scan from higress-group/higress
     parent_project: Higress
     parent_repo: higress-group/higress
+  - owner: hivecommons
+    repo: pluk
+    name: pluk
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from hivecommons/hive
+    parent_project: Hive Commons
+    parent_repo: hivecommons/hive
+  - owner: hivecommons
+    repo: promptargs
+    name: promptargs
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from hivecommons/hive
+    parent_project: Hive Commons
+    parent_repo: hivecommons/hive
+  - owner: hivecommons
+    repo: rationguard
+    name: rationguard
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from hivecommons/hive
+    parent_project: Hive Commons
+    parent_repo: hivecommons/hive
+  - owner: hivecommons
+    repo: spektacular
+    name: spektacular
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from hivecommons/hive
+    parent_project: Hive Commons
+    parent_repo: hivecommons/hive
   - owner: hwameistor
     repo: datastore
     name: datastore
@@ -10590,6 +10646,1342 @@ repositories:
     discovered_by: org-scan from notaryproject/notation
     parent_project: Notary Project
     parent_repo: notaryproject/notation
+  - owner: nvidia
+    repo: BigVGAN
+    name: BigVGAN
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: Bobber
+    name: Bobber
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: CompileIQ
+    name: CompileIQ
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: DALI
+    name: DALI
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: Dataset_Utilities
+    name: Dataset_Utilities
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: FastPhotoStyle
+    name: FastPhotoStyle
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: GUSLI
+    name: GUSLI
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: Imageinary
+    name: Imageinary
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: Isaac-GR00T
+    name: Isaac-GR00T
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: IsaacCapture
+    name: IsaacCapture
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: Ising-Decoding
+    name: Ising-Decoding
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: Kumo-TS
+    name: Kumo-TS
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: MegaMolBART
+    name: MegaMolBART
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: Megatron-Energon
+    name: Megatron-Energon
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: Megatron-LM
+    name: Megatron-LM
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: MinkowskiEngine
+    name: MinkowskiEngine
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: Model-Optimizer
+    name: Model-Optimizer
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: NVFlare
+    name: NVFlare
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: NVSentinel
+    name: NVSentinel
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: NeMo-Agent-Toolkit
+    name: NeMo-Agent-Toolkit
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: NeMo-Agent-Toolkit-UI
+    name: NeMo-Agent-Toolkit-UI
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: NeMo-Fabric
+    name: NeMo-Fabric
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: NeMo-Relay
+    name: NeMo-Relay
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: NeMo-Relay-Plugins
+    name: NeMo-Relay-Plugins
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: NeMo-Retriever
+    name: NeMo-Retriever
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: NeMo-Speech.cpp
+    name: NeMo-Speech.cpp
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: NeMo-text-processing
+    name: NeMo-text-processing
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: NemoClaw
+    name: NemoClaw
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: Personal-AI-Router
+    name: Personal-AI-Router
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: PyProf
+    name: PyProf
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: SkillEvaluator
+    name: SkillEvaluator
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: SkillSpector
+    name: SkillSpector
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: TensorRT-Edge-LLM
+    name: TensorRT-Edge-LLM
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: TensorRT-LLM
+    name: TensorRT-LLM
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: TensorRT-Model-Connect
+    name: TensorRT-Model-Connect
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: TileGym
+    name: TileGym
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: TorchFort
+    name: TorchFort
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: TransformerEngine
+    name: TransformerEngine
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: VariantWorks
+    name: VariantWorks
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: ai-cloud-validation
+    name: ai-cloud-validation
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: aicr
+    name: aicr
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: aistore
+    name: aistore
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: atex
+    name: atex
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: bluebazel
+    name: bluebazel
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: build-system-archive-import-examples
+    name: build-system-archive-import-examples
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: cccl
+    name: cccl
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: clara-pipeline-operator-sizing-tool
+    name: clara-pipeline-operator-sizing-tool
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: clara-platform-python-client
+    name: clara-platform-python-client
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: cloudai
+    name: cloudai
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: cloudxr-js-samples
+    name: cloudxr-js-samples
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: cluster-readiness-engine
+    name: cluster-readiness-engine
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: compute-eval
+    name: compute-eval
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: container-canary
+    name: container-canary
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: context-aware-rag
+    name: context-aware-rag
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: cosmos-curator
+    name: cosmos-curator
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: cosmos-evaluator
+    name: cosmos-evaluator
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: cstruct
+    name: cstruct
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: cuda-quantum
+    name: cuda-quantum
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: cuda-rust
+    name: cuda-rust
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: cuda-samples
+    name: cuda-samples
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: cudaq-algorithms
+    name: cudaq-algorithms
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: cudf
+    name: cudf
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: cudf-spark
+    name: cudf-spark
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: cudf-spark-jni
+    name: cudf-spark-jni
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: cudnn-frontend
+    name: cudnn-frontend
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: cuml
+    name: cuml
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: cuopt
+    name: cuopt
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: cuopt-examples
+    name: cuopt-examples
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: cutlass
+    name: cutlass
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: cuvs
+    name: cuvs
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: daqiri
+    name: daqiri
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: data-federation-mesh
+    name: data-federation-mesh
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: dcgm-exporter
+    name: dcgm-exporter
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: dlinput-tf
+    name: dlinput-tf
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: dllogger
+    name: dllogger
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: doca-platform
+    name: doca-platform
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: earth2mip
+    name: earth2mip
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: earth2studio
+    name: earth2studio
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: elements
+    name: elements
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: enroot
+    name: enroot
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: fission
+    name: fission
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: fleet-intelligence-client
+    name: fleet-intelligence-client
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: framework-reproducibility
+    name: framework-reproducibility
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: garak
+    name: garak
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: gdrcopy
+    name: gdrcopy
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: go-dcgm
+    name: go-dcgm
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: go-gpuallocator
+    name: go-gpuallocator
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: go-nvfm
+    name: go-nvfm
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: go-nvlib
+    name: go-nvlib
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: go-nvml
+    name: go-nvml
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: go-ratelimit
+    name: go-ratelimit
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: gontainer
+    name: gontainer
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: gpu-operator
+    name: gpu-operator
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: holodeck
+    name: holodeck
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: ib-traffic-monitor
+    name: ib-traffic-monitor
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: icons
+    name: icons
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: jax-tvm-ffi
+    name: jax-tvm-ffi
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: k8s-cc-manager
+    name: k8s-cc-manager
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: k8s-device-plugin
+    name: k8s-device-plugin
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: k8s-launch-kit
+    name: k8s-launch-kit
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: k8s-nim-operator
+    name: k8s-nim-operator
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: k8s-test-infra
+    name: k8s-test-infra
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: knavigator
+    name: knavigator
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: kubevirt-gpu-device-plugin
+    name: kubevirt-gpu-device-plugin
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: kvpress
+    name: kvpress
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: libnvidia-container
+    name: libnvidia-container
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: makani
+    name: makani
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: mig-parted
+    name: mig-parted
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: mlperf-common
+    name: mlperf-common
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: mpi-acx
+    name: mpi-acx
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: multi-storage-client
+    name: multi-storage-client
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: nautobot-app-consumables
+    name: nautobot-app-consumables
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: nautobot-app-fsus
+    name: nautobot-app-fsus
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: nautobot-app-nvdatamodels
+    name: nautobot-app-nvdatamodels
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: nautobot-broker-nats
+    name: nautobot-broker-nats
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: nccl
+    name: nccl
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: nccl-extensions
+    name: nccl-extensions
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: ncore
+    name: ncore
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: nodewright
+    name: nodewright
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: nsight-vscode-edition
+    name: nsight-vscode-edition
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: numba-cuda
+    name: numba-cuda
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: numba-cuda-mlir
+    name: numba-cuda-mlir
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: nv-air-sdk
+    name: nv-air-sdk
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: nv-sflow
+    name: nv-sflow
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: nvaitc-toolkit
+    name: nvaitc-toolkit
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: nvalchemi-toolkit
+    name: nvalchemi-toolkit
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: nvalchemi-toolkit-ops
+    name: nvalchemi-toolkit-ops
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: nvbench
+    name: nvbench
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: nvflow
+    name: nvflow
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: nvidia-container-toolkit
+    name: nvidia-container-toolkit
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: nvidia-resiliency-ext
+    name: nvidia-resiliency-ext
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: nvloom
+    name: nvloom
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: nvmath-python
+    name: nvmath-python
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: nvrc
+    name: nvrc
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: open-gpu-kernel-modules
+    name: open-gpu-kernel-modules
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: open-nvdebug
+    name: open-nvdebug
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: open-nvfwupd
+    name: open-nvfwupd
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: otk-pyoptix
+    name: otk-pyoptix
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: paidf-anomalygen
+    name: paidf-anomalygen
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: paidf-auto-labeling
+    name: paidf-auto-labeling
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: physicsnemo
+    name: physicsnemo
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: physicsnemo-curator
+    name: physicsnemo-curator
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: pyxis
+    name: pyxis
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: raft
+    name: raft
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: recsys-examples
+    name: recsys-examples
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: retinanet-examples
+    name: retinanet-examples
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: rumpelpod
+    name: rumpelpod
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: runx
+    name: runx
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: sandbox-device-plugin
+    name: sandbox-device-plugin
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: security-workflows
+    name: security-workflows
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: sentiment-discovery
+    name: sentiment-discovery
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: sortedmap
+    name: sortedmap
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: speechsquad
+    name: speechsquad
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: sphinx-llm
+    name: sphinx-llm
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: srt-slurm
+    name: srt-slurm
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: structured-data-models
+    name: structured-data-models
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: sybil
+    name: sybil
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: tao_launcher
+    name: tao_launcher
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: terraform-provider-ngc
+    name: terraform-provider-ngc
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: tilus
+    name: tilus
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: torch-harmonics
+    name: torch-harmonics
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: vgpu-device-manager
+    name: vgpu-device-manager
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: warp
+    name: warp
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: warp-nn
+    name: warp-nn
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: warp-simdata
+    name: warp-simdata
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: yaml-sigil-rs
+    name: yaml-sigil-rs
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: yaml-sigil-traits
+    name: yaml-sigil-traits
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
   - owner: open-cluster-management-io
     repo: addon-framework
     name: addon-framework
@@ -12258,6 +13650,14 @@ repositories:
     repo: rust-oci-client
     name: rust-oci-client
     category: storage
+    project_status: sandbox
+    discovered_by: org-scan from oras-project/oras
+    parent_project: ORAS
+    parent_repo: oras-project/oras
+  - owner: oras-project
+    repo: rust-oci-client-node
+    name: rust-oci-client-node
+    category: build
     project_status: sandbox
     discovered_by: org-scan from oras-project/oras
     parent_project: ORAS

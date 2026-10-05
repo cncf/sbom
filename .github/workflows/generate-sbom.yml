@@ -50,9 +50,6 @@ on:
           - manual        # Only manually added projects
           - discovered    # Only discovered repos from CNCF orgs
 
-env:
-  WAYBILL_VERSION: v0.9.0
-
 permissions:
   contents: read
 
@@ -64,8 +61,12 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.event.inputs.source != 'discovered' }}
     outputs:
-      matrix: ${{ steps.set-matrix.outputs.matrix }}
-      has_repos: ${{ steps.set-matrix.outputs.has_repos }}
+      matrix1: ${{ steps.set-matrix.outputs.matrix1 }}
+      matrix2: ${{ steps.set-matrix.outputs.matrix2 }}
+      matrix3: ${{ steps.set-matrix.outputs.matrix3 }}
+      has_repos1: ${{ steps.set-matrix.outputs.has_repos1 }}
+      has_repos2: ${{ steps.set-matrix.outputs.has_repos2 }}
+      has_repos3: ${{ steps.set-matrix.outputs.has_repos3 }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
@@ -75,18 +76,34 @@ jobs:
           sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
           sudo chmod +x /usr/local/bin/yq
 
-      - name: Generate projects matrix
+      - name: Generate projects matrix (batched)
         id: set-matrix
         env:
           PROJECT_FILTER: ${{ github.event.inputs.project_filter }}
           PROJECT_SOURCE: ${{ github.event.inputs.source || 'all' }}
         run: |
-          MATRIX=$(bash util/prepare-project-matrix.sh "$PROJECT_SOURCE" "$PROJECT_FILTER")
-          
-          REPO_COUNT=$(echo "$MATRIX" | jq '.include | length')
-          echo "matrix=$MATRIX" >> $GITHUB_OUTPUT
-          echo "has_repos=$( [ "$REPO_COUNT" -gt 0 ] && echo 'true' || echo 'false' )" >> $GITHUB_OUTPUT
-          echo "Generated projects matrix with $REPO_COUNT repositories"
+          # GitHub Actions caps a matrix at 256 configurations; split into batches.
+          BATCH_SIZE=200
+          MAX_BATCHES=3
+
+          ALL_REPOS=$(bash util/prepare-project-matrix.sh "$PROJECT_SOURCE" "$PROJECT_FILTER" | jq -c '.include')
+          TOTAL=$(echo "$ALL_REPOS" | jq 'length')
+          echo "Total project repos: $TOTAL"
+
+          MAX_SUPPORTED=$((BATCH_SIZE * MAX_BATCHES))
+          if [ "$TOTAL" -gt "$MAX_SUPPORTED" ]; then
+            echo "::error::Found $TOTAL repos but only $MAX_SUPPORTED can be processed (max $MAX_BATCHES batches of $BATCH_SIZE). Increase MAX_BATCHES and add matching generate-sbom-cncf-N jobs."
+            exit 1
+          fi
+
+          for i in $(seq 1 $MAX_BATCHES); do
+            START=$(( (i-1) * BATCH_SIZE ))
+            BATCH=$(echo "$ALL_REPOS" | jq -c --argjson start $START --argjson size $BATCH_SIZE '.[$start:$start+$size] | {"include": .}')
+            COUNT=$(echo "$BATCH" | jq '.include | length')
+            echo "matrix${i}=$BATCH" >> $GITHUB_OUTPUT
+            echo "has_repos${i}=$( [ "$COUNT" -gt 0 ] && echo 'true' || echo 'false' )" >> $GITHUB_OUTPUT
+            echo "Batch $i: $COUNT repositories"
+          done
 
   # ===========================================
   # Prepare matrix for discovered repos (split into batches due to 256 limit)
@@ -164,250 +181,49 @@ jobs:
           done
 
   # ===========================================
-  # Generate SBOMs for CNCF and manually added projects
+  # Generate SBOMs for CNCF and manually added projects (Batch 1)
   # ===========================================
-  generate-sbom-cncf:
+  generate-sbom-cncf-1:
     needs: prepare-cncf-matrix
-    if: ${{ needs.prepare-cncf-matrix.outputs.has_repos == 'true' }}
-    runs-on: cncf-c-ubuntu-2-8-x86
-    timeout-minutes: 180
-    strategy:
-      fail-fast: false
-      max-parallel: 5
-      matrix: ${{ fromJson(needs.prepare-cncf-matrix.outputs.matrix) }}
+    if: ${{ needs.prepare-cncf-matrix.outputs.has_repos1 == 'true' }}
+    uses: ./.github/workflows/reusable-generate-sbom.yml
+    with:
+      matrix: ${{ needs.prepare-cncf-matrix.outputs.matrix1 }}
+      job_name: "cncf-batch-1"
+      force_regenerate: ${{ github.event.inputs.force_regenerate || 'false' }}
+      releases_mode: ${{ github.event.inputs.releases_mode || 'recent' }}
+      max_releases: ${{ github.event.inputs.max_releases || '3' }}
+    secrets: inherit
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v5
+  # ===========================================
+  # Generate SBOMs for CNCF and manually added projects (Batch 2)
+  # ===========================================
+  generate-sbom-cncf-2:
+    needs: prepare-cncf-matrix
+    if: ${{ needs.prepare-cncf-matrix.outputs.has_repos2 == 'true' }}
+    uses: ./.github/workflows/reusable-generate-sbom.yml
+    with:
+      matrix: ${{ needs.prepare-cncf-matrix.outputs.matrix2 }}
+      job_name: "cncf-batch-2"
+      force_regenerate: ${{ github.event.inputs.force_regenerate || 'false' }}
+      releases_mode: ${{ github.event.inputs.releases_mode || 'recent' }}
+      max_releases: ${{ github.event.inputs.max_releases || '3' }}
+    secrets: inherit
 
-      - name: Install Waybill
-        run: |
-          curl -sL "https://github.com/kusari-oss/waybill/releases/download/${WAYBILL_VERSION}/waybill-${WAYBILL_VERSION}-x86_64-unknown-linux-gnu.tar.gz" -o /tmp/waybill.tar.gz
-          tar xzf /tmp/waybill.tar.gz -C /tmp
-          sudo install -m 755 /tmp/waybill-${WAYBILL_VERSION}-x86_64-unknown-linux-gnu/waybill /usr/local/bin/waybill
-          waybill --version
-
-      - name: Install GitHub CLI
-        run: |
-          if ! command -v gh &>/dev/null; then
-            curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
-            echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
-            sudo apt-get update -q && sudo apt-get install -y -q gh
-          fi
-          gh --version
-
-      - name: Install AWS CLI
-        run: |
-          if ! command -v aws &>/dev/null; then
-            curl -sSL "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o /tmp/awscliv2.zip
-            unzip -q /tmp/awscliv2.zip -d /tmp
-            sudo /tmp/aws/install
-          fi
-          aws --version
-
-      - name: Get stable releases and generate SBOMs
-        id: generate
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          FORCE_REGENERATE: ${{ github.event.inputs.force_regenerate }}
-          RELEASES_MODE: ${{ github.event.inputs.releases_mode || 'recent' }}
-          MAX_RELEASES: ${{ github.event.inputs.max_releases || '3' }}
-        run: |
-          set -e
-          
-          source util/sbom-lib.sh
-          OWNER="${{ matrix.owner }}"
-          REPO="${{ matrix.repo }}"
-          PROJECT_NAME="${{ matrix.name }}"
-          SANITIZED_PROJECT=$(sbom_slugify "$PROJECT_NAME")
-          SBOM_BASE_DIR="sbom/${SANITIZED_PROJECT}/${REPO}"
-          PROCESSED=0
-          
-          ONE_WEEK_AGO=$(date -u -d '7 days ago' +%Y-%m-%dT%H:%M:%SZ 2>/dev/null || date -u -v-7d +%Y-%m-%dT%H:%M:%SZ)
-          
-          echo "::group::Processing $PROJECT_NAME ($OWNER/$REPO)"
-          echo "Releases mode: $RELEASES_MODE"
-
-          generate_sbom() {
-            local TAG="$1"
-            local VERSION=$(echo "$TAG" | sed 's/^v//')
-            local VERSION_SLUG=$(echo "$VERSION" | tr '.' '_')
-            local SBOM_DIR="${SBOM_BASE_DIR}/${VERSION}"
-            local SBOM_FILE="${SBOM_DIR}/${SANITIZED_PROJECT}_${VERSION_SLUG}_spdx.json"
-
-            if [ -f "$SBOM_FILE" ] && [ "$FORCE_REGENERATE" != "true" ]; then
-              echo "SBOM already exists: $SBOM_FILE, skipping..."
-              return 1
-            fi
-            
-            echo "Generating SBOM for $OWNER/$REPO@$TAG..."
-            
-            local TEMP_DIR=$(mktemp -d)
-            if ! git clone --depth 1 --branch "$TAG" "https://github.com/${OWNER}/${REPO}.git" "$TEMP_DIR" 2>/dev/null; then
-              echo "Failed to clone $OWNER/$REPO@$TAG, skipping..."
-              rm -rf "$TEMP_DIR"
-              return 1
-            fi
-            
-            mkdir -p "$SBOM_DIR"
-            
-            # Generate SBOM with Waybill (SPDX 2.3 + deps.dev enrichment)
-            if waybill sbom scan \
-              --path "$TEMP_DIR" \
-              --format spdx-2.3-json \
-              --root-name "${OWNER}/${REPO}" \
-              --root-version "$TAG" \
-              --repo "https://github.com/${OWNER}/${REPO}.git" \
-              --git-ref "$TAG" \
-              --output "$SBOM_FILE" 2>&1 | tail -5; then
-              if ! bash util/postprocess-spdx.sh --owner "$OWNER" --repo "$REPO" --tag "$TAG" --project "$PROJECT_NAME" "$SBOM_FILE"; then
-                rm -rf "$TEMP_DIR"
-                return 1
-              fi
-              echo "Successfully generated SBOM: $SBOM_FILE"
-              rm -rf "$TEMP_DIR"
-              return 0
-            else
-              echo "Failed to generate SBOM for $OWNER/$REPO@$TAG"
-              rm -rf "$TEMP_DIR"
-              return 1
-            fi
-          }
-          
-          if ! RELEASES=$(gh api "repos/${OWNER}/${REPO}/releases?per_page=50" 2>&1); then
-            if echo "$RELEASES" | grep -q '"status":"404"'; then
-              echo "::warning::Repository ${OWNER}/${REPO} not found or releases not accessible (404), skipping"
-              echo "::endgroup::"
-              exit 0
-            fi
-            echo "::error::Failed to fetch releases for ${OWNER}/${REPO}: ${RELEASES}"
-            exit 1
-          fi
-          if ! echo "$RELEASES" | jq -e 'type == "array"' >/dev/null 2>&1; then
-            echo "::error::Unexpected releases response for ${OWNER}/${REPO}: ${RELEASES}"
-            exit 1
-          fi
-          
-          if [ "$(echo "$RELEASES" | jq 'length')" -eq 0 ]; then
-            echo "No releases found, trying tags..."
-            if ! TAGS_JSON=$(gh api "repos/${OWNER}/${REPO}/tags?per_page=20" 2>&1); then
-              if echo "$TAGS_JSON" | grep -q '"status":"404"'; then
-                echo "::warning::Repository ${OWNER}/${REPO} not found or tags not accessible (404), skipping"
-                echo "::endgroup::"
-                exit 0
-              fi
-              echo "::error::Failed to fetch tags for ${OWNER}/${REPO}: ${TAGS_JSON}"
-              exit 1
-            fi
-            if ! echo "$TAGS_JSON" | jq -e 'type == "array"' >/dev/null 2>&1; then
-              echo "::error::Unexpected tags response for ${OWNER}/${REPO}: ${TAGS_JSON}"
-              exit 1
-            fi
-            readarray -t TAGS < <(echo "$TAGS_JSON" | jq -r '.[].name')
-            
-            if [ "${#TAGS[@]}" -eq 0 ]; then
-              echo "No tags found, skipping..."
-              echo "::endgroup::"
-              exit 0
-            fi
-            
-            EFFECTIVE_MAX=$( [ "$RELEASES_MODE" == "recent" ] && echo 3 || echo $MAX_RELEASES )
-            
-            for TAG in "${TAGS[@]}"; do
-              if echo "$TAG" | grep -qiE '[-\.](alpha|beta|rc|pre|dev|snapshot|nightly|canary|test|draft|wip)[0-9]*'; then
-                continue
-              fi
-              
-              if ! echo "$TAG" | grep -qE '^v?[0-9]+\.[0-9]+'; then
-                continue
-              fi
-              
-              if generate_sbom "$TAG"; then
-                PROCESSED=$((PROCESSED + 1))
-              fi
-              
-              if [ "$PROCESSED" -ge "$EFFECTIVE_MAX" ]; then
-                break
-              fi
-            done
-          else
-            if [ "$RELEASES_MODE" == "recent" ]; then
-              readarray -t RELEASE_DATA < <(echo "$RELEASES" | jq -r --arg since "$ONE_WEEK_AGO" '.[] | select(.draft == false and .prerelease == false and .published_at >= $since) | "\(.tag_name)|\(.published_at)"')
-            else
-              readarray -t RELEASE_DATA < <(echo "$RELEASES" | jq -r '.[] | select(.draft == false and .prerelease == false) | "\(.tag_name)|\(.published_at)"')
-            fi
-            
-            for RELEASE_INFO in "${RELEASE_DATA[@]}"; do
-              TAG=$(echo "$RELEASE_INFO" | cut -d'|' -f1)
-              
-              if echo "$TAG" | grep -qiE '[-\.](alpha|beta|rc|pre|dev|snapshot|nightly|canary|test|draft|wip)[0-9]*'; then
-                continue
-              fi
-              
-              if generate_sbom "$TAG"; then
-                PROCESSED=$((PROCESSED + 1))
-              fi
-              
-              if [ "$RELEASES_MODE" == "latest" ] && [ "$PROCESSED" -ge "$MAX_RELEASES" ]; then
-                break
-              fi
-            done
-          fi
-          
-          echo "processed=${PROCESSED}" >> "$GITHUB_OUTPUT"
-          echo "::endgroup::"
-
-      - name: Upload SBOMs to S3
-        id: upload
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.OCI_S3_ACCESS_KEY }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.OCI_S3_SECRET_KEY }}
-          AWS_SESSION_TOKEN: ""
-          AWS_REQUEST_CHECKSUM_CALCULATION: when_required
-          AWS_RESPONSE_CHECKSUM_VALIDATION: when_required
-          S3_ENDPOINT: ${{ vars.OCI_S3_ENDPOINT }}
-          S3_REGION: ${{ vars.OCI_S3_REGION }}
-          PROJECT_BUCKET: ${{ vars.OCI_PROJECT_BUCKET }}
-        run: |
-          source util/s3-upload.sh
-          source util/sbom-lib.sh
-          OWNER="${{ matrix.owner }}"
-          REPO="${{ matrix.repo }}"
-          PROJECT_NAME="${{ matrix.name }}"
-          SANITIZED_PROJECT=$(sbom_slugify "$PROJECT_NAME")
-          SBOM_BASE_DIR="sbom/${SANITIZED_PROJECT}/${REPO}"
-
-          # Normalize endpoint — ensure scheme is present
-          [[ "$S3_ENDPOINT" != http://* && "$S3_ENDPOINT" != https://* ]] && S3_ENDPOINT="https://${S3_ENDPOINT}"
-
-          if [ ! -d "$SBOM_BASE_DIR" ]; then
-            echo "No SBOMs generated, nothing to upload"
-            exit 0
-          fi
-
-          UPLOADED=0
-          FAILED=0
-          while IFS= read -r file; do
-            rel="${file#${SBOM_BASE_DIR}/}"
-            VERSION=$(dirname "$rel")
-            VERSION_SLUG=$(echo "$VERSION" | tr '.' '_')
-
-            S3_KEY="${SANITIZED_PROJECT}/${VERSION}/${SANITIZED_PROJECT}_${VERSION_SLUG}_spdx.json"
-
-            if upload_sbom "$file" "$PROJECT_BUCKET" "$S3_KEY"; then
-              UPLOADED=$((UPLOADED + 1))
-            else
-              FAILED=$((FAILED + 1))
-            fi
-          done < <(find "$SBOM_BASE_DIR" -type f -name '*.json' | sort)
-
-          echo "Uploaded ${UPLOADED} SBOMs to s3://${PROJECT_BUCKET}/"
-          echo "uploaded=${UPLOADED}" >> "$GITHUB_OUTPUT"
-          echo "::notice title=sbom-uploaded::${UPLOADED}"
-          if [ "$FAILED" -gt 0 ]; then
-            echo "::error::${FAILED} SBOM uploads failed"
-            exit 1
-          fi
+  # ===========================================
+  # Generate SBOMs for CNCF and manually added projects (Batch 3)
+  # ===========================================
+  generate-sbom-cncf-3:
+    needs: prepare-cncf-matrix
+    if: ${{ needs.prepare-cncf-matrix.outputs.has_repos3 == 'true' }}
+    uses: ./.github/workflows/reusable-generate-sbom.yml
+    with:
+      matrix: ${{ needs.prepare-cncf-matrix.outputs.matrix3 }}
+      job_name: "cncf-batch-3"
+      force_regenerate: ${{ github.event.inputs.force_regenerate || 'false' }}
+      releases_mode: ${{ github.event.inputs.releases_mode || 'recent' }}
+      max_releases: ${{ github.event.inputs.max_releases || '3' }}
+    secrets: inherit
 
   # ===========================================
   # Generate SBOMs for subproject repos (Batch 1)
@@ -541,7 +357,9 @@ jobs:
     needs:
       - prepare-cncf-matrix
       - prepare-discovered-matrix
-      - generate-sbom-cncf
+      - generate-sbom-cncf-1
+      - generate-sbom-cncf-2
+      - generate-sbom-cncf-3
       - generate-sbom-subprojects-1
       - generate-sbom-subprojects-2
       - generate-sbom-subprojects-3
@@ -574,31 +392,27 @@ jobs:
             T=$(echo "$DATA" | jq '
               [ .jobs[]
               | select(
-                  (.name | startswith("generate-sbom-cncf (")) or
-                  (.name | test("^generate-sbom-subprojects-[0-9]+ / generate \\("))
+                  (.name | test("^generate-sbom-(cncf|subprojects)-[0-9]+ / generate \\("))
                 )
               ] | length')
             S=$(echo "$DATA" | jq '
               [ .jobs[]
               | select(
-                  ((.name | startswith("generate-sbom-cncf (")) or
-                   (.name | test("^generate-sbom-subprojects-[0-9]+ / generate \\(")))
+                  (.name | test("^generate-sbom-(cncf|subprojects)-[0-9]+ / generate \\("))
                   and .conclusion == "success"
                 )
               ] | length')
             F=$(echo "$DATA" | jq '
               [ .jobs[]
               | select(
-                  ((.name | startswith("generate-sbom-cncf (")) or
-                   (.name | test("^generate-sbom-subprojects-[0-9]+ / generate \\(")))
+                  (.name | test("^generate-sbom-(cncf|subprojects)-[0-9]+ / generate \\("))
                   and (.conclusion != "success" and .conclusion != "cancelled")
                 )
               ] | length')
             C=$(echo "$DATA" | jq '
               [ .jobs[]
               | select(
-                  ((.name | startswith("generate-sbom-cncf (")) or
-                   (.name | test("^generate-sbom-subprojects-[0-9]+ / generate \\(")))
+                  (.name | test("^generate-sbom-(cncf|subprojects)-[0-9]+ / generate \\("))
                   and .conclusion == "cancelled"
                 )
               ] | length')
@@ -611,8 +425,7 @@ jobs:
             NEW_FAILURES=$(echo "$DATA" | jq -c '
               [ .jobs[]
               | select(
-                  ((.name | startswith("generate-sbom-cncf (")) or
-                   (.name | test("^generate-sbom-subprojects-[0-9]+ / generate \\(")))
+                  (.name | test("^generate-sbom-(cncf|subprojects)-[0-9]+ / generate \\("))
                   and .conclusion != "success"
                 )
               | {

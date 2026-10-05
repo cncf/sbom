@@ -89,7 +89,7 @@ This repository contains **only tooling and configuration** — no SBOM data fil
 │   ├── generate-sbom.yml               # Generate SBOMs and upload to S3
 │   ├── generate-tooling-sbom.yml       # Generate SBOMs for this repo's tooling and CI chain
 │   ├── watch-sandbox-applications.yml  # One-time SBOMs for CNCF sandbox applications
-│   ├── reusable-generate-sbom.yml      # Reusable workflow for subproject batches
+│   ├── reusable-generate-sbom.yml      # Reusable workflow for project and subproject batches
 │   └── migrate-sboms-to-oci.yml        # One-time migration of legacy repo SBOMs to S3
 └── util/
     ├── data/
@@ -147,7 +147,7 @@ Generates SBOMs for CNCF and manually added projects and **uploads them directly
 | `source` | `all`, `cncf`, `manual`, or `discovered` | all |
 
 **How it works:**
-1. Prepares repository matrices from `cncf-projects.yaml`, the manually maintained `repositories.yaml`, and `discovered-repos.yaml`
+1. Prepares repository matrices from `cncf-projects.yaml`, the manually maintained `repositories.yaml`, and `discovered-repos.yaml`, split into batches of at most 200 (projects) / 250 (subprojects) repositories because a GitHub Actions matrix is capped at 256 configurations
 2. Each matrix job downloads Waybill and generates SBOMs using `waybill sbom scan --format spdx-2.3-json`
 3. deps.dev and ClearlyDefined enrichment runs inline (license resolution, dependency graphs)
 4. Every SBOM is post-processed with `util/postprocess-spdx.sh` (see [SBOM post-processing](#sbom-post-processing))

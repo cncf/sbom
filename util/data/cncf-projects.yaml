@@ -23,7 +23,7 @@ repositories:
   - owner: argoproj
     repo: argo-cd
     name: Argo
-    category: gitops
+    category: ci-cd
     project_status: graduated
     accepted_date: "2020-03-26"
   - owner: buildpacks
@@ -65,7 +65,7 @@ repositories:
   - owner: cri-o
     repo: cri-o
     name: CRI-O
-    category: ml-platform
+    category: container-runtime
     project_status: graduated
     accepted_date: "2019-04-08"
   - owner: crossplane
@@ -119,7 +119,7 @@ repositories:
   - owner: fluxcd
     repo: flux2
     name: Flux
-    category: gitops
+    category: ci-cd
     project_status: graduated
     accepted_date: "2019-07-15"
   - owner: goharbor
@@ -437,7 +437,7 @@ repositories:
   - owner: openkruise
     repo: kruise
     name: OpenKruise
-    category: gitops
+    category: ci-cd
     project_status: incubating
     accepted_date: "2020-11-10"
   - owner: openyurtio
@@ -461,7 +461,7 @@ repositories:
   - owner: tektoncd
     repo: pipeline
     name: Tekton
-    category: gitops
+    category: ci-cd
     project_status: incubating
     accepted_date: "2026-03-13"
   - owner: thanos-io
@@ -772,7 +772,7 @@ repositories:
   - owner: interlink-hq
     repo: interLink
     name: Interlink
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2025-03-04"
   - owner: k0sproject
@@ -922,7 +922,7 @@ repositories:
   - owner: kube-burner
     repo: kube-burner
     name: Kube-burner
-    category: gitops
+    category: ci-cd
     project_status: sandbox
     accepted_date: "2023-12-18"
   - owner: kubeovn
@@ -1353,7 +1353,7 @@ repositories:
   - owner: virtual-kubelet
     repo: virtual-kubelet
     name: Virtual Kubelet
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2018-12-04"
   - owner: vscode-kubernetes-tools
@@ -1365,13 +1365,13 @@ repositories:
   - owner: WasmEdge
     repo: WasmEdge
     name: WasmEdge Runtime
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2021-04-28"
   - owner: werf
     repo: werf
     name: werf
-    category: ci-cd
+    category: gitops
     project_status: sandbox
     accepted_date: "2022-12-13"
   - owner: xregistry

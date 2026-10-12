@@ -20,7 +20,7 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain supported package manifests (Go, Cargo, npm, pip, Maven, gem, Dockerfile, etc.).
   auto_generated: true
-  last_updated: "2026-10-05T04:46:07Z"
+  last_updated: "2026-10-12T04:52:01Z"
 repositories:
   - owner: aeraki-mesh
     repo: meta-protocol-proxy
@@ -2767,6 +2767,14 @@ repositories:
     parent_project: containerd
     parent_repo: containerd/containerd
   - owner: containerd
+    repo: ttrpc-rust
+    name: ttrpc-rust
+    category: container-runtime
+    project_status: graduated
+    discovered_by: org-scan from containerd/containerd
+    parent_project: containerd
+    parent_repo: containerd/containerd
+  - owner: containerd
     repo: typeurl
     name: typeurl
     category: ml-platform
@@ -3475,6 +3483,14 @@ repositories:
   - owner: dapr
     repo: dapr-agents
     name: dapr-agents
+    category: build
+    project_status: graduated
+    discovered_by: org-scan from dapr/dapr
+    parent_project: Dapr
+    parent_repo: dapr/dapr
+  - owner: dapr
+    repo: dapr-mcp-server
+    name: dapr-mcp-server
     category: build
     project_status: graduated
     discovered_by: org-scan from dapr/dapr
@@ -8039,6 +8055,14 @@ repositories:
     parent_project: Headlamp
     parent_repo: kubernetes-sigs/headlamp
   - owner: kubernetes-sigs
+    repo: node-ipam-controller
+    name: node-ipam-controller
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kubernetes-sigs/headlamp
+    parent_project: Headlamp
+    parent_repo: kubernetes-sigs/headlamp
+  - owner: kubernetes-sigs
     repo: node-readiness-controller
     name: node-readiness-controller
     category: observability
@@ -10199,6 +10223,14 @@ repositories:
     parent_project: NATS
     parent_repo: nats-io/nats-server
   - owner: nats-io
+    repo: spring-boot-4-nats
+    name: spring-boot-4-nats
+    category: messaging
+    project_status: incubating
+    discovered_by: org-scan from nats-io/nats-server
+    parent_project: NATS
+    parent_repo: nats-io/nats-server
+  - owner: nats-io
     repo: spring-nats
     name: spring-nats
     category: messaging
@@ -11103,6 +11135,14 @@ repositories:
     parent_project: OpenShell
     parent_repo: NVIDIA/OpenShell
   - owner: nvidia
+    repo: cuPhoton
+    name: cuPhoton
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
     repo: cuda-quantum
     name: cuda-quantum
     category: orchestration
@@ -11887,6 +11927,14 @@ repositories:
     parent_project: OpenShell
     parent_repo: NVIDIA/OpenShell
   - owner: nvidia
+    repo: storage-scale-test
+    name: storage-scale-test
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
     repo: structured-data-models
     name: structured-data-models
     category: orchestration
@@ -12503,6 +12551,14 @@ repositories:
     parent_project: OpenTelemetry
     parent_repo: open-telemetry/community
   - owner: open-telemetry
+    repo: opentelemetry-ecosystem-explorer
+    name: opentelemetry-ecosystem-explorer
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from open-telemetry/community
+    parent_project: OpenTelemetry
+    parent_repo: open-telemetry/community
+  - owner: open-telemetry
     repo: opentelemetry-go
     name: opentelemetry-go
     category: observability
@@ -12959,8 +13015,32 @@ repositories:
     parent_project: OpenEverest
     parent_repo: openeverest/openeverest
   - owner: openeverest
+    repo: plugin-bench
+    name: plugin-bench
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openeverest/openeverest
+    parent_project: OpenEverest
+    parent_repo: openeverest/openeverest
+  - owner: openeverest
     repo: plugin-hub
     name: plugin-hub
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openeverest/openeverest
+    parent_project: OpenEverest
+    parent_repo: openeverest/openeverest
+  - owner: openeverest
+    repo: plugin-inspector
+    name: plugin-inspector
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openeverest/openeverest
+    parent_project: OpenEverest
+    parent_repo: openeverest/openeverest
+  - owner: openeverest
+    repo: plugin-metrics
+    name: plugin-metrics
     category: storage
     project_status: sandbox
     discovered_by: org-scan from openeverest/openeverest
@@ -13007,6 +13087,14 @@ repositories:
     parent_project: OpenEverest
     parent_repo: openeverest/openeverest
   - owner: openeverest
+    repo: provider-milvus
+    name: provider-milvus
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openeverest/openeverest
+    parent_project: OpenEverest
+    parent_repo: openeverest/openeverest
+  - owner: openeverest
     repo: provider-percona-postgresql
     name: provider-percona-postgresql
     category: storage
@@ -13023,6 +13111,14 @@ repositories:
     parent_project: OpenEverest
     parent_repo: openeverest/openeverest
   - owner: openeverest
+    repo: provider-percona-server-mysql
+    name: provider-percona-server-mysql
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openeverest/openeverest
+    parent_project: OpenEverest
+    parent_repo: openeverest/openeverest
+  - owner: openeverest
     repo: provider-percona-xtradb-cluster
     name: provider-percona-xtradb-cluster
     category: storage
@@ -13033,6 +13129,14 @@ repositories:
   - owner: openeverest
     repo: provider-sdk
     name: provider-sdk
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openeverest/openeverest
+    parent_project: OpenEverest
+    parent_repo: openeverest/openeverest
+  - owner: openeverest
+    repo: provider-seaweedfs
+    name: provider-seaweedfs
     category: storage
     project_status: sandbox
     discovered_by: org-scan from openeverest/openeverest
@@ -13113,6 +13217,14 @@ repositories:
   - owner: openfga
     repo: language
     name: language
+    category: security
+    project_status: incubating
+    discovered_by: org-scan from openfga/openfga
+    parent_project: OpenFGA
+    parent_repo: openfga/openfga
+  - owner: openfga
+    repo: mapper
+    name: mapper
     category: security
     project_status: incubating
     discovered_by: org-scan from openfga/openfga
@@ -14054,6 +14166,14 @@ repositories:
     discovered_by: org-scan from podman-container-tools/podman
     parent_project: Podman Container Tools
     parent_repo: podman-container-tools/podman
+  - owner: podman-desktop
+    repo: eslint-config
+    name: eslint-config
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from podman-desktop/podman-desktop
+    parent_project: Podman Desktop
+    parent_repo: podman-desktop/podman-desktop
   - owner: podman-desktop
     repo: eslint-plugin
     name: eslint-plugin
@@ -16125,6 +16245,14 @@ repositories:
   - owner: werf
     repo: nelm
     name: nelm
+    category: ci-cd
+    project_status: sandbox
+    discovered_by: org-scan from werf/werf
+    parent_project: werf
+    parent_repo: werf/werf
+  - owner: werf
+    repo: nelm-operator
+    name: nelm-operator
     category: ci-cd
     project_status: sandbox
     discovered_by: org-scan from werf/werf

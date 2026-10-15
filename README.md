@@ -103,6 +103,7 @@ This repository contains **only tooling and configuration** — no SBOM data fil
     ├── sbom-lib.sh                     # Shared folder-slug and parent-project helpers
     ├── postprocess-spdx.sh             # Shared SPDX post-processing applied before every upload
     ├── postprocess-cdx.sh              # Same for imported CycloneDX release assets
+    ├── postprocess-spdx3.sh            # Same for imported SPDX 3 JSON-LD release assets
     ├── migrate-subproject-keys.sh      # Moves subproject SBOMs to the project slug (dry-run by default)
     ├── ingest-sbom-oci.sh              # Script to upload local SBOMs to OCI buckets
     ├── generate-sbom-local.sh          # Local testing script (Linux/macOS)
@@ -152,7 +153,7 @@ Generates SBOMs for CNCF and manually added projects and **uploads them directly
 2. The repository's folder in the bucket is listed once; each release whose `*_spdx.json` object already exists is skipped (unless `force_regenerate`). Monorepo tags like `kustomize/v5.8.3` are stored as version `5.8.3`
 3. SBOMs the project attached to the GitHub release are imported (see [Release-attached SBOMs](#release-attached-sboms)): a project-wide SPDX 2.x asset replaces our own scan, a per-binary one is uploaded next to it as `*_release_spdx.json`
 4. When the release has no project-wide SPDX 2.x asset, Waybill generates one with `waybill sbom scan --format spdx-2.3-json` (deps.dev and ClearlyDefined enrichment inline)
-5. Every SPDX 2.x SBOM is post-processed with `util/postprocess-spdx.sh`, every CycloneDX asset with `util/postprocess-cdx.sh` (see [SBOM post-processing](#sbom-post-processing)); SPDX 3 assets are uploaded as published
+5. Every SPDX 2.x SBOM is post-processed with `util/postprocess-spdx.sh`, every CycloneDX asset with `util/postprocess-cdx.sh`, every SPDX 3 asset with `util/postprocess-spdx3.sh` (see [SBOM post-processing](#sbom-post-processing))
 6. SBOMs are immediately uploaded to the corresponding S3 bucket
 7. Each repository job writes a compact JSON report, and the workflow publishes one consolidated run summary plus a `sbom-generation-report` artifact
 8. No files are committed to the repository
@@ -475,6 +476,7 @@ A thin wrapper around the bash script; needs bash from Git for Windows or WSL.
 bash util/tests/sbom-lib.sh                 # folder slugs for all writers
 bash util/tests/postprocess-spdx.sh         # SPDX post-processing
 bash util/tests/postprocess-cdx.sh          # CycloneDX post-processing
+bash util/tests/postprocess-spdx3.sh        # SPDX 3 post-processing
 bash util/tests/migrate-subproject-keys.sh  # migration plan (stubbed aws, no bucket access)
 bash util/tests/s3-upload.sh
 bash util/tests/prepare-project-matrix.sh
@@ -594,7 +596,11 @@ How assets are picked (`sbom_import_release_assets` in `util/sbom-lib.sh`):
   the CNCF project. The component purl is kept (CycloneDX allows one; the tool's
   `pkg:golang/...` carries ecosystem information). BOMHort derives the SBOM name from
   `metadata.component`, so imported CycloneDX shows up as `<owner>/<repo> <tag>` too.
-- SPDX 3 assets are uploaded as published; no consumer reads them yet.
+- Every imported SPDX 3 JSON-LD document (`_spdx3.json`, `_release_spdx3.json`) goes through
+  `util/postprocess-spdx3.sh`: `SpdxDocument.name` becomes `<owner>/<repo> <tag>`, the root
+  package(s) (`rootElement`, else `describes` targets) get `name`, `software_packageVersion`,
+  git `software_downloadLocation` and a `suppliedBy` Organization agent. BOMHort reads SPDX 3
+  through protobom, which takes the display name from `SpdxDocument.name`.
 
 Known differences and limits of imported SBOMs:
 
@@ -604,7 +610,7 @@ Known differences and limits of imported SBOMs:
 | Scopes | all scopes, flagged via `*_DEPENDENCY_OF` + `waybill:lifecycle-scope` | usually runtime only, no scope flags |
 | Quality annotations | `waybill:graph-completeness` etc. | none |
 | CycloneDX assets | – | root component normalised (name, version, supplier, `vcs` reference); purl stays the tool's, e.g. trivy `pkg:golang/github.com/aquasecurity/trivy@v0.76.0?goos=linux&goarch=amd64`; no `pkg:github` purl |
-| SPDX 3 assets | – | uploaded **as published**, not normalised, not consumed |
+| SPDX 3 assets | – | document name and root package(s) normalised (name, version, `software_downloadLocation`, `suppliedBy`); no purl added |
 | Several components per release (kubevela: `sbom-vela-cli` + `sbom-vela-core`) | one SBOM for the repo | only the largest is kept |
 | Tag-value SPDX (istio `istio-release.spdx`), tarballs (argo-cd `sbom.tar.gz`), XML CycloneDX | – | ignored, Waybill generates |
 
@@ -627,7 +633,7 @@ its own scan. To make sure it is picked up and useful:
    without a described root are dropped and the pipeline scans instead.
 4. **SPDX 2.x or CycloneDX JSON**, both are normalised and consumed. SPDX 2.x gets the
    fuller treatment (`pkg:github` purl, `downloadLocation`) and is the format our own
-   scans use, so prefer it when you have the choice. SPDX 3 is stored but not yet read.
+   scans use, so prefer it when you have the choice. SPDX 3 JSON-LD is accepted and normalised too.
 5. **Include what the scanner cannot see**: `licenseDeclared` as well as
    `licenseConcluded`, checksums per package, and — if your tool supports it — build/test
    dependencies typed as `BUILD_DEPENDENCY_OF` / `TEST_DEPENDENCY_OF` rather than dropped.

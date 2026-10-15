@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
-# Post-processes an SPDX 2.3 JSON document produced by `waybill sbom scan` so
-# that it is self-describing. Every path that writes SBOMs to a bucket calls
+# Post-processes an SPDX 2.x JSON document (a `waybill sbom scan` or a release
+# asset) so that it is self-describing. Every path that writes SBOMs to a bucket calls
 # this script (workflows, generate-sbom-local.sh, ingest-sbom-oci.sh,
 # generate-sandbox-sbom.sh).
 #
@@ -10,6 +10,8 @@
 #
 # Fields written (all other content is left exactly as waybill produced it):
 #   name                    "<owner>/<repo> <tag>"
+#   root name / versionInfo "<owner>/<repo>" / "<tag>" (release assets name a tarball,
+#                           binary or image here)
 #   root downloadLocation   "git+https://github.com/<owner>/<repo>.git@<tag>"
 #   root purl               "pkg:github/<owner>/<repo>@<tag>" (replaces pkg:generic/... and
 #                           earlier pkg:github/... purls; added if the root has none)
@@ -112,7 +114,9 @@ jq --arg owner "$OWNER" --arg repo "$REPO" --arg tag "$TAG" --arg project "$PROJ
   .name = "\($owner)/\($repo) \($tag)"
   | .packages |= map(
       if .SPDXID == $root_id then
-        .downloadLocation = $download
+        .name = "\($owner)/\($repo)"
+        | .versionInfo = $tag
+        | .downloadLocation = $download
         | .supplier = $supplier
         | .externalRefs |= fix_refs
       else . end)

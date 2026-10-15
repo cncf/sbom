@@ -77,3 +77,110 @@ sbom_parent_slug() {
     sbom_legacy_parent_slug "$3" "$4"
   fi
 }
+
+# Prints "spdx" (SPDX 2.x), "spdx3" or "cdx" (CycloneDX) for a JSON SBOM file,
+# nothing when the file is none of these.
+sbom_format_of() {
+  jq -r 'if (.spdxVersion // "" | tostring | startswith("SPDX-2.")) then "spdx"
+         elif (.bomFormat // "") == "CycloneDX" then "cdx"
+         elif (.["@context"] // "" | tostring | test("spdx.org/rdf/3")) then "spdx3"
+         else empty end' "$1" 2>/dev/null
+}
+
+# Pattern of a release asset built for one OS/arch (a binary or image SBOM).
+SBOM_PER_ARCH_RE='linux|darwin|windows|amd64|arm64|aarch64|x86_64|ppc64|s390x|riscv|386'
+
+# Downloads the SBOMs a project attached to a GitHub release. Per format the
+# largest JSON asset (max 100 MB) wins, project-wide ones (name without OS/arch)
+# before per-binary ones. A project-wide asset lands in <base>_{spdx,spdx3,cdx}.json
+# and replaces our own scan; a per-binary one in <base>_release_{spdx,spdx3,cdx}.json
+# next to it. The format is detected by content. A tag without a release is not an
+# error. Needs gh, curl, jq.
+# shortcut: tag-value SPDX (istio), tarballs (argo-cd) and XML CycloneDX are ignored,
+# and only the first 12 candidates are downloaded (otel ships 800+ per-arch SBOMs);
+# add a converter / smarter pick when a project publishes only those.
+# Usage: sbom_import_release_assets <owner> <repo> <tag> <base>
+sbom_import_release_assets() {
+  local owner="$1" repo="$2" tag="$3" base="$4" url file fmt tmp urls name out
+  tmp="$(mktemp -d)"
+  if ! urls="$(gh api "repos/${owner}/${repo}/releases/tags/${tag}" --jq \
+      '.assets | map(select(.size <= 104857600 and (.name | ascii_downcase | test("(spdx|cdx|cyclonedx|bom).*\\.json$"))))
+       | sort_by((.name | ascii_downcase | test("'"$SBOM_PER_ARCH_RE"'")), -.size)
+       | limit(12; .[]) | .browser_download_url' \
+      2>"$tmp/err")"; then
+    grep -q 'HTTP 404' "$tmp/err" || cat "$tmp/err" >&2
+    urls=""
+  fi
+  while IFS= read -r url; do
+    [[ -n "$url" ]] || continue
+    name="${url##*/}"
+    file="$tmp/$name"
+    curl -fsSL --show-error --max-filesize 104857600 "$url" -o "$file" || continue
+    fmt="$(sbom_format_of "$file")"
+    [[ -n "$fmt" ]] || continue
+    out="${base}_${fmt}.json"
+    [[ "${name,,}" =~ $SBOM_PER_ARCH_RE ]] && out="${base}_release_${fmt}.json"
+    # assets come project-wide first, then largest, so the first usable one per format wins
+    [[ -e "${base}_${fmt}.json" || -e "${base}_release_${fmt}.json" ]] && continue
+    mv "$file" "$out" && echo "Using release asset $name as ${out##*/}"
+  done <<<"$urls"
+  rm -rf "$tmp"
+}
+
+# Version of a tag as used in paths and keys: "kustomize/v5.8.3" -> "5.8.3".
+sbom_version_of_tag() {
+  local v="${1##*/}"
+  printf '%s\n' "${v#v}"
+}
+
+# Prints the stable tags of a repo, newest first, one per line. Uses GitHub
+# releases (draft/prerelease excluded; mode "recent" only those published after
+# <since>). Repos without releases fall back to the newest <tag_limit> semver tags.
+# A 404 prints a warning and nothing else; any other API error returns 1.
+# Usage: sbom_stable_tags <owner> <repo> <mode> <since> <tag_limit>
+sbom_stable_tags() {
+  local owner="$1" repo="$2" mode="$3" since="$4" limit="$5" out
+  local pre='[-.](alpha|beta|rc|pre|preview|dev|devel|snapshot|nightly|canary|test|draft|wip)([-.]?[0-9]+)?$'
+  if ! out="$(gh api "repos/${owner}/${repo}/releases?per_page=100" 2>&1)"; then
+    if grep -q '404' <<<"$out"; then
+      echo "::warning::Repository ${owner}/${repo} not found or releases not accessible (404), skipping" >&2
+      return 0
+    fi
+    echo "::error::Failed to fetch releases for ${owner}/${repo}: ${out}" >&2
+    return 1
+  fi
+  if ! jq -e 'type == "array"' <<<"$out" >/dev/null 2>&1; then
+    echo "::error::Unexpected releases response for ${owner}/${repo}: ${out}" >&2
+    return 1
+  fi
+  if [ "$(jq 'length' <<<"$out")" -gt 0 ]; then
+    jq -r --arg since "$since" --arg mode "$mode" \
+      '.[] | select(.draft == false and .prerelease == false and ($mode != "recent" or .published_at >= $since)) | .tag_name' <<<"$out" |
+      grep -viE "$pre" || true
+    return 0
+  fi
+  if ! out="$(gh api "repos/${owner}/${repo}/tags?per_page=100" 2>&1)"; then
+    grep -q '404' <<<"$out" && return 0
+    echo "::error::Failed to fetch tags for ${owner}/${repo}: ${out}" >&2
+    return 1
+  fi
+  jq -r '.[].name' <<<"$out" | grep -E '^(.*/)?v?[0-9]+\.[0-9]+' | grep -viE "$pre" | head -n "$limit" || true
+}
+
+# Waybill scan with the flags all repo SBOMs use.
+# ClearlyDefined is opt-in since waybill 0.10 (fills licenseConcluded). go-mod-why is
+# off because with a Go toolchain on the runner it misclassifies multi-workspace repos
+# (flux2: 4 runtime deps left); build/test deps are still typed via *_DEPENDENCY_OF
+# relationships and waybill:lifecycle-scope annotations.
+# Usage: sbom_waybill_scan <owner> <repo> <tag> <src_dir> <out_file>
+sbom_waybill_scan() {
+  waybill sbom scan \
+    --path "$4" \
+    --format spdx-2.3-json \
+    --clearly-defined --no-go-mod-why \
+    --root-name "$1/$2" \
+    --root-version "$3" \
+    --repo "https://github.com/$1/$2.git" \
+    --git-ref "$3" \
+    --output "$5"
+}

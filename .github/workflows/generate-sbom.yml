@@ -3,7 +3,7 @@ name: Generate SBOM for CNCF Projects
 on:
   schedule:
     # Run weekly on Sunday at 02:00 UTC
-    - cron: '0 2 * * 0'
+    - cron: '0 2 * * *'
   workflow_dispatch:
     inputs:
       project_filter:
@@ -167,7 +167,8 @@ jobs:
           
           MAX_SUPPORTED=$((BATCH_SIZE * MAX_BATCHES))
           if [ "$TOTAL" -gt "$MAX_SUPPORTED" ]; then
-            echo "::warning::Found $TOTAL repos but only $MAX_SUPPORTED can be processed (max $MAX_BATCHES batches of $BATCH_SIZE). Consider increasing MAX_BATCHES."
+            echo "::error::Found $TOTAL repos but only $MAX_SUPPORTED can be processed (max $MAX_BATCHES batches of $BATCH_SIZE). Add a generate-sbom-subprojects-N job and increase MAX_BATCHES."
+            exit 1
           fi
           
           # Split into batches

@@ -71,14 +71,11 @@ for version in 2.19.1 2.19.2; do
   done
 done
 
-for scenario in project reusable-project subproject; do
+WORKFLOW="$ROOT_DIR/.github/workflows/reusable-generate-sbom.yml"
+for scenario in project subproject; do
   export SBOM_PATH_PREFIX=""
   EXPECTED_BUCKET="$PROJECT_BUCKET"
   EXPECTED_KEY_PREFIX="omnitrust-ilm/"
-  WORKFLOW="$ROOT_DIR/.github/workflows/generate-sbom.yml"
-  if [[ "$scenario" != project ]]; then
-    WORKFLOW="$ROOT_DIR/.github/workflows/reusable-generate-sbom.yml"
-  fi
   if [[ "$scenario" == subproject ]]; then
     SBOM_PATH_PREFIX="subprojects"
     EXPECTED_BUCKET="$SUBPROJECT_BUCKET"

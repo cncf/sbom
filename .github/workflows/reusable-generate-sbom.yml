@@ -173,7 +173,7 @@ jobs:
             # A per-binary release SBOM is uploaded next to our scan, never instead of it.
             # Imported documents that cannot be normalised are dropped.
             local f FMT
-            for f in "${BASE}_release_spdx.json" "${BASE}_cdx.json" "${BASE}_release_cdx.json"; do
+            for f in "${BASE}_release_spdx.json" "${BASE}_cdx.json" "${BASE}_release_cdx.json" "${BASE}_spdx3.json" "${BASE}_release_spdx3.json"; do
               [ -f "$f" ] || continue
               FMT="${f##*_}"; FMT="${FMT%.json}"  # spdx | cdx
               bash "util/postprocess-${FMT}.sh" --owner "$OWNER" --repo "$REPO" --tag "$TAG" --project "$SUPPLIER_PROJECT" "$f" || rm -f "$f"

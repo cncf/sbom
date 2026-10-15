@@ -28,7 +28,7 @@ The SBOM generator:
 - Fetches stable releases (major, minor, patch) from CNCF project repositories
 - Supports **all ecosystems** with lockfile-aware dependency graph extraction (Go, Rust, npm, Python, Maven, Ruby, etc.)
 - Skips alpha, beta, RC, and other pre-release versions
-- Generates SPDX 2.3-compliant SBOM files using [Waybill](https://github.com/kusari-oss/waybill) (v0.9.0)
+- Generates SPDX 2.3-compliant SBOM files using [Waybill](https://github.com/kusari-oss/waybill) (v0.10.0)
 - Automatically enriches SBOMs with license information via [deps.dev](https://deps.dev) and [ClearlyDefined](https://clearlydefined.io)
 - Extracts real dependency graph edges (not a flat fan-out) from lockfiles
 - **Uploads SBOMs directly to OCI S3-compatible buckets** (no SBOM files are stored in this repository)
@@ -135,25 +135,26 @@ This workflow finds subproject repositories that:
 
 Generates SBOMs for CNCF and manually added projects and **uploads them directly to OCI S3 buckets**.
 
-- **Scheduled**: Weekly on Sunday at 02:00 UTC (processes only releases from the past week)
+- **Scheduled**: Daily at 02:00 UTC (releases from the past 60 days that are not yet in the bucket; a failed run is caught up by the next one)
 - **Manual trigger**: Via workflow_dispatch with optional filters
 
 | Input | Description | Default |
 |-------|-------------|---------|
 | `project_filter` | Filter by owner/repo (e.g., "coredns/coredns") | empty (all projects) |
 | `force_regenerate` | Force regenerate existing SBOMs | false |
-| `releases_mode` | `recent` (past week) or `latest` (N latest releases) | recent |
+| `releases_mode` | `recent` (past 60 days) or `latest` (N latest releases) | recent |
 | `max_releases` | Max releases per repo (only for `latest` mode) | 3 |
 | `source` | `all`, `cncf`, `manual`, or `discovered` | all |
 
 **How it works:**
-1. Prepares repository matrices from `cncf-projects.yaml`, the manually maintained `repositories.yaml`, and `discovered-repos.yaml`, split into batches of at most 200 (projects) / 250 (subprojects) repositories because a GitHub Actions matrix is capped at 256 configurations
-2. Each matrix job downloads Waybill and generates SBOMs using `waybill sbom scan --format spdx-2.3-json`
-3. deps.dev and ClearlyDefined enrichment runs inline (license resolution, dependency graphs)
-4. Every SBOM is post-processed with `util/postprocess-spdx.sh` (see [SBOM post-processing](#sbom-post-processing))
-5. Generated SBOMs are immediately uploaded to the corresponding S3 bucket
-6. Each repository job writes a compact JSON report, and the workflow publishes one consolidated run summary plus a `sbom-generation-report` artifact
-7. No files are committed to the repository
+1. Prepares repository matrices from `cncf-projects.yaml`, the manually maintained `repositories.yaml`, and `discovered-repos.yaml`, split into batches of at most 200 (projects) / 250 (subprojects) repositories because a GitHub Actions matrix is capped at 256 configurations; all batches run `reusable-generate-sbom.yml`
+2. The repository's folder in the bucket is listed once; each release whose `*_spdx.json` object already exists is skipped (unless `force_regenerate`). Monorepo tags like `kustomize/v5.8.3` are stored as version `5.8.3`
+3. SBOMs the project attached to the GitHub release are imported (see [Release-attached SBOMs](#release-attached-sboms)): a project-wide SPDX 2.x asset replaces our own scan, a per-binary one is uploaded next to it as `*_release_spdx.json`
+4. When the release has no project-wide SPDX 2.x asset, Waybill generates one with `waybill sbom scan --format spdx-2.3-json` (deps.dev and ClearlyDefined enrichment inline)
+5. Every SPDX 2.x SBOM is post-processed with `util/postprocess-spdx.sh` (see [SBOM post-processing](#sbom-post-processing)); SPDX 3 and CycloneDX assets are uploaded as published
+6. SBOMs are immediately uploaded to the corresponding S3 bucket
+7. Each repository job writes a compact JSON report, and the workflow publishes one consolidated run summary plus a `sbom-generation-report` artifact
+8. No files are committed to the repository
 
 #### Adding a project manually
 
@@ -418,8 +419,10 @@ Generates the repository's own tooling SBOM plus a second SPDX document for the 
 ### Bash Script (Linux/macOS/WSL)
 
 The script reads the same repository lists as the scheduled workflow
-(`cncf-projects.yaml`, `repositories.yaml`, `discovered-repos.yaml`) and applies the
-same post-processing. A cached Waybill in `.local/bin` is replaced if it is not
+(`cncf-projects.yaml`, `repositories.yaml`, `discovered-repos.yaml`) and shares its
+release selection, release-asset import, Waybill flags and post-processing via
+`util/sbom-lib.sh`. Unlike the workflow it skips releases that already exist as a
+local file, not in the bucket. A cached Waybill in `.local/bin` is replaced if it is not
 `WAYBILL_VERSION`.
 
 ```bash
@@ -441,6 +444,8 @@ MAX_RELEASES=5 ./util/generate-sbom-local.sh
 
 ### PowerShell Script (Windows)
 
+A thin wrapper around the bash script; needs bash from Git for Windows or WSL.
+
 ```powershell
 # Process all projects
 .\util\generate-sbom-local.ps1
@@ -461,7 +466,7 @@ MAX_RELEASES=5 ./util/generate-sbom-local.sh
 |----------|-------------|
 | `GH_TOKEN` or `GITHUB_TOKEN` | GitHub token for API access (recommended for higher rate limits) |
 | `MAX_RELEASES` | Maximum releases to process per repo (default: 3, bash only) |
-| `WAYBILL_VERSION` | Waybill release version to use (default: v0.9.0) |
+| `WAYBILL_VERSION` | Waybill release version to use (default: v0.10.0) |
 
 ### Tests
 
@@ -504,20 +509,26 @@ The generator only processes stable releases:
 - Snapshots, nightly, canary builds
 - Draft releases
 
+The pre-release check only matches at the end of the tag (`v1.0.0-rc.1`, `v2-preview`), so
+names like `chart-test-tools-1.0.0` stay in. Repositories without GitHub releases fall back
+to their newest semver tags. At most the newest 100 releases of a repository are inspected.
+
 ## SBOM Format
 
 Generated SBOMs are in SPDX 2.3 JSON format, containing:
 - Package information with real dependency relationships (not flat fan-out)
 - SHA-256 content hashes on every component
-- License information enriched via deps.dev and ClearlyDefined
+- License information enriched via deps.dev (`licenseDeclared`) and ClearlyDefined (`licenseConcluded`; opt-in flag `--clearly-defined` since Waybill 0.10)
 - Dependency relationships extracted from lockfiles (go.sum, Cargo.lock, package-lock.json, etc.)
+- All lifecycle scopes are kept; build/dev/test-only dependencies are flagged, not dropped: typed `BUILD_DEPENDENCY_OF` / `DEV_DEPENDENCY_OF` / `TEST_DEPENDENCY_OF` relationships plus a `waybill:lifecycle-scope` annotation on the package. Filter with `--exclude-scope` in Waybill or by relationship type downstream
+- Document-level quality annotations (`waybill:graph-completeness`, `waybill:go-transitive-coverage`, `waybill:unresolved-declared-dep-count`) say what the scanner could not determine
 - Per-component evidence blocks with confidence scoring
 
 ### Example SBOM Metadata
 
 Each SBOM includes:
 - SPDX 2.3 document information
-- Creator: `Tool: waybill-0.9.0`, plus the scanned source (`source: git:https://github.com/<owner>/<repo>.git#<tag>`)
+- Creator: `Tool: waybill-0.10.0`, plus the scanned source (`source: git:https://github.com/<owner>/<repo>.git#<tag>`)
 - Scope annotation (manifest vs artifact SBOM)
 - Per-component `waybill:sbom-tier` annotations (source, deployed, analyzed, etc.)
 
@@ -535,15 +546,91 @@ project name, and guarantees:
 | root package `downloadLocation` | `git+https://github.com/<owner>/<repo>.git@<tag>` | `git+https://github.com/kagent-dev/kagent.git@v0.10.0` |
 | root package purl | `pkg:github/<owner>/<repo>@<tag>` (owner/repo lowercased, tag percent-encoded); replaces Waybill's `pkg:generic/<owner>%2F<repo>` purl | `pkg:github/kagent-dev/kagent@v0.10.0` |
 | root package `supplier` | `Organization: <project>`, for subprojects the parent project; `NOASSERTION` if no project is known, never the SBOM tool | `Organization: Argo` |
+| root package `name` / `versionInfo` | `<owner>/<repo>` / `<tag>` (release assets otherwise name a tarball, binary or image here, e.g. `flux_2.9.6_source_code.tar.gz` / `sha256:…`) | `kagent-dev/kagent` / `v0.10.0` |
 
 The root package is the one the document `DESCRIBES`. A project name containing
 parentheses gets an empty contact, e.g. `Organization: Open Policy Agent (OPA) ()`,
 because SPDX tools otherwise read `(OPA)` as an e-mail address. `documentNamespace`
 is not changed and stays unique per document; everything else (packages,
-relationships, creators, annotations) is left as Waybill produced it. The script is
+relationships, creators, annotations) is left as Waybill or the project's tool produced it. The script is
 idempotent and can also be run on already published documents
 (`util/postprocess-spdx.sh --project <name> <file>`; owner, repo and tag are then
 taken from the root package).
+
+### Release-attached SBOMs
+
+Many projects ship SBOMs with their GitHub release. Those are imported instead of or in
+addition to our own Waybill scan. **Consumers must key on the fields the post-processing
+guarantees (document `name`, root purl `pkg:github/<owner>/<repo>@<tag>`, root
+`downloadLocation`, root `name`/`versionInfo`, `supplier`) and on the bucket key — never
+on `creationInfo.creators`, `documentNamespace` or package counts, which differ by tool.**
+
+How assets are picked (`sbom_import_release_assets` in `util/sbom-lib.sh`):
+
+- Candidates are JSON assets up to 100 MB whose name contains `spdx`, `cdx`, `cyclonedx` or
+  `bom`. At most 12 are downloaded, project-wide names first, then by size. The format is
+  detected from the content, not the name: SPDX 2.x, SPDX 3 (`@context` with
+  `spdx.org/rdf/3`), CycloneDX (`bomFormat`).
+- **Project-wide asset** (name without an OS/arch token such as `linux`, `amd64`, `arm64`,
+  `windows`): stored as `<slug>_<ver>_spdx.json` / `_spdx3.json` / `_cdx.json`. For SPDX 2.x
+  this *replaces* the Waybill scan. Examples: `flux_2.9.6_sbom.spdx.json` (syft over the
+  source tarball), `k6-v1.8.2-spdx.json`, trivy's `bom.json` (CycloneDX).
+- **Per-binary / per-image asset** (e.g. `cosign-linux-amd64_3.1.3_linux_amd64.sbom.json`,
+  `otelcol-contrib_…_linux_arm64.tar.gz.sbom.json`, `kubectl-vela-…-linux-amd64.spdx.sbom.json`):
+  the largest one is stored as `<slug>_<ver>_release_spdx.json` (or `_release_cdx.json`,
+  `_release_spdx3.json`) **next to** the Waybill scan, which still runs. Such SBOMs
+  describe one build for one platform: runtime modules only, no build/test scopes, no
+  source-tree view. They are useful as the project's own statement, not as the project SBOM.
+- Every imported SPDX 2.x document (`_spdx.json` and `_release_spdx.json`) goes through
+  `util/postprocess-spdx.sh`, so the root package is `<owner>/<repo>` at `<tag>` with a
+  `pkg:github` purl, git `downloadLocation` and the CNCF project as supplier. If the asset
+  is not a valid SPDX 2.x document with a `DESCRIBES` root, it is dropped and Waybill
+  generates instead.
+
+Known differences and limits of imported SBOMs:
+
+| Topic | Waybill scan | Imported release SBOM |
+|-------|--------------|-----------------------|
+| Licenses | `licenseDeclared` from deps.dev, `licenseConcluded` from ClearlyDefined | depends on the tool; syft sets `licenseConcluded`, usually no `licenseDeclared` |
+| Scopes | all scopes, flagged via `*_DEPENDENCY_OF` + `waybill:lifecycle-scope` | usually runtime only, no scope flags |
+| Quality annotations | `waybill:graph-completeness` etc. | none |
+| CycloneDX / SPDX 3 assets | – | uploaded **as published**: no `pkg:github` root purl, no supplier normalisation (trivy's root is `pkg:golang/github.com/aquasecurity/trivy@v0.76.0?goos=linux&goarch=amd64`) |
+| Several components per release (kubevela: `sbom-vela-cli` + `sbom-vela-core`) | one SBOM for the repo | only the largest is kept |
+| Tag-value SPDX (istio `istio-release.spdx`), tarballs (argo-cd `sbom.tar.gz`), XML CycloneDX | – | ignored, Waybill generates |
+
+### Best practice for projects publishing their own SBOM
+
+If your project attaches an SBOM to its GitHub release, this pipeline prefers it over
+its own scan. To make sure it is picked up and useful:
+
+1. **Publish one project-wide SPDX 2.3 JSON document** that describes the release as a
+   whole (source tree or source tarball), e.g. `<project>_<version>_sbom.spdx.json`.
+   Per-binary SBOMs (`…_linux_amd64.sbom.json`) are welcome in addition, but they are
+   stored as `*_release_spdx.json` and do not replace the generated project SBOM.
+2. **Name the asset so it is recognised**: the name must contain `spdx`, `cdx`,
+   `cyclonedx` or `bom` and end in `.json`. `sbom.tar.gz`, tag-value `.spdx` and XML are
+   ignored. Keep the project-wide asset free of OS/arch tokens (`linux`, `darwin`,
+   `windows`, `amd64`, `arm64`, `x86_64`, …) — that is how it is told apart from
+   per-binary files.
+3. **Keep it under 100 MB** and make it valid JSON with a `DESCRIBES` root
+   (`documentDescribes` or a `SPDXRef-DOCUMENT DESCRIBES …` relationship). Documents
+   without a described root are dropped and the pipeline scans instead.
+4. **Prefer SPDX 2.x over CycloneDX** for now: SPDX 2.x is post-processed (root name,
+   `pkg:github` purl, `downloadLocation`, supplier) and read by downstream consumers;
+   CycloneDX and SPDX 3 are uploaded as published and currently not consumed.
+5. **Include what the scanner cannot see**: `licenseDeclared` as well as
+   `licenseConcluded`, checksums per package, and — if your tool supports it — build/test
+   dependencies typed as `BUILD_DEPENDENCY_OF` / `TEST_DEPENDENCY_OF` rather than dropped.
+   A source-tree scan (`syft dir:.`, `waybill sbom scan --path .`) gives a fuller picture
+   than a scan of the shipped binary.
+6. **One SBOM per release, not per component**, or at least one that covers the whole
+   repository. If a release contains several components (CLI, controller, images), only
+   the largest project-wide document is imported.
+7. **Attach it to the GitHub release of the tag**, not only to a container registry or a
+   separate `-sbom` release; the importer looks at `releases/tags/<tag>` only.
+
+Good examples today: `fluxcd/flux2` (`flux_<version>_sbom.spdx.json`, syft over the source
+tarball) and `grafana/k6` (`k6-<version>-spdx.json`).
 
 ## Troubleshooting
 
@@ -562,8 +649,8 @@ Waybill is a precompiled binary — no build step required:
 ./util/generate-sbom-local.sh
 
 # Or install manually
-curl -sL https://github.com/kusari-oss/waybill/releases/download/v0.9.0/waybill-v0.9.0-x86_64-unknown-linux-gnu.tar.gz | tar xz
-sudo cp waybill-v0.9.0-x86_64-unknown-linux-gnu/waybill /usr/local/bin/
+curl -sL https://github.com/kusari-oss/waybill/releases/download/v0.10.0/waybill-v0.10.0-x86_64-unknown-linux-gnu.tar.gz | tar xz
+sudo cp waybill-v0.10.0-x86_64-unknown-linux-gnu/waybill /usr/local/bin/
 ```
 
 ### Clone Failures

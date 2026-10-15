@@ -6,6 +6,7 @@
 # Prerequisites:
 #   - git
 #   - gh CLI (GitHub CLI) - for API access
+#   - curl
 #   - jq
 #   - yq (https://github.com/mikefarah/yq)
 #   - Waybill (https://github.com/kusari-oss/waybill)
@@ -22,12 +23,13 @@
 #                   (sbom/<project>/<repo>/<version>/...)
 #   discovered   -> util/data/discovered-repos.yaml
 #                   (sbom/subprojects/<owner>/<repo>/<version>/...)
-# Every SBOM is post-processed with util/postprocess-spdx.sh, as in CI.
+# As in CI, SBOMs attached to the GitHub release are imported instead of generated,
+# and every SPDX 2 SBOM is post-processed with util/postprocess-spdx.sh.
 #
 # Environment variables:
 #   GH_TOKEN or GITHUB_TOKEN - GitHub token for API access
 #   MAX_RELEASES - Maximum releases to process per repo (default: 3)
-#   WAYBILL_VERSION - Waybill release version (default: v0.9.0)
+#   WAYBILL_VERSION - Waybill release version (default: v0.10.0)
 #
 
 set -e
@@ -36,7 +38,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 DISCOVERED_FILE="$ROOT_DIR/util/data/discovered-repos.yaml"
 SBOM_BASE_DIR="$ROOT_DIR/sbom"
-WAYBILL_VERSION="${WAYBILL_VERSION:-v0.9.0}"
+WAYBILL_VERSION="${WAYBILL_VERSION:-v0.10.0}"
 
 # shellcheck source=util/sbom-lib.sh
 source "$SCRIPT_DIR/sbom-lib.sh"
@@ -204,16 +206,18 @@ generate_sbom() {
 
   local SANITIZED_PROJECT
   SANITIZED_PROJECT=$(sbom_slugify "$PROJECT_NAME")
-  local VERSION="${TAG#v}"
+  local VERSION
+  VERSION=$(sbom_version_of_tag "$TAG")
   local FILENAME_VERSION="${VERSION//./_}"
-  local SBOM_DIR SBOM_FILE
+  local SBOM_DIR BASE
   if [ "$KIND" = "subproject" ]; then
     SBOM_DIR="${SBOM_BASE_DIR}/subprojects/${OWNER}/${REPO}/${VERSION}"
-    SBOM_FILE="${SBOM_DIR}/${REPO}_${FILENAME_VERSION}_spdx.json"
+    BASE="${SBOM_DIR}/${REPO}_${FILENAME_VERSION}"
   else
     SBOM_DIR="${SBOM_BASE_DIR}/${SANITIZED_PROJECT}/${REPO}/${VERSION}"
-    SBOM_FILE="${SBOM_DIR}/${SANITIZED_PROJECT}_${FILENAME_VERSION}_spdx.json"
+    BASE="${SBOM_DIR}/${SANITIZED_PROJECT}_${FILENAME_VERSION}"
   fi
+  local SBOM_FILE="${BASE}_spdx.json"
 
   # Check if SBOM already exists
   if [ -f "$SBOM_FILE" ] && [ "$FORCE_REGENERATE" != "true" ]; then
@@ -221,11 +225,28 @@ generate_sbom() {
     return 1
   fi
 
+  mkdir -p "$SBOM_DIR"
+  sbom_import_release_assets "$OWNER" "$REPO" "$TAG" "$BASE"
+  # A per-binary release SBOM is kept next to our scan, never instead of it.
+  if [ -f "${BASE}_release_spdx.json" ] && ! bash "$SCRIPT_DIR/postprocess-spdx.sh" --owner "$OWNER" --repo "$REPO" \
+      --tag "$TAG" --project "$SUPPLIER_PROJECT" "${BASE}_release_spdx.json"; then
+    rm -f "${BASE}_release_spdx.json"
+  fi
+  if [ -f "$SBOM_FILE" ]; then
+    if bash "$SCRIPT_DIR/postprocess-spdx.sh" --owner "$OWNER" --repo "$REPO" --tag "$TAG" \
+      --project "$SUPPLIER_PROJECT" "$SBOM_FILE"; then
+      echo "  Successfully imported SBOM: $SBOM_FILE"
+      return 0
+    fi
+    echo "  Release SPDX asset unusable, generating instead"
+    rm -f "$SBOM_FILE"
+  fi
+
   echo "  Generating SBOM for $OWNER/$REPO@$TAG..."
 
   # Clone the repository at specific tag
-  local TEMP_DIR=$(mktemp -d)
-  trap "rm -rf '$TEMP_DIR'" EXIT
+  local TEMP_DIR
+  TEMP_DIR=$(mktemp -d)
 
   if ! git clone --depth 1 --branch "$TAG" "https://github.com/${OWNER}/${REPO}.git" "$TEMP_DIR" 2>/dev/null; then
     echo "  Failed to clone $OWNER/$REPO@$TAG, skipping..."
@@ -233,32 +254,16 @@ generate_sbom() {
     return 1
   fi
 
-  # Create output directory
-  mkdir -p "$SBOM_DIR"
-
-  # Generate SBOM with Waybill (SPDX 2.3 + deps.dev enrichment)
-  if waybill sbom scan \
-    --path "$TEMP_DIR" \
-    --format spdx-2.3-json \
-    --root-name "${OWNER}/${REPO}" \
-    --root-version "$TAG" \
-    --repo "https://github.com/${OWNER}/${REPO}.git" \
-    --git-ref "$TAG" \
-    --output "$SBOM_FILE" \
-    2>/dev/null; then
-    if ! bash "$SCRIPT_DIR/postprocess-spdx.sh" --owner "$OWNER" --repo "$REPO" --tag "$TAG" \
-      --project "$SUPPLIER_PROJECT" "$SBOM_FILE"; then
-      rm -rf "$TEMP_DIR"
-      return 1
-    fi
+  if sbom_waybill_scan "$OWNER" "$REPO" "$TAG" "$TEMP_DIR" "$SBOM_FILE" 2>/dev/null &&
+     bash "$SCRIPT_DIR/postprocess-spdx.sh" --owner "$OWNER" --repo "$REPO" --tag "$TAG" \
+       --project "$SUPPLIER_PROJECT" "$SBOM_FILE"; then
     echo "  Successfully generated SBOM: $SBOM_FILE"
     rm -rf "$TEMP_DIR"
     return 0
-  else
-    echo "  Failed to generate SBOM for $OWNER/$REPO@$TAG"
-    rm -rf "$TEMP_DIR"
-    return 1
   fi
+  echo "  Failed to generate SBOM for $OWNER/$REPO@$TAG"
+  rm -rf "$TEMP_DIR" "$SBOM_FILE"
+  return 1
 }
 
 # Process a single repository
@@ -280,64 +285,22 @@ process_repository() {
     return 0
   fi
 
-  # Get releases from GitHub API
-  local RELEASES
-  RELEASES=$(gh api "repos/${OWNER}/${REPO}/releases" --paginate -q '.[0:50]' 2>/dev/null || echo "[]")
-
-  if [ "$RELEASES" == "[]" ] || [ -z "$RELEASES" ]; then
-    echo "No releases found, trying tags..."
-    local TAGS
-    TAGS=$(gh api "repos/${OWNER}/${REPO}/tags" --paginate -q '.[0:20] | .[].name' 2>/dev/null || echo "")
-
-    if [ -z "$TAGS" ]; then
-      echo "No tags found, skipping..."
-      return 0
-    fi
-
-    # Process tags as releases
-    for TAG in $TAGS; do
-      # Filter out pre-releases
-      if echo "$TAG" | grep -qiE '[-\.](alpha|beta|rc|pre|dev|snapshot|nightly|canary|test|draft|wip)[0-9]*'; then
-        echo "  Skipping pre-release tag: $TAG"
-        continue
-      fi
-
-      # Only process semver-like tags
-      if ! echo "$TAG" | grep -qE '^v?[0-9]+\.[0-9]+'; then
-        echo "  Skipping non-semver tag: $TAG"
-        continue
-      fi
-
-      if generate_sbom "$OWNER" "$REPO" "$PROJECT_NAME" "$TAG" "$KIND" "$SUPPLIER_PROJECT"; then
-        PROCESSED=$((PROCESSED + 1))
-      fi
-
-      if [ "$PROCESSED" -ge "$MAX_RELEASES" ]; then
-        echo "  Processed $MAX_RELEASES releases, stopping..."
-        break
-      fi
-    done
-  else
-    # Process releases - filter stable releases
-    readarray -t RELEASE_TAGS < <(echo "$RELEASES" | jq -r '.[] | select(.draft == false and .prerelease == false) | .tag_name')
-
-    for TAG in "${RELEASE_TAGS[@]}"; do
-      # Additional filter for pre-release patterns
-      if echo "$TAG" | grep -qiE '[-\.](alpha|beta|rc|pre|dev|snapshot|nightly|canary|test|draft|wip)[0-9]*'; then
-        echo "  Skipping pre-release tag: $TAG"
-        continue
-      fi
-
-      if generate_sbom "$OWNER" "$REPO" "$PROJECT_NAME" "$TAG" "$KIND" "$SUPPLIER_PROJECT"; then
-        PROCESSED=$((PROCESSED + 1))
-      fi
-
-      if [ "$PROCESSED" -ge "$MAX_RELEASES" ]; then
-        echo "  Processed $MAX_RELEASES releases, stopping..."
-        break
-      fi
-    done
+  local TAGS
+  readarray -t TAGS < <(sbom_stable_tags "$OWNER" "$REPO" all "" "$MAX_RELEASES")
+  if [ "${#TAGS[@]}" -eq 0 ]; then
+    echo "No stable releases or tags found, skipping..."
+    return 0
   fi
+
+  for TAG in "${TAGS[@]}"; do
+    if generate_sbom "$OWNER" "$REPO" "$PROJECT_NAME" "$TAG" "$KIND" "$SUPPLIER_PROJECT"; then
+      PROCESSED=$((PROCESSED + 1))
+    fi
+    if [ "$PROCESSED" -ge "$MAX_RELEASES" ]; then
+      echo "  Processed $MAX_RELEASES releases, stopping..."
+      break
+    fi
+  done
 
   echo "Processed $PROCESSED releases for $OWNER/$REPO"
 }

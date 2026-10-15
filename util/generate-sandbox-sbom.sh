@@ -34,6 +34,7 @@ fi
 waybill sbom scan \
   --path "$work_dir/checkout" \
   --format spdx-2.3-json \
+  --clearly-defined --no-go-mod-why \
   --root-name "$repository" \
   --root-version "$version" \
   --repo "https://github.com/${repository}.git" \

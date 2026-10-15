@@ -228,10 +228,13 @@ generate_sbom() {
   mkdir -p "$SBOM_DIR"
   sbom_import_release_assets "$OWNER" "$REPO" "$TAG" "$BASE"
   # A per-binary release SBOM is kept next to our scan, never instead of it.
-  if [ -f "${BASE}_release_spdx.json" ] && ! bash "$SCRIPT_DIR/postprocess-spdx.sh" --owner "$OWNER" --repo "$REPO" \
-      --tag "$TAG" --project "$SUPPLIER_PROJECT" "${BASE}_release_spdx.json"; then
-    rm -f "${BASE}_release_spdx.json"
-  fi
+  # Imported documents that cannot be normalised are dropped.
+  local f FMT
+  for f in "${BASE}_release_spdx.json" "${BASE}_cdx.json" "${BASE}_release_cdx.json"; do
+    [ -f "$f" ] || continue
+    FMT="${f##*_}"; FMT="${FMT%.json}"  # spdx | cdx
+    bash "$SCRIPT_DIR/postprocess-${FMT}.sh" --owner "$OWNER" --repo "$REPO" --tag "$TAG" --project "$SUPPLIER_PROJECT" "$f" || rm -f "$f"
+  done
   if [ -f "$SBOM_FILE" ]; then
     if bash "$SCRIPT_DIR/postprocess-spdx.sh" --owner "$OWNER" --repo "$REPO" --tag "$TAG" \
       --project "$SUPPLIER_PROJECT" "$SBOM_FILE"; then

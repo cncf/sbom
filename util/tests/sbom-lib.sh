@@ -168,6 +168,8 @@ SINCE="2026-09-01T00:00:00Z"
 # shellcheck disable=SC2317
 gh() {
   case "$2" in
+    repos/example/tool/releases/tags/chart-test-tools-1.0.0)
+      jq -r "$4" <<<"{\"assets\":[$(asset bom.json 20)]}" ;;
     */releases/tags/*) echo "gh: Not Found (HTTP 404)" >&2; return 1 ;;
     repos/example/tool/releases*) echo '[
       {"tag_name":"v2.0.0-rc1","draft":false,"prerelease":false,"published_at":"2026-10-10T00:00:00Z"},
@@ -197,7 +199,8 @@ git() { mkdir -p "${@: -1}"; }
 waybill() {
   while [[ $# -gt 0 ]]; do [[ "$1" == --output ]] && cp "$ROOT_DIR/util/tests/data/kagent-v0.10.0-waybill.spdx.json" "$2"; shift; done
 }
-export -f aws git waybill
+export -f aws git waybill asset
+export TEMP_DIR
 export ROOT_DIR
 run_generate() {
   rm -rf "$TEMP_DIR/sbom"
@@ -207,7 +210,10 @@ run_generate() {
       FORCE_REGENERATE=false RELEASES_MODE=recent MAX_RELEASES=3 bash) >"$TEMP_DIR/generate.log" 2>&1
   (cd "$TEMP_DIR/sbom" && find . -type f | LC_ALL=C sort | tr '\n' ' ')
 }
-[[ "$(run_generate tool)" == "./example/tool/chart-test-tools-1.0.0/tool_chart-test-tools-1_0_0_spdx.json " ]]   # v2.0.0 is in the bucket
+# v2.0.0 is in the bucket; the release ships only a CycloneDX asset, so Waybill scans and the CDX is normalised next to it.
+[[ "$(run_generate tool)" == "./example/tool/chart-test-tools-1.0.0/tool_chart-test-tools-1_0_0_cdx.json ./example/tool/chart-test-tools-1.0.0/tool_chart-test-tools-1_0_0_spdx.json " ]]
+[[ "$(jq -r '.metadata.component.name + " " + .metadata.component.version + " " + .metadata.supplier.name' \
+  "$TEMP_DIR/sbom/example/tool/chart-test-tools-1.0.0/tool_chart-test-tools-1_0_0_cdx.json")" == "example/tool chart-test-tools-1.0.0 Example" ]]
 grep -q 'example/tool@v2.0.0 already in bucket' "$TEMP_DIR/generate.log"
 grep -q '^processed=1$' "$GITHUB_OUTPUT"
 [[ "$(run_generate tagsonly)" == "./example/tagsonly/5.6.0/tagsonly_5_6_0_spdx.json ./example/tagsonly/5.7.0/tagsonly_5_7_0_spdx.json ./example/tagsonly/5.8.3/tagsonly_5_8_3_spdx.json " ]]

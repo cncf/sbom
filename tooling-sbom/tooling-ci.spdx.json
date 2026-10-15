@@ -3,19 +3,19 @@
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
   "name": "cncf/sbom CI generation chain",
-  "documentNamespace": "https://github.com/cncf/sbom/tooling-ci/9ad023714188f2a554b2516f0f0ccf9ec7b251aa",
+  "documentNamespace": "https://github.com/cncf/sbom/tooling-ci/2974ecbe425e39dc06192e27c8ee73752137433e",
   "creationInfo": {
-    "created": "2026-10-05T14:32:25Z",
+    "created": "2026-10-15T21:51:47Z",
     "creators": [
       "Tool: util/generate-tooling-sbom.sh",
-      "Tool: Waybill v0.9.0"
+      "Tool: Waybill v0.10.0"
     ]
   },
   "packages": [
     {
       "SPDXID": "SPDXRef-Package-Tooling-CI",
       "name": "cncf/sbom-ci-generation-chain",
-      "versionInfo": "9ad023714188f2a554b2516f0f0ccf9ec7b251aa",
+      "versionInfo": "2974ecbe425e39dc06192e27c8ee73752137433e",
       "downloadLocation": "https://github.com/cncf/sbom.git",
       "filesAnalyzed": false,
       "supplier": "Organization: CNCF",
@@ -28,11 +28,11 @@
     {
       "SPDXID": "SPDXRef----GITHUB-WORKFLOWS-REUSABLE-GENERATE-SBOM-YML",
       "name": "Local workflow ./.github/workflows/reusable-generate-sbom.yml",
-      "versionInfo": "9ad023714188f2a554b2516f0f0ccf9ec7b251aa",
+      "versionInfo": "2974ecbe425e39dc06192e27c8ee73752137433e",
       "downloadLocation": "https://github.com/cncf/sbom.git",
       "filesAnalyzed": false,
       "supplier": "Organization: CNCF",
-      "homepage": "https://github.com/cncf/sbom/blob/9ad023714188f2a554b2516f0f0ccf9ec7b251aa/.github/workflows/reusable-generate-sbom.yml",
+      "homepage": "https://github.com/cncf/sbom/blob/2974ecbe425e39dc06192e27c8ee73752137433e/.github/workflows/reusable-generate-sbom.yml",
       "primaryPackagePurpose": "SOURCE",
       "licenseConcluded": "NOASSERTION",
       "licenseDeclared": "NOASSERTION",
@@ -80,11 +80,11 @@
     {
       "SPDXID": "SPDXRef-Package-ToolingWorkflow",
       "name": "Local workflow .github/workflows/generate-tooling-sbom.yml",
-      "versionInfo": "9ad023714188f2a554b2516f0f0ccf9ec7b251aa",
+      "versionInfo": "2974ecbe425e39dc06192e27c8ee73752137433e",
       "downloadLocation": "https://github.com/cncf/sbom.git",
       "filesAnalyzed": false,
       "supplier": "Organization: CNCF",
-      "homepage": "https://github.com/cncf/sbom/blob/9ad023714188f2a554b2516f0f0ccf9ec7b251aa/.github/workflows/generate-tooling-sbom.yml",
+      "homepage": "https://github.com/cncf/sbom/blob/2974ecbe425e39dc06192e27c8ee73752137433e/.github/workflows/generate-tooling-sbom.yml",
       "primaryPackagePurpose": "SOURCE",
       "licenseConcluded": "NOASSERTION",
       "licenseDeclared": "NOASSERTION",
@@ -93,11 +93,11 @@
     {
       "SPDXID": "SPDXRef-Package-ToolingScript",
       "name": "Local script util/generate-tooling-sbom.sh",
-      "versionInfo": "9ad023714188f2a554b2516f0f0ccf9ec7b251aa",
+      "versionInfo": "2974ecbe425e39dc06192e27c8ee73752137433e",
       "downloadLocation": "https://github.com/cncf/sbom.git",
       "filesAnalyzed": false,
       "supplier": "Organization: CNCF",
-      "homepage": "https://github.com/cncf/sbom/blob/9ad023714188f2a554b2516f0f0ccf9ec7b251aa/util/generate-tooling-sbom.sh",
+      "homepage": "https://github.com/cncf/sbom/blob/2974ecbe425e39dc06192e27c8ee73752137433e/util/generate-tooling-sbom.sh",
       "primaryPackagePurpose": "SOURCE",
       "licenseConcluded": "NOASSERTION",
       "licenseDeclared": "NOASSERTION",
@@ -106,8 +106,8 @@
     {
       "SPDXID": "SPDXRef-Package-Waybill",
       "name": "Waybill",
-      "versionInfo": "v0.9.0",
-      "downloadLocation": "https://github.com/kusari-oss/waybill/releases/download/v0.9.0/waybill-v0.9.0-x86_64-unknown-linux-gnu.tar.gz",
+      "versionInfo": "v0.10.0",
+      "downloadLocation": "https://github.com/kusari-oss/waybill/releases/download/v0.10.0/waybill-v0.10.0-x86_64-unknown-linux-gnu.tar.gz",
       "filesAnalyzed": false,
       "supplier": "Organization: Kusari",
       "homepage": "https://github.com/kusari-oss/waybill",

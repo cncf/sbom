@@ -127,7 +127,7 @@ sbom_import_release_assets() {
   rm -rf "$tmp"
 }
 
-# Version of a tag as used in paths and keys: "kustomize/v5.8.3" -> "5.8.3".
+# Version of a tag as used in paths and keys: "v5.8.3" -> "5.8.3".
 sbom_version_of_tag() {
   local v="${1##*/}"
   printf '%s\n' "${v#v}"
@@ -138,9 +138,16 @@ sbom_version_of_tag() {
 # <since>). Repos without releases fall back to the newest <tag_limit> semver tags.
 # A 404 prints a warning and nothing else; any other API error returns 1.
 # Usage: sbom_stable_tags <owner> <repo> <mode> <since> <tag_limit>
+# Shared by sbom_stable_tags and sbom-plan.sh (jq test()).
+SBOM_PRERELEASE_RE='[-.](alpha|beta|rc|pre|preview|dev|devel|snapshot|nightly|canary|test|draft|wip)([-.]?[0-9]+)?$'
+# Tags with a path segment (kustomize: api/v0.21.3 + kyaml/v0.21.3, pipecd: pkg/.../v0.1.0)
+# version a sub-component; the key uses only the version, so they would collide. Skip them.
+SBOM_NESTED_TAG_RE='/'
+SBOM_VERSION_TAG_RE='^v?[0-9]+\.[0-9]+'
+
 sbom_stable_tags() {
   local owner="$1" repo="$2" mode="$3" since="$4" limit="$5" out
-  local pre='[-.](alpha|beta|rc|pre|preview|dev|devel|snapshot|nightly|canary|test|draft|wip)([-.]?[0-9]+)?$'
+  local pre="$SBOM_PRERELEASE_RE"
   if ! out="$(gh api "repos/${owner}/${repo}/releases?per_page=100" 2>&1)"; then
     if grep -q '404' <<<"$out"; then
       echo "::warning::Repository ${owner}/${repo} not found or releases not accessible (404), skipping" >&2
@@ -156,7 +163,7 @@ sbom_stable_tags() {
   if [ "$(jq 'length' <<<"$out")" -gt 0 ]; then
     jq -r --arg since "$since" --arg mode "$mode" \
       '.[] | select(.draft == false and .prerelease == false and ($mode != "recent" or .published_at >= $since)) | .tag_name' <<<"$out" |
-      grep -viE "$pre" || true
+      grep -viE "$pre" | grep -vE "$SBOM_NESTED_TAG_RE" || true
     return 0
   fi
   if ! out="$(gh api "repos/${owner}/${repo}/tags?per_page=100" 2>&1)"; then
@@ -164,7 +171,7 @@ sbom_stable_tags() {
     echo "::error::Failed to fetch tags for ${owner}/${repo}: ${out}" >&2
     return 1
   fi
-  jq -r '.[].name' <<<"$out" | grep -E '^(.*/)?v?[0-9]+\.[0-9]+' | grep -viE "$pre" | head -n "$limit" || true
+  jq -r '.[].name' <<<"$out" | grep -E "$SBOM_VERSION_TAG_RE" | grep -viE "$pre" | grep -vE "$SBOM_NESTED_TAG_RE" | head -n "$limit" || true
 }
 
 # Waybill scan with the flags all repo SBOMs use.

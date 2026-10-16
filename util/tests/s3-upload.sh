@@ -5,14 +5,11 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 TEMP_DIR="$(mktemp -d)"
 trap 'rm -rf "$TEMP_DIR"' EXIT
-ln -s "$ROOT_DIR/util" "$TEMP_DIR/util"
 
 export S3_ENDPOINT="https://storage.example"
 export S3_REGION="us-east-1"
 export PROJECT_BUCKET="cncf-project-sboms"
 export SUBPROJECT_BUCKET="cncf-subproject-sboms"
-export GITHUB_OUTPUT="$TEMP_DIR/output"
-export MATRIX_DISCOVERED_BY="org-scan from parent/project" MATRIX_PARENT_PROJECT="" MATRIX_PARENT_REPO=""
 export EXPECTED_BUCKET EXPECTED_KEY_PREFIX TEST_UPLOAD_MODE
 
 aws() {
@@ -53,41 +50,22 @@ aws() {
 }
 export -f aws
 
-run_upload_step() {
-  local workflow="$1"
-  : >"$GITHUB_OUTPUT"
-  yq -r '.jobs[].steps[]? | select(.id == "upload") | .run' "$workflow" |
-    sed \
-      -e 's/${{ matrix.owner }}/OmniTrustILM/g' \
-      -e 's/${{ matrix.repo }}/core/g' \
-      -e 's/${{ matrix.name }}/OmniTrust ILM/g' |
-    (cd "$TEMP_DIR" && bash -e)
-}
-
+source "$ROOT_DIR/util/s3-upload.sh"
 for version in 2.19.1 2.19.2; do
-  for base in sbom/omnitrust-ilm/core sbom/subprojects/OmniTrustILM/core; do
-    mkdir -p "$TEMP_DIR/$base/$version"
-    printf '{"name":"OmniTrust ILM %s"}\n' "$version" >"$TEMP_DIR/$base/$version/sbom.json"
-  done
+  mkdir -p "$TEMP_DIR/work/$version"
+  printf '{"name":"OmniTrust ILM %s"}\n' "$version" >"$TEMP_DIR/work/$version/core_${version//./_}_spdx.json"
 done
 
-WORKFLOW="$ROOT_DIR/.github/workflows/reusable-generate-sbom.yml"
 for scenario in project subproject; do
-  export SBOM_PATH_PREFIX=""
-  EXPECTED_BUCKET="$PROJECT_BUCKET"
-  EXPECTED_KEY_PREFIX="omnitrust-ilm/"
-  if [[ "$scenario" == subproject ]]; then
-    SBOM_PATH_PREFIX="subprojects"
-    EXPECTED_BUCKET="$SUBPROJECT_BUCKET"
-    EXPECTED_KEY_PREFIX="project/core/"
-  fi
+  EXPECTED_BUCKET="$PROJECT_BUCKET" EXPECTED_KEY_PREFIX="omnitrust-ilm/"
+  [[ "$scenario" == subproject ]] && EXPECTED_BUCKET="$SUBPROJECT_BUCKET" EXPECTED_KEY_PREFIX="project/core/"
 
   TEST_UPLOAD_MODE=success
-  run_upload_step "$WORKFLOW" >"$TEMP_DIR/log" 2>&1
-  grep -q '^uploaded=2$' "$GITHUB_OUTPUT"
+  upload_sbom_dir "$TEMP_DIR/work" "$EXPECTED_BUCKET" "$EXPECTED_KEY_PREFIX" core >"$TEMP_DIR/log" 2>&1
+  grep -q '^Uploaded 2 SBOMs' "$TEMP_DIR/log"
   for TEST_UPLOAD_MODE in failure stdout-failure silent-failure masked-service-error partial; do
-    if run_upload_step "$WORKFLOW" >"$TEMP_DIR/log" 2>&1; then
-      echo "Expected workflow failure: $scenario / $TEST_UPLOAD_MODE" >&2
+    if upload_sbom_dir "$TEMP_DIR/work" "$EXPECTED_BUCKET" "$EXPECTED_KEY_PREFIX" core >"$TEMP_DIR/log" 2>&1; then
+      echo "Expected upload failure: $scenario / $TEST_UPLOAD_MODE" >&2
       exit 1
     fi
     grep -q '::error::Upload failed' "$TEMP_DIR/log"
@@ -97,7 +75,7 @@ for scenario in project subproject; do
       stdout-failure) grep -q 'simulated stdout failure' "$TEMP_DIR/log" ;;
       silent-failure) grep -q 'AWS CLI returned no diagnostic output' "$TEMP_DIR/log" ;;
       masked-service-error) grep -q "PutObject permissions" "$TEMP_DIR/log" ;;
-      partial) grep -q '^uploaded=1$' "$GITHUB_OUTPUT" ;;
+      partial) grep -q '^Uploaded 1 SBOMs' "$TEMP_DIR/log" ;;
     esac
   done
 done

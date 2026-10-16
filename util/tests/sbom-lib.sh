@@ -156,6 +156,8 @@ RELEASE_JSON="{\"assets\":[$(asset tool-linux-amd64.spdx.json 900),$(asset big.s
 gh() {
   if [[ "$2" == */releases/tags/v1.0.0 ]]; then
     jq -r "$4" <<<"$RELEASE_JSON"
+  elif [[ "$2" == */releases/tags/v4.0.3 ]]; then
+    echo "gh: API rate limit exceeded (HTTP 403)" >&2; return 1
   else
     echo "gh: Not Found (HTTP 404)" >&2; return 1
   fi
@@ -172,9 +174,12 @@ cmp -s "$TEMP_DIR/assets/big.spdx.json" "$TEMP_DIR/out/tool_1_0_0_spdx.json"
 sbom_import_release_assets example tool v9.9.9 "$TEMP_DIR/out/none" 2>"$TEMP_DIR/import.err"
 [[ ! -s "$TEMP_DIR/import.err" ]]
 [[ ! -e "$TEMP_DIR/out/none_spdx.json" ]]
+# Any other API error (rate limit) fails the import so the item is retried, not silently scanned.
+if sbom_import_release_assets example tool v4.0.3 "$TEMP_DIR/out/limited" 2>"$TEMP_DIR/import.err"; then echo "expected failure at line $LINENO" >&2; exit 1; fi
+grep -q '::warning::Release lookup for example/tool@v4.0.3 failed' "$TEMP_DIR/import.err"
 
 # 6. Tag selection and versions.
-[[ "$(sbom_version_of_tag kustomize/v5.8.3)" == 5.8.3 ]]
+[[ "$(sbom_version_of_tag v5.8.3)" == 5.8.3 ]]
 [[ "$(sbom_version_of_tag v1.2.3)" == 1.2.3 ]]
 [[ "$(sbom_version_of_tag 1.2.3)" == 1.2.3 ]]
 SINCE="2026-09-01T00:00:00Z"
@@ -229,7 +234,7 @@ gh_rest() {
 # shellcheck disable=SC2317
 gh() { if [[ "$2" == graphql ]]; then gh_graphql; else gh_rest "$@"; fi; }
 # shellcheck disable=SC2317
-aws() {
+aws_stub() {
   case "$*" in
     *list-objects-v2*) printf 'example/2.0.0/example_2_0_0_spdx.json\texample/0.1.0/example_0_1_0_spdx.json\n' ;;
     *) local bucket="" key=""; while [[ $# -gt 0 ]]; do case "$1" in --bucket) bucket="$2"; shift ;; --key) key="$2"; shift ;; esac; shift; done
@@ -242,7 +247,8 @@ git() { mkdir -p "${@: -1}"; }
 waybill() {
   while [[ $# -gt 0 ]]; do [[ "$1" == --output ]] && cp "$ROOT_DIR/util/tests/data/kagent-v0.10.0-waybill.spdx.json" "$2"; shift; done
 }
-export -f gh gh_graphql gh_rest aws git waybill asset
+aws() { aws_stub "$@"; }
+export -f gh gh_graphql gh_rest aws aws_stub git waybill asset
 export TEMP_DIR ROOT_DIR
 printf 'repositories:\n  - {owner: example, repo: tool, name: Example}\n  - {owner: example, repo: tagsonly, name: Example}\n  - {owner: example, repo: gone, name: Example}\n' >"$TEMP_DIR/data/repositories.yaml"
 rm -f "$TEMP_DIR/data/discovered-repos.yaml"
@@ -256,6 +262,10 @@ SBOM_DATA_DIR="$TEMP_DIR/data" PROJECT_SOURCE=manual RELEASES_MODE=latest MAX_RE
 [[ "$(jq -r '"\(.repo)@\(.tag)"' "$TEMP_DIR/latest.jsonl" | tr '\n' ' ')" == "tagsonly@v5.7.0 tagsonly@v5.6.0 tool@chart-test-tools-1.0.0 " ]]
 SBOM_DATA_DIR="$TEMP_DIR/data" PROJECT_SOURCE=manual FORCE_REGENERATE=true bash "$ROOT_DIR/util/sbom-plan.sh" "$TEMP_DIR/force.jsonl" >/dev/null 2>&1
 grep -q '"tag":"v2.0.0"' "$TEMP_DIR/force.jsonl"
+# A failed bucket listing must stop the plan, or every SBOM would be re-planned.
+aws() { [[ "$2" == list-objects-v2 ]] && return 1; aws_stub "$@"; }; export -f aws
+if SBOM_DATA_DIR="$TEMP_DIR/data" PROJECT_SOURCE=manual bash "$ROOT_DIR/util/sbom-plan.sh" "$TEMP_DIR/nolist.jsonl" >/dev/null 2>&1; then echo "expected failure at line $LINENO" >&2; exit 1; fi
+aws() { aws_stub "$@"; }; export -f aws
 
 # Two workers share the four items round-robin; the release of chart-test-tools-1.0.0 ships only a
 # CycloneDX asset, so Waybill scans and the normalised CDX is uploaded next to it.

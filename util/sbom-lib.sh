@@ -95,7 +95,8 @@ SBOM_PER_ARCH_RE='linux|darwin|windows|amd64|arm64|aarch64|x86_64|ppc64|s390x|ri
 # before per-binary ones. A project-wide asset lands in <base>_{spdx,spdx3,cdx}.json
 # and replaces our own scan; a per-binary one in <base>_release_{spdx,spdx3,cdx}.json
 # next to it. The format is detected by content. A tag without a release is not an
-# error. Needs gh, curl, jq.
+# error; any other API error (rate limit) returns 1 so the item is retried instead of
+# silently scanned. Needs gh, curl, jq.
 # shortcut: tag-value SPDX (istio), tarballs (argo-cd) and XML CycloneDX are ignored,
 # and only the first 12 candidates are downloaded (otel ships 800+ per-arch SBOMs);
 # add a converter / smarter pick when a project publishes only those.
@@ -108,7 +109,11 @@ sbom_import_release_assets() {
        | sort_by((.name | ascii_downcase | test("'"$SBOM_PER_ARCH_RE"'")), -.size)
        | limit(12; .[]) | .browser_download_url' \
       2>"$tmp/err")"; then
-    grep -q 'HTTP 404' "$tmp/err" || cat "$tmp/err" >&2
+    if ! grep -q 'HTTP 404' "$tmp/err"; then
+      echo "::warning::Release lookup for ${owner}/${repo}@${tag} failed: $(cat "$tmp/err")" >&2
+      rm -rf "$tmp"
+      return 1
+    fi
     urls=""
   fi
   while IFS= read -r url; do
@@ -129,8 +134,7 @@ sbom_import_release_assets() {
 
 # Version of a tag as used in paths and keys: "v5.8.3" -> "5.8.3".
 sbom_version_of_tag() {
-  local v="${1##*/}"
-  printf '%s\n' "${v#v}"
+  printf '%s\n' "${1#v}"
 }
 
 # Prints the stable tags of a repo, newest first, one per line. Uses GitHub

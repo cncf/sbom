@@ -23,6 +23,6 @@ bash "$ROOT_DIR/util/postprocess-cdx.sh" --owner o --repo r --tag v1 "$TEMP_DIR/
 [[ "$(jq -r '.metadata.component.name + " " + .metadata.component.version + " " + (.metadata.supplier // "none" | tostring)' "$TEMP_DIR/bare.json")" == "o/r v1 none" ]]
 # Not CycloneDX: fails, input untouched.
 echo '{"spdxVersion":"SPDX-2.3"}' >"$TEMP_DIR/spdx.json"
-! bash "$ROOT_DIR/util/postprocess-cdx.sh" --owner o --repo r --tag v1 "$TEMP_DIR/spdx.json" 2>/dev/null
+if bash "$ROOT_DIR/util/postprocess-cdx.sh" --owner o --repo r --tag v1 "$TEMP_DIR/spdx.json" 2>/dev/null; then echo "expected failure at line $LINENO" >&2; exit 1; fi
 [[ "$(cat "$TEMP_DIR/spdx.json")" == '{"spdxVersion":"SPDX-2.3"}' ]]
 echo "CycloneDX post-processing tests passed"

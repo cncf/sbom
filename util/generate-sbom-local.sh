@@ -226,7 +226,7 @@ generate_sbom() {
   fi
 
   mkdir -p "$SBOM_DIR"
-  sbom_import_release_assets "$OWNER" "$REPO" "$TAG" "$BASE"
+  sbom_import_release_assets "$OWNER" "$REPO" "$TAG" "$BASE" || return 1
   # A per-binary release SBOM is kept next to our scan, never instead of it.
   # Imported documents that cannot be normalised are dropped.
   local f FMT

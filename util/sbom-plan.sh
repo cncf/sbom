@@ -72,7 +72,7 @@ echo "Planning $REPOS repositories (source=$PROJECT_SOURCE mode=$RELEASES_MODE)"
 split -l 50 -d -a 4 "$TMP/repos.jsonl" "$TMP/chunk."
 for chunk in "$TMP"/chunk.*; do
   [[ -s "$chunk" ]] || continue
-  QUERY="query {$(jq -r '"r\(input_line_number - 1): repository(owner: \(.owner | @json), name: \(.repo | @json)) { releases(first: 50, orderBy: {field: CREATED_AT, direction: DESC}) { nodes { tagName isDraft isPrerelease publishedAt } } refs(refPrefix: \"refs/tags/\", first: 30, orderBy: {field: TAG_COMMIT_DATE, direction: DESC}) { nodes { name } } }"' "$chunk" | tr '\n' ' ') }"
+  QUERY="query {$(jq -r '"r\(input_line_number - 1): repository(owner: \(.owner | @json), name: \(.repo | @json)) { releases(first: 100, orderBy: {field: CREATED_AT, direction: DESC}) { nodes { tagName isDraft isPrerelease publishedAt } } refs(refPrefix: \"refs/tags/\", first: 30, orderBy: {field: TAG_COMMIT_DATE, direction: DESC}) { nodes { name } } }"' "$chunk" | tr '\n' ' ') }"
   # Responses are ~200 KB; a dropped connection truncates the JSON, so retry.
   for attempt in 1 2 3; do
     gh api graphql -f query="$QUERY" >"$TMP/resp.json" 2>"$TMP/resp.err" && jq -e '.data' "$TMP/resp.json" >/dev/null 2>&1 && break
@@ -89,9 +89,12 @@ for chunk in "$TMP"/chunk.*; do
 done
 
 # 3. What the buckets already have (one listing per bucket).
+#    A listing error must stop the plan: an empty list would re-plan every SBOM.
 list_keys() {
-  AWS_PAGER="" aws s3api list-objects-v2 --endpoint-url "$S3_ENDPOINT" --region "$S3_REGION" \
-    --bucket "$1" --query 'Contents[].Key' --output text | tr '\t' '\n' | grep -v '^None$' || true
+  local out
+  out=$(AWS_PAGER="" aws s3api list-objects-v2 --endpoint-url "$S3_ENDPOINT" --region "$S3_REGION" \
+    --bucket "$1" --query 'Contents[].Key' --output text)
+  tr '\t' '\n' <<<"$out" | grep -v '^None$' || true
 }
 if [[ "$FORCE_REGENERATE" == true ]]; then
   : >"$TMP/keys.txt"

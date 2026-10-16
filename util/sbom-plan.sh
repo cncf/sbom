@@ -74,8 +74,10 @@ for chunk in "$TMP"/chunk.*; do
   [[ -s "$chunk" ]] || continue
   QUERY="query {$(jq -r '"r\(input_line_number - 1): repository(owner: \(.owner | @json), name: \(.repo | @json)) { releases(first: 100, orderBy: {field: CREATED_AT, direction: DESC}) { nodes { tagName isDraft isPrerelease publishedAt } } refs(refPrefix: \"refs/tags/\", first: 30, orderBy: {field: TAG_COMMIT_DATE, direction: DESC}) { nodes { name } } }"' "$chunk" | tr '\n' ' ') }"
   # Responses are ~200 KB; a dropped connection truncates the JSON, so retry.
+  # gh exits 1 on partial errors (one unknown repo) although .data is complete: ignore its status.
   for attempt in 1 2 3; do
-    gh api graphql -f query="$QUERY" >"$TMP/resp.json" 2>"$TMP/resp.err" && jq -e '.data' "$TMP/resp.json" >/dev/null 2>&1 && break
+    gh api graphql -f query="$QUERY" >"$TMP/resp.json" 2>"$TMP/resp.err" || true
+    jq -e '.data' "$TMP/resp.json" >/dev/null 2>&1 && break
     if [[ $attempt == 3 ]]; then
       echo "::error::GraphQL query failed: $(cat "$TMP/resp.err"; head -c 2000 "$TMP/resp.json")" >&2
       exit 1

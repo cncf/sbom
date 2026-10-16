@@ -222,7 +222,7 @@ gh_graphql() { jq -n '{data: {
         {tagName: "pkg/app/plugin/kubernetes/v0.1.0", isDraft: false, isPrerelease: false, publishedAt: "2099-09-05T00:00:00Z"},
         {tagName: "v1.8.0", isDraft: false, isPrerelease: false, publishedAt: "2026-01-01T00:00:00Z"}]}, refs: {nodes: []}},
   r1: {releases: {nodes: []}, refs: {nodes: [{name: "kustomize/v5.8.3"}, {name: "v5.7.0-beta.1"}, {name: "latest"}, {name: "v5.7.0"}, {name: "v5.6.0"}, {name: "v5.5.0"}]}}},
-  errors: [{path: ["r0"], message: "Could not resolve to a Repository"}]}'; }  # repos come sorted: gone, tagsonly, tool
+  errors: [{path: ["r0"], message: "Could not resolve to a Repository"}]}'; return 1; }  # real gh exits 1 on partial errors; repos come sorted: gone, tagsonly, tool
 # gh serves GraphQL for the plan and REST release assets for the worker.
 # shellcheck disable=SC2317
 gh_rest() {

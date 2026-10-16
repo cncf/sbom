@@ -120,6 +120,8 @@ jobs:
       matrix6: ${{ steps.set-matrix.outputs.matrix6 }}
       matrix7: ${{ steps.set-matrix.outputs.matrix7 }}
       matrix8: ${{ steps.set-matrix.outputs.matrix8 }}
+      matrix9: ${{ steps.set-matrix.outputs.matrix9 }}
+      matrix10: ${{ steps.set-matrix.outputs.matrix10 }}
       has_repos1: ${{ steps.set-matrix.outputs.has_repos1 }}
       has_repos2: ${{ steps.set-matrix.outputs.has_repos2 }}
       has_repos3: ${{ steps.set-matrix.outputs.has_repos3 }}
@@ -128,6 +130,8 @@ jobs:
       has_repos6: ${{ steps.set-matrix.outputs.has_repos6 }}
       has_repos7: ${{ steps.set-matrix.outputs.has_repos7 }}
       has_repos8: ${{ steps.set-matrix.outputs.has_repos8 }}
+      has_repos9: ${{ steps.set-matrix.outputs.has_repos9 }}
+      has_repos10: ${{ steps.set-matrix.outputs.has_repos10 }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
@@ -143,7 +147,7 @@ jobs:
           FILTER="${{ github.event.inputs.project_filter }}"
           DISCOVERED_FILE="util/data/discovered-repos.yaml"
           BATCH_SIZE=250
-          MAX_BATCHES=8
+          MAX_BATCHES=10
           
           if [ ! -f "$DISCOVERED_FILE" ]; then
             echo "No discovered-repos.yaml found, skipping discovered repos"
@@ -354,6 +358,38 @@ jobs:
       max_releases: ${{ github.event.inputs.max_releases || '3' }}
     secrets: inherit
 
+  # ===========================================
+  # Generate SBOMs for subproject repos (Batch 9)
+  # ===========================================
+  generate-sbom-subprojects-9:
+    needs: prepare-discovered-matrix
+    if: ${{ needs.prepare-discovered-matrix.outputs.has_repos9 == 'true' }}
+    uses: ./.github/workflows/reusable-generate-sbom.yml
+    with:
+      matrix: ${{ needs.prepare-discovered-matrix.outputs.matrix9 }}
+      job_name: "subprojects-batch-9"
+      sbom_path_prefix: "subprojects"
+      force_regenerate: ${{ github.event.inputs.force_regenerate || 'false' }}
+      releases_mode: ${{ github.event.inputs.releases_mode || 'recent' }}
+      max_releases: ${{ github.event.inputs.max_releases || '3' }}
+    secrets: inherit
+
+  # ===========================================
+  # Generate SBOMs for subproject repos (Batch 10)
+  # ===========================================
+  generate-sbom-subprojects-10:
+    needs: prepare-discovered-matrix
+    if: ${{ needs.prepare-discovered-matrix.outputs.has_repos10 == 'true' }}
+    uses: ./.github/workflows/reusable-generate-sbom.yml
+    with:
+      matrix: ${{ needs.prepare-discovered-matrix.outputs.matrix10 }}
+      job_name: "subprojects-batch-10"
+      sbom_path_prefix: "subprojects"
+      force_regenerate: ${{ github.event.inputs.force_regenerate || 'false' }}
+      releases_mode: ${{ github.event.inputs.releases_mode || 'recent' }}
+      max_releases: ${{ github.event.inputs.max_releases || '3' }}
+    secrets: inherit
+
   summarize-sbom-run:
     needs:
       - prepare-cncf-matrix
@@ -369,6 +405,8 @@ jobs:
       - generate-sbom-subprojects-6
       - generate-sbom-subprojects-7
       - generate-sbom-subprojects-8
+      - generate-sbom-subprojects-9
+      - generate-sbom-subprojects-10
     if: ${{ always() }}
     runs-on: ubuntu-latest
     steps:

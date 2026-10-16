@@ -143,10 +143,12 @@ sbom_version_of_tag() {
 # A 404 prints a warning and nothing else; any other API error returns 1.
 # Usage: sbom_stable_tags <owner> <repo> <mode> <since> <tag_limit>
 # Shared by sbom_stable_tags and sbom-plan.sh (jq test()).
-SBOM_PRERELEASE_RE='[-.](alpha|beta|rc|pre|preview|dev|devel|snapshot|nightly|canary|test|draft|wip)([-.]?[0-9]+)?$'
+# Also PEP 440 (1.1b0, 2.0a1, 1.0rc1) and a build suffix after the marker (1.37.0-rc2+k3s1).
+SBOM_PRERELEASE_RE='([-.](alpha|beta|rc|pre|preview|dev|devel|snapshot|nightly|canary|test|draft|wip)([-.]?[0-9]+)?|[0-9](a|b|rc)[0-9]+)(\+[0-9a-z.-]+)?$'
 # Tags with a path segment (kustomize: api/v0.21.3 + kyaml/v0.21.3, pipecd: pkg/.../v0.1.0)
-# version a sub-component; the key uses only the version, so they would collide. Skip them.
-SBOM_NESTED_TAG_RE='/'
+# or a Python pin (otel: opentelemetry-util-genai==1.2.0) version a sub-component; the key
+# uses only the version, so they would collide, and "=" breaks waybill --output. Skip them.
+SBOM_NESTED_TAG_RE='[/=]'
 SBOM_VERSION_TAG_RE='^v?[0-9]+\.[0-9]+'
 
 sbom_stable_tags() {

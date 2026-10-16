@@ -38,3 +38,30 @@ upload_sbom() {
     return "$status"
   fi
 }
+
+# Uploads every <repo>_<version_slug>_<suffix>.json under <dir>/<version>/ to
+# <key_prefix><version>/<flat prefix>_<version_slug>_<suffix>; e.g. argo/argo-workflows/
+# gives argo/argo-workflows/1.0.0/argo_argo-workflows_1_0_0_spdx.json. The suffix
+# ([release_]{spdx,spdx3,cdx}.json) carries over from the local file name.
+# Prints "Uploaded N SBOMs"; returns 1 when any upload failed.
+# Usage: upload_sbom_dir <dir> <bucket> <key_prefix> <repo>
+upload_sbom_dir() {
+  local dir="$1" bucket="$2" prefix="$3" repo="$4" flat uploaded=0 failed=0
+  local file version slug suffix
+  flat="${prefix%/}"; flat="${flat//\//_}"
+  while IFS= read -r file; do
+    version="$(basename "$(dirname "$file")")"
+    slug="${version//./_}"
+    suffix="$(basename "$file")"; suffix="${suffix#${repo}_${slug}_}"
+    if upload_sbom "$file" "$bucket" "${prefix}${version}/${flat}_${slug}_${suffix}"; then
+      uploaded=$((uploaded + 1))
+    else
+      failed=$((failed + 1))
+    fi
+  done < <(find "$dir" -type f -name '*.json' | sort)
+  echo "Uploaded ${uploaded} SBOMs to s3://${bucket}/${prefix}"
+  if [ "$failed" -gt 0 ]; then
+    echo "::error::${failed} SBOM uploads failed" >&2
+    return 1
+  fi
+}

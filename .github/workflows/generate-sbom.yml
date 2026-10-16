@@ -2,7 +2,7 @@ name: Generate SBOM for CNCF Projects
 
 on:
   schedule:
-    # Run weekly on Sunday at 02:00 UTC
+    # Run daily at 02:00 UTC
     - cron: '0 2 * * *'
   workflow_dispatch:
     inputs:
@@ -21,7 +21,7 @@ on:
         default: 'recent'
         type: choice
         options:
-          - recent    # Only releases from the past week
+          - recent    # Releases of the last 60 days that are not in the bucket yet
           - latest    # Latest N releases regardless of date
       max_releases:
         description: 'Maximum number of releases to process per repo (only used with "latest" mode)'
@@ -54,435 +54,160 @@ permissions:
   contents: read
 
 jobs:
-  # ===========================================
-  # Prepare matrix for CNCF and manually added projects
-  # ===========================================
-  prepare-cncf-matrix:
+  # Decides once which (repository, tag) pairs are missing from the buckets and
+  # splits them over a handful of workers. The matrix scales with the work, not
+  # with the number of repositories (2300+), so there is no 256-entry limit to hit.
+  plan:
     runs-on: ubuntu-latest
-    if: ${{ github.event.inputs.source != 'discovered' }}
     outputs:
-      matrix1: ${{ steps.set-matrix.outputs.matrix1 }}
-      matrix2: ${{ steps.set-matrix.outputs.matrix2 }}
-      matrix3: ${{ steps.set-matrix.outputs.matrix3 }}
-      has_repos1: ${{ steps.set-matrix.outputs.has_repos1 }}
-      has_repos2: ${{ steps.set-matrix.outputs.has_repos2 }}
-      has_repos3: ${{ steps.set-matrix.outputs.has_repos3 }}
+      items: ${{ steps.plan.outputs.items }}
+      repos: ${{ steps.plan.outputs.repos }}
+      workers: ${{ steps.plan.outputs.workers }}
+      worker_list: ${{ steps.plan.outputs.worker_list }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
 
-      - name: Setup yq
-        run: |
-          sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
-          sudo chmod +x /usr/local/bin/yq
-
-      - name: Generate projects matrix (batched)
-        id: set-matrix
+      - name: Plan work
+        id: plan
         env:
-          PROJECT_FILTER: ${{ github.event.inputs.project_filter }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PROJECT_SOURCE: ${{ github.event.inputs.source || 'all' }}
+          PROJECT_FILTER: ${{ github.event.inputs.project_filter }}
+          RELEASES_MODE: ${{ github.event.inputs.releases_mode || 'recent' }}
+          MAX_RELEASES: ${{ github.event.inputs.max_releases || '3' }}
+          FORCE_REGENERATE: ${{ github.event.inputs.force_regenerate || 'false' }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.OCI_S3_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.OCI_S3_SECRET_KEY }}
+          AWS_REQUEST_CHECKSUM_CALCULATION: when_required
+          AWS_RESPONSE_CHECKSUM_VALIDATION: when_required
+          S3_ENDPOINT: ${{ vars.OCI_S3_ENDPOINT }}
+          S3_REGION: ${{ vars.OCI_S3_REGION }}
+          PROJECT_BUCKET: ${{ vars.OCI_PROJECT_BUCKET }}
+          SUBPROJECT_BUCKET: ${{ vars.OCI_SUBPROJECT_BUCKET }}
         run: |
-          # GitHub Actions caps a matrix at 256 configurations; split into batches.
-          BATCH_SIZE=200
-          MAX_BATCHES=3
+          bash util/sbom-plan.sh plan.jsonl | tee -a "$GITHUB_OUTPUT"
+          ITEMS=$(wc -l < plan.jsonl)
+          # ~15 items per worker, capped well below the 256 matrix limit.
+          WORKERS=$(( (ITEMS + 14) / 15 )); [ "$WORKERS" -gt 200 ] && WORKERS=200; [ "$WORKERS" -lt 1 ] && WORKERS=1
+          echo "workers=$WORKERS" >> "$GITHUB_OUTPUT"
+          echo "worker_list=$(seq -s, 0 $((WORKERS - 1)) | sed 's/.*/[&]/')" >> "$GITHUB_OUTPUT"
+          echo "Planned $ITEMS SBOMs for $WORKERS workers"
+          head -n 100 plan.jsonl | jq -r '"\(.owner)/\(.repo)@\(.tag) -> s3://\(.bucket)/\(.key_prefix)"'
 
-          ALL_REPOS=$(bash util/prepare-project-matrix.sh "$PROJECT_SOURCE" "$PROJECT_FILTER" | jq -c '.include')
-          TOTAL=$(echo "$ALL_REPOS" | jq 'length')
-          echo "Total project repos: $TOTAL"
+      - name: Upload plan
+        uses: actions/upload-artifact@v4
+        with:
+          name: sbom-plan
+          path: plan.jsonl
+          retention-days: 7
 
-          MAX_SUPPORTED=$((BATCH_SIZE * MAX_BATCHES))
-          if [ "$TOTAL" -gt "$MAX_SUPPORTED" ]; then
-            echo "::error::Found $TOTAL repos but only $MAX_SUPPORTED can be processed (max $MAX_BATCHES batches of $BATCH_SIZE). Increase MAX_BATCHES and add matching generate-sbom-cncf-N jobs."
-            exit 1
-          fi
-
-          for i in $(seq 1 $MAX_BATCHES); do
-            START=$(( (i-1) * BATCH_SIZE ))
-            BATCH=$(echo "$ALL_REPOS" | jq -c --argjson start $START --argjson size $BATCH_SIZE '.[$start:$start+$size] | {"include": .}')
-            COUNT=$(echo "$BATCH" | jq '.include | length')
-            echo "matrix${i}=$BATCH" >> $GITHUB_OUTPUT
-            echo "has_repos${i}=$( [ "$COUNT" -gt 0 ] && echo 'true' || echo 'false' )" >> $GITHUB_OUTPUT
-            echo "Batch $i: $COUNT repositories"
-          done
-
-  # ===========================================
-  # Prepare matrix for discovered repos (split into batches due to 256 limit)
-  # ===========================================
-  prepare-discovered-matrix:
-    runs-on: ubuntu-latest
-    if: ${{ github.event.inputs.source != 'cncf' && github.event.inputs.source != 'manual' }}
-    outputs:
-      matrix1: ${{ steps.set-matrix.outputs.matrix1 }}
-      matrix2: ${{ steps.set-matrix.outputs.matrix2 }}
-      matrix3: ${{ steps.set-matrix.outputs.matrix3 }}
-      matrix4: ${{ steps.set-matrix.outputs.matrix4 }}
-      matrix5: ${{ steps.set-matrix.outputs.matrix5 }}
-      matrix6: ${{ steps.set-matrix.outputs.matrix6 }}
-      matrix7: ${{ steps.set-matrix.outputs.matrix7 }}
-      matrix8: ${{ steps.set-matrix.outputs.matrix8 }}
-      has_repos1: ${{ steps.set-matrix.outputs.has_repos1 }}
-      has_repos2: ${{ steps.set-matrix.outputs.has_repos2 }}
-      has_repos3: ${{ steps.set-matrix.outputs.has_repos3 }}
-      has_repos4: ${{ steps.set-matrix.outputs.has_repos4 }}
-      has_repos5: ${{ steps.set-matrix.outputs.has_repos5 }}
-      has_repos6: ${{ steps.set-matrix.outputs.has_repos6 }}
-      has_repos7: ${{ steps.set-matrix.outputs.has_repos7 }}
-      has_repos8: ${{ steps.set-matrix.outputs.has_repos8 }}
+  generate:
+    needs: plan
+    if: ${{ needs.plan.outputs.items != '0' }}
+    runs-on: cncf-c-ubuntu-2-8-x86
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      max-parallel: 30
+      matrix:
+        worker: ${{ fromJson(needs.plan.outputs.worker_list) }}
+    env:
+      WAYBILL_VERSION: v0.10.0
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
 
-      - name: Setup yq
+      - name: Download plan
+        uses: actions/download-artifact@v4
+        with:
+          name: sbom-plan
+
+      - name: Install Waybill
         run: |
-          sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
-          sudo chmod +x /usr/local/bin/yq
+          curl -sL "https://github.com/kusari-oss/waybill/releases/download/${WAYBILL_VERSION}/waybill-${WAYBILL_VERSION}-x86_64-unknown-linux-gnu.tar.gz" -o /tmp/waybill.tar.gz
+          tar xzf /tmp/waybill.tar.gz -C /tmp
+          sudo install -m 755 /tmp/waybill-${WAYBILL_VERSION}-x86_64-unknown-linux-gnu/waybill /usr/local/bin/waybill
+          waybill --version
 
-      - name: Generate discovered repos matrix (batched)
-        id: set-matrix
+      - name: Install GitHub CLI
         run: |
-          FILTER="${{ github.event.inputs.project_filter }}"
-          DISCOVERED_FILE="util/data/discovered-repos.yaml"
-          BATCH_SIZE=250
-          MAX_BATCHES=8
-          
-          if [ ! -f "$DISCOVERED_FILE" ]; then
-            echo "No discovered-repos.yaml found, skipping discovered repos"
-            for i in $(seq 1 $MAX_BATCHES); do
-              echo "matrix${i}={\"include\":[]}" >> $GITHUB_OUTPUT
-              echo "has_repos${i}=false" >> $GITHUB_OUTPUT
-            done
-            exit 0
+          if ! command -v gh &>/dev/null; then
+            curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+            echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
+            sudo apt-get update -q && sudo apt-get install -y -q gh
           fi
-          
-          if [ -n "$FILTER" ]; then
-            OWNER=$(echo "$FILTER" | cut -d'/' -f1)
-            REPO=$(echo "$FILTER" | cut -d'/' -f2)
-            ALL_REPOS=$(yq -o=json '.repositories | map(select(.owner == "'"$OWNER"'" and .repo == "'"$REPO"'"))' "$DISCOVERED_FILE")
-          else
-            ALL_REPOS=$(yq -o=json '.repositories' "$DISCOVERED_FILE")
+          gh --version
+
+      - name: Install AWS CLI
+        run: |
+          if ! command -v aws &>/dev/null; then
+            curl -sSL "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o /tmp/awscliv2.zip
+            unzip -q /tmp/awscliv2.zip -d /tmp
+            sudo /tmp/aws/install
           fi
-          
-          TOTAL=$(echo "$ALL_REPOS" | jq 'length')
-          echo "Total discovered repos: $TOTAL"
-          
-          MAX_SUPPORTED=$((BATCH_SIZE * MAX_BATCHES))
-          if [ "$TOTAL" -gt "$MAX_SUPPORTED" ]; then
-            echo "::error::Found $TOTAL repos but only $MAX_SUPPORTED can be processed (max $MAX_BATCHES batches of $BATCH_SIZE). Add a generate-sbom-subprojects-N job and increase MAX_BATCHES."
-            exit 1
-          fi
-          
-          # Split into batches
-          for i in $(seq 1 $MAX_BATCHES); do
-            START=$(( (i-1) * BATCH_SIZE ))
-            BATCH=$(echo "$ALL_REPOS" | jq --argjson start $START --argjson size $BATCH_SIZE '.[$start:$start+$size] | {"include": .}' | jq -c .)
-            COUNT=$(echo "$BATCH" | jq '.include | length')
-            echo "matrix${i}=$BATCH" >> $GITHUB_OUTPUT
-            echo "has_repos${i}=$( [ "$COUNT" -gt 0 ] && echo 'true' || echo 'false' )" >> $GITHUB_OUTPUT
-            echo "Batch $i: $COUNT repositories"
-          done
+          aws --version
 
-  # ===========================================
-  # Generate SBOMs for CNCF and manually added projects (Batch 1)
-  # ===========================================
-  generate-sbom-cncf-1:
-    needs: prepare-cncf-matrix
-    if: ${{ needs.prepare-cncf-matrix.outputs.has_repos1 == 'true' }}
-    uses: ./.github/workflows/reusable-generate-sbom.yml
-    with:
-      matrix: ${{ needs.prepare-cncf-matrix.outputs.matrix1 }}
-      job_name: "cncf-batch-1"
-      force_regenerate: ${{ github.event.inputs.force_regenerate || 'false' }}
-      releases_mode: ${{ github.event.inputs.releases_mode || 'recent' }}
-      max_releases: ${{ github.event.inputs.max_releases || '3' }}
-    secrets: inherit
+      - name: Generate and upload SBOMs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.OCI_S3_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.OCI_S3_SECRET_KEY }}
+          AWS_REQUEST_CHECKSUM_CALCULATION: when_required
+          AWS_RESPONSE_CHECKSUM_VALIDATION: when_required
+          S3_ENDPOINT: ${{ vars.OCI_S3_ENDPOINT }}
+          S3_REGION: ${{ vars.OCI_S3_REGION }}
+          SBOM_RESULT_FILE: results/worker-${{ matrix.worker }}.json
+        run: bash util/sbom-worker.sh plan.jsonl "${{ matrix.worker }}" "${{ needs.plan.outputs.workers }}"
 
-  # ===========================================
-  # Generate SBOMs for CNCF and manually added projects (Batch 2)
-  # ===========================================
-  generate-sbom-cncf-2:
-    needs: prepare-cncf-matrix
-    if: ${{ needs.prepare-cncf-matrix.outputs.has_repos2 == 'true' }}
-    uses: ./.github/workflows/reusable-generate-sbom.yml
-    with:
-      matrix: ${{ needs.prepare-cncf-matrix.outputs.matrix2 }}
-      job_name: "cncf-batch-2"
-      force_regenerate: ${{ github.event.inputs.force_regenerate || 'false' }}
-      releases_mode: ${{ github.event.inputs.releases_mode || 'recent' }}
-      max_releases: ${{ github.event.inputs.max_releases || '3' }}
-    secrets: inherit
-
-  # ===========================================
-  # Generate SBOMs for CNCF and manually added projects (Batch 3)
-  # ===========================================
-  generate-sbom-cncf-3:
-    needs: prepare-cncf-matrix
-    if: ${{ needs.prepare-cncf-matrix.outputs.has_repos3 == 'true' }}
-    uses: ./.github/workflows/reusable-generate-sbom.yml
-    with:
-      matrix: ${{ needs.prepare-cncf-matrix.outputs.matrix3 }}
-      job_name: "cncf-batch-3"
-      force_regenerate: ${{ github.event.inputs.force_regenerate || 'false' }}
-      releases_mode: ${{ github.event.inputs.releases_mode || 'recent' }}
-      max_releases: ${{ github.event.inputs.max_releases || '3' }}
-    secrets: inherit
-
-  # ===========================================
-  # Generate SBOMs for subproject repos (Batch 1)
-  # ===========================================
-  generate-sbom-subprojects-1:
-    needs: prepare-discovered-matrix
-    if: ${{ needs.prepare-discovered-matrix.outputs.has_repos1 == 'true' }}
-    uses: ./.github/workflows/reusable-generate-sbom.yml
-    with:
-      matrix: ${{ needs.prepare-discovered-matrix.outputs.matrix1 }}
-      job_name: "subprojects-batch-1"
-      sbom_path_prefix: "subprojects"
-      force_regenerate: ${{ github.event.inputs.force_regenerate || 'false' }}
-      releases_mode: ${{ github.event.inputs.releases_mode || 'recent' }}
-      max_releases: ${{ github.event.inputs.max_releases || '3' }}
-    secrets: inherit
-
-  # ===========================================
-  # Generate SBOMs for subproject repos (Batch 2)
-  # ===========================================
-  generate-sbom-subprojects-2:
-    needs: prepare-discovered-matrix
-    if: ${{ needs.prepare-discovered-matrix.outputs.has_repos2 == 'true' }}
-    uses: ./.github/workflows/reusable-generate-sbom.yml
-    with:
-      matrix: ${{ needs.prepare-discovered-matrix.outputs.matrix2 }}
-      job_name: "subprojects-batch-2"
-      sbom_path_prefix: "subprojects"
-      force_regenerate: ${{ github.event.inputs.force_regenerate || 'false' }}
-      releases_mode: ${{ github.event.inputs.releases_mode || 'recent' }}
-      max_releases: ${{ github.event.inputs.max_releases || '3' }}
-    secrets: inherit
-
-  # ===========================================
-  # Generate SBOMs for subproject repos (Batch 3)
-  # ===========================================
-  generate-sbom-subprojects-3:
-    needs: prepare-discovered-matrix
-    if: ${{ needs.prepare-discovered-matrix.outputs.has_repos3 == 'true' }}
-    uses: ./.github/workflows/reusable-generate-sbom.yml
-    with:
-      matrix: ${{ needs.prepare-discovered-matrix.outputs.matrix3 }}
-      job_name: "subprojects-batch-3"
-      sbom_path_prefix: "subprojects"
-      force_regenerate: ${{ github.event.inputs.force_regenerate || 'false' }}
-      releases_mode: ${{ github.event.inputs.releases_mode || 'recent' }}
-      max_releases: ${{ github.event.inputs.max_releases || '3' }}
-    secrets: inherit
-
-  # ===========================================
-  # Generate SBOMs for subproject repos (Batch 4)
-  # ===========================================
-  generate-sbom-subprojects-4:
-    needs: prepare-discovered-matrix
-    if: ${{ needs.prepare-discovered-matrix.outputs.has_repos4 == 'true' }}
-    uses: ./.github/workflows/reusable-generate-sbom.yml
-    with:
-      matrix: ${{ needs.prepare-discovered-matrix.outputs.matrix4 }}
-      job_name: "subprojects-batch-4"
-      sbom_path_prefix: "subprojects"
-      force_regenerate: ${{ github.event.inputs.force_regenerate || 'false' }}
-      releases_mode: ${{ github.event.inputs.releases_mode || 'recent' }}
-      max_releases: ${{ github.event.inputs.max_releases || '3' }}
-    secrets: inherit
-
-  # ===========================================
-  # Generate SBOMs for subproject repos (Batch 5)
-  # ===========================================
-  generate-sbom-subprojects-5:
-    needs: prepare-discovered-matrix
-    if: ${{ needs.prepare-discovered-matrix.outputs.has_repos5 == 'true' }}
-    uses: ./.github/workflows/reusable-generate-sbom.yml
-    with:
-      matrix: ${{ needs.prepare-discovered-matrix.outputs.matrix5 }}
-      job_name: "subprojects-batch-5"
-      sbom_path_prefix: "subprojects"
-      force_regenerate: ${{ github.event.inputs.force_regenerate || 'false' }}
-      releases_mode: ${{ github.event.inputs.releases_mode || 'recent' }}
-      max_releases: ${{ github.event.inputs.max_releases || '3' }}
-    secrets: inherit
-
-  # ===========================================
-  # Generate SBOMs for subproject repos (Batch 6)
-  # ===========================================
-  generate-sbom-subprojects-6:
-    needs: prepare-discovered-matrix
-    if: ${{ needs.prepare-discovered-matrix.outputs.has_repos6 == 'true' }}
-    uses: ./.github/workflows/reusable-generate-sbom.yml
-    with:
-      matrix: ${{ needs.prepare-discovered-matrix.outputs.matrix6 }}
-      job_name: "subprojects-batch-6"
-      sbom_path_prefix: "subprojects"
-      force_regenerate: ${{ github.event.inputs.force_regenerate || 'false' }}
-      releases_mode: ${{ github.event.inputs.releases_mode || 'recent' }}
-      max_releases: ${{ github.event.inputs.max_releases || '3' }}
-    secrets: inherit
-
-  # ===========================================
-  # Generate SBOMs for subproject repos (Batch 7)
-  # ===========================================
-  generate-sbom-subprojects-7:
-    needs: prepare-discovered-matrix
-    if: ${{ needs.prepare-discovered-matrix.outputs.has_repos7 == 'true' }}
-    uses: ./.github/workflows/reusable-generate-sbom.yml
-    with:
-      matrix: ${{ needs.prepare-discovered-matrix.outputs.matrix7 }}
-      job_name: "subprojects-batch-7"
-      sbom_path_prefix: "subprojects"
-      force_regenerate: ${{ github.event.inputs.force_regenerate || 'false' }}
-      releases_mode: ${{ github.event.inputs.releases_mode || 'recent' }}
-      max_releases: ${{ github.event.inputs.max_releases || '3' }}
-    secrets: inherit
-
-  # ===========================================
-  # Generate SBOMs for subproject repos (Batch 8)
-  # ===========================================
-  generate-sbom-subprojects-8:
-    needs: prepare-discovered-matrix
-    if: ${{ needs.prepare-discovered-matrix.outputs.has_repos8 == 'true' }}
-    uses: ./.github/workflows/reusable-generate-sbom.yml
-    with:
-      matrix: ${{ needs.prepare-discovered-matrix.outputs.matrix8 }}
-      job_name: "subprojects-batch-8"
-      sbom_path_prefix: "subprojects"
-      force_regenerate: ${{ github.event.inputs.force_regenerate || 'false' }}
-      releases_mode: ${{ github.event.inputs.releases_mode || 'recent' }}
-      max_releases: ${{ github.event.inputs.max_releases || '3' }}
-    secrets: inherit
+      - name: Upload worker result
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: sbom-result-${{ matrix.worker }}
+          path: results/
+          retention-days: 7
 
   summarize-sbom-run:
-    needs:
-      - prepare-cncf-matrix
-      - prepare-discovered-matrix
-      - generate-sbom-cncf-1
-      - generate-sbom-cncf-2
-      - generate-sbom-cncf-3
-      - generate-sbom-subprojects-1
-      - generate-sbom-subprojects-2
-      - generate-sbom-subprojects-3
-      - generate-sbom-subprojects-4
-      - generate-sbom-subprojects-5
-      - generate-sbom-subprojects-6
-      - generate-sbom-subprojects-7
-      - generate-sbom-subprojects-8
+    needs: [plan, generate]
     if: ${{ always() }}
     runs-on: ubuntu-latest
     steps:
-      - name: Build SBOM run summary from API
+      - name: Download worker results
+        uses: actions/download-artifact@v4
+        with:
+          pattern: sbom-result-*
+          path: results
+          merge-multiple: true
+        continue-on-error: true
+
+      - name: Build SBOM run summary
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GH_REPO: ${{ github.repository }}
-          RUN_ID: ${{ github.run_id }}
+          REPOS: ${{ needs.plan.outputs.repos }}
+          ITEMS: ${{ needs.plan.outputs.items }}
+          WORKERS: ${{ needs.plan.outputs.workers }}
+          GENERATE_RESULT: ${{ needs.generate.result }}
         run: |
-          TOTAL=0
-          SUCCEEDED=0
-          FAILED=0
-          CANCELLED=0
-          FAILED_JSON="[]"
-
-          page=1
-          while true; do
-            DATA=$(gh api "repos/${GH_REPO}/actions/runs/${RUN_ID}/jobs?per_page=100&page=${page}" 2>/dev/null) || break
-            COUNT=$(echo "$DATA" | jq '.jobs | length')
-            [ "$COUNT" -eq 0 ] && break
-
-            T=$(echo "$DATA" | jq '
-              [ .jobs[]
-              | select(
-                  (.name | test("^generate-sbom-(cncf|subprojects)-[0-9]+ / generate \\("))
-                )
-              ] | length')
-            S=$(echo "$DATA" | jq '
-              [ .jobs[]
-              | select(
-                  (.name | test("^generate-sbom-(cncf|subprojects)-[0-9]+ / generate \\("))
-                  and .conclusion == "success"
-                )
-              ] | length')
-            F=$(echo "$DATA" | jq '
-              [ .jobs[]
-              | select(
-                  (.name | test("^generate-sbom-(cncf|subprojects)-[0-9]+ / generate \\("))
-                  and (.conclusion != "success" and .conclusion != "cancelled")
-                )
-              ] | length')
-            C=$(echo "$DATA" | jq '
-              [ .jobs[]
-              | select(
-                  (.name | test("^generate-sbom-(cncf|subprojects)-[0-9]+ / generate \\("))
-                  and .conclusion == "cancelled"
-                )
-              ] | length')
-
-            TOTAL=$((TOTAL + T))
-            SUCCEEDED=$((SUCCEEDED + S))
-            FAILED=$((FAILED + F))
-            CANCELLED=$((CANCELLED + C))
-
-            NEW_FAILURES=$(echo "$DATA" | jq -c '
-              [ .jobs[]
-              | select(
-                  (.name | test("^generate-sbom-(cncf|subprojects)-[0-9]+ / generate \\("))
-                  and .conclusion != "success"
-                )
-              | {
-                  name,
-                  conclusion: (.conclusion // "unknown"),
-                  started_at,
-                  completed_at,
-                  last_step: (
-                    [ .steps[]?
-                    | select(.conclusion == "failure" or .conclusion == "cancelled")
-                    | .name
-                    ] | last // "—"
-                  )
-                }
-              ]')
-            FAILED_JSON=$(jq -n --argjson a "$FAILED_JSON" --argjson b "$NEW_FAILURES" '$a + $b')
-
-            page=$((page + 1))
-          done
-
-          # Count total SBOMs uploaded from ::notice:: annotations
-          TOTAL_SBOMS=0
-          ann_page=1
-          while true; do
-            ANN=$(gh api "repos/${GH_REPO}/actions/runs/${RUN_ID}/attempts/1/annotations?per_page=100&page=${ann_page}" 2>/dev/null) || break
-            ANN_COUNT=$(echo "$ANN" | jq 'length')
-            [ "$ANN_COUNT" -eq 0 ] && break
-            BATCH_SBOMS=$(echo "$ANN" | jq '[.[] | select(.title == "sbom-uploaded") | .message | tonumber] | add // 0')
-            TOTAL_SBOMS=$((TOTAL_SBOMS + BATCH_SBOMS))
-            ann_page=$((ann_page + 1))
-          done
-
+          shopt -s nullglob
+          RESULTS=(results/*.json)
+          UPLOADED=$(jq -s '[.[].uploaded] | add // 0' "${RESULTS[@]}" /dev/null)
+          FAILED=$(jq -rs '[.[].failed[]] | unique | .[]' "${RESULTS[@]}" /dev/null)
+          # A worker that died before writing its result shows up here.
+          MISSING=$(( ${WORKERS:-0} - ${#RESULTS[@]} ))
           {
             echo "### SBOM generation report"
             echo ""
             echo "| Metric | Value |"
             echo "|--------|-------|"
-            echo "| Total jobs | ${TOTAL} |"
-            echo "| Succeeded | ${SUCCEEDED} |"
-            echo "| Failed | ${FAILED} |"
-            echo "| Cancelled (runner) | ${CANCELLED} |"
-            echo "| SBOMs uploaded this run | ${TOTAL_SBOMS} |"
-          } >> "$GITHUB_STEP_SUMMARY"
-
-          if [ "$((FAILED + CANCELLED))" -gt 0 ]; then
-            SHOW=$(echo "$FAILED_JSON" | jq 'length')
-            CAPPED=$(echo "$FAILED_JSON" | jq '.[:25]')
-            {
+            echo "| Repositories checked | ${REPOS:-0} |"
+            echo "| SBOMs planned | ${ITEMS:-0} |"
+            echo "| Workers | ${WORKERS:-0} (${GENERATE_RESULT}) |"
+            echo "| SBOMs uploaded | ${UPLOADED} |"
+            echo "| Failed items | $(grep -c . <<<"$FAILED" || true) |"
+            [ "${GENERATE_RESULT}" != skipped ] && [ "$MISSING" -gt 0 ] && echo "| Workers without result | ${MISSING} |"
+            if [ -n "$FAILED" ]; then
               echo ""
-              echo "#### Non-successful jobs (first 25 of $((FAILED + CANCELLED)))"
-              echo "| Job | Conclusion | Last step | Started | Completed |"
-              echo "|-----|-----------|-----------|---------|-----------|"
-              echo "$CAPPED" | jq -r '.[] | "| \(.name | .[0:100]) | \(.conclusion) | \(.last_step) | \(.started_at // "—") | \(.completed_at // "—") |"'
-              if [ "$SHOW" -gt 25 ]; then
-                echo ""
-                echo "_Showing 25 of ${SHOW} non-successful jobs._"
-              fi
-            } >> "$GITHUB_STEP_SUMMARY"
-          fi
+              echo "#### Failed"
+              sed 's/^/- /' <<<"$FAILED"
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"

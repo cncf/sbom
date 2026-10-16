@@ -89,7 +89,6 @@ This repository contains **only tooling and configuration** — no SBOM data fil
 │   ├── generate-sbom.yml               # Generate SBOMs and upload to S3
 │   ├── generate-tooling-sbom.yml       # Generate SBOMs for this repo's tooling and CI chain
 │   ├── watch-sandbox-applications.yml  # One-time SBOMs for CNCF sandbox applications
-│   ├── reusable-generate-sbom.yml      # Reusable workflow for project and subproject batches
 │   └── migrate-sboms-to-oci.yml        # One-time migration of legacy repo SBOMs to S3
 └── util/
     ├── data/
@@ -100,7 +99,9 @@ This repository contains **only tooling and configuration** — no SBOM data fil
     ├── discover-repos/                 # Go tool to find subproject repos in CNCF orgs
     ├── generate-index/                 # Go tool to generate an index of SBOMs (with project hierarchy)
     ├── generate-tooling-sbom.sh        # Generates repo-tooling and CI-chain SBOMs for this repo
-    ├── sbom-lib.sh                     # Shared folder-slug and parent-project helpers
+    ├── sbom-lib.sh                     # Shared folder-slug, parent-project, tag and import helpers
+    ├── sbom-plan.sh                    # Plans a run: (repository, tag) pairs missing from the buckets
+    ├── sbom-worker.sh                  # Processes one worker's share of the plan
     ├── postprocess-spdx.sh             # Shared SPDX post-processing applied before every upload
     ├── postprocess-cdx.sh              # Same for imported CycloneDX release assets
     ├── postprocess-spdx3.sh            # Same for imported SPDX 3 JSON-LD release assets
@@ -149,13 +150,13 @@ Generates SBOMs for CNCF and manually added projects and **uploads them directly
 | `source` | `all`, `cncf`, `manual`, or `discovered` | all |
 
 **How it works:**
-1. Prepares repository matrices from `cncf-projects.yaml`, the manually maintained `repositories.yaml`, and `discovered-repos.yaml`, split into batches of at most 200 (projects) / 250 (subprojects) repositories because a GitHub Actions matrix is capped at 256 configurations; all batches run `reusable-generate-sbom.yml`
-2. The repository's folder in the bucket is listed once; each release whose `*_spdx.json` object already exists is skipped (unless `force_regenerate`). Monorepo tags like `kustomize/v5.8.3` are stored as version `5.8.3`
+1. `plan`: `util/sbom-plan.sh` reads `cncf-projects.yaml`, the manually maintained `repositories.yaml` and `discovered-repos.yaml` (2300+ repositories), fetches their releases and tags with GraphQL (50 repositories per query), lists both buckets once and writes the `(repository, tag)` pairs whose `*_spdx.json` object is missing (all pairs with `force_regenerate`) to a `plan.jsonl` artifact. Tags with a path segment (`api/v0.21.3`, `kyaml/v0.21.3`, `pkg/app/.../v0.1.0`) version a sub-component, not the repository, and would collide on the version-only key, so they are skipped
+2. `generate`: one matrix job per ~15 planned SBOMs (`util/sbom-worker.sh`, round-robin share of the plan, at most 30 in parallel). The matrix scales with the work, not with the repository count, so the 256-entry matrix limit is never hit and a quiet night costs a handful of jobs instead of 2300
 3. SBOMs the project attached to the GitHub release are imported (see [Release-attached SBOMs](#release-attached-sboms)): a project-wide SPDX 2.x asset replaces our own scan, a per-binary one is uploaded next to it as `*_release_spdx.json`
 4. When the release has no project-wide SPDX 2.x asset, Waybill generates one with `waybill sbom scan --format spdx-2.3-json` (deps.dev and ClearlyDefined enrichment inline)
 5. Every SPDX 2.x SBOM is post-processed with `util/postprocess-spdx.sh`, every CycloneDX asset with `util/postprocess-cdx.sh`, every SPDX 3 asset with `util/postprocess-spdx3.sh` (see [SBOM post-processing](#sbom-post-processing))
-6. SBOMs are immediately uploaded to the corresponding S3 bucket
-7. Each repository job writes a compact JSON report, and the workflow publishes one consolidated run summary plus a `sbom-generation-report` artifact
+6. Each SBOM is uploaded right after it is built, so a failing repository costs only its own item; the worker reports it and continues
+7. Workers write a `sbom-result-<n>` artifact; `summarize-sbom-run` turns them into the run summary (planned, uploaded, failed items)
 8. No files are committed to the repository
 
 #### Adding a project manually
@@ -293,7 +294,7 @@ the same bucket as CNCF projects.
 3. Click "Run workflow"
 4. Optionally specify a project filter or change the releases mode
 
-The workflow summary stays compact on purpose: detailed per-repository results are collected in the `sbom-generation-report` artifact instead of emitting a large per-matrix GitHub UI summary.
+The run summary lists planned and uploaded SBOMs and every failed `owner/repo@tag`; the `sbom-plan` artifact holds the full plan of the run.
 
 ## Utility Tools
 
@@ -473,7 +474,7 @@ A thin wrapper around the bash script; needs bash from Git for Windows or WSL.
 ### Tests
 
 ```bash
-bash util/tests/sbom-lib.sh                 # folder slugs for all writers
+bash util/tests/sbom-lib.sh                 # folder slugs, release import, plan + worker end to end
 bash util/tests/postprocess-spdx.sh         # SPDX post-processing
 bash util/tests/postprocess-cdx.sh          # CycloneDX post-processing
 bash util/tests/postprocess-spdx3.sh        # SPDX 3 post-processing
@@ -539,7 +540,7 @@ Each SBOM includes:
 ### SBOM post-processing
 
 Every SBOM is passed through `util/postprocess-spdx.sh` before it is uploaded, on
-every path that writes to a bucket (`generate-sbom.yml`, `reusable-generate-sbom.yml`,
+every path that writes to a bucket (`generate-sbom.yml` via `util/sbom-worker.sh`,
 `ingest-sbom-oci.sh`/`migrate-sboms-to-oci.yml`, `generate-sandbox-sbom.sh`, and the
 local scripts). It uses only the repository, the release tag and the CNCF landscape
 project name, and guarantees:

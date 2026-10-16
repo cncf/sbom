@@ -39,12 +39,14 @@ done <"$ROOT_DIR/util/tests/data/slug-cases.tsv"
 [[ "$(yq -r '.repositories[] | select(.owner == "aeraki-mesh" and .repo == "meta-protocol-proxy") | .parent_project' \
   "$ROOT_DIR/util/data/discovered-repos.yaml")" == "Aeraki Mesh" ]]
 
-# 3. Keys written by the workflow upload steps.
+# 3. Keys written by the worker: the plan decides bucket and folder, upload_sbom_dir the file name.
 ln -s "$ROOT_DIR/util" "$TEMP_DIR/util"
 export S3_ENDPOINT="https://storage.example" S3_REGION="us-east-1"
 export PROJECT_BUCKET="cncf-project-sboms" SUBPROJECT_BUCKET="cncf-subproject-sboms"
 export GITHUB_OUTPUT="$TEMP_DIR/output" UPLOAD_LOG="$TEMP_DIR/uploads"
-# shellcheck disable=SC2317 # stub, invoked by the workflow steps
+# shellcheck source=util/s3-upload.sh
+source "$ROOT_DIR/util/s3-upload.sh"
+# shellcheck disable=SC2317 # stub, invoked by the upload helper
 aws() {
   local bucket="" key=""
   while [[ $# -gt 0 ]]; do
@@ -58,47 +60,58 @@ aws() {
 }
 export -f aws
 
-# Arguments: workflow owner repo name prefix [env assignments...]
+# Arguments: bucket key_prefix repo
 upload_keys() {
-  local workflow="$1" owner="$2" repo="$3" name="$4" prefix="$5"
-  shift 5
   : >"$UPLOAD_LOG"
-  rm -rf "$TEMP_DIR/sbom"
-  local base
-  base="sbom/$(sbom_slugify "$name")/$repo"
-  [[ -n "$prefix" ]] && base="sbom/$prefix/$owner/$repo"
-  mkdir -p "$TEMP_DIR/$base/1.0.0"
-  echo '{}' >"$TEMP_DIR/$base/1.0.0/${repo}_1_0_0_spdx.json"
-  echo '{}' >"$TEMP_DIR/$base/1.0.0/${repo}_1_0_0_release_cdx.json"
-  yq -r '.jobs[].steps[]? | select(.id == "upload") | .run' "$ROOT_DIR/.github/workflows/$workflow" |
-    sed -e "s/\${{ matrix.owner }}/$owner/g" -e "s/\${{ matrix.repo }}/$repo/g" -e "s/\${{ matrix.name }}/$name/g" |
-    (cd "$TEMP_DIR" && env SBOM_PATH_PREFIX="$prefix" MATRIX_PARENT_PROJECT="" MATRIX_PARENT_REPO="" \
-      MATRIX_DISCOVERED_BY="" "$@" bash -e) >/dev/null
+  rm -rf "$TEMP_DIR/work"
+  mkdir -p "$TEMP_DIR/work/1.0.0"
+  echo '{}' >"$TEMP_DIR/work/1.0.0/${3}_1_0_0_spdx.json"
+  echo '{}' >"$TEMP_DIR/work/1.0.0/${3}_1_0_0_release_cdx.json"
+  upload_sbom_dir "$TEMP_DIR/work" "$1" "$2" "$3" >/dev/null
   cat "$UPLOAD_LOG"
 }
-
 # The format suffix (spdx / spdx3 / cdx) of the local file carries over to the key.
-[[ "$(upload_keys reusable-generate-sbom.yml argoproj argo-cd Argo "")" == \
+[[ "$(upload_keys cncf-project-sboms argo/ argo-cd)" == \
   "cncf-project-sboms/argo/1.0.0/argo_1_0_0_release_cdx.json
 cncf-project-sboms/argo/1.0.0/argo_1_0_0_spdx.json" ]]
-[[ "$(upload_keys reusable-generate-sbom.yml aeraki-mesh aeraki "Aeraki Mesh" "")" == \
-  "cncf-project-sboms/aeraki-mesh/1.0.0/aeraki-mesh_1_0_0_release_cdx.json
-cncf-project-sboms/aeraki-mesh/1.0.0/aeraki-mesh_1_0_0_spdx.json" ]]
-[[ "$(upload_keys reusable-generate-sbom.yml argoproj argo-workflows argo-workflows subprojects \
-  MATRIX_PARENT_PROJECT=Argo MATRIX_PARENT_REPO=argoproj/argo-cd \
-  "MATRIX_DISCOVERED_BY=org-scan from argoproj/argo-cd")" == \
+[[ "$(upload_keys cncf-subproject-sboms argo/argo-workflows/ argo-workflows)" == \
   "cncf-subproject-sboms/argo/argo-workflows/1.0.0/argo_argo-workflows_1_0_0_release_cdx.json
 cncf-subproject-sboms/argo/argo-workflows/1.0.0/argo_argo-workflows_1_0_0_spdx.json" ]]
-# Without parent_project the parent comes from discovered_by + cncf-projects.yaml.
-[[ "$(upload_keys reusable-generate-sbom.yml aeraki-mesh meta-protocol-proxy meta-protocol-proxy subprojects \
-  "MATRIX_DISCOVERED_BY=org-scan from aeraki-mesh/aeraki")" == \
-  "cncf-subproject-sboms/aeraki-mesh/meta-protocol-proxy/1.0.0/aeraki-mesh_meta-protocol-proxy_1_0_0_release_cdx.json
-cncf-subproject-sboms/aeraki-mesh/meta-protocol-proxy/1.0.0/aeraki-mesh_meta-protocol-proxy_1_0_0_spdx.json" ]]
-# Unknown parent: previous behaviour (parent repository name).
-[[ "$(upload_keys reusable-generate-sbom.yml example tool tool subprojects \
-  "MATRIX_DISCOVERED_BY=org-scan from example/not-a-project")" == \
-  "cncf-subproject-sboms/not-a-project/tool/1.0.0/not-a-project_tool_1_0_0_release_cdx.json
-cncf-subproject-sboms/not-a-project/tool/1.0.0/not-a-project_tool_1_0_0_spdx.json" ]]
+
+# Plan: folder per bucket from the checked-in data (parent_project, discovered_by lookup, legacy).
+mkdir -p "$TEMP_DIR/data"
+cp "$ROOT_DIR/util/data/cncf-projects.yaml" "$TEMP_DIR/data/"
+printf 'repositories:\n  - owner: Example\n    repo: Tool\n    name: Example Tool\n' >"$TEMP_DIR/data/repositories.yaml"
+cat >"$TEMP_DIR/data/discovered-repos.yaml" <<'YAML'
+repositories:
+  - owner: argoproj
+    repo: argo-workflows
+    name: argo-workflows
+    parent_project: Argo
+    parent_repo: argoproj/argo-cd
+    discovered_by: org-scan from argoproj/argo-cd
+  - owner: aeraki-mesh
+    repo: meta-protocol-proxy
+    name: meta-protocol-proxy
+    discovered_by: org-scan from aeraki-mesh/aeraki
+  - owner: example
+    repo: tool
+    name: tool
+    discovered_by: org-scan from example/not-a-project
+YAML
+# shellcheck disable=SC2317 # stubs for the plan: every repo has one release, buckets are empty
+gh() { jq -n '{data: {r0: {releases: {nodes: [{tagName: "v1.0.0", isDraft: false, isPrerelease: false, publishedAt: "2099-01-01T00:00:00Z"}]}, refs: {nodes: []}},
+                      r1: {releases: {nodes: [{tagName: "v1.0.0", isDraft: false, isPrerelease: false, publishedAt: "2099-01-01T00:00:00Z"}]}, refs: {nodes: []}},
+                      r2: {releases: {nodes: [{tagName: "v1.0.0", isDraft: false, isPrerelease: false, publishedAt: "2099-01-01T00:00:00Z"}]}, refs: {nodes: []}}}}'; }
+# shellcheck disable=SC2317
+aws() { echo None; }
+export -f gh aws
+SBOM_DATA_DIR="$TEMP_DIR/data" PROJECT_SOURCE=discovered bash "$ROOT_DIR/util/sbom-plan.sh" "$TEMP_DIR/plan.jsonl" >/dev/null 2>&1
+[[ "$(jq -r '"\(.bucket)/\(.key_prefix) \(.supplier)"' "$TEMP_DIR/plan.jsonl" | tr '\n' ';')" == \
+  "cncf-subproject-sboms/argo/argo-workflows/ Argo;cncf-subproject-sboms/aeraki-mesh/meta-protocol-proxy/ Aeraki Mesh;cncf-subproject-sboms/not-a-project/tool/ ;" ]]
+SBOM_DATA_DIR="$TEMP_DIR/data" PROJECT_SOURCE=manual bash "$ROOT_DIR/util/sbom-plan.sh" "$TEMP_DIR/plan.jsonl" >/dev/null 2>&1
+[[ "$(jq -r '"\(.bucket)/\(.key_prefix) \(.supplier) \(.owner)/\(.repo)@\(.tag)"' "$TEMP_DIR/plan.jsonl")" == \
+  "cncf-project-sboms/example-tool/ Example Tool Example/Tool@v1.0.0" ]]
 
 # 4. Keys written by util/ingest-sbom-oci.sh (dry-run; post-processes a copy).
 mkdir -p "$TEMP_DIR/ingest/argo/argo-cd/3.3.14" "$TEMP_DIR/ingest/subprojects/argoproj/argo-workflows/4.1.4" \
@@ -176,9 +189,10 @@ gh() {
       {"tag_name":"v2.0.0","draft":false,"prerelease":false,"published_at":"2026-10-01T00:00:00Z"},
       {"tag_name":"v1.9.1","draft":true,"prerelease":false,"published_at":"2026-09-20T00:00:00Z"},
       {"tag_name":"chart-test-tools-1.0.0","draft":false,"prerelease":false,"published_at":"2026-09-10T00:00:00Z"},
+      {"tag_name":"pkg/app/plugin/kubernetes/v0.1.0","draft":false,"prerelease":false,"published_at":"2026-09-05T00:00:00Z"},
       {"tag_name":"v1.8.0","draft":false,"prerelease":false,"published_at":"2026-01-01T00:00:00Z"}]' ;;
     repos/example/tagsonly/releases*) echo '[]' ;;
-    repos/example/tagsonly/tags*) echo '[{"name":"kustomize/v5.8.3"},{"name":"v5.7.0-beta.1"},{"name":"latest"},{"name":"v5.7.0"},{"name":"v5.6.0"}]' ;;
+    repos/example/tagsonly/tags*) echo '[{"name":"kustomize/v5.8.3"},{"name":"v5.7.0-beta.1"},{"name":"latest"},{"name":"v5.7.0"},{"name":"v5.6.0"},{"name":"v5.5.0"}]' ;;
     repos/example/gone/*) echo '{"message":"Not Found","status":"404"}'; return 1 ;;
     *) echo '{"message":"boom","status":"500"}'; return 1 ;;
   esac
@@ -186,38 +200,83 @@ gh() {
 export -f gh
 [[ "$(sbom_stable_tags example tool recent "$SINCE" 3 | tr '\n' ' ')" == "v2.0.0 chart-test-tools-1.0.0 " ]]
 [[ "$(sbom_stable_tags example tool all "" 3 | tr '\n' ' ')" == "v2.0.0 chart-test-tools-1.0.0 v1.8.0 " ]]
-[[ "$(sbom_stable_tags example tagsonly recent "$SINCE" 2 | tr '\n' ' ')" == "kustomize/v5.8.3 v5.7.0 " ]]
+[[ "$(sbom_stable_tags example tagsonly recent "$SINCE" 2 | tr '\n' ' ')" == "v5.7.0 v5.6.0 " ]]
 [[ -z "$(sbom_stable_tags example gone recent "$SINCE" 3 2>/dev/null)" ]]
 ! sbom_stable_tags example broken recent "$SINCE" 3 2>/dev/null
 
-# 7. Generate step: skips what the bucket has, imports or generates the rest, slash tags get a flat version.
+# 7. Plan + worker end to end: the plan skips what the bucket has and nested tags,
+#    the worker imports or generates its share, normalises and uploads.
 # shellcheck disable=SC2317
-aws() { printf 'example/2.0.0/example_2_0_0_spdx.json\texample/0.1.0/example_0_1_0_spdx.json\n'; }
+gh_graphql() { jq -n '{data: {
+  r0: null,
+  r2: {releases: {nodes: [
+        {tagName: "v2.0.0-rc1", isDraft: false, isPrerelease: false, publishedAt: "2026-10-10T00:00:00Z"},
+        {tagName: "v2.0.0", isDraft: false, isPrerelease: false, publishedAt: "2099-10-01T00:00:00Z"},
+        {tagName: "v1.9.1", isDraft: true, isPrerelease: false, publishedAt: "2099-09-20T00:00:00Z"},
+        {tagName: "chart-test-tools-1.0.0", isDraft: false, isPrerelease: false, publishedAt: "2099-09-10T00:00:00Z"},
+        {tagName: "pkg/app/plugin/kubernetes/v0.1.0", isDraft: false, isPrerelease: false, publishedAt: "2099-09-05T00:00:00Z"},
+        {tagName: "v1.8.0", isDraft: false, isPrerelease: false, publishedAt: "2026-01-01T00:00:00Z"}]}, refs: {nodes: []}},
+  r1: {releases: {nodes: []}, refs: {nodes: [{name: "kustomize/v5.8.3"}, {name: "v5.7.0-beta.1"}, {name: "latest"}, {name: "v5.7.0"}, {name: "v5.6.0"}, {name: "v5.5.0"}]}}},
+  errors: [{path: ["r0"], message: "Could not resolve to a Repository"}]}'; }  # repos come sorted: gone, tagsonly, tool
+# gh serves GraphQL for the plan and REST release assets for the worker.
+# shellcheck disable=SC2317
+gh_rest() {
+  case "$2" in
+    repos/example/tool/releases/tags/chart-test-tools-1.0.0) jq -r "$4" <<<"{\"assets\":[$(asset bom.json 20)]}" ;;
+    *) echo "gh: Not Found (HTTP 404)" >&2; return 1 ;;
+  esac
+}
+# shellcheck disable=SC2317
+gh() { if [[ "$2" == graphql ]]; then gh_graphql; else gh_rest "$@"; fi; }
+# shellcheck disable=SC2317
+aws() {
+  case "$*" in
+    *list-objects-v2*) printf 'example/2.0.0/example_2_0_0_spdx.json\texample/0.1.0/example_0_1_0_spdx.json\n' ;;
+    *) local bucket="" key=""; while [[ $# -gt 0 ]]; do case "$1" in --bucket) bucket="$2"; shift ;; --key) key="$2"; shift ;; esac; shift; done
+       printf '%s/%s\n' "$bucket" "$key" >>"$UPLOAD_LOG" ;;
+  esac
+}
 # shellcheck disable=SC2317
 git() { mkdir -p "${@: -1}"; }
 # shellcheck disable=SC2317
 waybill() {
   while [[ $# -gt 0 ]]; do [[ "$1" == --output ]] && cp "$ROOT_DIR/util/tests/data/kagent-v0.10.0-waybill.spdx.json" "$2"; shift; done
 }
-export -f aws git waybill asset
-export TEMP_DIR
-export ROOT_DIR
-run_generate() {
-  rm -rf "$TEMP_DIR/sbom"
-  yq -r '.jobs[].steps[]? | select(.id == "generate") | .run' "$ROOT_DIR/.github/workflows/reusable-generate-sbom.yml" |
-    sed -e "s/\${{ matrix.owner }}/example/g" -e "s/\${{ matrix.repo }}/$1/g" -e "s/\${{ matrix.name }}/Example/g" |
-    (cd "$TEMP_DIR" && env SBOM_PATH_PREFIX="" MATRIX_PARENT_PROJECT="" MATRIX_PARENT_REPO="" MATRIX_DISCOVERED_BY="" \
-      FORCE_REGENERATE=false RELEASES_MODE=recent MAX_RELEASES=3 bash) >"$TEMP_DIR/generate.log" 2>&1
-  (cd "$TEMP_DIR/sbom" && find . -type f | LC_ALL=C sort | tr '\n' ' ')
-}
-# v2.0.0 is in the bucket; the release ships only a CycloneDX asset, so Waybill scans and the CDX is normalised next to it.
-[[ "$(run_generate tool)" == "./example/tool/chart-test-tools-1.0.0/tool_chart-test-tools-1_0_0_cdx.json ./example/tool/chart-test-tools-1.0.0/tool_chart-test-tools-1_0_0_spdx.json " ]]
-[[ "$(jq -r '.metadata.component.name + " " + .metadata.component.version + " " + .metadata.supplier.name' \
-  "$TEMP_DIR/sbom/example/tool/chart-test-tools-1.0.0/tool_chart-test-tools-1_0_0_cdx.json")" == "example/tool chart-test-tools-1.0.0 Example" ]]
-grep -q 'example/tool@v2.0.0 already in bucket' "$TEMP_DIR/generate.log"
-grep -q '^processed=1$' "$GITHUB_OUTPUT"
-[[ "$(run_generate tagsonly)" == "./example/tagsonly/5.6.0/tagsonly_5_6_0_spdx.json ./example/tagsonly/5.7.0/tagsonly_5_7_0_spdx.json ./example/tagsonly/5.8.3/tagsonly_5_8_3_spdx.json " ]]
-jq -e '.packages[0].externalRefs[] | select(.referenceType == "purl" and .referenceLocator == "pkg:github/example/tagsonly@kustomize%2Fv5.8.3")' \
-  "$TEMP_DIR/sbom/example/tagsonly/5.8.3/tagsonly_5_8_3_spdx.json" >/dev/null
+export -f gh gh_graphql gh_rest aws git waybill asset
+export TEMP_DIR ROOT_DIR
+printf 'repositories:\n  - {owner: example, repo: tool, name: Example}\n  - {owner: example, repo: tagsonly, name: Example}\n  - {owner: example, repo: gone, name: Example}\n' >"$TEMP_DIR/data/repositories.yaml"
+rm -f "$TEMP_DIR/data/discovered-repos.yaml"
+SBOM_DATA_DIR="$TEMP_DIR/data" PROJECT_SOURCE=manual bash "$ROOT_DIR/util/sbom-plan.sh" "$TEMP_DIR/plan.jsonl" >"$TEMP_DIR/plan.out" 2>"$TEMP_DIR/plan.err"
+grep -q '^items=4$' "$TEMP_DIR/plan.out"
+grep -q '::warning::r0: Could not resolve' "$TEMP_DIR/plan.err"
+# v2.0.0 is in the bucket, rc/draft/nested/old tags are out; tags-only repos get their newest 3 semver tags.
+[[ "$(jq -r '"\(.repo)@\(.tag)"' "$TEMP_DIR/plan.jsonl" | tr '\n' ' ')" == \
+  "tagsonly@v5.7.0 tagsonly@v5.6.0 tagsonly@v5.5.0 tool@chart-test-tools-1.0.0 " ]]
+SBOM_DATA_DIR="$TEMP_DIR/data" PROJECT_SOURCE=manual RELEASES_MODE=latest MAX_RELEASES=2 bash "$ROOT_DIR/util/sbom-plan.sh" "$TEMP_DIR/latest.jsonl" >/dev/null 2>&1
+[[ "$(jq -r '"\(.repo)@\(.tag)"' "$TEMP_DIR/latest.jsonl" | tr '\n' ' ')" == "tagsonly@v5.7.0 tagsonly@v5.6.0 tool@chart-test-tools-1.0.0 " ]]
+SBOM_DATA_DIR="$TEMP_DIR/data" PROJECT_SOURCE=manual FORCE_REGENERATE=true bash "$ROOT_DIR/util/sbom-plan.sh" "$TEMP_DIR/force.jsonl" >/dev/null 2>&1
+grep -q '"tag":"v2.0.0"' "$TEMP_DIR/force.jsonl"
+
+# Two workers share the four items round-robin; the release of chart-test-tools-1.0.0 ships only a
+# CycloneDX asset, so Waybill scans and the normalised CDX is uploaded next to it.
+: >"$UPLOAD_LOG"
+(cd "$TEMP_DIR" && SBOM_WORK_DIR="$TEMP_DIR/work" SBOM_RESULT_FILE="$TEMP_DIR/results/0.json" bash "$ROOT_DIR/util/sbom-worker.sh" plan.jsonl 0 2 >"$TEMP_DIR/worker0.log" 2>&1)
+(cd "$TEMP_DIR" && SBOM_WORK_DIR="$TEMP_DIR/work" SBOM_RESULT_FILE="$TEMP_DIR/results/1.json" bash "$ROOT_DIR/util/sbom-worker.sh" plan.jsonl 1 2 >"$TEMP_DIR/worker1.log" 2>&1)
+[[ "$(LC_ALL=C sort "$UPLOAD_LOG" | tr '\n' ' ')" == \
+  "cncf-project-sboms/example/5.5.0/example_5_5_0_spdx.json cncf-project-sboms/example/5.6.0/example_5_6_0_spdx.json cncf-project-sboms/example/5.7.0/example_5_7_0_spdx.json cncf-project-sboms/example/chart-test-tools-1.0.0/example_chart-test-tools-1_0_0_cdx.json cncf-project-sboms/example/chart-test-tools-1.0.0/example_chart-test-tools-1_0_0_spdx.json " ]]
+grep -q 'metadata.component' "$ROOT_DIR/util/postprocess-cdx.sh"
+grep -q 'Using release asset bom.json' "$TEMP_DIR/worker0.log" "$TEMP_DIR/worker1.log"
+[[ "$(jq -s 'map(.uploaded) | add' "$TEMP_DIR"/results/*.json)" == 5 ]]
+[[ "$(jq -s '[.[].failed[]] | length' "$TEMP_DIR"/results/*.json)" == 0 ]]
+[[ -z "$(ls -A "$TEMP_DIR/work/example")" ]]  # scratch per repo is removed
+# A failing item is reported and does not stop the worker.
+# shellcheck disable=SC2317
+git() { [[ "$*" == *tagsonly* ]] && return 1; mkdir -p "${@: -1}"; }
+export -f git
+: >"$UPLOAD_LOG"
+! (cd "$TEMP_DIR" && SBOM_WORK_DIR="$TEMP_DIR/work" SBOM_RESULT_FILE="$TEMP_DIR/results/all.json" bash "$ROOT_DIR/util/sbom-worker.sh" plan.jsonl 0 1 >"$TEMP_DIR/worker.log" 2>&1)
+[[ "$(jq -c '.failed' "$TEMP_DIR/results/all.json")" == '["example/tagsonly@v5.7.0","example/tagsonly@v5.6.0","example/tagsonly@v5.5.0"]' ]]
+[[ "$(jq '.uploaded' "$TEMP_DIR/results/all.json")" == 2 ]]
+grep -q '::error title=sbom-failed::example/tagsonly@v5.7.0' "$TEMP_DIR/worker.log"
 
 echo "SBOM naming tests passed"

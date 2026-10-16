@@ -38,8 +38,8 @@ bash "$PP" --owner o --repo r --tag v1 "$TEMP_DIR/rel.json"
 [[ "$(jq -r '[.["@graph"][] | select(.type == "Organization")] | length' "$TEMP_DIR/rel.json")" == 0 ]]
 # No root, or not SPDX 3: fails, input untouched.
 echo '{"@context":"https://spdx.org/rdf/3.0.1/spdx-context.jsonld","@graph":[{"type":"SpdxDocument","spdxId":"https://x/doc","name":"d"}]}' >"$TEMP_DIR/noroot.json"
-! bash "$PP" --owner o --repo r --tag v1 "$TEMP_DIR/noroot.json" 2>/dev/null
+if bash "$PP" --owner o --repo r --tag v1 "$TEMP_DIR/noroot.json" 2>/dev/null; then echo "expected failure at line $LINENO" >&2; exit 1; fi
 echo '{"spdxVersion":"SPDX-2.3"}' >"$TEMP_DIR/spdx.json"
-! bash "$PP" --owner o --repo r --tag v1 "$TEMP_DIR/spdx.json" 2>/dev/null
+if bash "$PP" --owner o --repo r --tag v1 "$TEMP_DIR/spdx.json" 2>/dev/null; then echo "expected failure at line $LINENO" >&2; exit 1; fi
 [[ "$(cat "$TEMP_DIR/spdx.json")" == '{"spdxVersion":"SPDX-2.3"}' ]]
 echo "SPDX 3 post-processing tests passed"

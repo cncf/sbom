@@ -29,7 +29,7 @@ WORK_DIR="${SBOM_WORK_DIR:-work}"
 # Imports or generates <base>_spdx.json (+ companions) for one tag. Returns 1 on failure.
 build_sbom() {
   local owner="$1" repo="$2" tag="$3" supplier="$4" base="$5" sbom_file="${5}_spdx.json" f fmt src
-  sbom_import_release_assets "$owner" "$repo" "$tag" "$base"
+  sbom_import_release_assets "$owner" "$repo" "$tag" "$base" || return 1
   # A per-binary release SBOM is uploaded next to our scan, never instead of it.
   # Imported documents that cannot be normalised are dropped.
   for f in "${base}_release_spdx.json" "${base}_cdx.json" "${base}_release_cdx.json" "${base}_spdx3.json" "${base}_release_spdx3.json"; do

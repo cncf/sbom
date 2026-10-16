@@ -195,6 +195,9 @@ gh() {
       {"tag_name":"v1.9.1","draft":true,"prerelease":false,"published_at":"2026-09-20T00:00:00Z"},
       {"tag_name":"chart-test-tools-1.0.0","draft":false,"prerelease":false,"published_at":"2026-09-10T00:00:00Z"},
       {"tag_name":"pkg/app/plugin/kubernetes/v0.1.0","draft":false,"prerelease":false,"published_at":"2026-09-05T00:00:00Z"},
+      {"tag_name":"opentelemetry-util-genai==1.2.0","draft":false,"prerelease":false,"published_at":"2026-09-04T00:00:00Z"},
+      {"tag_name":"v1.9.0b1","draft":false,"prerelease":false,"published_at":"2026-09-03T00:00:00Z"},
+      {"tag_name":"v1.9.0-rc2+k3s1","draft":false,"prerelease":false,"published_at":"2026-09-02T00:00:00Z"},
       {"tag_name":"v1.8.0","draft":false,"prerelease":false,"published_at":"2026-01-01T00:00:00Z"}]' ;;
     repos/example/tagsonly/releases*) echo '[]' ;;
     repos/example/tagsonly/tags*) echo '[{"name":"kustomize/v5.8.3"},{"name":"v5.7.0-beta.1"},{"name":"latest"},{"name":"v5.7.0"},{"name":"v5.6.0"},{"name":"v5.5.0"}]' ;;
@@ -220,6 +223,9 @@ gh_graphql() { jq -n '{data: {
         {tagName: "v1.9.1", isDraft: true, isPrerelease: false, publishedAt: "2099-09-20T00:00:00Z"},
         {tagName: "chart-test-tools-1.0.0", isDraft: false, isPrerelease: false, publishedAt: "2099-09-10T00:00:00Z"},
         {tagName: "pkg/app/plugin/kubernetes/v0.1.0", isDraft: false, isPrerelease: false, publishedAt: "2099-09-05T00:00:00Z"},
+        {tagName: "opentelemetry-util-genai==1.2.0", isDraft: false, isPrerelease: false, publishedAt: "2099-09-04T00:00:00Z"},
+        {tagName: "v1.9.0b1", isDraft: false, isPrerelease: false, publishedAt: "2099-09-03T00:00:00Z"},
+        {tagName: "v1.9.0-rc2+k3s1", isDraft: false, isPrerelease: false, publishedAt: "2099-09-02T00:00:00Z"},
         {tagName: "v1.8.0", isDraft: false, isPrerelease: false, publishedAt: "2026-01-01T00:00:00Z"}]}, refs: {nodes: []}},
   r1: {releases: {nodes: []}, refs: {nodes: [{name: "kustomize/v5.8.3"}, {name: "v5.7.0-beta.1"}, {name: "latest"}, {name: "v5.7.0"}, {name: "v5.6.0"}, {name: "v5.5.0"}]}}},
   errors: [{path: ["r0"], message: "Could not resolve to a Repository"}]}'; return 1; }  # real gh exits 1 on partial errors; repos come sorted: gone, tagsonly, tool

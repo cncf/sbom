@@ -20,7 +20,7 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain supported package manifests (Go, Cargo, npm, pip, Maven, gem, Dockerfile, etc.).
   auto_generated: true
-  last_updated: "2026-10-12T04:52:01Z"
+  last_updated: "2026-10-19T04:40:18Z"
 repositories:
   - owner: aeraki-mesh
     repo: meta-protocol-proxy
@@ -3563,6 +3563,14 @@ repositories:
   - owner: dapr
     repo: php-sdk
     name: php-sdk
+    category: build
+    project_status: graduated
+    discovered_by: org-scan from dapr/dapr
+    parent_project: Dapr
+    parent_repo: dapr/dapr
+  - owner: dapr
+    repo: python-sdk
+    name: python-sdk
     category: build
     project_status: graduated
     discovered_by: org-scan from dapr/dapr
@@ -10903,6 +10911,14 @@ repositories:
     parent_project: OpenShell
     parent_repo: NVIDIA/OpenShell
   - owner: nvidia
+    repo: Nomos
+    name: Nomos
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
     repo: Personal-AI-Router
     name: Personal-AI-Router
     category: orchestration
@@ -11511,8 +11527,24 @@ repositories:
     parent_project: OpenShell
     parent_repo: NVIDIA/OpenShell
   - owner: nvidia
+    repo: kubectl-nv
+    name: kubectl-nv
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
     repo: kubevirt-gpu-device-plugin
     name: kubevirt-gpu-device-plugin
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: kumo-engine
+    name: kumo-engine
     category: orchestration
     project_status: sandbox
     discovered_by: org-scan from NVIDIA/OpenShell
@@ -11807,6 +11839,14 @@ repositories:
     parent_project: OpenShell
     parent_repo: NVIDIA/OpenShell
   - owner: nvidia
+    repo: paidf-curation-and-retrieval
+    name: paidf-curation-and-retrieval
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
     repo: physicsnemo
     name: physicsnemo
     category: orchestration
@@ -11937,6 +11977,14 @@ repositories:
   - owner: nvidia
     repo: structured-data-models
     name: structured-data-models
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: structured-data-models-client
+    name: structured-data-models-client
     category: orchestration
     project_status: sandbox
     discovered_by: org-scan from NVIDIA/OpenShell
@@ -14278,6 +14326,30 @@ repositories:
     discovered_by: org-scan from podman-desktop/podman-desktop
     parent_project: Podman Desktop
     parent_repo: podman-desktop/podman-desktop
+  - owner: praxis-proxy
+    repo: ai
+    name: ai
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from praxis-proxy/praxis
+    parent_project: Praxis
+    parent_repo: praxis-proxy/praxis
+  - owner: praxis-proxy
+    repo: grid
+    name: grid
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from praxis-proxy/praxis
+    parent_project: Praxis
+    parent_repo: praxis-proxy/praxis
+  - owner: praxis-proxy
+    repo: policy
+    name: policy
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from praxis-proxy/praxis
+    parent_project: Praxis
+    parent_repo: praxis-proxy/praxis
   - owner: project-akri
     repo: examples
     name: examples
@@ -14329,6 +14401,14 @@ repositories:
   - owner: project-hami
     repo: amd-device-plugin
     name: amd-device-plugin
+    category: orchestration
+    project_status: incubating
+    discovered_by: org-scan from Project-HAMi/HAMi
+    parent_project: HAMi
+    parent_repo: Project-HAMi/HAMi
+  - owner: project-hami
+    repo: amd-dra-driver
+    name: amd-dra-driver
     category: orchestration
     project_status: incubating
     discovered_by: org-scan from Project-HAMi/HAMi
@@ -14423,8 +14503,40 @@ repositories:
     parent_project: Capsule
     parent_repo: projectcapsule/capsule
   - owner: projectcapsule
+    repo: change-windows
+    name: change-windows
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from projectcapsule/capsule
+    parent_project: Capsule
+    parent_repo: projectcapsule/capsule
+  - owner: projectcapsule
     repo: headlamp-plugin
     name: headlamp-plugin
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from projectcapsule/capsule
+    parent_project: Capsule
+    parent_repo: projectcapsule/capsule
+  - owner: projectcapsule
+    repo: observability-tenancy
+    name: observability-tenancy
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from projectcapsule/capsule
+    parent_project: Capsule
+    parent_repo: projectcapsule/capsule
+  - owner: projectcapsule
+    repo: resource-permits
+    name: resource-permits
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from projectcapsule/capsule
+    parent_project: Capsule
+    parent_repo: projectcapsule/capsule
+  - owner: projectcapsule
+    repo: sops-operator
+    name: sops-operator
     category: orchestration
     project_status: sandbox
     discovered_by: org-scan from projectcapsule/capsule
@@ -15963,6 +16075,14 @@ repositories:
     project_status: sandbox
     discovered_by: org-scan from truefoundry/KubeElasti
     parent_repo: truefoundry/KubeElasti
+  - owner: urunc-dev
+    repo: urunc_test
+    name: urunc_test
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from urunc-dev/urunc
+    parent_project: urunc
+    parent_repo: urunc-dev/urunc
   - owner: velero-io
     repo: velero-plugin-for-aws
     name: velero-plugin-for-aws

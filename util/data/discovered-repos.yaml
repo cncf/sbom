@@ -20,7 +20,7 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain supported package manifests (Go, Cargo, npm, pip, Maven, gem, Dockerfile, etc.).
   auto_generated: true
-  last_updated: "2026-10-19T04:40:18Z"
+  last_updated: "2026-10-26T04:36:16Z"
 repositories:
   - owner: aeraki-mesh
     repo: meta-protocol-proxy
@@ -1033,6 +1033,14 @@ repositories:
   - owner: backstage
     repo: techdocs-container
     name: techdocs-container
+    category: build
+    project_status: incubating
+    discovered_by: org-scan from backstage/backstage
+    parent_project: Backstage
+    parent_repo: backstage/backstage
+  - owner: backstage
+    repo: techdocs-zensical-core
+    name: techdocs-zensical-core
     category: build
     project_status: incubating
     discovered_by: org-scan from backstage/backstage
@@ -3689,6 +3697,14 @@ repositories:
     parent_project: Dragonfly
     parent_repo: dragonflyoss/dragonfly
   - owner: dragonflyoss
+    repo: hashring
+    name: hashring
+    category: ml-platform
+    project_status: graduated
+    discovered_by: org-scan from dragonflyoss/dragonfly
+    parent_project: Dragonfly
+    parent_repo: dragonflyoss/dragonfly
+  - owner: dragonflyoss
     repo: nydus
     name: nydus
     category: ml-platform
@@ -3723,6 +3739,14 @@ repositories:
   - owner: drasi-project
     repo: drasi-server
     name: drasi-server
+    category: messaging
+    project_status: sandbox
+    discovered_by: org-scan from drasi-project/drasi-platform
+    parent_project: Drasi
+    parent_repo: drasi-project/drasi-platform
+  - owner: drasi-project
+    repo: drasi-ui
+    name: drasi-ui
     category: messaging
     project_status: sandbox
     discovered_by: org-scan from drasi-project/drasi-platform
@@ -4630,6 +4654,14 @@ repositories:
     discovered_by: org-scan from higress-group/higress
     parent_project: Higress
     parent_repo: higress-group/higress
+  - owner: hivecommons
+    repo: crux
+    name: crux
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from hivecommons/hive
+    parent_project: Hive Commons
+    parent_repo: hivecommons/hive
   - owner: hivecommons
     repo: pluk
     name: pluk
@@ -8007,6 +8039,14 @@ repositories:
     parent_project: Headlamp
     parent_repo: kubernetes-sigs/headlamp
   - owner: kubernetes-sigs
+    repo: model-serving-signals
+    name: model-serving-signals
+    category: observability
+    project_status: sandbox
+    discovered_by: org-scan from kubernetes-sigs/headlamp
+    parent_project: Headlamp
+    parent_repo: kubernetes-sigs/headlamp
+  - owner: kubernetes-sigs
     repo: multicluster-runtime
     name: multicluster-runtime
     category: observability
@@ -9559,6 +9599,14 @@ repositories:
     parent_project: Litmus
     parent_repo: litmuschaos/litmus
   - owner: llm-d
+    repo: llm-d-api-extensions
+    name: llm-d-api-extensions
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from llm-d/llm-d
+    parent_project: llm-d
+    parent_repo: llm-d/llm-d
+  - owner: llm-d
     repo: llm-d-async
     name: llm-d-async
     category: other
@@ -9617,6 +9665,14 @@ repositories:
   - owner: llm-d
     repo: llm-d-latency-predictor
     name: llm-d-latency-predictor
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from llm-d/llm-d
+    parent_project: llm-d
+    parent_repo: llm-d/llm-d
+  - owner: llm-d
+    repo: llm-d-pd-utils
+    name: llm-d-pd-utils
     category: other
     project_status: sandbox
     discovered_by: org-scan from llm-d/llm-d
@@ -11063,6 +11119,54 @@ repositories:
     parent_project: OpenShell
     parent_repo: NVIDIA/OpenShell
   - owner: nvidia
+    repo: cdf-anomalygen
+    name: cdf-anomalygen
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: cdf-augmentation
+    name: cdf-augmentation
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: cdf-auto-labeling
+    name: cdf-auto-labeling
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: cdf-curation-and-retrieval
+    name: cdf-curation-and-retrieval
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: cdf-orchestration
+    name: cdf-orchestration
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: cdf-simulation
+    name: cdf-simulation
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
     repo: clara-pipeline-operator-sizing-tool
     name: clara-pipeline-operator-sizing-tool
     category: orchestration
@@ -11351,6 +11455,14 @@ repositories:
     parent_project: OpenShell
     parent_repo: NVIDIA/OpenShell
   - owner: nvidia
+    repo: flashdreams
+    name: flashdreams
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
     repo: fleet-intelligence-client
     name: fleet-intelligence-client
     category: orchestration
@@ -11369,6 +11481,14 @@ repositories:
   - owner: nvidia
     repo: garak
     name: garak
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: gdn-cli
+    name: gdn-cli
     category: orchestration
     project_status: sandbox
     discovered_by: org-scan from NVIDIA/OpenShell
@@ -13103,6 +13223,14 @@ repositories:
     parent_project: OpenEverest
     parent_repo: openeverest/openeverest
   - owner: openeverest
+    repo: plugin-user-management
+    name: plugin-user-management
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openeverest/openeverest
+    parent_project: OpenEverest
+    parent_repo: openeverest/openeverest
+  - owner: openeverest
     repo: provider-altinity-clickhouse
     name: provider-altinity-clickhouse
     category: storage
@@ -14289,6 +14417,14 @@ repositories:
   - owner: podman-desktop
     repo: extension-layers-explorer
     name: extension-layers-explorer
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from podman-desktop/podman-desktop
+    parent_project: Podman Desktop
+    parent_repo: podman-desktop/podman-desktop
+  - owner: podman-desktop
+    repo: extension-lima
+    name: extension-lima
     category: build
     project_status: sandbox
     discovered_by: org-scan from podman-desktop/podman-desktop

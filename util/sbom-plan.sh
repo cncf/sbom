@@ -75,14 +75,16 @@ for chunk in "$TMP"/chunk.*; do
   QUERY="query {$(jq -r '"r\(input_line_number - 1): repository(owner: \(.owner | @json), name: \(.repo | @json)) { releases(first: 100, orderBy: {field: CREATED_AT, direction: DESC}) { nodes { tagName isDraft isPrerelease publishedAt } } refs(refPrefix: \"refs/tags/\", first: 30, orderBy: {field: TAG_COMMIT_DATE, direction: DESC}) { nodes { name } } }"' "$chunk" | tr '\n' ' ') }"
   # Responses are ~200 KB; a dropped connection truncates the JSON, so retry.
   # gh exits 1 on partial errors (one unknown repo) although .data is complete: ignore its status.
-  for attempt in 1 2 3; do
+  # GitHub answers these heavy queries with 504 at times: 6 tries, 15s..150s backoff.
+  for attempt in 1 2 3 4 5 6; do
     gh api graphql -f query="$QUERY" >"$TMP/resp.json" 2>"$TMP/resp.err" || true
     jq -e '.data' "$TMP/resp.json" >/dev/null 2>&1 && break
-    if [[ $attempt == 3 ]]; then
+    if [[ $attempt == 6 ]]; then
       echo "::error::GraphQL query failed: $(cat "$TMP/resp.err"; head -c 2000 "$TMP/resp.json")" >&2
       exit 1
     fi
-    sleep $((attempt * 10))
+    echo "::warning::GraphQL attempt $attempt failed, retrying: $(head -c 200 "$TMP/resp.err")" >&2
+    sleep $((attempt * attempt * 10))
   done
   jq -r '.errors[]? | "::warning::\(.path[0] // "?"): \(.message)"' "$TMP/resp.json" >&2
   # Pair every repository with its answer; a missing repo yields null and no items.

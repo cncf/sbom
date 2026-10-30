@@ -125,7 +125,7 @@ repositories:
   - owner: goharbor
     repo: harbor
     name: Harbor
-    category: registry
+    category: ml-platform
     project_status: graduated
     accepted_date: "2018-07-31"
   - owner: helm
@@ -550,7 +550,7 @@ repositories:
   - owner: bootc-dev
     repo: bootc
     name: bootc
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2025-01-21"
   - owner: bpfman
@@ -754,7 +754,7 @@ repositories:
   - owner: hyperlight-dev
     repo: hyperlight
     name: Hyperlight
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2025-03-04"
   - owner: inclavare-containers
@@ -922,7 +922,7 @@ repositories:
   - owner: kube-burner
     repo: kube-burner
     name: Kube-burner
-    category: ci-cd
+    category: gitops
     project_status: sandbox
     accepted_date: "2023-12-18"
   - owner: kubeovn
@@ -1360,7 +1360,7 @@ repositories:
   - owner: virtual-kubelet
     repo: virtual-kubelet
     name: Virtual Kubelet
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2018-12-04"
   - owner: vscode-kubernetes-tools
@@ -1372,13 +1372,13 @@ repositories:
   - owner: WasmEdge
     repo: WasmEdge
     name: WasmEdge Runtime
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2021-04-28"
   - owner: werf
     repo: werf
     name: werf
-    category: ci-cd
+    category: gitops
     project_status: sandbox
     accepted_date: "2022-12-13"
   - owner: xregistry

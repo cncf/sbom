@@ -20,7 +20,7 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain supported package manifests (Go, Cargo, npm, pip, Maven, gem, Dockerfile, etc.).
   auto_generated: true
-  last_updated: "2026-10-26T04:36:16Z"
+  last_updated: "2026-11-02T04:37:12Z"
 repositories:
   - owner: aeraki-mesh
     repo: meta-protocol-proxy
@@ -5519,6 +5519,14 @@ repositories:
     parent_project: KAITO
     parent_repo: kaito-project/kaito
   - owner: kaito-project
+    repo: kaito-guardrail-core
+    name: kaito-guardrail-core
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from kaito-project/kaito
+    parent_project: KAITO
+    parent_repo: kaito-project/kaito
+  - owner: kaito-project
     repo: kaito-kubectl-plugin
     name: kaito-kubectl-plugin
     category: ml-platform
@@ -9279,6 +9287,14 @@ repositories:
     parent_project: Kyverno
     parent_repo: kyverno/kyverno
   - owner: kyverno
+    repo: assistant
+    name: assistant
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from kyverno/kyverno
+    parent_project: Kyverno
+    parent_repo: kyverno/kyverno
+  - owner: kyverno
     repo: backstage-policy-reporter-plugin
     name: backstage-policy-reporter-plugin
     category: security
@@ -9561,6 +9577,14 @@ repositories:
   - owner: litmuschaos
     repo: litmus-go
     name: litmus-go
+    category: chaos-engineering
+    project_status: incubating
+    discovered_by: org-scan from litmuschaos/litmus
+    parent_project: Litmus
+    parent_repo: litmuschaos/litmus
+  - owner: litmuschaos
+    repo: litmus-lite
+    name: litmus-lite
     category: chaos-engineering
     project_status: incubating
     discovered_by: org-scan from litmuschaos/litmus
@@ -11351,6 +11375,14 @@ repositories:
     parent_project: OpenShell
     parent_repo: NVIDIA/OpenShell
   - owner: nvidia
+    repo: cuspa
+    name: cuspa
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
     repo: cutlass
     name: cutlass
     category: orchestration
@@ -11409,6 +11441,14 @@ repositories:
   - owner: nvidia
     repo: doca-platform
     name: doca-platform
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: earth2bufr
+    name: earth2bufr
     category: orchestration
     project_status: sandbox
     discovered_by: org-scan from NVIDIA/OpenShell
@@ -12969,6 +13009,14 @@ repositories:
   - owner: open-telemetry
     repo: semantic-conventions
     name: semantic-conventions
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from open-telemetry/community
+    parent_project: OpenTelemetry
+    parent_repo: open-telemetry/community
+  - owner: open-telemetry
+    repo: semantic-conventions-client-side
+    name: semantic-conventions-client-side
     category: observability
     project_status: graduated
     discovered_by: org-scan from open-telemetry/community
@@ -14961,6 +15009,14 @@ repositories:
   - owner: radius-project
     repo: ai-extensions
     name: ai-extensions
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from radius-project/radius
+    parent_project: Radius
+    parent_repo: radius-project/radius
+  - owner: radius-project
+    repo: dashboard
+    name: dashboard
     category: build
     project_status: sandbox
     discovered_by: org-scan from radius-project/radius

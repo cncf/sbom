@@ -20,7 +20,7 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain supported package manifests (Go, Cargo, npm, pip, Maven, gem, Dockerfile, etc.).
   auto_generated: true
-  last_updated: "2026-11-02T04:37:12Z"
+  last_updated: "2026-11-09T04:35:21Z"
 repositories:
   - owner: aeraki-mesh
     repo: meta-protocol-proxy
@@ -1758,6 +1758,14 @@ repositories:
     discovered_by: org-scan from cert-manager/cert-manager
     parent_project: cert-manager
     parent_repo: cert-manager/cert-manager
+  - owner: cert-manager
+    repo: vault-issuer
+    name: vault-issuer
+    category: security
+    project_status: graduated
+    discovered_by: org-scan from cert-manager/cert-manager
+    parent_project: cert-manager
+    parent_repo: cert-manager/cert-manager
   - owner: chaos-mesh
     repo: chaos-driver
     name: chaos-driver
@@ -2513,6 +2521,14 @@ repositories:
   - owner: connectrpc
     repo: otelconnect-go
     name: otelconnect-go
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from connectrpc/connect-go
+    parent_project: Connect RPC
+    parent_repo: connectrpc/connect-go
+  - owner: connectrpc
+    repo: protoc-gen-connect-openapi
+    name: protoc-gen-connect-openapi
     category: other
     project_status: sandbox
     discovered_by: org-scan from connectrpc/connect-go
@@ -4775,6 +4791,14 @@ repositories:
     parent_project: Hyperlight
     parent_repo: hyperlight-dev/hyperlight
   - owner: hyperlight-dev
+    repo: lampyr
+    name: lampyr
+    category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from hyperlight-dev/hyperlight
+    parent_project: Hyperlight
+    parent_repo: hyperlight-dev/hyperlight
+  - owner: hyperlight-dev
     repo: wasm-udp-echo-sample
     name: wasm-udp-echo-sample
     category: container-runtime
@@ -4866,6 +4890,14 @@ repositories:
     repo: TNG
     name: TNG
     category: container-runtime
+    project_status: sandbox
+    discovered_by: org-scan from inclavare-containers/inclavare-containers
+    parent_project: Inclavare Containers
+    parent_repo: inclavare-containers/inclavare-containers
+  - owner: inclavare-containers
+    repo: confidential-agent
+    name: confidential-agent
+    category: ml-platform
     project_status: sandbox
     discovered_by: org-scan from inclavare-containers/inclavare-containers
     parent_project: Inclavare Containers
@@ -9011,6 +9043,14 @@ repositories:
     name: node-maintenance-operator
     category: build
     project_status: incubating
+    discovered_by: org-scan from kubevirt/kubevirt
+    parent_project: KubeVirt
+    parent_repo: kubevirt/kubevirt
+  - owner: kubevirt
+    repo: plugins
+    name: plugins
+    category: build
+    project_status: graduated
     discovered_by: org-scan from kubevirt/kubevirt
     parent_project: KubeVirt
     parent_repo: kubevirt/kubevirt
@@ -13263,6 +13303,14 @@ repositories:
     parent_project: OpenEverest
     parent_repo: openeverest/openeverest
   - owner: openeverest
+    repo: plugin-migrations
+    name: plugin-migrations
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openeverest/openeverest
+    parent_project: OpenEverest
+    parent_repo: openeverest/openeverest
+  - owner: openeverest
     repo: plugin-mongodb-explorer
     name: plugin-mongodb-explorer
     category: storage
@@ -13313,6 +13361,14 @@ repositories:
   - owner: openeverest
     repo: provider-milvus
     name: provider-milvus
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openeverest/openeverest
+    parent_project: OpenEverest
+    parent_repo: openeverest/openeverest
+  - owner: openeverest
+    repo: provider-opensearch
+    name: provider-opensearch
     category: storage
     project_status: sandbox
     discovered_by: org-scan from openeverest/openeverest

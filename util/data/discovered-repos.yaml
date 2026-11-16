@@ -20,7 +20,7 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain supported package manifests (Go, Cargo, npm, pip, Maven, gem, Dockerfile, etc.).
   auto_generated: true
-  last_updated: "2026-11-09T04:35:21Z"
+  last_updated: "2026-11-16T04:38:44Z"
 repositories:
   - owner: aeraki-mesh
     repo: meta-protocol-proxy
@@ -30,6 +30,14 @@ repositories:
     discovered_by: org-scan from aeraki-mesh/aeraki
     parent_project: Aeraki Mesh
     parent_repo: aeraki-mesh/aeraki
+  - owner: agent-substrate
+    repo: claude-managed-agents
+    name: claude-managed-agents
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from agent-substrate/substrate
+    parent_project: Agent Substrate
+    parent_repo: agent-substrate/substrate
   - owner: agent-substrate
     repo: env
     name: env
@@ -1342,6 +1350,22 @@ repositories:
     discovered_by: org-scan from cadence-workflow/cadence
     parent_project: Cadence Workflow
     parent_repo: cadence-workflow/cadence
+  - owner: caipe-io
+    repo: agentic-apps
+    name: agentic-apps
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from caipe-io/ai-platform-engineering
+    parent_project: CAIPE
+    parent_repo: caipe-io/ai-platform-engineering
+  - owner: caipe-io
+    repo: caipe-cli
+    name: caipe-cli
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from caipe-io/ai-platform-engineering
+    parent_project: CAIPE
+    parent_repo: caipe-io/ai-platform-engineering
   - owner: carina-io
     repo: carina-api
     name: carina-api
@@ -2505,6 +2529,14 @@ repositories:
   - owner: connectrpc
     repo: grpchealth-go
     name: grpchealth-go
+    category: other
+    project_status: sandbox
+    discovered_by: org-scan from connectrpc/connect-go
+    parent_project: Connect RPC
+    parent_repo: connectrpc/connect-go
+  - owner: connectrpc
+    repo: grpcreflect-es
+    name: grpcreflect-es
     category: other
     project_status: sandbox
     discovered_by: org-scan from connectrpc/connect-go
@@ -4208,6 +4240,14 @@ repositories:
     discovered_by: org-scan from fluent/fluentd
     parent_project: Fluentd
     parent_repo: fluent/fluentd
+  - owner: fluid-cloudnative
+    repo: fluid-sinapis
+    name: fluid-sinapis
+    category: orchestration
+    project_status: incubating
+    discovered_by: org-scan from fluid-cloudnative/fluid
+    parent_project: Fluid
+    parent_repo: fluid-cloudnative/fluid
   - owner: fluxcd
     repo: agent-skills
     name: agent-skills
@@ -4689,6 +4729,14 @@ repositories:
   - owner: hivecommons
     repo: promptargs
     name: promptargs
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from hivecommons/hive
+    parent_project: Hive Commons
+    parent_repo: hivecommons/hive
+  - owner: hivecommons
+    repo: quorum
+    name: quorum
     category: orchestration
     project_status: sandbox
     discovered_by: org-scan from hivecommons/hive
@@ -5343,6 +5391,14 @@ repositories:
     parent_project: Kairos
     parent_repo: kairos-io/kairos
   - owner: kairos-io
+    repo: design
+    name: design
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from kairos-io/kairos
+    parent_project: Kairos
+    parent_repo: kairos-io/kairos
+  - owner: kairos-io
     repo: efi-key-enroller
     name: efi-key-enroller
     category: automation
@@ -5586,6 +5642,14 @@ repositories:
     repo: keda-kaito-scaler
     name: keda-kaito-scaler
     category: ml-platform
+    project_status: sandbox
+    discovered_by: org-scan from kaito-project/kaito
+    parent_project: KAITO
+    parent_repo: kaito-project/kaito
+  - owner: kaito-project
+    repo: llm-gateway-auth
+    name: llm-gateway-auth
+    category: other
     project_status: sandbox
     discovered_by: org-scan from kaito-project/kaito
     parent_project: KAITO
@@ -5887,6 +5951,14 @@ repositories:
     parent_project: kcp
     parent_repo: kcp-dev/kcp
   - owner: kcp-dev
+    repo: kcp-testcontainers
+    name: kcp-testcontainers
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from kcp-dev/kcp
+    parent_project: kcp
+    parent_repo: kcp-dev/kcp
+  - owner: kcp-dev
     repo: logicalcluster
     name: logicalcluster
     category: orchestration
@@ -6113,6 +6185,14 @@ repositories:
   - owner: konveyor
     repo: asset-generation
     name: asset-generation
+    category: build
+    project_status: sandbox
+    discovered_by: org-scan from konveyor/operator
+    parent_project: Konveyor
+    parent_repo: konveyor/operator
+  - owner: konveyor
+    repo: builder
+    name: builder
     category: build
     project_status: sandbox
     discovered_by: org-scan from konveyor/operator
@@ -11183,6 +11263,14 @@ repositories:
     parent_project: OpenShell
     parent_repo: NVIDIA/OpenShell
   - owner: nvidia
+    repo: ccluster
+    name: ccluster
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
     repo: cdf-anomalygen
     name: cdf-anomalygen
     category: orchestration
@@ -11314,6 +11402,14 @@ repositories:
     repo: cstruct
     name: cstruct
     category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: cuDecomp
+    name: cuDecomp
+    category: security
     project_status: sandbox
     discovered_by: org-scan from NVIDIA/OpenShell
     parent_project: OpenShell
@@ -11650,6 +11746,14 @@ repositories:
     repo: holodeck
     name: holodeck
     category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: hyperflare-inference
+    name: hyperflare-inference
+    category: security
     project_status: sandbox
     discovered_by: org-scan from NVIDIA/OpenShell
     parent_project: OpenShell
@@ -13337,6 +13441,14 @@ repositories:
   - owner: openeverest
     repo: provider-cassandra
     name: provider-cassandra
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openeverest/openeverest
+    parent_project: OpenEverest
+    parent_repo: openeverest/openeverest
+  - owner: openeverest
+    repo: provider-cloudnative-pg
+    name: provider-cloudnative-pg
     category: storage
     project_status: sandbox
     discovered_by: org-scan from openeverest/openeverest
@@ -15039,6 +15151,14 @@ repositories:
     parent_project: Prometheus
     parent_repo: prometheus/prometheus
   - owner: prometheus
+    repo: scrape.rs
+    name: scrape.rs
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from prometheus/prometheus
+    parent_project: Prometheus
+    parent_repo: prometheus/prometheus
+  - owner: prometheus
     repo: sigv4
     name: sigv4
     category: observability
@@ -15094,6 +15214,46 @@ repositories:
     discovered_by: org-scan from ratify-project/ratify
     parent_project: Ratify
     parent_repo: ratify-project/ratify
+  - owner: ray-project
+    repo: deltacat
+    name: deltacat
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from ray-project/kuberay
+    parent_project: KubeRay
+    parent_repo: ray-project/kuberay
+  - owner: ray-project
+    repo: llm-applications
+    name: llm-applications
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from ray-project/kuberay
+    parent_project: KubeRay
+    parent_repo: ray-project/kuberay
+  - owner: ray-project
+    repo: mlflow-ray-serve
+    name: mlflow-ray-serve
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from ray-project/kuberay
+    parent_project: KubeRay
+    parent_repo: ray-project/kuberay
+  - owner: ray-project
+    repo: ray
+    name: ray
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from ray-project/kuberay
+    parent_project: KubeRay
+    parent_repo: ray-project/kuberay
+  - owner: ray-project
+    repo: rayci
+    name: rayci
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from ray-project/kuberay
+    parent_project: KubeRay
+    parent_repo: ray-project/kuberay
   - owner: rook
     repo: kubectl-rook-ceph
     name: kubectl-rook-ceph
@@ -16144,6 +16304,14 @@ repositories:
     discovered_by: org-scan from tikv/tikv
     parent_project: TiKV
     parent_repo: tikv/tikv
+  - owner: tinkerbell
+    repo: captain
+    name: captain
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from tinkerbell/tinkerbell
+    parent_project: Tinkerbell
+    parent_repo: tinkerbell/tinkerbell
   - owner: tinkerbell
     repo: cluster-api-provider-tinkerbell
     name: cluster-api-provider-tinkerbell

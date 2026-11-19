@@ -89,7 +89,7 @@ repositories:
   - owner: dragonflyoss
     repo: dragonfly
     name: Dragonfly
-    category: ml-platform
+    category: registry
     project_status: graduated
     accepted_date: "2018-11-13"
   - owner: envoyproxy
@@ -125,7 +125,7 @@ repositories:
   - owner: goharbor
     repo: harbor
     name: Harbor
-    category: ml-platform
+    category: registry
     project_status: graduated
     accepted_date: "2018-07-31"
   - owner: helm
@@ -562,7 +562,7 @@ repositories:
   - owner: bootc-dev
     repo: bootc
     name: bootc
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2025-01-21"
   - owner: bpfman
@@ -733,6 +733,12 @@ repositories:
     category: security
     project_status: sandbox
     accepted_date: "2022-07-26"
+  - owner: gvisor
+    repo: gvisor
+    name: gVisor
+    category: ml-platform
+    project_status: sandbox
+    accepted_date: "2026-09-28"
   - owner: kubernetes-sigs
     repo: headlamp
     name: Headlamp
@@ -928,7 +934,7 @@ repositories:
   - owner: kuasar-io
     repo: kuasar
     name: Kuasar
-    category: container-runtime
+    category: ml-platform
     project_status: sandbox
     accepted_date: "2023-12-19"
   - owner: kube-burner
@@ -1396,7 +1402,7 @@ repositories:
   - owner: WasmEdge
     repo: WasmEdge
     name: WasmEdge Runtime
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2021-04-28"
   - owner: werf
@@ -1420,6 +1426,6 @@ repositories:
   - owner: project-zot
     repo: zot
     name: zot
-    category: ml-platform
+    category: registry
     project_status: sandbox
     accepted_date: "2022-12-13"

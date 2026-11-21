@@ -89,7 +89,7 @@ repositories:
   - owner: dragonflyoss
     repo: dragonfly
     name: Dragonfly
-    category: ml-platform
+    category: registry
     project_status: graduated
     accepted_date: "2018-11-13"
   - owner: envoyproxy
@@ -119,13 +119,13 @@ repositories:
   - owner: fluxcd
     repo: flux2
     name: Flux
-    category: ci-cd
+    category: gitops
     project_status: graduated
     accepted_date: "2019-07-15"
   - owner: goharbor
     repo: harbor
     name: Harbor
-    category: ml-platform
+    category: registry
     project_status: graduated
     accepted_date: "2018-07-31"
   - owner: helm
@@ -449,7 +449,7 @@ repositories:
   - owner: openkruise
     repo: kruise
     name: OpenKruise
-    category: ci-cd
+    category: gitops
     project_status: incubating
     accepted_date: "2020-11-10"
   - owner: openyurtio
@@ -713,7 +713,7 @@ repositories:
   - owner: distribution
     repo: distribution
     name: Distribution
-    category: ml-platform
+    category: registry
     project_status: sandbox
     accepted_date: "2021-01-26"
   - owner: drasi-project
@@ -779,7 +779,7 @@ repositories:
   - owner: hyperlight-dev
     repo: hyperlight
     name: Hyperlight
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2025-03-04"
   - owner: inclavare-containers
@@ -797,7 +797,7 @@ repositories:
   - owner: interlink-hq
     repo: interLink
     name: Interlink
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2025-03-04"
   - owner: k0sproject
@@ -947,13 +947,13 @@ repositories:
   - owner: kuasar-io
     repo: kuasar
     name: Kuasar
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2023-12-19"
   - owner: kube-burner
     repo: kube-burner
     name: Kube-burner
-    category: ci-cd
+    category: gitops
     project_status: sandbox
     accepted_date: "2023-12-18"
   - owner: kubeovn
@@ -1157,7 +1157,7 @@ repositories:
   - owner: open-gitops
     repo: project
     name: OpenGitOps
-    category: ci-cd
+    category: gitops
     project_status: sandbox
     accepted_date: "2021-01-26"
   - owner: openrl-dev
@@ -1397,7 +1397,7 @@ repositories:
   - owner: urunc-dev
     repo: urunc
     name: urunc
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2025-05-22"
   - owner: velero-io
@@ -1445,12 +1445,12 @@ repositories:
   - owner: youki-dev
     repo: youki
     name: youki
-    category: ml-platform
+    category: container-runtime
     project_status: sandbox
     accepted_date: "2024-10-17"
   - owner: project-zot
     repo: zot
     name: zot
-    category: ml-platform
+    category: registry
     project_status: sandbox
     accepted_date: "2022-12-13"

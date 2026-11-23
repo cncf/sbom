@@ -20,7 +20,7 @@
 metadata:
   description: Additional subproject repositories discovered in CNCF project organizations. These repos have releases and contain supported package manifests (Go, Cargo, npm, pip, Maven, gem, Dockerfile, etc.).
   auto_generated: true
-  last_updated: "2026-11-16T04:38:44Z"
+  last_updated: "2026-11-23T04:39:57Z"
 repositories:
   - owner: aeraki-mesh
     repo: meta-protocol-proxy
@@ -4711,6 +4711,14 @@ repositories:
     parent_project: Higress
     parent_repo: higress-group/higress
   - owner: hivecommons
+    repo: colony
+    name: colony
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from hivecommons/hive
+    parent_project: Hive Commons
+    parent_repo: hivecommons/hive
+  - owner: hivecommons
     repo: crux
     name: crux
     category: orchestration
@@ -4737,6 +4745,14 @@ repositories:
   - owner: hivecommons
     repo: quorum
     name: quorum
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from hivecommons/hive
+    parent_project: Hive Commons
+    parent_repo: hivecommons/hive
+  - owner: hivecommons
+    repo: quorum-companion
+    name: quorum-companion
     category: orchestration
     project_status: sandbox
     discovered_by: org-scan from hivecommons/hive
@@ -8807,6 +8823,14 @@ repositories:
     parent_project: KubeStellar
     parent_repo: kubestellar/kubestellar
   - owner: kubevela
+    repo: cloud-emulators
+    name: cloud-emulators
+    category: build
+    project_status: incubating
+    discovered_by: org-scan from kubevela/kubevela
+    parent_project: KubeVela
+    parent_repo: kubevela/kubevela
+  - owner: kubevela
     repo: cloudshell
     name: cloudshell
     category: build
@@ -11423,6 +11447,14 @@ repositories:
     parent_project: OpenShell
     parent_repo: NVIDIA/OpenShell
   - owner: nvidia
+    repo: cuPotential
+    name: cuPotential
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
     repo: cuda-quantum
     name: cuda-quantum
     category: orchestration
@@ -11450,6 +11482,14 @@ repositories:
     repo: cudaq-algorithms
     name: cudaq-algorithms
     category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: cudaq-pulse
+    name: cudaq-pulse
+    category: security
     project_status: sandbox
     discovered_by: org-scan from NVIDIA/OpenShell
     parent_project: OpenShell
@@ -11554,6 +11594,14 @@ repositories:
     repo: dcgm-exporter
     name: dcgm-exporter
     category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: dl-lowlat-infer
+    name: dl-lowlat-infer
+    category: security
     project_status: sandbox
     discovered_by: org-scan from NVIDIA/OpenShell
     parent_project: OpenShell
@@ -12167,6 +12215,14 @@ repositories:
     parent_project: OpenShell
     parent_repo: NVIDIA/OpenShell
   - owner: nvidia
+    repo: physicsnemo-serve
+    name: physicsnemo-serve
+    category: security
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
     repo: pyxis
     name: pyxis
     category: orchestration
@@ -12218,6 +12274,14 @@ repositories:
     repo: sandbox-device-plugin
     name: sandbox-device-plugin
     category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from NVIDIA/OpenShell
+    parent_project: OpenShell
+    parent_repo: NVIDIA/OpenShell
+  - owner: nvidia
+    repo: scadactl
+    name: scadactl
+    category: security
     project_status: sandbox
     discovered_by: org-scan from NVIDIA/OpenShell
     parent_project: OpenShell
@@ -13167,6 +13231,14 @@ repositories:
     parent_project: OpenTelemetry
     parent_repo: open-telemetry/community
   - owner: open-telemetry
+    repo: semantic-conventions-genai
+    name: semantic-conventions-genai
+    category: observability
+    project_status: graduated
+    discovered_by: org-scan from open-telemetry/community
+    parent_project: OpenTelemetry
+    parent_repo: open-telemetry/community
+  - owner: open-telemetry
     repo: weaver
     name: weaver
     category: observability
@@ -13367,6 +13439,38 @@ repositories:
     parent_project: OpenEverest
     parent_repo: openeverest/openeverest
   - owner: openeverest
+    repo: monitoring-coroot
+    name: monitoring-coroot
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openeverest/openeverest
+    parent_project: OpenEverest
+    parent_repo: openeverest/openeverest
+  - owner: openeverest
+    repo: monitoring-pmm
+    name: monitoring-pmm
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openeverest/openeverest
+    parent_project: OpenEverest
+    parent_repo: openeverest/openeverest
+  - owner: openeverest
+    repo: monitoring-prometheus
+    name: monitoring-prometheus
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openeverest/openeverest
+    parent_project: OpenEverest
+    parent_repo: openeverest/openeverest
+  - owner: openeverest
+    repo: monitoring-victoriametrics
+    name: monitoring-victoriametrics
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openeverest/openeverest
+    parent_project: OpenEverest
+    parent_repo: openeverest/openeverest
+  - owner: openeverest
     repo: plugin-audit
     name: plugin-audit
     category: storage
@@ -13473,6 +13577,14 @@ repositories:
   - owner: openeverest
     repo: provider-milvus
     name: provider-milvus
+    category: storage
+    project_status: sandbox
+    discovered_by: org-scan from openeverest/openeverest
+    parent_project: OpenEverest
+    parent_repo: openeverest/openeverest
+  - owner: openeverest
+    repo: provider-neo4j
+    name: provider-neo4j
     category: storage
     project_status: sandbox
     discovered_by: org-scan from openeverest/openeverest
@@ -14790,6 +14902,14 @@ repositories:
     discovered_by: org-scan from Project-HAMi/HAMi
     parent_project: HAMi
     parent_repo: Project-HAMi/HAMi
+  - owner: project-hami
+    repo: volcano-vgpu-device-plugin
+    name: volcano-vgpu-device-plugin
+    category: orchestration
+    project_status: incubating
+    discovered_by: org-scan from Project-HAMi/HAMi
+    parent_project: HAMi
+    parent_repo: Project-HAMi/HAMi
   - owner: project-stacker
     repo: c3
     name: c3
@@ -15382,6 +15502,94 @@ repositories:
     discovered_by: org-scan from score-spec/spec
     parent_project: Score
     parent_repo: score-spec/spec
+  - owner: sdcio
+    repo: cache
+    name: cache
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from sdcio/docs
+    parent_project: SDC
+    parent_repo: sdcio/docs
+  - owner: sdcio
+    repo: config-server
+    name: config-server
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from sdcio/docs
+    parent_project: SDC
+    parent_repo: sdcio/docs
+  - owner: sdcio
+    repo: data-server
+    name: data-server
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from sdcio/docs
+    parent_project: SDC
+    parent_repo: sdcio/docs
+  - owner: sdcio
+    repo: kubectl-sdc
+    name: kubectl-sdc
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from sdcio/docs
+    parent_project: SDC
+    parent_repo: sdcio/docs
+  - owner: sdcio
+    repo: logger
+    name: logger
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from sdcio/docs
+    parent_project: SDC
+    parent_repo: sdcio/docs
+  - owner: sdcio
+    repo: schema-server
+    name: schema-server
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from sdcio/docs
+    parent_project: SDC
+    parent_repo: sdcio/docs
+  - owner: sdcio
+    repo: sdc-lite
+    name: sdc-lite
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from sdcio/docs
+    parent_project: SDC
+    parent_repo: sdcio/docs
+  - owner: sdcio
+    repo: sdc-protos
+    name: sdc-protos
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from sdcio/docs
+    parent_project: SDC
+    parent_repo: sdcio/docs
+  - owner: sdcio
+    repo: sdcio-demo
+    name: sdcio-demo
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from sdcio/docs
+    parent_project: SDC
+    parent_repo: sdcio/docs
+  - owner: sdcio
+    repo: sdctl
+    name: sdctl
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from sdcio/docs
+    parent_project: SDC
+    parent_repo: sdcio/docs
+  - owner: sdcio
+    repo: yang-parser
+    name: yang-parser
+    category: automation
+    project_status: sandbox
+    discovered_by: org-scan from sdcio/docs
+    parent_project: SDC
+    parent_repo: sdcio/docs
   - owner: sermant-io
     repo: Sermant-examples
     name: Sermant-examples
@@ -15811,6 +16019,14 @@ repositories:
   - owner: spinframework
     repo: runtime-class-manager
     name: runtime-class-manager
+    category: orchestration
+    project_status: sandbox
+    discovered_by: org-scan from spinframework/spin-operator
+    parent_project: SpinKube
+    parent_repo: spinframework/spin-operator
+  - owner: spinframework
+    repo: spin-code-sandbox
+    name: spin-code-sandbox
     category: orchestration
     project_status: sandbox
     discovered_by: org-scan from spinframework/spin-operator
